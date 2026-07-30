@@ -29,6 +29,15 @@ Right monitor showed the exact tool in use:
 - Dense multi-row pane grid of the standard brain sequences (DWI + ADC, T1, T2/FLAIR, sagittal T1, plus dedicated orbit/sellar coronal + axial series), left-hand series **Navigator** with thumbnails.
 - "No previous studies" is an explicit layout variant → implies there is a **different** layout when priors exist (side-by-side compare). Expect Luis to send that variant separately. Layout selection should therefore branch on **exam type × priors-available**.
 
+## 5. Layout — Brain MRI WITH prior study (e.g., previous CT) — REQ-007
+Second capture: **"BRAIN MRI WITH PREVIOUS CT"** (2026-07-30). This is the priors-available variant of section 4, and it pins down the prior-comparison workflow:
+- **Three-monitor arrangement:** current MRI images (left PACS), current report editor (center), and the **prior report opened side-by-side on the right monitor**.
+- **Exa exposes a "Prior Reports" viewer** (`exa.swrxsyonline.com/.../studyReports...`) that lists all priors by **modality + date** (e.g., MRI C-spine, MRI L-spine, CT head/brain, US abdomen). The radiologist **manually picks** the relevant prior from that list; the left PACS navigator also shows the chronologic prior-study list.
+- **Workflow:** he reads the prior report's findings while dictating the current study, and sets the report's **COMPARISON** field to the prior's modality + date (e.g., "CT <date>").
+- **Automation target (concrete):** auto-detect relevant priors by body region/modality, surface the matching **prior report text** (not just images) side-by-side, and **auto-populate the COMPARISON field** with the prior's modality + date. This is the highest-value slice of REQ-007 and it's now fully specified.
+- **Report format confirmed:** FINDINGS = narrative bullet statements; **IMPRESSION = numbered list**; same Southwest X-Ray template. Confirms the impression-draft target for REQ-005.
+- **Layout selection rule confirmed:** layout branches on **exam type × priors-available** (no-priors grid vs. priors side-by-side-with-report). RadAssist must detect prior existence and pick the layout accordingly.
+
 ## PHI note / recommended handling
 The screenshots are **live PACS captures with real patient data**. For a HIPAA-safe engagement:
 1. **Preferred:** ask Luis to **black out the patient banner** (name/ID/DOB/referring) before sending, or send template/layout mockups with dummy data.
