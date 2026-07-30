@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>RadAssist — A Pilot Proposal for Dr. Luis | RGF Global Ventures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#eef3f8; --card:#ffffff; --ink:#16232f; --muted:#5a6b7a;
+    --navy:#0f3a5f; --navy-d:#0a2942; --steel:#3d6a94;
+    --teal:#0e8f9e; --teal-d:#0a6b77; --amber:#c9862f;
+    --line:#dce5ee;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%; overflow-x:hidden; scroll-behavior:smooth;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Source Sans 3",-apple-system,system-ui,sans-serif; font-size:17px; line-height:1.62; width:100%; max-width:100%; overflow-x:hidden; overflow-wrap:break-word;}
+  h1,h2,h3,p,li,.eyebrow{overflow-wrap:break-word;}
+  .serif{font-family:"Fraunces",Georgia,serif;}
+  a{color:var(--teal-d);}
+  .wrap{max-width:730px; margin:0 auto; padding:0 24px;}
+  header{background:
+      radial-gradient(70% 90% at 92% -5%, rgba(14,143,158,.22) 0%, rgba(14,143,158,0) 55%),
+      radial-gradient(80% 90% at 5% 0%, rgba(61,106,148,.20) 0%, rgba(61,106,148,0) 60%),
+      linear-gradient(180deg,#e7eef5,var(--bg));
+    border-bottom:4px solid var(--navy); padding:52px 24px 38px;}
+  .brandrow{display:flex; align-items:center; gap:12px; margin-bottom:24px;}
+  .mark{width:46px;height:46px;border-radius:11px;background:linear-gradient(150deg,var(--navy),var(--teal-d));display:grid;place-items:center;flex:none;box-shadow:0 6px 16px rgba(15,58,95,.25);}
+  .mark svg{width:26px;height:26px;}
+  .brandrow span{font-weight:700;letter-spacing:1.2px;color:var(--navy);font-size:12.5px;text-transform:uppercase;}
+  h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(31px,6.6vw,48px);line-height:1.04;margin:0 0 10px;color:var(--navy-d);letter-spacing:-.5px;}
+  .sub{font-size:clamp(16px,3.5vw,20px);color:var(--teal-d);margin:0;font-weight:600;}
+  .for{font-size:13.5px;color:var(--muted);margin-top:16px;}
+  .pill{display:inline-block;background:rgba(14,143,158,.12);color:var(--teal-d);font-weight:700;font-size:12px;letter-spacing:.6px;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-top:18px;}
+  .lead{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:10px;padding:20px 22px;margin:30px 0 6px;box-shadow:0 2px 10px rgba(16,35,47,.04);font-size:17.5px;}
+  section{padding:30px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--steel);font-weight:700;margin:0 0 6px;}
+  h2{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(23px,5vw,31px);margin:2px 0 12px;color:var(--navy-d);}
+  p{margin:11px 0;}
+  ul{margin:12px 0;padding-left:20px;}
+  li{margin:9px 0;}
+  li strong{color:var(--ink);}
+  .win{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line);}
+  .win:last-child{border-bottom:none;}
+  .win .n{font-family:"Fraunces",serif;color:var(--teal-d);font-size:25px;line-height:1;min-width:32px;font-weight:600;}
+  .win h3{font-family:"Fraunces",serif;font-weight:600;font-size:19px;margin:0 0 4px;color:var(--navy-d);}
+  .win p{margin:0;color:var(--muted);font-size:15.5px;}
+  .guardrail{background:linear-gradient(135deg,var(--navy),var(--navy-d));color:#e8f1f8;border-radius:12px;padding:22px 24px;margin:22px 0 4px;box-shadow:0 8px 24px rgba(10,41,66,.22);}
+  .guardrail h3{font-family:"Fraunces",serif;color:#fff;margin:0 0 6px;font-size:19px;display:flex;align-items:center;gap:9px;}
+  .guardrail p{margin:0;color:#c4d6e5;font-size:15.5px;}
+  .commit{display:flex;gap:13px;align-items:flex-start;margin:13px 0;}
+  .commit .ic{flex:none;width:26px;height:26px;border-radius:7px;background:rgba(14,143,158,.13);display:grid;place-items:center;margin-top:1px;}
+  .commit .ic svg{width:15px;height:15px;}
+  .commit b{color:var(--ink);}
+  .ask{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 20px;margin:14px 0;box-shadow:0 2px 10px rgba(16,35,47,.04);}
+  .ask .row{display:flex;gap:14px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line);}
+  .ask .row:last-child{border-bottom:none;}
+  .ask .k{flex:none;width:30px;height:30px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;display:grid;place-items:center;font-size:14px;font-family:"Fraunces",serif;}
+  .ask h4{margin:0 0 3px;font-size:16.5px;color:var(--navy-d);}
+  .ask p{margin:0;color:var(--muted);font-size:14.5px;}
+  .ask .star{color:var(--teal-d);font-weight:700;}
+  .opt{color:var(--amber);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.5px;}
+  .costrow{display:flex;align-items:center;gap:16px;background:rgba(14,143,158,.08);border:1px dashed var(--teal);border-radius:12px;padding:20px 22px;margin:10px 0;}
+  .costrow .big{font-family:"Fraunces",serif;font-size:34px;color:var(--teal-d);font-weight:600;line-height:1;}
+  .costrow p{margin:0;font-size:15px;color:var(--muted);}
+  .cta{background:linear-gradient(135deg,var(--teal-d),var(--navy));color:#eaf4f7;text-align:center;border-radius:14px;padding:32px 26px;margin-top:28px;box-shadow:0 10px 30px rgba(10,41,66,.25);}
+  .cta h2{color:#fff;}
+  .cta p{color:#cfe2ea;}
+  .muted{color:var(--muted);}
+  footer{background:var(--navy-d);text-align:center;padding:36px 24px;color:#9db6cc;font-size:14px;border-top:3px solid var(--teal);}
+  footer .brand{font-family:"Fraunces",serif;color:#fff;font-weight:600;font-size:20px;display:block;margin-bottom:4px;}
+  footer .fine{color:#6f8aa4;font-size:12px;margin-top:12px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brandrow">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2.5l7.5 3v5.2c0 4.7-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.1-7.5-9.8V5.5L12 2.5z" fill="rgba(255,255,255,.14)" stroke="#fff" stroke-width="1.3" stroke-linejoin="round"/><path d="M7 12.5h2.2l1.4-3 1.8 5 1.3-2.5H17" stroke="#7fe3ef" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span>Prepared by RGF Global Ventures</span>
+    </div>
+    <h1 class="serif">The menial work, automated. The reading stays yours.</h1>
+    <p class="sub">RadAssist — a privacy-preserving workflow assistant for radiology</p>
+    <p class="for">Prepared for Dr.&nbsp;Luis &middot; July&nbsp;30,&nbsp;2026</p>
+    <span class="pill">Pilot offered at no cost</span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="lead">You said it plainly: your productivity, and your income, is capped not by how fast you read images but by the <strong>menial work around each read</strong> — organizing screens, hunting down priors, re-typing boilerplate, hand-entering data into calculators. That single insight is the foundation of this proposal. Every minute of that overhead we remove converts directly into throughput, accuracy, and revenue.</div>
+
+  <section>
+    <p class="eyebrow">What we heard</p>
+    <h2 class="serif">Your time goes to the wrong tasks</h2>
+    <ul>
+      <li><strong>Screen setup, every case.</strong> Splitting panes, loading images, applying presets — repeated by hand, and it doesn't persist between studies or workstations.</li>
+      <li><strong>Chasing priors.</strong> Relevant prior studies and reports aren't pulled up automatically, so comparison means manual hunting.</li>
+      <li><strong>Data entry you shouldn't be doing.</strong> Pulling structured values into calculators like the MESA calcium score, then transcribing results back into the report by hand.</li>
+      <li><strong>Boilerplate, retyped.</strong> The same standard language, re-entered instead of pre-filled.</li>
+    </ul>
+    <p class="muted" style="font-size:15px;">The bottleneck is the <em>pre-cognitive</em> work, not the interpretation. That's exactly what a tool should take off your plate.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">What we propose</p>
+    <h2 class="serif">Meet RadAssist</h2>
+    <p><strong>RadAssist</strong> is a local, privacy-preserving AI assistant that automates the pre-cognitive tasks in your reading workflow. It runs quietly alongside your existing Exa PACS and dictation, on your own hardware, and learns how <em>you</em> work.</p>
+    <div class="guardrail">
+      <h3><svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 3l7 2.8v4.9c0 4.4-3 7.8-7 9.3-4-1.5-7-4.9-7-9.3V5.8L12 3z" stroke="#7fe3ef" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M9 12l2 2 4-4.5" stroke="#7fe3ef" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> The line we will not cross</h3>
+      <p>RadAssist never reads, interprets, or diagnoses images. It accelerates your workflow; you remain the sole diagnostic authority. That boundary protects your license, your patients, and your professional judgment.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">The pilot &middot; no cost</p>
+    <h2 class="serif">We start with the task you already know is worth it</h2>
+    <p>The one you used to pay your son to do: <strong>calcium-score reporting and report pre-fill.</strong></p>
+    <div class="win"><div class="n serif">1</div><div><h3>Pull the data automatically</h3><p>Extract the structured fields from the study and report — no manual re-keying.</p></div></div>
+    <div class="win"><div class="n serif">2</div><div><h3>Run the score, get the percentile</h3><p>Feed the MESA calcium-score calculator and capture the result, hands-free.</p></div></div>
+    <div class="win"><div class="n serif">3</div><div><h3>Write it back into the report</h3><p>Drop the percentile and the matching guideline statement into your report, in place.</p></div></div>
+    <div class="win"><div class="n serif">4</div><div><h3>Pre-fill the boilerplate</h3><p>Load the correct template and standard language for the exam type, and draft an impression block for your review and sign-off.</p></div></div>
+    <p class="muted" style="font-size:15px;">Why this first: high value, self-contained, and it proves real time savings without waiting on deep system integration. The fastest path to a result you can feel.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Our commitments</p>
+    <h2 class="serif">Built around your trust</h2>
+    <div class="commit"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.8v4.9c0 4.4-3 7.8-7 9.3-4-1.5-7-4.9-7-9.3V5.8L12 3z" stroke="#0a6b77" stroke-width="1.5" fill="none"/></svg></span><div><b>Privacy first, local by default.</b> Patient data is processed on your machine. Any AI call is made through private, tokenized sessions with information minimized first. Your data and your work product stay yours.</div></div>
+    <div class="commit"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.3" stroke="#0a6b77" stroke-width="1.5"/><path d="M8.5 12.2l2.2 2.2 4.6-5" stroke="#0a6b77" stroke-width="1.6" stroke-linecap="round"/></svg></span><div><b>Non-intrusive.</b> It runs alongside Exa and your dictation without changing them. Dislike it? Dismiss it instantly — nothing about your setup is altered.</div></div>
+    <div class="commit"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.3" stroke="#0a6b77" stroke-width="1.5"/><path d="M8.5 12.2l2.2 2.2 4.6-5" stroke="#0a6b77" stroke-width="1.6" stroke-linecap="round"/></svg></span><div><b>You stay in control.</b> Every automated entry is presented for your review. The tool proposes; you decide. Nothing is finalized or signed without you.</div></div>
+  </section>
+
+  <section>
+    <p class="eyebrow">To begin</p>
+    <h2 class="serif">What we'd need from you</h2>
+    <p>So we build to your real workflow, not a generic guess. Most of this is quick, and we work around your reading schedule.</p>
+    <div class="ask">
+      <div class="row"><div class="k">A</div><div><h4>A native screen recording <span class="star">— most important</span></h4><p>The phone videos were perfect for understanding your day, but too low-res to read the actual fields. A native screen capture (recorded on the workstation, not filmed) of three loops: the calcium-score flow, template pre-fill / report creation, and hanging-protocol setup. On Windows, Win+G or the Snipping Tool records the screen — a few minutes each. Please use de-identified cases where you can.</p></div></div>
+      <div class="row"><div class="k">B</div><div><h4>An IT point of contact + a short discovery call</h4><p>To map how Exa PACS is accessed and what it exposes.</p></div></div>
+      <div class="row"><div class="k">C</div><div><h4>Read-only workstation access</h4><p>A look at the environment (or a supervised session) so we can see it without disrupting your reading.</p></div></div>
+      <div class="row"><div class="k">D</div><div><h4>The MESA calculator details</h4><p>The exact web address and the input fields it expects.</p></div></div>
+      <div class="row"><div class="k">E</div><div><h4>De-identified sample reports + your report template</h4><p>Including the letterhead/format your final reports use, so the pre-fill matches your real output. Please remove all patient identifiers first.</p></div></div>
+      <div class="row"><div class="k">F</div><div><h4>Your top 3 highest-volume exam types</h4><p>So we build the pre-fill where it saves you the most time first.</p></div></div>
+      <div class="row"><div class="k">G</div><div><h4>Any compliance requirements on your side</h4><p>A Business Associate Agreement or specific data-handling rules, so we meet them from day one.</p></div></div>
+      <div class="row"><div class="k">H</div><div><h4>Your per-study pay structure <span class="opt">optional</span></h4><p>Only if you want the productivity &amp; revenue dashboard in a later phase.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">How it goes</p>
+    <h2 class="serif">A short, simple path</h2>
+    <div class="win"><div class="n serif">1</div><div><h3>You send the recordings + IT contact</h3><p>We schedule the discovery call.</p></div></div>
+    <div class="win"><div class="n serif">2</div><div><h3>We inspect and map</h3><p>Discovery call plus a look at the environment.</p></div></div>
+    <div class="win"><div class="n serif">3</div><div><h3>We build the pilot</h3><p>The calcium-score + pre-fill assistant, delivered for you to try on real cases.</p></div></div>
+    <div class="win"><div class="n serif">4</div><div><h3>You review, we refine</h3><p>You tell us what's right and what's wrong; we tune it to you.</p></div></div>
+    <div class="win"><div class="n serif">5</div><div><h3>Expand only if it earns it</h3><p>Prior-study retrieval, layout persistence, a productivity dashboard — when you're ready.</p></div></div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Investment</p>
+    <h2 class="serif">The pilot is on us</h2>
+    <div class="costrow"><div class="big">$0</div><p>No cost for the pilot phase. We're investing in proving this works on your actual workflow. Any future commercial arrangement is discussed only after it delivers real value to you.</p></div>
+  </section>
+
+  <div class="cta">
+    <h2 class="serif">Next step</h2>
+    <p>Send over the three screen recordings and your IT contact, and we'll schedule the discovery call. From there, you'll have something real in your hands quickly.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <span class="brand serif">RGF Global Ventures</span>
+    Rick Finlay &middot; rfinlay813@gmail.com &middot; 480-532-1367
+    <div class="fine">This proposal contains no patient health information. Private preview prepared for Dr. Luis.</div>
+  </div>
+</footer>
+
+</body>
+</html>
