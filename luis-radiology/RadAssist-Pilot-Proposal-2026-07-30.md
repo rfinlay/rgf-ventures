@@ -1,7 +1,7 @@
 # RadAssist — Pilot Proposal
 ### A Privacy-Preserving Workflow Assistant for Radiology
 
-**Prepared for:** Dr. Luis
+**Prepared for:** Dr. Luis Ramos
 **Prepared by:** Rick Finlay, RGF Global Ventures
 **Date:** July 30, 2026
 **Status:** Draft for review
