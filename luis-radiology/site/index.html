@@ -64,6 +64,16 @@
   .ask p{margin:0;color:var(--muted);font-size:14.5px;}
   .ask .star{color:var(--teal-d);font-weight:700;}
   .opt{color:var(--amber);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.5px;}
+  .statgrid{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0 8px;}
+  .stat{flex:1 1 180px;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--teal);border-radius:12px;padding:20px 18px;text-align:center;box-shadow:0 3px 12px rgba(16,35,47,.05);}
+  .stat .num{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(30px,7vw,40px);line-height:1;color:var(--teal-d);letter-spacing:-.5px;}
+  .stat .lbl{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.4;}
+  .value-note{font-size:13.5px;color:var(--muted);font-style:italic;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);}
+  .vpoint{display:flex;gap:13px;align-items:flex-start;margin:14px 0;}
+  .vpoint .ic{flex:none;width:30px;height:30px;border-radius:8px;background:rgba(15,58,95,.08);display:grid;place-items:center;margin-top:1px;}
+  .vpoint .ic svg{width:17px;height:17px;}
+  .vpoint b{color:var(--ink);}
+  .vpoint span.txt{color:var(--muted);font-size:15.5px;}
   .costrow{display:flex;align-items:center;gap:16px;background:rgba(14,143,158,.08);border:1px dashed var(--teal);border-radius:12px;padding:20px 22px;margin:10px 0;}
   .costrow .big{font-family:"Fraunces",serif;font-size:34px;color:var(--teal-d);font-weight:600;line-height:1;}
   .costrow p{margin:0;font-size:15px;color:var(--muted);}
@@ -126,6 +136,22 @@
     <div class="win"><div class="n serif">3</div><div><h3>Write it back into the report</h3><p>Drop the percentile and the matching guideline statement into your report, in place.</p></div></div>
     <div class="win"><div class="n serif">4</div><div><h3>Pre-fill the boilerplate</h3><p>Load the correct template and standard language for the exam type, and draft an impression block for your review and sign-off.</p></div></div>
     <p class="muted" style="font-size:15px;">Why this first: high value, self-contained, and it proves real time savings without waiting on deep system integration. The fastest path to a result you can feel.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">What this is worth to you</p>
+    <h2 class="serif">The math on your time</h2>
+    <p>Your pay tracks your output, so the real question is simple: how much of your day is spent on work that isn't reading? Radiology time-motion research is blunt about it. Non-interpretive tasks eat <strong>nearly as much time as the interpretation itself</strong>. RadAssist goes after the automatable share of that: setup, prior retrieval, data entry, and boilerplate.</p>
+    <div class="statgrid">
+      <div class="stat"><div class="num">1.5&ndash;2.5<span style="font-size:18px;"> hrs</span></div><div class="lbl">of menial work lifted off a typical reading day</div></div>
+      <div class="stat"><div class="num">+8&ndash;13%</div><div class="lbl">more studies read in the same hours</div></div>
+      <div class="stat"><div class="num">$40&ndash;85K</div><div class="lbl">illustrative annual upside on a typical radiology book</div></div>
+    </div>
+    <div class="vpoint"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2 19 19M19 5l-2.8 2.8M7.8 16.2 5 19" stroke="#0f3a5f" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="3.2" stroke="#0f3a5f" stroke-width="1.5"/></svg></span><div><b>The calcium score, automated.</b> <span class="txt">The exact task you paid your son to do, now hands-free, on your most lucrative cardiac studies. That removes a cost line and speeds your highest-dollar reads.</span></div></div>
+    <div class="vpoint"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18V9M9 18V5M14 18v-6M19 18V8" stroke="#0f3a5f" stroke-width="1.6" stroke-linecap="round"/><path d="M3 21h18" stroke="#0f3a5f" stroke-width="1.4" stroke-linecap="round"/></svg></span><div><b>Found money in reconciliation.</b> <span class="txt">Independent readers routinely lose 1&ndash;3% of revenue to miscounted or underpaid studies. The monthly reconciliation catches it, often several thousand dollars a year you're currently leaving behind.</span></div></div>
+    <div class="vpoint"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.8v4.9c0 4.4-3 7.8-7 9.3-4-1.5-7-4.9-7-9.3V5.8L12 3z" stroke="#0f3a5f" stroke-width="1.4" fill="none"/><path d="M9 12l2 2 4-4.5" stroke="#0f3a5f" stroke-width="1.6" stroke-linecap="round"/></svg></span><div><b>Fewer errors, less rework.</b> <span class="txt">Hand-transcribing percentiles and scores is where mistakes and liability creep in. Automating it protects the quality of every report.</span></div></div>
+    <div class="vpoint"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.3" stroke="#0f3a5f" stroke-width="1.4"/><path d="M12 7v5l3 2" stroke="#0f3a5f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Your choice how to spend it.</b> <span class="txt">Take the time back as more income, or as shorter days and less burnout. Same tool, your call.</span></div></div>
+    <p class="value-note">These ranges come from radiology productivity benchmarks and calibrate to <em>your</em> actual volume, exam mix, and pay. We lock the exact number for you once we review your workflow, no guesswork.</p>
   </section>
 
   <section>
