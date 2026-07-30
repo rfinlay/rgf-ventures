@@ -38,6 +38,18 @@ Second capture: **"BRAIN MRI WITH PREVIOUS CT"** (2026-07-30). This is the prior
 - **Report format confirmed:** FINDINGS = narrative bullet statements; **IMPRESSION = numbered list**; same Southwest X-Ray template. Confirms the impression-draft target for REQ-005.
 - **Layout selection rule confirmed:** layout branches on **exam type × priors-available** (no-priors grid vs. priors side-by-side-with-report). RadAssist must detect prior existence and pick the layout accordingly.
 
+## 6. AI Agent window — placement + UX vision (PRODUCT-DEFINING) — REQ-013++
+Third capture: **"BRAIN MRI WITHOUT PREVIOUS AND AI AGENT WINDOW"** (2026-07-30). Luis is showing **where RadAssist should live and what it should be** — this is his own vision, and it's strategically important:
+- **Placement:** he wants a **dedicated AI Agent window on the right monitor** — the same screen real estate that holds the prior report when priors exist. No-priors case frees that monitor for the agent. So the third monitor is either **prior report (priors present)** or **AI agent window (no priors)**, and likely a toggle/split when both are wanted.
+- **What he wants it to BE:** he illustrated it with the **"12-factor agent" architecture** diagram (User Input Stream → Prompt History, External Information/RAG, Context Window, Internal State/Memory, Tool Usage State, Data Retrieval). That's a deliberate signal: he wants a **true interactive agent**, not a silent background macro. It should:
+  - take his **input** (voice/text prompts),
+  - **retrieve** his data (priors, patient context, references) — RAG over his own records,
+  - **use tools** (MESA calculator, template load, PACS actions, prior fetch),
+  - keep **memory/state** of his learned preferences across sessions,
+  - and **show its working** (what it retrieved, which tool it called).
+- **UX implication:** RadAssist's primary surface is a **full conversational agent window on the third monitor**, coexisting with Exa PACS (left) and the report editor (center) — not just an invisible autofill. This maps cleanly onto our **local, privacy-preserving agent architecture** and is a strong validation of the whole product direction.
+- **Note:** templates are exam-type-specific — this brain study's section set (SELLAR REGION, ORBITS, CAVERNOUS SINUS, SKULL, SINUSES, CEREBRUM, CEREBELLUM, each with bracketed normal defaults + bullet sub-findings) differs from the orbits/IACs set in section 1, confirming template selection must key off `Type of Exam`.
+
 ## PHI note / recommended handling
 The screenshots are **live PACS captures with real patient data**. For a HIPAA-safe engagement:
 1. **Preferred:** ask Luis to **black out the patient banner** (name/ID/DOB/referring) before sending, or send template/layout mockups with dummy data.
