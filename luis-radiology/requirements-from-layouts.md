@@ -50,6 +50,40 @@ Third capture: **"BRAIN MRI WITHOUT PREVIOUS AND AI AGENT WINDOW"** (2026-07-30)
 - **UX implication:** RadAssist's primary surface is a **full conversational agent window on the third monitor**, coexisting with Exa PACS (left) and the report editor (center) — not just an invisible autofill. This maps cleanly onto our **local, privacy-preserving agent architecture** and is a strong validation of the whole product direction.
 - **Note:** templates are exam-type-specific — this brain study's section set (SELLAR REGION, ORBITS, CAVERNOUS SINUS, SKULL, SINUSES, CEREBRUM, CEREBELLUM, each with bracketed normal defaults + bullet sub-findings) differs from the orbits/IACs set in section 1, confirming template selection must key off `Type of Exam`.
 
+## 7. CALCIUM SCORE — the full pilot loop, fully specified (REQ-001/002/003/004/005) ⭐
+"**LAYOUT CA SCORE**" capture (2026-07-30). This documents the entire pilot end-to-end. **Every field's data source is now known.**
+
+**Three monitors:** Exa PACS calcium-score study + vendor scoring panel (left), report editor (center), MESA CAC tool (right).
+
+**Report template — "CT CARDIAC CALCIUM SCORE W/O CONTRAST"** (Southwest X-Ray), section by section with data source tagged:
+- **PROCEDURE:** CT CARDIAC CALCIUM SCORE W/O CONTRAST. *(static)*
+- **COMPARISON:** none / prior. *(prior-detect)*
+- **INDICATIONS:** Risk stratification. *(order)*
+- **TECHNIQUE:** standard boilerplate — 128-slice multidetector CT, aortic arch → inferior heart margin, prospective ECG gating, 2.5 mm slices, score computed with **TerraRecon** software, no IV contrast, radiation dose (Exam DLP mGy-cm), exam quality. **← PRE-FILL BOILERPLATE**
+- **BACKGROUND:** standard paragraph explaining coronary artery calcification / Agatston as an atherosclerosis marker. **← PRE-FILL BOILERPLATE**
+- **FINDINGS:** per-vessel Agatston scores using the **AJ-130 method** — **LEFT MAIN, LAD, LCX, RCA**, each an individual score. **← FROM SCORING SOFTWARE (vendor panel on left monitor)**
+- **OTHER:** incidental non-cardiac findings (narrative). *(radiologist)*
+- **IMPRESSION** (the two-line formula that gets auto-written):
+  1. "The total (aggregate) calcium score using the AJ-130 method is **[TOTAL]**."
+  2. "The calcium score corresponds to percentile **[P]** for age, gender and ethnicity."
+- **Citation:** McClelland RL et al., *Circulation* 2006;113(1):30–37 + the mesa-nhlbi.org tool URL. **← PRE-FILL BOILERPLATE**
+
+**The automation loop, fully specified:**
+1. Capture the **4 per-vessel Agatston scores** (LM/LAD/LCX/RCA) from the scoring-software output.
+2. **Sum → total aggregate Agatston score.**
+3. Take patient **Age + Gender + Race/Ethnicity** from demographics.
+4. Submit total + demographics to the **MESA CAC tool → return percentile**.
+5. **Assemble the report:** pre-filled TECHNIQUE + BACKGROUND + citation, FINDINGS filled with the 4 vessel scores, IMPRESSION filled with the two-line total + percentile statement.
+
+**Standalone-pilot form (buildable now, no PACS access):** radiologist enters the 4 vessel scores (or the total) + Age/Sex/Ethnicity → tool outputs the complete, ready-to-paste report (all boilerplate + findings + impression + citation). Validation edges: MESA age **45–84** and **4 ethnicity categories** (Out-of-Range handling); label method as **AJ-130**; percentile line only valid within MESA's supported demographics.
+
+## 8. CTA HEAD/NECK (bonus exam type)
+"CTA HEAD NECK LAYOUT" capture. Adds two new auto-fill sources and confirms the combined-report pattern:
+- **Combined report:** CT brain w/o contrast + CT angiogram neck + CT angiogram brain.
+- **RADIATION field ← Total DLP (mGy-cm)** read from the PACS **Dose Information panel**.
+- **CONTRAST field ← agent / volume / route** (e.g., iodinated contrast, mL, IV) from the study.
+- Confirms dose + contrast metadata can be **auto-pulled from the study's dose panel** into the report; combined-report structure recurs for CTA. Same bracketed-default template engine.
+
 ## PHI note / recommended handling
 The screenshots are **live PACS captures with real patient data**. For a HIPAA-safe engagement:
 1. **Preferred:** ask Luis to **black out the patient banner** (name/ID/DOB/referring) before sending, or send template/layout mockups with dummy data.
