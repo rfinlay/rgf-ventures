@@ -84,6 +84,13 @@ Third capture: **"BRAIN MRI WITHOUT PREVIOUS AND AI AGENT WINDOW"** (2026-07-30)
 - **CONTRAST field ← agent / volume / route** (e.g., iodinated contrast, mL, IV) from the study.
 - Confirms dose + contrast metadata can be **auto-pulled from the study's dose panel** into the report; combined-report structure recurs for CTA. Same bracketed-default template engine.
 
+## 9. MRI BRAIN TUMOR W/ PREVIOUS (next-phase requirement, NOT in the calcium pilot)
+"MRI BRAIN TUMOR W PREVIOUS LAYOUT" capture (2026-07-31). An oncologic brain-MRI **follow-up/surveillance** read (e.g., oligodendroglioma follow-up) with priors. Reinforces REQ-004/005/007 for the report-pre-fill product; does **not** affect the standalone calcium-score pilot.
+- Same Southwest X-Ray template engine; EXAM: MR BRAIN W/WO IV CONTRAST.
+- **Surveillance-oriented structure:** COMPARISON = prior MRI (by date); INDICATIONS = tumor follow-up; FINDINGS = narrative **comparing stability vs. prior** (post-craniotomy sequela, enhancement change, mass effect); IMPRESSION = an explicit **stability statement vs. the prior date** ("Stable findings when compared with previous MRI dated …").
+- Heavy use of the **Prior Reports viewer** (right monitor) with a long chronologic prior list — confirms prior-report retrieval + COMPARISON auto-fill (REQ-007) is central for oncologic follow-up.
+- **Takeaway for next phase:** tumor-follow-up templates need a "compare-to-named-prior + stability impression" pattern, distinct from the fresh-read templates. Log as a template variant keyed to follow-up indications.
+
 ## PHI note / recommended handling
 The screenshots are **live PACS captures with real patient data**. For a HIPAA-safe engagement:
 1. **Preferred:** ask Luis to **black out the patient banner** (name/ID/DOB/referring) before sending, or send template/layout mockups with dummy data.
