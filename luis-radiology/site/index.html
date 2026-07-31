@@ -74,6 +74,17 @@
   .vpoint .ic svg{width:17px;height:17px;}
   .vpoint b{color:var(--ink);}
   .vpoint span.txt{color:var(--muted);font-size:15.5px;}
+  .split{display:flex;gap:16px;flex-wrap:wrap;margin:20px 0 8px;}
+  .panel{flex:1 1 270px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 22px;box-shadow:0 3px 12px rgba(16,35,47,.05);}
+  .panel.work{border-top:4px solid var(--navy);}
+  .panel.pocket{border-top:4px solid var(--teal);}
+  .panel .cap{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--steel);}
+  .panel h3{font-family:"Fraunces",serif;font-weight:600;font-size:20px;margin:6px 0 4px;color:var(--navy-d);}
+  .panel .role{font-size:14px;color:var(--muted);margin:0 0 12px;}
+  .panel ul{margin:0;padding-left:18px;}
+  .panel li{margin:7px 0;font-size:15.5px;}
+  .boundary{background:rgba(15,58,95,.06);border-radius:10px;padding:14px 18px;margin:14px 0 0;font-size:14.5px;color:var(--muted);}
+  .boundary b{color:var(--navy-d);}
   .costrow{display:flex;align-items:center;gap:16px;background:rgba(14,143,158,.08);border:1px dashed var(--teal);border-radius:12px;padding:20px 22px;margin:10px 0;}
   .costrow .big{font-family:"Fraunces",serif;font-size:34px;color:var(--teal-d);font-weight:600;line-height:1;}
   .costrow p{margin:0;font-size:15px;color:var(--muted);}
@@ -152,6 +163,37 @@
     <div class="vpoint"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.8v4.9c0 4.4-3 7.8-7 9.3-4-1.5-7-4.9-7-9.3V5.8L12 3z" stroke="#0f3a5f" stroke-width="1.4" fill="none"/><path d="M9 12l2 2 4-4.5" stroke="#0f3a5f" stroke-width="1.6" stroke-linecap="round"/></svg></span><div><b>Fewer errors, less rework.</b> <span class="txt">Hand-transcribing percentiles and scores is where mistakes and liability creep in. Automating it protects the quality of every report.</span></div></div>
     <div class="vpoint"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.3" stroke="#0f3a5f" stroke-width="1.4"/><path d="M12 7v5l3 2" stroke="#0f3a5f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Your choice how to spend it.</b> <span class="txt">Take the time back as more income, or as shorter days and less burnout. Same tool, your call.</span></div></div>
     <p class="value-note">These ranges come from radiology productivity benchmarks and calibrate to <em>your</em> actual volume, exam mix, and pay. We lock the exact number for you once we review your workflow, no guesswork.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">How you'll use it</p>
+    <h2 class="serif">On your workstation, and in your pocket</h2>
+    <p>The reading stays where it belongs. Your practice comes with you.</p>
+    <div class="split">
+      <div class="panel work">
+        <div class="cap">At the reading station</div>
+        <h3>The work of reading</h3>
+        <p class="role">Alongside Exa, on your calibrated monitors</p>
+        <ul>
+          <li>Calcium-score automation and report pre-fill</li>
+          <li>Prior studies and reports pulled up side-by-side</li>
+          <li>Hanging-protocol layouts set the way you like them</li>
+          <li>Your AI agent window, right where you read</li>
+        </ul>
+      </div>
+      <div class="panel pocket">
+        <div class="cap">On your phone</div>
+        <h3>The business of your practice</h3>
+        <p class="role">Your numbers and your agent, wherever you are</p>
+        <ul>
+          <li>Live study count, queue, and daily revenue at a glance</li>
+          <li>Month-end reconciliation with instant alerts when a payment looks short</li>
+          <li>Critical-findings follow-up reminders</li>
+          <li>Quick questions to your agent, hands-free</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boundary"><b>One firm line:</b> diagnostic reading always stays on your calibrated workstation, never a phone. The images live where the quality and the rules require. Your practice, your numbers, and your agent are what travel with you.</div>
   </section>
 
   <section>
