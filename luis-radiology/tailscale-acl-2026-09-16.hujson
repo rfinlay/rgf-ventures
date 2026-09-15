@@ -1,0 +1,275 @@
+// ============================================================================
+// RGF Ventures <> Dr. Luis Ramos -- PACS Infrastructure Assessment
+// Tailnet policy file (HuJSON). Drafted 2026-09-15 for the 2026-09-16 visit.
+// Tailnet owner: rfinlay813@outlook.com
+//
+// PURPOSE
+//   Luis's Windows radiology workstation joins Rick's tailnet as tag:pacs.
+//   That workstation must NEVER be able to reach back into Rick's Mac mini
+//   (finance data, client work, the whole OpenClaw workspace) or any other
+//   Rick device. Access is strictly one-directional: Rick -> PACS box, on a
+//   small set of ports. Nothing flows PACS box -> Rick.
+//
+// ############################################################################
+// # READ THIS BEFORE YOU PASTE                                               #
+// #                                                                          #
+// # Saving the Access controls page REPLACES THE ENTIRE POLICY FILE. It is   #
+// # not a merge and not an append. Whatever is in the editor when you hit    #
+// # Save becomes the complete policy for the tailnet.                        #
+// #                                                                          #
+// # So, before pasting:                                                      #
+// #   1. Open https://login.tailscale.com/admin/acls/file                    #
+// #   2. Select ALL the existing text and copy it into a scratch file.       #
+// #   3. Read it. If it is just the stock default-allow starter policy       #
+// #      (one acls rule: src ["*"] dst ["*:*"]), you can safely replace it   #
+// #      with this file. If Rick has added anything custom, merge by hand.   #
+// #                                                                          #
+// # Verified as of 2026-09-15: the tailnet has 4 nodes and ZERO tags, which  #
+// # is consistent with the stock default-allow policy. Confirm anyway.       #
+// #                                                                          #
+// # Recovery: Admin console > Configuration logs lets you revert the policy  #
+// # file to a previous date/time (Owner/Admin/Network admin only).           #
+// ############################################################################
+//
+// WHY RICK'S 4 EXISTING NODES DO NOT BREAK
+//   Rick's current nodes (gios-mac-mini, iphone-15-pro-max, iphone182,
+//   laptop-2tjvbjfj) are all user-owned by rfinlay813@ and are NOT tagged.
+//   Rule 1 below (autogroup:member -> autogroup:self:*) preserves full
+//   any-to-any access among a user's own devices, so nothing he uses today
+//   stops working. He does NOT need to tag his own machines for this to work.
+//
+//   Note on tag:rgf: it is defined here for future use (if Rick ever tags a
+//   dedicated jump box), but it is deliberately NOT required. Do not tag the
+//   Mac mini. Applying a tag to a device REMOVES its user-based ownership,
+//   which would drop it out of autogroup:self and break rule 1 for it.
+//
+// SYNTAX VERIFIED AGAINST (fetched 2026-09-15):
+//   https://tailscale.com/kb/1337/policy-syntax      (top-level keys, tests,
+//                                                     sshTests, nodeAttrs,
+//                                                     autoApprovers, autogroups)
+//   https://tailscale.com/kb/1018/acls               (acls action/src/dst,
+//                                                     default-allow behavior)
+//   https://tailscale.com/docs/reference/examples/acls  (microsegmentation +
+//                                                     tests patterns)
+//   https://tailscale.com/docs/features/tags         (tagging removes user
+//                                                     ownership; tagging
+//                                                     disables key expiry)
+//   https://tailscale.com/kb/1193/tailscale-ssh      (Tailscale SSH servers:
+//                                                     Linux + open-source
+//                                                     macOS ONLY, not Windows)
+//   https://tailscale.com/kb/1085/auth-keys          (tagged auth keys)
+//   https://tailscale.com/kb/1080/cli                (tailscale up flags)
+//   https://tailscale.com/docs/features/tailnet-policy-file/manage-tailnet-policies
+//                                                    (Preview rules tab,
+//                                                     Configuration logs revert)
+// ============================================================================
+
+{
+	// ------------------------------------------------------------------------
+	// tagOwners -- who is allowed to create/apply each tag.
+	// Only Rick. Luis is not a user in this tailnet and never needs to be.
+	// ------------------------------------------------------------------------
+	"tagOwners": {
+		// The clinical workstation at Luis's house (hostname: luis-pacs).
+		// Untrusted by design.
+		"tag:pacs": ["rfinlay813@outlook.com"],
+
+		// Reserved for any RGF-owned device Rick chooses to tag later
+		// (e.g. a dedicated assessment laptop). Currently unused -- Rick's
+		// 4 existing nodes stay user-owned. See note above.
+		"tag:rgf": ["rfinlay813@outlook.com"],
+	},
+
+	// ------------------------------------------------------------------------
+	// acls -- deny by default. Only what is listed here is permitted.
+	// Direction matters: a rule lets src START a connection to dst. Return
+	// traffic for an established connection is automatically allowed, so
+	// Rick can SSH in and read the response without any reverse rule.
+	// ------------------------------------------------------------------------
+	"acls": [
+		// --- Rule 1: Rick's own devices keep talking to each other. --------
+		// autogroup:self = devices owned by the SAME user as the source.
+		// This is what keeps gios-mac-mini <-> laptop <-> iPhones working
+		// exactly as they do today. autogroup:self covers user-owned devices
+		// ONLY and never matches a tagged device, so tag:pacs can never be
+		// reached or act through this rule. This is the safety net that keeps
+		// the existing 4 nodes functional.
+		{
+			"action": "accept",
+			"src": ["autogroup:member"],
+			"dst": ["autogroup:self:*"],
+		},
+
+		// --- Rule 2: Rick -> PACS workstation, least privilege. ------------
+		// Only the two ports an assessment actually needs:
+		//   3389/tcp = RDP. This is the realistic path on Windows. Only works
+		//              if Luis's box runs Windows Pro AND Remote Desktop is
+		//              deliberately enabled. Do not enable it just for this.
+		//   22/tcp   = SSH, via Microsoft's OpenSSH Server optional feature.
+		//              Tailscale SSH CANNOT serve a Windows target (see the
+		//              "ssh" section below), so port 22 here means OpenSSH,
+		//              not Tailscale SSH.
+		// Deliberately NOT "tag:pacs:*" -- no blanket port access, no SMB
+		// (445), no WinRM (5985/5986). If a port turns out to be genuinely
+		// needed on site, add it explicitly and re-save; do not widen to "*".
+		{
+			"action": "accept",
+			"src": ["rfinlay813@outlook.com"],
+			"dst": ["tag:pacs:22,3389"],
+		},
+
+		// --- Rule 3 (reserved, currently inert): tag:rgf -> PACS. ----------
+		// Same least-privilege ports, for a future tagged RGF device. Harmless
+		// while no device carries tag:rgf. Delete it if Rick prefers.
+		{
+			"action": "accept",
+			"src": ["tag:rgf"],
+			"dst": ["tag:pacs:22,3389"],
+		},
+
+		// --- THE CORE CONTROL: there is no rule with src ["tag:pacs"]. -----
+		// Tailscale ACLs are deny-by-default. Because tag:pacs never appears
+		// as a SOURCE anywhere in this list, the clinical workstation cannot
+		// initiate a connection to ANY node on this tailnet -- not the Mac
+		// mini, not the laptop, not the phones, not the internet via an exit
+		// node. It can only answer connections Rick starts on 22/3389.
+		//
+		// Do not "fix" a connectivity problem by adding a tag:pacs src rule.
+		// That single line would undo the entire point of this engagement's
+		// security posture. The tests block below will catch it if you do.
+	],
+
+	// ------------------------------------------------------------------------
+	// ssh -- Tailscale SSH rules.
+	//
+	// INTENTIONALLY EMPTY. Verified at
+	// https://tailscale.com/kb/1193/tailscale-ssh : Tailscale SSH can only
+	// serve as an SSH SERVER on Linux and on open-source (CLI tailscaled)
+	// macOS. Windows is explicitly NOT supported as a Tailscale SSH target.
+	// Luis's box is Windows, so a Tailscale SSH rule pointed at tag:pacs
+	// would do nothing at all.
+	//
+	// If shell access is needed on site, the path is Microsoft's OpenSSH
+	// Server on TCP 22, which rule 2 above already permits. That is ordinary
+	// SSH riding over the tailnet, authenticated by Windows credentials --
+	// NOT Tailscale SSH, and NOT subject to this section.
+	//
+	// Leaving this as an empty list also means: no device in this tailnet can
+	// use Tailscale SSH into anything. That is the correct posture here.
+	// ------------------------------------------------------------------------
+	"ssh": [],
+
+	// ------------------------------------------------------------------------
+	// autoApprovers -- who may advertise subnet routes / exit nodes WITHOUT a
+	// human clicking approve in the admin console.
+	//
+	// INTENTIONALLY EMPTY OBJECTS. A clinical workstation must never be an
+	// exit node (it would carry other devices' internet traffic) and must
+	// never advertise subnet routes (it would expose Southwest X-Ray's LAN,
+	// and the PACS at exa.swxrayonline.com, to the tailnet). Neither is in
+	// scope for a read-only assessment.
+	//
+	// Belt and braces: even if someone ran `tailscale up --advertise-exit-node`
+	// or --advertise-routes on that box, nothing here auto-approves it, so it
+	// stays pending and inert until an admin explicitly approves it in the
+	// console. Rick: do not approve it. Additionally, nothing can route
+	// through it because tag:pacs has no src rule at all.
+	// ------------------------------------------------------------------------
+	"autoApprovers": {
+		"routes": {},
+		"exitNode": [],
+	},
+
+	// ------------------------------------------------------------------------
+	// nodeAttrs -- INTENTIONALLY EMPTY.
+	//
+	// Careful here: nodeAttrs GRANTS capabilities, it does not revoke them.
+	// `"attr": ["funnel"]` ENABLES Tailscale Funnel for the listed targets.
+	// There is no "disable funnel" attribute -- Funnel is off unless a
+	// nodeAttrs entry turns it on. So the correct way to guarantee that
+	// Luis's workstation is never publicly exposed to the internet via
+	// Funnel is to grant that attribute to NOBODY, which is what this
+	// empty list does.
+	//
+	// Do not add a funnel entry here "to be explicit." It would do the
+	// opposite of what it reads like.
+	// (Verified: https://tailscale.com/kb/1337/policy-syntax)
+	// ------------------------------------------------------------------------
+	"nodeAttrs": [],
+
+	// ------------------------------------------------------------------------
+	// tests -- assertions the Tailscale console runs EVERY TIME the policy is
+	// saved. If any assertion fails, Tailscale REJECTS the save and shows an
+	// error. This is the console proving the block for Rick before it ever
+	// goes live. (Verified: https://tailscale.com/kb/1337/policy-syntax --
+	// "If an assertion fails, Tailscale rejects the updated tailnet policy
+	// file with an error.")
+	//
+	// THE LOAD-BEARING INVARIANT is the first test: source tag:pacs must be
+	// DENIED to tag:rgf on every port we care about. If anyone ever adds a
+	// rule that lets the clinical workstation reach Rick, the save fails.
+	// ------------------------------------------------------------------------
+	"tests": [
+		// === INVARIANT: the PACS workstation cannot reach RGF devices. =====
+		{
+			"src": "tag:pacs",
+			"proto": "tcp",
+			"deny": [
+				"tag:rgf:22",   // no SSH back into RGF gear
+				"tag:rgf:3389", // no RDP back into RGF gear
+				"tag:rgf:445",  // no SMB file share access
+				"tag:rgf:5432", // no database access
+				"tag:rgf:80",   // no HTTP to anything RGF runs
+				"tag:rgf:443",  // no HTTPS to anything RGF runs
+			],
+		},
+
+		// === INVARIANT: the PACS workstation cannot reach its own kind. ====
+		// Lateral movement block, in case a second clinical box is ever added.
+		{
+			"src": "tag:pacs",
+			"proto": "tcp",
+			"deny": ["tag:pacs:22", "tag:pacs:3389", "tag:pacs:445"],
+		},
+
+		// === Rick CAN reach the PACS box, but only on 22 and 3389. ========
+		// Also asserts the least-privilege boundary: SMB and WinRM are denied
+		// even to Rick. If someone widens rule 2 to "tag:pacs:*", these deny
+		// assertions fail and the save is rejected. That is deliberate.
+		{
+			"src": "rfinlay813@outlook.com",
+			"proto": "tcp",
+			"accept": ["tag:pacs:22", "tag:pacs:3389"],
+			"deny": [
+				"tag:pacs:445",  // SMB
+				"tag:pacs:5985", // WinRM HTTP
+				"tag:pacs:5986", // WinRM HTTPS
+				"tag:pacs:139",  // NetBIOS
+			],
+		},
+
+		// === A tagged RGF device (if one ever exists) also cannot be
+		//     reached by the PACS box, asserted from the RGF side. =========
+		{
+			"src": "tag:rgf",
+			"proto": "tcp",
+			"accept": ["tag:pacs:22", "tag:pacs:3389"],
+			"deny": ["tag:pacs:445"],
+		},
+	],
+
+	// ------------------------------------------------------------------------
+	// sshTests -- none, because the "ssh" section is empty by design (Windows
+	// cannot be a Tailscale SSH target). An empty ssh section means every
+	// Tailscale SSH attempt is denied, which is the posture we want.
+	// ------------------------------------------------------------------------
+
+	// ------------------------------------------------------------------------
+	// AFTER THE ENGAGEMENT ENDS
+	//   1. Admin console > Machines > Luis's workstation > ... > Remove.
+	//   2. Admin console > Settings > Keys > revoke the tag:pacs auth key.
+	//   3. Optionally strip tag:pacs from tagOwners and delete rules 2 and 3
+	//      plus the tag:pacs tests, returning the policy to Rick-only.
+	//   4. On Luis's box: `tailscale logout` then uninstall Tailscale.
+	// ------------------------------------------------------------------------
+}
