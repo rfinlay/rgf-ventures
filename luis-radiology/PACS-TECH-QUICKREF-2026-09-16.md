@@ -131,13 +131,31 @@ Confirm it is NOT in the Administrators group:
 Get-LocalGroupMember -Group "Administrators"
 ```
 
-### 5c. Acceptance test — run this from the Mac mini
+### 5c. Acceptance test — nothing to type at the workstation
+
+**This step runs from the Mac mini, not from here.** Text Gio "run the acceptance test" and he runs it remotely while you are still in the room. If it passes, the setup is confirmed before you leave.
+
+For reference, the test is:
 
 ```
 ssh rgfsvc@luis-pacs "hostname && whoami"
 ```
 
-**Real output means the setup succeeded.** This is the test that confirms durable access.
+**Real output means the setup succeeded** — the tailnet route, the SSH service, and the `rgfsvc` account all work end to end.
+
+If it fails, the three things to check at the workstation are:
+
+```
+Get-Service sshd
+```
+
+```
+tailscale status
+```
+
+```
+Get-LocalUser rgfsvc
+```
 
 ---
 
