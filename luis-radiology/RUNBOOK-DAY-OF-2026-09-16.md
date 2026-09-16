@@ -24,6 +24,8 @@ All of this was verified on the evening of 2026-09-15. Nothing below is assumed.
 
 **There is nothing left to configure before you leave.**
 
+**The one thing still unconfirmed is on his end, not yours: that the workstation is his own hardware and he is local admin. Step 0 settles it in under a minute.**
+
 ---
 
 ## Key facts to have in front of you
@@ -39,13 +41,52 @@ All of this was verified on the evening of 2026-09-15. Nothing below is assumed.
 
 ---
 
+## STEP 0 — WHOSE MACHINE IS THIS? (do this first, it is a gate)
+
+**The single question that resolves both ownership and authority at once:**
+
+> **"Is this your machine, or did Southwest X-Ray issue it?"**
+
+**Expected answer: it is his own laptop, he is local admin, and he reaches PACS through a browser session at `exa.swxrayonline.com`.** That is the configuration this entire runbook assumes.
+
+| Answer | What you do |
+|---|---|
+| **His own hardware, he is local admin** | **Proceed.** This is the expected case. |
+| **Southwest X-Ray issued it / domain-joined** | **STOP.** Do not install. |
+
+**Why the second case stops the visit:** installing remote-access software on a clinical organization's managed endpoint is not something a 1099 contractor can authorize, no matter how much admin he happens to have. That is not "Luis approved it." Get written approval from whoever actually runs that machine, or do not install.
+
+**This also makes the BAA question concrete.** On his own hardware, a no-PHI infrastructure assessment does not trigger business-associate status. On their hardware, that analysis does not apply.
+
+### Verify admin rights before touching the installer
+
+Open **PowerShell** and run:
+
+```
+whoami /groups | findstr /i "Administrators"
+```
+
+**`BUILTIN\Administrators` in the output = he has it.** Five seconds, removes the guesswork.
+
+**Admin is required for every step that follows** — the Tailscale installer writes a system service and a virtual network adapter, `tailscale up` needs an elevated shell, `Add-WindowsCapability` installs OpenSSH Server at system level, creating the `rgfsvc` account is administrator-only, and `manage-bde -status` needs elevation. **There is no non-admin path through this runbook.**
+
+**Also confirm it is domain-free** while you are there:
+
+```
+systeminfo | findstr /i "Domain"
+```
+
+`Domain: WORKGROUP` means standalone, his own machine. A real domain name means it is managed by an organization — see the STOP row above.
+
+---
+
 ## BEFORE YOU INSTALL ANYTHING — ask these
 
 ### 1. Whose IT approved this?
 
 Luis is a 1099 contractor. The PACS at `exa.swxrayonline.com` belongs to **Southwest X-Ray, which is an Akumin company**. Admin rights on his own laptop is not authority over someone else's clinical system.
 
-**This raises a question, it does not gate the install.** What the answer changes is whether you touch anything PHI-bearing and when a BAA gets signed. If the imaging group approved, ask for one email confirming it — framed as protecting Luis more than you.
+**This raises a question, it does not gate the install** — provided Step 0 confirmed the hardware is his. What the answer changes is whether you touch anything PHI-bearing and when a BAA gets signed. If the imaging group approved, ask for one email confirming it — framed as protecting Luis more than you.
 
 ### 2. May I record?
 
