@@ -1,8 +1,11 @@
 # PACS Visit Runbook — Wednesday 2026-09-16, 2:00 PM
 
+**VERSION 3** — adds the money conversation (license, forgiveness, retainer-hold).
+
 **Location:** Luis's house · **Duration target:** 30 minutes on site
 **Goal:** get durable remote access to the PACS workstation, answer the open questions, leave.
 **Not today:** no scanning while standing there, no RadAssist components, no PHI.
+**Not today, money:** no total quoted, no retainer pitched, nothing signed.
 
 ---
 
@@ -269,6 +272,68 @@ Enumerate what is installed and running on that workstation: processes, listenin
 
 This is the pricing blocker on $1,200/yr against $1,490 list, and the E&O timing decision rides on it. **He answers out loud what he will not answer by email.**
 
+---
+
+## THE MONEY CONVERSATION — what to say, and what NOT to say
+
+**Goal today: forgive the past, name the direction, get the numbers. Do NOT close, quote a total, or propose the retainer.** Full terms: [[radassist-pricing-decision]].
+
+### 1. Forgive the past work FIRST — explicitly, out loud, before any number
+
+Roughly **$12,000-$18,000** of work is already done and unbilled. Per the market analysis Section 8.4, **the unspoken fear that a retroactive invoice is coming is the single biggest threat to this relationship.** If you name a price before closing that door, he hears the whole conversation through it.
+
+Say it plainly, in your own words, something like:
+
+> "Everything built so far is yours, free and clear. There is no invoice coming for any of it. I want to be clear about that before we talk about anything going forward."
+
+**Do not soften it, do not make it conditional, and do not attach it to the ask.** It is a statement, not a negotiating chip.
+
+### 2. Name the direction, do NOT quote a total
+
+**What to say:** the tool goes commercial starting **October 1**, because that is what pays for the insurance, the real agreement, and a commitment to keep patching a clinical tool he signs reports out of.
+
+**Frame it as durability, not money.** He is not buying software, he is buying the assurance that it will still be maintained in two years.
+
+**Ask for the reference as the exchange.** That is what the founding rate is actually purchasing.
+
+### 3. The license — $1,200/yr, presented as a credit off list
+
+| | |
+|---|---|
+| Published list | **$1,490/yr** |
+| `Founding Clinician Credit` | **-$290** (visible, dated, named on the invoice) |
+| **His price** | **$1,200/yr**, both modules |
+| Renewal | **a percentage off then-current list**, NOT a frozen dollar figure |
+| Billing starts | **2026-10-01**, not immediately |
+| Licensor | **RGF Global Ventures LLC**, not Rick personally |
+
+**Never present it as "$1,200."** The list price is the anchor and the credit is a named favor to him.
+
+### 4. The retainer — DO NOT PITCH IT TODAY
+
+Decided shape: **flat $1,000/month for a block of 8-10 hours** ($100-$125/hr effective against the $150 anchor). **It is recorded, not ready.**
+
+**Two reasons to hold it:**
+
+1. **The demand rate is unknown.** His four asks in one email came the week a module shipped. That is not proven steady state, and sizing a block against a spike is how you end up resenting the work in November.
+2. **$1,000/mo is $12,000/yr — ten times the license.** Moving Luis from **$0 to $13,200/yr in one conversation** is a categorically bigger ask than $1,200/yr. It can sink the license too.
+
+**If he asks for a number in the room, say exactly this and move on:**
+
+> "Something like a thousand a month for a block of hours, and we'll size the block once we see the real pace."
+
+**⚠️ Do not say "80 hours."** The instinct was $1,000 for 80 hours = **$12.50/hr**, a 92% discount and half a full-time job. Run the division before naming any block size.
+
+### 5. Never bill him for a defect
+
+A clinician who hesitates to report a bug in a clinical tool is a liability, not a customer. **Bugs are always free, forever.** Say it out loud if it comes up.
+
+### What is NOT decided and must not be promised
+
+- **Insurance (E&O) timing** — decide after one real Texas quote, not before. Current contract liability cap is fees paid in the prior 12 months = **$1,200**, which is close to no cap at all against a clinical claim.
+- **New module pricing** (Lung/Fleischner, DICOM Agatston) — priced per module as built. **Do not quote.**
+- **Any total, any contract date, any signature.**
+
 ### TI-RADS per nodule — have him flip the toggle
 
 His 09-09 request was ambiguous. **The "Justified" report detail level already exists and already prints every scored feature and the point total per nodule** (shipped `0ea1587`, Sept 2; the live new-features guide documents it). The default is **Concise**, which is why he has never seen it. The toggle sits above the report preview.
@@ -374,6 +439,8 @@ Tailscale's Configuration logs also support point-in-time revert.
 
 ## One-line summary of the visit
 
-**Get access. Do the 90-second browser check. Ask the questions. Leave. Gio scans later from the Mac mini.**
+**Get access. Do the 90-second browser check. Forgive the past work. Ask the questions. Leave. Gio scans later from the Mac mini.**
 
 **The one thing that cannot be done later is the browser observation — Gio cannot see his screen over SSH.**
+
+**The one thing that must be said out loud today is that the past work is free and clear.** No number lands right until that door is closed.
