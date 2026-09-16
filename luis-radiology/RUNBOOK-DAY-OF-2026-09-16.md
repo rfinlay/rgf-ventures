@@ -197,7 +197,66 @@ ssh rgfsvc@luis-pacs "hostname && whoami"
 Remove-Item (Get-PSReadlineOption).HistorySavePath
 ```
 
-**Then leave.** Do not start scanning. The assessment is better done unhurried from your own desk.
+**Then leave.** Do not start scanning. The assessment is better done unhurried from your own desk — see Step 7 for how that actually works.
+
+---
+
+## STEP 7 — HANDOFF TO GIO (how the assessment actually gets done)
+
+**The access exists so Gio can run the assessment remotely, later, from the Mac mini. This section is the contract for that.**
+
+### What Gio CAN do over SSH
+
+Enumerate what is installed and running on that workstation: processes, listening ports, installed software, services, filesystem layout, network configuration, whether a DICOM listener exists, BitLocker status. That is a real picture of the machine and it is most of the infrastructure question.
+
+### What Gio CANNOT do — read this before planning around it
+
+**Gio cannot see his screen.** SSH is a command line on a Windows box. **Exa PACS is a browser session** — server-side rendered pixels in Chrome, authenticated as Luis.
+
+**So the single most important question of this engagement — what does the Exa client actually deliver to that workstation, pixels or DICOM — is NOT answerable over SSH.** It requires a human looking at the browser.
+
+**That is why the browser observation below is an on-site task and not something to leave for later.** Nobody should plan around a capability that does not exist.
+
+### 7a. ON-SITE TASK: the browser observation (90 seconds, highest value of the visit)
+
+**Have Luis do this, or watch him do it. Do not do it yourself in his authenticated session.**
+
+1. In Chrome, open **DevTools** (F12) → **Network** tab
+2. Load a study in Exa
+3. Look at the **Type** column on the requests that carry the image
+
+| What you see | What it means |
+|---|---|
+| `jpeg`, `png`, `webp`, or a websocket carrying frames | **Server-side rendered pixels.** There is no DICOM at his desk. Integration is a browser extension, an HL7 feed, or upstream DICOM. |
+| `application/dicom`, `.dcm`, or a WADO-RS URL | **Real DICOM reaches the workstation.** Tier 2 structured extraction becomes plausible. |
+
+**Write down what you see, or photograph the DevTools panel with no patient data visible.**
+
+**DO NOT save a HAR file.** DevTools' "save all as HAR" captures response bodies, which would persist PHI to disk. This is the single most likely accidental PHI capture of the entire visit, and it happens right here, in this step. **Screenshot the Type column only.**
+
+### 7b. What Rick owes Gio before any remote scan runs
+
+**Gio will not run anything on that box without an explicit scope grant from you.** Text or say:
+
+> *"Scope approved: read-only enumeration on luis-pacs. No PHI-bearing paths, no browser profile, no DICOM retrieve."*
+
+**Gio's default without that grant is to run nothing.**
+
+### 7c. What Gio will run, and what Gio will not touch
+
+| Will run | Will not touch |
+|---|---|
+| Installed programs, services, running processes | Anything under the Chrome/Edge user profile |
+| Listening ports, network config, firewall rules | Any file in a study, cache, or image directory |
+| Whether a DICOM listener answers `C-ECHO` | `C-MOVE`, WADO retrieve, or any study transfer |
+| BitLocker status, OS build, patch level | Any path containing patient identifiers |
+| Whether Exa Voice (nVoq) is present | The Exa session or any authenticated state |
+
+**Timing:** evenings, when Luis is not logged into a study. Lowest PHI exposure surface, and an unhurried scan is a better scan.
+
+### 7d. After the assessment
+
+**Remove `luis-pacs` from the tailnet.** The tagged key disables node key expiry, so the node persists until removed manually. Standing remote access to a clinical endpoint is what walks RGF toward business-associate status — the BAA analysis flags this specifically. Time-box it or paper it.
 
 ---
 
@@ -230,7 +289,7 @@ A second paste now **adds-or-flags** instead of overwriting. He does not know th
 
 ## THE ASSESSMENT QUESTIONS — what you are actually there to learn
 
-**Do not run scans today.** These are the questions the access exists to answer later.
+**Do not run scans today — Gio runs them remotely per Step 7.** These are the questions that access exists to answer. **The exception is the browser observation in 7a, which must happen on site because SSH cannot see a browser session.**
 
 ### The likeliest outcome, stated honestly
 
@@ -315,4 +374,6 @@ Tailscale's Configuration logs also support point-in-time revert.
 
 ## One-line summary of the visit
 
-**Get access. Ask the questions. Leave. Scan later from your own desk.**
+**Get access. Do the 90-second browser check. Ask the questions. Leave. Gio scans later from the Mac mini.**
+
+**The one thing that cannot be done later is the browser observation — Gio cannot see his screen over SSH.**
