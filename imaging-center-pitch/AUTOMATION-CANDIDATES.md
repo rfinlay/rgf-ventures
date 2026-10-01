@@ -255,6 +255,6 @@ Alternatively: do not do it at all in phase one, and let the front desk answer t
 
 ## What this inventory deliberately does not contain
 
-- Any cost-structure percentage for an imaging center. Ask [PARTNER NAME] for Desert Imaging's actual numbers.
+- Any cost-structure percentage for an imaging center. Ask Fernando for his own actual numbers from Southwest X-Ray. Do NOT name Desert Imaging; he did not found it.
 - Any CAQH per-transaction cost, vendor price, HL7 interface fee range, imaging prior auth denial rate above the verified 4.94% and 7.7%, percentage of advanced imaging requiring authorization, Texas HB 300 day-count or training interval, records cost per request, or count of independent imaging centers. The research could not verify any of them. See Section 8 of the research brief.
 - A market-sizing argument. This is a bespoke build for one center that Rick personally operates. Consolidation (RadNet, SimonMed, Akumin, Rayus, Touchstone, US Radiology Specialists) is removing the single-site prospects that would be a market, and the partner lived that from the selling side.
