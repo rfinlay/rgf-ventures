@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Six Months of Free Decisions: Summary for Dr. Luis Ramos and [PARTNER NAME]</title>
+<style>
+  :root {
+    --ink: #1c1b18; --soft: #4a4740; --faint: #8a867c; --rule: #d9d4c7; --accent: #7a1f2b;
+    --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--sans); color: var(--ink); background: #e9e6df; font-size: 9.1pt; line-height: 1.3; }
+  .page { width: 8.5in; min-height: 11in; margin: 0.4in auto; background: #fff; padding: 0.4in 0.5in 0.35in 0.5in; display: flex; flex-direction: column; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--ink); padding-bottom: 6pt; margin-bottom: 9pt; }
+  .kicker { font-size: 8pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 4pt; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 19pt; line-height: 1.1; }
+  .who { text-align: right; font-size: 9pt; color: var(--soft); line-height: 1.4; }
+  .who b { color: var(--ink); }
+  h2 { font-family: var(--serif); font-weight: 400; font-size: 11.5pt; margin: 7pt 0 3pt 0; }
+  p { margin-bottom: 5pt; }
+  .intro { font-size: 9.1pt; color: var(--soft); }
+  table { width: 100%; border-collapse: collapse; font-size: 8.4pt; margin-top: 2pt; }
+  th { text-align: left; font-size: 7.5pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); font-weight: 600; padding: 0 8pt 4pt 0; border-bottom: 1.5px solid var(--ink); }
+  td { padding: 3pt 8pt 3pt 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  td.rec { font-weight: 600; white-space: nowrap; }
+  td.rec.build { color: var(--accent); }
+  .two { display: grid; grid-template-columns: 1.1fr 1fr 0.9fr; gap: 16pt; }
+  ul { list-style: none; }
+  li { position: relative; padding-left: 12pt; margin-bottom: 1.5pt; }
+  li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 7pt; height: 1.5px; background: var(--accent); }
+  .free { border-left: 3px solid var(--accent); padding: 3pt 0 3pt 10pt; margin-top: 5pt; font-size: 9pt; }
+  .free b { font-weight: 600; }
+  .grow { flex: 1; }
+  footer { border-top: 1px solid var(--rule); padding-top: 6pt; margin-top: 8pt; display: flex; justify-content: space-between; align-items: flex-end; font-size: 9pt; color: var(--soft); }
+  footer b { color: var(--ink); font-weight: 600; }
+  .sources { font-size: 6.8pt; color: var(--faint); line-height: 1.28; margin-top: 6pt; }
+  @media print {
+    @page { size: letter; margin: 0; }
+    body { background: #fff; }
+    .page { margin: 0; width: 8.5in; height: 11in; min-height: 0; page-break-after: avoid; page-break-inside: avoid; }
+    h2, tr, li, p, .free, .two, footer { page-break-inside: avoid; break-inside: avoid; }
+    h2 { page-break-after: avoid; break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div>
+      <div class="kicker">Summary of a conversation, El Paso, 2026-10-20</div>
+      <h1>Six months of free decisions.</h1>
+    </div>
+    <div class="who">Prepared for <b>Dr. Luis Ramos</b> and <b>[PARTNER NAME]</b><br>by <b>Richard Finlay</b>, RGF Global Ventures LLC</div>
+  </header>
+
+  <p class="intro">A center that opens around April 2027, with equipment being signed, real estate being toured, no staff hired, and no systems chosen. Every operational automation decision is cheap and reversible today and will not be in six months.</p>
+
+  <div class="free"><b>The free move, whatever you decide about me.</b> Put four terms in every vendor contract before signing: named API access to your own data, HL7 interface count and fee schedule fixed at signature, data export rights in standard formats at no charge, and DICOM query permissions for systems you authorize. Before signature these are contract terms. After signature they are hostage terms.</div>
+
+  <h2>The candidates and my recommendation</h2>
+  <table>
+    <thead><tr><th style="width:24%">Process</th><th style="width:15%">Recommendation</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Prior authorization and eligibility verification</td><td class="rec build">Build</td><td>The largest administrative cost, and the one not asked about. Medicare Advantage 2024: 11.5% of denied prior auths appealed, 80.7% of appeals overturned (KFF). 40% of physicians staff someone exclusively for it (AMA 2025). Payer FHIR prior auth APIs required by 2027-01-01.</td></tr>
+      <tr><td>Scheduling: reminders, self-scheduling, intake</td><td class="rec">Buy (your RIS)</td><td>Commodity, bundled into modern cloud imaging RIS products. Text reminders moved MRI no-shows from 5.1% to 3.8% in a randomized trial. Real, modest, already in the box.</td></tr>
+      <tr><td>Scheduling: cancellation backfill</td><td class="rec build">Build, small</td><td>UC Irvine study: 22.3% of outpatient radiology exams cancelled versus 2.0% no-shows, 70.2% of cancellations patient-initiated. The empty slot is known in advance. A ranked waitlist on top of the RIS.</td></tr>
+      <tr><td>Answering patients (inbound voice)</td><td class="rec">Buy, I integrate</td><td>26.5% of El Paso County residents speak English less than "very well," nearly all Spanish speakers. Highest-blast-radius failure on this list, and a funded vendor category. I specify, evaluate, integrate, and supervise.</td></tr>
+      <tr><td>Medical records: inbound requests and outbound prior studies</td><td class="rec build">Build, selectively</td><td>The HIPAA 30-day clock runs from receipt. Retrieval labor is not chargeable, only copying is. A new center opens with zero priors on file, and no vendor has solved outbound retrieval for a small site.</td></tr>
+      <tr><td>Owner operational reporting</td><td class="rec build">Build</td><td>Modality, reader, referrer, turnaround, revenue per slot. Lives in the RIS and the billing system, which are two systems. Custom by nature, smallest compliance footprint, the thing you look at.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="two">
+    <div>
+      <h2>What I am proposing</h2>
+      <p>A paid design engagement over your six-month build, with a build option attached.</p>
+      <ul>
+        <li>Contract language for the four access terms, this month.</li>
+        <li>RIS, billing, and voice vendor evaluation against the automation plan.</li>
+        <li>A written operational specification for prior auth, records, backfill, and reporting. <b>You own it.</b></li>
+        <li>After opening, build any or all of it: with me, with someone else, or not at all. Decided with real volumes and priced then.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>What you own if I disappear</h2>
+      <ul>
+        <li>The specification, written for an engineer who has never met me.</li>
+        <li>The code, in a repository under your organization's account.</li>
+        <li>Runbooks for every operational procedure and vendor contact.</li>
+        <li>Standard interfaces only: HL7 v2, DICOM, payer APIs, a named model vendor under its own BAA.</li>
+        <li>Your RIS and voice vendor contracts in your name, not routed through me.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>What I recommend you do not buy from me</h2>
+      <ul>
+        <li>A custom voice agent. Buy a vendor.</li>
+        <li>Reminders and intake. Use the RIS.</li>
+        <li>A platform. This is built for this center and operated by me.</li>
+        <li>Anything that touches the image clinically.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sources">Sources: KFF, Medicare Advantage prior authorization determinations in 2024 (2026-01-28), insurer data reported to CMS, all services, not imaging-specific. AMA 2025 Prior Authorization Physician Survey, n=1,000, self-reported. CMS-0057-F, 89 FR 8758. Liu et al., J Am Coll Radiol 2017, PMID 28583321, randomized. Aijaz et al., Acad Radiol 2024, PMID 38705764, UC Irvine, single center. ACS 2024 5-year, Table B16004, El Paso County. 45 CFR 164.524. 21 U.S.C. 360j(o)(1)(A): administrative support software, including appointment schedules, claims or billing information, business analytics, and determination of health benefit eligibility, is excluded from the device definition.</div>
+
+  <div class="grow"></div>
+  <footer>
+    <div><b>Richard Finlay</b>, RGF Global Ventures LLC<br>(480) 532-1367 &nbsp;·&nbsp; rfinlay813@gmail.com</div>
+    <div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div>
+  </footer>
+</div>
+</body>
+</html>
