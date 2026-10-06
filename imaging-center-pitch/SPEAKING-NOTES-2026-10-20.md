@@ -1,6 +1,6 @@
 # Speaking Notes: Imaging Center Dinner
 
-**El Paso, about 2026-10-20. 40 minutes. 25 slides.**
+**El Paso, about 2026-10-20. 40 minutes. 24 slides.**
 **In the room:** Dr. Luis Ramos (uses RadAssist daily; your champion) and Fernando Escarzaga (founded Southwest X-Ray and sold it in 2019; the skeptic and the signer).
 
 This is a rehearsal sheet, not a reference. Read it aloud, top to bottom, in order. The RUNBOOK is for lookup. This is for practice.
@@ -55,7 +55,7 @@ If he raises any of it himself: listen, say little, ask nothing, move on.
 
 ---
 
-# PART 2: THE 25 SLIDES, IN ORDER
+# PART 2: THE 24 SLIDES, IN ORDER
 
 ### SLIDE 1 · Six months of free decisions · 0:00 to 1:00
 
@@ -91,7 +91,7 @@ Greenfield is the entire argument tonight. In six months there will be a RIS, a 
 
 **DEPTH / IF ASKED**
 
-The January date is CMS-0057-F, the Interoperability and Prior Authorization Final Rule, 89 FR 8758, published 2024-02-08. Compliance dates were verified in the rule text itself: decision timeframes and public reporting from 2026-01-01, the FHIR Prior Authorization API and the Patient Access, Provider Access, and Payer-to-Payer APIs by 2027-01-01. It binds payers, not providers, and covers Medicare Advantage, Medicaid and CHIP, and the federally facilitated exchange plans. Do not expand on it here. It gets its own slide at 9.
+The January date is CMS-0057-F, the Interoperability and Prior Authorization Final Rule, 89 FR 8758, published 2024-02-08. Compliance dates were verified in the rule text itself: decision timeframes and public reporting from 2026-01-01, the FHIR Prior Authorization API and the Patient Access, Provider Access, and Payer-to-Payer APIs by 2027-01-01. It binds payers, not providers, and covers Medicare Advantage, Medicaid and CHIP, and the federally facilitated exchange plans. Do not expand on it here. It gets its own slide at 8.
 
 Ask here, before slide 3: "Which RIS and billing vendors are you looking at, and have you signed anything yet?" The answer tells you whether the next slide is still free.
 
@@ -207,7 +207,7 @@ Plainly, without any edge. This is not a gotcha. Say it and advance.
 
 ---
 
-### SLIDE 7 · What it costs in time · 10:00 to 13:00
+### SLIDE 7 · What it costs in time · 10:00 to 14:00
 
 **SAY**
 
@@ -225,7 +225,15 @@ Same AMA 2025 survey. Other figures from it if pressed: 32% say prior authorizat
 
 Eligibility verification is the front half of the same workflow: it is where the "does this plan require authorization" determination happens. The EDI 270 and 271 eligibility transactions are the oldest and most standardized surface in this space, and the clearinghouse or billing vendor exposes them. There is no separate defensible benchmark on eligibility cost for imaging centers, so do not invent one.
 
-If someone notices the 13 hours here against the 14 hours on the next slide: 13 is the 2025 AMA survey. 14 is the earlier AMA figure CMS cited in its 2024 rule. Say exactly that.
+If he notices 13 hours here against the 14 hours CMS used: 13 is the 2025 AMA survey, 14 is the earlier AMA figure CMS cited in its 2024 rule. Say exactly that. The gap is a year of survey data, not a contradiction, and naming it unprompted is worth more than hiding it.
+
+**The federal backstop, one line on this same slide**
+
+"CMS used that same hours figure to price the burden at 220 million provider hours over ten years, in the prior authorization rule itself."
+
+"That is CMS's projection in the rule. It is not measured savings. Nobody has gone back and counted yet."
+
+Source: CMS-0057-F, 89 FR 8758, published 2024-02-08, Regulatory Impact Analysis. Verified in the Federal Register full text. The dollar figure is at least 16 billion over ten years; lead with hours, because hours are the thing he actually paid for. Why it lands: the source is a binding federal rule, not a vendor and not a consultant, so it pre-empts "this is AI hype" before anyone says it. It is still a projection, which is why the caveat is mandatory. Give the caveat the same weight as the number.
 
 **BEAT**
 
@@ -233,29 +241,7 @@ The two percentages at the bottom are the bridge to the agent. Slow down on "nob
 
 ---
 
-### SLIDE 8 · The federal government's own estimate · 13:00 to 15:00
-
-**SAY**
-
-"In its 2024 prior authorization rule, CMS estimated the rule would save providers at least 220 million hours and 16 billion dollars over ten years. They based that on AMA data showing 14 hours per physician per week."
-
-**THEN SAY (the caveat)**
-
-"That is CMS's projection in the rule. It is not measured savings. Nobody has gone back and counted yet."
-
-**DEPTH / IF ASKED**
-
-Source: CMS-0057-F, 89 FR 8758, published 2024-02-08, Regulatory Impact Analysis. Verified in the Federal Register full text.
-
-Why this one lands differently: the source is a binding federal rule, not a vendor and not a consultant. It pre-empts "this is AI hype" before anyone says it. It is still a projection, which is why the caveat is mandatory.
-
-**BEAT**
-
-Give the caveat the same weight as the number. Volunteering it is the point.
-
----
-
-### SLIDE 9 · The dates land on your opening · 15:00 to 18:00
+### SLIDE 8 · The dates land on your opening · 14:00 to 17:00
 
 **SAY**
 
@@ -289,7 +275,7 @@ Both caveats, every time. They are the two obvious counterattacks and you want t
 
 ---
 
-### SLIDE 10 · What a prior auth process actually does all day · 18:00 to 20:00
+### SLIDE 9 · What a prior auth process actually does all day · 17:00 to 19:00
 
 **SAY**
 
@@ -319,7 +305,7 @@ Land the last sentence and let it sit for a beat before you move to Part two.
 
 ---
 
-### SLIDE 11 · Part two: the three things you did ask about, corrected · 20:00
+### SLIDE 10 · Part two: the three things you did ask about, corrected · 19:00
 
 **SAY**
 
@@ -327,11 +313,11 @@ Land the last sentence and let it sit for a beat before you move to Part two.
 
 **BEAT**
 
-Eight minutes for slides 12 through 15. Keep moving.
+Eight minutes for slides 11 through 14. Keep moving.
 
 ---
 
-### SLIDE 12 · Scheduling: the empty slot is not a no-show · 20:00 to 23:00
+### SLIDE 11 · Scheduling: the empty slot is not a no-show · 19:00 to 22:00
 
 **SAY**
 
@@ -353,7 +339,7 @@ Pocket figure: across 2,893,626 outpatient imaging visits over sixteen years, bo
 
 Do not quote general no-show benchmarks of 10 to 20%, "no-shows cost a practice a million a year," or "$200 per unfilled slot." All of those are vendor material with no methodology, and they contradict the peer-reviewed rates.
 
-The one real risk in this build is TCPA: a backfill offer counts against the same three-per-week cap as reminders. That is the rate governor on slide 20.
+The one real risk in this build is TCPA: a backfill offer counts against the same three-per-week cap as reminders. That is the rate governor on slide 19.
 
 Ask before you lean on this: "What was your cancellation rate, and what did you do with the empty slot?"
 
@@ -363,7 +349,7 @@ Ask the cancellation question before the slide, if the flow allows. If his numbe
 
 ---
 
-### SLIDE 13 · Scheduling: what reminders honestly do · 23:00 to 24:00
+### SLIDE 12 · Scheduling: what reminders honestly do · 22:00 to 23:00
 
 **SAY**
 
@@ -393,7 +379,7 @@ Quote the absolute numbers and let him do the arithmetic. An exited founder will
 
 ---
 
-### SLIDE 14 · Answering patients: buy it, do not build it · 24:00 to 26:00
+### SLIDE 13 · Answering patients: buy it, do not build it · 23:00 to 25:00
 
 Ask before the slide: "Who takes the phone call when a patient describes chest pain?" His answer makes the recommendation obvious before you state it.
 
@@ -425,7 +411,7 @@ Say the buy line plainly. Recommending a purchase here makes everything you do p
 
 ---
 
-### SLIDE 15 · Records: the clock and the fee rule both favor automation · 26:00 to 28:00
+### SLIDE 14 · Records: the clock and the fee rule both favor automation · 25:00 to 27:00
 
 **SAY**
 
@@ -463,7 +449,7 @@ Do not say "from running two centers" or "two companies." He built one company w
 
 ---
 
-### SLIDE 16 · The fifth candidate: the numbers the owner actually looks at · 28:00 to 29:00
+### SLIDE 15 · The fifth candidate: the numbers the owner actually looks at · 27:00 to 28:00
 
 Cut this slide first if you are running long at 28:00.
 
@@ -491,7 +477,7 @@ Write down his Monday-morning answer. That sentence is worth more than the slide
 
 ---
 
-### SLIDE 17 · The scorecard · 29:00 to 30:00
+### SLIDE 16 · The scorecard · 28:00 to 29:00
 
 **SAY, in one breath**
 
@@ -519,7 +505,7 @@ Read it in one breath. The last line is the point of the slide.
 
 ---
 
-### SLIDE 18 · Proof: RadAssist · 30:00 to 37:00
+### SLIDE 17 · Proof: RadAssist · 29:00 to 34:00
 
 **SAY**
 
@@ -545,7 +531,7 @@ Open the live app. Hand the table to Luis. Do not demo features. Do not fill his
 
 ---
 
-### SLIDE 19 · Boundaries: the FDA question, answered by the statute · 37:00 to 38:00
+### SLIDE 18 · Boundaries: the FDA question, answered by the statute · 34:00 to 35:00
 
 **SAY**
 
@@ -573,7 +559,7 @@ One minute. The list is the answer. Do not argue it.
 
 ---
 
-### SLIDE 20 · Boundaries: what I will design around, stated before you ask · 38:00 to 39:00
+### SLIDE 19 · Boundaries: what I will design around, stated before you ask · 35:00 to 36:00
 
 **SAY**
 
@@ -607,7 +593,7 @@ Each constraint in a sentence or two, then move. Volunteering them is what separ
 
 ---
 
-### SLIDE 21 · The question you are going to ask · 39:00 to 40:00
+### SLIDE 20 · The question you are going to ask · 36:00 to 37:00
 
 Never cut this slide.
 
@@ -643,7 +629,7 @@ Five points, in order, no skipping. Then the "boring answer" line. Then the ques
 
 ---
 
-### SLIDE 22 · The most important slide · inside the close
+### SLIDE 21 · The most important slide · 37:00 to 38:00
 
 Never cut this slide.
 
@@ -675,7 +661,7 @@ Recommending against yourself is the single most credible thing you can do in fr
 
 ---
 
-### SLIDE 23 · What I am proposing · inside the close
+### SLIDE 22 · What I am proposing · 38:00 to 39:30
 
 Never cut this slide. This is the single most rehearsed line in the deck.
 
@@ -709,7 +695,7 @@ Say it once. Stop. Let the silence sit. Whoever speaks next is not you.
 
 ---
 
-### SLIDE 24 · If it were my money · inside the close
+### SLIDE 23 · If it were my money · 39:30 to 40:00
 
 Cut this slide second if you are running long. Keep the closing question even if you cut the slide.
 
@@ -741,7 +727,7 @@ Ask the closing question and then do not fill the silence. A man with his histor
 
 ---
 
-### SLIDE 25 · Thank you · the end
+### SLIDE 24 · Thank you · 40:00, then stop selling
 
 **SAY**
 
@@ -830,7 +816,7 @@ If dinner collapses to one minute, this is what survives. Say it as one paragrap
 
 ## Drill 6: the 5-minute version
 
-Cut slides 16 and 24 first. Never cut 21, 22, or 23. In five minutes you keep:
+Cut slide 15 first, then shorten the RadAssist demo on 17. Never cut 20, 21, or 22. In five minutes you keep:
 
 | Minute | Slides | What you say |
 |---|---|---|
@@ -855,16 +841,21 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 ## Before you leave the house
 
 - [ ] **DONE 2026-10-06, no action needed: the partner name is in.** Fernando Escarzaga appears in full on the two surfaces he will actually see, the deck title slide and the leave-behind header. First name only in the presenter notes, the RUNBOOK, and AUTOMATION-CANDIDATES, where it reads naturally. Every placeholder is gone, and all four PDFs were reprinted and re-synced to OneDrive and Google Drive.
-- [ ] **The fee is decided: $30,000, two phases, $12,000 then $18,000, gate at 90 days.** On slide 23 and on the leave-behind in writing. Say it once and stop.
+- [ ] **The fee is decided: $30,000, two phases, $12,000 then $18,000, gate at 90 days.** On slide 22 and on the leave-behind in writing. Say it once and stop.
 - [ ] **Print the leave-behind.** Two copies. Verified to print on one US Letter page from Chrome.
 - [ ] **Charge the laptop.** The deck runs with no wifi. RadAssist does not. Confirm radassist.app loads on your phone's hotspot before you sit down, or have screenshots ready.
 - [ ] **Open the deck in a browser.** Press N once to confirm notes mode works, press N again to hide it. Set the browser to full screen.
 - [ ] **Do not bring the Sherlock research document.** Everything you need from it is in this sheet, the deck notes, and the RUNBOOK.
 - [ ] **Bring this sheet, folded.** Part 1 face up.
 
-## Open items to decide before the dinner (found while building this sheet, not fixed)
+## Open items: ALL FOUR RESOLVED 2026-10-06
 
-- Slide 22 prints the word "platform" as its third bullet heading. The never-say strip says never say "platform." The spoken line in this sheet avoids the word. Decide whether to change the slide text or leave it on screen and simply not say it.
-- The deck's clock gives slide 21 the last minute (39:00 to 40:00) and assigns no time to slides 22 through 25. The RUNBOOK's table puts slides 19 to 25 in 37:00 to 40:00, which is seven slides in three minutes. Slides 22 and 23 are never-cut slides and each needs a real minute. Plan on the close running to about 43 minutes, or trim a minute from slides 9 and 12.
-- Slide 15's presenter note still says Fernando "will recognize this from running two centers." He ran one company with five centers. The spoken line in this sheet does not say it.
-- Two of the RUNBOOK's objection answers quote the words "scale" and "platform" inside the negation ("I am not going to tell you 'and then we scale it'"). The versions in this sheet avoid both words.
+These were found while building this sheet and have since been fixed in the deck and the RUNBOOK.
+Listed so you know what changed and why, not because anything is outstanding.
+
+- **The 40-minute clock now closes.** It used to give slide 21 the final minute and allocate nothing to the rest of the close, while the RUNBOOK crammed seven slides into three minutes. Fixed by folding the CMS slide into the AMA slide (one argument, told once) and taking two minutes off the RadAssist demo. **The close now owns 36:00 to 40:00**, with the engagement getting 38:00 to 39:30. The deck is 24 slides, not 25, and every slide number in this sheet has been renumbered to match.
+- **"A platform" is off the screen.** That bullet heading now reads "Anything built to resell to other centers," which makes the same promise without printing a never-say word in large type behind you.
+- **The "two centers" error is corrected** to one company with five El Paso locations, in the deck presenter note where it lived.
+- **The RUNBOOK objection answer no longer quotes "and then we scale it."** It names the consequence instead of the slogan.
+
+**The one judgment call left is yours, and it is not a defect:** if the night runs long, the cut order is slide 15, then the RadAssist demo, and never slides 20, 21, or 22.
