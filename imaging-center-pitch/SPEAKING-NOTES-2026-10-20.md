@@ -854,7 +854,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 ## Before you leave the house
 
-- [x] **~~Replace `[PARTNER NAME]`~~ DONE 2026-10-06.** Fernando Escarzaga. Full name on the two client-facing surfaces (deck title slide, leave-behind title tag + header); first name only in the six deck presenter notes, the RUNBOOK, and AUTOMATION-CANDIDATES, where it reads naturally. Zero placeholders remain in any file. Deck and leave-behind PDFs reprinted from the corrected HTML and re-synced to OneDrive and Google Drive.
+- [ ] **DONE 2026-10-06, no action needed: the partner name is in.** Fernando Escarzaga appears in full on the two surfaces he will actually see, the deck title slide and the leave-behind header. First name only in the presenter notes, the RUNBOOK, and AUTOMATION-CANDIDATES, where it reads naturally. Every placeholder is gone, and all four PDFs were reprinted and re-synced to OneDrive and Google Drive.
 - [ ] **The fee is decided: $30,000, two phases, $12,000 then $18,000, gate at 90 days.** On slide 23 and on the leave-behind in writing. Say it once and stop.
 - [ ] **Print the leave-behind.** Two copies. Verified to print on one US Letter page from Chrome.
 - [ ] **Charge the laptop.** The deck runs with no wifi. RadAssist does not. Confirm radassist.app loads on your phone's hotspot before you sit down, or have screenshots ready.
