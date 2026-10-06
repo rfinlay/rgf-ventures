@@ -1,6 +1,6 @@
 # Automation Candidates: Greenfield Outpatient Imaging Center, El Paso
 
-**Prepared:** 2026-10-01, for the 2026-10-20 dinner with Dr. Luis Ramos and [PARTNER NAME]
+**Prepared:** 2026-10-01, for the 2026-10-20 dinner with Dr. Luis Ramos and Fernando Escarzaga
 **Basis:** every evidence claim below traces to the Sherlock research brief of 2026-10-01 and its citation list. Where the research found no defensible evidence, this document says so instead of filling the gap.
 **Operator assumption:** a one-to-two-person shop (Rick, possibly one contractor), building for one site that Rick personally operates. Effort and risk ratings are for that shop, not for a vendor.
 
@@ -56,7 +56,7 @@
 - RIS order and scheduling feed (HL7 v2 ORM/SIU, or the RIS's own API; make this a contract term, see #3).
 - Payer FHIR Prior Authorization APIs, required of impacted payers by 2027-01-01 under CMS-0057-F. The rule covers Medicare Advantage, Medicaid and CHIP (fee-for-service and managed care), and QHP issuers on federally facilitated exchanges. It binds payers, not providers, and guarantees nothing about data quality or ease of connection. Almost 63% of medical plans report they are developing such an API (2025 CAQH Index, payer self-report).
 - Commercial plans outside the rule: EDI 278 or human submission.
-- Payer mix: not verified for El Paso. Ask [PARTNER NAME].
+- Payer mix: not verified for El Paso. Ask Fernando.
 
 **Compliance constraints.**
 - Business associate agreement with the center before any PHI flows (45 CFR 164.502(e); settled).
@@ -107,7 +107,7 @@
 
 **Effort:** Small to Medium, depending on billing data access. **Risk:** Low.
 
-**Dependencies.** RIS reporting export or database access; billing system export. Both are contract terms under #3. Ask [PARTNER NAME] what he wants on one page every Monday morning; that answer is the specification.
+**Dependencies.** RIS reporting export or database access; billing system export. Both are contract terms under #3. Ask Fernando what he wants on one page every Monday morning; that answer is the specification.
 
 **Compliance.** "Business analytics" and "practice and inventory management" are named in 21 U.S.C. 360j(o)(1)(A). PHI is present in the data, so the BAA and SB 1188 residency still apply, but no patient communication is involved.
 
