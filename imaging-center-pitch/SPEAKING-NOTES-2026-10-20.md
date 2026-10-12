@@ -70,6 +70,11 @@ Then stop. Let him answer. Write down the numbers he gives you. Everything you s
 | His founding year | Three sources, three years. Let him say it. |
 | His age | Never. |
 | "Jesus" | Fernando. |
+| "VA requires precertification" | Dropped 2026-09-08. Referral and SEOC govern. |
+| "TRICARE prior-auths MRI, CT, PET" | False outside Prime. Imaging not listed. |
+| "185,499 retirees live in El Paso" | Installation access. Wider than county. |
+| Any share of his imaging VOLUME by payer | Coverage shares only. He converts. |
+| "You open in April" as a fact | Say "your target." Luis confirms 10-15. |
 
 If he raises any of it himself: listen, say little, ask nothing, move on.
 
@@ -107,7 +112,7 @@ Today, every operational decision you make is cheap, and you can reverse it.
 
 On January first, the federal prior authorization APIs go live at the payers.
 
-Around April, you open. Whatever is in the vendor contracts by then is what you live with.
+Your target is to open around April. Whatever is in the vendor contracts by then is what you live with.
 
 Greenfield is the entire argument tonight. In six months there will be a RIS, a billing vendor, a phone system, and people hired around whatever those systems cannot do. Nothing I am going to show you can be done this cheaply after you open."
 
@@ -281,13 +286,21 @@ The two percentages at the bottom are the bridge to the agent. Slow down on "nob
 
 On January first next year, they have to operate a FHIR Prior Authorization API, plus Patient Access, Provider Access, and Payer-to-Payer APIs.
 
-You open about three months after that, with no legacy process to unwind. And almost 63% of medical plans say they are already building the prior authorization API ahead of the deadline."
+Your target opening is about three months after that, with no legacy process to unwind. And almost 63% of medical plans say they are already building the prior authorization API ahead of the deadline."
 
 **THEN SAY (two caveats, both mandatory)**
 
 "The rule binds payers, not providers. It creates APIs my side can consume. It does not obligate your center to do anything, and it guarantees nothing about data quality or how easy the connection is."
 
-"And it covers Medicare Advantage, Medicaid and CHIP, and the exchange plans. Not every commercial plan."
+"CMS-0057-F binds Medicare Advantage, Medicaid, CHIP and exchange plans on January 1, 2027. It does not reach employer-sponsored plans, TRICARE, or VA. So I am not selling you a compliance deadline. I am pointing out that the payers who move first set the standard the rest follow, and your build window lands exactly on that transition."
+
+The second caveat is the demotion, and it is deliberate: the rule is the reason the window is now, not the reason to do this. Employer-sponsored coverage is the largest single block in El Paso County (268,142 people, 31.8% of the insured universe), and the rule does not reach it. If you let him find that, the regulatory claim breaks. If you say it first, it reads as command of the material.
+
+**IF THE FOUR-CHANNEL OBJECTION IS RAISED DIRECTLY** ("most of our volume will be Fort Bliss and the VA")
+
+"I looked that up, because you would know better than I would. In El Paso County, TRICARE-only and VA-only coverage together are under five percent of the insured population, about thirty-nine thousand people out of eight hundred forty-four thousand. Commercial and Medicare are where the volume and the margin are. The military channels matter for front-office workflow, not for the business case."
+
+Exact figures if pressed: TRICARE-or-military-only 33,795 (4.0%), VA-only 5,037 (0.6%), combined 4.6% of 844,384 insured; employer-based plus direct-purchase 320,020 (37.9%). ACS 2024 5-year, table B27010, El Paso County. These are coverage shares of residents, never a share of his studies. Hand him the conversion: "Volume will skew older than coverage does; you would know the conversion better than I would." The number that matters more to his pro forma than either military channel: 21.6% uninsured, about 183,000 people. Self-pay policy and point-of-service collection are the real operational factor. Full plan-by-plan TRICARE and VA language is in the RUNBOOK under the Fort Bliss objection.
 
 **DEPTH / IF ASKED**
 
@@ -299,7 +312,7 @@ Commercial plans outside the rule: the design falls back to EDI 278 where suppor
 
 A small signal that you read the rule and not a summary: drugs are excluded from CMS-0057, and CMS proposed to close that gap in April 2026. Irrelevant to imaging. Use it only if the conversation is already in the rule.
 
-Ask here: "What is your payer mix going to look like?" Payer mix means what share of his studies will bill to each payer type: commercial insurers, Medicare Advantage, traditional Medicare, Medicaid and CHIP, exchange plans, and self-pay (the five groups are spelled out at slide 2). The rule reaches Medicare Advantage, Medicaid and CHIP, and the exchange plans. If he expects heavy commercial, say so out loud and put less weight on the January date. If he expects heavy Medicare Advantage and Medicaid, which is plausible in El Paso, the January date carries more weight. El Paso payer mix and uninsured rate were not verified by the research. Do not quote either.
+Ask here: "What is your payer mix going to look like?" Payer mix means what share of his studies will bill to each payer type: commercial insurers, Medicare Advantage, traditional Medicare, Medicaid and CHIP, exchange plans, and self-pay (the five groups are spelled out at slide 2). The rule reaches Medicare Advantage, Medicaid and CHIP, and the exchange plans. If he expects heavy commercial, say so out loud and put less weight on the January date. If he expects heavy Medicare Advantage and Medicaid, which is plausible in El Paso, the January date carries more weight. County coverage shares are verified as of 2026-10-12 (ACS 2024 5-year, B27010) and are in the RUNBOOK; quote them as coverage of residents, never as his volume. Medicare Advantage penetration in El Paso is NOT established and is the number that decides how much of his Medicare book the rule touches. Name it as a diligence item: "MA penetration is the number that decides how much of your Medicare book the new rule touches. I'd pull that before we price Phase 2." Do not guess it.
 
 **BEAT**
 
@@ -972,6 +985,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 - [ ] **Open the deck in a browser.** Press N once to confirm notes mode works, press N again to hide it. Set the browser to full screen.
 - [ ] **Do not bring the Sherlock research document.** Everything you need from it is in this sheet, the deck notes, and the RUNBOOK.
 - [ ] **Bring this sheet, folded.** Part 1 face up.
+- [ ] **Ask Luis on 10-15 to confirm the opening window.** "Target 2027-04" on slides 2 and 8 is a projection, not a confirmed date. If he gives a different window, both timeline slides get re-rendered before the dinner, and the slide 8 "window is now" framing gets stronger if the opening lands after 2027-01-01 and weaker if before. The two regulatory dates do not move.
 
 ## Open items: ALL FOUR RESOLVED 2026-10-06
 
