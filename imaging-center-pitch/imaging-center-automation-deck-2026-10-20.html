@@ -213,7 +213,7 @@
 <p class="time">3:00 to 5:00</p>
 <p>This is the slide that proves you are on their side of the table. It does not matter whether they hire you. Fernando has negotiated vendor contracts twice and will recognize this instantly.</p>
 <p>Say: "Whatever you decide about me, do this. I will give you the exact language."</p>
-<p>If asked why DICOM specifically: it is the one standardized surface that does not depend on vendor goodwill. HL7 v2 is what the RIS will actually speak. FHIR on the RIS side is aspirational at a small center; the FHIR that matters is on the payer side.</p>
+<p>If asked why DICOM specifically: it is the one standardized surface that does not depend on vendor goodwill. HL7 v2 is what the RIS will actually speak. FHIR on the RIS side: do not pay extra for it and do not plan around it; the FHIR that matters is on the payer side. If a RIS vendor claims FHIR, require it be named and demonstrated before signature at no additional interface fee.</p>
 </aside>
 </section>
 
@@ -332,7 +332,7 @@
 <p class="time">17:00 to 19:00</p>
 <p>This is the opposite of the scare statistic. Do not quote any inflated imaging denial rate; Fernando has reconciled real remittances and will know. The point is the labor goes into a process that nearly always says yes.</p>
 <p class="caveat">"That is one institution, one modality, four years. The national all-service denial rate from the KFF data was 7.7%. Both say the same thing: most of the work is approvals."</p>
-<p>Recommendation: BUILD. This is the lead product. The vendor category exists (Availity, Waystar, Cohere, Humata) but is built for health systems; a single site is an awkward customer for all of them. If he raises Olive AI: yes, it raised enormous money and shut down in 2023, selling its prior auth assets to Waystar and Humata. It sold broad RPA to hospital systems on long implementation cycles. That is close to the opposite of one person building a narrow agent for one site he can watch directly.</p>
+<p>Recommendation: BUILD. This is the lead product. The vendor category exists (Availity, Waystar, Cohere, Humata) but is priced and implemented for health systems and large groups; at his size, one center or three, he is the customer they take last and configure least. If he says three centers: the spec gets written once and deployed three times, so three is an argument for the specification, not against it. If he raises Olive AI: yes, it raised enormous money and shut down in 2023, selling its prior auth assets to Waystar and Humata. It sold broad automation to hospital systems on long implementation cycles. That is close to the opposite of one person building a narrow agent for one site he can watch directly.</p>
 </aside>
 </section>
 
@@ -461,18 +461,21 @@
   <table>
     <thead><tr><th>Candidate</th><th>My recommendation</th><th>Why</th></tr></thead>
     <tbody>
-      <tr><td>Prior authorization and eligibility</td><td class="tag build">Build</td><td>Strongest evidence, no vendor fits a single site, federal APIs arrive 2027-01-01.</td></tr>
+      <tr><td>Prior authorization and eligibility</td><td class="tag build">Build</td><td>Strongest evidence, vendors built for someone much larger, federal APIs arrive 2027-01-01.</td></tr>
       <tr><td>Scheduling: reminders and self-scheduling</td><td class="tag buy">Buy (the RIS)</td><td>Commodity. Bundled in modern imaging RIS products.</td></tr>
       <tr><td>Scheduling: cancellation backfill</td><td class="tag build">Build, small</td><td>Ranked waitlist on top of the RIS. Addresses the 22.3%, not the 2.0%.</td></tr>
       <tr><td>Answering patients (voice)</td><td class="tag integrate">Buy, I integrate</td><td>Funded category, highest blast radius, Spanish bar is unforgiving.</td></tr>
       <tr><td>Records: inbound requests, outbound priors</td><td class="tag build">Build, selectively</td><td>Hard deadlines, unbillable retrieval labor, unsolved outbound gap.</td></tr>
       <tr><td>Owner reporting</td><td class="tag build">Build</td><td>Custom by nature. Smallest compliance footprint.</td></tr>
+      <tr><td>Billing, claims, and the eligibility feed</td><td class="tag buy">Buy</td><td>Commodity clearinghouse function. I evaluate reachability and contract terms, not the claims work. Row 1 reads the feed; it does not replace the vendor.</td></tr>
     </tbody>
   </table>
 </div>
 <aside class="notes">
 <p class="time">28:00 to 29:00</p>
-<p>Read it in one breath. Two of the things he asked about, you are telling him to buy. That is the point of the slide.</p>
+<p>Read it in one breath. Three of the seven, you are telling him to buy. That is the point of the slide: recommending against yourself is the most credible thing on it.</p>
+<p>The billing row exists so the billing evaluation on the engagement slide has a home. Fernando has reconciled real remittances for twenty years; billing is the area he knows best, so this is the row he is most likely to stop you on. The answer: "Billing is a buy and I am not touching the claims work. What I evaluate is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system I want to build depends on them, and whether the four access terms go into that contract the same way they go into the RIS contract."</p>
+<p><strong>Watch the seam between row 1 and this row, because it is the one place the slide can look self-contradictory.</strong> Row 1 (build) includes the eligibility check that decides whether a study needs authorization. This row (buy) is the billing system and the EDI 270/271 feed it exposes. If he presses: "I am not building an eligibility system. Your billing vendor already has that transaction; it is the oldest standardized surface in this business. What I build is the thing that reads it and acts on it. That is why the access terms in that contract matter to me."</p>
 </aside>
 </section>
 
@@ -508,6 +511,7 @@
 <p>Lead with the statutory list, not with any engineering rule about orchestration. The list contains the words "appointment schedules" and "determination of health benefit eligibility." That is a complete answer and it invites no debate.</p>
 <p>The one real boundary: the moment an agent touches image data interpretively or recommends which study to order, it leaves this exclusion. Protocol selection and clinical appropriateness are the live hazards in imaging. Say explicitly that the agents stop there.</p>
 <p>Texas also requires disclosure when AI is used for diagnostic purposes (SB 1188). None of these five are diagnostic. Another reason to keep the line clean.</p>
+<p>The owner agent (reporting he can ask questions of) sits inside this exclusion: business analytics and practice management, by name. It reads operational data and never touches a patient, an image, a protocol, or a study choice. Anything about the business, nothing about a patient's care.</p>
 </aside>
 </section>
 
@@ -547,7 +551,7 @@
   <h2>What happens when I get hit by a bus?</h2>
   <ul class="plain">
     <li><strong>You own the specification.</strong> It is written for a competent engineer who has never met me, and it is the deliverable of the design engagement whether or not I build anything.</li>
-    <li><strong>You own the code.</strong> Anything built lives in a repository under your organization's account, with my access revocable by you.</li>
+    <li><strong>You own the code.</strong> Everything specific to this center lives in a repository under your organization's account, with my access revocable by you. Existing product of mine that I extend for you, you hold under a perpetual license with the source in your hands.</li>
     <li><strong>Runbooks, not memory.</strong> Every operational procedure is written down: how it runs, how it fails, who to call at each vendor.</li>
     <li><strong>No proprietary runtime.</strong> Standard interfaces (HL7 v2, DICOM, payer APIs) and a named model vendor under its own BAA. Any integrator can take it over.</li>
     <li><strong>Buy where buying is right.</strong> The voice vendor and the RIS are yours directly. Nothing routes through me that does not have to.</li>
@@ -557,7 +561,9 @@
 <p class="time">36:00 to 37:00</p>
 <p>This slide may matter more than any number. Fernando's bar for AI may be low. His bar for vendors is high, and he has been left holding systems by vendors before.</p>
 <p>Say: "The design engagement exists so that this question has a boring answer. If I disappear in month four, you have a specification you can hand to anyone. If I disappear in year two, you have the code, the runbooks, and the vendor relationships in your name."</p>
-<p>If he asks about escrow: direct ownership beats escrow. There is nothing to escrow if the repository is already his.</p>
+<p>Raise the ownership distinction yourself, inside point two, before he finds it in a redline: "Everything specific to this center is yours outright, in your repository. Some of what I would build is existing product of mine that I would extend for you. That part you get under a perpetual license you can never lose, with the source in your hands, so you can run it and change it forever, even if I disappear. You are never hostage to me. What you are not buying is the right to sell my product to someone else. If that distinction is a problem, tell me tonight and I will price it differently."</p>
+<p>If he asks why the product pieces are not simply his: "It is less expensive for you because I keep the product rights. If you want those too, that is a different number, and I would rather not go there tonight."</p>
+<p>If he asks about escrow: direct ownership beats escrow for the center's code, and for the product pieces he already holds the source under the license, which is what escrow is for, without the fight.</p>
 </aside>
 </section>
 
@@ -569,14 +575,15 @@
   <ul class="plain">
     <li><strong>A custom voice agent.</strong> Buy a vendor. I will specify, evaluate, and integrate it, and I will tell you when it is not good enough in Spanish.</li>
     <li><strong>Reminders, self-scheduling, and intake forms.</strong> Your RIS does this. Make sure the contract says so, then use it.</li>
-    <li><strong>Anything built to resell to other centers.</strong> I am building for this one, and I will be the person who operates it.</li>
+    <li><strong>Anything built to resell to other centers.</strong> This center is the reference implementation and the priority. If I ever take on a second site, your service terms do not change, in writing.</li>
     <li><strong>Anything that touches the image clinically.</strong> Not from me, not from anyone, without an FDA pathway.</li>
   </ul>
 </div>
 <aside class="notes">
 <p class="time">37:00 to 38:00</p>
 <p>The honest close. Say the first line slowly. Recommending against yourself is the single most credible thing you can do in front of someone who has sat through twenty years of vendor decks.</p>
-<p>On "platform": he has heard "and then we scale it" from everyone who ever pitched him, and he knows it means the person is about to become unavailable to his center. Pitch a bespoke build you personally operate.</p>
+<p>On the third bullet: he has heard "and then we expand it" from everyone who ever pitched him, and he knows it means the person is about to become unavailable to his center. Say: "I am not building a product to sell to other centers off the back of your build. I keep the rights to my own product, and that is how the price stays where it is. What you get is a commitment about you: this center is the reference implementation, you are the priority, and if I ever take on a second site, your service terms do not change, in writing." A flat "no" would be false under the ownership structure on the previous slide. Never say the one-word heading from the never-say strip, even in the negative.</p>
+<p>If asked "could you just build our RIS": no. A RIS is a system of record; if it stops, the center stops, and that needs a vendor with a support organization, not one person. Your value on the RIS is on their side of the table, picking it and negotiating the terms so they own their data.</p>
 </aside>
 </section>
 
@@ -613,6 +620,11 @@
 <p><strong>Do not</strong> break out hours, name an hourly rate, or justify the number at length. Explaining a price invites negotiation on the explanation.</p>
 <p><strong>If he pushes on price: shorten the term, never cut the rate.</strong> Offer Phase 1 alone and decide the back half at ninety days. That is already the structure, so the answer is "that is exactly what the gate is for."</p>
 <p>The decision in the room is twelve thousand, not thirty. Phase 1 is also the half with the real deadline, because it has to land before vendor signatures. If it slips, the leverage is gone.</p>
+<p>If he asks why the number is what it is, one sentence: "It stays where it is because I keep the rights to my own product, and you hold it under a license you cannot lose." Phase 2 is fixed-price for a specification; the owner agent is inside the eighteen, not on top of it. <strong>Each specification carries its own fixed build price</strong>, and that is what makes "we want that one built" answerable later without reopening a negotiation.</p>
+<p><strong>"Does that change at three centers?" answered here, so you never page back to slide 9.</strong> "No. The design engagement is thirty thousand whether it is one center or three. The specification gets written once and deployed three times, and the four contract terms get negotiated once across all three contracts. What is per-site is the build, and that is priced from the spec after you open." Then stop. A buyer starts counting centers the moment he hears a price, so expect this in the same breath.</p>
+<p><strong>If they push for something of yours live by a date: do not promise one.</strong> The infrastructure was never priced: host, database, LLM API bill that scales with use, auth, backups, monitoring, all a recurring line in their budget forever. Convert the push into scope: "If you want something live before a specific date, tell me which piece and we'll scope it." Not a no, not a yes-with-a-date.</p>
+<p><strong>Billing is charged for in Phase 1, so be ready to justify it.</strong> It is now a Buy row on the scorecard. "Billing is a buy and I am not touching the claims work. What I evaluate is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system depends on them, and whether the four access terms go into that contract the same way they go into the RIS contract."</p>
+<p><strong>Volunteer the staffing point, verbally, do not wait to be asked.</strong> "Staff for the manual workflow at opening. I am not going to tell you to hire thin against a date of mine." Never say automation reduces headcount; say it changes what your people do. A staffing plan tied to the roadmap is Phase 1 work, but it stays off this slide until Luis weighs in.</p>
 <p>Contract through RGF Global Ventures LLC, never personally.</p>
 </aside>
 </section>

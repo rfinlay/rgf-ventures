@@ -44,13 +44,15 @@
 - CMS estimated its prior authorization rule would save at least 220 million provider hours and $16 billion over ten years (CMS-0057-F, 89 FR 8758, Regulatory Impact Analysis). A projection, not measured savings.
 - Of 17,913 outpatient MRI prior authorization requests at one institution over 2019 to 2022, 4.94% were denied (Harrer et al., J Am Acad Orthop Surg 2025, PMID 39729599). The process approves about 95% of what it touches, which is the profile of a process to automate rather than staff.
 
-**Recommendation: BUILD. This is the lead product.** The vendor category (Availity, Waystar, Rhyme, Cohere Health, Infinitus, Humata Health) is oriented to health systems and large groups, and much of it is payer-funded. A single site is an awkward customer for all of them. The appeal gap is a workflow failure, not a technology gap: nobody has time to file.
+**Recommendation: BUILD. This is the lead product.** The vendor category (Availity, Waystar, Rhyme, Cohere Health, Infinitus, Humata Health) is priced and implemented for health systems and large groups, and much of it is payer-funded. At this center's size, whether that is one site or three, it is the customer those vendors take last and configure least. The appeal gap is a workflow failure, not a technology gap: nobody has time to file. If the partners open three centers, the specification is written once and deployed three times, which makes the design engagement more valuable, not less.
 
-**What the agent does.** Detects authorization-required orders at scheduling. Assembles the documentation packet from the referral and the RIS. Submits via the payer's API where one exists (see dependencies), via EDI 278 where supported, and otherwise prepares a complete packet for a human to submit. Tracks every open request against the 7-calendar-day standard and 72-hour expedited timeframes that bind impacted payers from 2026-01-01. On denial, drafts the appeal with the clinical rationale and queues it for a human signature. Reports the appeal rate and overturn rate weekly, which is the number the owner should watch.
+**What the agent does.** Detects authorization-required orders at scheduling. Assembles the documentation packet from the referral and the RIS. Submits via the payer's API where one exists (see dependencies), via EDI 278 where supported, and otherwise prepares a complete packet for a human to submit. Tracks every open request against the 7-calendar-day standard and 72-hour expedited timeframes that bind impacted payers from 2026-01-01. On denial, drafts the appeal with the clinical rationale and queues it for a human signature. Reports the appeal rate and overturn rate weekly, which is the number the owner should watch; the appeal rate is the headline of the Monday owner report (#4), because it starts near zero for a new center, is measurable from week one, and is entirely attributable to the system. The denied-and-never-appealed volume is abandoned revenue, not labor savings; no recovered-dollar forecast is possible without the center's payer mix and denial volume, and none is promised.
+
+**How it is built.** Two deliverables, per the architecture standard at the end of this document: a deterministic service (order detection, packet assembly, submission, deadline tracking) that works without any model, and an agent surface that operates it. The service is what goes in the specification and what any integrator can take over. The agent is the replaceable part.
 
 **Effort:** Large. The orchestration logic is Medium; payer connectivity is what makes it Large, because each payer and radiology benefit manager is its own integration.
 
-**Risk:** Medium. A missed deadline delays a scan; it does not harm a patient directly. A human signs every submission and every appeal in phase one.
+**Risk:** Medium. A missed deadline delays a scan; it does not harm a patient directly. A human signs every submission and every appeal in phase one. That sign-off is deliberate design and the FDA boundary, not a cost. **Graduation criterion, stated in the specification:** sign-off moves from every item to a sample only after a defined volume at a defined accuracy, measured, and only with the owner approving the change. Until then, every item.
 
 **Dependencies.**
 - RIS order and scheduling feed (HL7 v2 ORM/SIU, or the RIS's own API; make this a contract term, see #3).
@@ -103,13 +105,15 @@
 
 **Evidence it is costly.** **None found, and the research says so plainly.** There is no benchmark literature on what imaging center owners want from dashboards, and no study of the gap between RIS-native reporting and owner needs. The structural claim is defensible without a study: RIS reporting is built for radiology operations, and the owner's view requires joining RIS data to billing data, which are usually different systems.
 
-**Recommendation: BUILD.** Custom by nature because it encodes one owner's definition of the numbers that matter. Smallest compliance envelope of the five (no patient-facing surface). Cheapest to build. It is the artifact the owner personally looks at, which keeps Rick in the room. The reader-reconciliation view is the same engine and already has a customer in Luis.
+**Recommendation: BUILD.** Custom by nature because it encodes one owner's definition of the numbers that matter. Smallest compliance envelope of the five (no patient-facing surface). Cheapest to build. It is the artifact the owner personally looks at, which keeps Rick in the room. The reader-reconciliation view is the same engine and already has a customer in Luis. The appeal rate from #1 is the headline of the Monday report.
+
+**The owner agent (decided by Rick, 2026-10-06).** On top of the reporting service, a read-only conversational agent the partners can ask open questions of: volumes, cancellations, no-shows, payer mix, appeal rate, reader turnaround. It reads the center's own database and answers in plain words. Lowest risk of any agent in this inventory: read-only, no action on the world, no patient contact, no clinical surface, and it sees nothing the owner does not already see. Because it reads the center's own data, the AI vendor's BAA exclusions (Computer Use, Web Fetch) do not apply to it. Specified in Phase 2 at no change to the Phase 2 price. Strongest candidate for the first demonstration.
 
 **Effort:** Small to Medium, depending on billing data access. **Risk:** Low.
 
 **Dependencies.** RIS reporting export or database access; billing system export. Both are contract terms under #3. Ask Fernando what he wants on one page every Monday morning; that answer is the specification.
 
-**Compliance.** "Business analytics" and "practice and inventory management" are named in 21 U.S.C. 360j(o)(1)(A). PHI is present in the data, so the BAA and SB 1188 residency still apply, but no patient communication is involved.
+**Compliance.** "Business analytics" and "practice and inventory management" are named in 21 U.S.C. 360j(o)(1)(A). PHI is present in the data, so the BAA and SB 1188 residency still apply, but no patient communication is involved. The owner agent stays inside the same exclusion: it answers questions about the business and never reads an image, selects a protocol, recommends a study, or addresses a patient's care.
 
 ---
 
@@ -253,8 +257,26 @@ Alternatively: do not do it at all in phase one, and let the front desk answer t
 
 ---
 
+## Architecture standard: the software is the capability, the agent is the operator
+
+Decided by Rick, 2026-10-06, and applied to every build in this inventory. Every automation is two deliverables. First, a deterministic service with a clean interface that works without any model: order detection, packet assembly, deadline tracking, the waitlist ranking, the records clock, the reporting joins. Second, an agent surface that operates the service. The service is auditable, testable, survives any model change, is what the specification describes, and is what any integrator can take over, which is what keeps the continuity promise honest. The agent is the replaceable part: the model vendor, the BAA envelope, and the pricing can all change without breaking the center.
+
+Three kinds of agent, by blast radius:
+
+| Tier | Agent | Risk | Status |
+|---|---|---|---|
+| A | Owner agent (#4): read-only questions over operational data | Lowest. Reads, never acts. No patient contact, no clinical surface. Named in the FDA exclusion as business analytics and practice management. | Specified in Phase 2. No price change. |
+| B | Workflow agents (#1, #5, #6): act on the world, a human signs | Medium. Bounded, human-signed, with a written graduation criterion. | As already specified. |
+| C | Patient-facing voice (#9) | Highest. Chest pain and Spanish are safety and reputation events. | Buy from a vendor. Unchanged. |
+
+A locally hosted model is a specification-phase option for the no-API payer portal (it keeps PHI inside the center's environment and sidesteps the vendor BAA's Computer Use exclusion), for SB 1188 residency, and for high-volume low-complexity classification. It does not replace reasoning-heavy work such as drafting an appeal. Portal automation is the most fragile item in this inventory and is not promised at the dinner.
+
+## Ownership, in three tiers
+
+Decided by Rick, 2026-10-06. The specification: the center's outright. Center-specific code (configuration, workflows, integrations, data mappings, reports): the center's outright, in a repository under its organization, with Rick's access revocable. Existing product of Rick's that he extends for the center (the prior auth engine, the backfill engine, the reporting core): Rick's, licensed to the center perpetually, irrevocably, and transferably, with source, so it can run and modify the code for its own operations indefinitely. The center cannot resell it. This is what keeps the engagement price where it is.
+
 ## What this inventory deliberately does not contain
 
 - Any cost-structure percentage for an imaging center. Ask Fernando for his own actual numbers from Southwest X-Ray. Do NOT name Desert Imaging; he did not found it.
 - Any CAQH per-transaction cost, vendor price, HL7 interface fee range, imaging prior auth denial rate above the verified 4.94% and 7.7%, percentage of advanced imaging requiring authorization, Texas HB 300 day-count or training interval, records cost per request, or count of independent imaging centers. The research could not verify any of them. See Section 8 of the research brief.
-- A market-sizing argument. This is a bespoke build for one center that Rick personally operates. Consolidation (RadNet, SimonMed, Akumin, Rayus, Touchstone, US Radiology Specialists) is removing the single-site prospects that would be a market, and the partner lived that from the selling side.
+- A market-sizing argument. This is a build for one center, which is the reference implementation, operated by Rick, with that center's service terms fixed in writing. Consolidation (RadNet, SimonMed, Akumin, Rayus, Touchstone, US Radiology Specialists) is removing the single-site prospects that would be a market, and the partner lived that from the selling side.
