@@ -1,10 +1,14 @@
-# Plan: Full-Deck Walkthrough with Luis, Wed 2026-10-15, 2:00 PM
+# Plan: Full-Deck Walkthrough with Luis, **Thu 2026-10-15, 2:00 PM MT**
+
+> **CONFIRMED by Rick 2026-10-12.** The date is 2026-10-15 at 2:00 PM MT, which is a **Thursday**;
+> earlier drafts of this file labeled it Wednesday. The date was always right, the weekday was wrong.
+> Decisions applied from Rick's internal review: `DECISIONS-APPLIED-2026-10-12.md`.
 
 **Decided by Rick 2026-10-10 (voice).** Supersedes the "30-minute solo prep" framing in STATUS.md.
 
 ## The decision
 
-Rick is asking Luis for **Wed 2026-10-15 at 2:00 PM, one hour, possibly two**, and walking the
+Rick has **Thu 2026-10-15 at 2:00 PM MT, one hour, possibly two**, and walking the
 **FULL 25-slide deck including the numbers**. Not the short version. Not a discovery session.
 
 **Why this is the right call.** The STATUS.md open question was "solo prep or Fernando pitch?" Rick has
@@ -36,7 +40,7 @@ Moving the walkthrough to 10-15 does **not** move the Fernando meeting, which Ri
 as Oct 20." That leaves **five days** between Luis's feedback and the real room. Every change Luis asks
 for has to be buildable in five days. Plan the session to produce *decisions*, not a wish list.
 
-## Pre-session build (before Wed 10-15, 2:00 PM)
+## Pre-session build (before Thu 10-15, 2:00 PM MT)
 
 | # | Item | Why | Status |
 |---|---|---|---|
@@ -85,8 +89,7 @@ actually consume these APIs or whether clearinghouses re-intermediate them.
 
 ## Open items for Rick
 
-1. **Confirm 2:00 PM Wed 10-15 with Luis.** Luis offered "13, 14 or 15, anytime" on 10-06 and has had
-   no answer for four days. Rick sends the text.
+1. ~~Confirm 2:00 PM 10-15 with Luis.~~ **DONE, confirmed 2026-10-12: Thu 10-15, 2:00 PM MT.**
 2. **Is Fernando in the 10-15 room or not?** Luis said "meet at my house." If Fernando is there, this is
    not a rehearsal and the whole plan changes.
 3. **ASK 11 is still unanswered** — "access to three imaging centers," which three, are they running
