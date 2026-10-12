@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposed Architecture: Operational Automation for a Greenfield Imaging Center</title>
+<style>
+  :root {
+    --paper: #faf8f3;
+    --ink: #1c1b18;
+    --ink-soft: #4a4740;
+    --ink-faint: #8a867c;
+    --rule: #d9d4c7;
+    --accent: #7a1f2b;
+    --accent-soft: #f1e4e5;
+    --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #e9e6df; color: var(--ink); font-family: var(--sans); }
+  body { font-size: 10px; line-height: 1.3; }
+
+  /* one fixed 13.33in x 7.5in canvas per page; everything inside is positioned in px */
+  .page { position: relative; width: 13.33in; height: 7.5in; background: var(--paper); margin: 0.3in auto; overflow: hidden; }
+  @media print {
+    @page { size: 13.33in 7.5in; margin: 0; }
+    html, body { background: #fff; }
+    .page { margin: 0; page-break-after: always; break-after: page; }
+    .page:last-of-type { page-break-after: auto; break-after: auto; }
+  }
+
+  /* header and footer, shared */
+  .hdr { position: absolute; left: 40px; right: 40px; top: 22px; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--ink); padding-bottom: 6px; }
+  .kicker { font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 4px; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 24px; line-height: 1.1; letter-spacing: -0.01em; }
+  .sub { font-size: 10.5px; color: var(--ink-soft); margin-top: 3px; max-width: 900px; }
+  .who { text-align: right; font-size: 9px; color: var(--ink-soft); line-height: 1.4; }
+  .who b { color: var(--ink); font-weight: 600; }
+  .ftr { position: absolute; left: 40px; right: 40px; bottom: 14px; border-top: 1px solid var(--rule); padding-top: 5px; display: flex; justify-content: space-between; font-size: 8.5px; color: var(--ink-faint); }
+  .ftr b { color: var(--ink-soft); font-weight: 600; }
+
+  /* absolutely positioned diagram elements */
+  .abs { position: absolute; }
+  .band { position: absolute; left: 40px; width: 40px; font-size: 8.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); font-weight: 600; }
+  .band span { display: block; transform: rotate(-90deg); transform-origin: left top; white-space: nowrap; position: absolute; left: 10px; }
+  .box { position: absolute; border: 1.5px solid var(--ink); background: #fff; padding: 5px 6px 5px 8px; font-size: 8.6px; line-height: 1.25; color: var(--ink-soft); overflow: hidden; }
+  .box .t { font-size: 10px; font-weight: 600; color: var(--ink); line-height: 1.2; margin-bottom: 2px; }
+  .box.agent .t { padding-right: 40px; }
+  .box .n { font-size: 8px; color: var(--ink-faint); letter-spacing: 0.06em; }
+  /* buy versus build is the spine: built things are solid and warm, bought things are dashed and cool */
+  .box.build { border-color: var(--accent); background: var(--accent-soft); }
+  .box.build .t { color: var(--accent); }
+  .box.buy { border-style: dashed; border-color: var(--ink-faint); background: #fff; }
+  .box.free { border-style: double; border-width: 3px; border-color: var(--ink); background: var(--paper); }
+  .box.declined { border-style: dotted; border-color: var(--ink-faint); background: repeating-linear-gradient(135deg, #fff 0 6px, #f1efe9 6px 8px); color: var(--ink-faint); }
+  .box.declined .t { color: var(--ink-faint); text-decoration: line-through; text-decoration-thickness: 1px; }
+  .box.user { border-radius: 14px; border-color: var(--ink-soft); background: var(--paper); }
+  .box.ext { background: var(--paper); border-color: var(--ink-soft); }
+  .box.agent { border-radius: 4px; }
+  /* ownership stripe on the left edge */
+  .own-rick { border-left: 7px solid var(--accent) !important; }
+  .own-center { border-left: 7px solid var(--ink) !important; }
+  .own-mixed { border-left: 7px solid !important; border-image: linear-gradient(to bottom, var(--accent) 0 50%, var(--ink) 50% 100%) 1 !important; }
+  /* agent tier pill */
+  .tier { position: absolute; top: 4px; right: 5px; font-size: 8px; font-weight: 700; letter-spacing: 0.06em; padding: 1px 6px; border-radius: 9px; border: 1.5px solid var(--ink); background: #fff; color: var(--ink); line-height: 1.3; }
+  .tier.a { background: #fff; border-color: var(--ink-soft); }
+  .tier.b { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .tier.c { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .tier.none { color: var(--ink-faint); border-color: var(--rule); background: #fff; }
+  /* human signature gate */
+  .gate { position: absolute; font-size: 8px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); background: #fff; border: 2px solid var(--accent); padding: 2px 7px; transform: skewX(-12deg); white-space: nowrap; }
+  .gate span { display: inline-block; transform: skewX(12deg); }
+  /* integration bus */
+  .bus { position: absolute; background: var(--ink); color: #efece4; }
+  .bus .cell { position: absolute; top: 0; height: 100%; padding: 5px 5px; font-size: 8px; line-height: 1.25; border-left: 1px solid rgba(255,255,255,0.18); }
+  .bus .cell b { display: block; font-size: 8px; color: #e9c9ce; font-weight: 600; margin-bottom: 1px; }
+  .buslbl { position: absolute; font-size: 8.5px; color: var(--ink-soft); }
+  .buslbl b { color: var(--ink); font-weight: 600; }
+  /* wall */
+  .wall { position: absolute; background: repeating-linear-gradient(45deg, var(--accent) 0 4px, #fff 4px 8px); border-left: 2px solid var(--accent); border-right: 2px solid var(--accent); }
+  .walllbl { position: absolute; font-size: 8.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 700; white-space: nowrap; transform: rotate(-90deg); transform-origin: left top; }
+  /* compliance strip */
+  .comp { position: absolute; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); display: flex; }
+  .comp div { flex: 1; padding: 4px 8px; font-size: 8.5px; color: var(--ink-soft); border-right: 1px solid var(--rule); line-height: 1.25; }
+  .comp div:last-child { border-right: 0; }
+  .comp b { color: var(--ink); font-weight: 600; }
+  /* legend */
+  .legend { position: absolute; display: flex; gap: 14px; font-size: 8.5px; color: var(--ink-soft); align-items: center; flex-wrap: wrap; }
+  .legend .k { display: inline-flex; align-items: center; gap: 5px; }
+  .legend .sw { width: 22px; height: 12px; border: 1.5px solid var(--ink); background: #fff; display: inline-block; }
+  .legend .sw.build { border-color: var(--accent); background: var(--accent-soft); }
+  .legend .sw.buy { border-style: dashed; border-color: var(--ink-faint); }
+  .legend .sw.free { border-style: double; border-width: 3px; }
+  .legend .sw.declined { border-style: dotted; border-color: var(--ink-faint); background: repeating-linear-gradient(135deg, #fff 0 4px, #f1efe9 4px 6px); }
+  .legend .sw.rick { border: 0; border-left: 7px solid var(--accent); width: 10px; }
+  .legend .sw.center { border: 0; border-left: 7px solid var(--ink); width: 10px; }
+  .legend .pill { position: static; display: inline-block; }
+  .legend .gate { position: static; display: inline-block; }
+  .legend .lt { font-weight: 600; color: var(--ink); margin-right: 2px; letter-spacing: 0.08em; text-transform: uppercase; font-size: 8px; }
+
+  svg.wires { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; pointer-events: none; }
+  svg.wires line, svg.wires polyline, svg.wires path { stroke: var(--ink-soft); stroke-width: 1.2; fill: none; }
+  svg.wires .dot { stroke-dasharray: 2 3; stroke: var(--ink-faint); }
+  svg.wires .hot { stroke: var(--accent); stroke-width: 1.6; }
+  svg.wires text { font-family: var(--sans); font-size: 8px; fill: var(--ink-soft); }
+  svg.wires text.hot { fill: var(--accent); font-weight: 600; }
+
+  /* page 3 table */
+  table.acl { position: absolute; left: 40px; top: 104px; width: 1200px; border-collapse: collapse; font-size: 9px; line-height: 1.25; }
+  table.acl th { text-align: left; font-weight: 600; font-size: 8px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); padding: 0 8px 6px 0; border-bottom: 2px solid var(--ink); vertical-align: bottom; }
+  table.acl th .tier { position: static; display: inline-block; margin-left: 4px; }
+  table.acl td { padding: 4px 8px 4px 0; border-bottom: 1px solid var(--rule); vertical-align: top; color: var(--ink-soft); }
+  table.acl td.u { font-weight: 600; color: var(--ink); width: 150px; }
+  table.acl td.u small { display: block; font-weight: 400; color: var(--ink-faint); font-size: 8.5px; }
+  table.acl td .g { display: inline-block; font-size: 7.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); border: 1.5px solid var(--accent); padding: 0 5px; margin-top: 2px; }
+  table.acl td .no { color: var(--ink-faint); }
+  table.acl th.build { color: var(--accent); }
+
+  /* page 5 panels */
+  .panel { position: absolute; border: 1.5px solid var(--ink); padding: 10px 12px; font-size: 9.5px; line-height: 1.3; color: var(--ink-soft); background: #fff; }
+  .panel h3 { font-family: var(--serif); font-weight: 400; font-size: 15px; color: var(--ink); margin-bottom: 4px; }
+  .panel .k { font-size: 8px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); font-weight: 600; margin-bottom: 4px; }
+  .panel ul { list-style: none; margin-top: 4px; }
+  .panel li { position: relative; padding-left: 12px; margin-bottom: 3px; }
+  .panel li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 7px; height: 1.5px; background: var(--accent); }
+  .panel.rick { border-left: 8px solid var(--accent); }
+  .panel.center { border-left: 8px solid var(--ink); }
+  .panel.spec { border-left: 8px solid var(--ink); border-left-style: double; }
+  .panel.wallbox { border: 2px solid var(--accent); background: var(--accent-soft); }
+  .panel.wallbox h3 { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<!-- ============================== PAGE 1: FULL SYSTEM ============================== -->
+<div class="page" id="p1">
+  <div class="hdr">
+    <div>
+      <div class="kicker">Proposed architecture, page 1 of 5</div>
+      <h1>Everything proposed, on one page: who touches it, what runs it, what it talks to.</h1>
+      <div class="sub">Read top to bottom. People, then the agent that operates each service, then the service itself, then the standard interfaces, then the systems the center buys. Built things are solid and warm. Bought things are dashed. Nothing crosses the clinical wall on the right.</div>
+    </div>
+    <div class="who">Prepared for <b>Dr. Luis Ramos</b> and <b>Fernando Escarzaga</b><br>by <b>Richard Finlay</b>, RGF Global Ventures LLC</div>
+  </div>
+
+  <!-- band labels -->
+  <div class="band" style="top:158px"><span>People</span></div>
+  <div class="band" style="top:250px"><span>Agents</span></div>
+  <div class="band" style="top:392px"><span>Services</span></div>
+  <div class="band" style="top:482px"><span>Interfaces</span></div>
+  <div class="band" style="top:570px"><span>Systems</span></div>
+
+  <!-- USERS y 104-158, 7 chips w131 -->
+  <div class="box user" style="left:92px;top:102px;width:131px;height:50px"><div class="t">Rick, operator</div>Builds, runs, supervises. Access revocable.</div>
+  <div class="box user" style="left:233px;top:102px;width:131px;height:50px"><div class="t">Prior auth staff</div>Signs every submission and every appeal.</div>
+  <div class="box user" style="left:374px;top:102px;width:131px;height:50px"><div class="t">Owner and partners</div>Ask the owner agent. Approve any sign-off change.</div>
+  <div class="box user" style="left:515px;top:102px;width:131px;height:50px"><div class="t">Schedulers, front desk</div>Scheduling, intake, waitlist. Approve backfill offers.</div>
+  <div class="box user" style="left:656px;top:102px;width:131px;height:50px"><div class="t">Patients</div>Reminders, offers, records requests, inbound calls.</div>
+  <div class="box user" style="left:797px;top:102px;width:131px;height:50px"><div class="t">Referring physicians</div>Orders in, documentation, reports out.</div>
+  <div class="box user" style="left:938px;top:102px;width:132px;height:50px"><div class="t">Billing staff</div>Claims. Their vendor exposes the eligibility feed.</div>
+
+  <!-- AGENTS y 186-246, 8 cols w114 at 92,215,339,462,586,709,833,956 -->
+  <div class="box agent build" style="left:92px;top:166px;width:114px;height:76px"><span class="tier b">Tier B</span><div class="t">Prior auth agent</div>Reads referrals, flags gaps, drafts appeals. Acts only via the gate.</div>
+  <div class="box agent build" style="left:215px;top:166px;width:114px;height:76px"><span class="tier a">Tier A</span><div class="t">Owner agent</div>Read-only questions over the center's data. Never acts.</div>
+  <div class="box agent build" style="left:339px;top:166px;width:114px;height:76px"><span class="tier b">Tier B</span><div class="t">Backfill agent</div>Proposes who gets a freed slot. A human approves.</div>
+  <div class="box agent build" style="left:462px;top:166px;width:114px;height:76px"><span class="tier b">Tier B</span><div class="t">Records agent</div>Classifies requests, drafts replies. Identity check is human.</div>
+  <div class="box agent buy" style="left:586px;top:166px;width:114px;height:76px"><span class="tier c">Tier C</span><div class="t">Voice agent</div>The vendor's own. Rick specifies, integrates, supervises.</div>
+  <div class="box buy" style="left:709px;top:166px;width:361px;height:76px;display:flex;align-items:center;justify-content:center;text-align:center"><span class="tier none">No agent</span><div><div class="t">No agent. Plain software, no model involved.</div>Reminders, intake, report delivery and billing run on the vendors' own products as bought.</div></div>
+
+  <!-- GATES between agent and service on B columns -->
+  <div class="gate" style="left:104px;top:247px"><span>Human signs</span></div>
+  <div class="gate" style="left:342px;top:247px"><span>Human approves</span></div>
+  <div class="gate" style="left:466px;top:247px"><span>Human verifies</span></div>
+
+  <!-- SERVICES y 282-392 -->
+  <div class="box build own-mixed" style="left:92px;top:268px;width:114px;height:134px"><div class="n">#1 #2 BUILD</div><div class="t">Prior auth and eligibility engine</div>Order detection. Reads the billing vendor's 270/271 feed. Packet assembly, submission, deadline tracking, appeal queue, weekly rates.</div>
+  <div class="box build own-mixed" style="left:215px;top:268px;width:114px;height:134px"><div class="n">#4 BUILD</div><div class="t">Owner reporting and reader reconciliation</div>Joins RIS data to billing data. Monday report, appeal rate as headline. Reader paid-versus-read view.</div>
+  <div class="box build own-mixed" style="left:339px;top:268px;width:114px;height:134px"><div class="n">#5 #10 BUILD, SMALL</div><div class="t">Backfill and waitlist</div>Cancellation in, ranked offer list out. One per-patient rate governor across every sender.</div>
+  <div class="box build own-center" style="left:462px;top:268px;width:114px;height:134px"><div class="n">#6 #7 BUILD, SELECTIVELY</div><div class="t">Records in, prior studies out</div>Intake, 30-day clock from receipt, fee rules, DICOM retrieve. Outbound prior-study tracker.</div>
+  <div class="box buy" style="left:586px;top:268px;width:114px;height:134px"><div class="n">#9 BUY, I INTEGRATE</div><div class="t">Voice vendor platform</div>Vendor under its own BAA. Spanish evaluation set. Human escalation on any symptom language.</div>
+  <div class="box buy" style="left:709px;top:268px;width:114px;height:134px"><div class="n">#8 #10 BUY, THE RIS</div><div class="t">Reminders, self-scheduling, intake, notices</div>RIS native. Verify TCPA caps, Spanish, and events exposed to backfill.</div>
+  <div class="box buy" style="left:833px;top:268px;width:114px;height:134px"><div class="n">#12 BUY, RIS AND PACS</div><div class="t">Referrer communication and report delivery</div>Standard RIS and PACS function. Referrer volume feeds reporting.</div>
+  <div class="box buy" style="left:956px;top:268px;width:114px;height:134px"><div class="n">BUY</div><div class="t">Billing, claims, eligibility feed</div>Clearinghouse function. Exposes EDI 270/271. Not rebuilt. The engine reads the feed and acts on it.</div>
+
+  <!-- BUS y 418-478 -->
+  <div class="buslbl" style="left:92px;top:406px;width:978px"><b>Standard interfaces only, secured by four contract terms before signature (FREE):</b> named API access to the center's own data, HL7 interface count and fee schedule fixed, data export rights at no charge, DICOM query permissions.</div>
+  <div class="bus" style="left:92px;top:422px;width:978px;height:62px">
+    <div class="cell" style="left:0;width:123px;border-left:0"><b>HL7 v2 ORM, SIU</b>EDI 270/271 read<br>EDI 278<br>Payer FHIR PA API<br>Human submission path</div>
+    <div class="cell" style="left:123px;width:124px"><b>Data exports</b>RIS report export or database<br>Billing system export</div>
+    <div class="cell" style="left:247px;width:123px"><b>HL7 v2 SIU</b>Cancellation events<br>Consent and contact preferences from intake</div>
+    <div class="cell" style="left:370px;width:124px"><b>DICOM C-FIND, C-MOVE</b>DICOM import<br>Fax, web form, portal intake</div>
+    <div class="cell" style="left:494px;width:123px"><b>RIS scheduling API</b>Vendor books against it<br>Human escalation path</div>
+    <div class="cell" style="left:617px;width:124px"><b>RIS native</b>Reminder events out to the backfill service<br>One shared rate cap</div>
+    <div class="cell" style="left:741px;width:123px"><b>RIS and PACS native</b>Orders in, reports out<br>Referrer volume to reporting</div>
+    <div class="cell" style="left:864px;width:114px"><b>EDI 270/271</b>Exposed by the billing vendor<br>Claims stay with the vendor</div>
+  </div>
+
+  <!-- EXTERNALS y 506-566 -->
+  <div class="box ext" style="left:92px;top:500px;width:114px;height:72px"><div class="t">RIS</div>Orders, schedule, cancellations, reminders. Chosen by the center.</div>
+  <div class="box ext" style="left:215px;top:500px;width:114px;height:72px"><div class="t">PACS</div>Images. DICOM query and retrieve for authorized systems.</div>
+  <div class="box ext" style="left:339px;top:500px;width:114px;height:72px"><div class="t">Billing vendor, clearinghouse</div>Claims. Exposes EDI 270/271 and, where supported, 278.</div>
+  <div class="box ext" style="left:462px;top:500px;width:114px;height:72px"><div class="t">Payers and RBMs</div>FHIR PA API from 2027-01-01, EDI 278, or a human-submitted packet.</div>
+  <div class="box ext" style="left:586px;top:500px;width:114px;height:72px"><div class="t">Voice vendor</div>Own BAA. Telephony and transcripts stored in the US.</div>
+  <div class="box ext" style="left:709px;top:500px;width:114px;height:72px"><div class="t">Prior facilities, El Paso</div>Hospitals and imaging groups. Fax or portal out, DICOM back.</div>
+  <div class="box ext" style="left:833px;top:500px;width:114px;height:72px"><div class="t">Referring practices</div>Orders and clinical documentation in. Reports out.</div>
+  <div class="box ext" style="left:956px;top:500px;width:114px;height:72px"><div class="t">Model provider</div>Named vendor, own BAA, US residency. Replaceable.</div>
+
+  <!-- FDA WALL and clinical zone -->
+  <div class="wall" style="left:1078px;top:102px;width:12px;height:300px"></div>
+  <div class="walllbl" style="left:1066px;top:398px">The FDA line. Never crossed.</div>
+  <div class="box user" style="left:1098px;top:102px;width:142px;height:50px"><div class="t">Radiologists, readers</div>Clinical decisions are theirs alone.</div>
+  <div class="box declined" style="left:1098px;top:172px;width:142px;height:230px"><div class="n">#13 DECLINED</div><div class="t">Anything touching the image</div>The FDA line. No image interpretation. No protocol selection. No study recommendation. No appropriateness judgment.<br><br>Software on this side is a device unless it has an FDA pathway. Everything left of the wall stays inside the administrative support exclusion, 21 U.S.C. 360j(o)(1)(A).</div>
+  <div class="box declined" style="left:1098px;top:422px;width:142px;height:62px"><div class="n">#11 DECLINED, PHASE ONE</div><div class="t">Balance-due reminders</div>Financial content is outside the TCPA exemption. Needs its own consent basis.</div>
+  <div class="box free" style="left:1098px;top:500px;width:142px;height:72px"><div class="n">#3 FREE</div><div class="t">Contract terms</div>The precondition for every interface here. Free only before signature.</div>
+
+  <!-- COMPLIANCE STRIP -->
+  <div class="comp" style="left:92px;top:586px;width:1148px">
+    <div><b>BAA before any PHI flows.</b> 45 CFR 164.502(e). Center, model provider, voice vendor, each under its own agreement.</div>
+    <div><b>BAA envelope gap.</b> The AI vendor's agreement excludes Computer Use and Web Fetch, so payer-portal screen-driving against PHI is not available. Design goes through APIs, EDI, and a human step.</div>
+    <div><b>Texas SB 1188.</b> Texas patient data stored in the US as of 2026-01-01. Applies to every component on this page, including the model provider.</div>
+    <div><b>Two deliverables per build.</b> A deterministic service that runs with no model, plus an agent surface that operates it. The agent is the replaceable part.</div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend" style="left:92px;top:638px;width:1148px">
+    <span class="lt">Legend</span>
+    <span class="k"><span class="tier pill a">Tier A</span>owner agent, read-only</span>
+    <span class="k"><span class="tier pill b">Tier B</span>workflow agent, acts, a human signs</span>
+    <span class="k"><span class="tier pill c">Tier C</span>patient-facing voice, bought</span>
+    <span class="k"><span class="tier pill none">No agent</span>plain software</span>
+    <span class="k"><span class="sw build"></span>Build</span>
+    <span class="k"><span class="sw buy"></span>Buy</span>
+    <span class="k"><span class="sw free"></span>Free</span>
+    <span class="k"><span class="sw declined"></span>Declined</span>
+    <span class="k"><span class="sw rick"></span>Rick's engine, licensed to the center with source</span>
+    <span class="k"><span class="sw center"></span>Center's outright</span>
+    <span class="k"><span class="gate"><span>Human signs</span></span>signature gate, every item until the owner approves a change</span>
+  </div>
+
+  <!-- WIRES -->
+  <svg class="wires" viewBox="0 0 1280 720">
+    <!-- users to agents (dotted) -->
+    <line class="dot" x1="298" y1="152" x2="149" y2="166"/>
+    <line class="dot" x1="439" y1="152" x2="272" y2="166"/>
+    <line class="dot" x1="580" y1="152" x2="396" y2="166"/>
+    <line class="dot" x1="580" y1="152" x2="643" y2="166"/>
+    <line class="dot" x1="721" y1="152" x2="643" y2="166"/>
+    <line class="dot" x1="721" y1="152" x2="766" y2="166"/>
+    <line class="dot" x1="862" y1="152" x2="890" y2="166"/>
+    <line class="dot" x1="1004" y1="152" x2="1013" y2="166"/>
+    <line class="dot" x1="157" y1="152" x2="157" y2="166"/>
+    <!-- prior auth staff also signs: short hot tick to the gate -->
+    <line class="hot" x1="298" y1="152" x2="298" y2="164"/>
+    <!-- agents to services, through gates on B columns -->
+    <line class="hot" x1="149" y1="240" x2="149" y2="268"/>
+    <line x1="272" y1="240" x2="272" y2="268"/>
+    <line class="hot" x1="396" y1="240" x2="396" y2="268"/>
+    <line class="hot" x1="519" y1="240" x2="519" y2="268"/>
+    <line x1="643" y1="240" x2="643" y2="268"/>
+    <line class="dot" x1="766" y1="240" x2="766" y2="268"/>
+    <line class="dot" x1="890" y1="240" x2="890" y2="268"/>
+    <line class="dot" x1="1013" y1="240" x2="1013" y2="268"/>
+    <!-- services to bus -->
+    <line x1="149" y1="402" x2="149" y2="422"/>
+    <line x1="272" y1="402" x2="272" y2="422"/>
+    <line x1="396" y1="402" x2="396" y2="422"/>
+    <line x1="519" y1="402" x2="519" y2="422"/>
+    <line x1="643" y1="402" x2="643" y2="422"/>
+    <line x1="766" y1="402" x2="766" y2="422"/>
+    <line x1="890" y1="402" x2="890" y2="422"/>
+    <line x1="1013" y1="402" x2="1013" y2="422"/>
+    <!-- bus to externals -->
+    <line x1="149" y1="484" x2="149" y2="500"/>
+    <line x1="272" y1="484" x2="272" y2="500"/>
+    <line x1="396" y1="484" x2="396" y2="500"/>
+    <line x1="519" y1="484" x2="519" y2="500"/>
+    <line x1="643" y1="484" x2="643" y2="500"/>
+    <line x1="766" y1="484" x2="766" y2="500"/>
+    <line x1="890" y1="484" x2="890" y2="500"/>
+    <line x1="1013" y1="484" x2="1013" y2="500"/>
+    <!-- arrowheads on bus to externals (down) -->
+    <path d="M145 494 L149 500 L153 494" /><path d="M268 494 L272 500 L276 494" /><path d="M392 494 L396 500 L400 494" /><path d="M515 494 L519 500 L523 494" /><path d="M639 494 L643 500 L647 494" /><path d="M762 494 L766 500 L770 494" /><path d="M886 494 L890 500 L894 494" /><path d="M1009 494 L1013 500 L1017 494" />
+      </svg>
+
+  <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. Candidate numbers refer to the automation inventory in the leave-behind set.</div><div>No opening date is assumed. The only dates printed are regulatory: 2026-01-01 and 2027-01-01.</div></div>
+</div>
+
+<!-- ============================== PAGE 2: PRIOR AUTH PIPELINE ============================== -->
+<div class="page" id="p2">
+  <div class="hdr">
+    <div>
+      <div class="kicker">Proposed architecture, page 2 of 5. The lead product.</div>
+      <h1>Prior authorization: one pipeline, three submission paths, a human at every gate.</h1>
+      <div class="sub">Left to right is the life of one advanced imaging order. The upper lane is the agent surface. The lower lane is the deterministic service that runs with no model at all. The agent never reaches the world except through a signature.</div>
+    </div>
+    <div class="who">Candidates <b>#1</b> and <b>#2</b><br>Tier <b>B</b>, <b>Build</b>, Rick's engine licensed with source</div>
+  </div>
+
+  <div class="band" style="top:208px"><span>Agent</span></div>
+  <div class="band" style="top:376px"><span>Service</span></div>
+  <div class="band" style="top:508px"><span>Outside</span></div>
+
+  <!-- AGENT LANE y 128-200, 7 cols w152 at 92,258,424,590,756,922,1088 -->
+  <div class="box agent build" style="left:92px;top:130px;width:152px;height:80px"><span class="tier b">Tier B</span><div class="t">Explains the determination</div>Why this order needs authorization under this plan, in plain words for the scheduler.</div>
+  <div class="box agent build" style="left:258px;top:130px;width:318px;height:80px"><span class="tier b">Tier B</span><div class="t">Reads the referral, flags packet gaps</div>Finds what the payer will ask for in the referrer's documentation and names what is missing so staff can request it before submission. Never judges whether the study is appropriate.</div>
+  <div class="box agent build" style="left:590px;top:130px;width:152px;height:80px"><span class="tier b">Tier B</span><div class="t">Prepares the human packet</div>Where no API or EDI exists, a complete packet for a person to submit.</div>
+  <div class="box agent build" style="left:922px;top:130px;width:152px;height:80px"><span class="tier b">Tier B</span><div class="t">Drafts the appeal</div>Clinical rationale from the referral and the denial reason. Queued for signature.</div>
+  <div class="box agent build" style="left:1088px;top:130px;width:152px;height:80px"><span class="tier a">Tier A</span><div class="t">Owner agent answers</div>"What is our appeal rate this month." Read-only over the reporting data.</div>
+
+  <!-- GATES -->
+  <div class="gate" style="left:620px;top:214px"><span>Human signs every submission</span></div>
+  <div class="gate" style="left:952px;top:214px"><span>Human signs every appeal</span></div>
+
+  <!-- SERVICE LANE y 250-370 -->
+  <div class="box build own-rick" style="left:92px;top:250px;width:152px;height:120px"><div class="n">STEP 1</div><div class="t">Order detection</div>HL7 v2 ORM and SIU from the RIS. CT, CTA, MRI, MRA, PET, PET-CT on commercial or Medicare Advantage plans.</div>
+  <div class="box build own-rick" style="left:258px;top:250px;width:152px;height:120px"><div class="n">STEP 2</div><div class="t">Eligibility read</div>Reads the EDI 270/271 feed the billing vendor exposes. Active coverage, benefits, and whether this plan requires authorization for this study. Not an eligibility system; a reader of one.</div>
+  <div class="box build own-rick" style="left:424px;top:250px;width:152px;height:120px"><div class="n">STEP 3</div><div class="t">Packet assembly</div>Referral documentation plus RIS order data, assembled to the payer's stated requirements.</div>
+  <div class="box build own-rick" style="left:590px;top:250px;width:152px;height:120px;padding-bottom:3px"><div class="n">STEP 4</div><div class="t">Submission routing</div>
+    <div style="border:1px solid var(--accent);padding:1px 4px;margin-top:2px;font-size:8px"><b>Payer FHIR PA API</b>, required of impacted payers from 2027-01-01</div>
+    <div style="border:1px solid var(--accent);padding:1px 4px;margin-top:2px;font-size:8px"><b>EDI 278</b>, where the payer or clearinghouse supports it</div>
+    <div style="border:1px solid var(--accent);padding:1px 4px;margin-top:2px;font-size:8px"><b>Human submission</b>, the fallback where neither exists</div>
+  </div>
+  <div class="box build own-rick" style="left:756px;top:250px;width:152px;height:120px"><div class="n">STEP 5</div><div class="t">Deadline tracking</div>Every open request against the payer timeframes that bind impacted payers from 2026-01-01: 72 hours expedited, 7 calendar days standard. Approved: schedule confirmed back to the RIS.</div>
+  <div class="box build own-rick" style="left:922px;top:250px;width:152px;height:120px"><div class="n">STEP 6</div><div class="t">Denial and appeal</div>Denial logged with reason. Appeal queued, signed, filed. Outcome recorded: overturned or upheld. Nothing is let go silently.</div>
+  <div class="box build own-mixed" style="left:1088px;top:250px;width:152px;height:120px"><div class="n">STEP 7</div><div class="t">Weekly appeal and overturn rates</div>Into owner reporting (#4) as the Monday headline. Starts near zero for a new center, measurable from week one, entirely attributable.</div>
+
+  <!-- OUTSIDE LANE y 420-480 -->
+  <div class="box ext" style="left:92px;top:420px;width:152px;height:60px"><div class="t">RIS</div>Orders and schedule out. Authorization status and confirmed slot back in.</div>
+  <div class="box ext" style="left:258px;top:420px;width:152px;height:60px"><div class="t">Billing vendor, clearinghouse</div>Exposes EDI 270/271. Keeps the claims work.</div>
+  <div class="box ext" style="left:424px;top:420px;width:152px;height:60px"><div class="t">Referring physician</div>Clinical documentation on request. Report out after the read.</div>
+  <div class="box ext" style="left:590px;top:420px;width:318px;height:60px"><div class="t">Payers and radiology benefit managers</div>Decide inside the regulated timeframes. Each payer and RBM is its own integration, which is what makes this build Large.</div>
+  <div class="box user" style="left:922px;top:420px;width:152px;height:60px"><div class="t">Prior auth staff</div>Sign every submission and every appeal in phase one.</div>
+  <div class="box user" style="left:1088px;top:420px;width:152px;height:60px"><div class="t">Owner and partners</div>Read the Monday report. Approve any change to the sign-off rule.</div>
+
+  <!-- CONSTRAINT PANELS y 508-640 -->
+  <div class="panel wallbox" style="left:92px;top:508px;width:270px;height:156px"><div class="k">Constraint, the most fragile item</div><h3>No portal screen-driving against PHI.</h3>The AI vendor's BAA excludes Computer Use and Web Fetch, the two capabilities one would use to drive a payer portal with no API. So the third path is a human, by design. A locally hosted model is a specification-phase option for that gap. It is not promised.</div>
+  <div class="panel" style="left:378px;top:508px;width:270px;height:156px"><div class="k">Graduation criterion, written in the specification</div><h3>Every item, until the owner says otherwise.</h3>Sign-off moves from every item to a sample only after a defined volume at a defined accuracy, measured, and only with the owner approving the change. Until then, every submission and every appeal carries a human signature.</div>
+  <div class="panel" style="left:664px;top:508px;width:270px;height:156px"><div class="k">The FDA line, inside this pipeline</div><h3>Claims, billing, eligibility. Never appropriateness.</h3>"Claims or billing information" and "determination of health benefit eligibility" are named in the administrative support exclusion, 21 U.S.C. 360j(o)(1)(A). The agent never recommends which study to order or whether a study is clinically appropriate. That would leave the exclusion.</div>
+  <div class="panel" style="left:950px;top:508px;width:290px;height:156px"><div class="k">Two deliverables</div><h3>The service is the capability. The agent is the operator.</h3>Steps 1 through 7 run with no model: auditable, testable, in the specification, and what any integrator can take over. The agent lane is the replaceable part. Model vendor, BAA envelope, and pricing can all change without breaking the center.</div>
+
+  <svg class="wires" viewBox="0 0 1280 720">
+    <!-- flow arrows along the service lane -->
+    <path d="M244 310 L258 310 M252 306 L258 310 L252 314"/>
+    <path d="M410 310 L424 310 M418 306 L424 310 L418 314"/>
+    <path d="M576 310 L590 310 M584 306 L590 310 L584 314"/>
+    <path d="M742 310 L756 310 M750 306 L756 310 L750 314"/>
+    <path class="hot" d="M908 310 L922 310 M916 306 L922 310 L916 314"/><text class="hot" x="915" y="243" text-anchor="middle">denied</text>
+    <path d="M1074 310 L1088 310 M1082 306 L1088 310 L1082 314"/>
+    <!-- step 2: no auth required, short-circuit back to RIS -->
+    <path class="dot" d="M334 370 L334 420"/><text x="340" y="414">no authorization required: straight back to the schedule</text>
+    <!-- agent to service -->
+    <line x1="168" y1="210" x2="168" y2="250"/>
+    <line x1="417" y1="210" x2="417" y2="250"/>
+    <line x1="500" y1="210" x2="500" y2="250"/>
+    <line class="hot" x1="666" y1="210" x2="666" y2="250"/>
+    <line class="hot" x1="998" y1="210" x2="998" y2="250"/>
+    <line x1="1164" y1="210" x2="1164" y2="250"/>
+    <text x="1170" y="228">reads only</text>
+    <!-- service to outside -->
+    <path d="M168 370 L168 420 M164 414 L168 420 L172 414"/>
+    <path d="M160 420 L160 370 M156 376 L160 370 L164 376"/>
+    <path d="M500 370 L500 420 M496 414 L500 420 L504 414"/>
+    <path d="M666 370 L666 420 M662 414 L666 420 L670 414"/>
+    <path d="M832 420 L832 370 M828 376 L832 370 L836 376"/>
+    <text x="838" y="398">decision in</text>
+    <path class="hot" d="M998 370 L998 420 M994 414 L998 420 L1002 414"/>
+    <path d="M1164 370 L1164 420 M1160 414 L1164 420 L1168 414"/>
+    <!-- step 5 approved: back to RIS, drawn as a long return under the lane -->
+    <path d="M790 370 L790 398 L250 398 L250 420 M246 414 L250 420 L254 414"/>
+    <text x="560" y="394" text-anchor="middle">approved: confirmed slot back to the RIS</text>
+  </svg>
+
+  <div class="ftr"><div><b>Dependencies named in the inventory:</b> RIS order and scheduling feed as a contract term; payer FHIR Prior Authorization APIs under CMS-0057-F, which binds payers and not providers; EDI 278 or human submission for plans outside the rule. El Paso payer mix is not verified and nothing here forecasts recovered dollars.</div></div>
+</div>
+
+<!-- ============================== PAGE 3: USER LEVEL ============================== -->
+<div class="page" id="p3">
+  <div class="hdr">
+    <div>
+      <div class="kicker">Proposed architecture, page 3 of 5. The user level.</div>
+      <h1>Who touches what, and what each person is allowed to do.</h1>
+      <div class="sub">A row is a person. A column is a service. The signature marks are the places the system stops and waits for a human. Radiologists appear once, to show where the system is not.</div>
+    </div>
+    <div class="who">Access is role-based and logged<br>Rick's own access is <b>revocable by the center</b></div>
+  </div>
+
+  <table class="acl">
+    <thead>
+      <tr>
+        <th>Person</th>
+        <th class="build">Prior auth and eligibility <span class="tier b">Tier B</span></th>
+        <th class="build">Owner reporting and owner agent <span class="tier a">Tier A</span></th>
+        <th class="build">Backfill and waitlist <span class="tier b">Tier B</span></th>
+        <th class="build">Records in, prior studies out <span class="tier b">Tier B</span></th>
+        <th>Patient voice, vendor <span class="tier c">Tier C</span></th>
+        <th>RIS reminders, self-scheduling, intake <span class="tier none">No agent</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="u">Owner and partners<small>Dr. Ramos, Mr. Escarzaga</small></td>
+        <td>See every open request, deadline, denial, and appeal outcome. Approve the graduation criterion that changes the sign-off rule.<br><span class="g">Approves graduation</span></td>
+        <td>Read the Monday report. Ask the owner agent open questions: volumes, cancellations, no-shows, payer mix, appeal rate, reader turnaround. Define what the one page contains.</td>
+        <td>See fill rate and the ranking rules. Change the ranking policy.</td>
+        <td>See the request log, open clocks, and fees charged.</td>
+        <td>Hear call recordings and transcripts. Set the escalation rules. Approve the Spanish evaluation bar.</td>
+        <td>Configure through the RIS vendor. Confirm caps and Spanish at selection.</td>
+      </tr>
+      <tr>
+        <td class="u">Prior auth staff<small>The signature</small></td>
+        <td>Review every assembled packet and every drafted appeal. Submit by hand on the human path. Nothing goes to a payer without their signature.<br><span class="g">Signs every submission</span> <span class="g">Signs every appeal</span></td>
+        <td class="no">Read-only on their own queue metrics.</td>
+        <td class="no">No access.</td>
+        <td class="no">No access.</td>
+        <td class="no">No access.</td>
+        <td class="no">No access.</td>
+      </tr>
+      <tr>
+        <td class="u">Schedulers, front desk</td>
+        <td>See authorization status on each order so a scan is not booked before it is cleared. Request missing documentation from the referrer.</td>
+        <td class="no">No access.</td>
+        <td>Receive the ranked offer list on a cancellation and approve it before anyone is contacted. Maintain consent and contact preferences at intake.<br><span class="g">Approves the offer list</span></td>
+        <td>Log a walk-in or phoned request so the 30-day clock starts at receipt.</td>
+        <td>Take escalated calls, including any call with symptom language. Book what the vendor could not.</td>
+        <td>Operate the RIS. Intake forms and reminders run as the vendor ships them.</td>
+      </tr>
+      <tr>
+        <td class="u">Billing staff</td>
+        <td>See authorization numbers attached to orders for claims. The eligibility feed is their vendor's; the engine only reads it.</td>
+        <td>Provide the billing export the reporting joins depend on.</td>
+        <td class="no">No access.</td>
+        <td>Set the fee schedule inside the permitted components. Retrieval labor is never charged.</td>
+        <td class="no">No access.</td>
+        <td class="no">No access.</td>
+      </tr>
+      <tr>
+        <td class="u">Radiologists, readers<small>Including Dr. Ramos as a 1099 reader</small></td>
+        <td class="no">Untouched. The system never recommends a study or judges appropriateness.</td>
+        <td>Reader reconciliation view: what was read against what was paid.</td>
+        <td class="no">Untouched.</td>
+        <td>Ask for a prior study; the tracker chases it and imports what returns. The read is theirs.</td>
+        <td class="no">Untouched.</td>
+        <td class="no">Untouched.</td>
+      </tr>
+      <tr>
+        <td class="u">Referring physicians</td>
+        <td>Orders arrive from them through the RIS. Documentation requests go to them. They are never asked to change an order.</td>
+        <td class="no">No access. Their volume appears in the owner's view.</td>
+        <td class="no">No access.</td>
+        <td>Can request records for their patient; same intake, same clock.</td>
+        <td class="no">No access.</td>
+        <td>Receive reports through the RIS and PACS as bought.</td>
+      </tr>
+      <tr>
+        <td class="u">Patients</td>
+        <td class="no">No direct surface. They experience a faster clearance, nothing else.</td>
+        <td class="no">No access.</td>
+        <td>Receive an offer for a freed slot, only to the number they gave, in Spanish or English, with opt-out in every message, inside one message a day and three a week across every sender.</td>
+        <td>Request their own records. Identity verified by a person before anything is released.<br><span class="g">Human verifies identity</span></td>
+        <td>Call in. Scheduling, directions, prep, status. Told at the start that it is an automated system. Handed to a person on any symptom language.</td>
+        <td>Reminders, self-scheduling, intake forms, results-ready notices from the RIS.</td>
+      </tr>
+      <tr>
+        <td class="u">Rick, operator<small>RGF Global Ventures</small></td>
+        <td colspan="4">Builds and operates the four built services and their agent surfaces. Sees logs and metrics. Cannot sign a submission, approve an offer list, or release a record; those are the center's people. Access granted and revocable by the center; repository under the center's organization.</td>
+        <td>Specifies, evaluates, integrates, supervises. The contract is in the center's name.</td>
+        <td>Advises at vendor selection. No operational role.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="ftr"><div><b>What the human marks mean.</b> Where a service acts on the world, a named person at the center signs first. That is design, not cost, and it is also the FDA boundary: no software here makes or recommends a clinical decision.</div></div>
+</div>
+
+<!-- ============================== PAGE 4: THE OTHER BUILDS ============================== -->
+<div class="page" id="p4">
+  <div class="hdr">
+    <div>
+      <div class="kicker">Proposed architecture, page 4 of 5. The other three builds, and the owner's view.</div>
+      <h1>Backfill, records, prior studies, owner reporting: each is a small deterministic service with a bounded agent on top.</h1>
+    </div>
+    <div class="who">Each panel reads left to right<br>Human gates drawn where they exist</div>
+  </div>
+
+  <!-- PANEL A: BACKFILL x 40-630, y 98-370 -->
+  <div class="abs" style="left:40px;top:98px;width:590px;height:272px;border:1px solid var(--rule)"></div>
+  <div class="abs kicker" style="left:52px;top:106px">#5 and #10. Backfill and waitlist. Tier B. Build, small. Rick's engine.</div>
+  <div class="box agent build" style="left:52px;top:128px;width:260px;height:44px"><span class="tier b">Tier B</span><div class="t">Backfill agent</div>Explains the ranking and drafts the offer wording in Spanish or English.</div>
+  <div class="gate" style="left:330px;top:140px"><span>Scheduler approves the list</span></div>
+  <div class="box ext" style="left:52px;top:200px;width:120px;height:86px"><div class="t">RIS</div>Cancellation event, HL7 v2 SIU or API.</div>
+  <div class="box build own-rick" style="left:190px;top:200px;width:130px;height:86px"><div class="t">Waitlist ranking</div>Which waitlisted patients, in what order. The custom logic.</div>
+  <div class="box build own-rick" style="left:338px;top:200px;width:130px;height:86px"><div class="t">Rate governor</div>One per-patient cap across every sender: one a day, three a week, voice and text combined.</div>
+  <div class="box user" style="left:486px;top:200px;width:132px;height:86px"><div class="t">Patient</div>Offer to the number they provided. Opt-out in every message, honored at once.</div>
+  <div class="box buy" style="left:338px;top:300px;width:130px;height:64px"><div class="t">RIS reminders (#8)</div>Bought. Its sends count against the same cap.</div>
+  <div class="box" style="left:52px;top:300px;width:268px;height:64px;border-color:var(--rule)"><div class="t">Constraints</div>TCPA healthcare exemption, 47 CFR 64.1200(a)(9)(iv). No financial content. Spanish is a requirement in El Paso. "Appointment schedules" is named in the FDA exclusion.</div>
+  <div class="box ext" style="left:486px;top:300px;width:132px;height:64px"><div class="t">RIS</div>Slot filled, schedule updated, lead time shortened.</div>
+
+  <!-- PANEL B: RECORDS IN x 650-1240 -->
+  <div class="abs" style="left:650px;top:98px;width:590px;height:272px;border:1px solid var(--rule)"></div>
+  <div class="abs kicker" style="left:662px;top:106px">#6. Inbound records requests. Tier B. Build, selectively. Center's code.</div>
+  <div class="box agent build" style="left:662px;top:128px;width:260px;height:44px"><span class="tier b">Tier B</span><div class="t">Records agent</div>Classifies the request, drafts the response and any extension notice.</div>
+  <div class="gate" style="left:940px;top:140px"><span>Human verifies identity</span></div>
+  <div class="box ext" style="left:662px;top:200px;width:110px;height:86px"><div class="t">Intake channel</div>Fax, web form, portal. Patient, attorney, insurer, provider.</div>
+  <div class="box build own-center" style="left:784px;top:200px;width:120px;height:86px"><div class="t">Log and clock</div>30 days from receipt. One 30-day extension, written notice inside the first 30. Outer limit 60.</div>
+  <div class="box build own-center" style="left:916px;top:200px;width:120px;height:86px"><div class="t">Retrieve</div>DICOM C-FIND and C-MOVE against the PACS, the most standardized surface available.</div>
+  <div class="box build own-center" style="left:1048px;top:200px;width:120px;height:86px"><div class="t">Fee and deliver</div>Permitted components only: copying labor, supplies, postage. Retrieval labor is not chargeable.</div>
+  <div class="box ext" style="left:916px;top:300px;width:120px;height:64px"><div class="t">PACS</div>Query permission is a contract term.</div>
+  <div class="box" style="left:662px;top:300px;width:242px;height:64px;border-color:var(--rule)"><div class="t">Why the clock is the first feature</div>The failure mode is a missed statutory deadline and an OCR complaint. 45 CFR 164.524 in full. Texas Chapter 181 deadline verified before the specification is final.</div>
+  <div class="box build own-center" style="left:1048px;top:300px;width:120px;height:64px"><div class="t">Status reporting</div>Open requests and days remaining, into the owner's view.</div>
+
+  <!-- PANEL C: PRIORS OUT x 40-630, y 390-640 -->
+  <div class="abs" style="left:40px;top:390px;width:590px;height:250px;border:1px solid var(--rule)"></div>
+  <div class="abs kicker" style="left:52px;top:398px">#7. Prior-study retrieval. No agent. Build, selectively. Center's code.</div>
+  <div class="box user" style="left:52px;top:424px;width:120px;height:86px"><div class="t">Radiologist or RIS order</div>A comparison study is needed. A new center opens with zero priors on file.</div>
+  <div class="box build own-center" style="left:190px;top:424px;width:130px;height:86px"><div class="t">Facility directory</div>Which El Paso hospitals and groups accept which request channel. Built by hand in the first months.</div>
+  <div class="box build own-center" style="left:338px;top:424px;width:130px;height:86px"><div class="t">Request tracker</div>Generates the request, tracks it, chases it.</div>
+  <div class="box ext" style="left:486px;top:424px;width:132px;height:86px"><div class="t">Prior facility</div>Fax or portal request out. CD, portal link, or DICOM back.</div>
+  <div class="box ext" style="left:486px;top:530px;width:132px;height:60px"><div class="t">PACS</div>DICOM import of what returns.</div>
+  <div class="box" style="left:52px;top:530px;width:416px;height:72px;border-color:var(--rule)"><div class="t">Said plainly</div>There is no network to query. DICOM exchange is not a TEFCA requirement today. The tracker is the buildable part; the network is not. Outbound requests carry PHI, so the BAA and residency rules apply.</div>
+
+  <!-- PANEL D: OWNER REPORTING x 650-1240 -->
+  <div class="abs" style="left:650px;top:390px;width:590px;height:250px;border:1px solid var(--rule)"></div>
+  <div class="abs kicker" style="left:662px;top:398px">#4. Owner reporting. Tier A. Build. Rick's core, the center's reports.</div>
+  <div class="box ext" style="left:662px;top:424px;width:110px;height:34px"><div class="t">RIS export</div></div>
+  <div class="box ext" style="left:662px;top:466px;width:110px;height:34px"><div class="t">Billing export</div></div>
+  <div class="box build own-rick" style="left:662px;top:508px;width:110px;height:34px"><div class="t">Prior auth engine</div></div>
+  <div class="box build own-mixed" style="left:790px;top:424px;width:150px;height:134px"><div class="t">Reporting core and joins</div>RIS data joined to billing data. Volume, turnaround, referrer, revenue per slot, appeal rate, cancellations, no-shows. Reader paid-versus-read reconciliation.</div>
+  <div class="box build own-center" style="left:958px;top:424px;width:120px;height:62px"><div class="t">Monday report</div>One page. Appeal rate is the headline. The owner defines the page.</div>
+  <div class="box agent build" style="left:958px;top:496px;width:120px;height:62px"><span class="tier a">Tier A</span><div class="t">Owner agent</div>Read-only questions, plain answers. Phase 2.</div>
+  <div class="box user" style="left:1098px;top:424px;width:130px;height:134px"><div class="t">Owner and partners</div>Read the page. Ask the agent. It sees nothing the owner does not already see, acts on nothing, never addresses a patient's care. "Business analytics" is named in the FDA exclusion.</div>
+  <div class="box" style="left:662px;top:568px;width:566px;height:66px;border-color:var(--rule)"><div class="t">Why the owner agent is the lowest-risk agent in the inventory</div>Read-only. No action on the world. No patient contact. No clinical surface. Because it reads the center's own database, the AI vendor's Computer Use and Web Fetch exclusions do not apply to it. PHI is present, so the BAA and SB 1188 residency still do. Strongest candidate for the first demonstration.</div>
+
+  <svg class="wires" viewBox="0 0 1280 720">
+    <!-- panel A -->
+    <path d="M172 235 L190 235 M184 231 L190 235 L184 239"/>
+    <path d="M320 235 L338 235 M332 231 L338 235 L332 239"/>
+    <path d="M468 235 L486 235 M480 231 L486 235 L480 239"/>
+    <line class="hot" x1="182" y1="172" x2="182" y2="200"/>
+    <line class="hot" x1="403" y1="172" x2="403" y2="200"/>
+    <path d="M403 300 L403 286 M399 292 L403 286 L407 292"/>
+    <path d="M552 286 L552 300 M548 294 L552 300 L556 294"/>
+    <!-- panel B -->
+    <path d="M772 235 L784 235 M778 231 L784 235 L778 239"/>
+    <path d="M904 235 L916 235 M910 231 L916 235 L910 239"/>
+    <path d="M1036 235 L1048 235 M1042 231 L1048 235 L1042 239"/>
+    <line class="hot" x1="792" y1="172" x2="792" y2="200"/>
+    <line class="hot" x1="976" y1="172" x2="976" y2="200"/>
+    <path d="M976 300 L976 286 M972 292 L976 286 L980 292"/>
+    <path d="M1108 286 L1108 300 M1104 294 L1108 300 L1112 294"/>
+    <!-- panel C -->
+    <path d="M172 459 L190 459 M184 455 L190 459 L184 463"/>
+    <path d="M320 459 L338 459 M332 455 L338 459 L332 463"/>
+    <path d="M468 459 L486 459 M480 455 L486 459 L480 463"/>
+    <path d="M552 510 L552 530 M548 524 L552 530 L556 524"/>
+    <!-- panel D -->
+    <path d="M772 441 L790 441 M784 437 L790 441 L784 445"/>
+    <path d="M772 483 L790 483 M784 479 L790 483 L784 487"/>
+    <path class="hot" d="M772 525 L790 525 M784 521 L790 525 L784 529"/>
+    <path d="M940 455 L958 455 M952 451 L958 455 L952 459"/>
+    <path d="M940 527 L958 527 M952 523 L958 527 L952 531"/>
+    <path d="M1078 455 L1098 455 M1092 451 L1098 455 L1092 459"/>
+    <path class="dot" d="M1078 527 L1098 527 M1092 523 L1098 527 L1092 531"/>
+  </svg>
+
+  <div class="ftr"><div><b>Every panel follows the same standard:</b> the deterministic service is the specification and what any integrator can take over; the agent is the replaceable operator. Regulatory figures are the regulation's own. No cost or volume benchmark is quoted because none was verified.</div></div>
+</div>
+
+<!-- ============================== PAGE 5: OWNERSHIP AND BOUNDARIES ============================== -->
+<div class="page" id="p5">
+  <div class="hdr">
+    <div>
+      <div class="kicker">Proposed architecture, page 5 of 5. Ownership and boundaries.</div>
+      <h1>Who owns each layer, and the lines the system does not cross.</h1>
+      <div class="sub">The left half is a commercial boundary. The right half is a regulatory one. Both are drawn so an engineer who has never met Rick can read them.</div>
+    </div>
+    <div class="who">Ownership decided <b>in three tiers</b><br>Boundaries drawn from the statute and the vendor's BAA</div>
+  </div>
+
+  <div class="abs kicker" style="left:40px;top:106px">Ownership overlay. Match the stripe colors to the service boxes on pages 1 to 4.</div>
+
+  <div class="panel spec" style="left:40px;top:126px;width:590px;height:120px"><div class="k">Tier 1</div><h3>The specification. The center's, outright.</h3>Written for an engineer who has never met Rick. Covers every service on page 1: order detection, packet assembly, deadline tracking, waitlist ranking, the records clock, the reporting joins, and the vendor evaluation criteria for the RIS, PACS, billing, and voice selections. If the partners open a second or third site, the specification is written once and deployed again.</div>
+
+  <div class="panel center" style="left:40px;top:258px;width:590px;height:150px"><div class="k">Tier 2</div><h3>Center-specific code. The center's, outright.</h3>Configuration, workflows, integrations, data mappings, and reports. In a repository under the center's own organization, with Rick's access revocable. On the diagrams, this is the black stripe:
+    <ul>
+      <li>Records intake, clock, fee rules, status reporting (#6)</li>
+      <li>Prior-study tracker and the El Paso facility directory (#7)</li>
+      <li>The Monday report and every center-defined view (#4)</li>
+      <li>Every HL7, DICOM, and payer mapping, and every RIS and billing configuration</li>
+    </ul></div>
+
+  <div class="panel rick" style="left:40px;top:420px;width:590px;height:150px"><div class="k">Tier 3</div><h3>Rick's existing product, extended for the center. Rick's, licensed.</h3>Licensed to the center perpetually, irrevocably, and transferably, with source, so it can run and modify the code for its own operations indefinitely. The center cannot resell it. On the diagrams, this is the red stripe:
+    <ul>
+      <li>The prior authorization engine (#1, #2)</li>
+      <li>The backfill engine (#5)</li>
+      <li>The reporting core (#4)</li>
+    </ul>Boxes with a split stripe hold Rick's engine beneath the center's configuration and mappings.</div>
+
+  <div class="panel" style="left:40px;top:582px;width:590px;height:70px;border-color:var(--rule)"><div class="k">Not owned by anyone here</div>The RIS, PACS, billing, and voice vendor contracts are in the center's name, never routed through Rick. The model provider is a named vendor under its own BAA, chosen so it can be replaced without touching the services.</div>
+
+  <!-- RIGHT HALF: boundaries -->
+  <div class="abs kicker" style="left:650px;top:106px">Compliance boundaries. Drawn as walls, not footnotes.</div>
+
+  <div class="panel wallbox" style="left:650px;top:126px;width:590px;height:120px"><div class="k">The FDA line</div><h3>Nothing interprets an image, selects a protocol, or recommends a study.</h3>Administrative support software is excluded from the device definition at 21 U.S.C. 360j(o)(1)(A): appointment schedules, claims or billing information, business analytics, practice and inventory management, determination of health benefit eligibility. Every service here lives inside that list. The moment software touches image data or clinical appropriateness it leaves the exclusion and enters Clinical Decision Support territory at 360j(o)(1)(E). Candidate #13 is declined for that reason, out loud.</div>
+
+  <div class="panel" style="left:650px;top:258px;width:290px;height:150px"><div class="k">The BAA envelope</div><h3>What is inside, what is not.</h3>A business associate agreement with the center before any PHI flows, 45 CFR 164.502(e). The AI vendor's agreement covers Skills, Web Search, Memory, Bash tool, and Text Editor tool. It <b>excludes Computer Use and Web Fetch</b>, so payer-portal screen-driving against PHI is not available. Confirm the applicable BAA version in writing.</div>
+
+  <div class="panel" style="left:950px;top:258px;width:290px;height:150px"><div class="k">Texas SB 1188</div><h3>US data residency, every component.</h3>Electronic health records with Texas patient data must be physically stored in the US as of 2026-01-01. This binds the RIS, the PACS, the billing vendor, the voice vendor's telephony and transcripts, and the model provider. Verify each one at selection. Texas HB 300 likely reaches Rick directly as a covered entity; its exact intervals are not quoted here because they were not verified.</div>
+
+  <!-- replaceable agent diagram -->
+  <div class="abs kicker" style="left:650px;top:420px">The agent is the replaceable part</div>
+  <div class="box build own-rick" style="left:650px;top:440px;width:160px;height:84px"><div class="t">Deterministic service</div>Runs with no model. Auditable, testable, in the specification. Survives any model change.</div>
+  <div class="box agent build" style="left:860px;top:440px;width:160px;height:84px"><span class="tier b">A, B</span><div class="t">Agent surface</div>Operates the service through a clean interface. Bounded, logged, human-signed where it acts.</div>
+  <div class="box ext" style="left:1070px;top:440px;width:170px;height:84px;border-style:dashed"><div class="t">Model provider</div>Named vendor, own BAA, US residency. Swap it and nothing to the left changes. A locally hosted model is a specification-phase option.</div>
+  <div class="panel" style="left:650px;top:544px;width:590px;height:108px;border-color:var(--rule)"><div class="k">Why this shape keeps the continuity promise honest</div>If Rick is gone, the center holds the specification, the center-specific code, a perpetual source license to the engines, runbooks for every procedure, and vendor contracts in its own name. The services keep running with no agent at all. An integrator who has never met Rick can operate them from the specification, and can put a different agent, or no agent, on top. The one thing not promised anywhere in this set is payer-portal automation, which is the most fragile item in the inventory.</div>
+
+  <svg class="wires" viewBox="0 0 1280 720">
+    <path d="M810 490 L860 490 M854 486 L860 490 L854 494 M816 486 L810 490 L816 494"/>
+    <text x="835" y="482" text-anchor="middle">interface</text>
+    <path class="dot" d="M1020 490 L1070 490 M1064 486 L1070 490 L1064 494 M1026 486 L1020 490 L1026 494"/>
+    <text x="1045" y="482" text-anchor="middle">swappable</text>
+  </svg>
+
+  <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. Companion to the briefing deck and the one-page summary. No opening date is assumed in this document; the only dates printed are the regulatory ones.</div><div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div></div>
+</div>
+
+</body>
+</html>
