@@ -12,30 +12,30 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: var(--sans); color: var(--ink); background: #e9e6df; font-size: 8.7pt; line-height: 1.27; }
-  .page { width: 8.5in; min-height: 11in; margin: 0.4in auto; background: #fff; padding: 0.32in 0.45in 0.3in 0.45in; display: flex; flex-direction: column; }
-  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--ink); padding-bottom: 6pt; margin-bottom: 9pt; }
+  .page { width: 8.5in; min-height: 11in; margin: 0.4in auto; background: #fff; padding: 0.27in 0.45in 0.22in 0.45in; display: flex; flex-direction: column; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--ink); padding-bottom: 5pt; margin-bottom: 7pt; }
   .kicker { font-size: 8pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 4pt; }
   h1 { font-family: var(--serif); font-weight: 400; font-size: 19pt; line-height: 1.1; }
   .who { text-align: right; font-size: 9pt; color: var(--soft); line-height: 1.4; }
   .who b { color: var(--ink); }
-  h2 { font-family: var(--serif); font-weight: 400; font-size: 11.5pt; margin: 7pt 0 3pt 0; }
+  h2 { font-family: var(--serif); font-weight: 400; font-size: 11.5pt; margin: 5pt 0 2.5pt 0; }
   p { margin-bottom: 5pt; }
   .intro { font-size: 9.1pt; color: var(--soft); }
-  table { width: 100%; border-collapse: collapse; font-size: 7.9pt; margin-top: 2pt; }
+  table { width: 100%; border-collapse: collapse; font-size: 7.6pt; line-height: 1.22; margin-top: 2pt; }
   th { text-align: left; font-size: 7.2pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); font-weight: 600; padding: 0 7pt 3pt 0; border-bottom: 1.5px solid var(--ink); }
-  td { padding: 2.4pt 7pt 2.4pt 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  td { padding: 1.9pt 7pt 1.9pt 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
   td.rec { font-weight: 600; white-space: nowrap; }
   td.rec.build { color: var(--accent); }
   .two { display: grid; grid-template-columns: 1.1fr 1fr 0.9fr; gap: 16pt; }
   ul { list-style: none; }
   li { position: relative; padding-left: 12pt; margin-bottom: 1.5pt; }
   li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 7pt; height: 1.5px; background: var(--accent); }
-  .free { border-left: 3px solid var(--accent); padding: 3pt 0 3pt 10pt; margin-top: 5pt; font-size: 9pt; }
+  .free { border-left: 3px solid var(--accent); padding: 2pt 0 2pt 10pt; margin-top: 3pt; font-size: 9pt; }
   .free b { font-weight: 600; }
   .grow { flex: 1; }
-  footer { border-top: 1px solid var(--rule); padding-top: 6pt; margin-top: 8pt; display: flex; justify-content: space-between; align-items: flex-end; font-size: 9pt; color: var(--soft); }
+  footer { border-top: 1px solid var(--rule); padding-top: 4pt; margin-top: 5pt; display: flex; justify-content: space-between; align-items: flex-end; font-size: 9pt; color: var(--soft); }
   footer b { color: var(--ink); font-weight: 600; }
-  .sources { font-size: 6.8pt; color: var(--faint); line-height: 1.28; margin-top: 6pt; }
+  .sources { font-size: 6.5pt; color: var(--faint); line-height: 1.25; margin-top: 4pt; }
   @media print {
     @page { size: letter; margin: 0; }
     body { background: #fff; }
@@ -70,7 +70,7 @@
       <tr><td>5</td><td>Medical records: inbound requests and outbound prior studies</td><td class="rec build">Build, selectively</td><td>The HIPAA 30-day clock runs from receipt. Retrieval labor is not chargeable, only copying is. A new center opens with zero priors on file, and no vendor has solved outbound retrieval for a small site.</td></tr>
       <tr><td>6</td><td>Scheduling: reminders, self-scheduling, intake</td><td class="rec">Buy (your RIS)</td><td>Commodity, bundled into modern cloud imaging RIS products. Text reminders moved MRI no-shows from 5.1% to 3.8% in a randomized trial. Real, modest, already in the box.</td></tr>
       <tr><td>7</td><td>Answering patients (inbound voice)</td><td class="rec">Buy, I integrate</td><td>26.5% of El Paso County residents speak English less than "very well," nearly all Spanish speakers. Highest-blast-radius failure on this list, and a funded vendor category. I specify, evaluate, integrate, and supervise.</td></tr>
-      <tr><td>8</td><td>Billing, claims, and the eligibility feed</td><td class="rec">Buy</td><td>Commodity clearinghouse function with an established vendor market. I do not touch the claims work, and I am not building an eligibility system. Your billing vendor already exposes the EDI 270/271 eligibility transaction, the oldest standardized surface in this business. What row 2 builds is the thing that reads that feed and acts on it, which is why the four access terms belong in the billing contract the same way they belong in the RIS contract.</td></tr>
+      <tr><td>8</td><td>Billing, claims, and the eligibility feed</td><td class="rec">Buy</td><td>Commodity clearinghouse function, established vendor market. I do not touch the claims work, and I am not building an eligibility system. Your billing vendor already exposes the EDI 270/271 eligibility feed. Row 2 builds the thing that reads that feed and acts on it, so the four access terms belong in the billing contract too.</td></tr>
       <tr><td>9</td><td>Anything that touches the image clinically</td><td class="rec">Declined</td><td>Not from me, not from anyone, without an FDA pathway.</td></tr>
     </tbody>
   </table>

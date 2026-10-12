@@ -85,6 +85,10 @@
   th { text-align: left; font-weight: 600; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); padding: 0 14px 12px 0; border-bottom: 2px solid var(--ink); }
   td { padding: 15px 14px 15px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
   td.tag { font-weight: 600; white-space: nowrap; }
+  /* scorecard only: seven rows must fit one 7.5in slide */
+  table.scorecard { margin-top: 20px; font-size: 20px; line-height: 1.3; }
+  table.scorecard td { padding: 10px 14px 10px 0; }
+  table.scorecard th { padding-bottom: 8px; }
   .build { color: var(--accent); }
   .buy { color: var(--ink); }
   .integrate { color: var(--ink-soft); }
@@ -458,7 +462,7 @@
 <section class="slide">
 <div class="inner">
   <div class="kicker">The scorecard</div>
-  <table>
+  <table class="scorecard">
     <thead><tr><th>Candidate</th><th>My recommendation</th><th>Why</th></tr></thead>
     <tbody>
       <tr><td>Prior authorization and eligibility</td><td class="tag build">Build</td><td>Strongest evidence, vendors built for someone much larger, federal APIs arrive 2027-01-01.</td></tr>
