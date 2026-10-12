@@ -43,7 +43,24 @@
     h2, tr, li, p, .free, .two, footer { page-break-inside: avoid; break-inside: avoid; }
     h2 { page-break-after: avoid; break-after: avoid; }
   }
+  /* no-numbers variant (?nonumbers): pricing panel removed, remaining two panels share the row */
+  html.nonumbers .two { grid-template-columns: 1fr 1fr; }
 </style>
+<script>
+/* NO-NUMBERS VARIANT. Open with ?nonumbers and the element tagged data-nonumbers="remove" (the
+   pricing panel) is deleted before render. Regenerate with:
+   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer \
+     --print-to-pdf=Imaging-Center-LeaveBehind-NoNumbers-2026-10-20.pdf "file://$PWD/imaging-center-automation-leavebehind-2026-10-20.html?nonumbers"
+   Without the param the page renders unchanged. */
+(function () {
+  if (/[?&]nonumbers\b/.test(location.search)) {
+    document.documentElement.classList.add('nonumbers');
+    document.addEventListener('DOMContentLoaded', function () {
+      Array.prototype.slice.call(document.querySelectorAll('[data-nonumbers="remove"]')).forEach(function (el) { el.parentNode.removeChild(el); });
+    });
+  }
+})();
+</script>
 </head>
 <body>
 <div class="page">
@@ -76,7 +93,7 @@
   </table>
 
   <div class="two">
-    <div>
+    <div data-nonumbers="remove">
       <h2>What I am proposing</h2>
       <p>A design engagement over your six-month build. <b>$30,000 total, two phases, with a gate you control.</b></p>
       <ul>

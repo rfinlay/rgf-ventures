@@ -596,7 +596,7 @@
 </section>
 
 <!-- 23 -->
-<section class="slide">
+<section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">What I am proposing</div>
   <h2 class="tight">A design engagement over your six-month build. Thirty thousand, in two phases, with a gate you control.</h2>
@@ -638,7 +638,7 @@
 </section>
 
 <!-- 24 -->
-<section class="slide">
+<section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">If it were my money</div>
   <h2>I would do three things before signing another vendor contract.</h2>
@@ -659,7 +659,7 @@
 </section>
 
 <!-- 25 -->
-<section class="slide closing">
+<section data-nonumbers="remove" class="slide closing">
 <div class="inner">
   <div class="grow"></div>
   <div class="kicker">Thank you</div>
@@ -685,6 +685,19 @@
 <div class="progress" id="progress"></div>
 
 <script>
+/* NO-NUMBERS VARIANT. Open this file with ?nonumbers (file:///...deck.html?nonumbers) and every
+   element tagged data-nonumbers="remove" is deleted from the DOM before the deck script runs, so the
+   counter, overview numbering, last-slide page-break and print output all see a 21-slide deck.
+   Regenerate the PDF with:
+   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer \
+     --print-to-pdf=Imaging-Center-Deck-NoNumbers-2026-10-20.pdf "file://$PWD/imaging-center-automation-deck-2026-10-20.html?nonumbers"
+   Without the param the file renders the full 24-slide deck unchanged. One source, no fork. */
+(function () {
+  if (/[?&]nonumbers\b/.test(location.search)) {
+    document.documentElement.classList.add('nonumbers');
+    Array.prototype.slice.call(document.querySelectorAll('[data-nonumbers="remove"]')).forEach(function (el) { el.parentNode.removeChild(el); });
+  }
+})();
 (function () {
   var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
   var n = slides.length, i = 0;
