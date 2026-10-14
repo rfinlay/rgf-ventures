@@ -8,19 +8,27 @@
 >
 > **Ask Luis these four things before you leave:**
 > 1. **The price.** Does $30k land, is it high for Fernando, or should you show no number at all?
->    If he says no number: run without slides 22-24. **Do not argue him out of it.**
-> 2. **The staffing plan** (slide 23 depth): named Phase 1 deliverable on slide 22, or stay verbal?
+>    If he says no number: run without the appendix, slides 25 and 26. **Do not argue him out of it.**
+> 2. **The staffing plan** (slide 23 depth): named Phase 1 deliverable on slide 26, or stay verbal?
 >    It is verbal as written.
 > 3. **ASK 11**: "access to three imaging centers," which three, operating today? Still unanswered,
 >    and it is a scope-and-price question, not a curiosity.
 > 4. **Is 10-20 still the Fernando date,** and what is the real opening target? Every timeline claim
 >    in these notes, including the CMS-0057-F argument, rides on it. ~April 2027 is an assumption.
+> 5. **One shared stack, or three instances?** Your 10-10 email assumed one shared back office and one
+>    shared vendor stack; the three centers turn out to have different principals. Slide 18 recommends
+>    one instance per center and is written to survive either answer. Ask, and ask which direction
+>    the partner meant by "requesting medical records": the report going out, or the priors coming in.
+>
+> **Changed 2026-10-14, so the slide numbers moved:** a report assistance slide is new at 18, and the
+> engagement slide now sits in a two-slide appendix (25 divider, 26 engagement) after the Thank You at 24.
+> "If it were my money" stays at 23, ahead of the Thank You, and is in the no-numbers deck too.
 >
 > **Practice the whole thing out loud before the 15th**, including the two positions you have never
-> said aloud: *"I have no day-one deliverable of my own"* (slide 22 depth) and the staffing guardrail
+> said aloud: *"I have no day-one deliverable of my own"* (slide 26 depth) and the staffing guardrail
 > (slide 23 depth). Those are the two that will feel worst live if you have not rehearsed them.
 
-**El Paso, about 2026-10-20. 40 minutes. 24 slides.**
+**El Paso, about 2026-10-20. 40 minutes. 26 slides.**
 **In the room:** Dr. Luis Ramos (uses RadAssist daily; your champion) and Fernando Escarzaga (founded Southwest X-Ray and sold it in 2019; the skeptic and the signer).
 
 This is a rehearsal sheet, not a reference. Read it aloud, top to bottom, in order. The RUNBOOK is for lookup. This is for practice.
@@ -82,7 +90,7 @@ If he raises any of it himself: listen, say little, ask nothing, move on.
 
 ---
 
-# PART 2: THE 24 SLIDES, IN ORDER
+# PART 2: THE 26 SLIDES, IN ORDER
 
 ### SLIDE 1 · Six months of free decisions · 0:00 to 1:00
 
@@ -340,7 +348,7 @@ This is the opposite of a scare statistic, and that is deliberate. Fernando has 
 
 Recommendation: build. This is the lead product. What the agent does: detects authorization-required orders at scheduling, assembles the documentation packet from the referral and the RIS, submits through the payer API where one exists, through EDI 278 where supported, and otherwise prepares a complete packet for a human to submit. Tracks every open request against the seven-day and 72-hour clocks. On denial, drafts the appeal with the clinical rationale and queues it for a human signature. Reports the appeal rate and overturn rate weekly, which is the number the owner should watch. The appeal rate is the headline of the Monday owner report on slide 15: it starts near zero for a new center by definition, it is measurable from week one, and it is entirely attributable to the system. A human signs every submission and every appeal in phase one.
 
-The human signature is deliberate design, and it is the FDA boundary on slide 18, not a cost to be optimized away. If he asks "what if it makes something up": a person signs every payer submission and every appeal, and the system never recommends a study or judges whether one is appropriate. "Phase one" does not mean the sign-off quietly relaxes later. The specification states the graduation criterion: sign-off moves from every item to a sample only after a defined volume at a defined accuracy, measured, and only with the owner approving the change. Until then, every item. That turns the human step from a promise into a governed control, which is the language he negotiates in.
+The human signature is deliberate design, and it is the FDA boundary on slide 19, not a cost to be optimized away. If he asks "what if it makes something up": a person signs every payer submission and every appeal, and the system never recommends a study or judges whether one is appropriate. "Phase one" does not mean the sign-off quietly relaxes later. The specification states the graduation criterion: sign-off moves from every item to a sample only after a defined volume at a defined accuracy, measured, and only with the owner approving the change. Until then, every item. That turns the human step from a promise into a governed control, which is the language he negotiates in.
 
 How the agent relates to the software, in one sentence if he asks: the software is the capability and the agent is the operator. Every piece gets built as a service with a clean interface that works without a model, and the agent runs it. The service is what goes in the specification and what any integrator can take over. The agent is replaceable. More on this at slide 15.
 
@@ -390,7 +398,7 @@ Pocket figure: across 2,893,626 outpatient imaging visits over sixteen years, bo
 
 Do not quote general no-show benchmarks of 10 to 20%, "no-shows cost a practice a million a year," or "$200 per unfilled slot." All of those are vendor material with no methodology, and they contradict the peer-reviewed rates.
 
-The one real risk in this build is TCPA, the Telephone Consumer Protection Act, the federal law that limits automated calls and texts to patients: a backfill offer counts against the same three-per-week cap as reminders. That is the rate governor on slide 19.
+The one real risk in this build is TCPA, the Telephone Consumer Protection Act, the federal law that limits automated calls and texts to patients: a backfill offer counts against the same three-per-week cap as reminders. That is the rate governor on slide 20.
 
 Ask before you lean on this: "What was your cancellation rate, and what did you do with the empty slot?"
 
@@ -522,17 +530,17 @@ There is no external evidence for this candidate, and the research says so plain
 
 The structural claim holds without a study: the owner's view requires joining RIS data to billing data, and those are usually different systems. Both exports are contract terms from slide 3.
 
-Custom by nature, because it encodes one owner's definition of what matters. The reader-reconciliation view already has a customer in Luis. FDA: "business analytics" and "practice and inventory management" are named in the statute at slide 18. PHI is present, so the BAA and Texas residency still apply, but there is no patient-facing surface.
+Custom by nature, because it encodes one owner's definition of what matters. The reader-reconciliation view already has a customer in Luis. FDA: "business analytics" and "practice and inventory management" are named in the statute at slide 19. PHI is present, so the BAA and Texas residency still apply, but there is no patient-facing surface.
 
 **The owner agent, and how every agent in this design is built.** Three kinds of agent, by how much damage a mistake can do.
 
-- **The owner agent.** Read-only conversational access over operational data: volumes, cancellations, no-shows, payer mix, appeal rate, reader turnaround. He asks a question in plain words and gets an answer from his own numbers. Lowest risk on the whole list: it reads and never acts, it sees nothing the owner does not already see, it has no patient contact, and it has no clinical surface. It is "business analytics" and "practice and inventory management," named in the statute at slide 18. It is specified in Phase 2 and it is the strongest candidate for the first thing he sees working. It reads your own database, so the AI vendor's BAA exclusions on slide 19 do not touch it.
+- **The owner agent.** Read-only conversational access over operational data: volumes, cancellations, no-shows, payer mix, appeal rate, reader turnaround. He asks a question in plain words and gets an answer from his own numbers. Lowest risk on the whole list: it reads and never acts, it sees nothing the owner does not already see, it has no patient contact, and it has no clinical surface. It is "business analytics" and "practice and inventory management," named in the statute at slide 19. It is specified in Phase 2 and it is the strongest candidate for the first thing he sees working. It reads your own database, so the AI vendor's BAA exclusions on slide 20 do not touch it.
 - **The workflow agents.** Prior auth, records, backfill. They act on the world, and a human signs. Already specified, bounded, medium risk. No change.
 - **Patient-facing voice.** Highest blast radius. Still bought from a vendor. No change.
 
-**The design standard that applies to all three, and say it if he asks how any of this is built:** the software is the capability and the agent is the operator. Every automation is two deliverables. First, a deterministic service with a clean interface that works without any model at all. Second, an agent surface over it. The service is auditable, testable, and survives any model change; it is what goes in the specification and what any integrator can take over, which is what keeps the slide 20 continuity promise honest. The agent is the replaceable part: the model vendor can change, the BAA envelope can change, the pricing can change, and none of it breaks the center. That is also the honest answer to "can an AI do this": the agent is a better interface, the service is the capability.
+**The design standard that applies to all three, and say it if he asks how any of this is built:** the software is the capability and the agent is the operator. Every automation is two deliverables. First, a deterministic service with a clean interface that works without any model at all. Second, an agent surface over it. The service is auditable, testable, and survives any model change; it is what goes in the specification and what any integrator can take over, which is what keeps the slide 21 continuity promise honest. The agent is the replaceable part: the model vendor can change, the BAA envelope can change, the pricing can change, and none of it breaks the center. That is also the honest answer to "can an AI do this": the agent is a better interface, the service is the capability.
 
-Scope effect, so nobody misreads it: the owner-agent specification and the tool-first standard are inside Phase 2. The price does not move. See slide 22.
+Scope effect, so nobody misreads it: the owner-agent specification and the tool-first standard are inside Phase 2. The price does not move. See slide 26.
 
 **BEAT**
 
@@ -582,7 +590,7 @@ Read it in one breath. **"Three of the seven, I am telling you to buy" is the po
 
 ---
 
-### SLIDE 17 · Proof: RadAssist · 29:00 to 34:00
+### SLIDE 17 · Proof: RadAssist · 29:00 to 33:00
 
 **SAY**
 
@@ -594,7 +602,7 @@ Then stop talking.
 
 **DEPTH / IF ASKED**
 
-The only proof that matters is the artifact that already works, and the only witness who matters is the one using it. Seven minutes belong to Luis.
+The only proof that matters is the artifact that already works, and the only witness who matters is the one using it. Those four minutes belong to Luis.
 
 If Luis mentions something that broke, let him. The speed of the fix is the proof, not the absence of failures.
 
@@ -608,7 +616,51 @@ Open the live app. Hand the table to Luis. Do not demo features. Do not fill his
 
 ---
 
-### SLIDE 18 · Boundaries: the FDA question, answered by the statute · 34:00 to 35:00
+### SLIDE 18 · Radiology report assistance · 33:00 to 34:00
+
+Ask before the slide, to Luis as much as to Fernando: "When your partner said requesting medical records, did he mean the report you write going out, or the priors and outside records coming in?" The answer decides which half of this slide you spend the minute on.
+
+**SAY**
+
+"One more thing before the boundaries, because it is the one piece of this you have already seen working.
+
+The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature.
+
+That is RadAssist today. It reads the scanner's numbers from a screen capture Luis pastes, drafts the report from his own template, and he confirms every value before anything applies. At your center the path has a name: DICOM worklist and query for the study, HL7 version 2 ORU to carry the signed report into the RIS. Both are contract terms from slide 3.
+
+Requesting records runs the other way, and it is a different build. DICOM query and retrieve where a facility grants it. A request out and a DICOM import where it does not. And from January, the payer's Provider Access API for the claims record, which is in-network only and carries documents, not images.
+
+Which one did you mean? They are two different builds, and I would rather ask than guess."
+
+**THEN SAY (the caveat, on three centers)**
+
+"One instance per center, not one shared stack. That costs more, not less: three hosts, three databases, three sets of credentials, three audit logs. I am recommending it anyway. The reason is governance, not technology. Separate principals, separate books, and a line any auditor can see without reading code. Share a back office if you want to; the specification is written once either way. The data stays apart."
+
+**DEPTH / IF ASKED**
+
+Why this slide exists: your 10-10 email to Luis said "your partner asked about scheduling, answering patients, and requesting medical records." In a radiology practice, records has two directions, and the deck has to make Luis pick. Slide 14 is the records request seen from the other side; this slide is the report, and the honest line between the two.
+
+RadAssist, stated exactly and no further: calcium score and thyroid modules. Luis snips the scanner's calcium report or the dose screen, pastes it, and RadAssist reads per-vessel scores, total, age, sex, and DLP, shows every value with a confidence mark, and applies nothing until he clicks Apply. It drafts from his own template. No patient data is stored on the server; the inputs are computed in the browser. It does not read DICOM, does not touch the PACS, and does not interpret an image. The viewer at his current site is server-side rendered and never gives the browser a DICOM object, which is why the screen-capture path exists at all. Do not claim it does more than that tonight; Luis is sitting there and will correct you.
+
+The named path at a center they own, and why it is honest to name it: DICOM Modality Worklist and query/retrieve give the report assistant the study context, which is contract term four. HL7 v2 ORU is the standard result message every RIS sends out; what has to be verified before signature is that the RIS also accepts an inbound ORU result, because Konica Minolta's Exa, for one, documents only outbound report paths. That is a Phase 1 evaluation item. Say "I will verify that against the RIS you pick," never "it will work."
+
+Records coming in: DICOM query/retrieve across organizations is rare because the sending facility has to grant it; otherwise the request goes out by fax or portal and the images come back on a disc or a link and are imported over DICOM. The payer Provider Access API under CMS-0057-F arrives 2027-01-01, carries the claims and clinical record the payer holds, never images, and requires an in-network contract plus a treatment relationship with the patient, which a newly opened center may not have on day one. Name that limit before he does.
+
+The FDA line, if he connects this to slide 19: the radiologist's own numbers, the radiologist's own template, the radiologist's signature. It formats what the scanner already measured. Anything that would recommend a follow-up interval or flag growth is on the other side of the wall and is declined.
+
+Three instances, stack-agnostic on purpose. Your 10-10 email told Luis you were assuming one shared back office and one shared vendor stack. On 10-14 you learned the three centers have different principals. Those two facts have not been reconciled, and the question is Luis's on the 15th. The slide survives either answer: a shared back office is staff and logins, every session scoped to one center; a merged database is the thing you are recommending against. Do not say as fact that the three centers share anything, and do not name the other principals; their spellings are unconfirmed.
+
+Not on the scorecard, deliberately. The scorecard is the list of candidates. This is not a candidate; it exists and Luis uses it. Extending it to the new center is Tier 3 product under the slide 21 license, same as the prior auth engine.
+
+If asked how long: no date. "Which direction, and against which RIS. Then I can scope it."
+
+**BEAT**
+
+Say the heading slowly, then let Luis answer the direction question. Write down which one he says. That answer changes Phase 2.
+
+---
+
+### SLIDE 19 · Boundaries: the FDA question, answered by the statute · 34:00 to 35:00
 
 **SAY**
 
@@ -638,7 +690,7 @@ One minute. The list is the answer. Do not argue it.
 
 ---
 
-### SLIDE 19 · Boundaries: what I will design around, stated before you ask · 35:00 to 36:00
+### SLIDE 20 · Boundaries: what I will design around, stated before you ask · 35:00 to 36:00
 
 **SAY**
 
@@ -672,7 +724,7 @@ Each constraint in a sentence or two, then move. Volunteering them is what separ
 
 ---
 
-### SLIDE 20 · The question you are going to ask · 36:00 to 37:00
+### SLIDE 21 · The question you are going to ask · 36:00 to 37:00
 
 Never cut this slide.
 
@@ -698,7 +750,7 @@ The design engagement exists so that this question has a boring answer. If I dis
 
 The three tiers, so you can name them if he asks what exactly is his. One, the specification: theirs outright. Two, everything specific to this center, meaning configuration, workflows, integrations, data mappings, and reports: theirs outright, in their repository, your access revocable. Three, existing product of yours that you extend for them, such as the prior auth engine, the backfill engine, and the reporting core: yours, licensed to them perpetually, irrevocably, and transferably, with the source. They can run it and modify it for their own operations forever. They cannot resell it. Only the third tier stays yours, and it is the one that makes the price possible.
 
-Why raise it unprompted: he has negotiated these contracts, and he will find it in the redline anyway. Finding it yourself, out loud, at dinner, is the difference between a negotiator and a vendor. It is the same move as slide 21.
+Why raise it unprompted: he has negotiated these contracts, and he will find it in the redline anyway. Finding it yourself, out loud, at dinner, is the difference between a negotiator and a vendor. It is the same move as slide 22.
 
 If he asks why the product pieces are not simply his: "It is less expensive for you because I keep the product rights. If you want those too, that is a different number, and I would rather not go there tonight."
 
@@ -706,7 +758,7 @@ Escrow: "Direct ownership is better than escrow. The code for your center is in 
 
 A second person: "There is no second person. That is the honest answer, and it is why the engagement is structured so that the specification and the runbooks are the continuity plan, not me."
 
-Why this slide may matter more than any number: his bar for AI may be low. His bar for vendors is high, and he has been left holding systems by vendors before. Compensate with verifiable structure, not warmth. The ninety-day gate on slide 22 is what makes this promise financial rather than reassuring: he can stop.
+Why this slide may matter more than any number: his bar for AI may be low. His bar for vendors is high, and he has been left holding systems by vendors before. Compensate with verifiable structure, not warmth. The ninety-day gate on slide 26 is what makes this promise financial rather than reassuring: he can stop.
 
 Ask here, and write the answer down: "We are two people. If you were in my chair pitching you, what would you want to see about continuity and about getting out, before you would put us anywhere near your schedule?" Whatever he names is your path to a yes.
 
@@ -716,7 +768,7 @@ Five points, in order, no skipping. The ownership distinction rides inside point
 
 ---
 
-### SLIDE 21 · The most important slide · 37:00 to 38:00
+### SLIDE 22 · The most important slide · 37:00 to 38:00
 
 Never cut this slide.
 
@@ -738,7 +790,7 @@ Anything that touches the image clinically. Not from me, not from anyone, withou
 
 The third bullet is printed on the slide as "Anything built to resell to other centers." An earlier draft printed a one-word heading that is on the never-say strip; it stays off the screen and out of your mouth, even in the negative. The reason the bullet exists at all: he has heard "and then we expand it" from everyone who ever pitched him, and he knows it means the person is about to become unavailable to his center. The spoken line is built around that. It makes no claim about your business model. It makes a commitment about his service level, in writing.
 
-Why the narrow truth and not a flat no: a flat "no" would be false, because the product pieces stay yours under the slide 20 structure and you may well run them for another site one day. He will see that in the redline. A flat "yes, and I will serve other centers too" is the sentence he is allergic to. The honest middle is a commitment about him rather than a claim about you, and it happens to be the better deal for him: a reference implementation gets the most attention, not the least.
+Why the narrow truth and not a flat no: a flat "no" would be false, because the product pieces stay yours under the slide 21 structure and you may well run them for another site one day. He will see that in the redline. A flat "yes, and I will serve other centers too" is the sentence he is allergic to. The honest middle is a commitment about him rather than a claim about you, and it happens to be the better deal for him: a reference implementation gets the most attention, not the least.
 
 If he asks "is this going to be a product you sell to other centers": "Not off the back of your build. I keep the rights to my own product, and you hold it under a license you can never lose. What I will not do is make you one logo on a page. This center is the reference implementation, you are the priority, and your service terms are fixed in writing no matter what I do next. You know what the other version of that sentence means for your service level, so I am not going to say it."
 
@@ -754,9 +806,87 @@ Recommending against yourself is the single most credible thing you can do in fr
 
 ---
 
-### SLIDE 22 · What I am proposing · 38:00 to 39:30
+### SLIDE 23 · If it were my money · 38:00 to 38:30
 
-Never cut this slide. This is the single most rehearsed line in the deck.
+Cut this slide second if you are running long. Keep the closing question even if you cut the slide.
+
+**SAY**
+
+"If it were my money, I would do three things before signing another vendor contract.
+
+Put the four access terms into every contract this month. It is free.
+
+Decide now whether the prior authorization desk is a hire or a system. That decision expires the day you hire for it.
+
+And tell me what front desk and prior authorization actually cost you last time, as a share of operating expense. Your number beats any benchmark I could bring.
+
+One question for you. What would you do differently this time, knowing how the last one ended up?"
+
+Then stop and listen.
+
+**DEPTH / IF ASKED**
+
+The third bullet is the most valuable question of the night. There is no defensible published benchmark for administrative labor as a share of imaging center operating cost. Everything circulating comes from content farms and financial-model templates. His P&L is the only number that matters, so ask for it and write it down.
+
+⚠️ **The second bullet, "a hire or a system," is where you must volunteer the staffing guardrail. Do not wait to be asked.** The bullet as written invites exactly the conclusion you do not want: that they should hold off hiring because a system is coming. Add this immediately after saying it:
+
+> "And to be clear about what I am not saying. Staff for the manual workflow at opening. That is the only thing either of us can verify on day one, and I am not going to tell you to hire thin against a date of mine. What I will give you in Phase 1 is the sequence: which roles change as each piece goes in, and in what order, so each one is a decision you make later rather than a commitment you make now. Planned, attrition and role changes absorb most of it. Discovered, it becomes a layoff."
+
+**Why this is not a throwaway.** Every other question in this deck is about Rick's schedule. This is about **their irreversible decision.** A center that opens with six front-office FTEs because the automation was not ready has made a hiring commitment that automation later converts into layoffs, in El Paso, in a small market, with Fernando's name on it and Luis practicing locally. Layoffs at a six-month-old imaging center is a story that follows both of them. It cuts the other way too: under-hiring against a promise that slips means a front office that cannot answer the phone during the exact window that forms their referral reputation. Both failure modes cost more than being wrong about a build date.
+
+Volunteering it is also the single most credible thing available at that table. Same mechanism as the data-quality caveat: naming the limit of your own pitch is what makes the rest believable. **Fernando specifically will hear it, because he is the one who would have to do the firing.**
+
+**FRAMING, NON-NEGOTIABLE.** Never say automation **reduces headcount.** Always say automation **changes what your people do.** For a greenfield center scaling from zero that is also the *truer* claim: no existing job is eliminated, they are avoiding hires otherwise needed around month eighteen. Growth absorption, not reduction. Same economics, no layoff implication, and accurate. Scan your own phrasing for "replace," "eliminate," "reduce staff," and "FTE savings" and do not let any of them out of your mouth.
+
+**A staffing plan tied to the automation roadmap is Phase 1 work, and it stays VERBAL.** It is not on slide 26 and not in the leave-behind. Ask Luis at the 10-15 rehearsal whether it should become a named Phase 1 deliverable before Fernando sees the deck. Luis knows how Fernando thinks about payroll; you do not.
+
+Do not ask whether Southwest X-Ray was his. That is confirmed, and asking a question he has already answered reads as not listening.
+
+The closing question is open on purpose. He is opening in direct competition with a company that owns what he built, and the buyer had financial trouble afterward. If his answer goes anywhere near the sale, the buyer, or how his time there ended: stop talking, listen, say little, ask nothing, move on. His answer tells you what he actually wants from this center, and it is probably control.
+
+**BEAT**
+
+Ask the closing question and then do not fill the silence. A man with his history has a long answer to it. Let him give it.
+
+---
+
+### SLIDE 24 · Thank you · 38:30, then stop selling or turn to the appendix
+
+**SAY**
+
+"Every one of these decisions is reversible today. None of them will be in six months.
+
+Thank you both. Here is one page you can keep."
+
+**DEPTH / IF ASKED**
+
+Contact on the slide: Richard Finlay, RGF Global Ventures LLC, (480) 532-1367, rfinlay813@gmail.com.
+
+**BEAT**
+
+Put the leave-behind on the table, one per person. This is the last slide of the pitch. If the room asks for the number, the appendix is next; if not, stop selling and have dinner. In the no-numbers deck it is the last slide either way.
+
+---
+
+### SLIDE 25 · Appendix: scope and investment · 38:30
+
+**SAY**
+
+"The rest is reference. It is what it would cost to have me design this with you, and you can stop me here if you would rather take it another day."
+
+**DEPTH / IF ASKED**
+
+This divider exists so the number lands after the decisions, as reference material, and so the room can stop before it. If Luis said no numbers on the 15th, this slide and the next are not in the deck you are showing; the no-numbers variant ends on the Thank You.
+
+**BEAT**
+
+One sentence. Watch him. If he waves you on, advance. If he does not, stop, and the price goes in a follow-up he asks for.
+
+---
+
+### SLIDE 26 · What I am proposing · 38:30 to 40:00
+
+Never cut this slide if the number is being shown. This is the single most rehearsed line in the deck. It sits in the appendix, after the Thank You, so the number lands as reference material after the decisions; the room can stop before it, and if Luis said no numbers it is not in the deck at all.
 
 **SAY, exactly this, once**
 
@@ -772,7 +902,7 @@ If he pushes on price: shorten the term, never cut the rate. "That is exactly wh
 
 If he asks why the number is what it is, the one structural sentence you may say: "It stays where it is because I keep the rights to my own product, and you hold it under a license you cannot lose." Then stop again.
 
-Why two phases: the decision in the room is twelve thousand, not thirty. Phase 1 is also the half with the real deadline, because it has to land before vendor signatures. If it slips, the advantage is gone. And the gate makes the continuity promise on slide 20 financial: he can stop.
+Why two phases: the decision in the room is twelve thousand, not thirty. Phase 1 is also the half with the real deadline, because it has to land before vendor signatures. If it slips, the advantage is gone. And the gate makes the continuity promise on slide 21 financial: he can stop.
 
 Phase 2 is a fixed price for a specification deliverable. The owner agent from slide 15 and the tool-first standard are inside the eighteen, not on top of it. Adding a specified component adds value at the same price, which makes the gate decision easier, not harder. If the scope grows, the number does not. The moment you raise the number because the scope grew, this becomes a time-and-materials negotiation and you lose the one thing that makes this slide work: you say it once and stop talking.
 
@@ -816,68 +946,6 @@ Never give a date for the build. The build is decided after opening, from the sp
 **BEAT**
 
 Say it once. Stop. Let the silence sit. Whoever speaks next is not you.
-
----
-
-### SLIDE 23 · If it were my money · 39:30 to 40:00
-
-Cut this slide second if you are running long. Keep the closing question even if you cut the slide.
-
-**SAY**
-
-"If it were my money, I would do three things before signing another vendor contract.
-
-Put the four access terms into every contract this month. It is free.
-
-Decide now whether the prior authorization desk is a hire or a system. That decision expires the day you hire for it.
-
-And tell me what front desk and prior authorization actually cost you last time, as a share of operating expense. Your number beats any benchmark I could bring.
-
-One question for you. What would you do differently this time, knowing how the last one ended up?"
-
-Then stop and listen.
-
-**DEPTH / IF ASKED**
-
-The third bullet is the most valuable question of the night. There is no defensible published benchmark for administrative labor as a share of imaging center operating cost. Everything circulating comes from content farms and financial-model templates. His P&L is the only number that matters, so ask for it and write it down.
-
-⚠️ **The second bullet, "a hire or a system," is where you must volunteer the staffing guardrail. Do not wait to be asked.** The bullet as written invites exactly the conclusion you do not want: that they should hold off hiring because a system is coming. Add this immediately after saying it:
-
-> "And to be clear about what I am not saying. Staff for the manual workflow at opening. That is the only thing either of us can verify on day one, and I am not going to tell you to hire thin against a date of mine. What I will give you in Phase 1 is the sequence: which roles change as each piece goes in, and in what order, so each one is a decision you make later rather than a commitment you make now. Planned, attrition and role changes absorb most of it. Discovered, it becomes a layoff."
-
-**Why this is not a throwaway.** Every other question in this deck is about Rick's schedule. This is about **their irreversible decision.** A center that opens with six front-office FTEs because the automation was not ready has made a hiring commitment that automation later converts into layoffs, in El Paso, in a small market, with Fernando's name on it and Luis practicing locally. Layoffs at a six-month-old imaging center is a story that follows both of them. It cuts the other way too: under-hiring against a promise that slips means a front office that cannot answer the phone during the exact window that forms their referral reputation. Both failure modes cost more than being wrong about a build date.
-
-Volunteering it is also the single most credible thing available at that table. Same mechanism as the data-quality caveat: naming the limit of your own pitch is what makes the rest believable. **Fernando specifically will hear it, because he is the one who would have to do the firing.**
-
-**FRAMING, NON-NEGOTIABLE.** Never say automation **reduces headcount.** Always say automation **changes what your people do.** For a greenfield center scaling from zero that is also the *truer* claim: no existing job is eliminated, they are avoiding hires otherwise needed around month eighteen. Growth absorption, not reduction. Same economics, no layoff implication, and accurate. Scan your own phrasing for "replace," "eliminate," "reduce staff," and "FTE savings" and do not let any of them out of your mouth.
-
-**A staffing plan tied to the automation roadmap is Phase 1 work, and it stays VERBAL.** It is not on slide 22 and not in the leave-behind. Ask Luis at the 10-15 rehearsal whether it should become a named Phase 1 deliverable before Fernando sees the deck. Luis knows how Fernando thinks about payroll; you do not.
-
-Do not ask whether Southwest X-Ray was his. That is confirmed, and asking a question he has already answered reads as not listening.
-
-The closing question is open on purpose. He is opening in direct competition with a company that owns what he built, and the buyer had financial trouble afterward. If his answer goes anywhere near the sale, the buyer, or how his time there ended: stop talking, listen, say little, ask nothing, move on. His answer tells you what he actually wants from this center, and it is probably control.
-
-**BEAT**
-
-Ask the closing question and then do not fill the silence. A man with his history has a long answer to it. Let him give it.
-
----
-
-### SLIDE 24 · Thank you · 40:00, then stop selling
-
-**SAY**
-
-"Every one of these decisions is reversible today. None of them will be in six months.
-
-Thank you both. Here is one page you can keep."
-
-**DEPTH / IF ASKED**
-
-Contact on the slide: Richard Finlay, RGF Global Ventures LLC, (480) 532-1367, rfinlay813@gmail.com.
-
-**BEAT**
-
-Put the leave-behind on the table, one per person. Then stop selling and have dinner.
 
 ---
 
@@ -927,7 +995,7 @@ Closer: "The design engagement exists so that this question has a boring answer.
 
 Escrow: direct ownership beats escrow for the center's code, and for the product pieces they already hold the source under the license, which is what escrow is for, without the fight. Why the product stays mine: it is less expensive for you because I keep the product rights; if you want those too, that is a different number and not tonight. Second person: there is no second person, and that is why the spec and the runbooks are the continuity plan.
 
-Other centers, if it comes up here instead of at slide 21: not off the back of your build. This center is the reference implementation, you are the priority, and your service terms do not change if I ever take on a second site. In writing.
+Other centers, if it comes up here instead of at slide 22: not off the back of your build. This center is the reference implementation, you are the priority, and your service terms do not change if I ever take on a second site. In writing.
 
 ## Drill 4: the questions you ask them, in the order you would ask them
 
@@ -940,8 +1008,8 @@ Write every answer down at the table.
 5. **Slide 11, before you lean on 22.3%:** "What was your cancellation rate, and what did you do with the empty slot?"
 6. **Slide 13, before the voice recommendation:** "Who takes the phone call when a patient describes chest pain?"
 7. **Slide 15, owner reporting:** "What do you want to see on one page every Monday morning?"
-8. **Slide 18 or 19, the boundaries:** "You came up as an RPA, so you have been in the room with the patient. When you think about automating the front end, where is the line for you? What has to stay human?"
-9. **Slide 20, the bus question:** "We are two people. If you were in my chair pitching you, what would you want to see about continuity and about getting out, before you would put us anywhere near your schedule?"
+8. **Slide 19 or 20, the boundaries:** "You came up as an RPA, so you have been in the room with the patient. When you think about automating the front end, where is the line for you? What has to stay human?"
+9. **Slide 21, the bus question:** "We are two people. If you were in my chair pitching you, what would you want to see about continuity and about getting out, before you would put us anywhere near your schedule?"
 10. **Slide 23, the close:** "What did front desk and prior authorization actually cost you last time, as a share of operating expense?" Then: "What would you do differently this time, knowing how the last one ended up?"
 
 The runbook numbers these 1 through 8 with two items each numbered 5 and 6. There are ten questions. Ask all ten.
@@ -954,7 +1022,7 @@ If dinner collapses to one minute, this is what survives. Say it as one paragrap
 
 ## Drill 6: the 5-minute version
 
-Cut slide 15 first, then shorten the RadAssist demo on 17. Never cut 20, 21, or 22. In five minutes you keep:
+Cut slide 15 first, then shorten the RadAssist demo on 17. Never cut 21, 22, or 26. In five minutes you keep:
 
 | Minute | Slides | What you say |
 |---|---|---|
@@ -962,9 +1030,9 @@ Cut slide 15 first, then shorten the RadAssist demo on 17. Never cut 20, 21, or 
 | 0:45 to 1:45 | 4, 5 | Four in five, stop. Caveat. Forty percent, you have not hired that person yet. Caveat. |
 | 1:45 to 2:30 | 6, 16 | "The thing you did not ask about." Then the scorecard in one breath: two of the things you asked about, I am telling you to buy. |
 | 2:30 to 3:15 | 17 | RadAssist is open. "Luis, one Tuesday." Forty-five seconds of Luis. |
-| 3:15 to 4:00 | 20 | The five bus points, in order. "A boring answer." |
-| 4:00 to 4:30 | 21 | What I recommend you do not buy from me. Slowly. |
-| 4:30 to 5:00 | 22 | The price, once. Stop. |
+| 3:15 to 4:00 | 21 | The five bus points, in order. "A boring answer." |
+| 4:00 to 4:30 | 22 | What I recommend you do not buy from me. Slowly. |
+| 4:30 to 5:00 | 26 | The price, once. Stop. |
 
 What is lost in the 5-minute version: every caveat except the two on slides 4 and 5, the federal dates, the records rules, the boundaries slides. If he asks about any of them, you have the full answer above.
 
@@ -979,7 +1047,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 ## Before you leave the house
 
 - [ ] **DONE 2026-10-06, no action needed: the partner name is in.** Fernando Escarzaga appears in full on the two surfaces he will actually see, the deck title slide and the leave-behind header. First name only in the presenter notes, the RUNBOOK, and AUTOMATION-CANDIDATES, where it reads naturally. Every placeholder is gone, and all four PDFs were reprinted and re-synced to OneDrive and Google Drive.
-- [ ] **The fee is decided: $30,000, two phases, $12,000 then $18,000, gate at 90 days.** On slide 22 and on the leave-behind in writing. Say it once and stop.
+- [ ] **The fee is decided: $30,000, two phases, $12,000 then $18,000, gate at 90 days.** On slide 26 and on the leave-behind in writing. Say it once and stop.
 - [ ] **Print the leave-behind.** Two copies. Verified to print on one US Letter page from Chrome.
 - [ ] **Charge the laptop.** The deck runs with no wifi. RadAssist does not. Confirm radassist.app loads on your phone's hotspot before you sit down, or have screenshots ready.
 - [ ] **Open the deck in a browser.** Press N once to confirm notes mode works, press N again to hide it. Set the browser to full screen.
@@ -992,16 +1060,16 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 These were found while building this sheet and have since been fixed in the deck and the RUNBOOK.
 Listed so you know what changed and why, not because anything is outstanding.
 
-- **The 40-minute clock now closes.** It used to give slide 21 the final minute and allocate nothing to the rest of the close, while the RUNBOOK crammed seven slides into three minutes. Fixed by folding the CMS slide into the AMA slide (one argument, told once) and taking two minutes off the RadAssist demo. **The close now owns 36:00 to 40:00**, with the engagement getting 38:00 to 39:30. The deck is 24 slides, not 25, and every slide number in this sheet has been renumbered to match.
+- **The 40-minute clock now closes.** It used to give the "what not to buy" slide the final minute and allocate nothing to the rest of the close, while the RUNBOOK crammed seven slides into three minutes. Fixed by folding the CMS slide into the AMA slide (one argument, told once) and taking two minutes off the RadAssist demo. **The close now owns 36:00 to 40:00**, with the engagement getting 38:30 to 40:00 from the appendix. The deck was reflowed to 24 slides on 2026-10-06 and to 26 on 2026-10-14 (report assistance at 18, appendix at 25 and 26), and every slide number in this sheet has been renumbered to match.
 - **"A platform" is off the screen.** That bullet heading now reads "Anything built to resell to other centers," which makes the same promise without printing a never-say word in large type behind you.
 - **The "two centers" error is corrected** to one company with five El Paso locations, in the deck presenter note where it lived.
 - **The RUNBOOK objection answer no longer quotes "and then we scale it."** It names the consequence instead of the slogan.
 
-**The one judgment call left is yours, and it is not a defect:** if the night runs long, the cut order is slide 15, then the RadAssist demo, and never slides 20, 21, or 22.
+**The one judgment call left is yours, and it is not a defect:** if the night runs long, the cut order is slide 15, then the RadAssist demo, and never slides 21, 22, or 26.
 
 ## Deck order is narrative, on purpose
 
-The slides run in the order that moves Fernando from skepticism to a decision, which is why the free move comes at slide 3, before you ask for anything, and the price comes last. That is not the order of value. **Do not re-sequence the deck by value.** The ranked view, highest value to lowest, lives on the leave-behind, which is the artifact he keeps. Items 6 and 7 on that list ranking low is slide 21 and is the point. Item 1 stays at the top even though you earn nothing from it, which is what makes the list believable.
+The slides run in the order that moves Fernando from skepticism to a decision, which is why the free move comes at slide 3, before you ask for anything, and the price comes last. That is not the order of value. **Do not re-sequence the deck by value.** The ranked view, highest value to lowest, lives on the leave-behind, which is the artifact he keeps. Items 6 and 7 on that list ranking low is slide 22 and is the point. Item 1 stays at the top even though you earn nothing from it, which is what makes the list believable.
 
 ---
 
@@ -1017,7 +1085,7 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **ASTP / ONC.** Assistant Secretary for Technology Policy, formerly the Office of the National Coordinator for Health IT. The federal office that sets health data exchange policy; the RSNA letter on slide 14 was addressed to it.
 
-**BAA.** Business associate agreement. The HIPAA contract a provider signs with any vendor that handles patient data on its behalf. Every vendor in this design needs one, including the AI model vendor, and slide 19 names what the AI vendor's agreement does and does not cover.
+**BAA.** Business associate agreement. The HIPAA contract a provider signs with any vendor that handles patient data on its behalf. Every vendor in this design needs one, including the AI model vendor, and slide 20 names what the AI vendor's agreement does and does not cover.
 
 **BLS.** Bureau of Labor Statistics. Source of the El Paso wage figure on slide 5.
 
@@ -1039,13 +1107,13 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **EDI 270 / 271 / 278.** Electronic Data Interchange transactions, the standardized messages that have run between providers and payers for decades. The 270 asks whether a patient is eligible, the 271 answers, and the 278 requests a prior authorization. The fallback path for commercial plans the federal rule does not reach.
 
-**EHR.** Electronic health record. The patient's clinical record system. Texas SB 1188 on slide 19 requires electronic health records with Texas patient data to be stored in the United States.
+**EHR.** Electronic health record. The patient's clinical record system. Texas SB 1188 on slide 20 requires electronic health records with Texas patient data to be stored in the United States.
 
-**Escrow (software escrow).** An arrangement where a neutral third party holds a copy of a vendor's source code and releases it to the customer if the vendor goes out of business or breaks the contract. It is what a buyer asks for when he does not trust that the code will outlive the vendor. Slide 20 declines it because the center's own code already sits in their repository and the product pieces come with the source in their hands on day one, so there is nothing left for an escrow agent to hold.
+**Escrow (software escrow).** An arrangement where a neutral third party holds a copy of a vendor's source code and releases it to the customer if the vendor goes out of business or breaks the contract. It is what a buyer asks for when he does not trust that the code will outlive the vendor. Slide 21 declines it because the center's own code already sits in their repository and the product pieces come with the source in their hands on day one, so there is nothing left for an escrow agent to hold.
 
 **FCC.** Federal Communications Commission. The agency that writes and enforces the TCPA rules, including the 2024 ruling that an AI voice counts as an artificial voice.
 
-**FDA.** Food and Drug Administration. The agency that regulates medical devices, including software that interprets images. Slide 18 is the statutory reason none of the five candidates is a device.
+**FDA.** Food and Drug Administration. The agency that regulates medical devices, including software that interprets images. Slide 19 is the statutory reason none of the five candidates is a device.
 
 **FHIR.** Fast Healthcare Interoperability Resources, said "fire." The modern API standard for health data. The payer APIs required by the federal rule are FHIR APIs. On the RIS side, do not pay extra for it and do not plan around it; HL7 version 2 is what the RIS will actually speak.
 
@@ -1065,7 +1133,7 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **MA.** Medicare Advantage. Medicare coverage delivered through a private insurer under contract with CMS, instead of traditional Medicare run by CMS directly. The headline number on slide 4 is a Medicare Advantage number, and the federal rule binds these plans.
 
-**MCP.** Model Context Protocol. A standard for connecting an AI model to outside tools and data. Named on slide 19 only because data flowing through third-party MCP connectors is outside the AI vendor's BAA.
+**MCP.** Model Context Protocol. A standard for connecting an AI model to outside tools and data. Named on slide 20 only because data flowing through third-party MCP connectors is outside the AI vendor's BAA.
 
 **MRI.** Magnetic resonance imaging. One modality. The 4.94 percent denial rate on slide 9 and the Mass General reminder trial on slide 12 are both MRI-only studies.
 
@@ -1073,7 +1141,7 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **OCR.** Office for Civil Rights, inside HHS. The office that enforces HIPAA, including the records access deadlines. An OCR complaint is the failure mode the records tracker exists to prevent.
 
-**ORM / ORU.** The two HL7 version 2 message types that carry an order (ORM) and a result (ORU). How a referring physician's EHR sends the center an order and how the center sends the report back. Slide 21: the integration surface with outside EHRs, and the reason you are not building one.
+**ORM / ORU.** The two HL7 version 2 message types that carry an order (ORM) and a result (ORU). How a referring physician's EHR sends the center an order and how the center sends the report back. Slide 22: the integration surface with outside EHRs, and the reason you are not building one.
 
 **PACS.** Picture Archiving and Communication System. Where the images themselves are stored. The RIS tracks the order and the schedule; the PACS holds the pictures. Records retrieval is a DICOM query against the PACS.
 
@@ -1087,7 +1155,7 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **Prior authorization.** A payer's advance approval of a study before it is performed and billed. The largest cost the center has not planned for, and the lead build candidate.
 
-**Rate governor.** The per-patient limiter in the messaging design that counts every reminder, backfill offer, and results notice against the TCPA cap of one a day and three a week. Slide 19: a send queue alone does not do this.
+**Rate governor.** The per-patient limiter in the messaging design that counts every reminder, backfill offer, and results notice against the TCPA cap of one a day and three a week. Slide 20: a send queue alone does not do this.
 
 **RIS.** Radiology information system. The operational system of a radiology practice: orders, scheduling, patient registration, worklists, reporting, and usually reminders. The single most consequential vendor choice they will make in the next six months.
 
@@ -1095,14 +1163,14 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **RSNA.** Radiological Society of North America. The professional society whose March 2026 comment letter is the source for the prior-study retrieval gap on slide 14.
 
-**SB 1188 / HB 300 / HB 149 / AB 3030.** Texas Senate Bill 1188, Texas House Bills 300 and 149, and California Assembly Bill 3030. State statutes named on slides 13, 18, and 19: US-only storage of Texas health records, the Texas privacy law that reaches Rick directly, the Texas AI disclosure obligation, and the California AI disclosure law that excludes scheduling and billing.
+**SB 1188 / HB 300 / HB 149 / AB 3030.** Texas Senate Bill 1188, Texas House Bills 300 and 149, and California Assembly Bill 3030. State statutes named on slides 13, 19, and 20: US-only storage of Texas health records, the Texas privacy law that reaches Rick directly, the Texas AI disclosure obligation, and the California AI disclosure law that excludes scheduling and billing.
 
-**TCPA.** Telephone Consumer Protection Act. The federal law, enforced by the FCC, that restricts automated calls and texts to consumers. Its wireless healthcare exemption lets a provider send appointment reminders and similar messages without separate written consent, but only within eight conditions, including one message a day and three a week per patient and no billing content. Slides 11, 13, and 19.
+**TCPA.** Telephone Consumer Protection Act. The federal law, enforced by the FCC, that restricts automated calls and texts to consumers. Its wireless healthcare exemption lets a provider send appointment reminders and similar messages without separate written consent, but only within eight conditions, including one message a day and three a week per patient and no billing content. Slides 11, 13, and 20.
 
 **TEFCA.** Trusted Exchange Framework and Common Agreement. The federal framework for nationwide health data exchange. Slide 14: it moves documents today but does not yet require image exchange, which is why priors still arrive on discs.
 
-**21 U.S.C. 360j(o).** The section of federal law that lists software functions excluded from the medical device definition, including administrative support of a facility. The statutory answer on slide 18.
+**21 U.S.C. 360j(o).** The section of federal law that lists software functions excluded from the medical device definition, including administrative support of a facility. The statutory answer on slide 19.
 
 **45 CFR 164.524.** The HIPAA right-of-access regulation: the 30-day clock, the one extension, and what a records fee may include. Slide 14.
 
-**47 CFR 64.1200(a)(9)(iv).** The TCPA wireless healthcare exemption and its eight conditions. Slide 19.
+**47 CFR 64.1200(a)(9)(iv).** The TCPA wireless healthcare exemption and its eight conditions. Slide 20.

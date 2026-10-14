@@ -1,5 +1,10 @@
 # Decision Record: Rick's internal review, closed 2026-10-12
 
+> **Slide numbers in this record are the 24-slide deck of 2026-10-12.** On 2026-10-14 the deck became
+> 26 slides: report assistance is new at 18, and the engagement slide ("slide 22" below) is now slide 26
+> in a two-slide appendix after the Thank You. The current map is in `RUNBOOK-2026-10-20.md`. This record
+> is history and was not renumbered.
+
 **Supersedes `CHANGE-LOG-PENDING-RICK-REVIEW.md`.** The review freeze is LIFTED. Rick approved the
 final pass on 2026-10-12 and these edits are **applied, not proposed.** The documents are now frozen
 for rehearsal, not for review.

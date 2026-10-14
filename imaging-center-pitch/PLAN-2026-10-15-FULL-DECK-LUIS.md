@@ -9,7 +9,7 @@
 ## The decision
 
 Rick has **Thu 2026-10-15 at 2:00 PM MT, one hour, possibly two**, and walking the
-**FULL 25-slide deck including the numbers**. Not the short version. Not a discovery session.
+**FULL 26-slide deck including the numbers** (24 of pitch plus the two-slide appendix that carries the engagement, as of 2026-10-14). Not the short version. Not a discovery session.
 
 **Why this is the right call.** The STATUS.md open question was "solo prep or Fernando pitch?" Rick has
 resolved it a third way: use the solo session as a **full dress rehearsal with the champion**, and get
@@ -28,7 +28,7 @@ Rick how Fernando reacts to a price.** Three outcomes to be ready for:
 1. **"$30k is right."** Proceed as built. Phase 1 / Phase 2 / 90-day gate stands.
 2. **"$30k is high for him"** → the response is **shorten the term, never cut the rate**
    (`memory/imaging-center-engagement-pricing.md`). Offer Phase 1 alone at $12k with a hard stop.
-3. **"Don't show a number at all."** → Deck runs without slides 22-24; the engagement slide becomes a
+3. **"Don't show a number at all."** → Deck runs without the appendix, slides 25 and 26; the engagement slide becomes a
    verbal "there's a scope and a price, and I'd rather earn the right to give it to you." The
    leave-behind goes home *without* the pricing panel. **Build this variant before the 15th.**
 
@@ -46,11 +46,11 @@ for has to be buildable in five days. Plan the session to produce *decisions*, n
 |---|---|---|---|
 | 1 | **FHIR/payer-side content** — new or revised slide | Rick's instinct was right: **the deck does not contain the word FHIR on a single slide.** It appears 33x in the HTML (notes/body text) and 51x in speaking notes, but no slide surfaces it. The 2027-01-01 payer API mandate is the single strongest "greenfield timing" argument available and it is currently invisible. | Awaiting Sherlock |
 | 2 | **Add FHIR to the contract asks** | Existing deck language: *"FHIR on the RIS side is aspirational at a small center; the FHIR that matters is on the payer side."* That is defensible but it **declines a free ask**. A contract term costs nothing in October 2026. Revise to ask for it and explain why it is cheap insurance, not a requirement. | Awaiting Sherlock |
-| 3 | **Agent-app / human-in-the-loop operating-model slide** | The 13 candidates have no architecture over them. Rick's words: *"human in the loop and agent API agent apps... almost automate the less expensive pieces."* Needs one slide: what the agent does, where the human signs, what the exception queue looks like. This is the answer to "what happens when I get hit by a bus" too. | Awaiting Sherlock (Q3b) |
+| 3 | **Agent-app / human-in-the-loop operating-model slide** | The 13 candidates have no architecture over them. Rick's words: *"human in the loop and agent API agent apps... almost automate the less expensive pieces."* Needs one slide: what the agent does, where the human signs, what the exception queue looks like. This is the answer to "what happens when I get hit by a bus" too. | **Built 2026-10-14 as slide 18** (report assistance: the agent drafts, the radiologist signs; one instance per center; the two-directions question). Architecture document page 6 carries the deployment point. |
 | 4 | **Referring-physician channel** — likely the real "left on the table" | An imaging center's volume comes from referrers, and the 13-candidate inventory treats the referrer as an afterthought (#12, "Buy (RIS/PACS)", evidence: **None found**). If Sherlock finds evidence that referrer turnaround drives volume, this is a new pitch section. If he finds none, say so and drop it. | Awaiting Sherlock (Q3c) |
 | 5 | **Owner-analytics depth from the DICOM feed** | Rick asked specifically about "all of the DICOM feed." Slide exists ("Studies by modality, by reader, by referrer...") but is thin. Sherlock Q2c is scoped at which DICOM tags / MPPS / RDSR fields are *reliably populated in practice* — scanner idle time and acquisition duration are the owner metrics nobody sells. | Awaiting Sherlock (Q2c) |
-| 6 | **No-numbers deck variant** | Outcome #3 above. Cheap to build, and not having it means improvising in the room. | Not started |
-| 7 | **Re-verify the deck PDF renders all 25 pages** | `pdfinfo \| grep Pages` — a JS deck prints to one page without `@media print`. Known trap: `memory/slide-deck-pdf-is-separate-artifact.md`. | Not started |
+| 6 | **No-numbers deck variant** | Outcome #3 above. Cheap to build, and not having it means improvising in the room. | **Built 2026-10-12** (`?nonumbers`, one source). After the 2026-10-14 reorder it ends on the Thank You: 24 pages. |
+| 7 | **Re-verify the deck PDF renders all 26 pages** | `pdfinfo \| grep Pages`: a JS deck prints to one page without `@media print`. Known trap: `memory/slide-deck-pdf-is-separate-artifact.md`. | **Verified 2026-10-14:** deck 26, no-numbers 24. |
 
 ## Dates: get these right, they are in the pitch
 
