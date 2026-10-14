@@ -181,6 +181,7 @@
 </aside>
 </section>
 
+
 <!-- 2 -->
 <section class="slide">
 <div class="inner">
@@ -201,6 +202,7 @@
 <p>The 2027-01-01 date is real and federal. Do not oversell it yet; it comes back on its own slide.</p>
 </aside>
 </section>
+
 
 <!-- 3 -->
 <section class="slide">
@@ -224,6 +226,7 @@
 </aside>
 </section>
 
+
 <!-- 4 -->
 <section class="slide">
 <div class="inner">
@@ -245,6 +248,7 @@
 </aside>
 </section>
 
+
 <!-- 5 -->
 <section class="slide">
 <div class="inner">
@@ -263,6 +267,7 @@
 </aside>
 </section>
 
+
 <!-- 6 -->
 <section class="slide section">
 <div class="inner">
@@ -277,6 +282,7 @@
 <p>Say it plainly and without any edge: "You asked Luis about scheduling, phones, and records. Those are real. The thing I would put first is the one you did not mention."</p>
 </aside>
 </section>
+
 
 <!-- 7 -->
 <section class="slide">
@@ -301,9 +307,8 @@
 </aside>
 </section>
 
-<!-- 8 -->
 
-<!-- 9 -->
+<!-- 8 -->
 <section class="slide dates">
 <div class="inner">
   <div class="kicker">The dates land on your opening</div>
@@ -326,7 +331,8 @@
 </aside>
 </section>
 
-<!-- 10 -->
+
+<!-- 9 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">What a prior auth process actually does all day</div>
@@ -344,7 +350,8 @@
 </aside>
 </section>
 
-<!-- 11 -->
+
+<!-- 10 -->
 <section class="slide section">
 <div class="inner">
   <div class="grow"></div>
@@ -359,7 +366,8 @@
 </aside>
 </section>
 
-<!-- 12 -->
+
+<!-- 11 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Scheduling: the empty slot is not a no-show</div>
@@ -380,7 +388,8 @@
 </aside>
 </section>
 
-<!-- 13 -->
+
+<!-- 12 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Scheduling: what reminders honestly do</div>
@@ -400,7 +409,8 @@
 </aside>
 </section>
 
-<!-- 14 -->
+
+<!-- 13 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Answering patients: buy it, do not build it</div>
@@ -419,7 +429,8 @@
 </aside>
 </section>
 
-<!-- 15 -->
+
+<!-- 14 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Records: the clock and the fee rule both favor automation</div>
@@ -446,7 +457,8 @@
 </aside>
 </section>
 
-<!-- 16 -->
+
+<!-- 15 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">The fifth candidate: the numbers the owner actually looks at</div>
@@ -462,7 +474,8 @@
 </aside>
 </section>
 
-<!-- 17 -->
+
+<!-- 16 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">The scorecard</div>
@@ -487,7 +500,8 @@
 </aside>
 </section>
 
-<!-- 18 -->
+
+<!-- 17 -->
 <section class="slide section">
 <div class="inner">
   <div class="grow"></div>
@@ -498,12 +512,48 @@
   <p class="sub">radassist.app</p>
 </div>
 <aside class="notes">
-<p class="time">29:00 to 34:00</p>
+<p class="time">29:00 to 33:00</p>
 <p>Open the live app on the laptop. Then stop talking and let Luis talk. The only proof that matters is the artifact that already works, and the only witness who matters is the one using it.</p>
 <p>Questions to hand Luis: What broke, and how fast was it fixed? What did you ask for that got built? What does it do that the vendor tools did not?</p>
 <p>Do not demo features. Let Luis describe a Tuesday.</p>
 </aside>
 </section>
+
+
+<!-- 18 -->
+<section class="slide">
+<div class="inner">
+  <div class="kicker">Radiology report assistance</div>
+  <h2 class="tight">The agent drafts. The radiologist signs. Nothing clinical leaves without a human signature.</h2>
+  <div class="cols">
+    <div>
+      <h3>The report: RadAssist, today</h3>
+      <p>Luis uses it daily. It reads the scanner's numbers from a screen capture, drafts the report from his template, and he confirms every value before it applies. At your center the path has a name: DICOM worklist and query for the study, HL7 v2 ORU to carry the signed report into the RIS.</p>
+      <h3>The records: a different build</h3>
+      <p>Requesting records runs the other way. The paths: DICOM query and retrieve where a facility grants it, a request out and DICOM import where it does not, and the payer Provider Access API in 2027 for the claims record, in-network only, no images.</p>
+    </div>
+    <div>
+      <h3>One instance per center</h3>
+      <p>Not one shared stack. My recommendation, and it costs more, not less. Each center runs its own instance: its own database, credentials, and audit log. No patient record from one center is readable from another. The reason is governance: separate principals, separate books, a clean line any auditor can see. Share a back office if you choose; the specification is written once either way. The data stays apart.</p>
+      <h3>Which did you mean?</h3>
+      <p>Two different builds, specified separately. I would rather ask than guess.</p>
+    </div>
+  </div>
+</div>
+<aside class="notes">
+<p class="time">33:00 to 34:00</p>
+<p><strong>This slide exists because of one sentence in your 10-10 email to Luis:</strong> "your partner asked about scheduling, answering patients, and requesting medical records." Requesting records can mean two things in a radiology practice, and they are different builds. Make Luis pick.</p>
+<p><strong>Say the heading first, plainly, and do not soften it.</strong> "The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature." That is the whole operating model and it is also the bus answer: if I disappear, the thing that signs is a person who works for you.</p>
+<p><strong>RadAssist, honestly.</strong> Today it is a calcium score and thyroid reporting tool. Luis snips the scanner's report or dose screen, pastes it, RadAssist reads the per-vessel scores, total, age, sex and DLP, shows him every value, and nothing touches the form until he clicks Apply. It drafts; he signs. It does not interpret an image. Do not claim it does anything more than that tonight.</p>
+<p><strong>The named path at a center they own:</strong> DICOM Modality Worklist and query/retrieve give the report assistant the study context (contract term four on slide 3). HL7 v2 ORU is the standard result message that carries a signed report into the RIS (term two). Verify before signature that the RIS accepts an inbound ORU result: Konica Minolta's Exa, for one, documents only outbound report paths, so this is a real evaluation item, not a formality. Say "I will verify that against the RIS you pick" rather than promising it.</p>
+<p><strong>Records coming in is slide 14's problem, restated from the other side.</strong> DICOM query/retrieve works only where the sending facility grants it, which across organizations is rare. Otherwise the request goes out by fax or portal and what comes back is imported over DICOM. The payer Provider Access API under CMS-0057-F arrives 2027-01-01, but it carries the claims and clinical record the payer holds, not images, and it requires an in-network contract plus a treatment relationship, which a newly opened center may not have on day one. Name that limit yourself.</p>
+<p class="caveat">"One instance per center costs more than one shared stack. Three hosts, three databases, three sets of credentials, three audit logs. I am recommending it anyway, and the reason is governance, not technology."</p>
+<p><strong>Stack-agnostic on purpose.</strong> Your 10-10 email told Luis you were assuming one shared back office and one shared vendor stack. That is unresolved and it is a question for Luis on the 15th. The slide survives either answer: a shared back office is staff and logins, not a merged database. If the three centers turn out to have three different principals, independence is the only defensible design. If they share everything, independence is still the recommendation and the cost of it is stated. Do not say as fact that the three centers share anything.</p>
+<p><strong>Not on the scorecard, deliberately.</strong> The scorecard is the list of candidates. This is not a candidate; it exists and Luis uses it. The extension to the new center is Tier 3 product, licensed to them with source, same as the prior auth engine.</p>
+<p>If asked how long: do not give a date. "Which direction, and against which RIS. Then I can scope it."</p>
+</aside>
+</section>
+
 
 <!-- 19 -->
 <section class="slide">
@@ -520,8 +570,10 @@
 <p>The one real boundary: the moment an agent touches image data interpretively or recommends which study to order, it leaves this exclusion. Protocol selection and clinical appropriateness are the live hazards in imaging. Say explicitly that the agents stop there.</p>
 <p>Texas also requires disclosure when AI is used for diagnostic purposes (SB 1188). None of these five are diagnostic. Another reason to keep the line clean.</p>
 <p>The owner agent (reporting he can ask questions of) sits inside this exclusion: business analytics and practice management, by name. It reads operational data and never touches a patient, an image, a protocol, or a study choice. Anything about the business, nothing about a patient's care.</p>
+<p>Report assistance, from the previous slide, if he connects it to this one: the radiologist's own numbers, the radiologist's own template, the radiologist's signature. It formats what the scanner already measured and it does not interpret an image. The signature is what keeps it on the right side of this line, and it is not negotiable.</p>
 </aside>
 </section>
+
 
 <!-- 20 -->
 <section class="slide">
@@ -552,6 +604,7 @@
 </aside>
 </section>
 
+
 <!-- 21 -->
 <section class="slide">
 <div class="inner">
@@ -575,6 +628,7 @@
 </aside>
 </section>
 
+
 <!-- 22 -->
 <section class="slide">
 <div class="inner">
@@ -595,7 +649,66 @@
 </aside>
 </section>
 
+
 <!-- 23 -->
+<section class="slide">
+<div class="inner">
+  <div class="kicker">If it were my money</div>
+  <h2>I would do three things before signing another vendor contract.</h2>
+  <ul class="plain">
+    <li>Put the four access terms into every contract this month. It is free.</li>
+    <li>Decide now whether the prior authorization desk is a hire or a system. That decision expires the day you hire for it.</li>
+    <li>Tell me what front desk and prior authorization actually cost you last time. Your number beats any benchmark I could bring.</li>
+  </ul>
+  <div class="grow"></div>
+  <p class="sub">And one question for you: what would you do differently this time, knowing how the last one ended up?</p>
+</div>
+<aside class="notes">
+<p class="time">38:00 to 38:30</p>
+<p>The third bullet is the most valuable question of the night. Do not quote any cost-structure percentage; ask for his.</p>
+<p><strong>Southwest X-Ray is confirmed as his</strong> (Rick confirmed 2026-10-01), so do not ask whether it is. It now operates five El Paso locations as an Akumin company, and Akumin went through Chapter 11. That means he is opening in direct competition with a national roll-up that owns what he built. Do not raise the bankruptcy and do not say "scale" or "platform" anywhere near him. If he raises it, listen.</p>
+<p>The closing question is open on purpose. A man who sold to private equity and watched the buyer struggle has a long answer to it, and his answer tells you what he actually wants from this center. Let him talk.</p>
+</aside>
+</section>
+
+
+<!-- 24 -->
+<section class="slide closing">
+<div class="inner">
+  <div class="grow"></div>
+  <div class="kicker">Thank you</div>
+  <h1>Every one of these decisions is reversible today. None of them will be in six months.</h1>
+  <div class="contact">
+    <b>Richard Finlay</b>, RGF Global Ventures LLC<br>
+    (480) 532-1367<br>
+    rfinlay813@gmail.com
+  </div>
+  <div class="grow"></div>
+</div>
+<aside class="notes">
+<p class="time">38:30</p>
+<p>Leave the one-page summary on the table. This is the last slide of the pitch. What follows is an appendix: stop here and have dinner, or turn the page to the engagement if the room asks for it. In the no-numbers variant the deck ends here.</p>
+</aside>
+</section>
+
+
+<!-- 25 -->
+<section data-nonumbers="remove" class="slide section">
+<div class="inner">
+  <div class="grow"></div>
+  <div class="kicker">Appendix</div>
+  <h1>Scope and investment.</h1>
+  <p class="lead">Reference, after the decisions. The case above stands whether or not you turn this page.</p>
+  <div class="grow"></div>
+</div>
+<aside class="notes">
+<p class="time">38:30</p>
+<p>One sentence, then advance or stop: "The rest is reference. It is what it would cost to have me design this with you, and you can stop me here if you would rather take it another day."</p>
+<p>If Luis said no numbers on the 15th, this slide and the next are not in the deck you are showing; the no-numbers variant ends on the Thank You.</p>
+</aside>
+</section>
+
+<!-- 26 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">What I am proposing</div>
@@ -623,7 +736,7 @@
   <p class="sub">At ninety days you decide whether Phase 2 goes. The build is priced from the specification after you open, with real volumes in hand.</p>
 </div>
 <aside class="notes">
-<p class="time">38:00 to 39:30</p>
+<p class="time">38:30 to 40:00</p>
 <p><strong>Say it once, then stop.</strong> "Thirty thousand for the six months, in two phases. Twelve for the first ninety days: the contract language, the RIS and billing evaluation, the voice vendor shortlist. That is all the work that has to happen before you sign anything. Eighteen for the back half: the written specifications. At ninety days you decide whether the second phase goes. Build gets priced from the spec after you open."</p>
 <p><strong>Do not</strong> break out hours, name an hourly rate, or justify the number at length. Explaining a price invites negotiation on the explanation.</p>
 <p><strong>If he pushes on price: shorten the term, never cut the rate.</strong> Offer Phase 1 alone and decide the back half at ninety days. That is already the structure, so the answer is "that is exactly what the gate is for."</p>
@@ -637,45 +750,6 @@
 </aside>
 </section>
 
-<!-- 24 -->
-<section data-nonumbers="remove" class="slide">
-<div class="inner">
-  <div class="kicker">If it were my money</div>
-  <h2>I would do three things before signing another vendor contract.</h2>
-  <ul class="plain">
-    <li>Put the four access terms into every contract this month. It is free.</li>
-    <li>Decide now whether the prior authorization desk is a hire or a system. That decision expires the day you hire for it.</li>
-    <li>Tell me what front desk and prior authorization actually cost you last time. Your number beats any benchmark I could bring.</li>
-  </ul>
-  <div class="grow"></div>
-  <p class="sub">And one question for you: what would you do differently this time, knowing how the last one ended up?</p>
-</div>
-<aside class="notes">
-<p class="time">39:30 to 40:00</p>
-<p>The third bullet is the most valuable question of the night. Do not quote any cost-structure percentage; ask for his.</p>
-<p><strong>Southwest X-Ray is confirmed as his</strong> (Rick confirmed 2026-10-01), so do not ask whether it is. It now operates five El Paso locations as an Akumin company, and Akumin went through Chapter 11. That means he is opening in direct competition with a national roll-up that owns what he built. Do not raise the bankruptcy and do not say "scale" or "platform" anywhere near him. If he raises it, listen.</p>
-<p>The closing question is open on purpose. A man who sold to private equity and watched the buyer struggle has a long answer to it, and his answer tells you what he actually wants from this center. Let him talk.</p>
-</aside>
-</section>
-
-<!-- 25 -->
-<section class="slide closing">
-<div class="inner">
-  <div class="grow"></div>
-  <div class="kicker">Thank you</div>
-  <h1>Every one of these decisions is reversible today. None of them will be in six months.</h1>
-  <div class="contact">
-    <b>Richard Finlay</b>, RGF Global Ventures LLC<br>
-    (480) 532-1367<br>
-    rfinlay813@gmail.com
-  </div>
-  <div class="grow"></div>
-</div>
-<aside class="notes">
-<p class="time">40:00</p>
-<p>Leave the one-page summary on the table. Then stop selling and have dinner.</p>
-</aside>
-</section>
 
 </div>
 
@@ -687,11 +761,11 @@
 <script>
 /* NO-NUMBERS VARIANT. Open this file with ?nonumbers (file:///...deck.html?nonumbers) and every
    element tagged data-nonumbers="remove" is deleted from the DOM before the deck script runs, so the
-   counter, overview numbering, last-slide page-break and print output all see a 21-slide deck.
+   counter, overview numbering, last-slide page-break and print output all see a 24-slide deck.
    Regenerate the PDF with:
    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer \
      --print-to-pdf=Imaging-Center-Deck-NoNumbers-2026-10-20.pdf "file://$PWD/imaging-center-automation-deck-2026-10-20.html?nonumbers"
-   Without the param the file renders the full 24-slide deck unchanged. One source, no fork. */
+   Without the param the file renders the full 26-slide deck unchanged. One source, no fork. */
 (function () {
   if (/[?&]nonumbers\b/.test(location.search)) {
     document.documentElement.classList.add('nonumbers');
