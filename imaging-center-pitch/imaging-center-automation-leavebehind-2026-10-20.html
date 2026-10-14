@@ -11,8 +11,8 @@
     --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: var(--sans); color: var(--ink); background: #e9e6df; font-size: 8.7pt; line-height: 1.27; }
-  .page { width: 8.5in; min-height: 11in; margin: 0.4in auto; background: #fff; padding: 0.27in 0.45in 0.22in 0.45in; display: flex; flex-direction: column; }
+  body { font-family: var(--sans); color: var(--ink); background: #e9e6df; font-size: 8.7pt; line-height: 1.23; }
+  .page { width: 8.5in; min-height: 11in; margin: 0.4in auto; background: #fff; padding: 0.24in 0.45in 0.2in 0.45in; display: flex; flex-direction: column; }
   header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--ink); padding-bottom: 5pt; margin-bottom: 7pt; }
   .kicker { font-size: 8pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 4pt; }
   h1 { font-family: var(--serif); font-weight: 400; font-size: 19pt; line-height: 1.1; }
@@ -21,9 +21,9 @@
   h2 { font-family: var(--serif); font-weight: 400; font-size: 11.5pt; margin: 5pt 0 2.5pt 0; }
   p { margin-bottom: 5pt; }
   .intro { font-size: 9.1pt; color: var(--soft); }
-  table { width: 100%; border-collapse: collapse; font-size: 7.6pt; line-height: 1.22; margin-top: 2pt; }
+  table { width: 100%; border-collapse: collapse; font-size: 7.6pt; line-height: 1.18; margin-top: 2pt; }
   th { text-align: left; font-size: 7.2pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); font-weight: 600; padding: 0 7pt 3pt 0; border-bottom: 1.5px solid var(--ink); }
-  td { padding: 1.9pt 7pt 1.9pt 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  td { padding: 1.5pt 7pt 1.5pt 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
   td.rec { font-weight: 600; white-space: nowrap; }
   td.rec.build { color: var(--accent); }
   .two { display: grid; grid-template-columns: 1.1fr 1fr 0.9fr; gap: 16pt; }
@@ -85,10 +85,11 @@
       <tr><td>3</td><td>Owner reporting, including an agent you can ask questions of</td><td class="rec build">Build</td><td>Modality, reader, referrer, turnaround, revenue per slot, appeal rate, from the RIS and the billing system joined. Ask it in plain words and it answers from your own numbers. Read-only, no patient contact, smallest compliance footprint on this list.</td></tr>
       <tr><td>4</td><td>Scheduling: cancellation backfill</td><td class="rec build">Build, small</td><td>UC Irvine study: 22.3% of outpatient radiology exams cancelled versus 2.0% no-shows, 70.2% of cancellations patient-initiated. The empty slot is known in advance. A ranked waitlist on top of the RIS, with a per-patient rate governor for the TCPA cap.</td></tr>
       <tr><td>5</td><td>Medical records: inbound requests and outbound prior studies</td><td class="rec build">Build, selectively</td><td>The HIPAA 30-day clock runs from receipt. Retrieval labor is not chargeable, only copying is. A new center opens with zero priors on file, and no vendor has solved outbound retrieval for a small site.</td></tr>
-      <tr><td>6</td><td>Scheduling: reminders, self-scheduling, intake</td><td class="rec">Buy (your RIS)</td><td>Commodity, bundled into modern cloud imaging RIS products. Text reminders moved MRI no-shows from 5.1% to 3.8% in a randomized trial. Real, modest, already in the box.</td></tr>
-      <tr><td>7</td><td>Answering patients (inbound voice)</td><td class="rec">Buy, I integrate</td><td>26.5% of El Paso County residents speak English less than "very well," nearly all Spanish speakers. Highest-blast-radius failure on this list, and a funded vendor category. I specify, evaluate, integrate, and supervise.</td></tr>
-      <tr><td>8</td><td>Billing, claims, and the eligibility feed</td><td class="rec">Buy</td><td>Commodity clearinghouse function, established vendor market. I do not touch the claims work, and I am not building an eligibility system. Your billing vendor already exposes the EDI 270/271 eligibility feed. Row 2 builds the thing that reads that feed and acts on it, so the four access terms belong in the billing contract too.</td></tr>
-      <tr><td>9</td><td>Anything that touches the image clinically</td><td class="rec">Declined</td><td>Not from me, not from anyone, without an FDA pathway.</td></tr>
+      <tr><td>6</td><td>Radiology report assistance</td><td class="rec build">Build (exists)</td><td>RadAssist, used daily by Dr. Ramos: reads the scanner's numbers, drafts the report, and the radiologist confirms every value and signs. Nothing clinical leaves without a signature. At the center: DICOM worklist and query in, HL7 v2 ORU out to the RIS. A different build from records retrieval (row 5). One instance per center, each center's data its own; it costs more, by design, for governance.</td></tr>
+      <tr><td>7</td><td>Scheduling: reminders, self-scheduling, intake</td><td class="rec">Buy (your RIS)</td><td>Commodity, bundled into modern cloud imaging RIS products. Text reminders moved MRI no-shows from 5.1% to 3.8% in a randomized trial. Real, modest, already in the box.</td></tr>
+      <tr><td>8</td><td>Answering patients (inbound voice)</td><td class="rec">Buy, I integrate</td><td>26.5% of El Paso County residents speak English less than "very well," nearly all Spanish speakers. Highest-blast-radius failure on this list, and a funded vendor category. I specify, evaluate, integrate, and supervise.</td></tr>
+      <tr><td>9</td><td>Billing, claims, and the eligibility feed</td><td class="rec">Buy</td><td>Commodity clearinghouse function, established vendor market. I do not touch the claims work, and I am not building an eligibility system. Your billing vendor already exposes the EDI 270/271 eligibility feed. Row 2 builds the thing that reads that feed and acts on it, so the four access terms belong in the billing contract too.</td></tr>
+      <tr><td>10</td><td>Anything that touches the image clinically</td><td class="rec">Declined</td><td>Not from me, not from anyone, without an FDA pathway.</td></tr>
     </tbody>
   </table>
 

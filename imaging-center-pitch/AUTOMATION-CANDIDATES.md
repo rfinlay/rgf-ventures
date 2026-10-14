@@ -30,6 +30,7 @@
 | 11 | Balance-due and payment reminders | **Decline for phase one** | Small | High (TCPA) | High on constraint | Not until a separate consent basis exists |
 | 12 | Referring physician communication and report delivery | **Buy (RIS/PACS)** | None | Low | None found | Vendor selection |
 | 13 | Protocol selection, clinical appropriateness, anything touching the image | **Decline** | n/a | Very high (FDA) | High | Never without an FDA pathway |
+| 14 | Radiology report assistance (RadAssist, extended to the center) | **Build** (existing product, extended) | Medium | Low (the radiologist signs every report) | Medium (in daily use; one radiologist's own figure, no literature) | Interface terms now; specified in Phase 2 |
 
 ---
 
@@ -257,6 +258,43 @@ Alternatively: do not do it at all in phase one, and let the front desk answer t
 
 ---
 
+## 14. Radiology report assistance (RadAssist, extended to the center)
+
+**Why it is listed (added 2026-10-14).** The partner's three stated wants, in Rick's 10-10 email to Luis, were "scheduling, answering patients, and requesting medical records." In a radiology practice "records" runs in two directions: the report the radiologist produces and sends out, and the prior studies and outside records the center requests and brings in. #6 and #7 cover the second direction. This candidate is the first, and it is the one thing in the inventory that already exists and is in daily use. The two must not be conflated; the deck asks Luis which direction the partner meant.
+
+**The manual process.** The radiologist reads the scanner's calcium score output, transcribes per-vessel and total Agatston scores, looks up the MESA percentile, and dictates or types the report. Luis's own figure before pre-fill: fifteen calcium score studies at about twenty minutes each (Luis to Rick, 2026-08). That is one radiologist's number, not a benchmark; no literature benchmark is used.
+
+**What exists today.** RadAssist (radassist.app): browser-based structured reporting with calcium score and thyroid modules. The radiologist snips the scanner's report or dose screen and pastes it; RadAssist reads the per-vessel scores, total, age, sex, and DLP, shows every value with a confidence mark, and applies nothing until he clicks Apply. It drafts the report from his own template. No PHI is stored server-side; patient inputs are computed in the browser. It does not read DICOM, does not touch the PACS, and does not interpret an image. The Exa viewer at Luis's current site is server-side rendered and never exposes a DICOM object to the browser, which is why the screen-capture path exists at all (research brief, 2026-09-16).
+
+**Recommendation: BUILD, as an extension of existing product.** At a center that owns its PACS and RIS, the integration path is named and both halves are contract terms under #3:
+
+- **Study context in:** DICOM Modality Worklist and C-FIND/C-MOVE query/retrieve, or DICOMweb where the PACS documents it, so the report assistant knows the study it is drafting against. Contract term four.
+- **Signed report out:** HL7 v2 ORU, the standard result message, into the RIS. Contract term two (interface count and fee fixed at signature). Verify before signature that the RIS accepts an inbound ORU result; Konica Minolta's Exa, for one, documents only outbound report paths. This is a Phase 1 evaluation item, not an assumption.
+
+**The autonomy boundary, which is the point.** The agent drafts; the radiologist signs. Nothing clinical leaves the center without a human signature, and the sign-off does not graduate to a sample the way #1 may: a report is a clinical document and every one is signed. This is also the FDA line: the tool formats numbers the scanner already measured against the radiologist's own template. It does not interpret an image, select a protocol, or recommend a study. Anything that would (follow-up interval recommendation, growth flagging) is #13 and declined.
+
+**Effort:** Medium. The reporting modules exist; the work is the two interfaces and per-center configuration. **Risk:** Low; a wrong value is caught by the radiologist at Apply, before signature, the same place it is caught today.
+
+**Dependencies.** PACS DICOM worklist and query permission (#3). RIS inbound ORU interface, verified in evaluation. A per-center instance (see deployment standard below).
+
+**Compliance.** BAA with each center; SB 1188 US residency; HB 300. Texas SB 1188's AI disclosure for diagnostic use: the radiologist is the diagnostician and the tool is his drafting aid, but the specification states the disclosure position explicitly rather than assuming it.
+
+**Ownership.** Tier 3: Rick's existing product, extended for the center, licensed perpetually with source. Per-center templates, mappings, and configuration are Tier 2, the center's outright.
+
+---
+
+## Deployment standard: one instance per center, not one shared stack
+
+Rick's recommendation, 2026-10-14, carried on the report assistance slide and on page 6 of the architecture document. **It is a recommendation, not a settled fact.** Rick's 10-10 email told Luis he was assuming one shared back office and one shared vendor stack across the three centers; on 10-14 the three centers were reported to have different principals. Whether they share a back office and a vendor stack is a question for Luis, and the design survives either answer.
+
+**The standard.** Each center runs its own instance of every service in this inventory: its own database, its own audit log, its own credentials, its own model account under its own BAA, with US residency verified per instance. No patient record from one center is readable from another. Any view that spans centers is a later, explicit decision by all the principals, built as a read-only view over separate databases, never as a merged one.
+
+**What is shared.** The specification (Tier 1), written once and deployed per center. Rick's engines (Tier 3), the same code deployed three times and licensed to each center with source. Runbooks and vendor evaluation criteria. Nothing that holds a patient.
+
+**Stated honestly: it costs more.** Three hosts, three databases, three sets of credentials to rotate, three audit logs to review, and the recurring infrastructure line sits in each center's budget rather than once. The reason to pay it is governance, not technology: separate principals, separate books, and a line a regulator, an auditor, or a partner's lawyer can see without reading code. In a shared stack every center's patient data is one breach, one subpoena, and one dispute away from the others.
+
+**If the partners choose a shared back office.** Staff can be shared without the data being shared: one team, three logins, every session scoped to one center and logged against it. The count of vendor contracts that carry the four access terms (#3) changes; the data boundary does not.
+
 ## Architecture standard: the software is the capability, the agent is the operator
 
 Decided by Rick, 2026-10-06, and applied to every build in this inventory. Every automation is two deliverables. First, a deterministic service with a clean interface that works without any model: order detection, packet assembly, deadline tracking, the waitlist ranking, the records clock, the reporting joins. Second, an agent surface that operates the service. The service is auditable, testable, survives any model change, is what the specification describes, and is what any integrator can take over, which is what keeps the continuity promise honest. The agent is the replaceable part: the model vendor, the BAA envelope, and the pricing can all change without breaking the center.
@@ -267,6 +305,7 @@ Three kinds of agent, by blast radius:
 |---|---|---|---|
 | A | Owner agent (#4): read-only questions over operational data | Lowest. Reads, never acts. No patient contact, no clinical surface. Named in the FDA exclusion as business analytics and practice management. | Specified in Phase 2. No price change. |
 | B | Workflow agents (#1, #5, #6): act on the world, a human signs | Medium. Bounded, human-signed, with a written graduation criterion. | As already specified. |
+| B | Report assistance (#14): drafts, the radiologist signs | Low. A clinical document, so every report is signed and the sign-off never graduates to a sample. | Exists; extended per center. |
 | C | Patient-facing voice (#9) | Highest. Chest pain and Spanish are safety and reputation events. | Buy from a vendor. Unchanged. |
 
 A locally hosted model is a specification-phase option for the no-API payer portal (it keeps PHI inside the center's environment and sidesteps the vendor BAA's Computer Use exclusion), for SB 1188 residency, and for high-volume low-complexity classification. It does not replace reasoning-heavy work such as drafting an appeal. Portal automation is the most fragile item in this inventory and is not promised at the dinner.

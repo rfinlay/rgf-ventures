@@ -136,7 +136,7 @@
 <div class="page" id="p1">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 1 of 5</div>
+      <div class="kicker">Proposed architecture, page 1 of 6</div>
       <h1>Everything proposed, on one page: who touches it, what runs it, what it talks to.</h1>
       <div class="sub">Read top to bottom. People, then the agent that operates each service, then the service itself, then the standard interfaces, then the systems the center buys. Built things are solid and warm. Bought things are dashed. Nothing crosses the clinical wall on the right.</div>
     </div>
@@ -177,7 +177,7 @@
   <div class="box build own-mixed" style="left:215px;top:268px;width:114px;height:134px"><div class="n">#4 BUILD</div><div class="t">Owner reporting and reader reconciliation</div>Joins RIS data to billing data. Monday report, appeal rate as headline. Reader paid-versus-read view.</div>
   <div class="box build own-mixed" style="left:339px;top:268px;width:114px;height:134px"><div class="n">#5 #10 BUILD, SMALL</div><div class="t">Backfill and waitlist</div>Cancellation in, ranked offer list out. One per-patient rate governor across every sender.</div>
   <div class="box build own-center" style="left:462px;top:268px;width:114px;height:134px"><div class="n">#6 #7 BUILD, SELECTIVELY</div><div class="t">Records in, prior studies out</div>Intake, 30-day clock from receipt, fee rules, DICOM retrieve. Outbound prior-study tracker.</div>
-  <div class="box buy" style="left:586px;top:268px;width:114px;height:134px"><div class="n">#9 BUY, I INTEGRATE</div><div class="t">Voice vendor platform</div>Vendor under its own BAA. Spanish evaluation set. Human escalation on any symptom language.</div>
+  <div class="box buy" style="left:586px;top:268px;width:114px;height:134px"><div class="n">#9 BUY, I INTEGRATE</div><div class="t">Voice vendor product</div>Vendor under its own BAA. Spanish evaluation set. Human escalation on any symptom language.</div>
   <div class="box buy" style="left:709px;top:268px;width:114px;height:134px"><div class="n">#8 #10 BUY, THE RIS</div><div class="t">Reminders, self-scheduling, intake, notices</div>RIS native. Verify TCPA caps, Spanish, and events exposed to backfill.</div>
   <div class="box buy" style="left:833px;top:268px;width:114px;height:134px"><div class="n">#12 BUY, RIS AND PACS</div><div class="t">Referrer communication and report delivery</div>Standard RIS and PACS function. Referrer volume feeds reporting.</div>
   <div class="box buy" style="left:956px;top:268px;width:114px;height:134px"><div class="n">BUY</div><div class="t">Billing, claims, eligibility feed</div>Clearinghouse function. Exposes EDI 270/271. Not rebuilt. The engine reads the feed and acts on it.</div>
@@ -289,7 +289,7 @@
 <div class="page" id="p2">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 2 of 5. The lead product.</div>
+      <div class="kicker">Proposed architecture, page 2 of 6. The lead product.</div>
       <h1>Prior authorization: one pipeline, three submission paths, a human at every gate.</h1>
       <div class="sub">Left to right is the life of one advanced imaging order. The upper lane is the agent surface. The lower lane is the deterministic service that runs with no model at all. The agent never reaches the world except through a signature.</div>
     </div>
@@ -377,7 +377,7 @@
 <div class="page" id="p3">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 3 of 5. The user level.</div>
+      <div class="kicker">Proposed architecture, page 3 of 6. The user level.</div>
       <h1>Who touches what, and what each person is allowed to do.</h1>
       <div class="sub">A row is a person. A column is a service. The signature marks are the places the system stops and waits for a human. Radiologists appear once, to show where the system is not.</div>
     </div>
@@ -476,7 +476,7 @@
 <div class="page" id="p4">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 4 of 5. The other three builds, and the owner's view.</div>
+      <div class="kicker">Proposed architecture, page 4 of 6. The other three builds, and the owner's view.</div>
       <h1>Backfill, records, prior studies, owner reporting: each is a small deterministic service with a bounded agent on top.</h1>
     </div>
     <div class="who">Each panel reads left to right<br>Human gates drawn where they exist</div>
@@ -569,7 +569,7 @@
 <div class="page" id="p5">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 5 of 5. Ownership and boundaries.</div>
+      <div class="kicker">Proposed architecture, page 5 of 6. Ownership and boundaries.</div>
       <h1>Who owns each layer, and the lines the system does not cross.</h1>
       <div class="sub">The left half is a commercial boundary. The right half is a regulatory one. Both are drawn so an engineer who has never met Rick can read them.</div>
     </div>
@@ -578,7 +578,7 @@
 
   <div class="abs kicker" style="left:40px;top:106px">Ownership overlay. Match the stripe colors to the service boxes on pages 1 to 4.</div>
 
-  <div class="panel spec" style="left:40px;top:126px;width:590px;height:120px"><div class="k">Tier 1</div><h3>The specification. The center's, outright.</h3>Written for an engineer who has never met Rick. Covers every service on page 1: order detection, packet assembly, deadline tracking, waitlist ranking, the records clock, the reporting joins, and the vendor evaluation criteria for the RIS, PACS, billing, and voice selections. If the partners open a second or third site, the specification is written once and deployed again.</div>
+  <div class="panel spec" style="left:40px;top:126px;width:590px;height:120px"><div class="k">Tier 1</div><h3>The specification. The center's, outright.</h3>Written for an engineer who has never met Rick. Covers every service on page 1: order detection, packet assembly, deadline tracking, waitlist ranking, the records clock, the reporting joins, and the vendor evaluation criteria for the RIS, PACS, billing, and voice selections. If the partners open a second or third site, the specification is written once and deployed again, one instance per site (page 6).</div>
 
   <div class="panel center" style="left:40px;top:258px;width:590px;height:150px"><div class="k">Tier 2</div><h3>Center-specific code. The center's, outright.</h3>Configuration, workflows, integrations, data mappings, and reports. In a repository under the center's own organization, with Rick's access revocable. On the diagrams, this is the black stripe:
     <ul>
@@ -621,6 +621,64 @@
   </svg>
 
   <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. Companion to the briefing deck and the one-page summary. No opening date is assumed in this document; the only dates printed are the regulatory ones.</div><div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div></div>
+</div>
+
+<!-- ============================== PAGE 6: ONE INSTANCE PER CENTER ============================== -->
+<div class="page" id="p6">
+  <div class="hdr">
+    <div>
+      <div class="kicker">Proposed architecture, page 6 of 6. Deployment across three centers.</div>
+      <h1>Three centers, three instances. The specification is shared. Nothing else is.</h1>
+      <div class="sub">A recommendation, not a settled fact. Whether the centers share a back office and a vendor stack is the partners' decision, and either answer fits this page. What does not change is that each center's patient data stays its own, and that this costs more than one shared stack.</div>
+    </div>
+    <div class="who">Every service on pages 1 to 4<br>deployed <b>once per center</b>, data never pooled</div>
+  </div>
+
+  <div class="panel spec" style="left:40px;top:108px;width:1200px;height:66px"><div class="k">Tier 1, written once</div><h3>One specification, three deployments.</h3>Order detection, packet assembly, deadline tracking, the records clock, the reporting joins, the report assistance path. Written once, with each center's mappings and configuration filled in per site.</div>
+
+  <div class="panel center" style="left:40px;top:196px;width:380px;height:206px"><div class="k">First center</div><h3>Its own instance.</h3>
+    <ul>
+      <li>Its own copy of every service: prior auth, reporting, backfill, records, report assistance.</li>
+      <li>Its own database, audit log, and credentials, rotated and reviewed for this center alone.</li>
+      <li>Its own model account under its own BAA. US residency verified for this instance.</li>
+      <li>Its own RIS, PACS, billing, and voice contracts, or shared ones; the four access terms go into whichever contract applies.</li>
+      <li>Its own principals approve its own sign-off rules.</li>
+    </ul></div>
+  <div class="panel center" style="left:450px;top:196px;width:380px;height:206px"><div class="k">Second center</div><h3>Its own instance.</h3>
+    <ul>
+      <li>Its own copy of every service: prior auth, reporting, backfill, records, report assistance.</li>
+      <li>Its own database, audit log, and credentials, rotated and reviewed for this center alone.</li>
+      <li>Its own model account under its own BAA. US residency verified for this instance.</li>
+      <li>Its own RIS, PACS, billing, and voice contracts, or shared ones; the four access terms go into whichever contract applies.</li>
+      <li>Its own principals approve its own sign-off rules.</li>
+    </ul></div>
+  <div class="panel center" style="left:860px;top:196px;width:380px;height:206px"><div class="k">Third center</div><h3>Its own instance.</h3>
+    <ul>
+      <li>Its own copy of every service: prior auth, reporting, backfill, records, report assistance.</li>
+      <li>Its own database, audit log, and credentials, rotated and reviewed for this center alone.</li>
+      <li>Its own model account under its own BAA. US residency verified for this instance.</li>
+      <li>Its own RIS, PACS, billing, and voice contracts, or shared ones; the four access terms go into whichever contract applies.</li>
+      <li>Its own principals approve its own sign-off rules.</li>
+    </ul></div>
+
+  <div class="wall" style="left:430px;top:196px;width:10px;height:206px"></div>
+  <div class="wall" style="left:840px;top:196px;width:10px;height:206px"></div>
+  <div class="walllbl" style="left:426px;top:400px">No cross-center read</div>
+  <div class="walllbl" style="left:836px;top:400px">No cross-center read</div>
+
+  <div class="panel wallbox" style="left:40px;top:424px;width:380px;height:214px"><div class="k">Why independence. Governance, not cost.</div><h3>It costs more, and that is stated here on purpose.</h3>Three hosts, three databases, three sets of credentials to rotate, three audit logs to review, and the recurring infrastructure line sits in each center's budget rather than once. The reason to pay it: separate principals, separate books, and a line a regulator, an auditor, or a partner's lawyer can see without reading code. In a shared stack, every center's patient data is one breach, one subpoena, and one dispute away from the others.</div>
+
+  <div class="panel" style="left:450px;top:424px;width:380px;height:214px"><div class="k">If the partners choose a shared back office</div><h3>Share the staff, not the data.</h3>One team can serve three centers: three logins, every session scoped to one center, every action logged against that center. Any report that spans centers is a later, explicit decision by all the principals, built as a read-only view over three databases, never as a merged one. Nothing on this page has to be rebuilt for either answer; what changes is how many vendor contracts carry the four access terms.</div>
+
+  <div class="panel" style="left:860px;top:424px;width:380px;height:214px"><div class="k">What is shared, exactly</div><h3>The specification and the engines. Nothing that holds a patient.</h3>
+    <ul>
+      <li>The specification, Tier 1, written once.</li>
+      <li>Rick's engines, Tier 3: the same code deployed three times, licensed to each center with source.</li>
+      <li>The runbooks and the vendor evaluation criteria.</li>
+      <li>No database, no credential, no audit log, no model account.</li>
+    </ul></div>
+
+  <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. One instance per center is the recommendation. How many back offices and vendor contracts there are is the partners' call, and the data boundary holds either way.</div><div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div></div>
 </div>
 
 </body>
