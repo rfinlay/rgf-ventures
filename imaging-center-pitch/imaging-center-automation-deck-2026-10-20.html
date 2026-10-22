@@ -127,6 +127,24 @@
   .hint { position: fixed; right: 36px; top: 22px; font-size: 12px; color: var(--ink-faint); letter-spacing: 0.06em; z-index: 20; opacity: 0.6; }
   .progress { position: fixed; left: 0; bottom: 0; height: 3px; background: var(--accent); width: 0; z-index: 21; transition: width 0.2s; }
 
+  /* 2026-10-22 additions */
+  .timeline.four { grid-template-columns: repeat(4, 1fr); gap: 28px; }
+  .timeline.four .d { font-size: 36px; }
+  ol.steps { list-style: none; counter-reset: st; margin-top: 22px; }
+  ol.steps li { counter-increment: st; position: relative; padding-left: 46px; margin-bottom: 9px; font-size: 21px; max-width: 1060px; }
+  ol.steps li::before { content: counter(st); position: absolute; left: 0; top: 0; font-family: var(--serif); font-size: 24px; color: var(--accent); }
+  table.ms { margin-top: 18px; font-size: 19px; line-height: 1.28; }
+  table.ms td { padding: 8px 14px 8px 0; }
+  table.ms td.amt { white-space: nowrap; font-weight: 600; text-align: right; }
+  table.ms tr.gate td { color: var(--accent); font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 1px solid var(--accent); }
+  table.ms tr.tot td { border-bottom: 2px solid var(--ink); font-weight: 600; }
+  .agent .cols { gap: 48px; margin-top: 22px; }
+  .agent .cols h3 { font-size: 27px; margin-bottom: 6px; }
+  .agent .cols p, .agent .cols ul.plain li { font-size: 19.5px; }
+  .agent .cols h3 + p + h3 { margin-top: 20px; }
+  .draftmark { position: absolute; top: 22px; right: 88px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #fff; background: #b4232f; padding: 4px 10px; font-weight: 700; }
+  .demourl { color: var(--accent); font-weight: 600; }
+
   /* presenter notes */
   .notes { display: none; }
   .notespanel {
@@ -166,18 +184,19 @@
 <div class="inner">
   <div class="grow"></div>
   <div class="rulebar"></div>
-  <div class="kicker">A private briefing, El Paso, 2026-10-20</div>
+  <div class="kicker">A private briefing, El Paso, October 2026</div>
   <h1>Six months of free decisions.</h1>
   <p class="lead">What to automate, what to buy, and what to leave alone before the new center opens.</p>
   <div class="meta">
-    Prepared for <b>Dr. Luis Ramos</b> and <b>Fernando Escarzaga</b><br>
+    Prepared for <b>Dr. Luis Ramos</b>, <b>Fernando Escarzaga</b>, and <b>Jesse Martinez</b><br>
     <b>Richard Finlay</b>, RGF Global Ventures LLC
   </div>
 </div>
 <aside class="notes">
 <p class="time">0:00 to 1:00</p>
 <p>Thank them for dinner. One sentence on who you are: you build and operate agent systems, Luis uses one of them every day on real patients, and that is the only credential that matters tonight.</p>
-<p>Frame the evening: "I am not here to sell you software tonight. I am here to tell you which decisions you are about to make that are free right now and will not be free in April."</p>
+<p>Frame the evening: "I am not here to sell you software tonight. I am here to tell you which decisions you are about to make that are free right now and will not be free by the time you open."</p>
+<p>Jesse Martinez is at the table: an engineer, quiet and analytic. Speak to him once by name on the agent slide (6) and the walkthrough (11); he is the one most likely to ask how it actually connects.</p>
 </aside>
 </section>
 
@@ -186,11 +205,12 @@
 <section class="slide">
 <div class="inner">
   <div class="kicker">Where you are</div>
-  <h2>Equipment is being signed. Real estate is being toured. No staff hired, no systems chosen.</h2>
-  <div class="timeline">
+  <h2>The MRI is signed. No staff hired, no systems chosen.</h2>
+  <div class="timeline four">
     <div class="t hot"><div class="d">Today</div><div class="w">Every operational decision is cheap and reversible.</div></div>
     <div class="t"><div class="d">2027-01-01</div><div class="w">Federal prior authorization APIs go live at the payers.</div></div>
-    <div class="t"><div class="d">Target 2027-04</div><div class="w">Your projected opening. Whatever is in the vendor contracts by then is what you live with.</div></div>
+    <div class="t"><div class="d">~2027-03</div><div class="w">The build starts, so prior authorization is working before you open.</div></div>
+    <div class="t"><div class="d">~2027-06</div><div class="w">Target opening for your new center, April at the earliest. Whatever is in the vendor contracts by then is what you live with.</div></div>
   </div>
   <div class="grow"></div>
   <p class="sub">Greenfield is the entire argument. Nothing on the slides that follow is possible to do this cheaply after opening.</p>
@@ -200,6 +220,7 @@
 <p class="time">1:00 to 3:00</p>
 <p>Say the obvious thing: they are in the only window where automation is a design choice rather than a retrofit. In six months there will be a RIS, a billing vendor, a phone system, and people hired around whatever those systems cannot do.</p>
 <p>The 2027-01-01 date is real and federal. Do not oversell it yet; it comes back on its own slide.</p>
+<p><strong>Updated 2026-10-22:</strong> the opening target is around June 2027, April at the earliest. The build starts around March so prior authorization works before opening. Say "your new center" and nothing more about where it is: no building, no address, no property, nothing about what was there before. The March date holds only if the assumptions on slide 26 hold.</p>
 </aside>
 </section>
 
@@ -269,6 +290,40 @@
 
 
 <!-- 6 -->
+<section class="slide agent">
+<div class="inner">
+  <div class="kicker">Before the numbers: what an AI agent is</div>
+  <h2 class="tight">Software that does a job inside your systems, and asks a person before anything leaves the building.</h2>
+  <div class="cols">
+    <div>
+      <h3>One that runs a workflow</h3>
+      <p>An operations agent works one process from start to finish: a prior authorization, a cancelled slot filled from the waitlist, a records request. It works through your RIS and the payers' own electronic connections, not by clicking around a screen. Someone on your staff approves anything that goes out.</p>
+      <h3>One you talk to</h3>
+      <p>An owner's agent you text or call. Ask how many MRIs were read last week, or which referrer went quiet, and it answers from your own numbers. Every Monday it sends a short report: volumes by modality, reader, and referrer; authorization and denial rates; reconciliation.</p>
+    </div>
+    <div>
+      <h3>The guardrails</h3>
+      <ul class="plain">
+        <li><strong>A person signs</strong> anything clinical and anything that leaves the building.</li>
+        <li><strong>Numbers are calculated and checked</strong>, never guessed. If a figure cannot be verified, it says so.</li>
+        <li><strong>HIPAA business associate agreements</strong> with every vendor that touches patient data.</li>
+        <li><strong>Patient data stays in the United States.</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<aside class="notes">
+<p class="time">10:00 to 12:00</p>
+<p>Plain words, no acronyms. Fernando asked Luis what an agent actually is; this is the answer before any statistic leans on it. Say: "Two kinds. One does a job inside your systems, like a very consistent employee who works one desk and asks before anything goes out. The other one you talk to: you text it or call it and it tells you what happened in your business."</p>
+<p>The guardrails are the reason he can trust it, so say all four. "Calculated and checked" means the agent never does arithmetic in its head: totals, rates, and reconciliations are computed by code and checked, and if a number cannot be verified it says so instead of filling the gap.</p>
+<p>Do not promise a date for the owner's agent. It is specified in the design work and priced when they want it built (see the build slide in the appendix). The Monday report is what it does, not when it starts.</p>
+<p>Turn to Jesse once: "Jesse, if you want the plumbing, I am happy to go through it after dinner." Then move on.</p>
+<p>Never frame either kind as replacing anyone. It changes what your people do.</p>
+</aside>
+</section>
+
+
+<!-- 7 -->
 <section class="slide section">
 <div class="inner">
   <div class="grow"></div>
@@ -284,7 +339,7 @@
 </section>
 
 
-<!-- 7 -->
+<!-- 8 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">What it costs in time</div>
@@ -308,14 +363,14 @@
 </section>
 
 
-<!-- 8 -->
+<!-- 9 -->
 <section class="slide dates">
 <div class="inner">
   <div class="kicker">The dates land on your opening</div>
   <div class="timeline">
     <div class="t"><div class="d">2026-01-01</div><div class="w">Payers must decide prior authorizations in <strong>7 calendar days</strong> standard, <strong>72 hours</strong> expedited, and publish their metrics.</div></div>
     <div class="t hot"><div class="d">2027-01-01</div><div class="w">Payers must operate a <strong>FHIR Prior Authorization API</strong>, plus Patient Access, Provider Access, and Payer-to-Payer APIs.</div></div>
-    <div class="t"><div class="d">Target 2027-04</div><div class="w">Your projected opening, into the new regime with no legacy process to unwind.</div></div>
+    <div class="t"><div class="d">Target ~2027-06</div><div class="w">Your new center opens into the new regime, with prior authorization already working and no legacy process to unwind.</div></div>
   </div>
   <p class="limit"><strong>Who the rule reaches:</strong> Medicare Advantage, Medicaid, CHIP and exchange plans. Not employer-sponsored plans, TRICARE, or VA. The payers who move first set the standard the rest follow.</p>
   <div class="grow"></div>
@@ -332,7 +387,7 @@
 </section>
 
 
-<!-- 9 -->
+<!-- 10 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">What a prior auth process actually does all day</div>
@@ -351,7 +406,34 @@
 </section>
 
 
-<!-- 10 -->
+<!-- 11 -->
+<section class="slide">
+<div class="inner">
+  <div class="kicker">One order through prior authorization</div>
+  <h2 class="tight">An MRI order arrives at 9:00 on a Tuesday. Here is what the agent does with it.</h2>
+  <ol class="steps">
+    <li>The order comes in from the referring office and lands in your RIS.</li>
+    <li>The agent checks the patient's coverage and whether this payer requires authorization for this study.</li>
+    <li>If it does, the agent assembles the request from the order and the clinical notes, and checks it against that payer's rules.</li>
+    <li>Your staff member reviews it and approves. Only then does it go to the payer, over the payer's electronic connection.</li>
+    <li>The agent watches the payer's decision clock and puts the approval on the schedule the moment it arrives.</li>
+    <li>If it is denied, the agent drafts the appeal with the reasons and puts it in front of a person. Nothing goes out unsigned.</li>
+  </ol>
+  <div class="grow"></div>
+  <p class="sub"><strong>You will click through this yourself:</strong> a working prior authorization demo on synthetic data, no real patients, delivered in the first phase. <span class="demourl">[DEMO_URL]</span></p>
+</div>
+<aside class="notes">
+<p class="time">21:00 to 23:00</p>
+<p>Walk it like a Tuesday, not like a diagram. Fernando is visual and he has been over-promised before; the question he is waiting to ask is "when can I see it working?" The answer is on the slide: the demo is a deliverable in the first phase, on synthetic data. <strong>Replace [DEMO_URL] with the live link before the dinner, or delete the tag if the demo is not ready.</strong> Never show a link you have not opened that day.</p>
+<p>Step 4 is the whole safety model. Say it twice if you have to: nothing reaches a payer until someone on his staff approves it.</p>
+<p><strong>If he raises Exa building something similar:</strong> never disparage Exa. "They may well, and if it is good, use it. What I build is vendor-neutral: it runs on your data and your contract terms, and it works with whatever RIS and PACS you pick, including Exa. The four access terms on slide 3 protect you either way, whether the feature comes from them or from me."</p>
+<p>Jesse may ask how it connects: HL7 v2 orders from the RIS, the payer's FHIR prior authorization API where it exists (required for Medicare Advantage, Medicaid, CHIP and exchange plans by 2027-01-01), EDI where it does not, and a human step where neither exists. No screen-driving of payer portals.</p>
+<p>If he brings his own idea, such as AI to retrieve prior records, give him the floor. Write it down. It is the records build on slide 16, and it is his idea now.</p>
+</aside>
+</section>
+
+
+<!-- 12 -->
 <section class="slide section">
 <div class="inner">
   <div class="grow"></div>
@@ -367,7 +449,7 @@
 </section>
 
 
-<!-- 11 -->
+<!-- 13 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Scheduling: the empty slot is not a no-show</div>
@@ -389,7 +471,7 @@
 </section>
 
 
-<!-- 12 -->
+<!-- 14 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Scheduling: what reminders honestly do</div>
@@ -410,7 +492,7 @@
 </section>
 
 
-<!-- 13 -->
+<!-- 15 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Answering patients: buy it, do not build it</div>
@@ -430,7 +512,7 @@
 </section>
 
 
-<!-- 14 -->
+<!-- 16 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Records: the clock and the fee rule both favor automation</div>
@@ -458,7 +540,7 @@
 </section>
 
 
-<!-- 15 -->
+<!-- 17 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">The fifth candidate: the numbers the owner actually looks at</div>
@@ -475,7 +557,7 @@
 </section>
 
 
-<!-- 16 -->
+<!-- 18 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">The scorecard</div>
@@ -501,13 +583,14 @@
 </section>
 
 
-<!-- 17 -->
+<!-- 19 -->
 <section class="slide section">
 <div class="inner">
   <div class="grow"></div>
   <div class="kicker">Part three</div>
   <h1>Proof: RadAssist.</h1>
   <p class="lead">Browser-based structured radiology reporting, with calcium score and thyroid modules. Built by me. Used daily on real patients by the radiologist sitting at this table.</p>
+  <p class="sub" style="margin-top:22px">Next on the roadmap, at Dr. Ramos&rsquo;s request: voice dictation, and spine, brain, and cardiac CTA (CAD-RADS) modules.</p>
   <div class="grow"></div>
   <p class="sub">radassist.app</p>
 </div>
@@ -516,11 +599,13 @@
 <p>Open the live app on the laptop. Then stop talking and let Luis talk. The only proof that matters is the artifact that already works, and the only witness who matters is the one using it.</p>
 <p>Questions to hand Luis: What broke, and how fast was it fixed? What did you ask for that got built? What does it do that the vendor tools did not?</p>
 <p>Do not demo features. Let Luis describe a Tuesday.</p>
+<p><strong>Roadmap, as Luis asked for it:</strong> voice dictation inside RadAssist, then spine, brain, and cardiac CTA (CAD-RADS) modules. He will email guideline-display corrections; acknowledge them as his. Say "next on the roadmap," never a date.</p>
+<p><strong>Licensing to other centers: do NOT raise it at this table.</strong> Luis sees resale potential at about $2,500 one-time per center. That is a private conversation between you and Luis, because slide 24 tells Fernando this center is the priority and his service terms do not change if you take on a second site. Both are true, but only one belongs in front of Fernando.</p>
 </aside>
 </section>
 
 
-<!-- 18 -->
+<!-- 20 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Radiology report assistance</div>
@@ -555,7 +640,7 @@
 </section>
 
 
-<!-- 19 -->
+<!-- 21 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Boundaries: the FDA question, answered by the statute</div>
@@ -575,7 +660,7 @@
 </section>
 
 
-<!-- 20 -->
+<!-- 22 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Boundaries: what I will design around, stated before you ask</div>
@@ -605,7 +690,7 @@
 </section>
 
 
-<!-- 21 -->
+<!-- 23 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">The question you are going to ask</div>
@@ -629,7 +714,7 @@
 </section>
 
 
-<!-- 22 -->
+<!-- 24 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">The most important slide</div>
@@ -650,7 +735,7 @@
 </section>
 
 
-<!-- 23 -->
+<!-- 25 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">If it were my money</div>
@@ -672,7 +757,33 @@
 </section>
 
 
-<!-- 24 -->
+<!-- 26 -->
+<section class="slide">
+<div class="inner">
+  <div class="kicker">What the dates depend on</div>
+  <h2 class="tight">The build starts around March so prior authorization works before you open. These have to be true first.</h2>
+  <ul class="plain">
+    <li><strong>A signed agreement.</strong></li>
+    <li><strong>Your RIS and PACS vendors selected</strong>, with sandbox access to their interfaces: API, HL7, and DICOM.</li>
+    <li><strong>Test access to the payers' connections</strong> for prior authorization, FHIR and EDI.</li>
+    <li><strong>HIPAA business associate agreements signed.</strong></li>
+    <li><strong>One named person on your side</strong> who approves.</li>
+    <li><strong>Your expected volumes and payer mix</strong>, before payer-specific design starts.</li>
+  </ul>
+  <div class="grow"></div>
+  <p class="sub">If one of these slips, the dates move with it. You hear about it the day it happens.</p>
+</div>
+<aside class="notes">
+<p class="time">39:00 to 40:00</p>
+<p>This slide is the only place a date is promised, and every date on it is conditional. Read the list, then the last line. A man who has been over-promised respects a vendor who names the conditions before signing.</p>
+<p>The one most likely to slip is vendor selection, because it runs on their calendar. Say so: "The RIS choice drives everything after it. That is why the vendor work comes first."</p>
+<p>Do not promise anything beyond this list. If pushed for a guarantee: "Tell me which piece has to be live by when, and we will scope it against these."</p>
+<p>Staffing, unprompted: "Staff for the manual workflow at opening. I am not going to tell you to hire thin against a date of mine." It changes what your people do; it does not set your hiring plan.</p>
+</aside>
+</section>
+
+
+<!-- 27 -->
 <section class="slide closing">
 <div class="inner">
   <div class="grow"></div>
@@ -692,7 +803,7 @@
 </section>
 
 
-<!-- 25 -->
+<!-- 28 -->
 <section data-nonumbers="remove" class="slide section">
 <div class="inner">
   <div class="grow"></div>
@@ -704,49 +815,67 @@
 <aside class="notes">
 <p class="time">38:30</p>
 <p>One sentence, then advance or stop: "The rest is reference. It is what it would cost to have me design this with you, and you can stop me here if you would rather take it another day."</p>
-<p>If Luis said no numbers on the 15th, this slide and the next are not in the deck you are showing; the no-numbers variant ends on the Thank You.</p>
+<p>If Luis says no numbers, this slide and the two pricing slides are not in the deck you are showing; the no-numbers variant ends on the Thank You.</p>
 </aside>
 </section>
 
-<!-- 26 -->
+<!-- 29 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
-  <div class="kicker">What I am proposing</div>
-  <h2 class="tight">A design engagement over your six-month build. Thirty thousand, in two phases, with a gate you control.</h2>
-  <div class="cols">
-    <div>
-      <h3>Phase 1 &nbsp;&middot;&nbsp; $12,000 &nbsp;&middot;&nbsp; first 90 days</h3>
-      <ul class="plain">
-        <li>Vendor contract language for the four access terms.</li>
-        <li>RIS, PACS, and billing vendor evaluation against the automation plan.</li>
-        <li>Voice vendor specification and shortlist.</li>
-        <li>Everything that has to happen <em>before</em> you sign a vendor.</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Phase 2 &nbsp;&middot;&nbsp; $18,000 &nbsp;&middot;&nbsp; back 90 days</h3>
-      <ul class="plain">
-        <li>Written operational specifications: prior auth, records, cancellation backfill, owner reporting.</li>
-        <li>Payer-specific prior authorization design once your payer mix is known.</li>
-        <li>Build-ready. You own it.</li>
-      </ul>
-    </div>
-  </div>
+  <div class="kicker">What I am proposing: the design</div>
+  <h2 class="tight">Design: fixed fee, fixed scope. Thirty thousand, in four payments, each tied to something you can hold.</h2>
+  <table class="ms">
+    <thead><tr><th style="width:5%">#</th><th>Deliverable</th><th style="width:22%">Target</th><th style="width:12%;text-align:right">Payment</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Contract language for the four access terms, ready for every vendor</td><td>On signing</td><td class="amt">$6,000</td></tr>
+      <tr><td>2</td><td>RIS, PACS, billing, and voice vendor evaluation. <strong>Working prior authorization demo on synthetic data.</strong></td><td>~December 2026</td><td class="amt">$6,000</td></tr>
+      <tr class="gate"><td></td><td colspan="3">Your gate: you decide whether the rest goes</td></tr>
+      <tr><td>3</td><td>Written specifications: prior authorization, cancellation backfill</td><td>~January 2027</td><td class="amt">$9,000</td></tr>
+      <tr><td>4</td><td>Written specifications: records, owner reporting. Payer-specific prior authorization design.</td><td>~February 2027, once payer mix is known</td><td class="amt">$9,000</td></tr>
+      <tr class="tot"><td></td><td>Design total. You own every document.</td><td></td><td class="amt">$30,000</td></tr>
+    </tbody>
+  </table>
   <div class="grow"></div>
-  <p class="sub">At ninety days you decide whether Phase 2 goes. The build is priced from the specification after you open, with real volumes in hand.</p>
+  <p class="sub">The build was never inside this number. It is priced on the next page, as its own fixed fee. Dates hold while the assumptions on slide 26 hold.</p>
 </div>
 <aside class="notes">
-<p class="time">38:30 to 40:00</p>
-<p><strong>Say it once, then stop.</strong> "Thirty thousand for the six months, in two phases. Twelve for the first ninety days: the contract language, the RIS and billing evaluation, the voice vendor shortlist. That is all the work that has to happen before you sign anything. Eighteen for the back half: the written specifications. At ninety days you decide whether the second phase goes. Build gets priced from the spec after you open."</p>
-<p><strong>Do not</strong> break out hours, name an hourly rate, or justify the number at length. Explaining a price invites negotiation on the explanation.</p>
-<p><strong>If he pushes on price: shorten the term, never cut the rate.</strong> Offer Phase 1 alone and decide the back half at ninety days. That is already the structure, so the answer is "that is exactly what the gate is for."</p>
-<p>The decision in the room is twelve thousand, not thirty. Phase 1 is also the half with the real deadline, because it has to land before vendor signatures. If it slips, the leverage is gone.</p>
-<p>If he asks why the number is what it is, one sentence: "It stays where it is because I keep the rights to my own product, and you hold it under a license you cannot lose." Phase 2 is fixed-price for a specification; the owner agent is inside the eighteen, not on top of it. <strong>Each specification carries its own fixed build price</strong>, and that is what makes "we want that one built" answerable later without reopening a negotiation.</p>
-<p><strong>"Does that change at three centers?" answered here, so you never page back to slide 9.</strong> "No. The design engagement is thirty thousand whether it is one center or three. The specification gets written once and deployed three times, and the four contract terms get negotiated once across all three contracts. What is per-site is the build, and that is priced from the spec after you open." Then stop. A buyer starts counting centers the moment he hears a price, so expect this in the same breath.</p>
-<p><strong>If they push for something of yours live by a date: do not promise one.</strong> The infrastructure was never priced: host, database, LLM API bill that scales with use, auth, backups, monitoring, all a recurring line in their budget forever. Convert the push into scope: "If you want something live before a specific date, tell me which piece and we'll scope it." Not a no, not a yes-with-a-date.</p>
-<p><strong>Billing is charged for in Phase 1, so be ready to justify it.</strong> It is now a Buy row on the scorecard. "Billing is a buy and I am not touching the claims work. What I evaluate is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system depends on them, and whether the four access terms go into that contract the same way they go into the RIS contract."</p>
-<p><strong>Volunteer the staffing point, verbally, do not wait to be asked.</strong> "Staff for the manual workflow at opening. I am not going to tell you to hire thin against a date of mine." Never say automation reduces headcount; say it changes what your people do. A staffing plan tied to the roadmap is Phase 1 work, but it stays off this slide until Luis weighs in.</p>
+<p class="time">40:00 to 41:00</p>
+<p><strong>Say it once, then stop.</strong> "The design is thirty thousand, fixed, paid in four pieces as I deliver: six when we sign, six when you have the vendor evaluation and the working demo, then nine and nine for the specifications. After the second payment you decide whether the rest goes."</p>
+<p><strong>Why four payments:</strong> Fernando said thirty in two phases looked large, and their own lawyer staged four or five fixed payments. The rate did not change; the largest single check is now nine thousand, and each one buys something he can hold. That is "shorten the term, never cut the rate" in a form he has already accepted from someone else.</p>
+<p><strong>If he pushes on price: shorten the term, never cut the rate.</strong> "Take the first two milestones and decide the rest when you have seen the work and clicked through the demo." Do not break out hours, name an hourly rate, or justify the number at length.</p>
+<p><strong>"Does that change at three centers?"</strong> "No. The design is written once and the four contract terms are negotiated once. What is per-site is the build."</p>
 <p>Contract through RGF Global Ventures LLC, never personally.</p>
+</aside>
+</section>
+
+
+<!-- 30 -->
+<section data-nonumbers="remove" class="slide">
+<div class="inner">
+  <div class="draftmark">Proposed figures: confirm before showing</div>
+  <div class="kicker">What I am proposing: the build</div>
+  <h2 class="tight">The build is its own fixed fee, in five payments, working before you open.</h2>
+  <table class="ms">
+    <thead><tr><th style="width:5%">#</th><th>Prior authorization build: deliverable</th><th style="width:22%">Target</th><th style="width:12%;text-align:right">Payment</th></tr></thead>
+    <tbody>
+      <tr><td>B1</td><td>The agent running in your RIS vendor's sandbox</td><td>~March 2027</td><td class="amt">$8,000</td></tr>
+      <tr><td>B2</td><td>Connected to the payers' test environments, FHIR and EDI</td><td>~April 2027</td><td class="amt">$8,000</td></tr>
+      <tr><td>B3</td><td>Your staff test it on your own workflows; fixes made</td><td>~May 2027</td><td class="amt">$8,000</td></tr>
+      <tr><td>B4</td><td>Live before you open</td><td>Before opening</td><td class="amt">$8,000</td></tr>
+      <tr><td>B5</td><td>Thirty days of hypercare after opening</td><td>Opening + 30 days</td><td class="amt">$8,000</td></tr>
+      <tr class="tot"><td></td><td>Prior authorization build total</td><td></td><td class="amt">$40,000</td></tr>
+    </tbody>
+  </table>
+  <p class="sub" style="margin-top:18px">Backfill, records, and owner reporting: each specification carries its own fixed build price. <strong>Optional after hypercare:</strong> support and maintenance at $1,500 a month on a two-year term, or per patient if you prefer that model. Hosting and model usage at cost, estimated in the specification before you commit.</p>
+</div>
+<aside class="notes">
+<p class="time">41:00 to 42:30</p>
+<p><strong>ALL FIGURES ON THIS SLIDE ARE PROPOSED. Rick confirms them before this slide is shown; then delete the red tag in the HTML (the div with class "draftmark") and re-render.</strong></p>
+<p><strong>Luis asked how you make money. Have one sentence:</strong> "Three ways, all in writing: a fixed fee to design it, a fixed fee to build it, and an optional monthly fee to keep it running. I keep the rights to my own product, which is why those numbers stay where they are."</p>
+<p><strong>Recommended build range: $36,000 to $48,000 for prior authorization; $40,000 proposed.</strong> Reasoning: the build is larger than the design, not smaller. It runs against two outside calendars (the RIS vendor's sandbox and the payers' test environments), it carries a human approval step and an audit trail, and it includes a staff test cycle and thirty days of hypercare after opening. Price the engagement, not the code. Five equal payments of $8,000 keep every check below the largest design payment's neighborhood, so no single one feels like a decision. If he pushes, drop a scope item or a milestone, never the rate.</p>
+<p><strong>Recurring option: $1,200 to $2,000 a month is the sensible band; $1,500 proposed.</strong> They have seen Exa at about $0.90 per patient and Sectra on a multi-year per-patient commitment with service included, so a per-patient option will feel familiar. Recommend the flat monthly fee for the first year, because nobody knows the volume before opening; offer per patient (around $1.00 per completed study with a monthly floor) once real volume exists. Infrastructure (host, database, model usage, backups, monitoring) is passed through at cost and estimated in writing before they commit; that line was never priced before, and it is the reason nothing was promised live earlier.</p>
+<p>Do not invent hours if asked. "It is a fixed price for a fixed result. If the scope changes, the price is written down before the work starts."</p>
+<p>If he wants the build smaller: the five milestones are already the small version. Offer B1 alone as a decision point: "Pay for the sandbox build, see it run on your RIS, then decide."</p>
 </aside>
 </section>
 
@@ -761,11 +890,11 @@
 <script>
 /* NO-NUMBERS VARIANT. Open this file with ?nonumbers (file:///...deck.html?nonumbers) and every
    element tagged data-nonumbers="remove" is deleted from the DOM before the deck script runs, so the
-   counter, overview numbering, last-slide page-break and print output all see a 24-slide deck.
+   counter, overview numbering, last-slide page-break and print output all see a 27-slide deck.
    Regenerate the PDF with:
    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer \
      --print-to-pdf=Imaging-Center-Deck-NoNumbers-2026-10-20.pdf "file://$PWD/imaging-center-automation-deck-2026-10-20.html?nonumbers"
-   Without the param the file renders the full 26-slide deck unchanged. One source, no fork. */
+   Without the param the file renders the full 30-slide deck unchanged. One source, no fork. */
 (function () {
   if (/[?&]nonumbers\b/.test(location.search)) {
     document.documentElement.classList.add('nonumbers');

@@ -1,6 +1,6 @@
 # Automation Candidates: Greenfield Outpatient Imaging Center, El Paso
 
-**Prepared:** 2026-10-01, for the 2026-10-20 dinner with Dr. Luis Ramos and Fernando Escarzaga
+**Prepared:** 2026-10-01; **updated 2026-10-22** after the Luis rehearsal, for the dinner (target Thursday 2026-10-29) with Dr. Luis Ramos, Fernando Escarzaga, and Jesse Martinez
 **Basis:** every evidence claim below traces to the Sherlock research brief of 2026-10-01 and its citation list. Where the research found no defensible evidence, this document says so instead of filling the gap.
 **Operator assumption:** a one-to-two-person shop (Rick, possibly one contractor), building for one site that Rick personally operates. Effort and risk ratings are for that shop, not for a vendor.
 
@@ -17,13 +17,13 @@
 
 | # | Candidate | Recommendation | Effort | Risk | Evidence | Phase |
 |---|---|---|---|---|---|---|
-| 1 | Prior authorization orchestration and appeals | **Build** | Large | Medium | High | Lead product, design now |
+| 1 | Prior authorization orchestration and appeals | **Build** | Large | Medium | High | Lead product. Design now; demo on synthetic data in design milestone 2; build ~Mar 2027, live before opening |
 | 2 | Eligibility verification at scheduling | **Build** (with #1) | Medium | Low | High | With #1 |
 | 3 | Vendor contract access terms | **Advise now** | Small | None | High | This month, free |
-| 4 | Owner operational reporting and reader reconciliation | **Build** | Small to Medium | Low | Low (no external evidence) | First thing built after opening |
+| 4 | Owner operational reporting and reader reconciliation | **Build** | Small to Medium | Low | Low (no external evidence) | Specified in design milestone 4; build priced from its spec |
 | 5 | Cancellation backfill and waitlist | **Build, small** | Medium | Medium (TCPA) | High | After RIS is live |
 | 6 | Inbound records requests (release of information) | **Build, selectively** | Medium | Medium (OCR enforcement) | High | Before opening |
-| 7 | Outbound prior-study retrieval | **Build, selectively** | Medium to Large | Low | High on the gap, Low on the solution | After opening |
+| 7 | Outbound prior-study retrieval | **Build, selectively** | Medium to Large | Low | High on the gap, Low on the solution | Specified in design; build priced from its spec |
 | 8 | Appointment reminders, self-scheduling, intake forms | **Buy (the RIS)** | None | Low | High | Vendor selection |
 | 9 | Inbound patient voice (phones) | **Integrate** (buy a vendor) | Medium to integrate | High | High on the constraint | Phase two, if at all |
 | 10 | Outbound patient notifications beyond reminders (results ready, instructions) | **Buy (RIS) or fold into #5** | Small | Medium (TCPA) | High on constraints | With #5 |
@@ -31,6 +31,19 @@
 | 12 | Referring physician communication and report delivery | **Buy (RIS/PACS)** | None | Low | None found | Vendor selection |
 | 13 | Protocol selection, clinical appropriateness, anything touching the image | **Decline** | n/a | Very high (FDA) | High | Never without an FDA pathway |
 | 14 | Radiology report assistance (RadAssist, extended to the center) | **Build** (existing product, extended) | Medium | Low (the radiologist signs every report) | Medium (in daily use; one radiologist's own figure, no literature) | Interface terms now; specified in Phase 2 |
+
+## Update 2026-10-22: timeline, agent types, build pricing, demo
+
+Decided by Rick after the 2026-10-22 rehearsal with Luis. Every sibling document (deck, leave-behind, speaking notes, runbook, architecture) carries the same changes.
+
+- **Timeline.** The opening is targeted around **June 2027, April at the earliest**. The **build starts around March 2027** so prior authorization (#1, #2) is working **before** opening. Documents say only "your new center": no building, property, address, or prior business at the site.
+- **Two kinds of agent, in plain language** (deck slide 6, architecture page 7). An **operations agent** runs one workflow inside the center's systems (#1, #5, #6) through the RIS and payer APIs, and a person approves anything that leaves the building. An **owner's agent** (#4) the owner texts or calls for answers, plus a Monday report: volumes by modality, reader, and referrer; authorization and denial rates; reconciliation. Guardrails: a person signs anything clinical or outbound; numbers are calculated and checked, never guessed; HIPAA BAAs; US data residency.
+- **Working demo as a deliverable.** A clickable prior authorization demo on synthetic data is part of design milestone 2. Alan is building it. The deck and leave-behind carry a `[DEMO_URL]` placeholder until the link is live.
+- **Pricing, fixed fee and fixed scope, milestone payments tied to deliverables.** Design stays **$30,000** (four payments: $6k on signing, $6k at vendor evaluation plus demo, owner's gate, $9k, $9k). The **build is separate and was never in the $30k**: prior authorization **$40,000 in five $8,000 milestones** (sandbox build, payer test integration, staff testing, live before opening, 30-day hypercare). **PROPOSED, Rick to confirm.** Backfill (#5), records (#6, #7), and owner reporting (#4) each get a fixed build price in their own specification. Optional support **$1,500/month on a two-year term, or per patient** (PROPOSED); infrastructure at cost, estimated in writing before commitment.
+- **Assumptions the build dates depend on:** signed contract; RIS and PACS selected with API, HL7, and DICOM sandbox access; payer FHIR and EDI test access; BAAs executed; a named owner contact for approvals; real volumes or payer mix before payer-specific design. If an assumption slips, the dates move.
+- **Exa.** The PACS vendor may build similar features. Position: vendor-neutral, built on the center's data and contract terms, works with whatever RIS and PACS they pick; the four access terms (#3) protect the center either way. Never disparage Exa.
+- **RadAssist (#14) roadmap, per Luis:** voice dictation integration, then spine, brain, and cardiac CTA (CAD-RADS) modules. Luis also wants technologist data capture at the ultrasound station to pre-fill reports. Licensing to other centers (Luis's estimate about $2,500 one-time per center) is **not** raised in front of Fernando.
+- **Prior-records reality, per Luis:** outside priors arrive by courier on CD or DVD; after five days the study is read without them. This sharpens #7.
 
 ---
 
