@@ -7,7 +7,7 @@
 >
 > **What changed, so the slide numbers moved (30 slides; 27 in the no-numbers deck):**
 > - **New slide 6, "What an AI agent is."** Plain language: the two kinds, the guardrails.
-> - **New slide 11, one order through prior authorization,** with the working demo as a first-phase deliverable. **Replace `[DEMO_URL]` on slide 11 and on the leave-behind with Alan's live link before the dinner,** or delete the tag.
+> - **New slide 11, one order through prior authorization,** with the working demo as a first-phase deliverable. **Alan's demo is live at https://rfinlay.github.io/imaging-priorauth-demo/** and is linked on slide 11 and leave-behind page 2. Click through it yourself the day of the dinner.
 > - **New slide 26, "What the dates depend on."** The assumptions. The only place a date is promised, and every date on it is conditional.
 > - **Timeline:** opening targeted around **June 2027, April at the earliest**. The **build starts around March 2027** so prior authorization works before opening. Say only "your new center." **Never mention any building, property, address, or what was at the site before.**
 > - **Pricing restructured (appendix, slides 28 to 30):** design stays $30,000 but is now four milestone payments ($6k, $6k, $9k, $9k) with the gate after the second; the **build is a separate fixed fee** (prior authorization, $40,000 in five $8,000 milestones, **PROPOSED, Rick to confirm**); an optional monthly support fee (**$1,500/month proposed**). The red "Proposed figures" tag on slide 30 and the leave-behind comes off only after Rick confirms.
@@ -401,7 +401,7 @@ And you will not have to take my word for it. In the first phase you will click 
 
 **DEPTH / IF ASKED**
 
-**The demo is Alan's build, in progress now. Put the live link where `[DEMO_URL]` sits on the slide and the leave-behind, and open it yourself the same day.** If it is not ready, delete the tag and say "first phase," never a date. Fernando is visual and distrustful after vendors over-promised; a demo he can click is worth more than any slide.
+**The demo is live: https://rfinlay.github.io/imaging-priorauth-demo/ (Alan's build, synthetic data).** It is on the slide and the leave-behind. Open it yourself the same day; if it will not load, say "first phase," never a date. Fernando is visual and distrustful after vendors over-promised; a demo he can click is worth more than any slide.
 
 **If he raises Exa building something similar.** Never disparage Exa.
 
@@ -1129,7 +1129,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 - [ ] **DONE 2026-10-06, no action needed: the partner name is in.** Fernando Escarzaga appears in full on the two surfaces he will actually see, the deck title slide and the leave-behind header. First name only in the presenter notes, the RUNBOOK, and AUTOMATION-CANDIDATES, where it reads naturally. Every placeholder is gone, and all four PDFs were reprinted and re-synced to OneDrive and Google Drive.
 - [ ] **The design fee is $30,000 in four milestone payments ($6k, $6k, $9k, $9k), gate after the second.** On slide 29 and page 2 of the leave-behind. **The build ($40,000 in five $8,000 milestones) and support ($1,500/month) are PROPOSED: confirm, then remove the red tag and re-render.**
-- [ ] **Replace `[DEMO_URL]`** on slide 11 and on leave-behind page 2 with Alan's live demo link, and click through it the same day.
+- [ ] **Click through the demo** (https://rfinlay.github.io/imaging-priorauth-demo/, linked on slide 11 and leave-behind page 2) the same day, on the hotspot.
 - [ ] **Print the leave-behind.** Three copies (Jesse too). Two US Letter pages from Chrome.
 - [ ] **Charge the laptop.** The deck runs with no wifi. RadAssist does not. Confirm radassist.app loads on your phone's hotspot before you sit down, or have screenshots ready.
 - [ ] **Open the deck in a browser.** Press N once to confirm notes mode works, press N again to hide it. Set the browser to full screen.
