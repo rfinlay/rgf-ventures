@@ -1,4 +1,4 @@
-# Demo script — Prior Authorization Agent (about 3 minutes)
+# Demo script: Prior Authorization Agent (about 3 minutes)
 
 **Live URL:** https://rfinlay.github.io/imaging-priorauth-demo/
 **Works on:** laptop, iPad, phone. No login. Open it before dinner and leave the tab up.
@@ -81,11 +81,11 @@ Say plainly: "These numbers are synthetic placeholders. Yours will come from you
 
 ## Questions you will get
 
-- **"Is any of this connected to a real insurance company?"** No. It talks to HL7's public test server for the prior-auth standard. Connecting to Blue Cross or UHC means credentialing with each payer, which is a phase-2 task once the center has contracts.
+- **"Is any of this connected to a real insurance company?"** No. It talks to HL7's public test server for the prior-auth standard. Connecting to Blue Cross or UHC means credentialing with each payer, which is build work (milestone B2 onward) once the center has payer contracts.
 - **"What about the clearinghouse / Availity?"** Same code path; the agent can submit through a clearinghouse where a payer is not yet on FHIR. Fax-and-portal payers get a human-assisted path with the agent preparing the packet.
 - **"Exa says they are building this."** Good, use it if it ships and it is good. The agent sits above the PACS and RIS, so it works with Exa, Sectra, or whatever the center buys, and it covers the owner's reporting and the appeal drafting, which a PACS vendor will not.
 - **"Can it get this wrong?"** Yes, which is why the two purple gates exist. It never submits or signs on its own.
-- **"How long did this take to build?"** One evening against the public test server. That is the honest scale of a first phase.
+- **"How long did this take to build?"** The prototype took an evening against a public test server. Production is the work on the build page: your RIS, your real payers, security and the BAAs, and your staff testing it before you open.
 
 ## If the Wi-Fi dies
 

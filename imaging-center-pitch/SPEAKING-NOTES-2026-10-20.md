@@ -1135,7 +1135,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 - [ ] **Open the deck in a browser.** Press N once to confirm notes mode works, press N again to hide it. Set the browser to full screen.
 - [ ] **Do not bring the Sherlock research document.** Everything you need from it is in this sheet, the deck notes, and the RUNBOOK.
 - [ ] **Bring this sheet, folded.** Part 1 face up.
-- [ ] **DONE 2026-10-22: opening window confirmed as ~June 2027, April at the earliest; slides 2 and 9 updated.** (Original item follows.) "Target 2027-04" on slides 2 and 9 is a projection, not a confirmed date. If he gives a different window, both timeline slides get re-rendered before the dinner, and the slide 9 "window is now" framing gets stronger if the opening lands after 2027-01-01 and weaker if before. The two regulatory dates do not move.
+- [ ] **DONE 2026-10-22: opening window confirmed as ~June 2027, April at the earliest; slides 2 and 9 updated.**
 
 ## Open items: ALL FOUR RESOLVED 2026-10-06
 

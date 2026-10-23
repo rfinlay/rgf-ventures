@@ -136,7 +136,7 @@
 <div class="page" id="p1">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 1 of 7</div>
+      <div class="kicker">Proposed architecture, page 1 of 8</div>
       <h1>Everything proposed, on one page: who touches it, what runs it, what it talks to.</h1>
       <div class="sub">Read top to bottom. People, then the agent that operates each service, then the service itself, then the standard interfaces, then the systems the center buys. Built things are solid and warm. Bought things are dashed. Nothing crosses the clinical wall on the right.</div>
     </div>
@@ -289,7 +289,7 @@
 <div class="page" id="p2">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 2 of 7. The lead product.</div>
+      <div class="kicker">Proposed architecture, page 2 of 8. The lead product.</div>
       <h1>Prior authorization: one pipeline, three submission paths, a human at every gate.</h1>
       <div class="sub">Left to right is the life of one advanced imaging order. The upper lane is the agent surface. The lower lane is the deterministic service that runs with no model at all. The agent never reaches the world except through a signature.</div>
     </div>
@@ -377,7 +377,7 @@
 <div class="page" id="p3">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 3 of 7. The user level.</div>
+      <div class="kicker">Proposed architecture, page 3 of 8. The user level.</div>
       <h1>Who touches what, and what each person is allowed to do.</h1>
       <div class="sub">A row is a person. A column is a service. The signature marks are the places the system stops and waits for a human. Radiologists appear once, to show where the system is not.</div>
     </div>
@@ -476,7 +476,7 @@
 <div class="page" id="p4">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 4 of 7. The other three builds, and the owner's view.</div>
+      <div class="kicker">Proposed architecture, page 4 of 8. The other three builds, and the owner's view.</div>
       <h1>Backfill, records, prior studies, owner reporting: each is a small deterministic service with a bounded agent on top.</h1>
     </div>
     <div class="who">Each panel reads left to right<br>Human gates drawn where they exist</div>
@@ -569,7 +569,7 @@
 <div class="page" id="p5">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 5 of 7. Ownership and boundaries.</div>
+      <div class="kicker">Proposed architecture, page 5 of 8. Ownership and boundaries.</div>
       <h1>Who owns each layer, and the lines the system does not cross.</h1>
       <div class="sub">The left half is a commercial boundary. The right half is a regulatory one. Both are drawn so an engineer who has never met Rick can read them.</div>
     </div>
@@ -627,7 +627,7 @@
 <div class="page" id="p6">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 6 of 7. Deployment across three centers.</div>
+      <div class="kicker">Proposed architecture, page 6 of 8. Deployment across three centers.</div>
       <h1>Three centers, three instances. The specification is shared. Nothing else is.</h1>
       <div class="sub">A recommendation, not a settled fact. Whether the centers share a back office and a vendor stack is the partners' decision, and either answer fits this page. What does not change is that each center's patient data stays its own, and that this costs more than one shared stack.</div>
     </div>
@@ -685,7 +685,7 @@
 <div class="page" id="p7">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 7 of 7. Sequence, dependencies, and the two kinds of agent.</div>
+      <div class="kicker">Proposed architecture, page 7 of 8. Sequence, dependencies, and the two kinds of agent.</div>
       <h1>The build starts around March so prior authorization works before your new center opens.</h1>
       <div class="sub">Target opening around June 2027, April at the earliest. Every date here is a target that holds only while the dependencies in the right-hand panel hold. If one slips, the dates move with it.</div>
     </div>
@@ -717,6 +717,55 @@
   <div class="panel" style="left:650px;top:502px;width:590px;height:136px"><div class="k">Vendor-neutral by design</div><h3>Works with whatever RIS and PACS the center picks.</h3>If the PACS or RIS vendor ships its own version of a feature, the center can use it. The four access terms (API access, HL7 interface count and fees, export rights, DICOM query permissions) keep the center's data reachable whichever way that goes. Guardrails throughout: a person signs anything clinical or outbound; HIPAA BAAs; patient data stays in the United States.</div>
 
   <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. Fixed fee, fixed scope, milestone payments tied to deliverables; build pricing is a separate fixed fee from the design.</div><div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div></div>
+</div>
+
+
+<div class="page" id="p8">
+  <div class="hdr">
+    <div>
+      <div class="kicker">Proposed architecture, page 8 of 8. The prior authorization demo, as built, and the production path.</div>
+      <h1>What the demo really does today, and what replaces each simulated piece in production.</h1>
+      <div class="sub">Live at <b>rfinlay.github.io/imaging-priorauth-demo</b>. Synthetic data only. Solid warm boxes are real today; dashed boxes are simulated or synthetic and labeled that way in the demo. The bottom row is the production path the build milestones deliver.</div>
+    </div>
+    <div class="who">Built 2026-10-22<br>Script: <b>/imaging-priorauth-demo/script/</b></div>
+  </div>
+
+  <div class="abs kicker" style="left:40px;top:110px">The demo, as built. Left to right, one order.</div>
+  <div class="box buy" style="left:40px;top:130px;width:200px;height:96px"><div class="t">1. RIS order</div><span class="n">SIMULATED</span><br>A synthetic HL7 v2.5.1 ORM^O01 message, generated per order and displayed. No live RIS connected.</div>
+  <div class="box build" style="left:252px;top:130px;width:250px;height:96px"><div class="t">2. Prior auth agent</div><span class="n">REAL</span><br>Checks the auth rule, assembles a <b>Da Vinci PAS FHIR bundle</b> (Claim, ServiceRequest, QuestionnaireResponse, Patient, Coverage, more). A person approves it first.</div>
+  <div class="box build" style="left:514px;top:130px;width:250px;height:96px"><div class="t">3. HL7 Da Vinci PAS reference sandbox</div><span class="n">REAL</span><br><b>POST Claim/$submit</b> to prior-auth.davinci.hl7.org returns HTTP 201 and a tracking number; a <b>GET</b> reads the stored ClaimResponse back.</div>
+  <div class="box buy" style="left:776px;top:130px;width:150px;height:96px"><div class="t">4. Payer decision</div><span class="n">SIMULATED</span><br>The sandbox has no imaging rules, so approve or deny is scripted and labeled.</div>
+  <div class="box build" style="left:938px;top:130px;width:150px;height:96px"><div class="t">5. Appeal</div><span class="n">DRAFTED, HUMAN SIGNS</span><br>Drafted from the denial and notes; the physician edits and signs.</div>
+  <div class="box buy" style="left:1100px;top:130px;width:140px;height:96px"><div class="t">6. Monday report</div><span class="n">SYNTHETIC</span><br>Turnaround, denial, appeal, overturn rates; placeholder numbers.</div>
+
+  <div class="abs" style="left:252px;top:236px;width:988px;font-size:9px;color:var(--accent);font-weight:600;letter-spacing:.06em">HUMAN SIGN-OFF: packet approval before step 3 &nbsp;&middot;&nbsp; appeal signature at step 5. The agent never submits or signs on its own. CMS clocks (7 days standard, 72 hours expedited) are real logic on a fast-forward demo clock.</div>
+
+  <div class="abs kicker" style="left:40px;top:268px">The production path. What each build milestone swaps in.</div>
+  <div class="box ext" style="left:40px;top:288px;width:200px;height:120px"><div class="t">Your RIS</div>The real RIS through its vendor's HL7 and API sandbox (milestone B1), then production. Orders arrive as HL7 v2 ORM; results back as ORU. Contract terms one and two.</div>
+  <div class="box build" style="left:252px;top:288px;width:250px;height:120px"><div class="t">Prior auth agent, in production</div>Same pipeline. The model vendor operates under a signed <b>BAA</b>, US data residency. Drafts, checks, and tracks; never screen-drives a payer portal. One instance per center, its own audit log.</div>
+  <div class="box ext" style="left:514px;top:288px;width:250px;height:120px"><div class="t">Real payers</div><b>FHIR PAS</b> where the payer runs it (Medicare Advantage, Medicaid, CHIP, exchange plans from 2027-01-01). <b>EDI 278</b> through the clearinghouse where not. A human-assisted path for fax and portal payers. Test access first (milestone B2).</div>
+  <div class="box ext" style="left:776px;top:288px;width:150px;height:120px"><div class="t">Payer decision</div>Real ClaimResponse from the payer, on the CMS clock. The agent schedules on approval.</div>
+  <div class="box build" style="left:938px;top:288px;width:150px;height:120px"><div class="t">Appeal</div>Model draft under the BAA. The radiologist or ordering physician signs. Nothing outbound unsigned.</div>
+  <div class="box build" style="left:1100px;top:288px;width:140px;height:120px"><div class="t">Monday report</div>Your own RIS and billing data, calculated and checked. The owner's agent answers questions by text or call.</div>
+
+  <div class="panel wallbox" style="left:40px;top:428px;width:590px;height:210px"><div class="k">Human sign-off points, production</div><h3>A person stays in charge at every gate that leaves the building.</h3>
+    <ul>
+      <li>Your coordinator approves each prior authorization packet before submission.</li>
+      <li>A physician signs every appeal; the clinical argument is theirs.</li>
+      <li>The radiologist signs every report (RadAssist, unchanged).</li>
+      <li>The owner approves the sign-off rules for each center, and any change to them.</li>
+      <li>Graduation from approve-every-item to sampled review happens only when the owner says so, in writing.</li>
+    </ul></div>
+  <div class="panel" style="left:650px;top:428px;width:590px;height:210px"><div class="k">What makes production possible</div><h3>The dependencies on page 7, mapped to this diagram.</h3>
+    <ul>
+      <li><b>RIS box:</b> RIS and PACS selected; HL7, API, and DICOM sandbox access granted; the four contract terms signed.</li>
+      <li><b>Agent box:</b> HIPAA BAAs executed with the model vendor and every vendor touching patient data; US residency verified.</li>
+      <li><b>Payer box:</b> payer FHIR and EDI test access; payer contracts and credentialing; payer mix known before payer-specific rules.</li>
+      <li><b>Report box:</b> real volumes after opening; until then, the report runs on test data.</li>
+      <li>Vendor-neutral throughout: works with whatever RIS and PACS the center picks.</li>
+    </ul></div>
+
+  <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. Demo: rfinlay.github.io/imaging-priorauth-demo. All demo data is synthetic.</div><div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div></div>
 </div>
 
 </body>
