@@ -144,6 +144,15 @@
   .agent .cols h3 + p + h3 { margin-top: 20px; }
   .draftmark { position: absolute; top: 22px; right: 88px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #fff; background: #b4232f; padding: 4px 10px; font-weight: 700; }
   .demourl { color: var(--accent); font-weight: 600; }
+  /* 2026-11-01: the live RadAssist demo cue on slide 19 */
+  .livemark { position: absolute; top: 22px; right: 88px; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 6px 14px; font-weight: 700; }
+  .livemark::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #fff; margin-right: 10px; vertical-align: 1px; }
+  .modules { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 34px; max-width: 1100px; }
+  .modules .m { border-top: 3px solid var(--rule); padding-top: 14px; }
+  .modules .m.hot { border-top-color: var(--accent); }
+  .modules .n { font-family: var(--serif); font-size: 30px; line-height: 1.15; }
+  .modules .m.hot .n { color: var(--accent); }
+  .modules .w { font-size: 19px; color: var(--ink-soft); margin-top: 8px; line-height: 1.35; }
 
   /* presenter notes */
   .notes { display: none; }
@@ -586,21 +595,28 @@
 <!-- 19 -->
 <section class="slide section">
 <div class="inner">
-  <div class="grow"></div>
+  <div class="livemark">Live demo</div>
   <div class="kicker">Part three</div>
-  <h1>Proof: RadAssist.</h1>
-  <p class="lead">Browser-based structured radiology reporting, with calcium score and thyroid modules. Built by me. Used daily on real patients by the radiologist sitting at this table.</p>
-  <p class="sub" style="margin-top:22px">Next on the roadmap, at Dr. Ramos&rsquo;s request: voice dictation, and spine, brain, and cardiac CTA (CAD-RADS) modules.</p>
+  <h1>Proof: RadAssist, live.</h1>
+  <p class="lead">Structured radiology reporting, in production and in daily use by the radiologist sitting at this table. His template, his rules, his signature. It drafts; he signs. Nothing you type leaves the browser.</p>
+  <div class="modules">
+    <div class="m"><div class="n">Calcium scoring</div><div class="w">Reads the scanner&rsquo;s numbers from a pasted screen capture. He confirms every value before it applies.</div></div>
+    <div class="m"><div class="n">Thyroid ultrasound</div><div class="w">ACR TI-RADS, with his follow-up rules built in.</div></div>
+    <div class="m hot"><div class="n">Spine MRI, new</div><div class="w">Cervical, thoracic, and lumbar. From Dr. Ramos&rsquo;s requirements to live and tested in a day. Every rule in it is his.</div></div>
+  </div>
   <div class="grow"></div>
-  <p class="sub">radassist.app</p>
+  <p class="sub">Next, at his request: voice dictation, brain, cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise.</p>
+  <p class="sub" style="margin-top:10px"><span class="demourl">radassist.app</span> &middot; Spine MRI, lumbar, one synthetic case, about three minutes.</p>
 </div>
 <aside class="notes">
 <p class="time">29:00 to 33:00</p>
-<p>Open the live app on the laptop. Then stop talking and let Luis talk. The only proof that matters is the artifact that already works, and the only witness who matters is the one using it.</p>
-<p>Questions to hand Luis: What broke, and how fast was it fixed? What did you ask for that got built? What does it do that the vendor tools did not?</p>
-<p>Do not demo features. Let Luis describe a Tuesday.</p>
-<p><strong>Roadmap, as Luis asked for it:</strong> voice dictation inside RadAssist, then spine, brain, and cardiac CTA (CAD-RADS) modules. He will email guideline-display corrections; acknowledge them as his. Say "next on the roadmap," never a date.</p>
+<p><strong>This slide hands off to the live demo.</strong> The tab is already open and signed in (checklist). Switch to it, run the three-minute Spine MRI talk track from the speaking notes: pick Lumbar, enter the synthetic case from the card, show the impression writing itself in Luis's order, show the unreviewed-level rule, copy the report and paste it as plain text. Then hand the table to Luis.</p>
+<p><strong>Say it the way Fernando will hear it: control and simplicity.</strong> His template, his rules, his signature. One dropdown per sentence. The report is plain text he pastes into whatever system the center buys. Nothing is sent anywhere; the browser does the work. No vendor lock, nothing to integrate before it is useful.</p>
+<p><strong>The proof point, said once:</strong> spine went from Luis's requirements to live and tested within a day, and every rule in it was set by Luis. The speed of the fix is the proof, not the absence of changes. If Luis volunteers that it becomes sellable the next day after he tweaks it, let him say it; do not quote him unless you have cleared it with him.</p>
+<p>Questions to hand Luis after the demo: What broke, and how fast was it fixed? What did you ask for that got built? What does it do that the vendor tools did not?</p>
+<p><strong>Roadmap, as Luis asked for it:</strong> voice dictation inside RadAssist, then brain and cardiac CTA (CAD-RADS) modules. He will email guideline-display corrections; acknowledge them as his. Say "next on the roadmap," never a date. <strong>Reading the images (auto-filling level findings from the pictures) is a future item with a regulatory path.</strong> That is diagnostic software; it is not promised, not dated, and it is why the line on slide 21 matters.</p>
 <p><strong>Licensing to other centers: do NOT raise it at this table.</strong> Luis sees resale potential at about $2,500 one-time per center. That is a private conversation between you and Luis, because slide 24 tells Fernando this center is the priority and his service terms do not change if you take on a second site. Both are true, but only one belongs in front of Fernando.</p>
+<p><strong>If the Wi-Fi fails:</strong> the backup screenshots and the 30-second recording are in the pitch folder on the laptop (demo-assets). Say: "The network is not cooperating, so here is the same case recorded this week from the live site," and walk the screenshots in the same order.</p>
 </aside>
 </section>
 
@@ -613,7 +629,7 @@
   <div class="cols">
     <div>
       <h3>The report: RadAssist, today</h3>
-      <p>Luis uses it daily. It reads the scanner's numbers from a screen capture, drafts the report from his template, and he confirms every value before it applies. At your center the path has a name: DICOM worklist and query for the study, HL7 v2 ORU to carry the signed report into the RIS.</p>
+      <p>Luis uses it daily. Calcium scoring reads the scanner's numbers from a screen capture; thyroid and spine build the report from his own template, one dropdown per sentence, with his rules for the impression. He confirms every value before it applies and signs. At your center the path has a name: DICOM worklist and query for the study, HL7 v2 ORU to carry the signed report into the RIS.</p>
       <h3>The records: a different build</h3>
       <p>Requesting records runs the other way. The paths: DICOM query and retrieve where a facility grants it, a request out and DICOM import where it does not, and the payer Provider Access API in 2027 for the claims record, in-network only, no images.</p>
     </div>
@@ -629,7 +645,7 @@
 <p class="time">33:00 to 34:00</p>
 <p><strong>This slide exists because of one sentence in your 10-10 email to Luis:</strong> "your partner asked about scheduling, answering patients, and requesting medical records." Requesting records can mean two things in a radiology practice, and they are different builds. Make Luis pick.</p>
 <p><strong>Say the heading first, plainly, and do not soften it.</strong> "The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature." That is the whole operating model and it is also the bus answer: if I disappear, the thing that signs is a person who works for you.</p>
-<p><strong>RadAssist, honestly.</strong> Today it is a calcium score and thyroid reporting tool. Luis snips the scanner's report or dose screen, pastes it, RadAssist reads the per-vessel scores, total, age, sex and DLP, shows him every value, and nothing touches the form until he clicks Apply. It drafts; he signs. It does not interpret an image. Do not claim it does anything more than that tonight.</p>
+<p><strong>RadAssist, honestly.</strong> Today it is three modules: calcium scoring, thyroid ultrasound (ACR TI-RADS), and Spine MRI (cervical, thoracic, lumbar), the one you just demonstrated. For calcium, Luis snips the scanner's report or dose screen, pastes it, RadAssist reads the per-vessel scores, total, age, sex and DLP, shows him every value, and nothing touches the form until he clicks Apply. For thyroid and spine he enters what he graded, one dropdown per sentence from his own template, and the impression writes itself in the order he set. It drafts; he signs. It does not interpret an image. Do not claim it does anything more than that tonight.</p>
 <p><strong>The named path at a center they own:</strong> DICOM Modality Worklist and query/retrieve give the report assistant the study context (contract term four on slide 3). HL7 v2 ORU is the standard result message that carries a signed report into the RIS (term two). Verify before signature that the RIS accepts an inbound ORU result: Konica Minolta's Exa, for one, documents only outbound report paths, so this is a real evaluation item, not a formality. Say "I will verify that against the RIS you pick" rather than promising it.</p>
 <p><strong>Records coming in is slide 14's problem, restated from the other side.</strong> DICOM query/retrieve works only where the sending facility grants it, which across organizations is rare. Otherwise the request goes out by fax or portal and what comes back is imported over DICOM. The payer Provider Access API under CMS-0057-F arrives 2027-01-01, but it carries the claims and clinical record the payer holds, not images, and it requires an in-network contract plus a treatment relationship, which a newly opened center may not have on day one. Name that limit yourself.</p>
 <p class="caveat">"One instance per center costs more than one shared stack. Three hosts, three databases, three sets of credentials, three audit logs. I am recommending it anyway, and the reason is governance, not technology."</p>
@@ -655,7 +671,7 @@
 <p>The one real boundary: the moment an agent touches image data interpretively or recommends which study to order, it leaves this exclusion. Protocol selection and clinical appropriateness are the live hazards in imaging. Say explicitly that the agents stop there.</p>
 <p>Texas also requires disclosure when AI is used for diagnostic purposes (SB 1188). None of these five are diagnostic. Another reason to keep the line clean.</p>
 <p>The owner agent (reporting he can ask questions of) sits inside this exclusion: business analytics and practice management, by name. It reads operational data and never touches a patient, an image, a protocol, or a study choice. Anything about the business, nothing about a patient's care.</p>
-<p>Report assistance, from the previous slide, if he connects it to this one: the radiologist's own numbers, the radiologist's own template, the radiologist's signature. It formats what the scanner already measured and it does not interpret an image. The signature is what keeps it on the right side of this line, and it is not negotiable.</p>
+<p>Report assistance, from the previous slide, if he connects it to this one: the radiologist's own numbers, the radiologist's own grades, the radiologist's own template, the radiologist's signature. It formats what the scanner measured and what the radiologist graded; it does not interpret an image. The signature is what keeps it on the right side of this line, and it is not negotiable. The image auto-fill Luis has asked about is on the other side of this line, which is why it is a future item with a regulatory path and not a promise.</p>
 </aside>
 </section>
 

@@ -1,6 +1,6 @@
 # Speaking Notes: Imaging Center Dinner
 
-> ## 📌 UPDATED 2026-10-22 AFTER THE LUIS REHEARSAL. Dinner target Thursday 2026-10-29 (Luis confirms Fri 10-23)
+> ## 📌 UPDATED 2026-11-01 (live RadAssist demo on slide 19; dinner Wed 11-04 or Thu 11-05). Earlier update 2026-10-22 after the Luis rehearsal.
 >
 > **In the room:** Luis, Fernando Escarzaga, and **Jesse Martinez** (an engineer; quiet, analytic, humble).
 > Format: a quiet place, a conversation, not a pitch to an audience. Rick has court by Zoom on Wed 10-28.
@@ -11,7 +11,8 @@
 > - **New slide 26, "What the dates depend on."** The assumptions. The only place a date is promised, and every date on it is conditional.
 > - **Timeline:** opening targeted around **June 2027, April at the earliest**. The **build starts around March 2027** so prior authorization works before opening. Say only "your new center." **Never mention any building, property, address, or what was at the site before.**
 > - **Pricing restructured (appendix, slides 28 to 30):** design stays $30,000 but is now four milestone payments ($6k, $6k, $9k, $9k) with the gate after the second; the **build is a separate fixed fee** (prior authorization, $40,000 in five $8,000 milestones, **PROPOSED, Rick to confirm**); an optional monthly support fee (**$1,500/month proposed**). The red "Proposed figures" tag on slide 30 and the leave-behind comes off only after Rick confirms.
-> - **RadAssist roadmap on slide 19:** voice dictation, then spine, brain, and cardiac CTA (CAD-RADS) modules. **Licensing to other centers stays OUT of the room** (see slide 19).
+> - **Slide 19 is now a LIVE RadAssist Spine MRI demo (updated 2026-11-01).** Spine shipped 10-31 from Luis's template, live and tested in a day, every rule his. Three-minute talk track under slide 19; case values on the printed card; backups in `demo-assets/`. Roadmap: voice dictation, then brain and cardiac CTA (CAD-RADS). AI image auto-fill is "a future item with a regulatory path," never a promise. **Licensing to other centers stays OUT of the room** (see slide 19).
+> - **Dinner is now the week of 11-02: Wednesday 11-04 or Thursday 11-05, after 5 pm; Luis picks Rick up.** Day not yet locked.
 > - **Exa answer** is on slide 11: vendor-neutral, never disparage.
 >
 > **Fernando, per Luis:** straightforward, tough, tight with money, the best administrator Luis has worked with in 25 years. Distrustful after vendors over-promised. Visual: expect "When can I see it working?" He will have his own ideas (AI for prior-record retrieval, for one). **Give him the floor.**
@@ -20,7 +21,7 @@
 >
 > **Process facts from Luis, use them:** outside priors arrive by courier on CD or DVD, and after five days the study is read without them. On the calcium score slide it is "calcium," never "nodules."
 
-**El Paso, target Thursday 2026-10-29. About 43 minutes. 30 slides.**
+**El Paso, Wednesday 2026-11-04 or Thursday 2026-11-05, after 5 pm (Luis to lock the day). About 43 minutes. 30 slides, plus the live RadAssist demo on slide 19.**
 **In the room:** Dr. Luis Ramos (uses RadAssist daily; your champion), Fernando Escarzaga (founded Southwest X-Ray and sold it in 2019; the skeptic and the signer), and Jesse Martinez (an engineer; quiet and analytic).
 
 This is a rehearsal sheet, not a reference. Read it aloud, top to bottom, in order. The RUNBOOK is for lookup. This is for practice.
@@ -645,33 +646,55 @@ Read it in one breath. **"Three of the seven, I am telling you to buy" is the po
 
 ---
 
-### SLIDE 19 · Proof: RadAssist · 29:00 to 33:00
+### SLIDE 19 · Proof: RadAssist, live · 29:00 to 33:00
 
-**SAY**
+**Updated 2026-11-01.** This slide now hands off to a **live three-minute RadAssist Spine MRI demo**, Rick's idea after the 10-31 call with Luis. The slide carries a LIVE DEMO badge. The tab is already open and signed in (checklist, Part 4). The case values are on the printed card and in the DEMO-SCRIPT, Part A.
 
-"Enough slides. This is RadAssist. Browser-based structured radiology reporting, with calcium score and thyroid modules. I built it. Luis uses it every day on real patients.
+**SAY (on the slide, 20 seconds)**
 
-Luis, do not let me demo it. Tell him about a Tuesday. What broke, and how fast did it get fixed? What did you ask for that got built? What does it do that the vendor tools did not?"
+"Enough slides. This is RadAssist. Structured radiology reporting, in production, and Luis uses it every day on real patients. Three modules today: calcium scoring, thyroid, and, since this week, spine MRI: cervical, thoracic, lumbar.
 
-Then stop talking.
+The spine module is the one I want to show you, because of how it got built. Luis sent me his template and his rules. It was live and tested the same day. Every rule in it is his. One case, three minutes."
+
+**THEN, SWITCH TO THE RADASSIST TAB. The talk track (about 3 minutes):**
+
+1. **Pick the study (15 s).** The page is on Spine MRI, Lumbosacral, without contrast. Click **New study** if a draft is offered. Indications: *Other*, type `Low back pain with right leg radiculopathy`.
+   "One dropdown per sentence. The sentences are Luis's template, not mine."
+2. **The severe level, L4-L5 (45 s).** Click **Edit**. Canal *Severe*. Foraminal *Severe*, *Bilateral*. Pfirrmann *IV*. *Extrusion*, 7 mm, *Central*. Nerve roots *Compression*. Ligamentum flavum *Hypertrophy*, 5 mm. AP diameter of the thecal sac *0.5*.
+   Point at the note under the AP box: "5 mm, suggests severe, matches your canal grade."
+   "That flag suggests. It never decides. If Luis grades it differently, his grade prints and the flag just says it disagrees."
+3. **Two more levels, fast (40 s).** L3-L4: Canal *Moderate*, Foraminal *Mild to moderate* *Left*, Pfirrmann *IV*, *Protrusion* 4 mm *Central*, Nerve roots *Contact*, AP *0.7*. L5-S1: Foraminal *Moderate* *Right*, Pfirrmann *III*, *Bulge* 3 mm, Nerve roots *Contact*, *Foraminal*, AP *1.1*. Then the summaries: Conus *L1*, Discs *Moderate to severe*, Bones osteophytes *Moderate*, Modic *Type II* at `L4-L5`.
+   No narration beyond "same thing, two more levels."
+4. **The impression writes itself, in Luis's order (30 s).** Scroll to Impression and read the first lines.
+   "Line 1 is always the fracture sentence, because that is how Luis opens every report. Then the discopathy line names every level that matters. Then the stenosis, worst first: severe canal, moderate canal, severe foraminal, moderate foraminal. He set that order on October 31 and the software has followed it since that evening."
+   Then the **last line**: "Segmental analysis incomplete: 2 disc levels not yet reviewed."
+   "L1-L2 and L2-L3 are still blank. Look at the preview: they print as blank lines, not as normal. **An unreviewed level never prints normal.** That is the safety rule, and it was Luis's."
+5. **Finish the review (20 s).** Click **Mark the remaining 2 levels reviewed (normal)**, confirm, open L1-L2 and L2-L3 and type `1.2` in each AP box. The notice clears: "Every level is reviewed." The incomplete line disappears from the impression.
+6. **Copy, paste, done (30 s).** Click **Copy report**. Switch to the plain-text window you opened before dinner and paste.
+   "That is the whole report, plain text, in his words. It goes into whatever system the center buys. Nothing to install, nothing stored on a server, no integration needed on day one."
+   Back to the deck: "He drafts in it, he signs. It does not read an image, and it will not until there is a regulatory path for that."
+
+**CLOSE, ONLY IF CLEARED WITH LUIS:** his own line from the 10-31 call, that after he tweaks it, "it becomes sellable the next day." If you have not cleared it with him, let Luis say it himself or leave it out. **Rick to confirm before dinner.**
+
+**Then hand the table to Luis.** "Luis, tell him about a Tuesday. What broke, and how fast did it get fixed? What did you ask for that got built?" Stop talking.
 
 **DEPTH / IF ASKED**
 
-The only proof that matters is the artifact that already works, and the only witness who matters is the one using it. Those four minutes belong to Luis.
+For Fernando, every sentence of this is control and simplicity: his template, his rules, his signature; the report is plain text he pastes into whatever system the center buys; nothing is sent anywhere. No vendor lock, no integration before it is useful. Never "scale," never "platform."
 
 If Luis mentions something that broke, let him. The speed of the fix is the proof, not the absence of failures.
 
-If Fernando connects this to the FDA slide coming up: the same discipline that keeps the agents administrative is what keeps RadAssist on the right side of the line. Keep that to one sentence.
+If Fernando connects this to the FDA slide coming up: the same discipline that keeps the agents administrative is what keeps RadAssist on the right side of the line. It formats what the radiologist graded; it does not read the image. Keep that to one sentence.
 
-**Roadmap, as Luis asked for it (on the slide):** voice dictation integrated into RadAssist, then spine, brain, and cardiac CTA (CAD-RADS) modules. Luis will email guideline-display corrections; treat them as his. Say "next on the roadmap," never a date. He also wants technologists capturing data at the ultrasound station so reports pre-fill; note it, do not promise it.
+**Roadmap, as Luis asked for it (on the slide):** voice dictation integrated into RadAssist, then brain and cardiac CTA (CAD-RADS) modules. Luis will email guideline-display corrections; treat them as his. Say "next on the roadmap," never a date. He also wants technologists capturing data at the ultrasound station so reports pre-fill; note it, do not promise it. **AI image auto-fill** (Luis's vision from the 10-31 call: upload the per-level images and have the software fill the level findings) is diagnostic software. On the slide and out loud it is "a future item with a regulatory path," never a promise, never a date.
 
 **Licensing to other centers: speaking-notes only, never in front of Fernando.** Luis sees resale potential to competitor centers at about $2,500 one-time per center for structured reporting. It is real and worth a private conversation with Luis. At this table it collides with slide 24, where you tell Fernando this center is the priority and his service terms do not change if you take on a second site. Both are true; only one belongs in this room.
 
-Connectivity: the deck runs offline, RadAssist does not. Hotspot confirmed or screenshots ready, per the checklist.
+**IF THE WI-FI FAILS:** the signed-in tab keeps working without a network (the report is assembled in the browser); do not reload it. If the tab is gone, open `demo-assets/` in the pitch folder and walk the eight screenshots in number order, or play the 27-second `spine-demo-recording.mp4`. Say: "The network is not cooperating, so here is the same case recorded this week from the live site." Then go straight to handing the table to Luis.
 
 **BEAT**
 
-Open the live app. Hand the table to Luis. Do not demo features. Do not fill his pauses.
+Run the case. Hand the table to Luis. Do not demo more features. Do not fill his pauses.
 
 ---
 
@@ -685,7 +708,7 @@ Ask before the slide, to Luis as much as to Fernando: "When your partner said re
 
 The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature.
 
-That is RadAssist today. It reads the scanner's numbers from a screen capture Luis pastes, drafts the report from his own template, and he confirms every value before anything applies. At your center the path has a name: DICOM worklist and query for the study, HL7 version 2 ORU to carry the signed report into the RIS. Both are contract terms from slide 3.
+That is RadAssist today, and you just watched it. Calcium reads the scanner's numbers from a screen capture Luis pastes; thyroid and spine take what he graded, one dropdown per sentence, and draft the report from his own template. He confirms every value before anything applies, and he signs. At your center the path has a name: DICOM worklist and query for the study, HL7 version 2 ORU to carry the signed report into the RIS. Both are contract terms from slide 3.
 
 Requesting records runs the other way, and it is a different build. DICOM query and retrieve where a facility grants it. A request out and a DICOM import where it does not. And from January, the payer's Provider Access API for the claims record, which is in-network only and carries documents, not images.
 
@@ -699,7 +722,7 @@ Which one did you mean? They are two different builds, and I would rather ask th
 
 Why this slide exists: your 10-10 email to Luis said "your partner asked about scheduling, answering patients, and requesting medical records." In a radiology practice, records has two directions, and the deck has to make Luis pick. Slide 16 is the records request seen from the other side; this slide is the report, and the honest line between the two.
 
-RadAssist, stated exactly and no further: calcium score and thyroid modules. Luis snips the scanner's calcium report or the dose screen, pastes it, and RadAssist reads per-vessel scores, total, age, sex, and DLP, shows every value with a confidence mark, and applies nothing until he clicks Apply. It drafts from his own template. No patient data is stored on the server; the inputs are computed in the browser. It does not read DICOM, does not touch the PACS, and does not interpret an image. The viewer at his current site is server-side rendered and never gives the browser a DICOM object, which is why the screen-capture path exists at all. Do not claim it does more than that tonight; Luis is sitting there and will correct you.
+RadAssist, stated exactly and no further: calcium scoring, thyroid ultrasound (ACR TI-RADS), and Spine MRI (cervical, thoracic, lumbar; live since 2026-10-31). For calcium, Luis snips the scanner's calcium report or the dose screen, pastes it, and RadAssist reads per-vessel scores, total, age, sex, and DLP, shows every value with a confidence mark, and applies nothing until he clicks Apply. For thyroid and spine he enters what he graded and the impression writes itself in the order he set. It drafts from his own template. No patient data is stored on the server; the inputs are computed in the browser. It does not read DICOM, does not touch the PACS, and does not interpret an image. The viewer at his current site is server-side rendered and never gives the browser a DICOM object, which is why the screen-capture path exists at all. Do not claim it does more than that tonight; Luis is sitting there and will correct you.
 
 The named path at a center they own, and why it is honest to name it: DICOM Modality Worklist and query/retrieve give the report assistant the study context, which is contract term four. HL7 v2 ORU is the standard result message every RIS sends out; what has to be verified before signature is that the RIS also accepts an inbound ORU result, because Konica Minolta's Exa, for one, documents only outbound report paths. That is a Phase 1 evaluation item. Say "I will verify that against the RIS you pick," never "it will work."
 
@@ -1110,7 +1133,7 @@ Cut slide 17 first, then shorten the RadAssist demo on 19. Never cut 6, 23, 24, 
 | 0:00 to 0:45 | 1, 3 | Framing line. The four contract terms, fast. "Whatever you decide about me, do this." |
 | 0:45 to 1:45 | 4, 5 | Four in five, stop. Caveat. Forty percent, you have not hired that person yet. Caveat. |
 | 1:45 to 2:30 | 7, 18 | "The thing you did not ask about." Then the scorecard in one breath: two of the things you asked about, I am telling you to buy. |
-| 2:30 to 3:15 | 19 | RadAssist is open. "Luis, one Tuesday." Forty-five seconds of Luis. |
+| 2:30 to 3:15 | 19 | RadAssist is open on the finished spine case (run it before dinner). Show the impression and the copy. "Luis, one Tuesday." Thirty seconds of Luis. |
 | 3:15 to 4:00 | 23 | The five bus points, in order. "A boring answer." |
 | 4:00 to 4:30 | 24 | What I recommend you do not buy from me. Slowly. |
 | 4:30 to 5:00 | 29 | The price, once. Stop. |
@@ -1131,7 +1154,12 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 - [ ] **The design fee is $30,000 in four milestone payments ($6k, $6k, $9k, $9k), gate after the second.** On slide 29 and page 2 of the leave-behind. **The build ($40,000 in five $8,000 milestones) and support ($1,500/month) are PROPOSED: confirm, then remove the red tag and re-render.**
 - [ ] **Click through the demo** (https://rfinlay.github.io/imaging-priorauth-demo/, linked on slide 11 and leave-behind page 2) the same day, on the hotspot.
 - [ ] **Print the leave-behind.** Three copies (Jesse too). Two US Letter pages from Chrome.
-- [ ] **Charge the laptop.** The deck runs with no wifi. RadAssist does not. Confirm radassist.app loads on your phone's hotspot before you sit down, or have screenshots ready.
+- [ ] **Charge the laptop.** The deck runs with no wifi. RadAssist needs a network only to sign in. **Sign in to radassist.app before you leave the house** (password plus the authenticator code), open the Spine MRI tab, and leave it open; the report is assembled in the browser, so the open tab keeps working if the room's Wi-Fi fails. Do not reload it at the table.
+- [ ] **Phone hotspot on and tested** with the laptop before you sit down. Bring the charging cable for the phone.
+- [ ] **The synthetic case card, printed** (RUNBOOK, "The live RadAssist demo"): the L3-L4, L4-L5, L5-S1 values and the summaries. Keep it next to the laptop.
+- [ ] **A plain-text window open** (TextEdit in plain-text mode, or Notes) to paste the copied report into.
+- [ ] **Backups on the laptop:** the pitch folder's `demo-assets/` (eight screenshots and the 27-second recording). Open the folder once so Finder has it ready.
+- [ ] **Decide whether to quote Luis** ("it becomes sellable the next day"). Ask him first, or let him say it.
 - [ ] **Open the deck in a browser.** Press N once to confirm notes mode works, press N again to hide it. Set the browser to full screen.
 - [ ] **Do not bring the Sherlock research document.** Everything you need from it is in this sheet, the deck notes, and the RUNBOOK.
 - [ ] **Bring this sheet, folded.** Part 1 face up.

@@ -1,4 +1,100 @@
-# Demo script: Prior Authorization Agent (about 3 minutes)
+# Demo scripts for the partner dinner
+
+Two live demos, about three minutes each. **Part A** is RadAssist Spine MRI (slide 19, the product that already exists). **Part B** is the prior authorization agent (slide 11, the thing to be built). Both run from tabs opened before dinner.
+
+---
+
+# Part A. RadAssist Spine MRI, live (about 3 minutes, slide 19)
+
+**Live URL:** https://radassist.app/spine (sign in before dinner; the session needs your password and your authenticator code).
+**Works on:** the laptop. Keep the tab open from the moment you sign in; do not reload it at the table.
+**What it is:** the production tool Luis uses every day. Everything you type tonight is synthetic. Nothing is sent to a server; the report is assembled in the browser and copied as plain text.
+**Backups if the network fails:** `demo-assets/` in the pitch folder has eight screenshots of this exact case and a 27-second recording (`spine-demo-recording.mp4`), captured 2026-11-01 from the same build that is live.
+
+## Before you switch tabs (10 seconds)
+
+Slide 19 is up. Say the proof point once, then move to the tab:
+
+> "Spine went live this week. Luis sent me his template and his rules, and it was live and tested the same day. Every rule in it is his. Let me show you one case."
+
+## 1. Pick the study (15 seconds)
+
+The page opens on **Spine MRI**. Region is already **Lumbosacral**, contrast **Without contrast**. If a previous draft is offered, click **New study**.
+
+Set **Indications** to *Other / free text* and type: `Low back pain with right leg radiculopathy`.
+
+> "One dropdown per sentence. The sentences are Luis's own template, not mine."
+
+## 2. The severe level (45 seconds)
+
+Scroll to **L4-L5**, click **Edit**, and enter the card values:
+
+| Field | Value |
+|---|---|
+| Canal stenosis | Severe |
+| Foraminal stenosis | Severe, Bilateral |
+| Pfirrmann grade | IV |
+| Bulge / protrusion / extrusion | Extrusion, 7 mm, Central |
+| Nerve roots | Compression |
+| Ligamentum flavum | Hypertrophy, 5 mm |
+| AP diameter of the thecal sac (cm) | 0.5 |
+
+Point at the note under the AP box: **"5 mm → suggests Severe canal stenosis — matches your canal grade."**
+
+> "That flag suggests; it never decides. If Luis grades it differently, his grade prints and the flag just says it disagrees."
+
+## 3. Two more levels, fast (40 seconds)
+
+**L3-L4**, click **Edit**: Canal *Moderate*; Foraminal *Mild to moderate*, *Left*; Pfirrmann *IV*; *Protrusion*, 4 mm, *Central*; Nerve roots *Contact*; AP *0.7*.
+
+**L5-S1**, click **Edit**: Foraminal *Moderate*, *Right*; Pfirrmann *III*; *Bulge*, 3 mm; Nerve roots *Contact*, *Foraminal*; AP *1.1*.
+
+Then the summaries near the top of the form: **Conus** *L1*; **Discs** *Moderate to severe*; **Bones**: osteophytes *Moderate*, Modic *Type II*, levels `L4-L5`.
+
+No narration beyond "same thing, two more levels." Let the preview on the right fill in while you type.
+
+## 4. The impression writes itself, in Luis's order (30 seconds)
+
+Scroll to **Impression**. Read the first lines aloud:
+
+> "Line 1 is always the fracture sentence, because that is how Luis opens every report. Then the discopathy line names every level that matters. Then the stenosis, worst first: severe canal, moderate canal, severe foraminal, moderate foraminal. He set that order on October 31, and the software has followed it since that evening."
+
+Then point at the **last line**:
+
+> "**Segmental analysis incomplete: 2 disc levels not yet reviewed.** L1-L2 and L2-L3 are still blank. Look at the preview: they print as blank lines, not as normal. An unreviewed level never prints normal. That is the safety rule, and it was Luis's."
+
+## 5. Finish the review (20 seconds)
+
+Click **Mark the remaining 2 levels reviewed (normal)**, confirm, then open **L1-L2** and **L2-L3** and type `1.2` in each AP box. The red notice clears, the box reads **"Every level is reviewed,"** and the impression's last line disappears.
+
+## 6. Copy, paste, done (30 seconds)
+
+Click **Copy report**. Switch to the plain-text window you opened before dinner (TextEdit in plain-text mode, or Notes) and paste.
+
+> "That is the whole report, plain text, in his words. It goes into whatever system the center buys. No integration needed on day one, nothing to install, nothing stored on a server."
+
+Close the demo, back to the deck:
+
+> "He drafts in it, he signs. It does not read an image, and it will not until there is a regulatory path for that."
+
+**Optional close, only if you have cleared it with Luis:** his own line from the Friday call, that after he tweaks it, "it becomes sellable the next day." If you have not cleared it, let Luis say it himself or leave it out.
+
+## Questions you will get, Part A
+
+- **"Did you build all of that in a day?"** The spine module, yes, from his template; it was tested end to end against the two sample reports he sent, and reviewed by an independent code reviewer before release. The calcium and thyroid modules came first, over the summer.
+- **"Where does the data go?"** Nowhere. The browser assembles the report; only a temporary draft lives on that computer for four hours. No patient data is stored on a server. Sign-ins are recorded.
+- **"Is it FDA cleared?"** It is not a device and does not diagnose; it formats what the radiologist graded, from his own template, and he signs. Reading the images would be a different product with a regulatory path.
+- **"Can it read the MRI for him?"** Not today, and not promised. That is diagnostic software. It is a future item with a regulatory path.
+- **"What about Spanish?"** Click **Español** above the preview: the same report, drafted in Spanish, flagged as pending his review.
+- **"Can other radiologists use it?"** Yes; the templates are per radiologist. Keep licensing to other centers out of this room (private conversation with Luis).
+
+## If the Wi-Fi dies, Part A
+
+The tab you signed into before dinner keeps working without a network: the report is assembled in the browser. Do not reload. If the tab is gone, open `demo-assets/` and walk the screenshots in number order, or play `spine-demo-recording.mp4` (27 seconds): "The network is not cooperating, so here is the same case recorded this week from the live site."
+
+---
+
+# Part B. Prior Authorization Agent (about 3 minutes, slide 11)
 
 **Live URL:** https://rfinlay.github.io/imaging-priorauth-demo/
 **Works on:** laptop, iPad, phone. No login. Open it before dinner and leave the tab up.

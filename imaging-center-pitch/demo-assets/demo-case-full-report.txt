@@ -1,0 +1,79 @@
+EXAM: Magnetic resonance imaging of the lumbosacral spine, without contrast
+- COMPARISON: None available
+- INDICATIONS: Low back pain with right leg radiculopathy.
+- CONTRAST: No IV Contrast Given.
+- IMAGING DEVICE: 1.5 Tesla MRI.
+- TECHNIQUE: Multiplanar, multi sequence, clinically oriented MRI protocol was performed
+
+FINDINGS:
+
+PARASPINAL AREA:
+- Exam shows no evidence of perivertebral masses, fluid collections, cystic lesions or lymphadenopathy.
+
+BONES:
+- Maintained vertebral alignment.
+- No evidence of displaced fractures, dislocations or retropulsed bone fragments.
+- No osteolytic or blastic osseous lesions.
+- No spondylolysis or listhesis.
+- Moderate multilevel endplate osteophytes and degenerative facet hypertrophy as described on the segmental analysis.
+- Modic type II changes seen at the L4-L5 endplates.
+
+CORD / CAUDA EQUINA:
+- The distal spinal cord and conus medullaris shows normal caliber, contour, and signal intensity.
+- The conus medullaris terminates at the L1 level.
+
+DISCS:
+- Moderate to severe discopathy changes as described on the segmental analysis.
+
+SEGMENTAL DISC LEVELS: Lumbar spine:
+
+Disc levels analysis:
+
+L1-L2: No significant canal or foraminal stenosis.
+- Intervertebral disc: normal height, no evident annular abnormalities nor disc protrusion or extrusion.
+- Osseous structures: normal appearance.
+- Neural foramina: patent bilaterally.
+- Nerve roots: No evident compression or displacement.
+- AP diameter of the thecal sac: 1.2 cm
+- Ligamentum flavum: normal appearance.
+
+L2-L3: No significant canal or foraminal stenosis.
+- Intervertebral disc: normal height, no evident annular abnormalities nor disc protrusion or extrusion.
+- Osseous structures: normal appearance.
+- Neural foramina: patent bilaterally.
+- Nerve roots: No evident compression or displacement.
+- AP diameter of the thecal sac: 1.2 cm
+- Ligamentum flavum: normal appearance.
+
+L3-L4: Moderate canal stenosis and mild to moderate left foraminal stenosis.
+- Intervertebral disc: Pfirrmann grade IV degenerative changes; disc protrusion measuring 4 mm in AP, central.
+- Osseous structures: normal appearance.
+- Neural foramina: Mild to moderate left foraminal stenosis.
+- Nerve roots: Nerve root contact.
+- AP diameter of the thecal sac: 0.7 cm
+- Ligamentum flavum: normal appearance.
+
+L4-L5: Severe canal stenosis and severe bilateral foraminal stenosis.
+- Intervertebral disc: Pfirrmann grade IV degenerative changes; disc extrusion measuring 7 mm in AP, central.
+- Osseous structures: normal appearance.
+- Neural foramina: Severe bilateral foraminal stenosis.
+- Nerve roots: Nerve root compression.
+- AP diameter of the thecal sac: 0.5 cm
+- Ligamentum flavum: hypertrophy, measures 5 mm.
+
+L5-S1: No significant canal stenosis and moderate right foraminal stenosis.
+- Intervertebral disc: Pfirrmann grade III degenerative changes; disc bulge measuring 3 mm in AP.
+- Osseous structures: normal appearance.
+- Neural foramina: Moderate right foraminal stenosis.
+- Nerve roots: Nerve root contact, foraminal.
+- AP diameter of the thecal sac: 1.1 cm
+- Ligamentum flavum: normal appearance.
+
+IMPRESSION:
+1. No evidence of displaced fractures or dislocations.
+2. Moderate to severe degenerative discopathy and spondyloarthropathy, predominantly at the L3-L4, L4-L5 and L5-S1 levels, as described in detail in the body of the report.
+3. Severe stenosis of the L4-L5 vertebral canal, the thecal sac and traversing nerve roots are compressed, the residual AP diameter of the vertebral canal is 5 mm.
+4. Moderate stenosis of the L3-L4 vertebral canal, the thecal sac and traversing nerve roots are contacted, the residual AP diameter of the vertebral canal is 7 mm.
+5. Severe stenosis of the bilateral L4-L5 neural foramina, the corresponding exiting nerve roots are compressed.
+6. Moderate stenosis of the right L5-S1 neural foramina, the corresponding exiting nerve roots are contacted.
+7. Mild to moderate stenosis of the left L3-L4 neural foramina, the corresponding exiting nerve roots are contacted.

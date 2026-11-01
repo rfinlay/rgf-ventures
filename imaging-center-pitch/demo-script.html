@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Demo Script: Prior Authorization Agent</title><style>
+<title>Demo Scripts: RadAssist Spine MRI (live) and the Prior Authorization Agent</title><style>
 :root{--ink:#1c1b18;--soft:#4a4740;--faint:#8a867c;--rule:#d9d4c7;--accent:#7a1f2b;--accent-soft:#f1e4e5;
 --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -22,13 +22,84 @@ table{width:100%;border-collapse:collapse;font-size:8.8pt;line-height:1.3}
 th{text-align:left;font-size:7.5pt;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);border-bottom:1.5px solid var(--ink);padding:0 6pt 3pt 0}
 td{border-bottom:1px solid var(--rule);padding:3pt 6pt 3pt 0;vertical-align:top}
 td.r{font-weight:700;white-space:nowrap} .real{color:#1d6b3a} .sim{color:#b5651d}
+table.card td:first-child{font-weight:600;white-space:nowrap} table.card td{padding:2.5pt 6pt 2.5pt 0}
+ol.imp{margin:4pt 0 8pt 18pt;font-size:9.2pt} ol.imp li{margin-bottom:2pt}
+.part{font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);font-weight:600;margin:14pt 0 2pt}
 footer{border-top:1px solid var(--rule);margin-top:12pt;padding-top:5pt;font-size:8.5pt;color:var(--soft);display:flex;justify-content:space-between}
 @media print{@page{size:letter;margin:0.45in 0.55in} body{background:#fff} .page{margin:0;padding:0;max-width:none} .pb{break-before:page} h2{break-after:avoid}}
 </style></head><body><div class="page">
-<header><div class="kicker">Rehearsal card, for Rick. About three minutes.</div>
-<h1>Demo script: the prior authorization agent</h1>
-<div class="url">Live demo: <a href="https://rfinlay.github.io/imaging-priorauth-demo/">https://rfinlay.github.io/imaging-priorauth-demo/</a></div>
-<div class="meta">Works on laptop, iPad, phone. No login. Open it before dinner and leave the tab up. Source and full notes: github.com/rfinlay/imaging-priorauth-demo</div></header>
+<header><div class="kicker">Rehearsal cards, for Rick. Two live demos, about three minutes each.</div>
+<h1>Demo scripts: RadAssist Spine MRI, live, and the prior authorization agent</h1>
+<div class="url">Part A (slide 19): <a href="https://radassist.app/spine">https://radassist.app/spine</a> &nbsp;·&nbsp; Part B (slide 11): <a href="https://rfinlay.github.io/imaging-priorauth-demo/">https://rfinlay.github.io/imaging-priorauth-demo/</a></div>
+<div class="meta">Both run from tabs opened before dinner. Part A needs your password and authenticator code to sign in at home; Part B needs no login. Updated 2026-11-01.</div></header>
+
+<div class="part">Part A · slide 19 · the product that already exists</div>
+<h1 style="font-size:19pt;margin-bottom:4pt">RadAssist Spine MRI, live (about 3 minutes)</h1>
+<p><strong>What it is:</strong> the production tool Luis uses every day. Everything you type tonight is synthetic. Nothing is sent to a server; the report is assembled in the browser and copied as plain text. <strong>Backups if the network fails:</strong> <code>demo-assets/</code> in the pitch folder has eight screenshots of this exact case and a 27-second recording (<code>spine-demo-recording.mp4</code>), captured 2026-11-01 from the same build that is live.</p>
+<h2>Before you switch tabs (10 seconds)</h2>
+<p>Slide 19 is up. Say the proof point once, then move to the tab:</p>
+<blockquote><p>"Spine went live this week. Luis sent me his template and his rules, and it was live and tested the same day. Every rule in it is his. Let me show you one case."</p></blockquote>
+<h2>1. Pick the study (15 seconds)</h2>
+<p>The page opens on <strong>Spine MRI</strong>. Region is already <strong>Lumbosacral</strong>, contrast <strong>Without contrast</strong>. If a previous draft is offered, click <strong>New study</strong>. Set <strong>Indications</strong> to <em>Other / free text</em> and type: <code>Low back pain with right leg radiculopathy</code>.</p>
+<blockquote><p>"One dropdown per sentence. The sentences are Luis's own template, not mine."</p></blockquote>
+<h2>2. The severe level (45 seconds)</h2>
+<p>Scroll to <strong>L4-L5</strong>, click <strong>Edit</strong>, and enter the card values:</p>
+<table class="card"><tbody>
+<tr><td>Canal stenosis</td><td>Severe</td></tr>
+<tr><td>Foraminal stenosis, Side</td><td>Severe, Bilateral</td></tr>
+<tr><td>Pfirrmann grade</td><td>IV</td></tr>
+<tr><td>Bulge / protrusion / extrusion</td><td>Extrusion, AP size 7 mm, Location Central</td></tr>
+<tr><td>Nerve roots</td><td>Compression</td></tr>
+<tr><td>Ligamentum flavum</td><td>Hypertrophy, 5 mm</td></tr>
+<tr><td>AP diameter of the thecal sac (cm)</td><td>0.5</td></tr>
+</tbody></table>
+<p>Point at the note under the AP box: <strong>"5 mm → suggests Severe canal stenosis — matches your canal grade."</strong></p>
+<blockquote><p>"That flag suggests; it never decides. If Luis grades it differently, his grade prints and the flag just says it disagrees."</p></blockquote>
+<h2>3. Two more levels, fast (40 seconds)</h2>
+<table class="card"><tbody>
+<tr><td>L3-L4, Edit</td><td>Canal <em>Moderate</em>; Foraminal <em>Mild to moderate</em>, <em>Left</em>; Pfirrmann <em>IV</em>; <em>Protrusion</em>, 4 mm, <em>Central</em>; Nerve roots <em>Contact</em>; AP <em>0.7</em></td></tr>
+<tr><td>L5-S1, Edit</td><td>Foraminal <em>Moderate</em>, <em>Right</em>; Pfirrmann <em>III</em>; <em>Bulge</em>, 3 mm; Nerve roots <em>Contact</em>, <em>Foraminal</em>; AP <em>1.1</em></td></tr>
+<tr><td>Summaries (top of form)</td><td>Conus <em>L1</em>; Discs <em>Moderate to severe</em>; Bones: osteophytes <em>Moderate</em>, Modic <em>Type II</em>, levels <code>L4-L5</code></td></tr>
+</tbody></table>
+<p>No narration beyond "same thing, two more levels." Let the preview on the right fill in while you type.</p>
+<h2>4. The impression writes itself, in Luis's order (30 seconds)</h2>
+<p>Scroll to <strong>Impression</strong>. Read the first lines aloud:</p>
+<blockquote><p>"Line 1 is always the fracture sentence, because that is how Luis opens every report. Then the discopathy line names every level that matters. Then the stenosis, worst first: severe canal, moderate canal, severe foraminal, moderate foraminal. He set that order on October 31, and the software has followed it since that evening."</p></blockquote>
+<p>Then point at the <strong>last line</strong>:</p>
+<blockquote><p>"<strong>Segmental analysis incomplete: 2 disc levels not yet reviewed.</strong> L1-L2 and L2-L3 are still blank. Look at the preview: they print as blank lines, not as normal. An unreviewed level never prints normal. That is the safety rule, and it was Luis's."</p></blockquote>
+<h2>5. Finish the review (20 seconds)</h2>
+<p>Click <strong>Mark the remaining 2 levels reviewed (normal)</strong>, confirm, then open <strong>L1-L2</strong> and <strong>L2-L3</strong> and type <code>1.2</code> in each AP box. The red notice clears, the box reads <strong>"Every level is reviewed,"</strong> and the impression's last line disappears. What it reads now, verified 2026-11-01 on the live build:</p>
+<ol class="imp">
+<li>No evidence of displaced fractures or dislocations.</li>
+<li>Moderate to severe degenerative discopathy and spondyloarthropathy, predominantly at the L3-L4, L4-L5 and L5-S1 levels, as described in detail in the body of the report.</li>
+<li>Severe stenosis of the L4-L5 vertebral canal, the thecal sac and traversing nerve roots are compressed, the residual AP diameter of the vertebral canal is 5 mm.</li>
+<li>Moderate stenosis of the L3-L4 vertebral canal, the thecal sac and traversing nerve roots are contacted, the residual AP diameter of the vertebral canal is 7 mm.</li>
+<li>Severe stenosis of the bilateral L4-L5 neural foramina, the corresponding exiting nerve roots are compressed.</li>
+<li>Moderate stenosis of the right L5-S1 neural foramina, the corresponding exiting nerve roots are contacted.</li>
+<li>Mild to moderate stenosis of the left L3-L4 neural foramina, the corresponding exiting nerve roots are contacted.</li>
+</ol>
+<h2>6. Copy, paste, done (30 seconds)</h2>
+<p>Click <strong>Copy report</strong>. Switch to the plain-text window you opened before dinner (TextEdit in plain-text mode, or Notes) and paste.</p>
+<blockquote><p>"That is the whole report, plain text, in his words. It goes into whatever system the center buys. No integration needed on day one, nothing to install, nothing stored on a server."</p></blockquote>
+<p>Close the demo, back to the deck:</p>
+<blockquote><p>"He drafts in it, he signs. It does not read an image, and it will not until there is a regulatory path for that."</p></blockquote>
+<p><strong>Optional close, only if you have cleared it with Luis:</strong> his own line from the Friday call, that after he tweaks it, "it becomes sellable the next day." If you have not cleared it, let Luis say it himself or leave it out.</p>
+<h2>Questions you will get, Part A</h2>
+<ul>
+<li><strong>"Did you build all of that in a day?"</strong> The spine module, yes, from his template; it was tested end to end against the two sample reports he sent, and reviewed by an independent code reviewer before release. The calcium and thyroid modules came first, over the summer.</li>
+<li><strong>"Where does the data go?"</strong> Nowhere. The browser assembles the report; only a temporary draft lives on that computer for four hours. No patient data is stored on a server. Sign-ins are recorded.</li>
+<li><strong>"Is it FDA cleared?"</strong> It is not a device and does not diagnose; it formats what the radiologist graded, from his own template, and he signs. Reading the images would be a different product with a regulatory path.</li>
+<li><strong>"Can it read the MRI for him?"</strong> Not today, and not promised. That is diagnostic software. It is a future item with a regulatory path.</li>
+<li><strong>"What about Spanish?"</strong> Click <strong>Español</strong> above the preview: the same report, drafted in Spanish, flagged as pending his review.</li>
+<li><strong>"Can other radiologists use it?"</strong> Yes; the templates are per radiologist. Keep licensing to other centers out of this room (private conversation with Luis).</li>
+</ul>
+<h2>If the Wi-Fi dies, Part A</h2>
+<p>The tab you signed into before dinner keeps working without a network: the report is assembled in the browser. Do not reload. If the tab is gone, open <code>demo-assets/</code> and walk the screenshots in number order, or play <code>spine-demo-recording.mp4</code> (27 seconds): "The network is not cooperating, so here is the same case recorded this week from the live site."</p>
+
+<div class="pb"></div>
+<div class="part">Part B · slide 11 · the thing to be built</div>
+<h1 style="font-size:19pt;margin-bottom:4pt">The prior authorization agent (about 3 minutes)</h1>
+<div class="meta" style="margin-bottom:8pt">Works on laptop, iPad, phone. No login. Open it before dinner and leave the tab up. Source and full notes: github.com/rfinlay/imaging-priorauth-demo</div>
 <div class="box"><h3>What is real and what is simulated</h3><table>
 <thead><tr><th>Piece</th><th>Status</th><th>What to say if asked</th></tr></thead><tbody>
 <tr><td>Payer submission</td><td class="r real">REAL</td><td>A Da Vinci PAS FHIR bundle is POSTed to HL7's public prior-auth reference server, which validates and stores it and returns a real tracking number.</td></tr>
@@ -108,5 +179,5 @@ If it is orange ("sandbox offline"), the demo still runs end to end; the submiss
 </ul>
 <h2>If the Wi-Fi dies</h2>
 <p>The page is static and loads from a cache once opened; the only thing that needs the network is step 4. Open it on the phone over cellular before you sit down.</p>
-<footer><div><b>Richard Finlay</b>, RGF Global Ventures LLC</div><div>https://rfinlay.github.io/imaging-priorauth-demo/</div></footer>
+<footer><div><b>Richard Finlay</b>, RGF Global Ventures LLC</div><div>radassist.app &nbsp;·&nbsp; rfinlay.github.io/imaging-priorauth-demo</div></footer>
 </div></body></html>
