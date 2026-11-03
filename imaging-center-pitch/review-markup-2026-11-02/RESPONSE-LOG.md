@@ -205,3 +205,9 @@ Every yellow passage from the .docx is marked in the markdown with `==...==` and
 4. **Shared stack as the recommendation.** Per R5d the rule now says same owners, one shared stack. The earlier research position (10-14) recommended separate instances in all cases. If you want the shared-stack option to carry a stated cost or infrastructure line, say so; nothing is priced for it.
 5. **Luis picking you up.** The 11-01 note said Luis picks you up; it was written for an evening. Still true for a Thursday lunch? The runbook header keeps it.
 6. **The OneDrive Word file.** `Imaging-Center-SPEAKING-NOTES-2026-10-20.docx` in the OneDrive folder is the pre-review version you marked up. I did not regenerate a .docx (no converter on this Mac); the PDF is the reviewed artifact. Do you want a fresh .docx too?
+
+## Sync status (2026-11-02, 23:49 to 23:52 MST)
+
+- **OneDrive** `~/Library/CloudStorage/OneDrive-Personal/Desktop/Imaging-Center-Pitch-2026-10-20/`: all 16 updated files copied (8 sources, 8 PDFs) plus this log under `review-markup-2026-11-02/` and `REVIEW-CHANGES-2026-11-02.md`; md5 verified identical to the repo for all 16.
+- **Google Drive** folder `1XPpxNzqpCcONYMr6Iqlgfw_qH96OHv1k`: the same 16 files uploaded same-name with "Replace existing items" (Drive versioned them in place: deck now Version 14, candidates Version 9, etc.). After a full reload every row shows Modified 11:51 PM and a size matching the staged bytes; exactly one row per name. Staging happened after the final render, so the bytes are current.
+- Not re-uploaded: `Imaging-Center-SPEAKING-NOTES-2026-10-20.docx` (pre-review Word file, see QUESTION 6), `CANONICAL-SOURCE.md`, research and plan files (unchanged).
