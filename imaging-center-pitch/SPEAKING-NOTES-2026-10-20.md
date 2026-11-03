@@ -14,7 +14,7 @@
 > - **Slide 19 is a spoken RadAssist OVERVIEW, no live demo (Luis's feedback, applied 2026-11-03).** One minute on the slide: what it is, Luis uses it daily, his templates and his rules, it drafts and he signs, four modules (calcium, thyroid, spine MRI, CT spine), nothing leaves the browser, not a device. Then hand the table to Luis. The Spine MRI demo walkthrough stays in DEMO-SCRIPT Part A, marked not used Thursday; the prior authorization demo on slide 11 (Part B) is unchanged. Roadmap: voice dictation, then brain and cardiac CTA (CAD-RADS). AI image auto-fill is "a future item with a regulatory path," never a promise. **Selling RadAssist to other centers stays OUT of the room** (see slide 19).
 > - **No license terms at the table (Rick, 2026-11-03).** What is being sold is a scope of work: a design for one imaging center that can be put anywhere. Ownership of any product pieces is settled in the contract, not at lunch; the center owns its configuration and its data. No arrangement of Luis's is described anywhere. IF ASKED "who owns what?" is under slide 23.
 > - **If they float a full-time role (Rick, 2026-11-03):** IF ASKED block under slide 29. "I'd want to hear it. Let's finish Phase 1 first; that's the job to judge me on." No numbers.
-> - **LOCKED 2026-11-02: lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez.** Be ready Thursday morning; the checklist in Part 4 runs Wednesday night and Thursday morning.
+> - **LOCKED 2026-11-02: lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez.** Be ready Thursday morning; the prep plan in Part 4 runs Tuesday through Thursday morning (Rick-approved 2026-11-03).
 > - **Transitions (Rick, 2026-11-02):** anything you say before a slide comes up is the last block of the previous slide's notes, headed **LEAD-IN TO SLIDE N (say before you advance)**, so it is never confused with that slide's own THEN SAY.
 > - **Exa answer** is on slide 11: vendor-neutral, never disparage.
 > - **Late 11-02 items (R5e, R6b, R7):** slide 20's last block is now the deployment default (one environment under one contract, each organization in its own isolated instance with its own database, keys, credentials and audit log; fully separate stacks only for separately owned centers that want separate hosting; never one shared database). The HB 300 depth block under slide 22 carries the statute's verified numbers. Lunch is about an hour, so the slide clock is 40 minutes and a skip order follows below.
@@ -1220,26 +1220,38 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 ---
 
-# PART 4: PRE-LUNCH CHECKLIST. READY BY THURSDAY MORNING, 2026-11-05
+# PART 4: PREP PLAN, TUESDAY TO THURSDAY MORNING, 2026-11-05 (Rick-approved 2026-11-03)
 
-Lunch is Thursday 2026-11-05 with Luis, Fernando and Jesse. Do the "before you leave the house" list Wednesday night, and click through the prior authorization demo again Thursday morning so nothing is more than a few hours old when you sit down. There is no RadAssist demo setup: slide 19 is spoken (Luis, 2026-11-03).
+Lunch is Thursday 2026-11-05 with Luis, Fernando and Jesse. Nine steps across three days; what is not on the list waits. There is no RadAssist demo setup: slide 19 is spoken (Luis, 2026-11-03).
 
-## Done earlier (2026-10-06 or 10-07)
+## Tuesday 2026-11-03
 
-- [ ] Send the confirmation text to Luis. The approved wording is Step 0 of the RUNBOOK. Paste it as-is. It asks for studies per day and modalities, front-end headcount, and the partner's name.
+- [ ] ==**Rehearse the prior authorization demo end to end**== (slide 11, https://rfinlay.github.io/imaging-priorauth-demo/), on the laptop and on the phone, both banner states. It needs no login.
+- [ ] **Mock Q&A as Fernando with Gio, about 20 minutes.** Straightforward, tough, tight with money, visual. The objection answers in Part 2 and the RUNBOOK are the script.
+- [ ] **School due tonight:** the 635 IR Plan and the 645 replies. Pitch prep stops when those start.
 
-## Before you leave the house
+## Wednesday 2026-11-04
 
-- [ ] **DONE 2026-10-06, no action needed: the partner name is in.** Fernando Escarzaga appears in full on the two surfaces he will actually see, the deck title slide and the leave-behind header. First name only in the presenter notes, the RUNBOOK, and AUTOMATION-CANDIDATES, where it reads naturally. Every placeholder is gone, and all four PDFs were reprinted and re-synced to OneDrive and Google Drive.
-- [ ] **The engagement is $45,000 in five phases (7 / 8 / 7 / 14 / 9), November to May, APPROVED 2026-11-02.** Slides 29 (table), 30 (timeline), 31 (inputs) and page 2 of the leave-behind. Every red "Proposed figures" tag is gone. Rehearse the price line and the payment line from Drill 2.
-- [ ] **Click through the prior authorization demo** (https://rfinlay.github.io/imaging-priorauth-demo/, linked on slide 11 and leave-behind page 2) Thursday morning, on the hotspot. Leave the tab open; it needs no login.
-- [ ] **Print the leave-behind.** Three copies (Jesse too). Two US Letter pages from Chrome.
-- [ ] **Charge the laptop.** The deck runs with no wifi; the prior authorization demo is the only thing that needs a network. No RadAssist sign-in, no case card, no backup screenshots: slide 19 is a spoken overview (Luis, 2026-11-03).
-- [ ] **Phone hotspot on and tested** with the laptop before you sit down, for the prior authorization demo. Bring the charging cable for the phone.
-- [ ] **Open the deck in a browser.** Press N once to confirm notes mode works, press N again to hide it. Set the browser to full screen.
-- [ ] **Do not bring the Sherlock research document.** Everything you need from it is in this sheet, the deck notes, and the RUNBOOK.
-- [ ] **Bring this sheet, folded.** Part 1 face up.
-- [ ] **DONE 2026-10-22: opening window confirmed as ~June 2027, April at the earliest; slides 2 and 9 updated.**
+- [ ] ==**Review the updated slides with Luis, including the money aspects:**== $45,000 in five phases, November to May; $150/hr for work outside the phases, approved first. His read on how Fernando hears the price is the point.
+- [ ] **Gio applies ONE last update round from Luis's feedback,** renders, syncs OneDrive and Drive. One round, then the documents freeze.
+- [ ] **Wednesday night, final read-through:** the highlighted lines in this sheet, the timing skip list at the top of Part 2 (17, 25, 14, 10, 19 down to two sentences, 20; never drop 3, 4, 6, 11, 18, 19, 23, 24, 26), and the objection answers.
+
+## Thursday 2026-11-05, morning
+
+- [ ] ==**Open the prior authorization demo on the phone (cellular) and on the laptop; confirm the banner.**== Leave both tabs up.
+- [ ] **Print the leave-behind** (two US Letter pages from Chrome) if you want paper on the table. Three copies if so.
+- [ ] **Pocket card:** the five lines to land (Drill 1) plus the skip list. Bring this sheet, folded, Part 1 face up. Luis picks you up. Lunch runs about an hour.
+
+## Not before Thursday
+
+- **Luis's CT confirmation.** It comes when it comes; do not push.
+- **The royalty and licensing conversation.** Private, with Luis only, after the lawyer's review. Not in the room, not on the drive over.
+
+## Already done
+
+- Demo-steps email sent to Luis. He replied that the overview only is what he wants; applied everywhere (slide 19 is spoken).
+- The partner name is in (2026-10-06). The opening window is ~June 2027, April at the earliest (2026-10-22). The engagement is $45,000 in five phases, approved 2026-11-02; every red tag is gone.
+- The deck runs with no wifi; the demo is the only thing that needs a network. Leave the Sherlock research document at home; everything you need from it is in this sheet, the deck notes and the RUNBOOK.
 
 ## Open items: ALL FOUR RESOLVED 2026-10-06
 
