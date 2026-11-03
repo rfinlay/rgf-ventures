@@ -623,42 +623,42 @@
   <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. Companion to the briefing deck and the one-page summary. No opening date is assumed in this document; the only dates printed are the regulatory ones.</div><div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div></div>
 </div>
 
-<!-- ============================== PAGE 6: ONE INSTANCE PER CENTER ============================== -->
+<!-- ============================== PAGE 6: ONE ENVIRONMENT, ISOLATED INSTANCES ============================== -->
 <div class="page" id="p6">
   <div class="hdr">
     <div>
-      <div class="kicker">Proposed architecture, page 6 of 8. Deployment across three centers.</div>
-      <h1>One stack or one per center. The owners decide which; the data boundary does not move.</h1>
-      <div class="sub">The rule: same owners across the centers, one shared stack with each center's data segregated and every session scoped to one center. Different owners per center, a separate instance each, drawn below. Either works. What does not change is that no patient record from one center is readable from another.</div>
+      <div class="kicker">Proposed architecture, page 6 of 8. Deployment across centers.</div>
+      <h1>One environment, isolated instances. The owners decide whether to go further; the data boundary does not move.</h1>
+      <div class="sub">The default is the industry standard, security first: one environment under one contract, each organization in its own isolated instance, drawn below. Never one shared database.</div>
     </div>
-    <div class="who">Every service on pages 1 to 4,<br>per-center data <b>never pooled</b> in either case</div>
+    <div class="who">Every service on pages 1 to 4,<br>per-organization data <b>never pooled</b> in either case</div>
   </div>
 
-  <div class="panel spec" style="left:40px;top:108px;width:1200px;height:66px"><div class="k">Tier 1, written once</div><h3>One specification, reused for every center.</h3>Order detection, packet assembly, deadline tracking, the records clock, the reporting joins, the report assistance path. Written once, with each center's mappings and configuration filled in per site, whether that is one stack or several instances.</div>
+  <div class="panel spec" style="left:40px;top:108px;width:1200px;height:66px"><div class="k">Tier 1, written once. One environment, one contract.</div><h3>One specification, reused for every center. One environment to operate, patch and monitor.</h3>Order detection, packet assembly, deadline tracking, the records clock, the reporting joins, the report assistance path. Written once, with each organization's mappings and configuration filled in per site, inside one environment or in a separate stack.</div>
 
-  <div class="panel center" style="left:40px;top:196px;width:380px;height:206px"><div class="k">First center</div><h3>Its own instance.</h3>
+  <div class="panel center" style="left:40px;top:196px;width:380px;height:206px"><div class="k">First organization</div><h3>Its own isolated instance.</h3>
     <ul>
       <li>Its own copy of every service: prior auth, reporting, backfill, records, report assistance.</li>
-      <li>Its own database, audit log, and credentials, rotated and reviewed for this center alone.</li>
+      <li>Its own database and its own encryption keys. Its own audit log.</li>
+      <li>Its own credentials and role-based access, scoped to this organization alone.</li>
       <li>Its own model account under its own BAA. US residency verified for this instance.</li>
-      <li>Its own RIS, PACS, billing, and voice contracts, or shared ones; the four access terms go into whichever contract applies.</li>
-      <li>Its own principals approve its own sign-off rules.</li>
+      <li>Its own principals approve its own sign-off rules; the four access terms go into whichever vendor contract applies.</li>
     </ul></div>
-  <div class="panel center" style="left:450px;top:196px;width:380px;height:206px"><div class="k">Second center</div><h3>Its own instance.</h3>
+  <div class="panel center" style="left:450px;top:196px;width:380px;height:206px"><div class="k">Second organization</div><h3>Its own isolated instance.</h3>
     <ul>
       <li>Its own copy of every service: prior auth, reporting, backfill, records, report assistance.</li>
-      <li>Its own database, audit log, and credentials, rotated and reviewed for this center alone.</li>
+      <li>Its own database and its own encryption keys. Its own audit log.</li>
+      <li>Its own credentials and role-based access, scoped to this organization alone.</li>
       <li>Its own model account under its own BAA. US residency verified for this instance.</li>
-      <li>Its own RIS, PACS, billing, and voice contracts, or shared ones; the four access terms go into whichever contract applies.</li>
-      <li>Its own principals approve its own sign-off rules.</li>
+      <li>Its own principals approve its own sign-off rules; the four access terms go into whichever vendor contract applies.</li>
     </ul></div>
-  <div class="panel center" style="left:860px;top:196px;width:380px;height:206px"><div class="k">Third center</div><h3>Its own instance.</h3>
+  <div class="panel center" style="left:860px;top:196px;width:380px;height:206px"><div class="k">Third organization</div><h3>Its own isolated instance.</h3>
     <ul>
       <li>Its own copy of every service: prior auth, reporting, backfill, records, report assistance.</li>
-      <li>Its own database, audit log, and credentials, rotated and reviewed for this center alone.</li>
+      <li>Its own database and its own encryption keys. Its own audit log.</li>
+      <li>Its own credentials and role-based access, scoped to this organization alone.</li>
       <li>Its own model account under its own BAA. US residency verified for this instance.</li>
-      <li>Its own RIS, PACS, billing, and voice contracts, or shared ones; the four access terms go into whichever contract applies.</li>
-      <li>Its own principals approve its own sign-off rules.</li>
+      <li>Its own principals approve its own sign-off rules; the four access terms go into whichever vendor contract applies.</li>
     </ul></div>
 
   <div class="wall" style="left:430px;top:196px;width:10px;height:206px"></div>
@@ -666,19 +666,19 @@
   <div class="walllbl" style="left:426px;top:400px">No cross-center read</div>
   <div class="walllbl" style="left:836px;top:400px">No cross-center read</div>
 
-  <div class="panel wallbox" style="left:40px;top:424px;width:380px;height:214px"><div class="k">Different owners: separate instances. Governance, not cost.</div><h3>The boundary is physical, and it costs more on purpose.</h3>Separate books and separate principals need a line that is visible in the system itself: its own host, database, credentials, and audit log per center. A shared stack with tenant segregation can serve different owners and is defensible; separate instances are the recommendation because a regulator, an auditor, or a partner's lawyer can see the line without reading code.</div>
+  <div class="panel wallbox" style="left:40px;top:424px;width:380px;height:214px"><div class="k">The default: one environment, one contract, isolated instances</div><h3>Security first, and the cost stays low.</h3>The isolation lives at the data layer, where a regulator, an auditor, or a partner's lawyer expects to find it: separate databases, separate encryption keys, separate logins, separate audit logs. The environment is operated, patched and monitored once. One owner or one joint venture owning every center: this is the whole answer. A report that spans organizations is a later, explicit decision by all the principals, built read-only, never as a merged record.</div>
 
-  <div class="panel" style="left:450px;top:424px;width:380px;height:214px"><div class="k">Same owners: one shared stack</div><h3>Share the system, segregate the data.</h3>One set of books and one set of principals means the governance line is already drawn, so one stack is the simpler, cheaper system to run: one host, one set of credentials to rotate, one audit log to review. Each center is a tenant: every session scoped to one center, every action logged against it, no cross-center read. A report that spans centers is a later, explicit decision by all the principals, built read-only, never as a merged record.</div>
+  <div class="panel" style="left:450px;top:424px;width:380px;height:214px"><div class="k">The variant: separately owned, fully separate hosting</div><h3>A fully separate stack, at higher cost, as that owner's choice.</h3>A separately owned center whose owner wants its own hosting and its own books gets a stack of its own: its own host, environment, contract and bills. It adds nothing for security that the isolated instance does not already give; it adds separation of books and billing, which is a legitimate reason and not a security argument. Either works. What is never built is one shared database with a center column.</div>
 
   <div class="panel" style="left:860px;top:424px;width:380px;height:214px"><div class="k">What is shared in both cases</div><h3>The specification and the engines. Never a patient record.</h3>
     <ul>
       <li>The specification, Tier 1, written once.</li>
       <li>Rick's engines, Tier 3, licensed to the center.</li>
       <li>The runbooks and the vendor evaluation criteria.</li>
-      <li>With separate instances: no database, credential, audit log, or model account is shared.</li>
+      <li>In the default, the environment and its operations. Never a database, a key, a login, or an audit log.</li>
     </ul></div>
 
-  <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. Same owners, one shared stack; different owners, one instance each. How many back offices and vendor contracts there are is the partners' call, and the data boundary holds either way.</div><div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div></div>
+  <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. One environment under one contract, each organization in its own isolated instance; a fully separate stack only where a separate owner wants separate hosting. How many back offices and vendor contracts there are is the partners' call, and the data boundary holds either way.</div><div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div></div>
 </div>
 
 

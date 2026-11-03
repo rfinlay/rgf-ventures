@@ -15,6 +15,7 @@
 > - **LOCKED 2026-11-02: lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez.** Be ready Thursday morning; the checklist in Part 4 runs Wednesday night and Thursday morning.
 > - **Transitions (Rick, 2026-11-02):** anything you say before a slide comes up is the last block of the previous slide's notes, headed **LEAD-IN TO SLIDE N (say before you advance)**, so it is never confused with that slide's own THEN SAY.
 > - **Exa answer** is on slide 11: vendor-neutral, never disparage.
+> - **Late 11-02 items (R5e, R6b, R7):** slide 20's last block is now the deployment default (one environment under one contract, each organization in its own isolated instance with its own database, keys, credentials and audit log; fully separate stacks only for separately owned centers that want separate hosting; never one shared database). The HB 300 depth block under slide 22 carries the statute's verified numbers. Lunch is about an hour, so the slide clock is 40 minutes and a skip order follows below.
 >
 > **Fernando, per Luis:** straightforward, tough, tight with money, the best administrator Luis has worked with in 25 years. Distrustful after vendors over-promised. Visual: expect "When can I see it working?" He will have his own ideas (AI for prior-record retrieval, for one). **Give him the floor.**
 >
@@ -22,7 +23,11 @@
 >
 > **Process facts from Luis, use them:** outside priors arrive by courier on CD or DVD, and after five days the study is read without them. On the calcium score slide it is "calcium," never "nodules."
 
-**El Paso, lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez. About 43 minutes. 31 slides (27 in the no-numbers deck), plus the live RadAssist demo on slide 19.**
+**El Paso, lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez. Lunch is about an hour. The slides get 40 minutes of it. 31 slides (27 in the no-numbers deck), plus the live RadAssist demo on slide 19.**
+
+**The hour, budgeted (Rick, 2026-11-02).** Ten minutes before the first slide: sitting down, ordering, the cold-open card (Part 1). Forty minutes of slides: the clock on every slide header below runs from 0:00 at slide 1 to 40:00 at the Thank You. Ten minutes after: Fernando talking, questions, and the appendix if the room asks for the number. If the food arrives mid-deck, stop at the end of the slide you are on and eat; the clock pauses, the cut list below does not change.
+
+**If short on time, skip, in this order.** The clock is 40 minutes and you will not get all of it. Cut in this order and nothing you need is lost: **slide 17** (owner numbers; the scorecard on 18 names it) first, then **slide 25** (if it were my money; keep its closing question and ask it on 27), then **slide 14** down to one sentence ("Your RIS will do reminders. Let it."), then **slide 10** down to one sentence ("A process that approves 95% of what it touches is one you automate"), then shorten the **demo on 19** to the finished impression and Luis's Tuesday, and **slide 20** to its heading and the one question. **Never skip 3, 4, 6, 11, 18, 19, 23, 24 or 26.** If you reach 36:00 on the slide clock and are still in the middle, jump to 23.
 **In the room:** Dr. Luis Ramos (uses RadAssist daily; your champion), Fernando Escarzaga (founded Southwest X-Ray and sold it in 2019; the skeptic and the signer), and Jesse Martinez (an engineer; quiet and analytic).
 
 This is a rehearsal sheet, not a reference. Read it aloud, top to bottom, in order. The RUNBOOK is for lookup. This is for practice.
@@ -176,7 +181,7 @@ This is the slide that proves you are on their side of the table, and it does no
 
 ---
 
-### SLIDE 4 · The headline number · 5:00 to 8:00
+### SLIDE 4 · The headline number · 5:00 to 7:30
 
 **SAY**
 
@@ -208,7 +213,7 @@ If he quotes an imaging denial rate of 25 to 40% at you: do not confirm it. Thos
 
 ---
 
-### SLIDE 5 · Why greenfield matters · 8:00 to 10:00
+### SLIDE 5 · Why greenfield matters · 7:30 to 9:30
 
 **SAY**
 
@@ -236,7 +241,7 @@ Ask here: "How many prior authorizations a day were you running at steady state,
 
 ---
 
-### SLIDE 6 · What an AI agent is · 10:00 to 12:00
+### SLIDE 6 · What an AI agent is · 9:30 to 11:00
 
 **SAY**
 
@@ -264,7 +269,7 @@ Plain words, no acronyms on this slide. If Fernando nods through it, move on; if
 
 ---
 
-### SLIDE 7 · Part one: the thing you did not ask about · 10:00
+### SLIDE 7 · Part one: the thing you did not ask about · 11:00 to 11:30
 
 **SAY**
 
@@ -282,7 +287,7 @@ Plainly, without any edge. This is not a gotcha. Say it and advance.
 
 ---
 
-### SLIDE 8 · What it costs in time · 10:00 to 14:00
+### SLIDE 8 · What it costs in time · 11:30 to 14:00
 
 **SAY**
 
@@ -316,7 +321,7 @@ The two percentages at the bottom are the bridge to the agent. Slow down on "nob
 
 ---
 
-### SLIDE 9 · The dates land on your opening · 14:00 to 17:00
+### SLIDE 9 · The dates land on your opening · 14:00 to 16:30
 
 **SAY**
 
@@ -358,7 +363,7 @@ Both caveats, every time. They are the two obvious counterattacks and you want t
 
 ---
 
-### SLIDE 10 · What a prior auth process actually does all day · 17:00 to 19:00
+### SLIDE 10 · What a prior auth process actually does all day · 16:30 to 18:00
 
 **SAY**
 
@@ -394,7 +399,7 @@ Land the last sentence and let it sit for a beat before you move to Part two.
 
 ---
 
-### SLIDE 11 · One order through prior authorization · 21:00 to 23:00
+### SLIDE 11 · One order through prior authorization · 18:00 to 20:00
 
 **SAY**
 
@@ -424,7 +429,7 @@ Step four is the safety model. Pause on it. Then let Fernando ask "when can I se
 
 ---
 
-### SLIDE 12 · Part two: the three things you did ask about, corrected · 19:00
+### SLIDE 12 · Part two: the three things you did ask about, corrected · 20:00 to 20:30
 
 **SAY**
 
@@ -432,7 +437,7 @@ Step four is the safety model. Pause on it. Then let Fernando ask "when can I se
 
 **BEAT**
 
-Eight minutes for slides 13 through 14. Keep moving.
+Three minutes for slides 13 and 14. Keep moving. If short on time, slide 14 is one sentence.
 
 **LEAD-IN TO SLIDE 13 (say before you advance)**
 
@@ -440,7 +445,7 @@ Eight minutes for slides 13 through 14. Keep moving.
 
 ---
 
-### SLIDE 13 · Scheduling: the empty slot is not a no-show · 19:00 to 22:00
+### SLIDE 13 · Scheduling: the empty slot is not a no-show · 20:30 to 22:30
 
 **SAY**
 
@@ -472,7 +477,7 @@ If his number is nowhere near 22%, say so and keep the pattern, not the figure: 
 
 ---
 
-### SLIDE 14 · Scheduling: what reminders honestly do · 22:00 to 23:00
+### SLIDE 14 · Scheduling: what reminders honestly do · 22:30 to 23:30
 
 **SAY**
 
@@ -506,7 +511,7 @@ Quote the absolute numbers and let him do the arithmetic. An exited founder will
 
 ---
 
-### SLIDE 15 · Answering patients: buy it, do not build it · 23:00 to 25:00
+### SLIDE 15 · Answering patients: buy it, do not build it · 23:30 to 25:00
 
 **SAY**
 
@@ -550,7 +555,9 @@ Say the buy line plainly. Recommending a purchase here makes everything you do p
 
 **THEN SAY (the caveat)**
 
-=="Texas has its own records deadline that is shorter than the federal 30 days. I am not going to quote the day-count from memory. It goes in the specification after I verify it against the statute."==
+=="Texas has its own records deadline that is shorter than the federal 30 days: fifteen business days from a written request for an electronic record. That is the clock the tracker is built to, and it is verified against the statute in the specification."==
+
+(Fifteen business days, Texas Health and Safety Code 181.102, verified by Sherlock 2026-11-03 against the official text. It applies to a provider using an electronic health records system that can fulfill the request. The full chapter 181 depth is under slide 22.)
 
 **DEPTH / IF ASKED**
 
@@ -580,7 +587,7 @@ Do not say "from running two centers" or "two companies." He built one company w
 
 ### SLIDE 17 · The fifth candidate: the numbers the owner actually looks at · 27:00 to 28:00
 
-==Cut this slide first if you are running long at 28:00. The Monday-morning question is the lead-in on slide 16; if you did not get to it there, ask it on this slide.==
+==Cut this slide first if you are running long at 27:00. The Monday-morning question is the lead-in on slide 16; if you did not get to it there, ask it on this slide.==
 
 **SAY**
 
@@ -660,7 +667,7 @@ Read it in one breath. **=="Three of the seven, I am telling you to buy" is the 
 
 ---
 
-### SLIDE 19 · Proof: RadAssist, live · 29:00 to 33:00
+### SLIDE 19 · Proof: RadAssist, live · 29:00 to 32:30
 
 **Updated 2026-11-01.** This slide now hands off to a **live three-minute RadAssist Spine MRI demo**, Rick's idea after the 10-31 call with Luis. The slide carries a LIVE DEMO badge. The tab is already open and signed in (checklist, Part 4). The case values are on the printed card and in the DEMO-SCRIPT, Part A.
 
@@ -716,7 +723,7 @@ Run the case. Hand the table to Luis. Do not demo more features. Do not fill his
 
 ---
 
-### SLIDE 20 · Radiology report assistance · 33:00 to 34:00
+### SLIDE 20 · Radiology report assistance · 32:30 to 33:30
 
 The records direction question is the lead-in on slide 19, asked before this slide comes up.
 
@@ -744,7 +751,7 @@ Records coming in: DICOM query/retrieve across organizations is rare because the
 
 The FDA line, if he connects this to slide 21: the radiologist's own numbers, the radiologist's own template, the radiologist's signature. It formats what the scanner already measured. Anything that would recommend a follow-up interval or flag growth is on the other side of the wall and is declined.
 
-One stack or one per center: the rule is in the last block of this slide, below. The slide survives either answer. Do not say as fact that the centers share anything, and do not name the other principals; their spellings are unconfirmed.
+Deployment across centers (one environment, isolated instances): the default is in the last block of this slide, below. The slide survives either answer. Do not say as fact that the centers share anything, and do not name the other principals; their spellings are unconfirmed.
 
 Not on the scorecard, deliberately. The scorecard is the list of candidates. This is not a candidate; it exists and Luis uses it. Extending it to the new center is Tier 3 product under the slide 23 license, same as the prior auth engine.
 
@@ -756,13 +763,13 @@ If asked how long: no date. =="Which direction, and against which RIS. Then I ca
 
 **THEN SAY, LAST ON THIS SLIDE, AND ONLY IF MORE THAN ONE CENTER COMES UP (the one-stack question)**
 
-=="One specification, written once and reused for every center. Then one rule. If the same owners own all the centers, I recommend one shared stack with each center's data kept apart: one system to run, one set of credentials to rotate, every login scoped to one center. If the centers have different owners, I recommend a separate instance for each: its own database, its own credentials, its own audit log, and a line any auditor can see without reading code. Either works. The thing that never changes is that no patient record from one center is readable from another."==
+=="One specification, written once and reused for every center. The way I would deploy it is the industry standard, and it is security first. One environment, under one contract, which is what keeps the cost down. Inside it, each organization gets its own isolated instance: its own database and its own encryption keys, its own credentials with role-based access, and its own audit log. Nobody at one organization can see another's data, by construction. If one owner or one joint venture owns all the centers, that default is the whole answer. If the centers are separately owned and an owner wants fully separate hosting and separate books, each gets a fully separate stack, and that costs more. Either works. What I will never build is one shared database."==
 
-Why the rule runs that way, if he asks: shared owners means one set of books and one set of principals, so the governance line is already drawn and a shared stack is the simpler, cheaper system to run. Different owners means separate books and a line between them that has to be visible in the system itself, and separate instances make it visible. If he asks whether one shared stack can serve centers with different owners: "Yes, with tenant segregation, and it is a defensible design. I recommend separate instances in that case because the boundary is then physical, not a rule in software." Do not state as fact which case they are in. Ask.
+Why the default runs that way, if he asks: the isolation lives at the data layer, where it has to be, so one environment can be operated, patched and monitored once while no organization shares a database, a key, or a login with another. Fully separate stacks add nothing for security that the isolated instance does not already give; they add separate hosting bills and separate books, which is exactly why a separately owned center sometimes wants them. If he asks whether one shared database with a center column would be cheaper still: "Cheaper, and I would not build it. The boundary belongs in separate databases and separate keys, not in a filter." If he asks whether reporting can ever span the centers: "Later, as an explicit decision by all the principals, as a read-only view, never a merged record." Do not state as fact which case they are in. Ask.
 
 ---
 
-### SLIDE 21 · Boundaries: the FDA question, answered by the statute · 34:00 to 35:00
+### SLIDE 21 · Boundaries: the FDA question, answered by the statute · 33:30 to 34:30
 
 **SAY**
 
@@ -792,7 +799,7 @@ One minute. The list is the answer. Do not argue it.
 
 ---
 
-### SLIDE 22 · Boundaries: what I will design around, stated before you ask · 35:00 to 36:00
+### SLIDE 22 · Boundaries: what I will design around, stated before you ask · 34:30 to 35:30
 
 **SAY**
 
@@ -821,13 +828,15 @@ BAA: Anthropic's BAA documentation at privacy.claude.com, accessed 2026-10-01. A
 HB 300 is Texas Health and Safety Code Chapter 181, and it is the reason the fourth constraint reaches you personally. What the chapter covers, so you can go one level deeper than the slide:
 
 - **Who it reaches.** Its definition of a covered entity is broader than HIPAA's: anyone who assembles, collects, stores, uses, or transmits protected health information about a Texas patient, in any form. That reaches you directly, not only through the center's business associate agreement. Say: "I carry that obligation in my own right, whether or not a BAA says so."
-- **Training.** Covered entities have to train their workforce on state and federal patient privacy law within a set time of hire, retrain them when the law materially changes, and keep a signed record of each completion. There is no fixed refresher interval in the statute (Sherlock, verified 2026-11-03); do not say "every two years." For you that means your own training record and the center's.
-- **Electronic records on request.** When a patient asks a provider in writing for a copy of their electronic health record, the chapter sets a deadline for producing it that is shorter than HIPAA's thirty days. That is the records clock on slide 16, and it is the one the tracker has to be built to.
-- **No sale of PHI.** Protected health information cannot be sold. There are narrow exceptions for treatment, payment, operations, and research, and none of them covers anything in this design.
-- **Notice of electronic disclosure.** Patients get notice when their health information is disclosed electronically, and in some cases their authorization first.
-- **Enforcement.** The Texas Attorney General enforces it, with civil penalties that scale with the conduct, and the state can act on its own without waiting for a federal complaint.
+- **Training.** Every employee who touches patient data must be trained on state and federal privacy law within **90 days of hire**, and sign a statement of completion, which the entity keeps for **six years**. Retraining is required only after a **material change in the law**, within a year of it taking effect. There is no annual or two-year refresher in the statute: the original 2011 bill had one and the Legislature removed it in 2013. **Never say "every two years."** For you that means your own training record and the center's.
+- **Electronic records on request.** A provider whose electronic records system can fulfill it must give a patient their electronic record within **15 business days of a written request**, in electronic form unless the patient agrees to another. HIPAA allows 30 calendar days. That is the records clock on slide 16, and it is the one the tracker is built to.
+- **No sale of PHI.** Protected health information cannot be disclosed for remuneration. The exceptions are treatment, payment, health care operations and insurance functions with another covered entity, or where another law requires it; none of them covers anything in this design.
+- **Notice of electronic disclosure.** Patients must be told their health information is disclosed electronically (a posted notice at the facility or on the website is enough for the general case), and outside treatment, payment and operations each electronic disclosure needs the patient's authorization first.
+- **Enforcement.** The Texas Attorney General brings the civil action. Penalties per violation: up to **$5,000** if negligent, **$25,000** if knowing or intentional, **$250,000** if the information was used for financial gain, and up to **$1.5 million a year** for a pattern or practice. Licensing boards can put a licensed entity on probation, suspend it, or for an egregious pattern revoke its license, and a pattern finding excludes the entity from state-funded programs.
+- **The selling point.** For a disclosure to another covered entity for a permitted purpose, the yearly penalty is capped at **$250,000** if the court finds the data was **encrypted**, or the recipient did not use or release it, or the entity had **security policies and employee training** in place. Encryption at rest and in transit, and a training record, are the first two things in the specification, and this is why. Good-faith compliance efforts also count as mitigation.
+- **New since September 2025 (HB 4224, section 181.105).** Every covered entity must post, on its website and at the facility, instructions for a patient to request their records, contact the licensing board, and file a complaint. **That posting duty is the center's**, not RGF's; back-office processors working for a provider are exempt. It goes on the center's opening checklist.
 
-Do not quote a day-count, a training interval, or a penalty amount from memory. Say: "Those are verified against the statute in the specification." The slide and the source line already name the chapter.
+Every number above is verified against the official statute text (Texas Legislative Council copy of Health and Safety Code chapter 181, current through the 2025 session; Sherlock, 2026-11-03). Say them plainly. The slide and the source line name the chapter.
 
 **BEAT**
 
@@ -835,7 +844,7 @@ Each constraint in a sentence or two, then move. Volunteering them is what separ
 
 ---
 
-### SLIDE 23 · The question you are going to ask · 36:00 to 37:00
+### SLIDE 23 · The question you are going to ask · 35:30 to 36:30
 
 Never cut this slide.
 
@@ -881,7 +890,7 @@ Five points, in order, no skipping. The ownership distinction rides inside point
 
 ---
 
-### SLIDE 24 · The most important slide · 37:00 to 38:00
+### SLIDE 24 · The most important slide · 36:30 to 37:30
 
 Never cut this slide.
 
@@ -919,9 +928,9 @@ Recommending against yourself is the single most credible thing you can do in fr
 
 ---
 
-### SLIDE 25 · If it were my money · 38:00 to 38:30
+### SLIDE 25 · If it were my money · 37:30 to 38:00
 
-Cut this slide second if you are running long. Keep the closing question even if you cut the slide.
+Cut this slide second if you are running long (the full skip order is at the top of Part 2). Keep the closing question even if you cut the slide; ask it on the Thank You.
 
 **SAY**
 
@@ -963,7 +972,7 @@ The closing question is open on purpose. He is opening in direct competition wit
 
 ---
 
-### SLIDE 26 · What the dates depend on · 39:00 to 40:00
+### SLIDE 26 · What the dates depend on · 38:00 to 39:00
 
 **SAY**
 
@@ -985,7 +994,7 @@ Read the list, then the last line, then stop. It is in the no-numbers deck too.
 
 ---
 
-### SLIDE 27 · Thank you · 38:30, then stop selling or turn to the appendix
+### SLIDE 27 · Thank you · 39:00 to 40:00, then stop selling or turn to the appendix
 
 **SAY**
 
@@ -1003,7 +1012,7 @@ Put the leave-behind on the table, one per person (two pages now: the second is 
 
 ---
 
-### SLIDE 28 · Appendix: scope and investment · 38:30
+### SLIDE 28 · Appendix: scope and investment · 40:00, appendix, only if the room asks
 
 **SAY**
 
@@ -1255,7 +1264,7 @@ Listed so you know what changed and why, not because anything is outstanding.
 - **The "two centers" error is corrected** to one company with five El Paso locations, in the deck presenter note where it lived.
 - **The RUNBOOK objection answer no longer quotes "and then we scale it."** It names the consequence instead of the slogan.
 
-**The one judgment call left is yours, and it is not a defect:** if the lunch runs long, the cut order is slide 17, then the RadAssist demo, and never slides 23, 24, or 26.
+**The one judgment call left is yours, and it is not a defect:** if the lunch runs long, follow the skip order at the top of Part 2 (17, then 25, then 14 and 10 to one sentence each, then the demo), and never slides 23, 24, or 26.
 
 ## Deck order is narrative, on purpose
 
