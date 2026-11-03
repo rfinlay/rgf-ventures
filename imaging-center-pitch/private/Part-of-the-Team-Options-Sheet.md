@@ -34,7 +34,7 @@ I have not put market salary numbers here on purpose. Set these from your own an
 
 - RGF becomes the center's fractional technology lead on a monthly retainer with an hours cap, starting when the design engagement starts.
 - The five-phase engagement is billed as priced ($45,000), on its own schedule.
-- RadAssist is licensed to the center, never contributed. Luis's clinical contributions are compensated under the advisor agreement (Doc 2): **a 20% royalty on net revenue RGF receives from RadAssist licenses to third-party centers, for a set term of [X] years from first third-party sale (placeholder; Rick to set).** No royalty on the center's own license, on consulting fees, or on this engagement.
+- RadAssist is licensed to the center, never contributed. Luis's clinical contributions are compensated under the advisor agreement (Doc 2): **a 30% royalty (updated 2026-11-03 from 20%) on net revenue RGF receives from RadAssist licenses to third-party centers, for a set term of [X] years from first third-party sale (placeholder; Rick to set).** No royalty on the center's own license, on consulting fees, or on this engagement.
 - Equity or a performance bonus is discussed after opening, once there are real numbers. If they offer equity now, take it only on top of the retainer, never instead of it.
 
 ## Walk-away lines
@@ -50,3 +50,6 @@ I have not put market salary numbers here on purpose. Set these from your own an
 > "Luis, I appreciate that, and I want to be part of this. Here's how I'd like to do it so it's clean for everybody. The engagement stays what it is, forty-five thousand, fixed fee, fixed scope, five phases you sign off one at a time. On top of that, I'd come in as your technology lead on a monthly retainer. You get me on every vendor call and every system decision, with a set number of hours so nobody gets surprised. RadAssist stays my company's product and the center licenses it, same as any other center would. Once we're open and we see the numbers, I'm happy to talk about tying part of it to how the center does. I'd rather earn that than ask for it up front."
 
 If pushed on equity now: *"I'm open to it later. Right now I need it to be a paid role, and I'd rather be straight with you about that."*
+
+
+**Update 2026-11-03 (Rick approved):** Luis 30% royalty on centers he helps sell; Fernando and Jesse 10% referral, one payout per sale, never stacked; annual license $2,400 list, $1,800 founding floor; Luis free at his center. Kept out of the Thursday pitch. Attorney anti-kickback review before signing.

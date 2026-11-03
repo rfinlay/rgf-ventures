@@ -23,7 +23,8 @@ PRIVATE. Rick only. Term-sheet outline, not a contract. Prepared 2026-11-01.
 - Advisor keeps his general medical knowledge and skill.
 
 ## 5. Compensation: royalty or revenue share
-- **Rate:** 20% (Rick's working figure, 2026-11-02; attorney to confirm).
+- **Rate:** 30% of net license revenue on any center Advisor helps sell (Rick, 2026-11-03; attorney to confirm). Reflects co-development plus clinical credibility.
+- **One payout per sale, never stacked.** If Advisor and a referral partner both touched a sale, Advisor's 30% covers it; no referral fee is also paid.
 - **Base:** net revenue RGF actually receives from RadAssist sales and licenses to **third-party centers** (define net: after refunds, taxes, payment fees, reseller costs).
 - **Excludes:** revenue from Advisor's own centers, consulting fees, and build or integration services, unless agreed.
 - **Term:** a set term of [__] years from first third-party sale (placeholder; Rick to set), not open-ended. Alternative for the attorney: for as long as the modules he contributed are sold.
@@ -31,7 +32,7 @@ PRIVATE. Rick only. Term-sheet outline, not a contract. Prepared 2026-11-01.
 - Payment quarterly, with a simple statement. Audit right limited to once a year.
 
 ## 6. Advisor's own use
-- Free or discounted license ([__]% discount, placeholder) for centers Advisor owns or practices at, for the term.
+- Free license at Advisor's own center (Rick, 2026-11-03), for the term.
 - Center license terms are a separate agreement between RGF and the center.
 
 ## 7. Confidentiality
@@ -79,3 +80,10 @@ PRIVATE. Rick only. Term-sheet outline, not a contract. Prepared 2026-11-01.
 7. Does Advisor's role at the new imaging center (where Rick may also be a paid technology lead) create a conflict that needs disclosure?
 8. Insurance: should RGF carry tech E&O / product liability before third-party sales?
 9. Does Advisor's employer or practice agreement claim any rights in his contributions?
+
+## Addendum 2026-11-03: pricing and referral partners (Rick approved)
+- **Ownership:** RGF (Rick) owns RadAssist outright. Luis uses it free at his center.
+- **Annual center license:** list $2,400/yr ($200/mo). Founding-center discount floor $1,800/yr for early adopters. Royalties are paid on this number.
+- **Referral partners (Fernando Escarzaga, Jesse Martinez, or any approved referrer):** 10% of first-term net license revenue for an imaging center they introduce that signs. Separate short referral agreement. One payout per sale, never stacked with Advisor's 30%.
+- **Not in the Thursday pitch.** Discuss privately with Luis first; with Fernando and Jesse only after the engagement is signed.
+- **Attorney:** anti-kickback and Texas fee-splitting review before signing, since referrers are healthcare owners paid for recommendations (software, not patients). Add to questions section 13 item 5.
