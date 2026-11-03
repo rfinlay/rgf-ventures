@@ -142,7 +142,20 @@
   .agent .cols h3 { font-size: 27px; margin-bottom: 6px; }
   .agent .cols p, .agent .cols ul.plain li { font-size: 19.5px; }
   .agent .cols h3 + p + h3 { margin-top: 20px; }
-  .draftmark { position: absolute; top: 22px; right: 88px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #fff; background: #b4232f; padding: 4px 10px; font-weight: 700; }
+  /* 2026-11-02: five-phase engagement tables, timeline slide, four RadAssist modules */
+  table.ms.five { font-size: 17px; line-height: 1.25; margin-top: 14px; }
+  table.ms.five td { padding: 7px 12px 7px 0; }
+  table.ms.five th { font-size: 14px; padding-bottom: 8px; }
+  table.ms.five .dim { font-size: 14px; color: var(--ink-faint); font-weight: 400; }
+  table.ms.five tr.tot td { color: var(--ink); }
+  table.ms.five.compact { font-size: 15.5px; line-height: 1.2; margin-top: 10px; }
+  table.ms.five.compact td { padding: 5px 10px 5px 0; }
+  table.ms.five.compact .dim { font-size: 12.5px; }
+  table.ms.five.compact + .grow + .sub { font-size: 18px; }
+  .gantt { width: 100%; max-width: 1120px; height: auto; margin-top: 10px; display: block; }
+  .modules.four { grid-template-columns: repeat(4, 1fr); gap: 22px; max-width: 1120px; }
+  .modules.four .n { font-size: 27px; }
+  .modules.four .w { font-size: 18px; }
   .demourl { color: var(--accent); font-weight: 600; }
   /* 2026-11-01: the live RadAssist demo cue on slide 19 */
   .livemark { position: absolute; top: 22px; right: 88px; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 6px 14px; font-weight: 700; }
@@ -429,11 +442,11 @@
     <li>If it is denied, the agent drafts the appeal with the reasons and puts it in front of a person. Nothing goes out unsigned.</li>
   </ol>
   <div class="grow"></div>
-  <p class="sub"><strong>You will click through this yourself:</strong> a working prior authorization demo on synthetic data, no real patients, delivered in the first phase. <a class="demourl" href="https://rfinlay.github.io/imaging-priorauth-demo/">rfinlay.github.io/imaging-priorauth-demo</a></p>
+  <p class="sub"><strong>You will click through this yourself:</strong> a working prior authorization demo on synthetic data, no real patients, already built. The real one is wired to your RIS and payers in Phase 4. <a class="demourl" href="https://rfinlay.github.io/imaging-priorauth-demo/">rfinlay.github.io/imaging-priorauth-demo</a></p>
 </div>
 <aside class="notes">
 <p class="time">21:00 to 23:00</p>
-<p>Walk it like a Tuesday, not like a diagram. Fernando is visual and he has been over-promised before; the question he is waiting to ask is "when can I see it working?" The answer is on the slide: the demo is a deliverable in the first phase, on synthetic data. <strong>Replace https://rfinlay.github.io/imaging-priorauth-demo/ with the live link before the dinner, or delete the tag if the demo is not ready.</strong> Never show a link you have not opened that day.</p>
+<p>Walk it like a Tuesday, not like a diagram. Fernando is visual and he has been over-promised before; the question he is waiting to ask is "when can I see it working?" The answer is on the slide: the demo exists today, on synthetic data, and the production version is built against their real RIS and payers in Phase 4 (March to April). Open https://rfinlay.github.io/imaging-priorauth-demo/ yourself the same day. Never show a link you have not opened that day.</p>
 <p>Step 4 is the whole safety model. Say it twice if you have to: nothing reaches a payer until someone on his staff approves it.</p>
 <p><strong>If he raises Exa building something similar:</strong> never disparage Exa. "They may well, and if it is good, use it. What I build is vendor-neutral: it runs on your data and your contract terms, and it works with whatever RIS and PACS you pick, including Exa. The four access terms on slide 3 protect you either way, whether the feature comes from them or from me."</p>
 <p>Jesse may ask how it connects: HL7 v2 orders from the RIS, the payer's FHIR prior authorization API where it exists (required for Medicare Advantage, Medicaid, CHIP and exchange plans by 2027-01-01), EDI where it does not, and a human step where neither exists. No screen-driving of payer portals.</p>
@@ -599,10 +612,11 @@
   <div class="kicker">Part three</div>
   <h1>Proof: RadAssist, live.</h1>
   <p class="lead">Structured radiology reporting, in production and in daily use by the radiologist sitting at this table. His template, his rules, his signature. It drafts; he signs. Nothing you type leaves the browser.</p>
-  <div class="modules">
+  <div class="modules four">
     <div class="m"><div class="n">Calcium scoring</div><div class="w">Reads the scanner&rsquo;s numbers from a pasted screen capture. He confirms every value before it applies.</div></div>
     <div class="m"><div class="n">Thyroid ultrasound</div><div class="w">ACR TI-RADS, with his follow-up rules built in.</div></div>
     <div class="m hot"><div class="n">Spine MRI, new</div><div class="w">Cervical, thoracic, and lumbar. From Dr. Ramos&rsquo;s requirements to live and tested in a day. Every rule in it is his.</div></div>
+    <div class="m hot"><div class="n">CT Spine, live Nov 2</div><div class="w">The same tool, switched to CT: bony canal, calcification, the CT disc findings. Built from his sample reports two days after the MRI module.</div></div>
   </div>
   <div class="grow"></div>
   <p class="sub">Next, at his request: voice dictation, brain, cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise.</p>
@@ -612,7 +626,7 @@
 <p class="time">29:00 to 33:00</p>
 <p><strong>This slide hands off to the live demo.</strong> The tab is already open and signed in (checklist). Switch to it, run the three-minute Spine MRI talk track from the speaking notes: pick Lumbar, enter the synthetic case from the card, show the impression writing itself in Luis's order, show the unreviewed-level rule, copy the report and paste it as plain text. Then hand the table to Luis.</p>
 <p><strong>Say it the way Fernando will hear it: control and simplicity.</strong> His template, his rules, his signature. One dropdown per sentence. The report is plain text he pastes into whatever system the center buys. Nothing is sent anywhere; the browser does the work. No vendor lock, nothing to integrate before it is useful.</p>
-<p><strong>The proof point, said once:</strong> spine went from Luis's requirements to live and tested within a day, and every rule in it was set by Luis. The speed of the fix is the proof, not the absence of changes. If Luis volunteers that it becomes sellable the next day after he tweaks it, let him say it; do not quote him unless you have cleared it with him.</p>
+<p><strong>The proof point, said once:</strong> spine went from Luis's requirements to live and tested within a day, and every rule in it was set by Luis. CT Spine followed two days later (live November 2) from his sample reports: same tool, switched to CT. Mention it in one sentence; demo the MRI case only. The speed of the fix is the proof, not the absence of changes. If Luis volunteers that it becomes sellable the next day after he tweaks it, let him say it; do not quote him unless you have cleared it with him.</p>
 <p>Questions to hand Luis after the demo: What broke, and how fast was it fixed? What did you ask for that got built? What does it do that the vendor tools did not?</p>
 <p><strong>Roadmap, as Luis asked for it:</strong> voice dictation inside RadAssist, then brain and cardiac CTA (CAD-RADS) modules. He will email guideline-display corrections; acknowledge them as his. Say "next on the roadmap," never a date. <strong>Reading the images (auto-filling level findings from the pictures) is a future item with a regulatory path.</strong> That is diagnostic software; it is not promised, not dated, and it is why the line on slide 21 matters.</p>
 <p><strong>Licensing to other centers: do NOT raise it at this table.</strong> Luis sees resale potential at about $2,500 one-time per center. That is a private conversation between you and Luis, because slide 24 tells Fernando this center is the priority and his service terms do not change if you take on a second site. Both are true, but only one belongs in front of Fernando.</p>
@@ -629,7 +643,7 @@
   <div class="cols">
     <div>
       <h3>The report: RadAssist, today</h3>
-      <p>Luis uses it daily. Calcium scoring reads the scanner's numbers from a screen capture; thyroid and spine build the report from his own template, one dropdown per sentence, with his rules for the impression. He confirms every value before it applies and signs. At your center the path has a name: DICOM worklist and query for the study, HL7 v2 ORU to carry the signed report into the RIS.</p>
+      <p>Luis uses it daily. Calcium scoring reads the scanner's numbers from a screen capture; thyroid, spine MRI, and CT spine build the report from his own template, one dropdown per sentence, with his rules for the impression. He confirms every value before it applies and signs. At your center the path has a name: DICOM worklist and query for the study, HL7 v2 ORU to carry the signed report into the RIS.</p>
       <h3>The records: a different build</h3>
       <p>Requesting records runs the other way. The paths: DICOM query and retrieve where a facility grants it, a request out and DICOM import where it does not, and the payer Provider Access API in 2027 for the claims record, in-network only, no images.</p>
     </div>
@@ -645,7 +659,7 @@
 <p class="time">33:00 to 34:00</p>
 <p><strong>This slide exists because of one sentence in your 10-10 email to Luis:</strong> "your partner asked about scheduling, answering patients, and requesting medical records." Requesting records can mean two things in a radiology practice, and they are different builds. Make Luis pick.</p>
 <p><strong>Say the heading first, plainly, and do not soften it.</strong> "The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature." That is the whole operating model and it is also the bus answer: if I disappear, the thing that signs is a person who works for you.</p>
-<p><strong>RadAssist, honestly.</strong> Today it is three modules: calcium scoring, thyroid ultrasound (ACR TI-RADS), and Spine MRI (cervical, thoracic, lumbar), the one you just demonstrated. For calcium, Luis snips the scanner's report or dose screen, pastes it, RadAssist reads the per-vessel scores, total, age, sex and DLP, shows him every value, and nothing touches the form until he clicks Apply. For thyroid and spine he enters what he graded, one dropdown per sentence from his own template, and the impression writes itself in the order he set. It drafts; he signs. It does not interpret an image. Do not claim it does anything more than that tonight.</p>
+<p><strong>RadAssist, honestly.</strong> Today it is four modules: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar), the one you just demonstrated, and CT Spine, live since November 2. For calcium, Luis snips the scanner's report or dose screen, pastes it, RadAssist reads the per-vessel scores, total, age, sex and DLP, shows him every value, and nothing touches the form until he clicks Apply. For thyroid and spine he enters what he graded, one dropdown per sentence from his own template, and the impression writes itself in the order he set. It drafts; he signs. It does not interpret an image. Do not claim it does anything more than that tonight.</p>
 <p><strong>The named path at a center they own:</strong> DICOM Modality Worklist and query/retrieve give the report assistant the study context (contract term four on slide 3). HL7 v2 ORU is the standard result message that carries a signed report into the RIS (term two). Verify before signature that the RIS accepts an inbound ORU result: Konica Minolta's Exa, for one, documents only outbound report paths, so this is a real evaluation item, not a formality. Say "I will verify that against the RIS you pick" rather than promising it.</p>
 <p><strong>Records coming in is slide 14's problem, restated from the other side.</strong> DICOM query/retrieve works only where the sending facility grants it, which across organizations is rare. Otherwise the request goes out by fax or portal and what comes back is imported over DICOM. The payer Provider Access API under CMS-0057-F arrives 2027-01-01, but it carries the claims and clinical record the payer holds, not images, and it requires an in-network contract plus a treatment relationship, which a newly opened center may not have on day one. Name that limit yourself.</p>
 <p class="caveat">"One instance per center costs more than one shared stack. Three hosts, three databases, three sets of credentials, three audit logs. I am recommending it anyway, and the reason is governance, not technology."</p>
@@ -777,17 +791,18 @@
 <section class="slide">
 <div class="inner">
   <div class="kicker">What the dates depend on</div>
-  <h2 class="tight">The build starts around March so prior authorization works before you open. These have to be true first.</h2>
+  <h2 class="tight">The build starts in March so everything works before you open. These have to be true first.</h2>
   <ul class="plain">
     <li><strong>A signed agreement.</strong></li>
-    <li><strong>Your RIS and PACS vendors selected</strong>, with sandbox access to their interfaces: API, HL7, and DICOM.</li>
+    <li><strong>Your vendors selected and contracted</strong> (Phase 2), with sandbox access to their interfaces: API, HL7, and DICOM.</li>
     <li><strong>Test access to the payers' connections</strong> for prior authorization, FHIR and EDI.</li>
     <li><strong>HIPAA business associate agreements signed.</strong></li>
     <li><strong>One named person on your side</strong> who approves.</li>
     <li><strong>Your expected volumes and payer mix</strong>, before payer-specific design starts.</li>
+    <li><strong>Equipment delivery dates</strong>, so the build lands on the install.</li>
   </ul>
   <div class="grow"></div>
-  <p class="sub">If one of these slips, the dates move with it. You hear about it the day it happens.</p>
+  <p class="sub">If one of these slips, the dates move with it, and the price does not. You hear about it the day it happens.</p>
 </div>
 <aside class="notes">
 <p class="time">39:00 to 40:00</p>
@@ -814,7 +829,7 @@
 </div>
 <aside class="notes">
 <p class="time">38:30</p>
-<p>Leave the one-page summary on the table. This is the last slide of the pitch. What follows is an appendix: stop here and have dinner, or turn the page to the engagement if the room asks for it. In the no-numbers variant the deck ends here.</p>
+<p>Leave the one-page summary on the table. This is the last slide of the pitch. What follows is a four-slide appendix (the engagement, the timeline, what I need from you): stop here and have dinner, or turn the page if the room asks for it. In the no-numbers variant the deck ends here.</p>
 </aside>
 </section>
 
@@ -825,73 +840,180 @@
   <div class="grow"></div>
   <div class="kicker">Appendix</div>
   <h1>Scope and investment.</h1>
-  <p class="lead">Reference, after the decisions. The case above stands whether or not you turn this page.</p>
+  <p class="lead">Reference, after the decisions. One engagement for the new center, in five phases, from November to May, ready for a June opening. The case above stands whether or not you turn this page.</p>
   <div class="grow"></div>
 </div>
 <aside class="notes">
 <p class="time">38:30</p>
-<p>One sentence, then advance or stop: "The rest is reference. It is what it would cost to have me design this with you, and you can stop me here if you would rather take it another day."</p>
-<p>If Luis says no numbers, this slide and the two pricing slides are not in the deck you are showing; the no-numbers variant ends on the Thank You.</p>
+<p>One sentence, then advance or stop: "The rest is reference. It is what it would cost to have me take the new center from a blank page to opening day, and you can stop me here if you would rather take it another day."</p>
+<p>If Luis says no numbers, this slide and the three that follow are not in the deck you are showing; the no-numbers variant ends on the Thank You.</p>
 </aside>
 </section>
 
 <!-- 29 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
-  <div class="kicker">What I am proposing: the design</div>
-  <h2 class="tight">Design: fixed fee, fixed scope. Thirty thousand, in four payments, each tied to something you can hold.</h2>
-  <table class="ms">
-    <thead><tr><th style="width:5%">#</th><th>Deliverable</th><th style="width:22%">Target</th><th style="width:12%;text-align:right">Payment</th></tr></thead>
+  <div class="kicker">What I am proposing</div>
+  <h2 class="tight">One engagement, five phases, forty-five thousand. Each phase ends in a sign-off.</h2>
+  <table class="ms five compact">
+    <thead><tr><th style="width:4%">#</th><th style="width:27%">Phase</th><th>What you sign off</th><th style="width:15%">When</th><th style="width:9%;text-align:right">Fee</th><th style="width:19%">Paid</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>Contract language for the four access terms, ready for every vendor</td><td>On signing</td><td class="amt">$6,000</td></tr>
-      <tr><td>2</td><td>RIS, PACS, billing, and voice vendor evaluation. <strong>Working prior authorization demo on synthetic data.</strong></td><td>~December 2026</td><td class="amt">$6,000</td></tr>
-      <tr class="gate"><td></td><td colspan="3">Your gate: you decide whether the rest goes</td></tr>
-      <tr><td>3</td><td>Written specifications: prior authorization, cancellation backfill</td><td>~January 2027</td><td class="amt">$9,000</td></tr>
-      <tr><td>4</td><td>Written specifications: records, owner reporting. Payer-specific prior authorization design.</td><td>~February 2027, once payer mix is known</td><td class="amt">$9,000</td></tr>
-      <tr class="tot"><td></td><td>Design total. You own every document.</td><td></td><td class="amt">$30,000</td></tr>
+      <tr><td>1</td><td><strong>Discovery and requirements</strong><br><span class="dim">How the new center runs: patient flow, services, volumes, payers, what is automated at opening</span></td><td>Requirements and Roadmap, signed</td><td>Nov to mid-Dec<br><span class="dim">6 weeks</span></td><td class="amt">$7,000</td><td>$4,000 at signing<br>$3,000 on delivery</td></tr>
+      <tr><td>2</td><td><strong>Vendor and system selection</strong><br><span class="dim">Scheduling, RIS and PACS, billing, phones, prior authorization</span></td><td>Vendor Selection Report, plus the list of contracts to sign</td><td>Mid-Dec to Jan<br><span class="dim">6 weeks</span></td><td class="amt">$8,000</td><td>In full at the start</td></tr>
+      <tr><td>3</td><td><strong>Design and staffing plan</strong><br><span class="dim">Systems, network, workflows, security and HIPAA, how each role's work runs</span></td><td>Architecture, Workflow and Staffing Plan</td><td>Feb 2027<br><span class="dim">1 month</span></td><td class="amt">$7,000</td><td>In full at the start</td></tr>
+      <tr><td>4</td><td><strong>Build and configure</strong><br><span class="dim">Systems set up and connected, RadAssist configured, prior authorization automated</span></td><td>Every system working in test</td><td>Mar to Apr 2027<br><span class="dim">2 months</span></td><td class="amt">$14,000</td><td>$7,000 on March 1<br>$7,000 on April 1</td></tr>
+      <tr><td>5</td><td><strong>Testing, training and go-live</strong><br><span class="dim">Staff trained on the real systems; opening week on call</span></td><td>Signed go-live readiness, plus opening-week support</td><td>May 2027<br><span class="dim">1 month</span></td><td class="amt">$9,000</td><td>In full at the start</td></tr>
+      <tr class="tot"><td></td><td>Fixed fee, fixed scope</td><td>Ready for a June 2027 opening, about a month of buffer</td><td>Nov to May</td><td class="amt">$45,000</td><td></td></tr>
     </tbody>
   </table>
   <div class="grow"></div>
-  <p class="sub">The build was never inside this number. It is priced on the next page, as its own fixed fee. Dates hold while the assumptions on slide 26 hold.</p>
+  <p class="sub">Anything you ask for outside these phases is approved first and billed at $150 an hour against a retainer you top up, the way your lawyer works. If the opening date moves, the timeline moves with it. The price does not.</p>
 </div>
 <aside class="notes">
-<p class="time">40:00 to 41:00</p>
-<p><strong>Say it once, then stop.</strong> "The design is thirty thousand, fixed, paid in four pieces as I deliver: six when we sign, six when you have the vendor evaluation and the working demo, then nine and nine for the specifications. After the second payment you decide whether the rest goes."</p>
-<p><strong>Why four payments:</strong> Fernando said thirty in two phases looked large, and their own lawyer staged four or five fixed payments. The rate did not change; the largest single check is now nine thousand, and each one buys something he can hold. That is "shorten the term, never cut the rate" in a form he has already accepted from someone else.</p>
-<p><strong>If he pushes on price: shorten the term, never cut the rate.</strong> "Take the first two milestones and decide the rest when you have seen the work and clicked through the demo." Do not break out hours, name an hourly rate, or justify the number at length.</p>
-<p><strong>"Does that change at three centers?"</strong> "No. The design is written once and the four contract terms are negotiated once. What is per-site is the build."</p>
-<p>Contract through RGF Global Ventures LLC, never personally.</p>
+<p class="time">40:00 to 41:30</p>
+<p><strong>Say it once, then stop.</strong> "One engagement for the new center, forty-five thousand, fixed fee, fixed scope, in five phases from now to May. Discovery, seven. Vendor selection, eight. Design and the staffing plan, seven. The build, fourteen. Testing, training and go-live, nine. Each phase ends in a document you sign, and the next one does not start until you have."</p>
+<p><strong>Then the payment line, plainly:</strong> "Four thousand when we sign and three when you have the requirements. After that, each phase is paid when it starts, except the build, which is seven on the first of March and seven on the first of April."</p>
+<p><strong>Why paid at the start of each phase:</strong> "Because you have already signed off the phase before it. You are never paying for something you have not seen; you are paying for the next piece after you approved the last one." Their lawyer works the same way. The largest single check is nine thousand, and the sign-off is the control.</p>
+<p><strong>If he pushes on price: shorten the term, never cut the rate.</strong> "Take Phase 1. Seven thousand, six weeks, and you own the requirements whether or not we go on." Do not break out hours, name an hourly rate for the phases, or justify the number at length. The $150 is for work outside the phases only.</p>
+<p><strong>"What if the opening slips?"</strong> "The timeline moves with it and the price does not. The phases are the work; the dates are where the work lands."</p>
+<p><strong>"What does the $150 cover?"</strong> "Things you ask for that are not in the five phases, approved by you first, drawn against a retainer you top up. If you never ask, you never pay it."</p>
+<p>Contract through RGF Global Ventures LLC, never personally. RadAssist is licensed to the center; it is not part of this fee.</p>
 </aside>
 </section>
-
 
 <!-- 30 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
-  <div class="draftmark">Proposed figures: confirm before showing</div>
-  <div class="kicker">What I am proposing: the build</div>
-  <h2 class="tight">The build is its own fixed fee, in five payments, working before you open.</h2>
-  <table class="ms">
-    <thead><tr><th style="width:5%">#</th><th>Prior authorization build: deliverable</th><th style="width:22%">Target</th><th style="width:12%;text-align:right">Payment</th></tr></thead>
-    <tbody>
-      <tr><td>B1</td><td>The agent running in your RIS vendor's sandbox</td><td>~March 2027</td><td class="amt">$8,000</td></tr>
-      <tr><td>B2</td><td>Connected to the payers' test environments, FHIR and EDI</td><td>~April 2027</td><td class="amt">$8,000</td></tr>
-      <tr><td>B3</td><td>Your staff test it on your own workflows; fixes made</td><td>~May 2027</td><td class="amt">$8,000</td></tr>
-      <tr><td>B4</td><td>Live before you open</td><td>Before opening</td><td class="amt">$8,000</td></tr>
-      <tr><td>B5</td><td>Thirty days of hypercare after opening</td><td>Opening + 30 days</td><td class="amt">$8,000</td></tr>
-      <tr class="tot"><td></td><td>Prior authorization build total</td><td></td><td class="amt">$40,000</td></tr>
-    </tbody>
-  </table>
-  <p class="sub" style="margin-top:18px">Backfill, records, and owner reporting: each specification carries its own fixed build price. <strong>Optional after hypercare:</strong> support and maintenance at $1,500 a month on a two-year term, or per patient if you prefer that model. Hosting and model usage at cost, estimated in the specification before you commit.</p>
+  <div class="kicker">The seven months, on one page</div>
+  <h2 class="tight">Five phases, five sign-offs, one June opening.</h2>
+  <svg class="gantt" viewBox="0 0 1120 486" role="img" aria-label="Timeline, November 2026 to June 2027, five phases with deliverables, payments, and dependencies">
+    <defs>
+      <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a867c"/></marker>
+    </defs>
+    <!-- month grid -->
+    <g font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#8a867c" text-anchor="middle">
+      <text x="284" y="40">Nov</text><text x="392" y="40">Dec</text><text x="500" y="40">Jan</text><text x="608" y="40">Feb</text><text x="716" y="40">Mar</text><text x="824" y="40">Apr</text><text x="932" y="40">May</text><text x="1040" y="40">Jun</text>
+      <text x="338" y="20" font-size="12" letter-spacing="2">2026</text><text x="770" y="20" font-size="12" letter-spacing="2">2027</text>
+    </g>
+    <g stroke="#d9d4c7" stroke-width="1">
+      <line x1="230" y1="52" x2="230" y2="410"/><line x1="338" y1="52" x2="338" y2="410"/><line x1="446" y1="52" x2="446" y2="410"/><line x1="554" y1="52" x2="554" y2="410"/><line x1="662" y1="52" x2="662" y2="410"/><line x1="770" y1="52" x2="770" y2="410"/><line x1="878" y1="52" x2="878" y2="410"/><line x1="986" y1="52" x2="986" y2="410"/><line x1="1094" y1="52" x2="1094" y2="410"/>
+    </g>
+    <line x1="446" y1="52" x2="446" y2="410" stroke="#1c1b18" stroke-width="1.5"/>
+    <!-- opening flag -->
+    <line x1="1040" y1="30" x2="1040" y2="410" stroke="#7a1f2b" stroke-width="2" stroke-dasharray="6 5"/>
+    <path d="M1040,30 L1040,4 L1100,17 Z" fill="#7a1f2b"/>
+    <text x="1046" y="76" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="17" fill="#7a1f2b">Opening</text>
+    <text x="1046" y="94" font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7a1f2b">~June 2027</text>
+    <rect x="986" y="56" width="54" height="354" fill="#f1e4e5" opacity="0.6"/>
+    <text x="1013" y="236" font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7a1f2b" text-anchor="middle" transform="rotate(-90 1013 236)">about a month of buffer</text>
+
+    <!-- row labels -->
+    <g font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="17" fill="#1c1b18">
+      <text x="14" y="95"><tspan font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="22" fill="#7a1f2b">1</tspan><tspan dx="10">Discovery</tspan></text><text x="38" y="115" font-size="13" fill="#8a867c">$7,000 · 6 weeks</text>
+      <text x="14" y="165"><tspan font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="22" fill="#7a1f2b">2</tspan><tspan dx="10">Vendor selection</tspan></text><text x="38" y="185" font-size="13" fill="#8a867c">$8,000 · 6 weeks</text>
+      <text x="14" y="235"><tspan font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="22" fill="#7a1f2b">3</tspan><tspan dx="10">Design and staffing</tspan></text><text x="38" y="255" font-size="13" fill="#8a867c">$7,000 · 1 month</text>
+      <text x="14" y="305"><tspan font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="22" fill="#7a1f2b">4</tspan><tspan dx="10">Build and configure</tspan></text><text x="38" y="325" font-size="13" fill="#8a867c">$14,000 · 2 months</text>
+      <text x="14" y="375"><tspan font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="22" fill="#7a1f2b">5</tspan><tspan dx="10">Test, train, go-live</tspan></text><text x="38" y="395" font-size="13" fill="#8a867c">$9,000 · 1 month</text>
+    </g>
+
+    <!-- bars -->
+    <g>
+      <rect x="230" y="76" width="162" height="28" rx="3" fill="#7a1f2b"/>
+      <rect x="392" y="146" width="162" height="28" rx="3" fill="#7a1f2b"/>
+      <rect x="554" y="216" width="108" height="28" rx="3" fill="#7a1f2b"/>
+      <rect x="662" y="286" width="216" height="28" rx="3" fill="#7a1f2b"/>
+      <rect x="878" y="356" width="108" height="28" rx="3" fill="#7a1f2b"/>
+    </g>
+
+    <!-- dependency arrows: each phase starts after the previous sign-off -->
+    <g fill="none" stroke="#8a867c" stroke-width="1.6" marker-end="url(#arr)">
+      <path d="M392,106 L392,142"/>
+      <path d="M554,176 L554,212"/>
+      <path d="M662,246 L662,282"/>
+      <path d="M548,176 L548,300 L656,300"/>
+      <path d="M878,316 L878,352"/>
+    </g>
+    <text x="832" y="332" font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#8a867c">+ vendor lead times</text>
+
+    <!-- deliverable milestones (diamond at the end of each bar) -->
+    <g fill="#faf8f3" stroke="#7a1f2b" stroke-width="2.5">
+      <path d="M392,78 L404,90 L392,102 L380,90 Z"/>
+      <path d="M554,148 L566,160 L554,172 L542,160 Z"/>
+      <path d="M662,218 L674,230 L662,242 L650,230 Z"/>
+      <path d="M878,288 L890,300 L878,312 L866,300 Z"/>
+      <path d="M986,358 L998,370 L986,382 L974,370 Z"/>
+    </g>
+    <g font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#1c1b18">
+      <text x="410" y="86">Requirements and Roadmap, signed</text>
+      <text x="572" y="156">Vendor Selection Report, contracts to sign</text>
+      <text x="680" y="226">Architecture, Workflow and Staffing Plan</text>
+      <text x="876" y="280" text-anchor="end">All systems working in test</text>
+      <text x="984" y="350" text-anchor="end">Go-live readiness, signed</text>
+    </g>
+
+    <!-- payment markers -->
+    <g font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+      <circle cx="244" cy="90" r="10" fill="#faf8f3" stroke="#1c1b18" stroke-width="1.5"/><text x="244" y="94" fill="#1c1b18">$</text>
+      <circle cx="366" cy="90" r="10" fill="#faf8f3" stroke="#1c1b18" stroke-width="1.5"/><text x="366" y="94" fill="#1c1b18">$</text>
+      <circle cx="406" cy="160" r="10" fill="#faf8f3" stroke="#1c1b18" stroke-width="1.5"/><text x="406" y="164" fill="#1c1b18">$</text>
+      <circle cx="568" cy="230" r="10" fill="#faf8f3" stroke="#1c1b18" stroke-width="1.5"/><text x="568" y="234" fill="#1c1b18">$</text>
+      <circle cx="676" cy="300" r="10" fill="#faf8f3" stroke="#1c1b18" stroke-width="1.5"/><text x="676" y="304" fill="#1c1b18">$</text>
+      <circle cx="784" cy="300" r="10" fill="#faf8f3" stroke="#1c1b18" stroke-width="1.5"/><text x="784" y="304" fill="#1c1b18">$</text>
+      <circle cx="892" cy="370" r="10" fill="#faf8f3" stroke="#1c1b18" stroke-width="1.5"/><text x="892" y="374" fill="#1c1b18">$</text>
+    </g>
+    <g font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#4a4740">
+      <text x="232" y="122">$4,000 at signing · $3,000 on delivery</text>
+      <text x="394" y="192">$8,000 at the start</text>
+      <text x="556" y="262">$7,000 at the start</text>
+      <text x="664" y="332">$7,000 Mar 1 · $7,000 Apr 1</text>
+      <text x="880" y="402">$9,000 at the start</text>
+    </g>
+
+    <!-- legend -->
+    <g font-family="-apple-system, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#4a4740">
+      <rect x="230" y="438" width="28" height="12" rx="2" fill="#7a1f2b"/><text x="266" y="449">Phase</text>
+      <path d="M340,436 L349,445 L340,454 L331,445 Z" fill="#faf8f3" stroke="#7a1f2b" stroke-width="2"/><text x="358" y="449">Deliverable you sign off</text>
+      <circle cx="540" cy="445" r="9" fill="#faf8f3" stroke="#1c1b18" stroke-width="1.5"/><text x="540" y="449" font-size="11" font-weight="700" text-anchor="middle" fill="#1c1b18">$</text><text x="556" y="449">Payment</text>
+      <path d="M640,445 L672,445" stroke="#8a867c" stroke-width="1.6" marker-end="url(#arr)" fill="none"/><text x="682" y="449">Starts only after the sign-off before it</text>
+      <line x1="930" y1="436" x2="930" y2="454" stroke="#7a1f2b" stroke-width="2" stroke-dasharray="5 4"/><text x="940" y="449">Target opening</text>
+    </g>
+  </svg>
+  <p class="sub" style="margin-top:10px">If the opening date moves, every bar moves with it. The build waits on your vendors' lead times as well as on Phase 3, which is why vendor selection comes early.</p>
 </div>
 <aside class="notes">
-<p class="time">41:00 to 42:30</p>
-<p><strong>ALL FIGURES ON THIS SLIDE ARE PROPOSED. Rick confirms them before this slide is shown; then delete the red tag in the HTML (the div with class "draftmark") and re-render.</strong></p>
-<p><strong>Luis asked how you make money. Have one sentence:</strong> "Three ways, all in writing: a fixed fee to design it, a fixed fee to build it, and an optional monthly fee to keep it running. I keep the rights to my own product, which is why those numbers stay where they are."</p>
-<p><strong>Recommended build range: $36,000 to $48,000 for prior authorization; $40,000 proposed.</strong> Reasoning: the build is larger than the design, not smaller. It runs against two outside calendars (the RIS vendor's sandbox and the payers' test environments), it carries a human approval step and an audit trail, and it includes a staff test cycle and thirty days of hypercare after opening. Price the engagement, not the code. Five equal payments of $8,000 keep every check below the largest design payment's neighborhood, so no single one feels like a decision. If he pushes, drop a scope item or a milestone, never the rate.</p>
-<p><strong>Recurring option: $1,200 to $2,000 a month is the sensible band; $1,500 proposed.</strong> They have seen Exa at about $0.90 per patient and Sectra on a multi-year per-patient commitment with service included, so a per-patient option will feel familiar. Recommend the flat monthly fee for the first year, because nobody knows the volume before opening; offer per patient (around $1.00 per completed study with a monthly floor) once real volume exists. Infrastructure (host, database, model usage, backups, monitoring) is passed through at cost and estimated in writing before they commit; that line was never priced before, and it is the reason nothing was promised live earlier.</p>
-<p>Do not invent hours if asked. "It is a fixed price for a fixed result. If the scope changes, the price is written down before the work starts."</p>
-<p>If he wants the build smaller: the five milestones are already the small version. Offer B1 alone as a decision point: "Pay for the sandbox build, see it run on your RIS, then decide."</p>
+<p class="time">41:30 to 42:30</p>
+<p><strong>Walk it left to right, once, with your finger.</strong> "We start in November with discovery, six weeks, and you sign the requirements before Christmas. Vendor selection runs through January, because the RIS choice drives everything after it. February is the design and the staffing plan. March and April is the build, and it cannot start until the vendors are chosen and the design is signed. May is testing, training, and the go-live sign-off. That leaves about a month of buffer before a June opening."</p>
+<p><strong>The point of the picture, said once:</strong> "Every diamond is a document you sign. Every phase starts only after the diamond before it. The dollar marks are where the payments fall." Then stop and let Fernando look at it. He is visual; this is the slide he will study.</p>
+<p><strong>Why the build waits on two things:</strong> the signed design and the vendors' own lead times (contracts, sandbox access, equipment dates). Say that plainly: "The build date is the one I control least, because part of it is on your vendors' calendars. That is why selection is Phase 2 and not Phase 4."</p>
+<p><strong>"What if the opening slips to August?"</strong> "Then the bars slide right. The buffer gets longer, the work does not change, and the price does not change. I would rather you open ready than open on a date."</p>
+<p><strong>Jesse may ask what is on the critical path.</strong> Vendor selection and vendor lead times. Everything else is inside my control.</p>
+</aside>
+</section>
+
+<!-- 31 -->
+<section data-nonumbers="remove" class="slide">
+<div class="inner">
+  <div class="kicker">What I need from you</div>
+  <h2 class="tight">Each phase runs on a few things only you can give. None of them is a surprise.</h2>
+  <table class="ms five">
+    <thead><tr><th style="width:4%">#</th><th style="width:22%">Phase</th><th>What I need from you</th><th style="width:30%">What you get back</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Discovery and requirements</td><td>Time with Dr. Ramos and Fernando. The services and modalities you plan to offer, expected volumes and payer mix, and the target opening date. Dr. Ramos's current center is an input, not the template.</td><td>Requirements and Roadmap, signed by you</td></tr>
+      <tr><td>2</td><td>Vendor and system selection</td><td>Budget ranges, any vendors you already prefer, and your decisions as the scoring comes in.</td><td>Vendor Selection Report and the list of contracts to sign</td></tr>
+      <tr><td>3</td><td>Design and staffing plan</td><td>Operating hours, the roles you intend to hire, and the vendor contracts as they are negotiated.</td><td>Architecture, Workflow and Staffing Plan</td></tr>
+      <tr><td>4</td><td>Build and configure</td><td>Signed vendor contracts and business associate agreements, sandbox access to each system, and equipment delivery dates.</td><td>Every system working in test</td></tr>
+      <tr><td>5</td><td>Testing, training and go-live</td><td>Your staff, hired and available for training, and the final opening date.</td><td>Signed go-live readiness, and me on call through opening week</td></tr>
+    </tbody>
+  </table>
+  <div class="grow"></div>
+  <p class="sub">One named person on your side who approves. Everything I produce is written for an engineer who has never met me, and you own all of it.</p>
+</div>
+<aside class="notes">
+<p class="time">42:30 to 43:00</p>
+<p><strong>Read the left column only if asked; otherwise one sentence:</strong> "This is what each phase needs from you, so nothing on my side is waiting on a question I should have asked earlier."</p>
+<p><strong>The line that matters to Fernando:</strong> Dr. Ramos's current center is an input, not the template. This is a new center, designed from its own requirements. Luis's experience tells us what works and what to avoid; it does not decide the design.</p>
+<p><strong>Staffing, if it comes up here:</strong> the Phase 3 plan is how each role's work runs with the automation in place, so they hire for what the center actually needs on day one. It is never a headcount target. Say "changes what your people do," never "reduces."</p>
+<p><strong>"Who approves on our side?"</strong> Ask them to name one person tonight if they are ready; otherwise it is the first question of Phase 1.</p>
 </aside>
 </section>
 
@@ -906,11 +1028,11 @@
 <script>
 /* NO-NUMBERS VARIANT. Open this file with ?nonumbers (file:///...deck.html?nonumbers) and every
    element tagged data-nonumbers="remove" is deleted from the DOM before the deck script runs, so the
-   counter, overview numbering, last-slide page-break and print output all see a 27-slide deck.
+   counter, overview numbering, last-slide page-break and print output all see a 27-slide deck (the four appendix slides are removed).
    Regenerate the PDF with:
    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer \
      --print-to-pdf=Imaging-Center-Deck-NoNumbers-2026-10-20.pdf "file://$PWD/imaging-center-automation-deck-2026-10-20.html?nonumbers"
-   Without the param the file renders the full 30-slide deck unchanged. One source, no fork. */
+   Without the param the file renders the full 31-slide deck unchanged. One source, no fork. */
 (function () {
   if (/[?&]nonumbers\b/.test(location.search)) {
     document.documentElement.classList.add('nonumbers');

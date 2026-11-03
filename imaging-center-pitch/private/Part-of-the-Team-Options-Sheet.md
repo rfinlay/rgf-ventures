@@ -2,13 +2,13 @@
 
 **PRIVATE. Rick only. Never share with Luis, Fernando, or Jesse.** Prepared 2026-11-01.
 
-**Context.** On the 10-31 call Luis said, "I really think you need to be part of the team." The new center's financing is approved. RadAssist is RGF's software. Luis is its clinical expert and pilot user. The partner dinner is Wednesday 11-04 or Thursday 11-05.
+**Context.** On the 10-31 call Luis said, "I really think you need to be part of the team." The new center's financing is approved. RadAssist is RGF's software. Luis is its clinical expert and pilot user. The partner dinner is Wednesday 11-04 or Thursday 11-05. **The engagement, approved 2026-11-02: $45,000 fixed fee in five phases (Discovery $7,000; Vendor selection $8,000; Design and staffing plan $7,000; Build and configure $14,000; Testing, training and go-live $9,000), November 2026 to May 2027, each phase paid at its start after the previous sign-off ($4,000 + $3,000 for Phase 1; $7,000 + $7,000 for Phase 4), $150/hr outside the phases against a topped-up retainer.**
 
 ## Principles (hold these no matter which option)
 
 1. **Cash first, equity is a kicker.** Your finances are tight. Equity in a center that opens around June 2027 pays nothing for years and can be diluted. Monthly cash pays rent now.
 2. **RadAssist stays owned by RGF and is licensed to the center.** Never contribute it, assign it, or let it become a center asset. Luis's clinical input is covered by a separate advisor agreement (see Doc 2).
-3. **The engagement stays separate from any role.** The $30k design (phased, fixed-fee milestones) and the separately priced build are a contract between the center and RGF. A role does not absorb them, discount them, or replace them.
+3. **The engagement stays separate from any role.** The $45,000 five-phase engagement (fixed fee, paid per phase at the start, each phase gated on the previous sign-off) is a contract between the center and RGF. A role does not absorb it, discount it, or replace it. The $150/hr retainer for out-of-scope work is also separate from any retainer for a role; keep the two ledgers apart.
 4. **Everything runs through RGF Global Ventures LLC, never you personally.**
 
 ## The options
@@ -33,8 +33,8 @@ I have not put market salary numbers here on purpose. Set these from your own an
 **Option B now, with Option C as the follow-up.**
 
 - RGF becomes the center's fractional technology lead on a monthly retainer with an hours cap, starting when the design engagement starts.
-- The engagement and build are billed separately, as priced.
-- RadAssist is licensed to the center, never contributed.
+- The five-phase engagement is billed as priced ($45,000), on its own schedule.
+- RadAssist is licensed to the center, never contributed. Luis's clinical contributions are compensated under the advisor agreement (Doc 2): **a 20% royalty on net revenue RGF receives from RadAssist licenses to third-party centers, for a set term of [X] years from first third-party sale (placeholder; Rick to set).** No royalty on the center's own license, on consulting fees, or on this engagement.
 - Equity or a performance bonus is discussed after opening, once there are real numbers. If they offer equity now, take it only on top of the retainer, never instead of it.
 
 ## Walk-away lines
@@ -47,6 +47,6 @@ I have not put market salary numbers here on purpose. Set these from your own an
 
 ## How to say it at dinner (in your voice)
 
-> "Luis, I appreciate that, and I want to be part of this. Here's how I'd like to do it so it's clean for everybody. The design and the build stay what they are, fixed fee, fixed scope, milestones you can see. On top of that, I'd come in as your technology lead on a monthly retainer. You get me on every vendor call and every system decision, with a set number of hours so nobody gets surprised. RadAssist stays my company's product and the center licenses it, same as any other center would. Once we're open and we see the numbers, I'm happy to talk about tying part of it to how the center does. I'd rather earn that than ask for it up front."
+> "Luis, I appreciate that, and I want to be part of this. Here's how I'd like to do it so it's clean for everybody. The engagement stays what it is, forty-five thousand, fixed fee, fixed scope, five phases you sign off one at a time. On top of that, I'd come in as your technology lead on a monthly retainer. You get me on every vendor call and every system decision, with a set number of hours so nobody gets surprised. RadAssist stays my company's product and the center licenses it, same as any other center would. Once we're open and we see the numbers, I'm happy to talk about tying part of it to how the center does. I'd rather earn that than ask for it up front."
 
 If pushed on equity now: *"I'm open to it later. Right now I need it to be a paid role, and I'd rather be straight with you about that."*

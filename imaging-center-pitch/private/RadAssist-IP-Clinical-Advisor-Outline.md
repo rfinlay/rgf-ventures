@@ -23,10 +23,10 @@ PRIVATE. Rick only. Term-sheet outline, not a contract. Prepared 2026-11-01.
 - Advisor keeps his general medical knowledge and skill.
 
 ## 5. Compensation: royalty or revenue share
-- **Rate:** [__]% (placeholder).
+- **Rate:** 20% (Rick's working figure, 2026-11-02; attorney to confirm).
 - **Base:** net revenue RGF actually receives from RadAssist sales and licenses to **third-party centers** (define net: after refunds, taxes, payment fees, reseller costs).
 - **Excludes:** revenue from Advisor's own centers, consulting fees, and build or integration services, unless agreed.
-- **Term:** [__] years from first third-party sale (placeholder), or for as long as the modules he contributed are sold.
+- **Term:** a set term of [__] years from first third-party sale (placeholder; Rick to set), not open-ended. Alternative for the attorney: for as long as the modules he contributed are sold.
 - **Cap or step-down:** [optional placeholder].
 - Payment quarterly, with a simple statement. Audit right limited to once a year.
 

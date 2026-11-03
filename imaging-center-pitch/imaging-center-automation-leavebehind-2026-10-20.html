@@ -21,7 +21,7 @@
   h2 { font-family: var(--serif); font-weight: 400; font-size: 11.5pt; margin: 5pt 0 2.5pt 0; }
   p { margin-bottom: 5pt; }
   .intro { font-size: 9.1pt; color: var(--soft); }
-  table { width: 100%; border-collapse: collapse; font-size: 7.6pt; line-height: 1.18; margin-top: 2pt; }
+  table { width: 100%; border-collapse: collapse; font-size: 7.4pt; line-height: 1.15; margin-top: 2pt; }
   th { text-align: left; font-size: 7.2pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); font-weight: 600; padding: 0 7pt 3pt 0; border-bottom: 1.5px solid var(--ink); }
   td { padding: 1.5pt 7pt 1.5pt 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
   td.rec { font-weight: 600; white-space: nowrap; }
@@ -52,7 +52,6 @@
   table.ms td.amt { text-align: right; font-weight: 600; white-space: nowrap; }
   table.ms tr.gate td { color: var(--accent); font-size: 6.8pt; letter-spacing: 0.08em; text-transform: uppercase; }
   table.ms tr.tot td { font-weight: 600; border-bottom: 1.5px solid var(--ink); }
-  .draftmark { display: inline-block; font-size: 7pt; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: #b4232f; padding: 1.5pt 5pt; font-weight: 700; margin-left: 6pt; vertical-align: middle; }
   .demourl { color: var(--accent); font-weight: 600; }
   .page2 p, .page2 li { font-size: 8.9pt; line-height: 1.3; }
   .page2 h2 { margin-top: 9pt; }
@@ -83,7 +82,7 @@
     <div class="who">Prepared for <b>Dr. Luis Ramos</b>, <b>Fernando Escarzaga</b>,<br>and <b>Jesse Martinez</b><br>by <b>Richard Finlay</b>, RGF Global Ventures LLC</div>
   </header>
 
-  <p class="intro">Your new center, targeted to open around June 2027 (April at the earliest), with the MRI signed, no staff hired, and no systems chosen. The build starts around March 2027 so prior authorization is working before you open. Every operational automation decision is cheap and reversible today and will not be once the vendors are signed.</p>
+  <p class="intro">Your new center, targeted to open around June 2027, with the MRI signed, no staff hired, and no systems chosen. One engagement takes it from a blank page to opening day, November to May. Every operational automation decision is cheap and reversible today and will not be once the vendors are signed.</p>
 
   <div class="free"><b>The free move, whatever you decide about me.</b> Put four terms in every vendor contract before signing: named API access to your own data, HL7 interface count and fee schedule fixed at signature, data export rights in standard formats at no charge, and DICOM query permissions for systems you authorize. Before signature these are contract terms. After signature they are hostage terms.</div>
 
@@ -96,7 +95,7 @@
       <tr><td>3</td><td>Owner reporting, including an agent you can ask questions of</td><td class="rec build">Build</td><td>Modality, reader, referrer, turnaround, revenue per slot, appeal rate, from the RIS and the billing system joined. Ask it in plain words and it answers from your own numbers. Read-only, no patient contact, smallest compliance footprint on this list.</td></tr>
       <tr><td>4</td><td>Scheduling: cancellation backfill</td><td class="rec build">Build, small</td><td>UC Irvine study: 22.3% of outpatient radiology exams cancelled versus 2.0% no-shows, 70.2% of cancellations patient-initiated. The empty slot is known in advance. A ranked waitlist on top of the RIS, with a per-patient rate governor for the TCPA cap.</td></tr>
       <tr><td>5</td><td>Medical records: inbound requests and outbound prior studies</td><td class="rec build">Build, selectively</td><td>The HIPAA 30-day clock runs from receipt. Retrieval labor is not chargeable, only copying is. A new center opens with zero priors on file, and no vendor has solved outbound retrieval for a small site.</td></tr>
-      <tr><td>6</td><td>Radiology report assistance</td><td class="rec build">Build (exists)</td><td>RadAssist, used daily by Dr. Ramos: calcium scoring, thyroid ultrasound (ACR TI-RADS), and Spine MRI (cervical, thoracic, lumbar), the last built from his requirements to live and tested in a day, every rule his. Next on the roadmap: voice dictation, brain, and cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise. His template, his rules; the radiologist confirms every value and signs. Nothing clinical leaves without a signature. At the center: DICOM worklist and query in, HL7 v2 ORU out to the RIS. A different build from records retrieval (row 5). One instance per center, each center's data its own; it costs more, by design, for governance.</td></tr>
+      <tr><td>6</td><td>Radiology report assistance</td><td class="rec build">Build (exists)</td><td>RadAssist, used daily by Dr. Ramos: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar), built from his requirements to live and tested in a day, and CT Spine (live November 2), every rule his. Next on the roadmap: voice dictation, brain, and cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise. His template, his rules; the radiologist confirms every value and signs. Nothing clinical leaves without a signature. At the center: DICOM worklist and query in, HL7 v2 ORU out to the RIS. A different build from records retrieval (row 5). One instance per center, each center's data its own; it costs more, by design, for governance.</td></tr>
       <tr><td>7</td><td>Scheduling: reminders, self-scheduling, intake</td><td class="rec">Buy (your RIS)</td><td>Commodity, bundled into modern cloud imaging RIS products. Text reminders moved MRI no-shows from 5.1% to 3.8% in a randomized trial. Real, modest, already in the box.</td></tr>
       <tr><td>8</td><td>Answering patients (inbound voice)</td><td class="rec">Buy, I integrate</td><td>26.5% of El Paso County residents speak English less than "very well," nearly all Spanish speakers. Highest-blast-radius failure on this list, and a funded vendor category. I specify, evaluate, integrate, and supervise.</td></tr>
       <tr><td>9</td><td>Billing, claims, and the eligibility feed</td><td class="rec">Buy</td><td>Commodity clearinghouse function, established vendor market. I do not touch the claims work, and I am not building an eligibility system. Your billing vendor already exposes the EDI 270/271 eligibility feed. Row 2 builds the thing that reads that feed and acts on it, so the four access terms belong in the billing contract too.</td></tr>
@@ -166,43 +165,28 @@
         <li>The agent watches the payer's decision clock and schedules the study when approval arrives.</li>
         <li>If denied, it drafts the appeal for a person to review and sign.</li>
       </ol>
-      <p style="margin-top:4pt"><b>You will click through this yourself:</b> a working prior authorization demo on synthetic data, no real patients, delivered in the first phase. <a class="demourl" href="https://rfinlay.github.io/imaging-priorauth-demo/">rfinlay.github.io/imaging-priorauth-demo</a></p>
+      <p style="margin-top:4pt"><b>You will click through this yourself:</b> a working prior authorization demo on synthetic data, no real patients, already built. The production version is wired to your RIS and payers in Phase 4. <a class="demourl" href="https://rfinlay.github.io/imaging-priorauth-demo/">rfinlay.github.io/imaging-priorauth-demo</a></p>
     </div>
   </div>
 
   <h2>What the dates depend on</h2>
-  <p>The build starts around March 2027 so prior authorization works before you open. That holds when these are in place: a signed agreement; your RIS and PACS vendors selected, with sandbox access to their API, HL7, and DICOM interfaces; test access to the payers' FHIR and EDI connections; HIPAA business associate agreements signed; one named person on your side who approves; and your expected volumes and payer mix before payer-specific design starts. <b>If one of these slips, the dates move with it.</b></p>
+  <p>The build starts in March 2027 so everything works before you open. That holds when these are in place: a signed agreement; your vendors selected and contracted in Phase 2, with sandbox access to their API, HL7, and DICOM interfaces; test access to the payers' FHIR and EDI connections; HIPAA business associate agreements signed; one named person on your side who approves; your expected volumes and payer mix before payer-specific design starts; and equipment delivery dates. <b>If one of these slips, the dates move with it, and the price does not.</b></p>
 
   <div data-nonumbers="remove">
-    <h2>What I am proposing: fixed fee, fixed scope, paid as each piece is delivered</h2>
-    <div class="two">
-      <div>
-        <p><b>Design, $30,000.</b> Vendor contract terms, evaluations, and specifications.</p>
-        <table class="ms">
-          <tbody>
-            <tr><td>1</td><td>Contract language for the four access terms</td><td>On signing</td><td class="amt">$6,000</td></tr>
-            <tr><td>2</td><td>RIS, PACS, billing, voice vendor evaluation; working prior auth demo</td><td>~Dec 2026</td><td class="amt">$6,000</td></tr>
-            <tr class="gate"><td></td><td colspan="3">Your gate: you decide whether the rest goes</td></tr>
-            <tr><td>3</td><td>Specifications: prior auth, cancellation backfill</td><td>~Jan 2027</td><td class="amt">$9,000</td></tr>
-            <tr><td>4</td><td>Specifications: records, owner reporting; payer-specific design</td><td>~Feb 2027</td><td class="amt">$9,000</td></tr>
-            <tr class="tot"><td></td><td>Design total</td><td></td><td class="amt">$30,000</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div>
-        <p><b>Build, prior authorization, $40,000.</b><span class="draftmark">Proposed: confirm</span> Its own fixed fee; never inside the design.</p>
-        <table class="ms">
-          <tbody>
-            <tr><td>B1</td><td>Running in your RIS vendor's sandbox</td><td>~Mar 2027</td><td class="amt">$8,000</td></tr>
-            <tr><td>B2</td><td>Connected to payer test environments</td><td>~Apr 2027</td><td class="amt">$8,000</td></tr>
-            <tr><td>B3</td><td>Your staff test it; fixes made</td><td>~May 2027</td><td class="amt">$8,000</td></tr>
-            <tr><td>B4</td><td>Live before you open</td><td>Before opening</td><td class="amt">$8,000</td></tr>
-            <tr><td>B5</td><td>Thirty days of hypercare</td><td>Opening + 30</td><td class="amt">$8,000</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <p style="margin-top:5pt">Backfill, records, and owner reporting each carry their own fixed build price in their specification. <b>Optional after hypercare:</b> support and maintenance at $1,500 a month on a two-year term, or per patient if you prefer that model; hosting and model usage at cost, estimated in writing before you commit. Contracted through RGF Global Ventures LLC.</p>
+    <h2>What I am proposing: one engagement, five phases, $45,000, fixed fee and fixed scope</h2>
+    <table class="ms">
+      <thead><tr><th style="width:3%">#</th><th style="width:19%">Phase</th><th>What you sign off</th><th style="width:13%">When</th><th style="width:8%;text-align:right">Fee</th><th style="width:19%">Paid</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Discovery and requirements</td><td>Requirements and Roadmap: how the new center runs from scheduling to report, services and modalities, volumes, payers, what is automated at opening</td><td>Nov to mid-Dec 2026</td><td class="amt">$7,000</td><td>$4,000 at signing, $3,000 on delivery</td></tr>
+        <tr><td>2</td><td>Vendor and system selection</td><td>Vendor Selection Report and the list of contracts to sign: scheduling, RIS and PACS, billing, phones, prior authorization</td><td>Mid-Dec to Jan 2027</td><td class="amt">$8,000</td><td>In full at the start of the phase</td></tr>
+        <tr><td>3</td><td>Design and staffing plan</td><td>Architecture, Workflow and Staffing Plan: systems, network, workflows, security and HIPAA, how each role's work runs with the automation in place</td><td>Feb 2027</td><td class="amt">$7,000</td><td>In full at the start of the phase</td></tr>
+        <tr><td>4</td><td>Build and configure</td><td>Every system set up, connected, and working in test; RadAssist configured; prior authorization automated; IT install coordinated</td><td>Mar to Apr 2027</td><td class="amt">$14,000</td><td>$7,000 on March 1, $7,000 on April 1</td></tr>
+        <tr><td>5</td><td>Testing, training and go-live</td><td>Signed go-live readiness, staff trained on the real systems, opening-week support</td><td>May 2027</td><td class="amt">$9,000</td><td>In full at the start of the phase</td></tr>
+        <tr class="tot"><td></td><td>Total</td><td>Ready for a June 2027 opening, with about a month of buffer</td><td>Nov 2026 to May 2027</td><td class="amt">$45,000</td><td></td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:5pt"><b>How it works.</b> Each phase starts only after you sign off the deliverable before it. Work outside the five phases is approved by you first and billed at $150 an hour against a retainer you top up. If the opening date moves, the timeline moves with it; the price does not. Contracted through RGF Global Ventures LLC. RadAssist is licensed to the center separately.</p>
+    <p style="margin-top:3pt"><b>What I need from you, by phase.</b> 1: time with Dr. Ramos and Fernando, planned services and modalities, volumes and payer mix, the target opening date. 2: budget ranges, preferred vendors, decisions. 3: hours, roles, vendor contracts in progress. 4: signed contracts and business associate agreements, sandbox access, equipment dates. 5: staff for training, the final opening date. Throughout: one named person who approves.</p>
   </div>
 
   <div class="grow"></div>

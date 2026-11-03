@@ -17,6 +17,8 @@ Slide 19 is up. Say the proof point once, then move to the tab:
 
 > "Spine went live this week. Luis sent me his template and his rules, and it was live and tested the same day. Every rule in it is his. Let me show you one case."
 
+If the slide prompts it, one sentence on CT: "CT Spine followed two days later, live since Sunday, from his sample reports. Same tool, switched to CT." Then demo the MRI case only; do not switch modalities at the table.
+
 ## 1. Pick the study (15 seconds)
 
 The page opens on **Spine MRI**. Region is already **Lumbosacral**, contrast **Without contrast**. If a previous draft is offered, click **New study**.
@@ -177,7 +179,7 @@ Say plainly: "These numbers are synthetic placeholders. Yours will come from you
 
 ## Questions you will get
 
-- **"Is any of this connected to a real insurance company?"** No. It talks to HL7's public test server for the prior-auth standard. Connecting to Blue Cross or UHC means credentialing with each payer, which is build work (milestone B2 onward) once the center has payer contracts.
+- **"Is any of this connected to a real insurance company?"** No. It talks to HL7's public test server for the prior-auth standard. Connecting to Blue Cross or UHC means credentialing with each payer, which is Phase 4 work once the center has payer contracts.
 - **"What about the clearinghouse / Availity?"** Same code path; the agent can submit through a clearinghouse where a payer is not yet on FHIR. Fax-and-portal payers get a human-assisted path with the agent preparing the packet.
 - **"Exa says they are building this."** Good, use it if it ships and it is good. The agent sits above the PACS and RIS, so it works with Exa, Sectra, or whatever the center buys, and it covers the owner's reporting and the appeal drafting, which a PACS vendor will not.
 - **"Can it get this wrong?"** Yes, which is why the two purple gates exist. It never submits or signs on its own.

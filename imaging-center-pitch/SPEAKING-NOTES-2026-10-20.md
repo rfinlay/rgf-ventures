@@ -5,23 +5,23 @@
 > **In the room:** Luis, Fernando Escarzaga, and **Jesse Martinez** (an engineer; quiet, analytic, humble).
 > Format: a quiet place, a conversation, not a pitch to an audience. Rick has court by Zoom on Wed 10-28.
 >
-> **What changed, so the slide numbers moved (30 slides; 27 in the no-numbers deck):**
+> **What changed, so the slide numbers moved (31 slides; 27 in the no-numbers deck):**
 > - **New slide 6, "What an AI agent is."** Plain language: the two kinds, the guardrails.
-> - **New slide 11, one order through prior authorization,** with the working demo as a first-phase deliverable. **Alan's demo is live at https://rfinlay.github.io/imaging-priorauth-demo/** and is linked on slide 11 and leave-behind page 2. Click through it yourself the day of the dinner.
+> - **New slide 11, one order through prior authorization,** with the working demo already built. **Alan's demo is live at https://rfinlay.github.io/imaging-priorauth-demo/** and is linked on slide 11 and leave-behind page 2. Click through it yourself the day of the dinner.
 > - **New slide 26, "What the dates depend on."** The assumptions. The only place a date is promised, and every date on it is conditional.
 > - **Timeline:** opening targeted around **June 2027, April at the earliest**. The **build starts around March 2027** so prior authorization works before opening. Say only "your new center." **Never mention any building, property, address, or what was at the site before.**
-> - **Pricing restructured (appendix, slides 28 to 30):** design stays $30,000 but is now four milestone payments ($6k, $6k, $9k, $9k) with the gate after the second; the **build is a separate fixed fee** (prior authorization, $40,000 in five $8,000 milestones, **PROPOSED, Rick to confirm**); an optional monthly support fee (**$1,500/month proposed**). The red "Proposed figures" tag on slide 30 and the leave-behind comes off only after Rick confirms.
+> - **Pricing, APPROVED by Rick 2026-11-02 (appendix, slides 28 to 31):** one fixed-fee engagement for the new center, **$45,000 in five phases, November 2026 to May 2027**, ready for a ~June 2027 opening with about a month of buffer. Phase 1 Discovery and Requirements $7,000 (Nov to mid-Dec; $4,000 at signing, $3,000 on delivery) · Phase 2 Vendor and System Selection $8,000 (mid-Dec to Jan) · Phase 3 Design and Staffing Plan $7,000 (Feb) · Phase 4 Build and Configure $14,000 (Mar to Apr; $7,000 March 1, $7,000 April 1) · Phase 5 Testing, Training and Go-Live $9,000 (May). Phases 2, 3 and 5 are paid in full at the start. Each phase starts only after the previous deliverable is signed off. Outside the phases: $150/hr, approved first, against a retainer they top up. The timeline flexes if the opening moves; the price does not. **Slide 30 is the timeline (Gantt) and slide 31 is "What I need from you."** The old design/build split and every red "Proposed figures" tag are gone.
 > - **Slide 19 is now a LIVE RadAssist Spine MRI demo (updated 2026-11-01).** Spine shipped 10-31 from Luis's template, live and tested in a day, every rule his. Three-minute talk track under slide 19; case values on the printed card; backups in `demo-assets/`. Roadmap: voice dictation, then brain and cardiac CTA (CAD-RADS). AI image auto-fill is "a future item with a regulatory path," never a promise. **Licensing to other centers stays OUT of the room** (see slide 19).
 > - **Dinner is now the week of 11-02: Wednesday 11-04 or Thursday 11-05, after 5 pm; Luis picks Rick up.** Day not yet locked.
 > - **Exa answer** is on slide 11: vendor-neutral, never disparage.
 >
 > **Fernando, per Luis:** straightforward, tough, tight with money, the best administrator Luis has worked with in 25 years. Distrustful after vendors over-promised. Visual: expect "When can I see it working?" He will have his own ideas (AI for prior-record retrieval, for one). **Give him the floor.**
 >
-> **Luis asked how you make money. One sentence:** "Three ways, all in writing: a fixed fee to design it, a fixed fee to build it, and an optional monthly fee to keep it running."
+> **Luis asked how you make money. One sentence:** "One fixed fee, in writing, for taking the new center from requirements to opening day. Anything outside it is approved first and billed by the hour. I keep the rights to my own product, which the center licenses."
 >
 > **Process facts from Luis, use them:** outside priors arrive by courier on CD or DVD, and after five days the study is read without them. On the calcium score slide it is "calcium," never "nodules."
 
-**El Paso, Wednesday 2026-11-04 or Thursday 2026-11-05, after 5 pm (Luis to lock the day). About 43 minutes. 30 slides, plus the live RadAssist demo on slide 19.**
+**El Paso, Wednesday 2026-11-04 or Thursday 2026-11-05, after 5 pm (Luis to lock the day). About 43 minutes. 31 slides (27 in the no-numbers deck), plus the live RadAssist demo on slide 19.**
 **In the room:** Dr. Luis Ramos (uses RadAssist daily; your champion), Fernando Escarzaga (founded Southwest X-Ray and sold it in 2019; the skeptic and the signer), and Jesse Martinez (an engineer; quiet and analytic).
 
 This is a rehearsal sheet, not a reference. Read it aloud, top to bottom, in order. The RUNBOOK is for lookup. This is for practice.
@@ -86,7 +86,7 @@ If he raises any of it himself: listen, say little, ask nothing, move on.
 
 ---
 
-# PART 2: THE 30 SLIDES, IN ORDER
+# PART 2: THE 31 SLIDES, IN ORDER
 
 ### SLIDE 1 · Six months of free decisions · 0:00 to 1:00
 
@@ -160,7 +160,7 @@ If a shortlisted RIS vendor claims a FHIR capability, the rider to term two: "Na
 
 Interface fees are customary and quoted per interface. That sentence is the whole statement. A dollar range for HL7 interfaces circulates widely and could not be verified at any primary source. Do not quote one.
 
-Interface complexity is a Phase 1 deliverable, not an assumption. "The count and the fee schedule" is the contract protection; knowing which interfaces you actually need, and how hard each one is, is the work. Phase 1 produces that list: every interface the automation plan requires, whether it runs over HL7 version 2 or an API, which direction the data moves, and what the vendor charges for each. A count fixed at signature protects you from the price. It does not tell you whether you asked for the right ones. If he asks what Phase 1 actually produces on the vendor side, this is the answer: the list, the direction, and the cost, in writing, before he signs.
+Interface complexity is a Phase 2 deliverable (vendor and system selection), not an assumption. "The count and the fee schedule" is the contract protection; knowing which interfaces you actually need, and how hard each one is, is the work. Phase 2 produces that list: every interface the automation plan requires, whether it runs over HL7 version 2 or an API, which direction the data moves, and what the vendor charges for each.
 
 What "API access to your own data" has to cover, if he asks you to be specific: read access to the clinical and scheduling data the center owns, the ability to export it in bulk on demand, the audit and error logs (you cannot operate what you cannot see fail), and a test or sandbox environment so changes are not proven in production. Name the four in the contract language rather than the phrase "access." On Rick's own build the question answers itself: the center-specific code, its logs, and its database live in a repository and an environment under the center's organization, so that access is theirs by construction.
 
@@ -398,11 +398,11 @@ Land the last sentence and let it sit for a beat before you move to Part two.
 
 It comes in from the referring office and lands in your RIS. The agent checks the patient's coverage and whether this payer requires authorization for this study. If it does, it builds the request from the order and the clinical notes and checks it against that payer's rules. Then it stops, and your staff member reviews it and approves. Only then does it go to the payer, electronically. The agent watches the payer's clock and puts the approval on the schedule the moment it lands. If it is denied, the agent drafts the appeal with the reasons and puts it in front of a person. Nothing goes out unsigned.
 
-And you will not have to take my word for it. In the first phase you will click through a working demo of exactly this, on synthetic data, no real patients."
+And you will not have to take my word for it. The demo exists today, on synthetic data, no real patients; you can click through it yourself. The production version is built against your real RIS and payers in Phase 4."
 
 **DEPTH / IF ASKED**
 
-**The demo is live: https://rfinlay.github.io/imaging-priorauth-demo/ (Alan's build, synthetic data).** It is on the slide and the leave-behind. Open it yourself the same day; if it will not load, say "first phase," never a date. Fernando is visual and distrustful after vendors over-promised; a demo he can click is worth more than any slide.
+**The demo is live: https://rfinlay.github.io/imaging-priorauth-demo/ (Alan's build, synthetic data).** It is on the slide and the leave-behind. Open it yourself the same day; if it will not load, say "it exists, I will send you the link," never a date. Fernando is visual and distrustful after vendors over-promised; a demo he can click is worth more than any slide.
 
 **If he raises Exa building something similar.** Never disparage Exa.
 
@@ -596,7 +596,7 @@ Custom by nature, because it encodes one owner's definition of what matters. The
 
 **The design standard that applies to all three, and say it if he asks how any of this is built:** the software is the capability and the agent is the operator. Every automation is two deliverables. First, a deterministic service with a clean interface that works without any model at all. Second, an agent surface over it. The service is auditable, testable, and survives any model change; it is what goes in the specification and what any integrator can take over, which is what keeps the slide 23 continuity promise honest. The agent is the replaceable part: the model vendor can change, the BAA envelope can change, the pricing can change, and none of it breaks the center. That is also the honest answer to "can an AI do this": the agent is a better interface, the service is the capability.
 
-Scope effect, so nobody misreads it: the owner-agent specification and the tool-first standard are inside Phase 2. The price does not move. See slide 29.
+Scope effect, so nobody misreads it: the owner-agent specification and the tool-first standard are inside Phase 3 (design). The price does not move. See slide 29.
 
 **BEAT**
 
@@ -626,13 +626,13 @@ Three of the seven, I am telling you to buy."
 
 **DEPTH / IF ASKED**
 
-Every row except billing was defended on its own slide. **Billing is the new row and it is here for a reason: Phase 1 charges for a billing vendor evaluation, and before this row existed there was no slide that justified it.** Fernando has reconciled real remittances for twenty years, so billing is the area he knows best and this is the row he is most likely to stop you on.
+Every row except billing was defended on its own slide. **Billing is the new row and it is here for a reason: Phase 2 evaluates a billing vendor, and before this row existed there was no slide that justified it.** Fernando has reconciled real remittances for twenty years, so billing is the area he knows best and this is the row he is most likely to stop you on.
 
 The answer, and it is a short one:
 
 > "Billing is a buy and I am not touching the claims work. What I evaluate is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system I want to build depends on them, and whether the four access terms go into that contract the same way they go into the RIS contract."
 
-That is the whole answer. The prior auth agent in row 1 cannot function without eligibility and remittance data, so the billing contract is an access question, not an accounting question. Do not volunteer an opinion about any specific billing vendor; you have not evaluated one, and that evaluation is what Phase 1 is for.
+That is the whole answer. The prior auth agent in row 1 cannot function without eligibility and remittance data, so the billing contract is an access question, not an accounting question. Do not volunteer an opinion about any specific billing vendor; you have not evaluated one, and that evaluation is what Phase 2 is for.
 
 ⚠️ **The one seam on this slide that can look self-contradictory, so know it cold.** Row 1 is "prior authorization **and eligibility**: build." Row 7 is "billing **and the eligibility feed**: buy." A careful listener hears eligibility twice, on both sides of the line. Fernando is a careful listener. The distinction is real and it is one sentence:
 
@@ -652,7 +652,7 @@ Read it in one breath. **"Three of the seven, I am telling you to buy" is the po
 
 **SAY (on the slide, 20 seconds)**
 
-"Enough slides. This is RadAssist. Structured radiology reporting, in production, and Luis uses it every day on real patients. Three modules today: calcium scoring, thyroid, and, since this week, spine MRI: cervical, thoracic, lumbar.
+"Enough slides. This is RadAssist. Structured radiology reporting, in production, and Luis uses it every day on real patients. Four modules today: calcium scoring, thyroid, since this week spine MRI, and since Sunday CT spine. Spine MRI: cervical, thoracic, lumbar.
 
 The spine module is the one I want to show you, because of how it got built. Luis sent me his template and his rules. It was live and tested the same day. Every rule in it is his. One case, three minutes."
 
@@ -722,7 +722,7 @@ Which one did you mean? They are two different builds, and I would rather ask th
 
 Why this slide exists: your 10-10 email to Luis said "your partner asked about scheduling, answering patients, and requesting medical records." In a radiology practice, records has two directions, and the deck has to make Luis pick. Slide 16 is the records request seen from the other side; this slide is the report, and the honest line between the two.
 
-RadAssist, stated exactly and no further: calcium scoring, thyroid ultrasound (ACR TI-RADS), and Spine MRI (cervical, thoracic, lumbar; live since 2026-10-31). For calcium, Luis snips the scanner's calcium report or the dose screen, pastes it, and RadAssist reads per-vessel scores, total, age, sex, and DLP, shows every value with a confidence mark, and applies nothing until he clicks Apply. For thyroid and spine he enters what he graded and the impression writes itself in the order he set. It drafts from his own template. No patient data is stored on the server; the inputs are computed in the browser. It does not read DICOM, does not touch the PACS, and does not interpret an image. The viewer at his current site is server-side rendered and never gives the browser a DICOM object, which is why the screen-capture path exists at all. Do not claim it does more than that tonight; Luis is sitting there and will correct you.
+RadAssist, stated exactly and no further: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar; live since 2026-10-31), and CT Spine (live since 2026-11-02; the same tool switched to CT, with the bony canal, calcification and CT disc fields, built from his sample reports). For calcium, Luis snips the scanner's calcium report or the dose screen, pastes it, and RadAssist reads per-vessel scores, total, age, sex, and DLP, shows every value with a confidence mark, and applies nothing until he clicks Apply. For thyroid and spine he enters what he graded and the impression writes itself in the order he set. It drafts from his own template. No patient data is stored on the server; the inputs are computed in the browser. It does not read DICOM, does not touch the PACS, and does not interpret an image. The viewer at his current site is server-side rendered and never gives the browser a DICOM object, which is why the screen-capture path exists at all. Do not claim it does more than that tonight; Luis is sitting there and will correct you.
 
 The named path at a center they own, and why it is honest to name it: DICOM Modality Worklist and query/retrieve give the report assistant the study context, which is contract term four. HL7 v2 ORU is the standard result message every RIS sends out; what has to be verified before signature is that the RIS also accepts an inbound ORU result, because Konica Minolta's Exa, for one, documents only outbound report paths. That is a Phase 1 evaluation item. Say "I will verify that against the RIS you pick," never "it will work."
 
@@ -738,7 +738,7 @@ If asked how long: no date. "Which direction, and against which RIS. Then I can 
 
 **BEAT**
 
-Say the heading slowly, then let Luis answer the direction question. Write down which one he says. That answer changes Phase 2.
+Say the heading slowly, then let Luis answer the direction question. Write down which one he says. That answer changes the Phase 3 design.
 
 ---
 
@@ -920,7 +920,7 @@ Volunteering it is also the single most credible thing available at that table. 
 
 **FRAMING, NON-NEGOTIABLE.** Never say automation **reduces headcount.** Always say automation **changes what your people do.** For a greenfield center scaling from zero that is also the *truer* claim: no existing job is eliminated, they are avoiding hires otherwise needed around month eighteen. Growth absorption, not reduction. Same economics, no layoff implication, and accurate. Scan your own phrasing for "replace," "eliminate," "reduce staff," and "FTE savings" and do not let any of them out of your mouth.
 
-**A staffing plan tied to the automation roadmap is Phase 1 work, and it stays VERBAL.** It is not on slide 29 and not in the leave-behind. Ask Luis at the 10-15 rehearsal whether it should become a named Phase 1 deliverable before Fernando sees the deck. Luis knows how Fernando thinks about payroll; you do not.
+**The staffing plan is now a named deliverable: Phase 3, "Architecture, Workflow and Staffing Plan" (slide 29).** It is framed, on the slide and in your mouth, as how each role's work runs with the automation in place, so they hire for what the center actually needs on day one. It is never a headcount target. Luis knows how Fernando thinks about payroll; if Luis flags it before the dinner, the row stays and the wording is his.
 
 Do not ask whether Southwest X-Ray was his. That is confirmed, and asking a question he has already answered reads as not listening.
 
@@ -976,11 +976,11 @@ Put the leave-behind on the table, one per person (two pages now: the second is 
 
 **SAY**
 
-"The rest is reference. It is what it would cost to have me design this with you, and you can stop me here if you would rather take it another day."
+"The rest is reference. It is what it would cost to have me take the new center from a blank page to opening day, and you can stop me here if you would rather take it another day."
 
 **DEPTH / IF ASKED**
 
-This divider exists so the number lands after the decisions, as reference material, and so the room can stop before it. If Luis says no numbers, this slide and the two pricing slides are not in the deck you are showing; the no-numbers variant ends on the Thank You.
+This divider exists so the number lands after the decisions, as reference material, and so the room can stop before it. If Luis says no numbers, this slide and the three that follow are not in the deck you are showing; the no-numbers variant ends on the Thank You.
 
 **BEAT**
 
@@ -988,66 +988,111 @@ One sentence. Watch him. If he waves you on, advance. If he does not, stop, and 
 
 ---
 
-### SLIDE 29 · What I am proposing: the design · 40:00 to 41:00
+### SLIDE 29 · What I am proposing: one engagement, five phases, $45,000 · 40:00 to 41:30
 
 Never cut this slide if the number is being shown. It sits in the appendix, after the Thank You, so the number lands as reference material after the decisions.
 
 **SAY, exactly this, once**
 
-"The design is thirty thousand, fixed fee, fixed scope, paid in four pieces as I deliver. Six when we sign, for the contract language. Six when you have the vendor evaluation and the working demo. Then nine and nine for the written specifications. After the second payment, you decide whether the rest goes."
+"One engagement for the new center. Forty-five thousand, fixed fee, fixed scope, in five phases from now to May. Discovery, seven. Vendor selection, eight. Design and the staffing plan, seven. The build, fourteen. Testing, training and go-live, nine. Each phase ends in a document you sign, and the next one does not start until you have."
+
+Then the payment line, plainly:
+
+"Four thousand when we sign and three when you have the requirements. After that each phase is paid when it starts, except the build, which is seven on the first of March and seven on the first of April."
 
 Then stop talking.
 
+**The five phases, so you can answer any row without looking**
+
+| # | Phase | When | Deliverable you sign | Fee | Paid |
+|---|---|---|---|---|---|
+| 1 | Discovery and requirements. How the new center runs: patient flow from scheduling to report, services and modalities, volumes, payers, what is automated at opening. Luis's current center is an input, not the template. | Nov to mid-Dec 2026, 6 weeks | Requirements and Roadmap | $7,000 | $4,000 at signing, $3,000 on delivery |
+| 2 | Vendor and system selection. Scheduling, RIS and PACS, billing, phones, prior authorization. Demos, scoring, recommendation. | Mid-Dec 2026 to Jan 2027, 6 weeks | Vendor Selection Report, plus the list of contracts to sign | $8,000 | In full at the start |
+| 3 | Design and staffing plan. System and network design, workflows, security and HIPAA plan, and how each role's work runs with the automation in place. | Feb 2027, 1 month | Architecture, Workflow and Staffing Plan | $7,000 | In full at the start |
+| 4 | Build and configure. Systems set up and connected, RadAssist configured, prior-auth automation, IT install coordinated. Depends on Phases 2 and 3 and on vendor lead times. | Mar to Apr 2027, 2 months | All systems working in test | $14,000 | $7,000 on March 1, $7,000 on April 1 |
+| 5 | Testing, training and go-live. | May 2027, 1 month | Signed go-live readiness, plus opening-week support | $9,000 | In full at the start |
+| | Total. Ready for a June 2027 opening, about a month of buffer. | Nov 2026 to May 2027 | | **$45,000** | |
+
+Outside the phases: $150 an hour, approved first, against a retainer the client tops up (their lawyer's model). The timeline flexes if the opening moves; the price does not.
+
 **DEPTH / IF ASKED**
 
-**Why four payments, not two.** Fernando told Luis that thirty in two phases looked large, and their own lawyer staged four or five fixed payments. The rate did not move. The largest single check is now nine thousand, and each one buys something he can hold. This is "shorten the term, never cut the rate" in a shape he has already accepted from someone else.
+**"Why do we pay at the start of each phase?"** "Because you have already signed off the phase before it. You are never paying for something you have not seen. You are paying for the next piece after you approved the last one. It is the way your lawyer staged his work, and the sign-off is your control, not the check." The largest single check is nine thousand. Phase 1 is the exception on purpose: four to start, three when the requirements are in your hands, so the first decision is small.
 
-Do not break out hours. Do not name an hourly rate. Do not justify the number at length. Never mention what the total works out to per hour.
+**"What if the opening slips?"** "The timeline moves with it and the price does not. The phases are the work; the dates are where the work lands. If June becomes August, the bars slide right and the buffer gets longer. I would rather you open ready than open on a date."
 
-If he pushes on price: "Take the first two milestones and decide the rest when you have seen the work and clicked through the demo." That is the gate. You never discount.
+**"What does the $150 an hour cover?"** "Only things you ask for that are not in the five phases. You approve each one before I start, and it draws against a retainer you top up, the way your lawyer works. If you never ask, you never pay it. Nothing in the five phases is ever billed by the hour."
 
-If he asks why the number is what it is: "It stays where it is because I keep the rights to my own product, and you hold it under a license you cannot lose." Then stop.
+**If he pushes on price: shorten the term, never cut the rate.** "Take Phase 1. Seven thousand, six weeks, and you own the requirements whether or not we go on." That is the gate. You never discount. Do not break out hours for the phases, do not justify the number at length, and never say what forty-five works out to per hour.
 
-**"Does that change at three centers?"** "No. The design is written once and the four contract terms are negotiated once. What is per-site is the build."
+**"Does that change at three centers?"** "No. The requirements, the vendor selection, and the design are done once for this center. A second center is its own, smaller engagement, mostly Phase 4 and 5."
 
-**If he asks what the billing evaluation is**: "Billing is a buy and I am not touching the claims work. What I evaluate is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system depends on them, and whether the four access terms go into that contract too."
+**"What about keeping it running after opening?"** Opening-week support is inside Phase 5. After that, anything they want is the $150 retainer, or a support agreement scoped in writing once there is real volume. Do not quote a monthly fee tonight; nothing has been priced.
 
-Contract through RGF Global Ventures LLC, never personally. Do not discount because Luis is a friend; his RadAssist license and retainer are separate.
+**If he asks what the billing evaluation is**: "Billing is a buy and I am not touching the claims work. What I evaluate in Phase 2 is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system depends on them, and whether the four access terms go into that contract too."
+
+Contract through RGF Global Ventures LLC, never personally. Do not discount because Luis is a friend; RadAssist is licensed to the center separately and is not inside this fee.
 
 **BEAT**
 
-Say it once. Stop. Let the silence sit. If he waves you on, the build is the next slide.
+Say it once. Stop. Let the silence sit. If he waves you on, the timeline is the next slide.
 
 ---
 
-### SLIDE 30 · What I am proposing: the build · 41:00 to 42:30
+### SLIDE 30 · The seven months, on one page · 41:30 to 42:30
 
-> **ALL FIGURES ON THIS SLIDE ARE PROPOSED. Rick confirms the build price, the milestone split, the support fee, and the target months before the dinner. Then delete the red "Proposed figures" tag (the `draftmark` div in the deck HTML and the span on the leave-behind) and re-render.**
+This is the slide Fernando will study. He is visual. Walk it with your finger, left to right, once.
 
-**SAY, once**
+**SAY**
 
-"The build was never inside the thirty. It is its own fixed fee, forty thousand for prior authorization, in five payments of eight: running in your RIS vendor's sandbox around March, connected to the payers' test systems, tested by your own staff, live before you open, and thirty days of close support after. The other pieces each carry their own fixed price in their specification. After that, if you want me keeping it running, it is fifteen hundred a month, or per patient if you prefer that model."
+"We start in November with discovery, six weeks, and you sign the requirements before Christmas. Vendor selection runs through January, because the RIS choice drives everything after it. February is the design and the staffing plan. March and April is the build, and it cannot start until the vendors are chosen and the design is signed. May is testing, training, and the go-live sign-off. That leaves about a month of buffer before a June opening."
 
-Then stop.
+Then the point of the picture, once: "Every diamond is a document you sign. Every phase starts only after the diamond before it. The dollar marks are where the payments fall."
 
-**How you make money, if Luis or Fernando asks directly** (Luis already did): "Three ways, all in writing: a fixed fee to design it, a fixed fee to build it, and an optional monthly fee to keep it running. I keep the rights to my own product, which is why those numbers stay where they are."
+Then stop and let him look.
 
-**DEPTH: the recommended range and the reasoning (for Rick, not for the table)**
+**DEPTH / IF ASKED**
 
-- **Prior authorization build: $36,000 to $48,000; $40,000 proposed.** The build is larger than the design, not smaller. It runs against two outside calendars (the RIS vendor's sandbox and the payers' test environments), carries a human approval step and an audit trail, and includes a staff test cycle and thirty days of hypercare. Price the engagement, not the code: count the calendar-driven work and the review cycles. Five equal $8,000 payments keep every check below the largest design payment, so no single one reads as a decision. These are a recommendation, not measured hours; do not quote hours.
-- **The other builds** (cancellation backfill, records, owner reporting) get their fixed prices in their own specifications in milestones 3 and 4. Do not quote them tonight. If pressed: "Each spec carries its price. You will see it before you decide."
-- **Recurring support: $1,200 to $2,000 a month is the sensible band; $1,500 proposed, two-year term.** They have seen Exa at about $0.90 per patient (low upfront, then per use) and Sectra on a multi-year per-patient commitment with service included, so a per-patient option will feel familiar. Recommend the flat fee for year one, because nobody knows volume before opening; offer per patient (around $1.00 per completed study, with a monthly floor) once real volume exists. It covers monitoring, payer and vendor interface changes, and fixes.
-- **Infrastructure is passed through at cost** (host, database, model usage, backups, monitoring) and estimated in writing in the specification before they commit. That line was never priced before, which is why nothing was promised live earlier; now it is named.
+**Why the build waits on two things.** The signed design, and the vendors' own lead times: contracts, sandbox access, equipment delivery dates. Say it plainly: "The build date is the one I control least, because part of it is on your vendors' calendars. That is why selection is Phase 2 and not Phase 4."
 
-**If he pushes on the build price:** drop a milestone or a scope item, never the rate. The smallest decision available: "Pay for the sandbox build, B1, see it run on your RIS, then decide."
+**"What is on the critical path?"** (Jesse's question.) Vendor selection and vendor lead times. Everything else is inside your control.
 
-**Dates:** every target month on this slide holds only while the slide 26 assumptions hold. Never give a date outside that frame.
+**"Can you compress it?"** "The phases can overlap a little once the requirements are signed, but I will not promise a shorter calendar than the vendors can deliver. The month of buffer is yours; I would rather hand it back unused than need it."
 
-Do not invent hours if asked. "It is a fixed price for a fixed result. If the scope changes, the new price is written down before the work starts."
+**"What if the opening slips to August?"** "The bars slide right. The work does not change and the price does not change."
 
 **BEAT**
 
-Say it once. Stop. Whoever speaks next is not you.
+Finger on the opening flag. Stop.
+
+---
+
+### SLIDE 31 · What I need from you · 42:30 to 43:00
+
+**SAY**
+
+One sentence: "This is what each phase needs from you, so nothing on my side is ever waiting on a question I should have asked earlier."
+
+Read the rows only if asked:
+
+- **Phase 1:** time with Luis and Fernando; the services and modalities they plan to offer; expected volumes and payer mix; the target opening date. Luis's current center is an input, not the template.
+- **Phase 2:** budget ranges, any preferred vendors, and their decisions as the scoring comes in.
+- **Phase 3:** operating hours, the roles they intend to hire, and the vendor contracts as they are negotiated.
+- **Phase 4:** signed vendor contracts and business associate agreements, sandbox access to each system, equipment delivery dates.
+- **Phase 5:** their staff, hired and available for training, and the final opening date.
+- **Throughout:** one named person on their side who approves.
+
+**DEPTH / IF ASKED**
+
+**The line that matters to Fernando:** Luis's current center is an input, not the template. This is a new center, designed from its own requirements. Luis's experience tells us what works and what to avoid; it does not decide the design.
+
+**Staffing, if it comes up here.** The Phase 3 plan is how each role's work runs with the automation in place, so they hire for what the center actually needs on day one. It is never a headcount target. Say "changes what your people do," never "reduces." If he wants a number, say you will have one in February, from the requirements, not tonight.
+
+**"Who approves on our side?"** Ask them to name one person tonight if they are ready; otherwise it is the first question of Phase 1.
+
+**BEAT**
+
+Close the laptop. Dinner.
 
 ---
 
@@ -1079,11 +1124,13 @@ Second pass: the sources, one line each, from memory.
 
 The single most rehearsed line in the deck. Say it out loud ten times. Then say it once more and stop talking for a full ten seconds afterward. The stopping is the part you are practicing.
 
-"The design is thirty thousand, fixed fee, fixed scope, paid in four pieces as I deliver. Six when we sign, for the contract language. Six when you have the vendor evaluation and the working demo. Then nine and nine for the written specifications. After the second payment, you decide whether the rest goes."
+"One engagement for the new center. Forty-five thousand, fixed fee, fixed scope, in five phases from now to May. Discovery, seven. Vendor selection, eight. Design and the staffing plan, seven. The build, fourteen. Testing, training and go-live, nine. Each phase ends in a document you sign, and the next one does not start until you have."
 
-Then, only if asked about the build (figures PROPOSED until Rick confirms): "The build is its own fixed fee, forty thousand for prior authorization, in five payments of eight, live before you open. After that, optional support at fifteen hundred a month, or per patient."
+Then the payment line: "Four thousand when we sign and three when you have the requirements. After that each phase is paid when it starts, except the build, which is seven on the first of March and seven on the first of April."
 
-If pushed: "Take the first two milestones and decide the rest when you have seen the work and clicked through the demo."
+If pushed: "Take Phase 1. Seven thousand, six weeks, and you own the requirements whether or not we go on."
+
+The three objections, one line each: **why upfront per phase** ("you have already signed off the phase before it; the sign-off is your control"), **what if the opening slips** ("the timeline moves, the price does not"), **what does $150 an hour cover** ("only things you ask for outside the five phases, approved first, against a retainer you top up").
 
 No hours. No rate. No justification. Shorten the term, never cut the rate.
 
@@ -1122,7 +1169,7 @@ The runbook numbers these 1 through 8 with two items each numbered 5 and 6. Ther
 
 If dinner collapses to one minute, this is what survives. Say it as one paragraph.
 
-"Here is what I would tell you if I had one minute. You are in the only window where automation is a design choice and not a retrofit. Before you sign any vendor, put four terms in the contract: API access to your own data, HL7 interface fees fixed at signature, export rights at no charge, and DICOM query permissions. That is free today and hostage terms later. The biggest cost you have not planned for is prior authorization. In Medicare Advantage, four in five appeals win and almost nobody files one, because nobody has time. I would build that, and I would tell you to buy your reminders from the RIS and your phone system from a voice vendor, not from me. You own the spec, you own the code for your center, my own product you hold under a license you can never lose, and if I get hit by a bus you hand all of it to anyone. Thirty thousand to design it, paid in four pieces as I deliver, with a gate after the second that you control. The build is its own fixed price, and you will click through a working demo first."
+"Here is what I would tell you if I had one minute. You are in the only window where automation is a design choice and not a retrofit. Before you sign any vendor, put four terms in the contract: API access to your own data, HL7 interface fees fixed at signature, export rights at no charge, and DICOM query permissions. That is free today and hostage terms later. The biggest cost you have not planned for is prior authorization. In Medicare Advantage, four in five appeals win and almost nobody files one, because nobody has time. I would build that, and I would tell you to buy your reminders from the RIS and your phone system from a voice vendor, not from me. You own the spec, you own the code for your center, my own product you hold under a license you can never lose, and if I get hit by a bus you hand all of it to anyone. Forty-five thousand to take the new center from requirements to opening day, in five phases, each paid when it starts and each started only after you sign off the one before. You can click through a working demo tonight."
 
 ## Drill 6: the 5-minute version
 
@@ -1151,7 +1198,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 ## Before you leave the house
 
 - [ ] **DONE 2026-10-06, no action needed: the partner name is in.** Fernando Escarzaga appears in full on the two surfaces he will actually see, the deck title slide and the leave-behind header. First name only in the presenter notes, the RUNBOOK, and AUTOMATION-CANDIDATES, where it reads naturally. Every placeholder is gone, and all four PDFs were reprinted and re-synced to OneDrive and Google Drive.
-- [ ] **The design fee is $30,000 in four milestone payments ($6k, $6k, $9k, $9k), gate after the second.** On slide 29 and page 2 of the leave-behind. **The build ($40,000 in five $8,000 milestones) and support ($1,500/month) are PROPOSED: confirm, then remove the red tag and re-render.**
+- [ ] **The engagement is $45,000 in five phases (7 / 8 / 7 / 14 / 9), November to May, APPROVED 2026-11-02.** Slides 29 (table), 30 (timeline), 31 (inputs) and page 2 of the leave-behind. Every red "Proposed figures" tag is gone. Rehearse the price line and the payment line from Drill 2.
 - [ ] **Click through the demo** (https://rfinlay.github.io/imaging-priorauth-demo/, linked on slide 11 and leave-behind page 2) the same day, on the hotspot.
 - [ ] **Print the leave-behind.** Three copies (Jesse too). Two US Letter pages from Chrome.
 - [ ] **Charge the laptop.** The deck runs with no wifi. RadAssist needs a network only to sign in. **Sign in to radassist.app before you leave the house** (password plus the authenticator code), open the Spine MRI tab, and leave it open; the report is assembled in the browser, so the open tab keeps working if the room's Wi-Fi fails. Do not reload it at the table.
