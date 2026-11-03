@@ -1039,7 +1039,7 @@ Then stop talking.
 
 | # | Phase | When | Deliverable you sign | Fee | Paid |
 |---|---|---|---|---|---|
-| 1 | Discovery and requirements. How the new center runs: patient flow from scheduling to report, services and modalities, volumes, payers, what is automated at opening. Luis's current center is an input, not the template. | Nov to mid-Dec 2026, 6 weeks | Requirements and Roadmap | $7,000 | $4,000 at signing, $3,000 on delivery |
+| 1 | Discovery and requirements. How the new center runs: patient flow from scheduling to report, services and modalities, volumes, payers, what is automated at opening. Luis's current center is an input, not the template. | Nov to mid-Dec 2026, 6 weeks | Requirements and Roadmap: requirements for every system, patient-flow map (order to signed report to paid claim), vendor contract terms to demand, make-or-buy recommendation per system, vendor shortlist and evaluation criteria for Phase 2 | $7,000 | $4,000 at signing, $3,000 on delivery |
 | 2 | Vendor and system selection. Scheduling, RIS and PACS, billing, phones, prior authorization. Demos, scoring, recommendation. | Mid-Dec 2026 to Jan 2027, 6 weeks | Vendor Selection Report, plus the list of contracts to sign | $8,000 | In full at the start |
 | 3 | Design and staffing plan. System and network design, workflows, security and HIPAA plan, and how each role's work runs with the automation in place. | Feb 2027, 1 month | Architecture, Workflow and Staffing Plan | $7,000 | In full at the start |
 | 4 | Build and configure. Systems set up and connected, RadAssist configured, prior-auth automation, IT install coordinated. Depends on Phases 2 and 3 and on vendor lead times. | Mar to Apr 2027, 2 months | All systems working in test | $14,000 | $7,000 on March 1, $7,000 on April 1 |
@@ -1273,7 +1273,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 ==**Q9. "What do you need from us, and what do we get at end of Phase 1? I don't pay for slides."**==
 
-=="To start, I need four things: a few hours with you and Luis, the services and modalities you plan to offer, your expected volumes and payer mix, and your target opening date. Four thousand at signing. Six weeks later you get documents you own: the requirements for every system the center needs, a map of how a patient moves from order to signed report and paid claim, and the contract terms to demand from every vendor before you sign. Then three thousand on delivery. And you own all of it whether we go on or not. If you stop there, you've got a requirements package any vendor or consultant can work from."==
+=="To start, I need four things: a few hours with you and Luis, the services and modalities you plan to offer, your expected volumes and payer mix, and your target opening date. Four thousand at signing. Six weeks later you get five documents you own: the requirements for every system the center needs; a map of how a patient moves from order to signed report to paid claim; the contract terms to demand from every vendor before you sign; a make-or-buy recommendation for each system; and a vendor shortlist with the evaluation criteria, ready for Phase 2. Then three thousand on delivery. And you own all of it whether we go on or not. If you stop there, you've got a requirements package any vendor or consultant can work from."==
 
 ==**Q10. "One reason, one sentence, why say yes today."**==
 
