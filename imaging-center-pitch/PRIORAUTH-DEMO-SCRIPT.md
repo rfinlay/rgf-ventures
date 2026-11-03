@@ -15,6 +15,13 @@ Glance at the top banner on both devices.
 
 Either way the demo works. Decide which line you are saying before you sit down, and check the banner again once at the table before you start.
 
+## The link, the QR, and the pace (Rick, 2026-11-03)
+
+- **Thursday morning:** text the link to Luis. He forwards it to Fernando and Jesse. Slide 11 and the leave-behind carry a QR code for the same URL with the caption "Scan to follow along."
+- **At the table:** they scan the QR or open the text on their own phones and reload once for a fresh start. You run the same page on the laptop, split screen beside the deck, and set the pace.
+- **Say each step before anyone clicks.** The one that matters is **Advance 3 days**: everyone waits for you, because whoever clicks it early is a step ahead of the room and the story stops matching.
+- Pricing is not part of the demo; it stays in the appendix (slide 29).
+
 ## Reset (Rick, 2026-11-03)
 
 A **full page reload** (Cmd+R on the laptop, pull-to-refresh on the phone) resets Maria and Robert to new orders. The **"Start over with another order"** button does **not** reset state; after a rehearsal the queue still shows the old outcomes. Reload once before lunch, and reload again before you hand the phone over, so the first click anyone sees is a fresh order. Reload on Wi-Fi or cellular before you need it, never mid-demo.
@@ -23,7 +30,7 @@ A **full page reload** (Cmd+R on the laptop, pull-to-refresh on the phone) reset
 
 > "This is a working prototype, not slides. Everything you see is synthetic data, but the submission in the middle goes to a real payer test server that implements the national prior-auth standard. I want you to click it, not watch me."
 
-Hand the phone or the laptop to Fernando if he wants it. At a lunch table the phone is the easier handoff; keep the laptop as your own screen.
+They follow on their own phones (scanned QR or the forwarded text); keep the laptop as your own screen and lead from it. If someone has no phone out, hand them yours.
 
 ## 1. Order arrives (20 seconds)
 
