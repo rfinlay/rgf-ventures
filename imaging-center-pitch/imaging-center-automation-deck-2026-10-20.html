@@ -108,6 +108,10 @@
 
   .source { position: absolute; left: 88px; right: 88px; bottom: 26px; font-size: 15px; color: var(--ink-faint); line-height: 1.35; max-width: 1000px; }
   .source b { color: var(--ink-soft); font-weight: 600; }
+  /* 2026-11-02 (Rick's markup, slides 16 and 21): the source footer is absolutely positioned, so a slide's
+     bottom paragraph could sit on top of it. Reserve the footer's height on every slide that has one. */
+  .slide:has(> .source) { padding-bottom: 140px; }
+  @media print { .slide:has(> .source), .slide.active:has(> .source) { padding-bottom: 1.15in; } }
 
   .section .kicker { color: var(--ink-faint); }
   .section h1 { font-size: 72px; }
@@ -156,6 +160,11 @@
   .modules.four { grid-template-columns: repeat(4, 1fr); gap: 22px; max-width: 1120px; }
   .modules.four .n { font-size: 27px; }
   .modules.four .w { font-size: 18px; }
+  /* 2026-11-02: slide 20 carries four short columns; tighten so the records column stays on the page */
+  .slide.dense .cols { gap: 48px; margin-top: 22px; }
+  .slide.dense .cols h3 { font-size: 27px; margin-bottom: 6px; }
+  .slide.dense .cols p { font-size: 19.5px; line-height: 1.35; }
+  .slide.dense .cols h3 + p + h3 { margin-top: 18px; }
   .demourl { color: var(--accent); font-weight: 600; }
   /* 2026-11-01: the live RadAssist demo cue on slide 19 */
   .livemark { position: absolute; top: 22px; right: 88px; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 6px 14px; font-weight: 700; }
@@ -206,7 +215,7 @@
 <div class="inner">
   <div class="grow"></div>
   <div class="rulebar"></div>
-  <div class="kicker">A private briefing, El Paso, October 2026</div>
+  <div class="kicker">A private briefing, El Paso, November 2026</div>
   <h1>Six months of free decisions.</h1>
   <p class="lead">What to automate, what to buy, and what to leave alone before the new center opens.</p>
   <div class="meta">
@@ -216,8 +225,8 @@
 </div>
 <aside class="notes">
 <p class="time">0:00 to 1:00</p>
-<p>Thank them for dinner. One sentence on who you are: you build and operate agent systems, Luis uses one of them every day on real patients, and that is the only credential that matters tonight.</p>
-<p>Frame the evening: "I am not here to sell you software tonight. I am here to tell you which decisions you are about to make that are free right now and will not be free by the time you open."</p>
+<p>Thank them for lunch. One sentence on who you are: you build and operate agent systems, Luis uses one of them every day on real patients, and that is the only credential that matters today.</p>
+<p>Frame the conversation: "I am not here to sell you software today. I am here to tell you which decisions you are about to make that are free right now and will not be free by the time you open."</p>
 <p>Jesse Martinez is at the table: an engineer, quiet and analytic. Speak to him once by name on the agent slide (6) and the walkthrough (11); he is the one most likely to ask how it actually connects.</p>
 </aside>
 </section>
@@ -339,7 +348,7 @@
 <p>Plain words, no acronyms. Fernando asked Luis what an agent actually is; this is the answer before any statistic leans on it. Say: "Two kinds. One does a job inside your systems, like a very consistent employee who works one desk and asks before anything goes out. The other one you talk to: you text it or call it and it tells you what happened in your business."</p>
 <p>The guardrails are the reason he can trust it, so say all four. "Calculated and checked" means the agent never does arithmetic in its head: totals, rates, and reconciliations are computed by code and checked, and if a number cannot be verified it says so instead of filling the gap.</p>
 <p>Do not promise a date for the owner's agent. It is specified in the design work and priced when they want it built (see the build slide in the appendix). The Monday report is what it does, not when it starts.</p>
-<p>Turn to Jesse once: "Jesse, if you want the plumbing, I am happy to go through it after dinner." Then move on.</p>
+<p>Turn to Jesse once: "Jesse, if you want the plumbing, I am happy to go through it after lunch." Then move on.</p>
 <p>Never frame either kind as replacing anyone. It changes what your people do.</p>
 </aside>
 </section>
@@ -446,7 +455,7 @@
 </div>
 <aside class="notes">
 <p class="time">21:00 to 23:00</p>
-<p>Walk it like a Tuesday, not like a diagram. Fernando is visual and he has been over-promised before; the question he is waiting to ask is "when can I see it working?" The answer is on the slide: the demo exists today, on synthetic data, and the production version is built against their real RIS and payers in Phase 4 (March to April). Open https://rfinlay.github.io/imaging-priorauth-demo/ yourself the same day. Never show a link you have not opened that day.</p>
+<p>Walk it like a Tuesday, not like a diagram. Fernando is visual and he has been over-promised before; the question he is waiting to ask is "when can I see it working?" The answer is on the slide: the demo exists today, on synthetic data, and the production version is built against their real RIS and payers in Phase 4 (March to April). Open https://rfinlay.github.io/imaging-priorauth-demo/ yourself that morning. Never show a link you have not opened that day.</p>
 <p>Step 4 is the whole safety model. Say it twice if you have to: nothing reaches a payer until someone on his staff approves it.</p>
 <p><strong>If he raises Exa building something similar:</strong> never disparage Exa. "They may well, and if it is good, use it. What I build is vendor-neutral: it runs on your data and your contract terms, and it works with whatever RIS and PACS you pick, including Exa. The four access terms on slide 3 protect you either way, whether the feature comes from them or from me."</p>
 <p>Jesse may ask how it connects: HL7 v2 orders from the RIS, the payer's FHIR prior authorization API where it exists (required for Medicare Advantage, Medicaid, CHIP and exchange plans by 2027-01-01), EDI where it does not, and a human step where neither exists. No screen-driving of payer portals.</p>
@@ -487,7 +496,7 @@
 <p class="time">19:00 to 22:00</p>
 <p>Nearly everyone pitching imaging automation pitches no-show reduction, which addresses the 2% number. The cancellation stream is ten times larger and mostly arrives with lead time.</p>
 <p>The product: a waitlist that detects a cancelled slot and works a ranked list of patients who want earlier appointments. Small, differentiated, sits on top of whatever RIS they choose.</p>
-<p class="caveat">"That is one academic center, University of California, Irvine, over 2022 and early 2023. Your ratio will differ. The shape will not."</p>
+<p class="caveat">"That is one academic center, University of California, Irvine, over 2022 and early 2023. Your numbers will differ. The pattern will not: cancellations outnumber no-shows many times over, and most of them come with notice."</p>
 <p>Pocket figure: across 2.9 million imaging visits, lead time over six months carried an odds ratio of 3.18 for no-show versus booking within a week. Shortening time-to-appointment reduces no-shows on its own, and backfill is how you shorten it. (Rosenbaum, J Am Coll Radiol 2018, PMID 29755001.)</p>
 </aside>
 </section>
@@ -569,11 +578,12 @@
   <h2>Studies by modality, by reader, by referrer. Turnaround. Scheduled versus completed. Revenue per slot.</h2>
   <p class="lead">All of it already lives in the RIS and the billing system. The problem is that they are two systems, and RIS reporting is built for radiology operations, not for an owner.</p>
   <div class="grow"></div>
-  <p class="sub">Smallest compliance envelope of the five. Cheapest to build. Luis's "am I being paid correctly for what I read" reconciliation is the same engine with a different view, and that one already has a customer.</p>
+  <p class="sub"><strong>As an owner,</strong> I want to ask one question on a Monday morning, which referrer went quiet, what is the appeal rate, are we being paid for what we read, and get the answer from my own numbers, <strong>so that</strong> I run the center on facts and not on a report someone has to build for me. The manager and the front desk lead see the same numbers from their side: today's schedule, the open authorizations, the slots that just opened. Smallest compliance envelope of the five. Cheapest to build.</p>
 </div>
 <aside class="notes">
 <p class="time">27:00 to 28:00</p>
 <p>Be honest that there is no external evidence for this one. There is no benchmark literature on what owners want from dashboards. Say: "I have no study to show you here. I have the fact that you will want a referrer-and-revenue view and the RIS will not give it to you."</p>
+<p>The slide is written as an owner's user story on purpose (Rick, 2026-11-02): the owner, the manager, and the key people in the staffing plan each want a view of the same numbers. Ask what each of them would want to see on a Monday morning, and write the exact words down. That is requirements elicitation, and the first question he names is the first report the system has to answer.</p>
 <p>Recommendation: BUILD. Custom by nature because it encodes one owner's definition of what matters.</p>
 </aside>
 </section>
@@ -615,7 +625,7 @@
   <div class="modules four">
     <div class="m"><div class="n">Calcium scoring</div><div class="w">Reads the scanner&rsquo;s numbers from a pasted screen capture. He confirms every value before it applies.</div></div>
     <div class="m"><div class="n">Thyroid ultrasound</div><div class="w">ACR TI-RADS, with his follow-up rules built in.</div></div>
-    <div class="m hot"><div class="n">Spine MRI, new</div><div class="w">Cervical, thoracic, and lumbar. From Dr. Ramos&rsquo;s requirements to live and tested in a day. Every rule in it is his.</div></div>
+    <div class="m hot"><div class="n">Spine MRI, new</div><div class="w">Cervical, thoracic, and lumbar. Built from Dr. Ramos&rsquo;s own template and rules. Every rule in it is his.</div></div>
     <div class="m hot"><div class="n">CT Spine, live Nov 2</div><div class="w">The same tool, switched to CT: bony canal, calcification, the CT disc findings. Built from his sample reports two days after the MRI module.</div></div>
   </div>
   <div class="grow"></div>
@@ -626,7 +636,7 @@
 <p class="time">29:00 to 33:00</p>
 <p><strong>This slide hands off to the live demo.</strong> The tab is already open and signed in (checklist). Switch to it, run the three-minute Spine MRI talk track from the speaking notes: pick Lumbar, enter the synthetic case from the card, show the impression writing itself in Luis's order, show the unreviewed-level rule, copy the report and paste it as plain text. Then hand the table to Luis.</p>
 <p><strong>Say it the way Fernando will hear it: control and simplicity.</strong> His template, his rules, his signature. One dropdown per sentence. The report is plain text he pastes into whatever system the center buys. Nothing is sent anywhere; the browser does the work. No vendor lock, nothing to integrate before it is useful.</p>
-<p><strong>The proof point, said once:</strong> spine went from Luis's requirements to live and tested within a day, and every rule in it was set by Luis. CT Spine followed two days later (live November 2) from his sample reports: same tool, switched to CT. Mention it in one sentence; demo the MRI case only. The speed of the fix is the proof, not the absence of changes. If Luis volunteers that it becomes sellable the next day after he tweaks it, let him say it; do not quote him unless you have cleared it with him.</p>
+<p><strong>The proof point, said once:</strong> "Luis sent me his template and his rules. Every rule in it is his." Do not add how fast it was built (Rick, 2026-11-02). CT Spine followed from his sample reports (live November 2): same tool, switched to CT. Mention it in one sentence; demo the MRI case only. The speed of the fix is the proof, not the absence of changes. If Luis volunteers that it becomes sellable the next day after he tweaks it, let him say it; do not quote him unless you have cleared it with him.</p>
 <p>Questions to hand Luis after the demo: What broke, and how fast was it fixed? What did you ask for that got built? What does it do that the vendor tools did not?</p>
 <p><strong>Roadmap, as Luis asked for it:</strong> voice dictation inside RadAssist, then brain and cardiac CTA (CAD-RADS) modules. He will email guideline-display corrections; acknowledge them as his. Say "next on the roadmap," never a date. <strong>Reading the images (auto-filling level findings from the pictures) is a future item with a regulatory path.</strong> That is diagnostic software; it is not promised, not dated, and it is why the line on slide 21 matters.</p>
 <p><strong>Licensing to other centers: do NOT raise it at this table.</strong> Luis sees resale potential at about $2,500 one-time per center. That is a private conversation between you and Luis, because slide 24 tells Fernando this center is the priority and his service terms do not change if you take on a second site. Both are true, but only one belongs in front of Fernando.</p>
@@ -636,7 +646,7 @@
 
 
 <!-- 20 -->
-<section class="slide">
+<section class="slide dense">
 <div class="inner">
   <div class="kicker">Radiology report assistance</div>
   <h2 class="tight">The agent drafts. The radiologist signs. Nothing clinical leaves without a human signature.</h2>
@@ -645,13 +655,13 @@
       <h3>The report: RadAssist, today</h3>
       <p>Luis uses it daily. Calcium scoring reads the scanner's numbers from a screen capture; thyroid, spine MRI, and CT spine build the report from his own template, one dropdown per sentence, with his rules for the impression. He confirms every value before it applies and signs. At your center the path has a name: DICOM worklist and query for the study, HL7 v2 ORU to carry the signed report into the RIS.</p>
       <h3>The records: a different build</h3>
-      <p>Requesting records runs the other way. The paths: DICOM query and retrieve where a facility grants it, a request out and DICOM import where it does not, and the payer Provider Access API in 2027 for the claims record, in-network only, no images.</p>
+      <p>Requesting records runs the other way: DICOM query and retrieve where a facility grants it, a request out and DICOM import where it does not, and the payer Provider Access API in 2027 for the claims record, in-network only, no images.</p>
     </div>
     <div>
-      <h3>One instance per center</h3>
-      <p>Not one shared stack. My recommendation, and it costs more, not less. Each center runs its own instance: its own database, credentials, and audit log. No patient record from one center is readable from another. The reason is governance: separate principals, separate books, a clean line any auditor can see. Share a back office if you choose; the specification is written once either way. The data stays apart.</p>
       <h3>Which did you mean?</h3>
       <p>Two different builds, specified separately. I would rather ask than guess.</p>
+      <h3>One stack, or one per center? Both work.</h3>
+      <p>One specification, reused for every center. Same owners across the centers: one shared stack, each center's data segregated, every session scoped to one center. Different owners per center: a separate instance each, with its own database, credentials, and audit log. Either way, no patient record from one center is readable from another.</p>
     </div>
   </div>
 </div>
@@ -659,11 +669,12 @@
 <p class="time">33:00 to 34:00</p>
 <p><strong>This slide exists because of one sentence in your 10-10 email to Luis:</strong> "your partner asked about scheduling, answering patients, and requesting medical records." Requesting records can mean two things in a radiology practice, and they are different builds. Make Luis pick.</p>
 <p><strong>Say the heading first, plainly, and do not soften it.</strong> "The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature." That is the whole operating model and it is also the bus answer: if I disappear, the thing that signs is a person who works for you.</p>
-<p><strong>RadAssist, honestly.</strong> Today it is four modules: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar), the one you just demonstrated, and CT Spine, live since November 2. For calcium, Luis snips the scanner's report or dose screen, pastes it, RadAssist reads the per-vessel scores, total, age, sex and DLP, shows him every value, and nothing touches the form until he clicks Apply. For thyroid and spine he enters what he graded, one dropdown per sentence from his own template, and the impression writes itself in the order he set. It drafts; he signs. It does not interpret an image. Do not claim it does anything more than that tonight.</p>
+<p><strong>RadAssist, honestly.</strong> Today it is four modules: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar), the one you just demonstrated, and CT Spine, live since November 2. For calcium, Luis snips the scanner's report or dose screen, pastes it, RadAssist reads the per-vessel scores, total, age, sex and DLP, shows him every value, and nothing touches the form until he clicks Apply. For thyroid and spine he enters what he graded, one dropdown per sentence from his own template, and the impression writes itself in the order he set. It drafts; he signs. It does not interpret an image. Do not claim it does anything more than that today.</p>
 <p><strong>The named path at a center they own:</strong> DICOM Modality Worklist and query/retrieve give the report assistant the study context (contract term four on slide 3). HL7 v2 ORU is the standard result message that carries a signed report into the RIS (term two). Verify before signature that the RIS accepts an inbound ORU result: Konica Minolta's Exa, for one, documents only outbound report paths, so this is a real evaluation item, not a formality. Say "I will verify that against the RIS you pick" rather than promising it.</p>
 <p><strong>Records coming in is slide 14's problem, restated from the other side.</strong> DICOM query/retrieve works only where the sending facility grants it, which across organizations is rare. Otherwise the request goes out by fax or portal and what comes back is imported over DICOM. The payer Provider Access API under CMS-0057-F arrives 2027-01-01, but it carries the claims and clinical record the payer holds, not images, and it requires an in-network contract plus a treatment relationship, which a newly opened center may not have on day one. Name that limit yourself.</p>
-<p class="caveat">"One instance per center costs more than one shared stack. Three hosts, three databases, three sets of credentials, three audit logs. I am recommending it anyway, and the reason is governance, not technology."</p>
-<p><strong>Stack-agnostic on purpose.</strong> Your 10-10 email told Luis you were assuming one shared back office and one shared vendor stack. That is unresolved and it is a question for Luis on the 15th. The slide survives either answer: a shared back office is staff and logins, not a merged database. If the three centers turn out to have three different principals, independence is the only defensible design. If they share everything, independence is still the recommendation and the cost of it is stated. Do not say as fact that the three centers share anything.</p>
+<p><strong>Say the records half and the RadAssist half first. The one-stack question comes last on this slide, and only if more than one center comes up (Rick, 2026-11-02).</strong></p>
+<p class="caveat">"One specification, written once and reused for every center. Then one rule. If the same owners own all the centers, I recommend one shared stack with each center's data kept apart: one system to run, one set of credentials to rotate, every login scoped to one center. If the centers have different owners, I recommend a separate instance for each: its own database, its own credentials, its own audit log, and a line any auditor can see without reading code. Either works. The thing that never changes is that no patient record from one center is readable from another."</p>
+<p><strong>Why the rule runs that way.</strong> Shared owners means one set of books and one set of principals, so the governance line is already drawn and a shared stack is the simpler, cheaper system to run. Different owners means separate books and a line between them that has to be visible in the system itself, and separate instances make it visible. If he asks whether one shared stack can serve centers with different owners: yes, with tenant segregation, and it is a defensible design; separate instances are the recommendation because the boundary is then physical, not a rule in software. Do not say as fact that the centers share anything, and do not name the other principals.</p>
 <p><strong>Not on the scorecard, deliberately.</strong> The scorecard is the list of candidates. This is not a candidate; it exists and Luis uses it. The extension to the new center is Tier 3 product, licensed to them with source, same as the prior auth engine.</p>
 <p>If asked how long: do not give a date. "Which direction, and against which RIS. Then I can scope it."</p>
 </aside>
@@ -715,7 +726,7 @@
 <p>Volunteering the constraints is what separates you from twenty years of vendors. Say each one in a sentence and move on.</p>
 <p class="caveat">On the BAA: "The coverage depends on which version of the agreement is signed and when. I will confirm the exact envelope in writing before anything with patient data is built."</p>
 <p class="caveat">On the TCPA caps: "A reminder plus a backfill offer plus a results notice can collide with the three-per-week cap. The system needs a per-patient rate governor, not just a send queue. I have built that."</p>
-<p>Do not quote a Texas HB 300 day-count or training interval. Say it will be verified against the statute in the specification.</p>
+<p><strong>HB 300, if asked (Texas Health and Safety Code chapter 181):</strong> its covered-entity definition is broader than HIPAA's and reaches anyone who handles Texas patients' health information, including Rick in his own right; it requires staff training on patient privacy within a set time of hire, retraining when the law changes, and a signed record (no fixed refresher interval); it sets a deadline for producing electronic records on a written request that is shorter than HIPAA's; it bars selling protected health information; it requires notice to patients when their records are disclosed electronically; and the Texas Attorney General enforces it, with civil penalties. Do not quote a day-count, a training interval, or a penalty amount. Say they are verified against the statute in the specification.</p>
 </aside>
 </section>
 
@@ -727,7 +738,7 @@
   <h2>What happens when I get hit by a bus?</h2>
   <ul class="plain">
     <li><strong>You own the specification.</strong> It is written for a competent engineer who has never met me, and it is the deliverable of the design engagement whether or not I build anything.</li>
-    <li><strong>You own the code.</strong> Everything specific to this center lives in a repository under your organization's account, with my access revocable by you. Existing product of mine that I extend for you, you hold under a perpetual license with the source in your hands.</li>
+    <li><strong>You own the code.</strong> Everything specific to this center lives in a repository under your organization's account, with my access revocable by you. Existing product of mine that I extend for you stays licensed to the center, on terms we put in writing, so you are never hostage to me.</li>
     <li><strong>Runbooks, not memory.</strong> Every operational procedure is written down: how it runs, how it fails, who to call at each vendor.</li>
     <li><strong>No proprietary runtime.</strong> Standard interfaces (HL7 v2, DICOM, payer APIs) and a named model vendor under its own BAA. Any integrator can take it over.</li>
     <li><strong>Buy where buying is right.</strong> The voice vendor and the RIS are yours directly. Nothing routes through me that does not have to.</li>
@@ -737,9 +748,10 @@
 <p class="time">36:00 to 37:00</p>
 <p>This slide may matter more than any number. Fernando's bar for AI may be low. His bar for vendors is high, and he has been left holding systems by vendors before.</p>
 <p>Say: "The design engagement exists so that this question has a boring answer. If I disappear in month four, you have a specification you can hand to anyone. If I disappear in year two, you have the code, the runbooks, and the vendor relationships in your name."</p>
-<p>Raise the ownership distinction yourself, inside point two, before he finds it in a redline: "Everything specific to this center is yours outright, in your repository. Some of what I would build is existing product of mine that I would extend for you. That part you get under a perpetual license you can never lose, with the source in your hands, so you can run it and change it forever, even if I disappear. You are never hostage to me. What you are not buying is the right to sell my product to someone else. If that distinction is a problem, tell me tonight and I will price it differently."</p>
-<p>If he asks why the product pieces are not simply his: "It is less expensive for you because I keep the product rights. If you want those too, that is a different number, and I would rather not go there tonight."</p>
-<p>If he asks about escrow: direct ownership beats escrow for the center's code, and for the product pieces he already holds the source under the license, which is what escrow is for, without the fight.</p>
+<p>Raise the ownership distinction yourself, inside point two, before he finds it in a redline: "Everything specific to this center is yours outright, in your repository. Some of what I would build is existing product of mine that I would extend for you. That part stays licensed to the center, on terms we put in writing, so you can keep running it even if I disappear. You are never hostage to me. What you are not buying is the right to sell my product to someone else. If that distinction is a problem, tell me today and I will price it differently."</p>
+<p><strong>Do not say "perpetual license" (Rick, 2026-11-02).</strong> The license terms are written into the agreement, and the arrangement with Luis for RadAssist is separate from the terms for Fernando and Jesse. If pressed for the terms: "They go in the agreement. We write them together."</p>
+<p>If he asks why the product pieces are not simply his: "It is less expensive for you because I keep the product rights. If you want those too, that is a different number, and I would rather not go there today."</p>
+<p>If he asks about escrow: direct ownership beats escrow for the center's code, and the product pieces are licensed to the center in writing, which is what escrow is for, without the fight.</p>
 </aside>
 </section>
 
@@ -829,7 +841,7 @@
 </div>
 <aside class="notes">
 <p class="time">38:30</p>
-<p>Leave the one-page summary on the table. This is the last slide of the pitch. What follows is a four-slide appendix (the engagement, the timeline, what I need from you): stop here and have dinner, or turn the page if the room asks for it. In the no-numbers variant the deck ends here.</p>
+<p>Leave the one-page summary on the table. This is the last slide of the pitch. What follows is a four-slide appendix (the engagement, the timeline, what I need from you): stop here and finish lunch, or turn the page if the room asks for it. In the no-numbers variant the deck ends here.</p>
 </aside>
 </section>
 
@@ -867,13 +879,13 @@
     </tbody>
   </table>
   <div class="grow"></div>
-  <p class="sub">Anything you ask for outside these phases is approved first and billed at $150 an hour against a retainer you top up, the way your lawyer works. If the opening date moves, the timeline moves with it. The price does not.</p>
+  <p class="sub">Anything you ask for outside these phases is approved first and billed at $150 an hour against a retainer you top up. If the opening date moves, the timeline moves with it. The price does not.</p>
 </div>
 <aside class="notes">
 <p class="time">40:00 to 41:30</p>
 <p><strong>Say it once, then stop.</strong> "One engagement for the new center, forty-five thousand, fixed fee, fixed scope, in five phases from now to May. Discovery, seven. Vendor selection, eight. Design and the staffing plan, seven. The build, fourteen. Testing, training and go-live, nine. Each phase ends in a document you sign, and the next one does not start until you have."</p>
 <p><strong>Then the payment line, plainly:</strong> "Four thousand when we sign and three when you have the requirements. After that, each phase is paid when it starts, except the build, which is seven on the first of March and seven on the first of April."</p>
-<p><strong>Why paid at the start of each phase:</strong> "Because you have already signed off the phase before it. You are never paying for something you have not seen; you are paying for the next piece after you approved the last one." Their lawyer works the same way. The largest single check is nine thousand, and the sign-off is the control.</p>
+<p><strong>Why paid at the start of each phase:</strong> "Because you have already signed off the phase before it. You are never paying for something you have not seen; you are paying for the next piece after you approved the last one." The largest single check is nine thousand, and the sign-off is the control. Do not compare it to how their lawyer bills (Rick, 2026-11-02).</p>
 <p><strong>If he pushes on price: shorten the term, never cut the rate.</strong> "Take Phase 1. Seven thousand, six weeks, and you own the requirements whether or not we go on." Do not break out hours, name an hourly rate for the phases, or justify the number at length. The $150 is for work outside the phases only.</p>
 <p><strong>"What if the opening slips?"</strong> "The timeline moves with it and the price does not. The phases are the work; the dates are where the work lands."</p>
 <p><strong>"What does the $150 cover?"</strong> "Things you ask for that are not in the five phases, approved by you first, drawn against a retainer you top up. If you never ask, you never pay it."</p>
@@ -1013,7 +1025,7 @@
 <p><strong>Read the left column only if asked; otherwise one sentence:</strong> "This is what each phase needs from you, so nothing on my side is waiting on a question I should have asked earlier."</p>
 <p><strong>The line that matters to Fernando:</strong> Dr. Ramos's current center is an input, not the template. This is a new center, designed from its own requirements. Luis's experience tells us what works and what to avoid; it does not decide the design.</p>
 <p><strong>Staffing, if it comes up here:</strong> the Phase 3 plan is how each role's work runs with the automation in place, so they hire for what the center actually needs on day one. It is never a headcount target. Say "changes what your people do," never "reduces."</p>
-<p><strong>"Who approves on our side?"</strong> Ask them to name one person tonight if they are ready; otherwise it is the first question of Phase 1.</p>
+<p><strong>"Who approves on our side?"</strong> Ask them to name one person today if they are ready; otherwise it is the first question of Phase 1.</p>
 </aside>
 </section>
 

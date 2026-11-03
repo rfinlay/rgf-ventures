@@ -76,7 +76,7 @@
 <div class="page">
   <header>
     <div>
-      <div class="kicker">Summary of a conversation, El Paso, October 2026</div>
+      <div class="kicker">Summary of a conversation, El Paso, November 2026</div>
       <h1>Six months of free decisions.</h1>
     </div>
     <div class="who">Prepared for <b>Dr. Luis Ramos</b>, <b>Fernando Escarzaga</b>,<br>and <b>Jesse Martinez</b><br>by <b>Richard Finlay</b>, RGF Global Ventures LLC</div>
@@ -95,7 +95,7 @@
       <tr><td>3</td><td>Owner reporting, including an agent you can ask questions of</td><td class="rec build">Build</td><td>Modality, reader, referrer, turnaround, revenue per slot, appeal rate, from the RIS and the billing system joined. Ask it in plain words and it answers from your own numbers. Read-only, no patient contact, smallest compliance footprint on this list.</td></tr>
       <tr><td>4</td><td>Scheduling: cancellation backfill</td><td class="rec build">Build, small</td><td>UC Irvine study: 22.3% of outpatient radiology exams cancelled versus 2.0% no-shows, 70.2% of cancellations patient-initiated. The empty slot is known in advance. A ranked waitlist on top of the RIS, with a per-patient rate governor for the TCPA cap.</td></tr>
       <tr><td>5</td><td>Medical records: inbound requests and outbound prior studies</td><td class="rec build">Build, selectively</td><td>The HIPAA 30-day clock runs from receipt. Retrieval labor is not chargeable, only copying is. A new center opens with zero priors on file, and no vendor has solved outbound retrieval for a small site.</td></tr>
-      <tr><td>6</td><td>Radiology report assistance</td><td class="rec build">Build (exists)</td><td>RadAssist, used daily by Dr. Ramos: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar), built from his requirements to live and tested in a day, and CT Spine (live November 2), every rule his. Next on the roadmap: voice dictation, brain, and cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise. His template, his rules; the radiologist confirms every value and signs. Nothing clinical leaves without a signature. At the center: DICOM worklist and query in, HL7 v2 ORU out to the RIS. A different build from records retrieval (row 5). One instance per center, each center's data its own; it costs more, by design, for governance.</td></tr>
+      <tr><td>6</td><td>Radiology report assistance</td><td class="rec build">Build (exists)</td><td>RadAssist, used daily by Dr. Ramos: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar), built from his own template and rules, and CT Spine (live November 2), every rule his. Next on the roadmap: voice dictation, brain, and cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise. His template, his rules; the radiologist confirms every value and signs. Nothing clinical leaves without a signature. At the center: DICOM worklist and query in, HL7 v2 ORU out to the RIS. A different build from records retrieval (row 5). Across centers: same owners, one shared stack with each center's data kept apart; different owners, a separate instance each. Either way, no patient record is readable across centers.</td></tr>
       <tr><td>7</td><td>Scheduling: reminders, self-scheduling, intake</td><td class="rec">Buy (your RIS)</td><td>Commodity, bundled into modern cloud imaging RIS products. Text reminders moved MRI no-shows from 5.1% to 3.8% in a randomized trial. Real, modest, already in the box.</td></tr>
       <tr><td>8</td><td>Answering patients (inbound voice)</td><td class="rec">Buy, I integrate</td><td>26.5% of El Paso County residents speak English less than "very well," nearly all Spanish speakers. Highest-blast-radius failure on this list, and a funded vendor category. I specify, evaluate, integrate, and supervise.</td></tr>
       <tr><td>9</td><td>Billing, claims, and the eligibility feed</td><td class="rec">Buy</td><td>Commodity clearinghouse function, established vendor market. I do not touch the claims work, and I am not building an eligibility system. Your billing vendor already exposes the EDI 270/271 eligibility feed. Row 2 builds the thing that reads that feed and acts on it, so the four access terms belong in the billing contract too.</td></tr>
@@ -108,7 +108,7 @@
       <h2>What you own if I disappear</h2>
       <ul>
         <li>The specification, written for an engineer who has never met me.</li>
-        <li>The code specific to this center, in a repository under your organization's account. Existing product of mine that I extend for you, under a perpetual license with the source in your hands.</li>
+        <li>The code specific to this center, in a repository under your organization's account. Existing product of mine that I extend for you, licensed to the center on terms we put in writing.</li>
         <li>Runbooks for every operational procedure and vendor contact.</li>
         <li>Standard interfaces only: HL7 v2, DICOM, payer APIs, a named model vendor under its own BAA.</li>
         <li>Your RIS and voice vendor contracts in your name, not routed through me.</li>

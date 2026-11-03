@@ -1,0 +1,1122 @@
+[
+ [
+  19,
+  "\"Luis, Fernando, thank you for dinner.",
+  [
+   46,
+   "redirect"
+  ]
+ ],
+ [
+  20,
+  "One sentence on who I am. I build and operate agent systems, and Luis ",
+  [
+   48,
+   "redirect"
+  ]
+ ],
+ [
+  21,
+  "I am not here to sell you software tonight. I am here to tell you whic",
+  [
+   50,
+   "redirect"
+  ]
+ ],
+ [
+  22,
+  "Before I start, one thing I would rather hear from you than secondhand",
+  [
+   52,
+   "line"
+  ]
+ ],
+ [
+  23,
+  "Then stop. Let him answer. Write down the numbers he gives you. Everyt",
+  [
+   54,
+   "redirect"
+  ]
+ ],
+ [
+  74,
+  "\"I am not here to sell you software tonight. I am here to tell you whi",
+  [
+   99,
+   "redirect"
+  ]
+ ],
+ [
+  82,
+  "\"Here is where you are, as I understand it. The MRI is signed. Nobody ",
+  [
+   115,
+   "line"
+  ]
+ ],
+ [
+  83,
+  "Today, every operational decision you make is cheap, and you can rever",
+  [
+   117,
+   "line"
+  ]
+ ],
+ [
+  84,
+  "On January first, the federal prior authorization APIs go live at the ",
+  [
+   119,
+   "line"
+  ]
+ ],
+ [
+  85,
+  "Around March, the build starts, so prior authorization is working befo",
+  [
+   121,
+   "line"
+  ]
+ ],
+ [
+  86,
+  "Your target is to open your new center around June, April at the earli",
+  [
+   123,
+   "line"
+  ]
+ ],
+ [
+  87,
+  "Greenfield is the entire argument tonight. By the time you open there ",
+  [
+   125,
+   "redirect"
+  ]
+ ],
+ [
+  91,
+  "Ask here, before slide 3: \"Which RIS and billing vendors are you looki",
+  [
+   139,
+   "redirect"
+  ]
+ ],
+ [
+  97,
+  "\"Whatever you decide about me, do this. Put four things in every vendo",
+  [
+   147,
+   "line"
+  ]
+ ],
+ [
+  98,
+  "One. API access to your own data, named in the contract. Not 'availabl",
+  [
+   149,
+   "line"
+  ]
+ ],
+ [
+  99,
+  "Two. The HL7 interface count and the fee schedule, fixed at signature.",
+  [
+   151,
+   "line"
+  ]
+ ],
+ [
+  100,
+  "Three. Data export rights, in standard formats, on demand, at no charg",
+  [
+   153,
+   "line"
+  ]
+ ],
+ [
+  101,
+  "Four. DICOM query permissions, worklist, query and retrieve, DICOMweb,",
+  [
+   155,
+   "line"
+  ]
+ ],
+ [
+  102,
+  "Before signature these are contract terms. After signature they are ho",
+  [
+   157,
+   "line"
+  ]
+ ],
+ [
+  115,
+  "\"In 2024, Medicare Advantage insurers denied 4.1 million prior authori",
+  [
+   183,
+   "line"
+  ]
+ ],
+ [
+  116,
+  "Four in five appeals win. Almost nobody files one.\"",
+  [
+   185,
+   "line"
+  ]
+ ],
+ [
+  119,
+  "\"That is Medicare Advantage, all services. It is not an imaging number",
+  [
+   191,
+   "line"
+  ]
+ ],
+ [
+  127,
+  "Say \"four in five,\" then stop. Count to five in your head if you have ",
+  [
+   207,
+   "line"
+  ]
+ ],
+ [
+  131,
+  "\"Forty percent of physicians report having staff who work exclusively ",
+  [
+   215,
+   "line"
+  ]
+ ],
+ [
+  132,
+  "You have not hired that person yet.",
+  [
+   217,
+   "line"
+  ]
+ ],
+ [
+  133,
+  "Two in five practices end up hiring someone whose entire job is prior ",
+  [
+   219,
+   "line"
+  ]
+ ],
+ [
+  135,
+  "\"That is the AMA's 2025 survey of a thousand physicians. It is self-re",
+  [
+   223,
+   "line"
+  ]
+ ],
+ [
+  141,
+  "Pause after \"you have not hired that person yet.\" That is the whole gr",
+  [
+   235,
+   "line"
+  ]
+ ],
+ [
+  145,
+  "\"Before any more numbers, let me say what I mean by an agent, because ",
+  [
+   243,
+   "line"
+  ]
+ ],
+ [
+  146,
+  "There are two kinds. The first does a job inside your systems. Think o",
+  [
+   245,
+   "line"
+  ]
+ ],
+ [
+  147,
+  "The second one you talk to. You text it or call it: how many MRIs did ",
+  [
+   247,
+   "line"
+  ]
+ ],
+ [
+  148,
+  "Four guardrails, and they do not bend. A person signs anything clinica",
+  [
+   249,
+   "line"
+  ]
+ ],
+ [
+  159,
+  "\"You asked Luis about scheduling, phones, and records. Those are real.",
+  [
+   271,
+   "line"
+  ]
+ ],
+ [
+  160,
+  "Prior authorization and eligibility verification. It is larger, and it",
+  [
+   273,
+   "line"
+  ]
+ ],
+ [
+  168,
+  "\"Physicians and their staff spend an average of 13 hours a week on pri",
+  [
+   289,
+   "line"
+  ]
+ ],
+ [
+  169,
+  "Of the physicians who do not appeal denials, 59% say they do not expec",
+  [
+   291,
+   "line~"
+  ]
+ ],
+ [
+  171,
+  "\"Survey data, self-reported, physician practices of all kinds, not ima",
+  [
+   295,
+   "line"
+  ]
+ ],
+ [
+  177,
+  "\"CMS used that same hours figure to price the burden at 220 million pr",
+  [
+   307,
+   "line"
+  ]
+ ],
+ [
+  178,
+  "\"That is CMS's projection in the rule. It is not measured savings. Nob",
+  [
+   309,
+   "line"
+  ]
+ ],
+ [
+  185,
+  "\"Since January first of this year, the payers under this rule have to ",
+  [
+   323,
+   "line"
+  ]
+ ],
+ [
+  186,
+  "On January first next year, they have to operate a FHIR Prior Authoriz",
+  [
+   325,
+   "line"
+  ]
+ ],
+ [
+  187,
+  "Your target opening is about five months after that, with prior author",
+  [
+   327,
+   "line"
+  ]
+ ],
+ [
+  189,
+  "\"The rule binds payers, not providers. It creates APIs my side can con",
+  [
+   331,
+   "line"
+  ]
+ ],
+ [
+  206,
+  "\"Here is the other side of it. At one institution, over four years, 17",
+  [
+   365,
+   "line"
+  ]
+ ],
+ [
+  207,
+  "A process that approves 95% of what it touches is one you automate, no",
+  [
+   367,
+   "line"
+  ]
+ ],
+ [
+  209,
+  "\"That is one institution, one modality, four years. The national all-s",
+  [
+   371,
+   "line"
+  ]
+ ],
+ [
+  224,
+  "\"Let me make that concrete. An MRI order arrives at nine on a Tuesday.",
+  [
+   401,
+   "line"
+  ]
+ ],
+ [
+  225,
+  "It comes in from the referring office and lands in your RIS. The agent",
+  [
+   403,
+   "line"
+  ]
+ ],
+ [
+  226,
+  "And you will not have to take my word for it. The demo exists today, o",
+  [
+   405,
+   "line"
+  ]
+ ],
+ [
+  245,
+  "\"A University of California, Irvine study of about nineteen thousand o",
+  [
+   447,
+   "line"
+  ]
+ ],
+ [
+  246,
+  "Nearly everyone pitching imaging automation pitches no-show reduction.",
+  [
+   449,
+   "line"
+  ]
+ ],
+ [
+  247,
+  "What I would build here is small. A waitlist that sees a cancelled slo",
+  [
+   451,
+   "line"
+  ]
+ ],
+ [
+  249,
+  "\"That is one academic center over 2022 and early 2023. Your ratio will",
+  [
+   455,
+   "redirect"
+  ]
+ ],
+ [
+  261,
+  "\"A randomized trial at Massachusetts General, about seven thousand MRI",
+  [
+   479,
+   "line"
+  ]
+ ],
+ [
+  263,
+  "\"That is 1.3 percentage points absolute. Vendors will tell you that is",
+  [
+   483,
+   "line"
+  ]
+ ],
+ [
+  264,
+  "Your RIS will do this. Let it.\"",
+  [
+   485,
+   "line"
+  ]
+ ],
+ [
+  275,
+  "Ask before the slide: \"Who takes the phone call when a patient describ",
+  [
+   505,
+   "redirect"
+  ]
+ ],
+ [
+  277,
+  "\"Phones are a real cost. You are right about that. My recommendation i",
+  [
+   513,
+   "line"
+  ]
+ ],
+ [
+  278,
+  "Here is why. 26.5% of El Paso County residents over five speak English",
+  [
+   515,
+   "line"
+  ]
+ ],
+ [
+  279,
+  "A voice agent that mishandles a patient describing chest pain, or garb",
+  [
+   517,
+   "line"
+  ]
+ ],
+ [
+  280,
+  "I would rather tell you to buy something than build something that is ",
+  [
+   519,
+   "line"
+  ]
+ ],
+ [
+  292,
+  "\"Records requests. Two rules work in your favor here, and one problem ",
+  [
+   543,
+   "line"
+  ]
+ ],
+ [
+  293,
+  "The first rule. The 30-day HIPAA clock runs from the day the request i",
+  [
+   545,
+   "line"
+  ]
+ ],
+ [
+  294,
+  "The second rule. The fee you can charge covers the labor to copy, supp",
+  [
+   547,
+   "line"
+  ]
+ ],
+ [
+  295,
+  "The problem. The harder side is outbound. A new center opens with zero",
+  [
+   549,
+   "line"
+  ]
+ ],
+ [
+  297,
+  "\"Texas has its own records deadline that is shorter than the federal 3",
+  [
+   553,
+   "line"
+  ]
+ ],
+ [
+  310,
+  "Cut this slide first if you are running long at 28:00.",
+  [
+   583,
+   "redirect"
+  ]
+ ],
+ [
+  311,
+  "Ask before or on the slide: \"What do you want to see on one page every",
+  [
+   577,
+   "redirect"
+  ]
+ ],
+ [
+  313,
+  "\"The fifth one is the numbers the owner actually looks at. Studies by ",
+  [
+   587,
+   "line"
+  ]
+ ],
+ [
+  314,
+  "All of it already lives in the RIS and the billing system. The problem",
+  [
+   589,
+   "line"
+  ]
+ ],
+ [
+  315,
+  "I have no study to show you here. I have the fact that you will want a",
+  [
+   591,
+   "prefix"
+  ]
+ ],
+ [
+  316,
+  "And the version I would build is one you can ask questions of. Not a d",
+  [
+   595,
+   "line"
+  ]
+ ],
+ [
+  332,
+  "\"Prior authorization and eligibility: build. Strongest evidence, the v",
+  [
+   625,
+   "line"
+  ]
+ ],
+ [
+  333,
+  "Reminders and self-scheduling: buy. That is the RIS.",
+  [
+   627,
+   "line"
+  ]
+ ],
+ [
+  334,
+  "Cancellation backfill: build, small, on top of the RIS. That addresses",
+  [
+   629,
+   "line"
+  ]
+ ],
+ [
+  335,
+  "Voice: buy. I integrate.",
+  [
+   631,
+   "line"
+  ]
+ ],
+ [
+  336,
+  "Records: build, selectively.",
+  [
+   633,
+   "line"
+  ]
+ ],
+ [
+  337,
+  "Owner reporting: build.",
+  [
+   635,
+   "line"
+  ]
+ ],
+ [
+  338,
+  "Billing, claims, and the eligibility feed: buy. That is a clearinghous",
+  [
+   637,
+   "line"
+  ]
+ ],
+ [
+  339,
+  "Three of the seven, I am telling you to buy.\"",
+  [
+   639,
+   "line"
+  ]
+ ],
+ [
+  343,
+  "\"Billing is a buy and I am not touching the claims work. What I evalua",
+  [
+   647,
+   "line"
+  ]
+ ],
+ [
+  346,
+  "\"I am not building an eligibility system. Your billing vendor already ",
+  [
+   653,
+   "line"
+  ]
+ ],
+ [
+  349,
+  "\"Three of the seven, I am telling you to buy\" is the point of the slid",
+  [
+   659,
+   "redirect"
+  ]
+ ],
+ [
+  354,
+  "\"Enough slides. This is RadAssist. Structured radiology reporting, in ",
+  [
+   669,
+   "line"
+  ]
+ ],
+ [
+  355,
+  "The spine module is the one I want to show you, because of how it got ",
+  [
+   671,
+   "redirect"
+  ]
+ ],
+ [
+  364,
+  "Then hand the table to Luis. \"Luis, tell him about a Tuesday. What bro",
+  [
+   693,
+   "redirect"
+  ]
+ ],
+ [
+  376,
+  "Ask before the slide, to Luis as much as to Fernando: \"When your partn",
+  [
+   715,
+   "redirect"
+  ]
+ ],
+ [
+  378,
+  "\"One more thing before the boundaries, because it is the one piece of ",
+  [
+   725,
+   "line"
+  ]
+ ],
+ [
+  379,
+  "The agent drafts. The radiologist signs. Nothing clinical leaves this ",
+  [
+   727,
+   "line"
+  ]
+ ],
+ [
+  380,
+  "That is RadAssist today, and you just watched it. Calcium reads the sc",
+  [
+   729,
+   "line"
+  ]
+ ],
+ [
+  381,
+  "Requesting records runs the other way, and it is a different build. DI",
+  [
+   731,
+   "line"
+  ]
+ ],
+ [
+  382,
+  "Which one did you mean? They are two different builds, and I would rat",
+  [
+   733,
+   "line"
+  ]
+ ],
+ [
+  384,
+  "\"One instance per center, not one shared stack. That costs more, not l",
+  [
+   759,
+   "redirect"
+  ]
+ ],
+ [
+  393,
+  "\"Which direction, and against which RIS. Then I can scope it.\"",
+  [
+   751,
+   "sub"
+  ]
+ ],
+ [
+  395,
+  "Say the heading slowly, then let Luis answer the direction question. W",
+  [
+   755,
+   "line"
+  ]
+ ],
+ [
+  399,
+  "\"The FDA question, answered by the statute and not by me. Federal law ",
+  [
+   769,
+   "line"
+  ]
+ ],
+ [
+  400,
+  "Every candidate on that scorecard is on the list by name.",
+  [
+   771,
+   "line"
+  ]
+ ],
+ [
+  401,
+  "And the agents stop at the clinical boundary. Nothing interprets an im",
+  [
+   773,
+   "line"
+  ]
+ ],
+ [
+  414,
+  "\"Four constraints I am going to design around, stated before you ask.",
+  [
+   799,
+   "line"
+  ]
+ ],
+ [
+  415,
+  "Texas SB 1188. Electronic health records with Texas patient data have ",
+  [
+   801,
+   "line"
+  ]
+ ],
+ [
+  416,
+  "TCPA, the Telephone Consumer Protection Act. That is the federal law o",
+  [
+   803,
+   "line"
+  ]
+ ],
+ [
+  417,
+  "The AI vendor's business associate agreement. Anthropic's agreement no",
+  [
+   805,
+   "line"
+  ]
+ ],
+ [
+  418,
+  "Texas HB 300. Its definition of a covered entity is broad enough to re",
+  [
+   807,
+   "line"
+  ]
+ ],
+ [
+  420,
+  "\"The coverage depends on which version of the agreement is signed and ",
+  [
+   811,
+   "line"
+  ]
+ ],
+ [
+  432,
+  "\"The question you are going to ask is what happens when I get hit by a",
+  [
+   844,
+   "line"
+  ]
+ ],
+ [
+  433,
+  "You own the specification. It is written for a competent engineer who ",
+  [
+   846,
+   "line"
+  ]
+ ],
+ [
+  434,
+  "You own the code. It lives in a repository under your organization's a",
+  [
+   848,
+   "line"
+  ]
+ ],
+ [
+  435,
+  "One distinction, and I would rather raise it myself than have you find",
+  [
+   850,
+   "prefix"
+  ]
+ ],
+ [
+  436,
+  "Runbooks, not memory. Every operational procedure is written down: how",
+  [
+   852,
+   "line"
+  ]
+ ],
+ [
+  437,
+  "No proprietary runtime. Standard interfaces, HL7 version 2, DICOM, pay",
+  [
+   854,
+   "line"
+  ]
+ ],
+ [
+  438,
+  "Buy where buying is right. The RIS and the voice vendor are contracted",
+  [
+   856,
+   "line"
+  ]
+ ],
+ [
+  439,
+  "The design engagement exists so that this question has a boring answer",
+  [
+   858,
+   "line"
+  ]
+ ],
+ [
+  455,
+  "\"What I recommend you do not buy from me.",
+  [
+   892,
+   "line"
+  ]
+ ],
+ [
+  456,
+  "A custom voice agent. Buy a vendor. I will specify, evaluate, and inte",
+  [
+   894,
+   "line"
+  ]
+ ],
+ [
+  457,
+  "Reminders, self-scheduling, and intake forms. Your RIS does this. Make",
+  [
+   896,
+   "line"
+  ]
+ ],
+ [
+  458,
+  "Anything built to resell to other centers. I am not building a product",
+  [
+   898,
+   "line"
+  ]
+ ],
+ [
+  459,
+  "Anything that touches the image clinically. Not from me, not from anyo",
+  [
+   900,
+   "line"
+  ]
+ ],
+ [
+  473,
+  "\"If it were my money, I would do three things before signing another v",
+  [
+   928,
+   "line"
+  ]
+ ],
+ [
+  474,
+  "Put the four access terms into every contract this month. It is free.",
+  [
+   930,
+   "line"
+  ]
+ ],
+ [
+  475,
+  "Decide now whether the prior authorization desk is a hire or a system.",
+  [
+   932,
+   "line"
+  ]
+ ],
+ [
+  476,
+  "And tell me what front desk and prior authorization actually cost you ",
+  [
+   934,
+   "line"
+  ]
+ ],
+ [
+  477,
+  "One question for you. What would you do differently this time, knowing",
+  [
+   936,
+   "line"
+  ]
+ ],
+ [
+  478,
+  "Then stop and listen.",
+  [
+   938,
+   "line"
+  ]
+ ],
+ [
+  482,
+  "\"And to be clear about what I am not saying. Staff for the manual work",
+  [
+   946,
+   "line"
+  ]
+ ],
+ [
+  490,
+  "Ask the closing question and then do not fill the silence. A man with ",
+  [
+   962,
+   "line"
+  ]
+ ],
+ [
+  494,
+  "\"The build starts around March so prior authorization works before you",
+  [
+   970,
+   "line"
+  ]
+ ],
+ [
+  497,
+  ". The one most likely to slip is vendor selection, because it runs on ",
+  [
+   976,
+   "redirect"
+  ]
+ ],
+ [
+  498,
+  "Do not promise anything beyond the list. If pushed for a guarantee: \"T",
+  [
+   978,
+   "line"
+  ]
+ ],
+ [
+  499,
+  "Staffing, unprompted: \"Staff for the manual workflow at opening. I am ",
+  [
+   980,
+   "line"
+  ]
+ ],
+ [
+  505,
+  "\"Every one of these decisions is reversible today. None of them will b",
+  [
+   992,
+   "line"
+  ]
+ ],
+ [
+  506,
+  "Thank you, all three of you. Here is a summary you can keep.\"",
+  [
+   994,
+   "line"
+  ]
+ ],
+ [
+  514,
+  "\"The rest is reference. It is what it would cost to have me take the n",
+  [
+   1010,
+   "line"
+  ]
+ ],
+ [
+  523,
+  "\"One engagement for the new center. Forty-five thousand, fixed fee, fi",
+  [
+   1028,
+   "line"
+  ]
+ ],
+ [
+  525,
+  "\"Four thousand when we sign and three when you have the requirements. ",
+  [
+   1032,
+   "line"
+  ]
+ ],
+ [
+  570,
+  "Outside the phases: $150 an hour, approved first, against a retainer t",
+  [
+   1047,
+   "redirect"
+  ]
+ ],
+ [
+  586,
+  "\"We start in November with discovery, six weeks, and you sign the requ",
+  [
+   1079,
+   "line"
+  ]
+ ],
+ [
+  587,
+  "Then the point of the picture, once: \"Every diamond is a document you ",
+  [
+   1081,
+   "line"
+  ]
+ ],
+ [
+  588,
+  "Then stop and let him look.",
+  [
+   1083,
+   "line"
+  ]
+ ],
+ [
+  599,
+  ": \"This is what each phase needs from you, so nothing on my side is ev",
+  [
+   1105,
+   "redirect"
+  ]
+ ],
+ [
+  612,
+  "Lunch.",
+  [
+   1126,
+   "redirect"
+  ]
+ ]
+]

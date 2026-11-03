@@ -588,7 +588,7 @@
       <li>Every HL7, DICOM, and payer mapping, and every RIS and billing configuration</li>
     </ul></div>
 
-  <div class="panel rick" style="left:40px;top:420px;width:590px;height:150px"><div class="k">Tier 3</div><h3>Rick's existing product, extended for the center. Rick's, licensed.</h3>Licensed to the center perpetually, irrevocably, and transferably, with source, so it can run and modify the code for its own operations indefinitely. The center cannot resell it. On the diagrams, this is the red stripe:
+  <div class="panel rick" style="left:40px;top:420px;width:590px;height:150px"><div class="k">Tier 3</div><h3>Rick's existing product, extended for the center. Rick's, licensed.</h3>Licensed to the center on terms written into the agreement, so it can keep running it for its own operations. The center cannot resell it. On the diagrams, this is the red stripe:
     <ul>
       <li>The prior authorization engine (#1, #2)</li>
       <li>The backfill engine (#5)</li>
@@ -628,13 +628,13 @@
   <div class="hdr">
     <div>
       <div class="kicker">Proposed architecture, page 6 of 8. Deployment across three centers.</div>
-      <h1>Three centers, three instances. The specification is shared. Nothing else is.</h1>
-      <div class="sub">A recommendation, not a settled fact. Whether the centers share a back office and a vendor stack is the partners' decision, and either answer fits this page. What does not change is that each center's patient data stays its own, and that this costs more than one shared stack.</div>
+      <h1>One stack or one per center. The owners decide which; the data boundary does not move.</h1>
+      <div class="sub">The rule: same owners across the centers, one shared stack with each center's data segregated and every session scoped to one center. Different owners per center, a separate instance each, drawn below. Either works. What does not change is that no patient record from one center is readable from another.</div>
     </div>
-    <div class="who">Every service on pages 1 to 4<br>deployed <b>once per center</b>, data never pooled</div>
+    <div class="who">Every service on pages 1 to 4,<br>per-center data <b>never pooled</b> in either case</div>
   </div>
 
-  <div class="panel spec" style="left:40px;top:108px;width:1200px;height:66px"><div class="k">Tier 1, written once</div><h3>One specification, three deployments.</h3>Order detection, packet assembly, deadline tracking, the records clock, the reporting joins, the report assistance path. Written once, with each center's mappings and configuration filled in per site.</div>
+  <div class="panel spec" style="left:40px;top:108px;width:1200px;height:66px"><div class="k">Tier 1, written once</div><h3>One specification, reused for every center.</h3>Order detection, packet assembly, deadline tracking, the records clock, the reporting joins, the report assistance path. Written once, with each center's mappings and configuration filled in per site, whether that is one stack or several instances.</div>
 
   <div class="panel center" style="left:40px;top:196px;width:380px;height:206px"><div class="k">First center</div><h3>Its own instance.</h3>
     <ul>
@@ -666,19 +666,19 @@
   <div class="walllbl" style="left:426px;top:400px">No cross-center read</div>
   <div class="walllbl" style="left:836px;top:400px">No cross-center read</div>
 
-  <div class="panel wallbox" style="left:40px;top:424px;width:380px;height:214px"><div class="k">Why independence. Governance, not cost.</div><h3>It costs more, and that is stated here on purpose.</h3>Three hosts, three databases, three sets of credentials to rotate, three audit logs to review, and the recurring infrastructure line sits in each center's budget rather than once. The reason to pay it: separate principals, separate books, and a line a regulator, an auditor, or a partner's lawyer can see without reading code. In a shared stack, every center's patient data is one breach, one subpoena, and one dispute away from the others.</div>
+  <div class="panel wallbox" style="left:40px;top:424px;width:380px;height:214px"><div class="k">Different owners: separate instances. Governance, not cost.</div><h3>The boundary is physical, and it costs more on purpose.</h3>Separate books and separate principals need a line that is visible in the system itself: its own host, database, credentials, and audit log per center. A shared stack with tenant segregation can serve different owners and is defensible; separate instances are the recommendation because a regulator, an auditor, or a partner's lawyer can see the line without reading code.</div>
 
-  <div class="panel" style="left:450px;top:424px;width:380px;height:214px"><div class="k">If the partners choose a shared back office</div><h3>Share the staff, not the data.</h3>One team can serve three centers: three logins, every session scoped to one center, every action logged against that center. Any report that spans centers is a later, explicit decision by all the principals, built as a read-only view over three databases, never as a merged one. Nothing on this page has to be rebuilt for either answer; what changes is how many vendor contracts carry the four access terms.</div>
+  <div class="panel" style="left:450px;top:424px;width:380px;height:214px"><div class="k">Same owners: one shared stack</div><h3>Share the system, segregate the data.</h3>One set of books and one set of principals means the governance line is already drawn, so one stack is the simpler, cheaper system to run: one host, one set of credentials to rotate, one audit log to review. Each center is a tenant: every session scoped to one center, every action logged against it, no cross-center read. A report that spans centers is a later, explicit decision by all the principals, built read-only, never as a merged record.</div>
 
-  <div class="panel" style="left:860px;top:424px;width:380px;height:214px"><div class="k">What is shared, exactly</div><h3>The specification and the engines. Nothing that holds a patient.</h3>
+  <div class="panel" style="left:860px;top:424px;width:380px;height:214px"><div class="k">What is shared in both cases</div><h3>The specification and the engines. Never a patient record.</h3>
     <ul>
       <li>The specification, Tier 1, written once.</li>
-      <li>Rick's engines, Tier 3: the same code deployed three times, licensed to each center with source.</li>
+      <li>Rick's engines, Tier 3, licensed to the center.</li>
       <li>The runbooks and the vendor evaluation criteria.</li>
-      <li>No database, no credential, no audit log, no model account.</li>
+      <li>With separate instances: no database, credential, audit log, or model account is shared.</li>
     </ul></div>
 
-  <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. One instance per center is the recommendation. How many back offices and vendor contracts there are is the partners' call, and the data boundary holds either way.</div><div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div></div>
+  <div class="ftr"><div><b>Richard Finlay</b>, RGF Global Ventures LLC. Same owners, one shared stack; different owners, one instance each. How many back offices and vendor contracts there are is the partners' call, and the data boundary holds either way.</div><div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div></div>
 </div>
 
 

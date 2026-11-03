@@ -1,21 +1,21 @@
-# Demo scripts for the partner dinner
+# Demo scripts for the partner lunch
 
-Two live demos, about three minutes each. **Part A** is RadAssist Spine MRI (slide 19, the product that already exists). **Part B** is the prior authorization agent (slide 11, the thing to be built). Both run from tabs opened before dinner.
+Two live demos, about three minutes each. **Part A** is RadAssist Spine MRI (slide 19, the product that already exists). **Part B** is the prior authorization agent (slide 11, the thing to be built). Both run from tabs opened before lunch, Thursday morning.
 
 ---
 
 # Part A. RadAssist Spine MRI, live (about 3 minutes, slide 19)
 
-**Live URL:** https://radassist.app/spine (sign in before dinner; the session needs your password and your authenticator code).
+**Live URL:** https://radassist.app/spine (sign in Thursday morning, before lunch; the session needs your password and your authenticator code).
 **Works on:** the laptop. Keep the tab open from the moment you sign in; do not reload it at the table.
-**What it is:** the production tool Luis uses every day. Everything you type tonight is synthetic. Nothing is sent to a server; the report is assembled in the browser and copied as plain text.
+**What it is:** the production tool Luis uses every day. Everything you type at the table is synthetic. Nothing is sent to a server; the report is assembled in the browser and copied as plain text.
 **Backups if the network fails:** `demo-assets/` in the pitch folder has eight screenshots of this exact case and a 27-second recording (`spine-demo-recording.mp4`), captured 2026-11-01 from the same build that is live.
 
 ## Before you switch tabs (10 seconds)
 
 Slide 19 is up. Say the proof point once, then move to the tab:
 
-> "Spine went live this week. Luis sent me his template and his rules, and it was live and tested the same day. Every rule in it is his. Let me show you one case."
+> "Spine went live this week. Luis sent me his template and his rules. Every rule in it is his. Let me show you one case."
 
 If the slide prompts it, one sentence on CT: "CT Spine followed two days later, live since Sunday, from his sample reports. Same tool, switched to CT." Then demo the MRI case only; do not switch modalities at the table.
 
@@ -41,7 +41,7 @@ Scroll to **L4-L5**, click **Edit**, and enter the card values:
 | Ligamentum flavum | Hypertrophy, 5 mm |
 | AP diameter of the thecal sac (cm) | 0.5 |
 
-Point at the note under the AP box: **"5 mm → suggests Severe canal stenosis — matches your canal grade."**
+Point at the note under the AP box: **"5 mm → suggests Severe canal stenosis, matches your canal grade."**
 
 > "That flag suggests; it never decides. If Luis grades it differently, his grade prints and the flag just says it disagrees."
 
@@ -71,7 +71,7 @@ Click **Mark the remaining 2 levels reviewed (normal)**, confirm, then open **L1
 
 ## 6. Copy, paste, done (30 seconds)
 
-Click **Copy report**. Switch to the plain-text window you opened before dinner (TextEdit in plain-text mode, or Notes) and paste.
+Click **Copy report**. Switch to the plain-text window you opened before lunch (TextEdit in plain-text mode, or Notes) and paste.
 
 > "That is the whole report, plain text, in his words. It goes into whatever system the center buys. No integration needed on day one, nothing to install, nothing stored on a server."
 
@@ -92,14 +92,14 @@ Close the demo, back to the deck:
 
 ## If the Wi-Fi dies, Part A
 
-The tab you signed into before dinner keeps working without a network: the report is assembled in the browser. Do not reload. If the tab is gone, open `demo-assets/` and walk the screenshots in number order, or play `spine-demo-recording.mp4` (27 seconds): "The network is not cooperating, so here is the same case recorded this week from the live site."
+The tab you signed into Thursday morning keeps working without a network: the report is assembled in the browser. Do not reload. If the tab is gone, open `demo-assets/` and walk the screenshots in number order, or play `spine-demo-recording.mp4` (27 seconds): "The network is not cooperating, so here is the same case recorded this week from the live site."
 
 ---
 
 # Part B. Prior Authorization Agent (about 3 minutes, slide 11)
 
 **Live URL:** https://rfinlay.github.io/imaging-priorauth-demo/
-**Works on:** laptop, iPad, phone. No login. Open it before dinner and leave the tab up.
+**Works on:** laptop, iPad, phone. No login. Open it Thursday morning and leave the tab up.
 **Source and the real-vs-simulated table:** https://github.com/rfinlay/imaging-priorauth-demo#readme
 
 Before you start, glance at the top banner. It should read **"Payer sandbox: LIVE (HL7 Da Vinci PAS)"** in green.
@@ -143,7 +143,7 @@ Watch the log fill in. Wait for the line **"Payer sandbox accepted the request (
 
 > "That just went over the wire to HL7's prior-authorization test server, in the FHIR format CMS is requiring every Medicare Advantage and exchange plan to support by January 2027. That tracking number is real; the link opens the stored record on their server."
 
-If Jesse wants proof, click **Show the FHIR request we sent** or the **Open the stored response** link. If the banner was orange, say instead: "Tonight the public test server is down, so this one went to our simulated payer, which is why it is labeled that way. The code path is the same."
+If Jesse wants proof, click **Show the FHIR request we sent** or the **Open the stored response** link. If the banner was orange, say instead: "Today the public test server is down, so this one went to our simulated payer, which is why it is labeled that way. The code path is the same."
 
 Be straight about the boundary, because Fernando will ask: "The test server accepts and stores the request but has no medical-necessity rules for imaging, so the approve or deny you are about to see is simulated. Real payer decisions come when a real payer connects, which is the point of the 2027 rule."
 
