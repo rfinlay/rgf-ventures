@@ -416,6 +416,8 @@ Land the last sentence and let it sit for a beat before you move to Part two.
 
 **The demo is live: https://rfinlay.github.io/imaging-priorauth-demo/ (Alan's build, synthetic data).** It is on the slide and the leave-behind. Open it yourself Thursday morning; if it will not load, say "it exists, I will send you the link," never a date. Fernando is visual and distrustful after vendors over-promised; a demo he can click is worth more than any slide.
 
+==**HOW TO RUN IT (switch to the demo here).** Tab already open on the phone (cellular) and the laptop, opened before lunch, banner checked (green: live test server; orange: simulated payer, say so). Run **Maria** first: order, needs auth, packet, approve and submit, advance 3 days, approved. Then **Robert**: same steps fast, advance twice, denied, review appeal, sign and submit, advance, overturned. Then **Owner's Monday report**. Say the boundary line out loud before anyone asks: the test server stores the request but has no medical-necessity rules, so the approve or deny is simulated. A full page reload (Cmd+R, or pull-to-refresh on the phone) resets both orders to new; the "Start over" button does not. Reload before lunch and before handing the phone over. Full steps, lines and Q&A in `PRIORAUTH-DEMO-SCRIPT.md`.==
+
 **If he raises Exa building something similar.** Never disparage Exa.
 
 > "They may well, and if theirs is good, use it. What I build is vendor-neutral: it runs on your data and your contract terms, and it works with whatever RIS and PACS you pick, Exa included. The four access terms protect you either way, whether the feature comes from them or from me."

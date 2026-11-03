@@ -15,6 +15,10 @@ Glance at the top banner on both devices.
 
 Either way the demo works. Decide which line you are saying before you sit down, and check the banner again once at the table before you start.
 
+## Reset (Rick, 2026-11-03)
+
+A **full page reload** (Cmd+R on the laptop, pull-to-refresh on the phone) resets Maria and Robert to new orders. The **"Start over with another order"** button does **not** reset state; after a rehearsal the queue still shows the old outcomes. Reload once before lunch, and reload again before you hand the phone over, so the first click anyone sees is a fresh order. Reload on Wi-Fi or cellular before you need it, never mid-demo.
+
 ## Framing (10 seconds)
 
 > "This is a working prototype, not slides. Everything you see is synthetic data, but the submission in the middle goes to a real payer test server that implements the national prior-auth standard. I want you to click it, not watch me."
