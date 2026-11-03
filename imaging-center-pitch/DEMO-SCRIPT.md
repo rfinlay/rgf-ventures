@@ -1,10 +1,12 @@
 # Demo scripts for the partner lunch
 
-Two live demos, about three minutes each. **Part A** is RadAssist Spine MRI (slide 19, the product that already exists). **Part B** is the prior authorization agent (slide 11, the thing to be built). Both run from tabs opened before lunch, Thursday morning.
+**Part A is NOT USED THURSDAY (overview only, per Luis; Rick, 2026-11-03).** Slide 19 is a one-minute spoken overview of RadAssist, and the table then goes to Luis; the walkthrough below is kept for reference and for any later working-day showing. **Part B**, the prior authorization agent (slide 11, the thing to be built), is unchanged and runs from a tab opened Thursday morning; it needs no login.
 
 ---
 
-# Part A. RadAssist Spine MRI, live (about 3 minutes, slide 19)
+# Part A. RadAssist Spine MRI, live (about 3 minutes, slide 19). NOT USED THURSDAY: overview only, per Luis.
+
+> Kept as written. Nothing below is set up or rehearsed for the 11-05 lunch. If Luis himself asks you to open it, this is the walkthrough; otherwise the spoken overview under slide 19 in the SPEAKING NOTES is the whole of slide 19.
 
 **Live URL:** https://radassist.app/spine (sign in Thursday morning, before lunch; the session needs your password and your authenticator code).
 **Works on:** the laptop. Keep the tab open from the moment you sign in; do not reload it at the table.
@@ -88,7 +90,7 @@ Close the demo, back to the deck:
 - **"Is it FDA cleared?"** It is not a device and does not diagnose; it formats what the radiologist graded, from his own template, and he signs. Reading the images would be a different product with a regulatory path.
 - **"Can it read the MRI for him?"** Not today, and not promised. That is diagnostic software. It is a future item with a regulatory path.
 - **"What about Spanish?"** Click **Español** above the preview: the same report, drafted in Spanish, flagged as pending his review.
-- **"Can other radiologists use it?"** Yes; the templates are per radiologist. Keep licensing to other centers out of this room (private conversation with Luis).
+- **"Can other radiologists use it?"** Yes; the templates are per radiologist. Keep selling it to other centers out of this room (private conversation with Luis), and say nothing about terms.
 
 ## If the Wi-Fi dies, Part A
 

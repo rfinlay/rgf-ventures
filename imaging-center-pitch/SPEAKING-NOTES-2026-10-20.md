@@ -1,6 +1,6 @@
 # Speaking Notes: Imaging Center Lunch
 
-> ## 📌 UPDATED 2026-11-02 (Rick's review round applied; LUNCH, Thursday 2026-11-05). Earlier updates 2026-11-01 (live RadAssist demo on slide 19) and 2026-10-22 (Luis rehearsal).
+> ## 📌 UPDATED 2026-11-03 (Rick's answers to the 11-02 round; LUNCH, Thursday 2026-11-05). Earlier updates 2026-11-02 (review round), 2026-11-01 (RadAssist on slide 19) and 2026-10-22 (Luis rehearsal).
 >
 > **In the room:** Luis, Fernando Escarzaga, and **Jesse Martinez** (an engineer; quiet, analytic, humble).
 > Format: a quiet place, a conversation, not a pitch to an audience. Rick has court by Zoom on Wed 10-28.
@@ -11,7 +11,9 @@
 > - **New slide 26, "What the dates depend on."** The assumptions. The only place a date is promised, and every date on it is conditional.
 > - **Timeline:** opening targeted around **June 2027, April at the earliest**. The **build starts around March 2027** so prior authorization works before opening. Say only "your new center." **Never mention any building, property, address, or what was at the site before.**
 > - **Pricing, APPROVED by Rick 2026-11-02 (appendix, slides 28 to 31):** one fixed-fee engagement for the new center, **$45,000 in five phases, November 2026 to May 2027**, ready for a ~June 2027 opening with about a month of buffer. Phase 1 Discovery and Requirements $7,000 (Nov to mid-Dec; $4,000 at signing, $3,000 on delivery) · Phase 2 Vendor and System Selection $8,000 (mid-Dec to Jan) · Phase 3 Design and Staffing Plan $7,000 (Feb) · Phase 4 Build and Configure $14,000 (Mar to Apr; $7,000 March 1, $7,000 April 1) · Phase 5 Testing, Training and Go-Live $9,000 (May). Phases 2, 3 and 5 are paid in full at the start. Each phase starts only after the previous deliverable is signed off. Outside the phases: $150/hr, approved first, against a retainer they top up. The timeline flexes if the opening moves; the price does not. **Slide 30 is the timeline (Gantt) and slide 31 is "What I need from you."** The old design/build split and every red "Proposed figures" tag are gone.
-> - **Slide 19 is now a LIVE RadAssist Spine MRI demo (updated 2026-11-01).** Spine shipped 10-31 from Luis's template, every rule his. Three-minute talk track under slide 19; case values on the printed card; backups in `demo-assets/`. Roadmap: voice dictation, then brain and cardiac CTA (CAD-RADS). AI image auto-fill is "a future item with a regulatory path," never a promise. **Licensing to other centers stays OUT of the room** (see slide 19).
+> - **Slide 19 is a spoken RadAssist OVERVIEW, no live demo (Luis's feedback, applied 2026-11-03).** One minute on the slide: what it is, Luis uses it daily, his templates and his rules, it drafts and he signs, four modules (calcium, thyroid, spine MRI, CT spine), nothing leaves the browser, not a device. Then hand the table to Luis. The Spine MRI demo walkthrough stays in DEMO-SCRIPT Part A, marked not used Thursday; the prior authorization demo on slide 11 (Part B) is unchanged. Roadmap: voice dictation, then brain and cardiac CTA (CAD-RADS). AI image auto-fill is "a future item with a regulatory path," never a promise. **Selling RadAssist to other centers stays OUT of the room** (see slide 19).
+> - **No license terms at the table (Rick, 2026-11-03).** What is being sold is a scope of work: a design for one imaging center that can be put anywhere. Ownership of any product pieces is settled in the contract, not at lunch; the center owns its configuration and its data. No arrangement of Luis's is described anywhere. IF ASKED "who owns what?" is under slide 23.
+> - **If they float a full-time role (Rick, 2026-11-03):** IF ASKED block under slide 29. "I'd want to hear it. Let's finish Phase 1 first; that's the job to judge me on." No numbers.
 > - **LOCKED 2026-11-02: lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez.** Be ready Thursday morning; the checklist in Part 4 runs Wednesday night and Thursday morning.
 > - **Transitions (Rick, 2026-11-02):** anything you say before a slide comes up is the last block of the previous slide's notes, headed **LEAD-IN TO SLIDE N (say before you advance)**, so it is never confused with that slide's own THEN SAY.
 > - **Exa answer** is on slide 11: vendor-neutral, never disparage.
@@ -19,15 +21,15 @@
 >
 > **Fernando, per Luis:** straightforward, tough, tight with money, the best administrator Luis has worked with in 25 years. Distrustful after vendors over-promised. Visual: expect "When can I see it working?" He will have his own ideas (AI for prior-record retrieval, for one). **Give him the floor.**
 >
-> **Luis asked how you make money. One sentence:** "One fixed fee, in writing, for taking the new center from requirements to opening day. Anything outside it is approved first and billed by the hour. I keep the rights to my own product, which the center licenses."
+> **Luis asked how you make money. One sentence:** "One fixed fee, in writing, for taking the new center from requirements to opening day. Anything outside it is approved first and billed by the hour."
 >
 > **Process facts from Luis, use them:** outside priors arrive by courier on CD or DVD, and after five days the study is read without them. On the calcium score slide it is "calcium," never "nodules."
 
-**El Paso, lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez. Lunch is about an hour. The slides get 40 minutes of it. 31 slides (27 in the no-numbers deck), plus the live RadAssist demo on slide 19.**
+**El Paso, lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez. Lunch is about an hour. The slides get 40 minutes of it. 31 slides (27 in the no-numbers deck), plus the prior authorization demo he can click on slide 11. RadAssist on slide 19 is a spoken overview, not a demo.**
 
 **The hour, budgeted (Rick, 2026-11-02).** Ten minutes before the first slide: sitting down, ordering, the cold-open card (Part 1). Forty minutes of slides: the clock on every slide header below runs from 0:00 at slide 1 to 40:00 at the Thank You. Ten minutes after: Fernando talking, questions, and the appendix if the room asks for the number. If the food arrives mid-deck, stop at the end of the slide you are on and eat; the clock pauses, the cut list below does not change.
 
-**If short on time, skip, in this order.** The clock is 40 minutes and you will not get all of it. Cut in this order and nothing you need is lost: **slide 17** (owner numbers; the scorecard on 18 names it) first, then **slide 25** (if it were my money; keep its closing question and ask it on 27), then **slide 14** down to one sentence ("Your RIS will do reminders. Let it."), then **slide 10** down to one sentence ("A process that approves 95% of what it touches is one you automate"), then shorten the **demo on 19** to the finished impression and Luis's Tuesday, and **slide 20** to its heading and the one question. **Never skip 3, 4, 6, 11, 18, 19, 23, 24 or 26.** If you reach 36:00 on the slide clock and are still in the middle, jump to 23.
+**If short on time, skip, in this order.** The clock is 40 minutes and you will not get all of it. Cut in this order and nothing you need is lost: **slide 17** (owner numbers; the scorecard on 18 names it) first, then **slide 25** (if it were my money; keep its closing question and ask it on 27), then **slide 14** down to one sentence ("Your RIS will do reminders. Let it."), then **slide 10** down to one sentence ("A process that approves 95% of what it touches is one you automate"), then **slide 19** down to its first two sentences and Luis's Tuesday, and **slide 20** to its heading and the one question. **Never skip 3, 4, 6, 11, 18, 19, 23, 24 or 26.** If you reach 34:00 on the slide clock and are still in the middle, jump to 23. (Re-timed 2026-11-03: slide 19 is one minute now that the demo is out, and the two and a half minutes it gave back went to the boundaries and the close.)
 **In the room:** Dr. Luis Ramos (uses RadAssist daily; your champion), Fernando Escarzaga (founded Southwest X-Ray and sold it in 2019; the skeptic and the signer), and Jesse Martinez (an engineer; quiet and analytic).
 
 This is a rehearsal sheet, not a reference. Read it aloud, top to bottom, in order. The RUNBOOK is for lookup. This is for practice.
@@ -84,7 +86,8 @@ Then stop. Let him answer. Write down the numbers he gives you. ==Everything you
 | Any share of his imaging VOLUME by payer | Coverage shares only. He converts. |
 | "You open in June" as a fact | Say "your target, around June, April at the earliest." |
 | Any building, property, address, or what was at the site | Say "your new center." Nothing more. |
-| Licensing RadAssist to other centers | Private, with Luis only. Never in front of Fernando. |
+| Selling RadAssist to other centers | Private, with Luis only. Never in front of Fernando. |
+| License terms, or any arrangement of Luis's | Scope of work only. The contract settles ownership. |
 | Anything negative about Exa | Vendor-neutral. "If theirs is good, use it." |
 
 If he raises any of it himself: listen, say little, ask nothing, move on.
@@ -667,35 +670,19 @@ Read it in one breath. **=="Three of the seven, I am telling you to buy" is the 
 
 ---
 
-### SLIDE 19 · Proof: RadAssist, live · 29:00 to 32:30
+### SLIDE 19 · Proof: RadAssist, in daily use · 29:00 to 30:00
 
-**Updated 2026-11-01.** This slide now hands off to a **live three-minute RadAssist Spine MRI demo**, Rick's idea after the 10-31 call with Luis. The slide carries a LIVE DEMO badge. The tab is already open and signed in (checklist, Part 4). The case values are on the printed card and in the DEMO-SCRIPT, Part A.
+**Updated 2026-11-03: overview only, no live demo (Luis's feedback, relayed by Rick).** One minute on the slide, spoken, then the table goes to Luis. The three-minute Spine MRI walkthrough is kept in DEMO-SCRIPT Part A, marked not used Thursday, in case Luis himself asks you to open it; nothing on this slide depends on a signed-in tab, a hotspot, or the case card.
 
-**SAY (on the slide, 20 seconds)**
+**SAY (about one minute)**
 
-=="Enough slides. This is RadAssist. Structured radiology reporting, in production, and Luis uses it every day on real patients. Four modules today: calcium scoring, thyroid, since this week spine MRI, and since Sunday CT spine. Spine MRI: cervical, thoracic, lumbar.==
+=="Enough slides for a minute. This is RadAssist. Structured radiology reporting, in production, and Luis uses it every day on real patients.==
 
-==The spine module is the one I want to show you, because of how it got built. Luis sent me his template and his rules. Every rule in it is his. One case, three minutes."==
+==Four modules today: calcium scoring, thyroid ultrasound, spine MRI, and CT spine. It runs on his own templates and his own rules: one dropdown per sentence, and the impression writes itself in the order he set. It drafts. He reads it, and he signs.==
 
-**THEN, SWITCH TO THE RADASSIST TAB. The talk track (about 3 minutes):**
+==Nothing leaves the browser. No patient data sits on a server; the finished report is plain text he pastes into whatever system the center buys. It does not read an image, so it is not a device, and it will not read one until there is a regulatory path for that.==
 
-1. **Pick the study (15 s).** The page is on Spine MRI, Lumbosacral, without contrast. Click **New study** if a draft is offered. Indications: *Other*, type `Low back pain with right leg radiculopathy`.
-   "One dropdown per sentence. The sentences are Luis's template, not mine."
-2. **The severe level, L4-L5 (45 s).** Click **Edit**. Canal *Severe*. Foraminal *Severe*, *Bilateral*. Pfirrmann *IV*. *Extrusion*, 7 mm, *Central*. Nerve roots *Compression*. Ligamentum flavum *Hypertrophy*, 5 mm. AP diameter of the thecal sac *0.5*.
-   Point at the note under the AP box: "5 mm, suggests severe, matches your canal grade."
-   "That flag suggests. It never decides. If Luis grades it differently, his grade prints and the flag just says it disagrees."
-3. **Two more levels, fast (40 s).** L3-L4: Canal *Moderate*, Foraminal *Mild to moderate* *Left*, Pfirrmann *IV*, *Protrusion* 4 mm *Central*, Nerve roots *Contact*, AP *0.7*. L5-S1: Foraminal *Moderate* *Right*, Pfirrmann *III*, *Bulge* 3 mm, Nerve roots *Contact*, *Foraminal*, AP *1.1*. Then the summaries: Conus *L1*, Discs *Moderate to severe*, Bones osteophytes *Moderate*, Modic *Type II* at `L4-L5`.
-   No narration beyond "same thing, two more levels."
-4. **The impression writes itself, in Luis's order (30 s).** Scroll to Impression and read the first lines.
-   "Line 1 is always the fracture sentence, because that is how Luis opens every report. Then the discopathy line names every level that matters. Then the stenosis, worst first: severe canal, moderate canal, severe foraminal, moderate foraminal. He set that order on October 31 and the software has followed it since that evening."
-   Then the **last line**: "Segmental analysis incomplete: 2 disc levels not yet reviewed."
-   "L1-L2 and L2-L3 are still blank. Look at the preview: they print as blank lines, not as normal. **An unreviewed level never prints normal.** That is the safety rule, and it was Luis's."
-5. **Finish the review (20 s).** Click **Mark the remaining 2 levels reviewed (normal)**, confirm, open L1-L2 and L2-L3 and type `1.2` in each AP box. The notice clears: "Every level is reviewed." The incomplete line disappears from the impression.
-6. **Copy, paste, done (30 s).** Click **Copy report**. Switch to the plain-text window you opened before lunch and paste.
-   "That is the whole report, plain text, in his words. It goes into whatever system the center buys. Nothing to install, nothing stored on a server, no integration needed on day one."
-   Back to the deck: "He drafts in it, he signs. It does not read an image, and it will not until there is a regulatory path for that."
-
-**CLOSE, ONLY IF CLEARED WITH LUIS:** his own line from the 10-31 call, that after he tweaks it, "it becomes sellable the next day." If you have not cleared it with him, let Luis say it himself or leave it out. **Rick to confirm before Thursday.**
+==The spine module is the one I would point to, because of how it got built. Luis sent me his template and his rules. Every rule in it is his."==
 
 **==Then hand the table to Luis.** "Luis, tell him about a Tuesday. What broke, and how fast did it get fixed? What did you ask for that got built?" Stop talking.==
 
@@ -705,17 +692,17 @@ For Fernando, every sentence of this is control and simplicity: his template, hi
 
 If Luis mentions something that broke, let him. The speed of the fix is the proof, not the absence of failures.
 
+If Fernando asks to see it: let Luis answer first; it is his tool and his call. If Luis wants it shown, the walkthrough in DEMO-SCRIPT Part A is ready, but it needs a signed-in tab, which you will not have unless you set it up. The honest line: "Luis can show you on a working day; today I would rather you hear him describe it than watch me click."
+
 If Fernando connects this to the FDA slide coming up: the same discipline that keeps the agents administrative is what keeps RadAssist on the right side of the line. It formats what the radiologist graded; it does not read the image. Keep that to one sentence.
 
 **Roadmap, as Luis asked for it (on the slide):** voice dictation integrated into RadAssist, then brain and cardiac CTA (CAD-RADS) modules. Luis will email guideline-display corrections; treat them as his. Say "next on the roadmap," never a date. He also wants technologists capturing data at the ultrasound station so reports pre-fill; note it, do not promise it. **AI image auto-fill** (Luis's vision from the 10-31 call: upload the per-level images and have the software fill the level findings) is diagnostic software. On the slide and out loud it is "a future item with a regulatory path," never a promise, never a date.
 
-**Licensing to other centers: speaking-notes only, never in front of Fernando.** Luis sees resale potential to competitor centers at about $2,500 one-time per center for structured reporting. It is real and worth a private conversation with Luis. At this table it collides with slide 24, where you tell Fernando this center is the priority and his service terms do not change if you take on a second site. Both are true; only one belongs in this room.
-
-**IF THE WI-FI FAILS:** the signed-in tab keeps working without a network (the report is assembled in the browser); do not reload it. If the tab is gone, open `demo-assets/` in the pitch folder and walk the eight screenshots in number order, or play the 27-second `spine-demo-recording.mp4`. Say: "The network is not cooperating, so here is the same case recorded this week from the live site." Then go straight to handing the table to Luis.
+**Selling RadAssist to other centers: speaking-notes only, never in front of Fernando.** Luis sees resale potential to competitor centers for structured reporting. It is real and worth a private conversation with Luis. At this table it collides with slide 24, where you tell Fernando this center is the priority and his service terms do not change if you take on a second site. Both are true; only one belongs in this room. Nothing about how Luis came to use RadAssist, or on what terms, is said at this table (Rick, 2026-11-03).
 
 **BEAT**
 
-Run the case. Hand the table to Luis. Do not demo more features. Do not fill his pauses.
+One minute, no more. Hand the table to Luis. Do not fill his pauses.
 
 **LEAD-IN TO SLIDE 20 (say before you advance)**
 
@@ -723,17 +710,17 @@ Run the case. Hand the table to Luis. Do not demo more features. Do not fill his
 
 ---
 
-### SLIDE 20 · Radiology report assistance · 32:30 to 33:30
+### SLIDE 20 · Radiology report assistance · 30:00 to 31:00
 
 The records direction question is the lead-in on slide 19, asked before this slide comes up.
 
 **SAY**
 
-=="One more thing before the boundaries, because it is the one piece of this you have already seen working.==
+=="One more thing before the boundaries, because it is the one piece of this that already exists and runs every day.==
 
 ==The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature.==
 
-==That is RadAssist today, and you just watched it. Calcium reads the scanner's numbers from a screen capture Luis pastes; thyroid and spine take what he graded, one dropdown per sentence, and draft the report from his own template. He confirms every value before anything applies, and he signs. At your center the path has a name: DICOM worklist and query for the study, HL7 version 2 ORU to carry the signed report into the RIS. Both are contract terms from slide 3.==
+==That is RadAssist today, and Luis just told you what it is like to use. Calcium reads the scanner's numbers from a screen capture Luis pastes; thyroid and spine take what he graded, one dropdown per sentence, and draft the report from his own template. He confirms every value before anything applies, and he signs. At your center the path has a name: DICOM worklist and query for the study, HL7 version 2 ORU to carry the signed report into the RIS. Both are contract terms from slide 3.==
 
 ==Requesting records runs the other way, and it is a different build. DICOM query and retrieve where a facility grants it. A request out and a DICOM import where it does not. And from January, the payer's Provider Access API for the claims record, which is in-network only and carries documents, not images.==
 
@@ -753,7 +740,7 @@ The FDA line, if he connects this to slide 21: the radiologist's own numbers, th
 
 Deployment across centers (one environment, isolated instances): the default is in the last block of this slide, below. The slide survives either answer. Do not say as fact that the centers share anything, and do not name the other principals; their spellings are unconfirmed.
 
-Not on the scorecard, deliberately. The scorecard is the list of candidates. This is not a candidate; it exists and Luis uses it. Extending it to the new center is Tier 3 product under the slide 23 license, same as the prior auth engine.
+Not on the scorecard, deliberately. The scorecard is the list of candidates. This is not a candidate; it exists and Luis uses it. Extending it to the new center is Tier 3 product, and who owns what is settled in the contract, same as the prior auth engine.
 
 If asked how long: no date. =="Which direction, and against which RIS. Then I can scope it."==
 
@@ -769,7 +756,7 @@ Why the default runs that way, if he asks: the isolation lives at the data layer
 
 ---
 
-### SLIDE 21 · Boundaries: the FDA question, answered by the statute · 33:30 to 34:30
+### SLIDE 21 · Boundaries: the FDA question, answered by the statute · 31:00 to 32:00
 
 **SAY**
 
@@ -799,7 +786,7 @@ One minute. The list is the answer. Do not argue it.
 
 ---
 
-### SLIDE 22 · Boundaries: what I will design around, stated before you ask · 34:30 to 35:30
+### SLIDE 22 · Boundaries: what I will design around, stated before you ask · 32:00 to 33:30
 
 **SAY**
 
@@ -844,7 +831,7 @@ Each constraint in a sentence or two, then move. Volunteering them is what separ
 
 ---
 
-### SLIDE 23 · The question you are going to ask · 35:30 to 36:30
+### SLIDE 23 · The question you are going to ask · 33:30 to 35:00
 
 Never cut this slide.
 
@@ -856,7 +843,7 @@ Never cut this slide.
 
 ==You own the code. It lives in a repository under your organization's account. You can revoke my access.==
 
-==One distinction, and I would rather raise it myself than have you find it in a redline. Everything specific to this center is yours outright, in your repository. Some of what I would build is existing product of mine that I would extend for you. That part stays licensed to the center, on terms we put in writing, so you can keep running it even if I disappear. You are never hostage to me. What you are not buying is the right to sell my product to someone else. If that distinction is a problem, tell me today and I will price it differently.==
+==One distinction, and I would rather raise it myself than have you find it in a redline. What I am selling you is a scope of work: a design for one imaging center, built so it can be put anywhere. Everything specific to this center is yours outright, in your repository, and so are your configuration and your data. Some of what I would build is existing product of mine that I would extend for you. Who owns which pieces is settled in the contract, not at this table, and you keep running all of it either way. You are never hostage to me.==
 
 ==Runbooks, not memory. Every operational procedure is written down: how it runs, how it fails, who to call at each vendor.==
 
@@ -868,15 +855,17 @@ Never cut this slide.
 
 **DEPTH / IF ASKED**
 
-The three tiers, so you can name them if he asks what exactly is his. One, the specification: theirs outright. Two, everything specific to this center, meaning configuration, workflows, integrations, data mappings, and reports: theirs outright, in their repository, your access revocable. Three, existing product of yours that you extend for them, such as the prior auth engine, the backfill engine, and the reporting core: yours, licensed to the center on terms written into the agreement. They can run it for their own operations. They cannot resell it. Only the third tier stays yours, and it is the one that makes the price possible.
+The three tiers, so you can name them if he asks what exactly is his. One, the specification: theirs outright. Two, everything specific to this center, meaning configuration, workflows, integrations, data mappings, and reports: theirs outright, in their repository, your access revocable. Three, existing product of yours that you extend for them, such as the prior auth engine, the backfill engine, and the reporting core: yours, and how the center uses it is written into the contract. Say no more than that about the third tier at the table; it is the one that makes the price possible.
 
-**Do not say "perpetual license" (Rick, 2026-11-02).** The license terms go in the agreement, and the arrangement with Luis for RadAssist is a separate matter from the terms Fernando and Jesse sign. If pressed for the terms at the table: "They go in the agreement, and we write them together."
+**No license terms at the table (Rick, 2026-11-03; "perpetual" was already out 11-02).** You are selling a scope of work, a design for one imaging center that can be put anywhere, and the contract settles ownership of any product pieces. Do not describe any arrangement of Luis's, with RadAssist or otherwise, in any form.
+
+**IF ASKED "Who owns what?"** Short answer, then stop: =="The contract settles it. The center owns its configuration and its data, and everything built specifically for this center. Where existing product of mine is part of the build, the contract says how you use it. We write that together, and you see it before you sign anything."== If pressed further: "Not at lunch. That is a contract conversation, and I would rather get it right on paper than guess at it here."
 
 Why raise it unprompted: he has negotiated these contracts, and he will find it in the redline anyway. Finding it yourself, out loud, at the table, is the difference between a negotiator and a vendor. It is the same move as slide 24.
 
-If he asks why the product pieces are not simply his: "It is less expensive for you because I keep the product rights. If you want those too, that is a different number, and I would rather not go there today."
+If he asks why the product pieces are not simply his: "Keeping my own product mine is part of what keeps the price where it is. If you want a different arrangement, that is a contract conversation, and I am open to it."
 
-Escrow: "Direct ownership is better than escrow. The code for your center is in your repository, so there is nothing to escrow. The product pieces are licensed to the center in writing, which is the thing escrow is supposed to give you after a fight. You have it on day one, without the fight."
+Escrow: "Direct ownership is better than escrow. The code for your center is in your repository, so there is nothing to escrow. Whatever of mine the center runs is covered in the contract, which is the thing escrow is supposed to give you after a fight. You have it on day one, without the fight."
 
 A second person: "There is no second person. That is the honest answer, and it is why the engagement is structured so that the specification and the runbooks are the continuity plan, not me."
 
@@ -890,7 +879,7 @@ Five points, in order, no skipping. The ownership distinction rides inside point
 
 ---
 
-### SLIDE 24 · The most important slide · 36:30 to 37:30
+### SLIDE 24 · The most important slide · 35:00 to 36:30
 
 Never cut this slide.
 
@@ -914,7 +903,7 @@ The third bullet is printed on the slide as "Anything built to resell to other c
 
 Why the narrow truth and not a flat no: a flat "no" would be false, because the product pieces stay yours under the slide 23 structure and you may well run them for another site one day. He will see that in the redline. A flat "yes, and I will serve other centers too" is the sentence he is allergic to. The honest middle is a commitment about him rather than a claim about you, and it happens to be the better deal for him: a reference implementation gets the most attention, not the least.
 
-If he asks "is this going to be a product you sell to other centers": "Not off the back of your build. I keep the rights to my own product, and you hold it under a license you can never lose. What I will not do is make you one logo on a page. This center is the reference implementation, you are the priority, and your service terms are fixed in writing no matter what I do next. You know what the other version of that sentence means for your service level, so I am not going to say it."
+If he asks "is this going to be a product you sell to other centers": "Not off the back of your build. I keep the rights to my own product, and what your center runs is settled in the contract. What I will not do is make you one logo on a page. This center is the reference implementation, you are the priority, and your service terms are fixed in writing no matter what I do next. You know what the other version of that sentence means for your service level, so I am not going to say it."
 
 If he or Luis asks "could you just build our RIS": "No, and I will tell you why. Your RIS is a system of record. If it stops, your center stops. That needs a vendor with a support organization and an uptime history, which is not one person. My value to you on the RIS is on your side of the table: picking it and negotiating the terms so you own your own data. I would rather be the person who makes sure you can get your data out of it than the person who holds it." Do not hint at a RadAssist RIS today. It is logged for after this engagement in BACKLOG-POST-ENGAGEMENT-2026-10-06.md, and raising it here would put you on both sides of the slide 3 contract advice.
 
@@ -928,7 +917,7 @@ Recommending against yourself is the single most credible thing you can do in fr
 
 ---
 
-### SLIDE 25 · If it were my money · 37:30 to 38:00
+### SLIDE 25 · If it were my money · 36:30 to 37:30
 
 Cut this slide second if you are running long (the full skip order is at the top of Part 2). Keep the closing question even if you cut the slide; ask it on the Thank You.
 
@@ -972,7 +961,7 @@ The closing question is open on purpose. He is opening in direct competition wit
 
 ---
 
-### SLIDE 26 · What the dates depend on · 38:00 to 39:00
+### SLIDE 26 · What the dates depend on · 37:30 to 38:30
 
 **SAY**
 
@@ -994,7 +983,7 @@ Read the list, then the last line, then stop. It is in the no-numbers deck too.
 
 ---
 
-### SLIDE 27 · Thank you · 39:00 to 40:00, then stop selling or turn to the appendix
+### SLIDE 27 · Thank you · 38:30 to 40:00, then stop selling or turn to the appendix
 
 **SAY**
 
@@ -1071,7 +1060,9 @@ Then stop talking.
 
 **If he asks what the billing evaluation is**: "Billing is a buy and I am not touching the claims work. What I evaluate in Phase 2 is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system depends on them, and whether the four access terms go into that contract too."
 
-Contract through RGF Global Ventures LLC, never personally. Do not discount because Luis is a friend; RadAssist is licensed to the center separately and is not inside this fee.
+Contract through RGF Global Ventures LLC, never personally. Do not discount because Luis is a friend; RadAssist is not inside this fee.
+
+**IF ASKED "Would you come in full time?" (Rick, 2026-11-03).** They may float a salaried role. Say exactly this, and no numbers: =="I'd want to hear it. Let's finish Phase 1 first; that's the job to judge me on. If it makes sense after that, we can talk about what a dedicated role looks like."== Do not name a salary, a start date, or a title, and do not say whether you would leave anything else. If pressed: "Phase 1 is six weeks. Judge me on it, then we talk." Then back to the phases.
 
 **BEAT**
 
@@ -1177,14 +1168,14 @@ No hours. No rate. No justification. Shorten the term, never cut the rate.
 ## Drill 3: the bus answer, five points in order
 
 1. You own the specification. Written for a competent engineer who has never met me. The deliverable whether or not I build anything.
-2. You own the code. Center-specific code in a repository under your organization's account. You can revoke my access. Then the distinction, raised by you, before the redline: my existing product that I extend for you stays licensed to the center, on terms we put in writing, so you keep running it even if I disappear. Not the right to resell it. "If that is a problem, tell me today and I will price it differently." Never say "perpetual."
+2. You own the code. Center-specific code in a repository under your organization's account. You can revoke my access. Then the distinction, raised by you, before the redline: I am selling a scope of work, a design for one center that can be put anywhere; everything specific to this center, its configuration and its data are yours outright; who owns which product pieces is settled in the contract, not today, and you keep running all of it either way. No license terms at the table.
 3. Runbooks, not memory. How it runs, how it fails, who to call at each vendor.
 4. No proprietary runtime. HL7 version 2, DICOM, payer APIs, a named model vendor under its own BAA. Any integrator can take it over.
 5. Buy where buying is right. The RIS and the voice vendor are in your name. Nothing routes through me that does not have to.
 
 Closer: "The design engagement exists so that this question has a boring answer."
 
-Escrow: direct ownership beats escrow for the center's code, and the product pieces are licensed to the center in writing, which is what escrow is for, without the fight. Why the product stays mine: it is less expensive for you because I keep the product rights; if you want those too, that is a different number and not today. Second person: there is no second person, and that is why the spec and the runbooks are the continuity plan.
+Escrow: direct ownership beats escrow for the center's code, and whatever of mine the center runs is covered in the contract, which is what escrow is for, without the fight. Who owns what: the contract settles it; the center owns its configuration and its data. Why the product stays mine: it is part of what keeps the price where it is; a different arrangement is a contract conversation. Second person: there is no second person, and that is why the spec and the runbooks are the continuity plan.
 
 Other centers, if it comes up here instead of at slide 24: not off the back of your build. This center is the reference implementation, you are the priority, and your service terms do not change if I ever take on a second site. In writing.
 
@@ -1209,18 +1200,18 @@ The runbook numbers these 1 through 8 with two items each numbered 5 and 6. Ther
 
 If lunch collapses to one minute, this is what survives. Say it as one paragraph.
 
-"Here is what I would tell you if I had one minute. You are in the only window where automation is a design choice and not a retrofit. Before you sign any vendor, put four terms in the contract: API access to your own data, HL7 interface fees fixed at signature, export rights at no charge, and DICOM query permissions. That is free today and hostage terms later. The biggest cost you have not planned for is prior authorization. In Medicare Advantage, four in five appeals win and almost nobody files one, because nobody has time. I would build that, and I would tell you to buy your reminders from the RIS and your phone system from a voice vendor, not from me. You own the spec, you own the code for your center, my own product stays licensed to the center in writing, and if I get hit by a bus you hand all of it to anyone. Forty-five thousand to take the new center from requirements to opening day, in five phases, each paid when it starts and each started only after you sign off the one before. You can click through a working demo today."
+"Here is what I would tell you if I had one minute. You are in the only window where automation is a design choice and not a retrofit. Before you sign any vendor, put four terms in the contract: API access to your own data, HL7 interface fees fixed at signature, export rights at no charge, and DICOM query permissions. That is free today and hostage terms later. The biggest cost you have not planned for is prior authorization. In Medicare Advantage, four in five appeals win and almost nobody files one, because nobody has time. I would build that, and I would tell you to buy your reminders from the RIS and your phone system from a voice vendor, not from me. You own the spec, you own the code for your center, who owns what else is settled in the contract, and if I get hit by a bus you hand all of it to anyone. Forty-five thousand to take the new center from requirements to opening day, in five phases, each paid when it starts and each started only after you sign off the one before. You can click through a working demo today."
 
 ## Drill 6: the 5-minute version
 
-Cut slide 17 first, then shorten the RadAssist demo on 19. Never cut 6, 23, 24, or 29. In five minutes you keep:
+Cut slide 17 first, then slide 19 to two sentences. Never cut 6, 23, 24, or 29. In five minutes you keep:
 
 | Minute | Slides | What you say |
 |---|---|---|
 | 0:00 to 0:45 | 1, 3 | Framing line. The four contract terms, fast. "Whatever you decide about me, do this." |
 | 0:45 to 1:45 | 4, 5 | Four in five, stop. Caveat. Forty percent, you have not hired that person yet. Caveat. |
 | 1:45 to 2:30 | 7, 18 | "The thing you did not ask about." Then the scorecard in one breath: two of the things you asked about, I am telling you to buy. |
-| 2:30 to 3:15 | 19 | RadAssist is open on the finished spine case (run it Thursday morning). Show the impression and the copy. "Luis, one Tuesday." Thirty seconds of Luis. |
+| 2:30 to 3:15 | 19 | RadAssist in two sentences: Luis uses it daily, his templates and rules, it drafts and he signs, nothing leaves the browser. "Luis, one Tuesday." Thirty seconds of Luis. |
 | 3:15 to 4:00 | 23 | The five bus points, in order. "A boring answer." |
 | 4:00 to 4:30 | 24 | What I recommend you do not buy from me. Slowly. |
 | 4:30 to 5:00 | 29 | The price, once. Stop. |
@@ -1231,7 +1222,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 # PART 4: PRE-LUNCH CHECKLIST. READY BY THURSDAY MORNING, 2026-11-05
 
-Lunch is Thursday 2026-11-05 with Luis, Fernando and Jesse. Do the "before you leave the house" list Wednesday night, and run the demo sign-in and the hotspot test again Thursday morning so nothing is more than a few hours old when you sit down.
+Lunch is Thursday 2026-11-05 with Luis, Fernando and Jesse. Do the "before you leave the house" list Wednesday night, and click through the prior authorization demo again Thursday morning so nothing is more than a few hours old when you sit down. There is no RadAssist demo setup: slide 19 is spoken (Luis, 2026-11-03).
 
 ## Done earlier (2026-10-06 or 10-07)
 
@@ -1241,14 +1232,10 @@ Lunch is Thursday 2026-11-05 with Luis, Fernando and Jesse. Do the "before you l
 
 - [ ] **DONE 2026-10-06, no action needed: the partner name is in.** Fernando Escarzaga appears in full on the two surfaces he will actually see, the deck title slide and the leave-behind header. First name only in the presenter notes, the RUNBOOK, and AUTOMATION-CANDIDATES, where it reads naturally. Every placeholder is gone, and all four PDFs were reprinted and re-synced to OneDrive and Google Drive.
 - [ ] **The engagement is $45,000 in five phases (7 / 8 / 7 / 14 / 9), November to May, APPROVED 2026-11-02.** Slides 29 (table), 30 (timeline), 31 (inputs) and page 2 of the leave-behind. Every red "Proposed figures" tag is gone. Rehearse the price line and the payment line from Drill 2.
-- [ ] **Click through the demo** (https://rfinlay.github.io/imaging-priorauth-demo/, linked on slide 11 and leave-behind page 2) Thursday morning, on the hotspot.
+- [ ] **Click through the prior authorization demo** (https://rfinlay.github.io/imaging-priorauth-demo/, linked on slide 11 and leave-behind page 2) Thursday morning, on the hotspot. Leave the tab open; it needs no login.
 - [ ] **Print the leave-behind.** Three copies (Jesse too). Two US Letter pages from Chrome.
-- [ ] **Charge the laptop.** The deck runs with no wifi. RadAssist needs a network only to sign in. **Sign in to radassist.app before you leave the house** (password plus the authenticator code), open the Spine MRI tab, and leave it open; the report is assembled in the browser, so the open tab keeps working if the room's Wi-Fi fails. Do not reload it at the table.
-- [ ] **Phone hotspot on and tested** with the laptop before you sit down. Bring the charging cable for the phone.
-- [ ] **The synthetic case card, printed** (RUNBOOK, "The live RadAssist demo"): the L3-L4, L4-L5, L5-S1 values and the summaries. Keep it next to the laptop.
-- [ ] **A plain-text window open** (TextEdit in plain-text mode, or Notes) to paste the copied report into.
-- [ ] **Backups on the laptop:** the pitch folder's `demo-assets/` (eight screenshots and the 27-second recording). Open the folder once so Finder has it ready.
-- [ ] **Decide whether to quote Luis** ("it becomes sellable the next day"). Ask him first, or let him say it.
+- [ ] **Charge the laptop.** The deck runs with no wifi; the prior authorization demo is the only thing that needs a network. No RadAssist sign-in, no case card, no backup screenshots: slide 19 is a spoken overview (Luis, 2026-11-03).
+- [ ] **Phone hotspot on and tested** with the laptop before you sit down, for the prior authorization demo. Bring the charging cable for the phone.
 - [ ] **Open the deck in a browser.** Press N once to confirm notes mode works, press N again to hide it. Set the browser to full screen.
 - [ ] **Do not bring the Sherlock research document.** Everything you need from it is in this sheet, the deck notes, and the RUNBOOK.
 - [ ] **Bring this sheet, folded.** Part 1 face up.
@@ -1264,7 +1251,7 @@ Listed so you know what changed and why, not because anything is outstanding.
 - **The "two centers" error is corrected** to one company with five El Paso locations, in the deck presenter note where it lived.
 - **The RUNBOOK objection answer no longer quotes "and then we scale it."** It names the consequence instead of the slogan.
 
-**The one judgment call left is yours, and it is not a defect:** if the lunch runs long, follow the skip order at the top of Part 2 (17, then 25, then 14 and 10 to one sentence each, then the demo), and never slides 23, 24, or 26.
+**The one judgment call left is yours, and it is not a defect:** if the lunch runs long, follow the skip order at the top of Part 2 (17, then 25, then 14 and 10 to one sentence each, then 19 to two sentences), and never slides 23, 24, or 26.
 
 ## Deck order is narrative, on purpose
 

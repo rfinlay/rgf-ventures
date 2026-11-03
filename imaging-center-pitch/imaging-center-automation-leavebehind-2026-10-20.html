@@ -55,6 +55,13 @@
   .demourl { color: var(--accent); font-weight: 600; }
   .page2 p, .page2 li { font-size: 8.9pt; line-height: 1.3; }
   .page2 h2 { margin-top: 9pt; }
+  /* 2026-11-03: page 1 ran about three lines over 11in at print (footer landed on page 2). Tightened, not trimmed. */
+  @media print {
+    .page { padding: 0.2in 0.45in 0.16in 0.45in; }
+    table { line-height: 1.12; }
+    .sources { font-size: 6.3pt; line-height: 1.2; margin-top: 3pt; }
+    footer { margin-top: 3pt; padding-top: 3pt; }
+  }
 </style>
 <script>
 /* NO-NUMBERS VARIANT. Open with ?nonumbers and the element tagged data-nonumbers="remove" (the
@@ -95,7 +102,7 @@
       <tr><td>3</td><td>Owner reporting, including an agent you can ask questions of</td><td class="rec build">Build</td><td>Modality, reader, referrer, turnaround, revenue per slot, appeal rate, from the RIS and the billing system joined. Ask it in plain words and it answers from your own numbers. Read-only, no patient contact, smallest compliance footprint on this list.</td></tr>
       <tr><td>4</td><td>Scheduling: cancellation backfill</td><td class="rec build">Build, small</td><td>UC Irvine study: 22.3% of outpatient radiology exams cancelled versus 2.0% no-shows, 70.2% of cancellations patient-initiated. The empty slot is known in advance. A ranked waitlist on top of the RIS, with a per-patient rate governor for the TCPA cap.</td></tr>
       <tr><td>5</td><td>Medical records: inbound requests and outbound prior studies</td><td class="rec build">Build, selectively</td><td>The HIPAA 30-day clock runs from receipt. Retrieval labor is not chargeable, only copying is. A new center opens with zero priors on file, and no vendor has solved outbound retrieval for a small site.</td></tr>
-      <tr><td>6</td><td>Radiology report assistance</td><td class="rec build">Build (exists)</td><td>RadAssist, used daily by Dr. Ramos: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar), built from his own template and rules, and CT Spine (live November 2), every rule his. Next on the roadmap: voice dictation, brain, and cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise. His template, his rules; the radiologist confirms every value and signs. Nothing clinical leaves without a signature. At the center: DICOM worklist and query in, HL7 v2 ORU out to the RIS. A different build from records retrieval (row 5). Across centers: one environment under one contract, each organization in its own isolated instance (its own database and keys, its own logins, its own audit log); a separately owned center that wants separate hosting gets a fully separate stack at higher cost. Never one shared database; no organization sees another's data.</td></tr>
+      <tr><td>6</td><td>Radiology report assistance</td><td class="rec build">Build (exists)</td><td>RadAssist, used daily by Dr. Ramos: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar) and CT Spine (live November 2), built from his own template and rules. Next on the roadmap: voice dictation, brain, and cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise. The radiologist confirms every value and signs; nothing clinical leaves without a signature. At the center: DICOM worklist and query in, HL7 v2 ORU out to the RIS. A different build from records retrieval (row 5). Across centers: one environment under one contract, each organization in its own isolated instance (own database and keys, own logins, own audit log); a separately owned center that wants separate hosting gets a fully separate stack at higher cost. Never one shared database.</td></tr>
       <tr><td>7</td><td>Scheduling: reminders, self-scheduling, intake</td><td class="rec">Buy (your RIS)</td><td>Commodity, bundled into modern cloud imaging RIS products. Text reminders moved MRI no-shows from 5.1% to 3.8% in a randomized trial. Real, modest, already in the box.</td></tr>
       <tr><td>8</td><td>Answering patients (inbound voice)</td><td class="rec">Buy, I integrate</td><td>26.5% of El Paso County residents speak English less than "very well," nearly all Spanish speakers. Highest-blast-radius failure on this list, and a funded vendor category. I specify, evaluate, integrate, and supervise.</td></tr>
       <tr><td>9</td><td>Billing, claims, and the eligibility feed</td><td class="rec">Buy</td><td>Commodity clearinghouse function, established vendor market. I do not touch the claims work, and I am not building an eligibility system. Your billing vendor already exposes the EDI 270/271 eligibility feed. Row 2 builds the thing that reads that feed and acts on it, so the four access terms belong in the billing contract too.</td></tr>
@@ -108,7 +115,7 @@
       <h2>What you own if I disappear</h2>
       <ul>
         <li>The specification, written for an engineer who has never met me.</li>
-        <li>The code specific to this center, in a repository under your organization's account. Existing product of mine that I extend for you, licensed to the center on terms we put in writing.</li>
+        <li>The code specific to this center, with your configuration and your data, in a repository under your organization's account. Ownership of any product pieces of mine is settled in the contract.</li>
         <li>Runbooks for every operational procedure and vendor contact.</li>
         <li>Standard interfaces only: HL7 v2, DICOM, payer APIs, a named model vendor under its own BAA.</li>
         <li>Your RIS and voice vendor contracts in your name, not routed through me.</li>
@@ -185,7 +192,7 @@
         <tr class="tot"><td></td><td>Total</td><td>Ready for a June 2027 opening, with about a month of buffer</td><td>Nov 2026 to May 2027</td><td class="amt">$45,000</td><td></td></tr>
       </tbody>
     </table>
-    <p style="margin-top:5pt"><b>How it works.</b> Each phase starts only after you sign off the deliverable before it. Work outside the five phases is approved by you first and billed at $150 an hour against a retainer you top up. If the opening date moves, the timeline moves with it; the price does not. Contracted through RGF Global Ventures LLC. RadAssist is licensed to the center separately.</p>
+    <p style="margin-top:5pt"><b>How it works.</b> Each phase starts only after you sign off the deliverable before it. Work outside the five phases is approved by you first and billed at $150 an hour against a retainer you top up. If the opening date moves, the timeline moves with it; the price does not. Contracted through RGF Global Ventures LLC. RadAssist is not part of this fee.</p>
     <p style="margin-top:3pt"><b>What I need from you, by phase.</b> 1: time with Dr. Ramos and Fernando, planned services and modalities, volumes and payer mix, the target opening date. 2: budget ranges, preferred vendors, decisions. 3: hours, roles, vendor contracts in progress. 4: signed contracts and business associate agreements, sandbox access, equipment dates. 5: staff for training, the final opening date. Throughout: one named person who approves.</p>
   </div>
 
