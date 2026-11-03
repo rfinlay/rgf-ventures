@@ -1,8 +1,12 @@
 # RadAssist IP and Clinical Advisor Agreement: Outline for Attorney Review
 
+> **PENDING LAWYER REVIEW.** Rick chose Option A (true IP royalty, no sales commissions) on 2026-11-03. Nothing here is final until a Texas-licensed healthcare attorney has reviewed it.
+
+**Why this structure:** per `private/SHERLOCK-ROYALTY-LAW-2026-11-03.md`, per-sale commissions paid to healthcare providers (the earlier 30% on centers Luis sells and 10% referral fees) are moderate-to-high risk under Tex. Occ. Code 102.001 (patient solicitation, all payers) and the federal Anti-Kickback Statute; a fixed, fair-market-value royalty on all revenue for a documented IP contribution is the low-to-moderate-risk shape.
+
 **Not legal advice; for review by a Texas-licensed attorney.**
 
-PRIVATE. Rick only. Term-sheet outline, not a contract. Prepared 2026-11-01.
+PRIVATE. Rick only. Term-sheet outline, not a contract. Prepared 2026-11-01; compensation terms revised 2026-11-03.
 
 ## 1. Parties
 - **RGF Global Ventures LLC** (Nevada LLC, registered in Texas; DBA Elovar Technology Solutions), owner of RadAssist ("RGF").
@@ -22,18 +26,20 @@ PRIVATE. Rick only. Term-sheet outline, not a contract. Prepared 2026-11-01.
 - Advisor confirms contributions do not include another employer's or practice's confidential material or patient data.
 - Advisor keeps his general medical knowledge and skill.
 
-## 5. Compensation: royalty or revenue share
-- **Rate:** 30% of net license revenue on any center Advisor helps sell (Rick, 2026-11-03; attorney to confirm). Reflects co-development plus clinical credibility.
-- **One payout per sale, never stacked.** If Advisor and a referral partner both touched a sale, Advisor's 30% covers it; no referral fee is also paid.
-- **Base:** net revenue RGF actually receives from RadAssist sales and licenses to **third-party centers** (define net: after refunds, taxes, payment fees, reseller costs).
-- **Excludes:** revenue from Advisor's own centers, consulting fees, and build or integration services, unless agreed.
-- **Term:** a set term of [__] years from first third-party sale (placeholder; Rick to set), not open-ended. Alternative for the attorney: for as long as the modules he contributed are sold.
-- **Cap or step-down:** [optional placeholder].
+## 5. Compensation: IP royalty (Option A, Rick 2026-11-03, pending lawyer review)
+- **What it pays for:** Advisor's design and IP contribution to RadAssist (workflow design, templates, grading schema, impression ordering), documented in the assignment under section 4. It is not a sales commission.
+- **Rate:** 15% of net license revenue on **all** RadAssist licenses, regardless of who sells them or whether Advisor touched the sale. Recurring for the term.
+- **Fixed in advance at fair market value.** Set in writing before any sale; it does not rise with sales Advisor personally generates. Attorney to confirm the rate is supportable as FMV for this kind of contribution (a third-party valuation is an option).
+- **Base:** net revenue RGF actually receives from RadAssist licenses (define net: after refunds, taxes, payment fees, reseller costs). License list price $2,400/yr ($200/mo); founding-center floor $1,800/yr.
+- **Excludes:** consulting fees, and build or integration services, unless agreed.
+- **Term:** a set term, proposed 5 years from the effective date (attorney to confirm), not open-ended.
+- **No per-sale payments to anyone.** No referral or finder fees are paid to Advisor or to any other provider or center owner.
+- **Future major modules:** co-design of a new major module is covered by a separate written agreement at the time, not folded into this royalty.
 - Payment quarterly, with a simple statement. Audit right limited to once a year.
 
-## 6. Advisor's own use
-- Free license at Advisor's own center (Rick, 2026-11-03), for the term.
-- Center license terms are a separate agreement between RGF and the center.
+## 6. Advisor's own use: reference-site agreement
+- Free license at Advisor's own center (Rick, 2026-11-03), for the term, documented as a written **reference-site agreement** with real obligations on the center's side (structured feedback, case studies, permission to name the site), so it reads as consideration rather than a gift.
+- Center license terms are otherwise a separate agreement between RGF and the center.
 
 ## 7. Confidentiality
 - Mutual. Covers RadAssist code, roadmap, pricing, customers, and RGF business plans; and Advisor's practice information.
@@ -81,9 +87,12 @@ PRIVATE. Rick only. Term-sheet outline, not a contract. Prepared 2026-11-01.
 8. Insurance: should RGF carry tech E&O / product liability before third-party sales?
 9. Does Advisor's employer or practice agreement claim any rights in his contributions?
 
-## Addendum 2026-11-03: pricing and referral partners (Rick approved)
-- **Ownership:** RGF (Rick) owns RadAssist outright. Luis uses it free at his center.
-- **Annual center license:** list $2,400/yr ($200/mo). Founding-center discount floor $1,800/yr for early adopters. Royalties are paid on this number.
-- **Referral partners (Fernando Escarzaga, Jesse Martinez, or any approved referrer):** 10% of first-term net license revenue for an imaging center they introduce that signs. Separate short referral agreement. One payout per sale, never stacked with Advisor's 30%.
-- **Not in the Thursday pitch.** Discuss privately with Luis first; with Fernando and Jesse only after the engagement is signed.
-- **Attorney:** anti-kickback and Texas fee-splitting review before signing, since referrers are healthcare owners paid for recommendations (software, not patients). Add to questions section 13 item 5.
+## Addendum 2026-11-03 (afternoon): Option A chosen, pending lawyer review
+Replaces the morning addendum (30% on centers Luis sells, 10% referral fees), which is withdrawn.
+- **Ownership:** RGF (Rick) owns RadAssist outright. Luis uses it free at his center under a reference-site agreement (section 6).
+- **Luis:** 15% of net license revenue on all RadAssist licenses, whoever sells, recurring, for his design and IP contribution; proposed 5-year term; fixed in advance at fair market value (section 5).
+- **Annual center license:** list $2,400/yr ($200/mo). Founding-center floor $1,800/yr for early adopters. The royalty is calculated on net revenue from this number.
+- **Fernando Escarzaga and Jesse Martinez:** **no** per-sale referral fees and no royalty for now. They may earn in later only for real, documented design work, under a written agreement approved by counsel.
+- **Future major modules:** any co-design with Luis gets its own written agreement.
+- **Not in the Thursday pitch.** Discuss privately with Luis only after the lawyer's review; nothing to Fernando or Jesse.
+- **Attorney:** anti-kickback (federal AKS) and Tex. Occ. Code 102.001 review before signing; FMV support for the 15% rate; confirm the 5-year term. See the open questions above and the Sherlock memo's "Questions to bring to the lawyer."

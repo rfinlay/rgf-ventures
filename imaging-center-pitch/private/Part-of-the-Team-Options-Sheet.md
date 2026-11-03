@@ -1,6 +1,10 @@
 # "Part of the Team" Options Sheet
 
-**PRIVATE. Rick only. Never share with Luis, Fernando, or Jesse.** Prepared 2026-11-01.
+> **PENDING LAWYER REVIEW.** The RadAssist royalty terms below reflect Option A, chosen by Rick 2026-11-03 (15% IP royalty to Luis on all licenses, no per-sale fees to anyone). Not final until a Texas-licensed healthcare attorney has reviewed them.
+
+**Why:** per `private/SHERLOCK-ROYALTY-LAW-2026-11-03.md`, per-sale commissions paid to healthcare providers are moderate-to-high risk under Tex. Occ. Code 102.001 (patient solicitation) and the federal Anti-Kickback Statute; a fixed, fair-market-value royalty on all revenue for documented IP is the defensible shape.
+
+**PRIVATE. Rick only. Never share with Luis, Fernando, or Jesse.** Prepared 2026-11-01; royalty terms revised 2026-11-03.
 
 **Context.** On the 10-31 call Luis said, "I really think you need to be part of the team." The new center's financing is approved. RadAssist is RGF's software. Luis is its clinical expert and pilot user. The partner dinner is Wednesday 11-04 or Thursday 11-05. **The engagement, approved 2026-11-02: $45,000 fixed fee in five phases (Discovery $7,000; Vendor selection $8,000; Design and staffing plan $7,000; Build and configure $14,000; Testing, training and go-live $9,000), November 2026 to May 2027, each phase paid at its start after the previous sign-off ($4,000 + $3,000 for Phase 1; $7,000 + $7,000 for Phase 4), $150/hr outside the phases against a topped-up retainer.**
 
@@ -34,7 +38,7 @@ I have not put market salary numbers here on purpose. Set these from your own an
 
 - RGF becomes the center's fractional technology lead on a monthly retainer with an hours cap, starting when the design engagement starts.
 - The five-phase engagement is billed as priced ($45,000), on its own schedule.
-- RadAssist is licensed to the center, never contributed. Luis's clinical contributions are compensated under the advisor agreement (Doc 2): **a 30% royalty (updated 2026-11-03 from 20%) on net revenue RGF receives from RadAssist licenses to third-party centers, for a set term of [X] years from first third-party sale (placeholder; Rick to set).** No royalty on the center's own license, on consulting fees, or on this engagement.
+- RadAssist is licensed to the center, never contributed. Luis's design and IP contributions are compensated under the advisor agreement (Doc 2): **a 15% royalty on net revenue from all RadAssist licenses, regardless of who sells, recurring, for a proposed 5-year term (attorney to confirm), fixed in advance at fair market value (Option A, 2026-11-03, pending lawyer review).** His own center uses it free under a reference-site agreement. No royalty on consulting fees or on this engagement.
 - Equity or a performance bonus is discussed after opening, once there are real numbers. If they offer equity now, take it only on top of the retainer, never instead of it.
 
 ## Walk-away lines
@@ -52,4 +56,4 @@ I have not put market salary numbers here on purpose. Set these from your own an
 If pushed on equity now: *"I'm open to it later. Right now I need it to be a paid role, and I'd rather be straight with you about that."*
 
 
-**Update 2026-11-03 (Rick approved):** Luis 30% royalty on centers he helps sell; Fernando and Jesse 10% referral, one payout per sale, never stacked; annual license $2,400 list, $1,800 founding floor; Luis free at his center. Kept out of the Thursday pitch. Attorney anti-kickback review before signing.
+**Update 2026-11-03, afternoon (Option A, pending lawyer review; replaces the morning note of 30% on centers Luis sells and 10% referral fees):** Luis 15% of net license revenue on all RadAssist licenses, whoever sells, recurring, for his design and IP contribution; proposed 5-year term, attorney to confirm; fixed in advance at fair market value. Free use at his center documented as a reference-site agreement. Any future major module co-design gets a separate written agreement. Fernando and Jesse: no per-sale referral fees and no royalty for now; they may earn in later only for real, documented design work under a written agreement approved by counsel. License list $2,400/yr, $1,800 founding floor. Kept out of the Thursday pitch. Attorney review (federal AKS, Tex. Occ. Code 102.001, FMV rate) before signing.
