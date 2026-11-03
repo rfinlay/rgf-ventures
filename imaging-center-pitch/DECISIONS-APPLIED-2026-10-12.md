@@ -2,7 +2,7 @@
 
 > **Slide numbers in this record are the 24-slide deck of 2026-10-12.** On 2026-10-14 the deck became
 > 26 slides: report assistance is new at 18, and the engagement slide ("slide 22" below) is now slide 26
-> in a two-slide appendix after the Thank You. The current map is in `RUNBOOK-2026-10-20.md`. This record
+> in a two-slide appendix after the Thank You. The current map is in `RUNBOOK-2026-11-05.md`. This record
 > is history and was not renumbered.
 
 **Supersedes `CHANGE-LOG-PENDING-RICK-REVIEW.md`.** The review freeze is LIFTED. Rick approved the
@@ -44,10 +44,10 @@ LLM API bill that scales with use, auth, backups, and monitoring, which is a rec
 quoting a prior auth agent against an unchosen RIS.
 
 **Applied:**
-- `RUNBOOK-2026-10-20.md`: new objection section **"We want something of yours live before a specific
+- `RUNBOOK-2026-11-05.md`: new objection section **"We want something of yours live before a specific
   date"** with the scoping-question answer, the neutral-not-defensive framing instruction, and the
   stated cost of the position.
-- `SPEAKING-NOTES-2026-10-20.md`: same content in SLIDE 22 depth.
+- `SPEAKING-NOTES-2026-11-05.md`: same content in SLIDE 22 depth.
 - Deck presenter notes on the engagement slide: condensed version.
 - One line added to the Phase 2 description in the runbook and the notes: **each specification carries
   its own fixed build price.**
@@ -72,9 +72,9 @@ deliverable to slide 22 before testing it on Luis is exactly the mistake the min
 adopted to avoid.
 
 **Applied:**
-- `RUNBOOK-2026-10-20.md`: new objection section **"Should we hire for prior auth, or will your
+- `RUNBOOK-2026-11-05.md`: new objection section **"Should we hire for prior auth, or will your
   automation cover it?"** with the spoken answer, the both-ways failure analysis, and the framing rule.
-- `SPEAKING-NOTES-2026-10-20.md`: SLIDE 23 depth now carries a ⚠️ instruction to volunteer the
+- `SPEAKING-NOTES-2026-11-05.md`: SLIDE 23 depth now carries a ⚠️ instruction to volunteer the
   guardrail immediately after the "a hire or a system" bullet, because that bullet as written invites
   exactly the wrong conclusion.
 - Deck presenter notes on the engagement slide: one-line reminder to volunteer it.
