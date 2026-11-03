@@ -1,0 +1,92 @@
+[
+ {
+  "page": 16,
+  "subtype": "/Highlight",
+  "contents": "Can we fix the overlap here?",
+  "author": "",
+  "rect": [
+   50.4,
+   19.8,
+   807.2,
+   111.0
+  ],
+  "irt": false,
+  "date": "D:20261102222313-07'00'",
+  "quadtext": ""
+ },
+ {
+  "page": 17,
+  "subtype": "/Highlight",
+  "contents": "This is true, but I don't like the comment. It's a different context focus on what an owner manager or key employees in the staffing plan would like to see.\n",
+  "author": "",
+  "rect": [
+   50.4,
+   44.8,
+   768.8,
+   87.7
+  ],
+  "irt": false,
+  "date": "D:20261102222706-07'00'",
+  "quadtext": ""
+ },
+ {
+  "page": 20,
+  "subtype": "/Highlight",
+  "contents": "Is this messed up?",
+  "author": "",
+  "rect": [
+   50.4,
+   4.3,
+   456.0,
+   129.4
+  ],
+  "irt": false,
+  "date": "D:20261102224246-07'00'",
+  "quadtext": ""
+ },
+ {
+  "page": 21,
+  "subtype": "/Highlight",
+  "contents": "Almost overlap, let's see if we can fix this.",
+  "author": "",
+  "rect": [
+   50.4,
+   44.8,
+   740.8,
+   87.7
+  ],
+  "irt": false,
+  "date": "D:20261102224823-07'00'",
+  "quadtext": ""
+ },
+ {
+  "page": 23,
+  "subtype": "/Highlight",
+  "contents": "Not so sure I want to say perpetual license. In Luis case it will be different from Fernando and Jesse.",
+  "author": "",
+  "rect": [
+   192.8,
+   273.9,
+   690.3,
+   295.4
+  ],
+  "irt": false,
+  "date": "D:20261102225736-07'00'",
+  "quadtext": ""
+ },
+ {
+  "page": 29,
+  "subtype": "/Highlight",
+  "contents": "Don't mention the lawyer stuff.n  Also, not sure on hourly rate is 150 fair?\n",
+  "author": "",
+  "rect": [
+   50.4,
+   44.7,
+   765.2,
+   79.6
+  ],
+  "irt": false,
+  "date": "D:20261102230434-07'00'",
+  "quadtext": ""
+ }
+]

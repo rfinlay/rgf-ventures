@@ -1,0 +1,702 @@
+[
+ {
+  "para": 19,
+  "color": "yellow",
+  "text": "\"Luis, Fernando, thank you for dinner."
+ },
+ {
+  "para": 20,
+  "color": "yellow",
+  "text": "One sentence on who I am. I build and operate agent systems, and Luis uses one of them every day on real patients. That is the only credential that matters tonight."
+ },
+ {
+  "para": 21,
+  "color": "yellow",
+  "text": "I am not here to sell you software tonight. I am here to tell you which decisions you are about to make that are free right now, and will not be free by the time you open."
+ },
+ {
+  "para": 22,
+  "color": "yellow",
+  "text": "Before I start, one thing I would rather hear from you than secondhand. Luis told me you built and sold imaging here in El Paso before this. What did you build, and how many centers were you running at the end?\""
+ },
+ {
+  "para": 23,
+  "color": "yellow",
+  "text": "Then stop. Let him answer. Write down the numbers he gives you. Everything you say about his history for the rest of the night comes from that answer, not from a file."
+ },
+ {
+  "para": 74,
+  "color": "yellow",
+  "text": "\"I am not here to sell you software tonight. I am here to tell you which decisions you are about to make that are free right now, and will not be free by the time you open.\""
+ },
+ {
+  "para": 82,
+  "color": "yellow",
+  "text": "\"Here is where you are, as I understand it. The MRI is signed. Nobody is hired, and no systems are chosen."
+ },
+ {
+  "para": 83,
+  "color": "yellow",
+  "text": "Today, every operational decision you make is cheap, and you can reverse it."
+ },
+ {
+  "para": 84,
+  "color": "yellow",
+  "text": "On January first, the federal prior authorization APIs go live at the payers."
+ },
+ {
+  "para": 85,
+  "color": "yellow",
+  "text": "Around March, the build starts, so prior authorization is working before you open."
+ },
+ {
+  "para": 86,
+  "color": "yellow",
+  "text": "Your target is to open your new center around June, April at the earliest. Whatever is in the vendor contracts by then is what you live with."
+ },
+ {
+  "para": 87,
+  "color": "yellow",
+  "text": "Greenfield is the entire argument tonight. By the time you open there will be a RIS, a billing vendor, a phone system, and people hired around whatever those systems cannot do. Nothing I am going to show you can be done this cheaply after you open.\""
+ },
+ {
+  "para": 91,
+  "color": "yellow",
+  "text": "Ask here, before slide 3: \"Which RIS and billing vendors are you looking at, and have you signed anything yet?\" The answer tells you whether the next slide is still free."
+ },
+ {
+  "para": 97,
+  "color": "yellow",
+  "text": "\"Whatever you decide about me, do this. Put four things in every vendor contract before you sign. They cost nothing today."
+ },
+ {
+  "para": 98,
+  "color": "yellow",
+  "text": "One. API access to your own data, named in the contract. Not 'available on request.'"
+ },
+ {
+  "para": 99,
+  "color": "yellow",
+  "text": "Two. The HL7 interface count and the fee schedule, fixed at signature. Not quoted per interface later."
+ },
+ {
+  "para": 100,
+  "color": "yellow",
+  "text": "Three. Data export rights, in standard formats, on demand, at no charge."
+ },
+ {
+  "para": 101,
+  "color": "yellow",
+  "text": "Four. DICOM query permissions, worklist, query and retrieve, DICOMweb, for the systems you authorize."
+ },
+ {
+  "para": 102,
+  "color": "yellow",
+  "text": "Before signature these are contract terms. After signature they are hostage terms. I will give you the exact language.\""
+ },
+ {
+  "para": 115,
+  "color": "yellow",
+  "text": "\"In 2024, Medicare Advantage insurers denied 4.1 million prior authorization requests. Only 11.5% of those denials were appealed. Of the appeals that were filed, 80.7% were partially or fully overturned."
+ },
+ {
+  "para": 116,
+  "color": "yellow",
+  "text": "Four in five appeals win. Almost nobody files one.\""
+ },
+ {
+  "para": 119,
+  "color": "yellow",
+  "text": "\"That is Medicare Advantage, all services. It is not an imaging number, because CMS does not collect prior authorization data by type of service. It is the only audited, payer-reported, national figure that exists, and it describes the system your center bills into.\""
+ },
+ {
+  "para": 127,
+  "color": "yellow",
+  "text": "Say \"four in five,\" then stop. Count to five in your head if you have to. Let Fernando connect it. He will."
+ },
+ {
+  "para": 131,
+  "color": "yellow",
+  "text": "\"Forty percent of physicians report having staff who work exclusively on prior authorization."
+ },
+ {
+  "para": 132,
+  "color": "yellow",
+  "text": "You have not hired that person yet."
+ },
+ {
+  "para": 133,
+  "color": "yellow",
+  "text": "Two in five practices end up hiring someone whose entire job is prior auth. For you, the decision to automate or to staff is live right now. It will never be live again.\""
+ },
+ {
+  "para": 135,
+  "color": "yellow",
+  "text": "\"That is the AMA's 2025 survey of a thousand physicians. It is self-reported.\""
+ },
+ {
+  "para": 141,
+  "color": "yellow",
+  "text": "Pause after \"you have not hired that person yet.\" That is the whole greenfield argument in one sentence."
+ },
+ {
+  "para": 145,
+  "color": "yellow",
+  "text": "\"Before any more numbers, let me say what I mean by an agent, because the word gets used for everything."
+ },
+ {
+  "para": 146,
+  "color": "yellow",
+  "text": "There are two kinds. The first does a job inside your systems. Think of a very consistent employee who works one desk: a prior authorization, filling a cancelled slot from the waitlist, a records request. It works through your RIS and the payers' own electronic connections, not by clicking around a screen, and somebody on your staff approves anything that goes out."
+ },
+ {
+  "para": 147,
+  "color": "yellow",
+  "text": "The second one you talk to. You text it or call it: how many MRIs did we read last week, which referrer went quiet. It answers from your own numbers. And every Monday it sends you one short report: volumes by modality, reader, and referrer, authorization and denial rates, and the reconciliation."
+ },
+ {
+  "para": 148,
+  "color": "yellow",
+  "text": "Four guardrails, and they do not bend. A person signs anything clinical and anything that leaves the building. Numbers are calculated and checked, never guessed. Every vendor that touches patient data signs a HIPAA business associate agreement. And the data stays in the United States.\""
+ },
+ {
+  "para": 159,
+  "color": "yellow",
+  "text": "\"You asked Luis about scheduling, phones, and records. Those are real. The thing I would put first is the one you did not mention."
+ },
+ {
+  "para": 160,
+  "color": "yellow",
+  "text": "Prior authorization and eligibility verification. It is larger, and it has the best evidence.\""
+ },
+ {
+  "para": 168,
+  "color": "yellow",
+  "text": "\"Physicians and their staff spend an average of 13 hours a week on prior authorization. About 40 requests per physician per week."
+ },
+ {
+  "para": 169,
+  "color": "yellow",
+  "text": "Of the physicians who do not appeal denials, 59% say they do not expect to win, and 52% say they do not have the staff time. Those are exactly the two things an agent removes. Nobody has time, and nobody tracks the odds.\""
+ },
+ {
+  "para": 171,
+  "color": "yellow",
+  "text": "\"Survey data, self-reported, physician practices of all kinds, not imaging centers specifically.\""
+ },
+ {
+  "para": 177,
+  "color": "yellow",
+  "text": "\"CMS used that same hours figure to price the burden at 220 million provider hours over ten years, in the prior authorization rule itself.\""
+ },
+ {
+  "para": 178,
+  "color": "yellow",
+  "text": "\"That is CMS's projection in the rule. It is not measured savings. Nobody has gone back and counted yet.\""
+ },
+ {
+  "para": 185,
+  "color": "yellow",
+  "text": "\"Since January first of this year, the payers under this rule have to decide a standard prior authorization in seven calendar days and an expedited one in 72 hours, and they have to publish their numbers."
+ },
+ {
+  "para": 186,
+  "color": "yellow",
+  "text": "On January first next year, they have to operate a FHIR Prior Authorization API, plus Patient Access, Provider Access, and Payer-to-Payer APIs."
+ },
+ {
+  "para": 187,
+  "color": "yellow",
+  "text": "Your target opening is about five months after that, with prior authorization already working and no legacy process to unwind. And almost 63% of medical plans say they are already building the prior authorization API ahead of the deadline.\""
+ },
+ {
+  "para": 189,
+  "color": "yellow",
+  "text": "\"The rule binds payers, not providers. It creates APIs my side can consume. It does not obligate your center to do anything, and it guarantees nothing about data quality or how easy the connection is.\""
+ },
+ {
+  "para": 206,
+  "color": "yellow",
+  "text": "\"Here is the other side of it. At one institution, over four years, 17,913 outpatient MRI prior authorization requests went in. 4.94% were denied. The other 95% were approved."
+ },
+ {
+  "para": 207,
+  "color": "yellow",
+  "text": "A process that approves 95% of what it touches is one you automate, not one you staff.\""
+ },
+ {
+  "para": 209,
+  "color": "yellow",
+  "text": "\"That is one institution, one modality, four years. The national all-service denial rate from the KFF data was 7.7%. Both say the same thing: most of the work is approvals.\""
+ },
+ {
+  "para": 224,
+  "color": "yellow",
+  "text": "\"Let me make that concrete. An MRI order arrives at nine on a Tuesday."
+ },
+ {
+  "para": 225,
+  "color": "yellow",
+  "text": "It comes in from the referring office and lands in your RIS. The agent checks the patient's coverage and whether this payer requires authorization for this study. If it does, it builds the request from the order and the clinical notes and checks it against that payer's rules. Then it stops, and your staff member reviews it and approves. Only then does it go to the payer, electronically. The agent watches the payer's clock and puts the approval on the schedule the moment it lands. If it is denied, the agent drafts the appeal with the reasons and puts it in front of a person. Nothing goes out unsigned."
+ },
+ {
+  "para": 226,
+  "color": "yellow",
+  "text": "And you will not have to take my word for it. The demo exists today, on synthetic data, no real patients; you can click through it yourself. The production version is built against your real RIS and payers in Phase 4.\""
+ },
+ {
+  "para": 245,
+  "color": "yellow",
+  "text": "\"A University of California, Irvine study of about nineteen thousand outpatient radiology exams found 22.3% were cancelled and 2.0% were no-shows. Seventy percent of the cancellations were patient-initiated. Most empty slots are known in advance. That is a backfill problem, not a reminder problem."
+ },
+ {
+  "para": 246,
+  "color": "yellow",
+  "text": "Nearly everyone pitching imaging automation pitches no-show reduction. That is the 2% number. The cancellation stream is ten times larger, and most of it arrives with lead time."
+ },
+ {
+  "para": 247,
+  "color": "yellow",
+  "text": "What I would build here is small. A waitlist that sees a cancelled slot and works a ranked list of patients who want to come in sooner. It sits on top of whatever RIS you choose.\""
+ },
+ {
+  "para": 249,
+  "color": "yellow",
+  "text": "\"That is one academic center over 2022 and early 2023. Your ratio will differ. The shape will not.\""
+ },
+ {
+  "para": 261,
+  "color": "yellow",
+  "text": "\"A randomized trial at Massachusetts General, about seven thousand MRI patients, added a text reminder on top of the phone call they were already making. No-shows went from 5.1% to 3.8%. It did not improve arrival punctuality.\""
+ },
+ {
+  "para": 263,
+  "color": "yellow",
+  "text": "\"That is 1.3 percentage points absolute. Vendors will tell you that is a 25% reduction. Same study. And only about two thirds of the texting group could actually be reached by text."
+ },
+ {
+  "para": 264,
+  "color": "yellow",
+  "text": "Your RIS will do this. Let it.\""
+ },
+ {
+  "para": 275,
+  "color": "yellow",
+  "text": "Ask before the slide: \"Who takes the phone call when a patient describes chest pain?\" His answer makes the recommendation obvious before you state it."
+ },
+ {
+  "para": 277,
+  "color": "yellow",
+  "text": "\"Phones are a real cost. You are right about that. My recommendation is to buy a healthcare voice vendor, not to have me build one. I will write the specification, run the evaluation, integrate it, and supervise it. And I will tell you when it is not good enough in Spanish."
+ },
+ {
+  "para": 278,
+  "color": "yellow",
+  "text": "Here is why. 26.5% of El Paso County residents over five speak English less than very well, and 97.8% of them speak Spanish. One in four of your patients cannot be served by an English-first system."
+ },
+ {
+  "para": 279,
+  "color": "yellow",
+  "text": "A voice agent that mishandles a patient describing chest pain, or garbles Spanish, is a clinical safety event and a reputational event. It is not a bug. Voice is the highest blast-radius failure on this whole list, and it is a funded category I cannot beat on cost."
+ },
+ {
+  "para": 280,
+  "color": "yellow",
+  "text": "I would rather tell you to buy something than build something that is not mine to build.\""
+ },
+ {
+  "para": 292,
+  "color": "yellow",
+  "text": "\"Records requests. Two rules work in your favor here, and one problem works against you."
+ },
+ {
+  "para": 293,
+  "color": "yellow",
+  "text": "The first rule. The 30-day HIPAA clock runs from the day the request is received, not from the day it reaches the right desk. One extension of up to 30 more days, with written notice inside the first 30. Outer limit, 60 days. A request sitting in a pile is already burning the clock."
+ },
+ {
+  "para": 294,
+  "color": "yellow",
+  "text": "The second rule. The fee you can charge covers the labor to copy, supplies, postage, and a summary if the patient agreed to one. Search and retrieval labor is explicitly not chargeable. Finding the study is the expensive half of the work, and you cannot bill for it."
+ },
+ {
+  "para": 295,
+  "color": "yellow",
+  "text": "The problem. The harder side is outbound. A new center opens with zero priors on file. Every comparison study comes from somewhere else. RSNA is on record this year that DICOM exchange is still not a TEFCA requirement. Patients still carry their own discs. Nobody has solved that for a small center, and I am not going to tell you I have. The part I can build is the tracker: which facility accepts which kind of request, generate it, track it, and import what comes back.\""
+ },
+ {
+  "para": 297,
+  "color": "yellow",
+  "text": "\"Texas has its own records deadline that is shorter than the federal 30 days. I am not going to quote the day-count from memory. It goes in the specification after I verify it against the statute.\""
+ },
+ {
+  "para": 310,
+  "color": "yellow",
+  "text": "Cut this slide first if you are running long at 28:00."
+ },
+ {
+  "para": 311,
+  "color": "yellow",
+  "text": "Ask before or on the slide: \"What do you want to see on one page every Monday morning?\" Whatever he says is the specification."
+ },
+ {
+  "para": 313,
+  "color": "yellow",
+  "text": "\"The fifth one is the numbers the owner actually looks at. Studies by modality, by reader, by referrer. Turnaround. Scheduled versus completed. Revenue per slot."
+ },
+ {
+  "para": 314,
+  "color": "yellow",
+  "text": "All of it already lives in the RIS and the billing system. The problem is that those are two systems, and RIS reporting is built for radiology operations, not for an owner."
+ },
+ {
+  "para": 315,
+  "color": "yellow",
+  "text": "I have no study to show you here. I have the fact that you will want a referrer-and-revenue view, and the RIS will not give it to you. It is the smallest compliance footprint of the five, and the cheapest to build. Luis's question, am I being paid correctly for what I read, is the same engine with a different view."
+ },
+ {
+  "para": 316,
+  "color": "yellow",
+  "text": "And the version I would build is one you can ask questions of. Not a dashboard you read. Something you ask, in plain words: why were we down last Tuesday, what is the appeal rate this month, which referrer went quiet. It reads your numbers and answers. It never touches a patient.\""
+ },
+ {
+  "para": 332,
+  "color": "yellow",
+  "text": "\"Prior authorization and eligibility: build. Strongest evidence, the vendors are built for someone much larger than you, and the federal APIs arrive January first."
+ },
+ {
+  "para": 333,
+  "color": "yellow",
+  "text": "Reminders and self-scheduling: buy. That is the RIS."
+ },
+ {
+  "para": 334,
+  "color": "yellow",
+  "text": "Cancellation backfill: build, small, on top of the RIS. That addresses the 22%, not the 2%."
+ },
+ {
+  "para": 335,
+  "color": "yellow",
+  "text": "Voice: buy. I integrate."
+ },
+ {
+  "para": 336,
+  "color": "yellow",
+  "text": "Records: build, selectively."
+ },
+ {
+  "para": 337,
+  "color": "yellow",
+  "text": "Owner reporting: build."
+ },
+ {
+  "para": 338,
+  "color": "yellow",
+  "text": "Billing, claims, and the eligibility feed: buy. That is a clearinghouse function with a real vendor market, and I am not touching your claims work."
+ },
+ {
+  "para": 339,
+  "color": "yellow",
+  "text": "Three of the seven, I am telling you to buy.\""
+ },
+ {
+  "para": 343,
+  "color": "yellow",
+  "text": "\"Billing is a buy and I am not touching the claims work. What I evaluate is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system I want to build depends on them, and whether the four access terms go into that contract the same way they go into the RIS contract.\""
+ },
+ {
+  "para": 346,
+  "color": "yellow",
+  "text": "\"I am not building an eligibility system. Your billing vendor already has that transaction; the EDI 270/271 eligibility check is the oldest standardized surface in this business and every clearinghouse exposes it. What I build is the thing that reads it and acts on it, which is the part nobody sells you. That is also why the access terms in that billing contract matter to me.\""
+ },
+ {
+  "para": 349,
+  "color": "yellow",
+  "text": "\"Three of the seven, I am telling you to buy\" is the point of the slide, because recommending against yourself three times in a row is the most credible thing you say all night. Let it sit before you move."
+ },
+ {
+  "para": 354,
+  "color": "yellow",
+  "text": "\"Enough slides. This is RadAssist. Structured radiology reporting, in production, and Luis uses it every day on real patients. Four modules today: calcium scoring, thyroid, since this week spine MRI, and since Sunday CT spine. Spine MRI: cervical, thoracic, lumbar."
+ },
+ {
+  "para": 355,
+  "color": "yellow",
+  "text": "The spine module is the one I want to show you, because of how it got built. Luis sent me his template and his rules. It was live and tested the same day. Every rule in it is his. One case, three minutes.\""
+ },
+ {
+  "para": 364,
+  "color": "yellow",
+  "text": "Then hand the table to Luis. \"Luis, tell him about a Tuesday. What broke, and how fast did it get fixed? What did you ask for that got built?\" Stop talking"
+ },
+ {
+  "para": 376,
+  "color": "yellow",
+  "text": "Ask before the slide, to Luis as much as to Fernando: \"When your partner said requesting medical records, did he mean the report you write going out, or the priors and outside records coming in?\" The answer decides which half of this slide you spend the minute on."
+ },
+ {
+  "para": 378,
+  "color": "yellow",
+  "text": "\"One more thing before the boundaries, because it is the one piece of this you have already seen working."
+ },
+ {
+  "para": 379,
+  "color": "yellow",
+  "text": "The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature."
+ },
+ {
+  "para": 380,
+  "color": "yellow",
+  "text": "That is RadAssist today, and you just watched it. Calcium reads the scanner's numbers from a screen capture Luis pastes; thyroid and spine take what he graded, one dropdown per sentence, and draft the report from his own template. He confirms every value before anything applies, and he signs. At your center the path has a name: DICOM worklist and query for the study, HL7 version 2 ORU to carry the signed report into the RIS. Both are contract terms from slide 3."
+ },
+ {
+  "para": 381,
+  "color": "yellow",
+  "text": "Requesting records runs the other way, and it is a different build. DICOM query and retrieve where a facility grants it. A request out and a DICOM import where it does not. And from January, the payer's Provider Access API for the claims record, which is in-network only and carries documents, not images."
+ },
+ {
+  "para": 382,
+  "color": "yellow",
+  "text": "Which one did you mean? They are two different builds, and I would rather ask than guess.\""
+ },
+ {
+  "para": 384,
+  "color": "yellow",
+  "text": "\"One instance per center, not one shared stack. That costs more, not less: three hosts, three databases, three sets of credentials, three audit logs. I am recommending it anyway. The reason is governance, not technology. Separate principals, separate books, and a line any auditor can see without reading code. Share a back office if you want to; the specification is written once either way. The data stays apart.\""
+ },
+ {
+  "para": 393,
+  "color": "yellow",
+  "text": "\"Which direction, and against which RIS. Then I can scope it.\""
+ },
+ {
+  "para": 395,
+  "color": "yellow",
+  "text": "Say the heading slowly, then let Luis answer the direction question. Write down which one he says. That answer changes the Phase 3 design."
+ },
+ {
+  "para": 399,
+  "color": "yellow",
+  "text": "\"The FDA question, answered by the statute and not by me. Federal law says software for administrative support of a health care facility is not a medical device, and it lists what that means by name. Claims or billing information. Appointment schedules. Business analytics. Determination of health benefit eligibility."
+ },
+ {
+  "para": 400,
+  "color": "yellow",
+  "text": "Every candidate on that scorecard is on the list by name."
+ },
+ {
+  "para": 401,
+  "color": "yellow",
+  "text": "And the agents stop at the clinical boundary. Nothing interprets an image, selects a protocol, or recommends a study.\""
+ },
+ {
+  "para": 414,
+  "color": "yellow",
+  "text": "\"Four constraints I am going to design around, stated before you ask."
+ },
+ {
+  "para": 415,
+  "color": "yellow",
+  "text": "Texas SB 1188. Electronic health records with Texas patient data have to be physically stored in the United States as of January first this year. Every component, including the model provider, gets verified for US residency before anything is promised."
+ },
+ {
+  "para": 416,
+  "color": "yellow",
+  "text": "TCPA, the Telephone Consumer Protection Act. That is the federal law on automated calls and texts. Its healthcare exemption allows one message per day and three per week per patient. No billing content. Provider name and opt-out in every message. Five hundred dollars per violation, up to fifteen hundred if willful. A reminder plus a backfill offer plus a results notice can collide with the three-per-week cap. The system needs a per-patient rate governor, not just a send queue. I have built that."
+ },
+ {
+  "para": 417,
+  "color": "yellow",
+  "text": "The AI vendor's business associate agreement. Anthropic's agreement now covers Skills, Web Search, Memory, and the Bash and Text Editor tools. It still excludes Computer Use and Web Fetch, which are exactly what you would reach for to drive a payer portal that has no API. So the prior auth design routes through APIs, EDI, or a human step. Not screen-driving."
+ },
+ {
+  "para": 418,
+  "color": "yellow",
+  "text": "Texas HB 300. Its definition of a covered entity is broad enough to reach me directly, not only through your BAA. I carry that obligation in my own right.\""
+ },
+ {
+  "para": 420,
+  "color": "yellow",
+  "text": "\"The coverage depends on which version of the agreement is signed and when. I will confirm the exact envelope in writing before anything with patient data is built.\""
+ },
+ {
+  "para": 432,
+  "color": "yellow",
+  "text": "\"The question you are going to ask is what happens when I get hit by a bus. Here is the answer, in order."
+ },
+ {
+  "para": 433,
+  "color": "yellow",
+  "text": "You own the specification. It is written for a competent engineer who has never met me, and it is the deliverable of the design engagement whether or not I build anything."
+ },
+ {
+  "para": 434,
+  "color": "yellow",
+  "text": "You own the code. It lives in a repository under your organization's account. You can revoke my access."
+ },
+ {
+  "para": 435,
+  "color": "yellow",
+  "text": "One distinction, and I would rather raise it myself than have you find it in a redline. Everything specific to this center is yours outright, in your repository. Some of what I would build is existing product of mine that I would extend for you. That part you get under a perpetual license you can never lose, with the source in your hands, so you can run it and change it forever, even if I disappear. You are never hostage to me. What you are not buying is the right to sell my product to someone else. If that distinction is a problem, tell me tonight and I will price it differently."
+ },
+ {
+  "para": 436,
+  "color": "yellow",
+  "text": "Runbooks, not memory. Every operational procedure is written down: how it runs, how it fails, who to call at each vendor."
+ },
+ {
+  "para": 437,
+  "color": "yellow",
+  "text": "No proprietary runtime. Standard interfaces, HL7 version 2, DICOM, payer APIs, and a named model vendor under its own business associate agreement. Any integrator can take it over."
+ },
+ {
+  "para": 438,
+  "color": "yellow",
+  "text": "Buy where buying is right. The RIS and the voice vendor are contracted in your name. Nothing routes through me that does not have to."
+ },
+ {
+  "para": 439,
+  "color": "yellow",
+  "text": "The design engagement exists so that this question has a boring answer. If I disappear in month four, you have a specification you can hand to anyone. If I disappear in year two, you have the code, the runbooks, and the vendor relationships in your name.\""
+ },
+ {
+  "para": 455,
+  "color": "yellow",
+  "text": "\"What I recommend you do not buy from me."
+ },
+ {
+  "para": 456,
+  "color": "yellow",
+  "text": "A custom voice agent. Buy a vendor. I will specify, evaluate, and integrate it, and I will tell you when it is not good enough in Spanish."
+ },
+ {
+  "para": 457,
+  "color": "yellow",
+  "text": "Reminders, self-scheduling, and intake forms. Your RIS does this. Make sure the contract says so, then use it."
+ },
+ {
+  "para": 458,
+  "color": "yellow",
+  "text": "Anything built to resell to other centers. I am not building a product to sell to other centers off the back of your build. I will say plainly that I keep the rights to my own product, and that is how the price stays where it is. What you get is a commitment about you. This center is the reference implementation. You are the priority. And if I ever take on a second site, your service terms do not change, and that is in writing."
+ },
+ {
+  "para": 459,
+  "color": "yellow",
+  "text": "Anything that touches the image clinically. Not from me, not from anyone, without an FDA pathway.\""
+ },
+ {
+  "para": 473,
+  "color": "yellow",
+  "text": "\"If it were my money, I would do three things before signing another vendor contract."
+ },
+ {
+  "para": 474,
+  "color": "yellow",
+  "text": "Put the four access terms into every contract this month. It is free."
+ },
+ {
+  "para": 475,
+  "color": "yellow",
+  "text": "Decide now whether the prior authorization desk is a hire or a system. That decision expires the day you hire for it."
+ },
+ {
+  "para": 476,
+  "color": "yellow",
+  "text": "And tell me what front desk and prior authorization actually cost you last time, as a share of operating expense. Your number beats any benchmark I could bring."
+ },
+ {
+  "para": 477,
+  "color": "yellow",
+  "text": "One question for you. What would you do differently this time, knowing how the last one ended up?\""
+ },
+ {
+  "para": 478,
+  "color": "yellow",
+  "text": "Then stop and listen."
+ },
+ {
+  "para": 482,
+  "color": "yellow",
+  "text": "\"And to be clear about what I am not saying. Staff for the manual workflow at opening. That is the only thing either of us can verify on day one, and I am not going to tell you to hire thin against a date of mine. What I will give you in Phase 1 is the sequence: which roles change as each piece goes in, and in what order, so each one is a decision you make later rather than a commitment you make now. Planned, attrition and role changes absorb most of it. Discovered, it becomes a layoff.\""
+ },
+ {
+  "para": 490,
+  "color": "yellow",
+  "text": "Ask the closing question and then do not fill the silence. A man with his history has a long answer to it. Let him give it."
+ },
+ {
+  "para": 494,
+  "color": "yellow",
+  "text": "\"The build starts around March so prior authorization works before you open. That holds if six things are true. A signed agreement. Your RIS and PACS vendors chosen, with sandbox access to their interfaces. Test access to the payers' connections. The business associate agreements signed. One named person on your side who approves. And your expected volumes and payer mix before I design anything payer-specific."
+ },
+ {
+  "para": 497,
+  "color": "yellow",
+  "text": ". The one most likely to slip is vendor selection, because it runs on their calendar: \"The RIS choice drives everything after it. That is why the vendor work comes first.\""
+ },
+ {
+  "para": 498,
+  "color": "yellow",
+  "text": "Do not promise anything beyond the list. If pushed for a guarantee: \"Tell me which piece has to be live by when, and we will scope it against these.\""
+ },
+ {
+  "para": 499,
+  "color": "yellow",
+  "text": "Staffing, unprompted: \"Staff for the manual workflow at opening. I am not going to tell you to hire thin against a date of mine.\" It changes what your people do. It does not set your hiring plan."
+ },
+ {
+  "para": 505,
+  "color": "yellow",
+  "text": "\"Every one of these decisions is reversible today. None of them will be in six months."
+ },
+ {
+  "para": 506,
+  "color": "yellow",
+  "text": "Thank you, all three of you. Here is a summary you can keep.\""
+ },
+ {
+  "para": 514,
+  "color": "yellow",
+  "text": "\"The rest is reference. It is what it would cost to have me take the new center from a blank page to opening day, and you can stop me here if you would rather take it another day.\""
+ },
+ {
+  "para": 523,
+  "color": "yellow",
+  "text": "\"One engagement for the new center. Forty-five thousand, fixed fee, fixed scope, in five phases from now to May. Discovery, seven. Vendor selection, eight. Design and the staffing plan, seven. The build, fourteen. Testing, training and go-live, nine. Each phase ends in a document you sign, and the next one does not start until you have.\""
+ },
+ {
+  "para": 525,
+  "color": "yellow",
+  "text": "\"Four thousand when we sign and three when you have the requirements. After that each phase is paid when it starts, except the build, which is seven on the first of March and seven on the first of April.\""
+ },
+ {
+  "para": 570,
+  "color": "yellow",
+  "text": "Outside the phases: $150 an hour, approved first, against a retainer the client tops up (their lawyer's model). The timeline flexes if the opening moves; the price does not."
+ },
+ {
+  "para": 586,
+  "color": "yellow",
+  "text": "\"We start in November with discovery, six weeks, and you sign the requirements before Christmas. Vendor selection runs through January, because the RIS choice drives everything after it. February is the design and the staffing plan. March and April is the build, and it cannot start until the vendors are chosen and the design is signed. May is testing, training, and the go-live sign-off. That leaves about a month of buffer before a June opening.\""
+ },
+ {
+  "para": 587,
+  "color": "yellow",
+  "text": "Then the point of the picture, once: \"Every diamond is a document you sign. Every phase starts only after the diamond before it. The dollar marks are where the payments fall.\""
+ },
+ {
+  "para": 588,
+  "color": "yellow",
+  "text": "Then stop and let him look."
+ },
+ {
+  "para": 599,
+  "color": "yellow",
+  "text": ": \"This is what each phase needs from you, so nothing on my side is ever waiting on a question I should have asked earlier.\""
+ },
+ {
+  "para": 612,
+  "color": "yellow",
+  "text": "Lunch."
+ }
+]
