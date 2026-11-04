@@ -1075,7 +1075,7 @@ Then stop talking.
 | # | Phase | When | Deliverable you sign | Fee | Paid |
 |---|---|---|---|---|---|
 | 1 | Discovery and requirements. How the new center runs: patient flow from scheduling to report, services and modalities, volumes, payers, what is automated at opening. Luis's current center is an input, not the template. | Nov to mid-Dec 2026, 6 weeks | Requirements and Roadmap: requirements for every system, patient-flow map (order to signed report to paid claim), vendor contract terms to demand, make-or-buy recommendation per system with a ballpark monthly running cost for each build item, vendor shortlist and evaluation criteria for Phase 2 | $7,000 | $4,000 at signing, $3,000 on delivery |
-| 2 | Vendor and system selection. Scheduling; RIS and PACS, likely one cloud system for both (Exa is one example); dictation; billing and clearinghouse; phones; prior authorization; patient portal and intake; fax and document management; modality integration; reading workstations; IT, security and backup. Demos, scoring, recommendation; interface fees fixed up front. | Mid-Dec 2026 to Jan 2027, 6 weeks | Vendor Selection Report, plus the list of contracts to sign | $8,000 | In full at the start |
+| 2 | Vendor and system selection. Scheduling; RIS and PACS, likely one cloud system for both (Exa is one example); dictation; billing and clearinghouse; phones; prior authorization; patient portal and intake; fax and document management; modality integration; reading workstations; IT, security and backup. Demos, scoring, recommendation; interface fees fixed up front. | Mid-Dec 2026 to Jan 2027, 6 weeks | Vendor Selection Report: side-by-side comparison of the shortlisted systems in each category, a weighted scoring matrix against the Phase 1 requirements, pros and concerns for each, and a 5-year total cost of ownership per option (license or subscription, implementation, interface fees, support, hardware), with a recommendation; plus the list of contracts to sign | $8,000 | In full at the start |
 | 3 | Design and staffing plan. System and network design, workflows, security and HIPAA plan, and how each role's work runs with the automation in place. | Feb 2027, 1 month | Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget: three hosting options (your cloud account; hybrid with a box at the center; all on-site with a local AI model), pros and cons, one-time, monthly and three-year cost including support labor; the owner picks | $7,000 | In full at the start |
 | 4 | Build and configure. Systems set up and connected, RadAssist configured, prior-auth automation, IT install coordinated. Depends on Phases 2 and 3 and on vendor lead times. | Mar to Apr 2027, 2 months | All systems working in test | $14,000 | $7,000 on March 1, $7,000 on April 1 |
 | 5 | Testing, training and go-live. | May 2027, 1 month | Signed go-live readiness, plus opening-week support | $9,000 | In full at the start |
@@ -1152,7 +1152,7 @@ Finger on the opening flag. Stop.
 Read the rows only if asked:
 
 - **Phase 1:** time with Luis and Fernando; the services and modalities they plan to offer; expected volumes and payer mix; the target opening date. Luis's current center is an input, not the template.
-- **Phase 2:** budget ranges, any preferred vendors, the radiologists' dictation preference, and their decisions as the scoring comes in. What they get back: the Vendor Selection Report and the contracts to sign for every system on slide 32.
+- **Phase 2:** budget ranges, any preferred vendors, the radiologists' dictation preference, and their decisions as the scoring comes in. What they get back: the Vendor Selection Report: side-by-side comparison of the shortlisted systems in each category, a weighted scoring matrix against the Phase 1 requirements, pros and concerns for each, and a 5-year total cost of ownership per option (license or subscription, implementation, interface fees, support, hardware), with a recommendation; plus the contracts to sign for every system on slide 32.
 - **Phase 3:** operating hours, the roles they intend to hire, the vendor contracts as they are negotiated, and their hosting pick from the three options. What they get back: the Architecture, Workflow and Staffing Plan, plus the Total cost of ownership and operating budget.
 - **Phase 4:** signed vendor contracts and business associate agreements, sandbox access to each system, equipment delivery dates.
 - **Phase 5:** their staff, hired and available for training, and the final opening date.
@@ -1378,7 +1378,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 ==**Q11. "What RIS and PACS would you pick?" (Rick, 2026-11-03)**==
 
-=="For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2."==
+=="For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2. And in Phase 2 you get every shortlisted system scored side by side with its five-year cost, so the pick is yours with the numbers in front of you."==
 
 ==**Q12. "What if each center wants different systems?" (Rick, 2026-11-03)**==
 

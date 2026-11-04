@@ -307,3 +307,18 @@ Verification: deck 33/27, leave-behind 2/2, architecture 8, runbook 26, notes 49
 | Curveballs | New highlighted mini-section after Q10: Luis leaves the partnership; who else have you done this for (Luis's daily use of RadAssist, the $250M greenfield data center build, a global portfolio; "this is the reference build"); can you guarantee the opening date (no; every date conditional on slide 26; price fixed, timeline flexes). Guardrail line: no go-live claims for any enterprise program by name; "clearance eligible" only. |
 
 Verification: notes PDF 49 pages, no literal `==`; docx 231 highlight runs; 0 em dashes. Deck, leave-behind, runbook, architecture untouched this pass.
+
+### Add-on, Rick 17:13: R13 confirmed (interface fees); Phase 2 deliverable made explicit (applied 2026-11-03, seventh pass)
+
+| Where | What changed |
+|---|---|
+| Deliverable text | "Vendor Selection Report: side-by-side comparison of the shortlisted systems in each category, a weighted scoring matrix against the Phase 1 requirements, pros and concerns for each, and a 5-year total cost of ownership per option (license or subscription, implementation, interface fees, support, hardware), with a recommendation; plus the list of contracts to sign." |
+| Slide 29 | Phase 2 "what you sign off" cell carries it (the detail as a dim sub-line, parenthetical list shortened to fit the slide). Table and assumption paragraph re-tightened; checked. |
+| Slide 31 | Row 2 "what you get back" carries the full wording; table font stepped down one size so row 5 stays on the slide; checked. |
+| Leave-behind | Row 2 carries the full wording plus the systems list; page 2 print sizes stepped down so both pages still end inside themselves; checked (2 pages, both variants). |
+| Speaking notes | Slide 29 table row 2 and slide 31 Phase 2 row carry the full wording. Q11 answer gains the approved closing sentence ("...and in Phase 2 you get every shortlisted system scored side by side with its five-year cost, so the pick is yours with the numbers in front of you."). |
+| Runbook | "How much?" table row 2, the "What does Phase 2 actually produce" answer (with the R13 confirmation that the fees negotiated up front are the interface fees), and the RIS/PACS objection answer carry the wording. |
+| Architecture p7 | Box 2 carries a short form (side-by-side scoring, 5-year TCO per option, recommendation); phase boxes 126 to 238 px so they clear the panels below; checked. |
+| AUTOMATION-CANDIDATES | Pricing paragraph carries the full wording and the R13 confirmation. |
+
+Price and dates unchanged. Verification: deck 33/27, leave-behind 2/2, architecture 8, runbook 27 (was 26), notes 49, docx 231 highlights; 0 em dashes.

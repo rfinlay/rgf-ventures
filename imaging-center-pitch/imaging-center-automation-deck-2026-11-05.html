@@ -166,12 +166,12 @@
   table.ms.five.compact td { padding: 5px 10px 5px 0; }
   /* 2026-11-03 (Rick R16/R17): the slide 29 assumption line grew; keep it clear of the table */
   p.sub.assume { font-size: 16px; line-height: 1.32; max-width: 1140px; margin-top: 6px; }
-  table.ms.five.compact.r9 { font-size: 14.5px; line-height: 1.16; margin-top: 6px; }
+  table.ms.five.compact.r9 { font-size: 14px; line-height: 1.14; margin-top: 4px; }
   table.ms.five.compact.r9 td { padding: 3px 10px 3px 0; }
   table.ms.five.compact.r9 .dim { font-size: 12.5px; }
   table.ms.five.compact.r9 th { padding-bottom: 5px; }
-  table.ms.five.r31 { font-size: 15.5px; line-height: 1.22; margin-top: 10px; }
-  table.ms.five.r31 td { padding: 6px 12px 6px 0; }
+  table.ms.five.r31 { font-size: 14.5px; line-height: 1.2; margin-top: 8px; }
+  table.ms.five.r31 td { padding: 5px 12px 5px 0; }
   /* 2026-11-03 (Rick R10/R18): appendix slides 32 and 33 */
   table.shortlist { font-size: 15px; line-height: 1.25; margin-top: 8px; }
   table.shortlist td { padding: 6px 12px 6px 0; }
@@ -184,7 +184,7 @@
   table.tco td.rec { font-weight: 600; }
   table.ms.five.compact .dim { font-size: 12.5px; }
   table.ms.five.compact + .grow + .sub { font-size: 18px; }
-  table.ms.five.compact + .grow + .sub.assume { font-size: 15.5px; line-height: 1.3; }
+  table.ms.five.compact + .grow + .sub.assume { font-size: 14.5px; line-height: 1.26; }
   .gantt { width: 100%; max-width: 1120px; height: auto; margin-top: 10px; display: block; }
   .modules.four { grid-template-columns: repeat(4, 1fr); gap: 22px; max-width: 1120px; }
   .modules.four .n { font-size: 27px; }
@@ -909,8 +909,8 @@
   <table class="ms five compact r9">
     <thead><tr><th style="width:4%">#</th><th style="width:27%">Phase</th><th>What you sign off</th><th style="width:15%">When</th><th style="width:9%;text-align:right">Fee</th><th style="width:19%">Paid</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td><strong>Discovery and requirements</strong><br><span class="dim">How the new center runs: patient flow, services, volumes, payers, what is automated at opening</span></td><td>Requirements and Roadmap, signed<br><span class="dim">Requirements per system; patient-flow map, order to signed report to paid claim; contract terms; make-or-buy per system with a ballpark monthly running cost per build item; shortlist and criteria for Phase 2</span></td><td>Nov to mid-Dec<br><span class="dim">6 weeks</span></td><td class="amt">$7,000</td><td>$4,000 at signing<br>$3,000 on delivery</td></tr>
-      <tr><td>2</td><td><strong>Vendor and system selection</strong><br><span class="dim">Scheduling; RIS and PACS, likely one cloud system for both (Exa is one example); dictation; billing and clearinghouse; phones; prior authorization; portal, fax, modalities, workstations, IT and security</span></td><td>Vendor Selection Report, plus the list of contracts to sign, interface fees fixed up front</td><td>Mid-Dec to Jan<br><span class="dim">6 weeks</span></td><td class="amt">$8,000</td><td>In full at the start</td></tr>
+      <tr><td>1</td><td><strong>Discovery and requirements</strong><br><span class="dim">How the new center runs: patient flow, services, volumes, payers, what is automated at opening</span></td><td>Requirements and Roadmap, signed<br><span class="dim">Requirements per system; patient-flow map, order to signed report to paid claim; contract terms; make-or-buy per system with a ballpark run cost per build item; shortlist and criteria for Phase 2</span></td><td>Nov to mid-Dec<br><span class="dim">6 weeks</span></td><td class="amt">$7,000</td><td>$4,000 at signing<br>$3,000 on delivery</td></tr>
+      <tr><td>2</td><td><strong>Vendor and system selection</strong><br><span class="dim">Scheduling; RIS and PACS, likely one cloud system for both (Exa is one example); dictation; billing and clearinghouse; phones; prior authorization; portal, fax, modalities, workstations, IT and security</span></td><td>Vendor Selection Report, plus the list of contracts to sign, interface fees fixed up front<br><span class="dim">Side-by-side comparison of the shortlisted systems; weighted scoring against the Phase 1 requirements; pros and concerns; 5-year total cost of ownership per option; a recommendation</span></td><td>Mid-Dec to Jan<br><span class="dim">6 weeks</span></td><td class="amt">$8,000</td><td>In full at the start</td></tr>
       <tr><td>3</td><td><strong>Design and staffing plan</strong><br><span class="dim">Systems, network, workflows, security and HIPAA, how each role's work runs</span></td><td>Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget<br><span class="dim">Three hosting options, three years, you pick</span></td><td>Feb 2027<br><span class="dim">1 month</span></td><td class="amt">$7,000</td><td>In full at the start</td></tr>
       <tr><td>4</td><td><strong>Build and configure</strong><br><span class="dim">Systems set up and connected, RadAssist configured, prior authorization automated</span></td><td>Every system working in test</td><td>Mar to Apr 2027<br><span class="dim">2 months</span></td><td class="amt">$14,000</td><td>$7,000 on March 1<br>$7,000 on April 1</td></tr>
       <tr><td>5</td><td><strong>Testing, training and go-live</strong><br><span class="dim">Staff trained on the real systems; opening week on call</span></td><td>Signed go-live readiness, plus opening-week support</td><td>May 2027<br><span class="dim">1 month</span></td><td class="amt">$9,000</td><td>In full at the start</td></tr>
@@ -1052,8 +1052,8 @@
   <table class="ms five r31">
     <thead><tr><th style="width:4%">#</th><th style="width:22%">Phase</th><th>What I need from you</th><th style="width:30%">What you get back</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>Discovery and requirements</td><td>Time with Dr. Ramos and Fernando. The services and modalities you plan to offer, expected volumes and payer mix, and the target opening date. Dr. Ramos's current center is an input, not the template.</td><td>Requirements and Roadmap, signed by you: requirements per system, the patient-flow map from order to signed report to paid claim, vendor contract terms, make-or-buy per system with a ballpark monthly running cost per build item, and the vendor shortlist with criteria for Phase 2</td></tr>
-      <tr><td>2</td><td>Vendor and system selection</td><td>Budget ranges, any vendors you already prefer, your radiologists' dictation preference, and your decisions as the scoring comes in.</td><td>Vendor Selection Report and the list of contracts to sign, every system on slide 32: RIS and PACS, dictation, billing, phones, prior authorization, portal, fax, modalities, workstations, IT</td></tr>
+      <tr><td>1</td><td>Discovery and requirements</td><td>Time with Dr. Ramos and Fernando. The services and modalities you plan to offer, expected volumes and payer mix, and the target opening date. Dr. Ramos's current center is an input, not the template.</td><td>Requirements and Roadmap, signed by you: requirements per system, the patient-flow map (order to signed report to paid claim), contract terms, make-or-buy per system with a ballpark run cost per build item, shortlist and criteria for Phase 2</td></tr>
+      <tr><td>2</td><td>Vendor and system selection</td><td>Budget ranges, any vendors you already prefer, your radiologists' dictation preference, and your decisions as the scoring comes in.</td><td>Vendor Selection Report: side-by-side comparison of the shortlisted systems in each category, weighted scoring against the Phase 1 requirements, pros and concerns, 5-year total cost of ownership per option (license or subscription, implementation, interface fees, support, hardware), a recommendation; plus the contracts to sign for every system on slide 32</td></tr>
       <tr><td>3</td><td>Design and staffing plan</td><td>Operating hours, the roles you intend to hire, the vendor contracts as they are negotiated, and your hosting pick from the three options.</td><td>Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget (three hosting options, three years)</td></tr>
       <tr><td>4</td><td>Build and configure</td><td>Signed vendor contracts and business associate agreements, sandbox access to each system, and equipment delivery dates.</td><td>Every system working in test</td></tr>
       <tr><td>5</td><td>Testing, training and go-live</td><td>Your staff, hired and available for training, and the final opening date.</td><td>Signed go-live readiness, and me on call through opening week</td></tr>
