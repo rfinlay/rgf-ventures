@@ -54,4 +54,4 @@
 
 **Owner numbers (slide 17) are operations only:** volume by modality, turnaround, scheduled versus completed, no-shows, open slots, authorization turnaround, appeal counts. ==If money comes up: "Practice revenue and collections reporting goes to Dr. Ramos's practice, which owns it."==
 
-**Ask Luis today, before the lunch:** (a) who signs before the companies are formed, and does the December 18 timing matter for the $4,000; (b) "Dr. Luis Ramos" or "Luis Ramos-Duran, M.D." on the cover, and "J. Fernando Escarzaga"?; (c) is "Quantum Radiology" the public name to use.
+**Ask Luis today, before the lunch:** (a) who signs for the operating company, and does the December 18 capital date affect when the $4,000 retainer can be paid; (b) "Dr. Luis Ramos" or "Luis Ramos-Duran, M.D." on the cover, and "J. Fernando Escarzaga"?; (c) is "Quantum Radiology" the public name to use.
