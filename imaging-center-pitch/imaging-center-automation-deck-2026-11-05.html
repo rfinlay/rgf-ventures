@@ -94,6 +94,11 @@
   table.scorecard { margin-top: 20px; font-size: 20px; line-height: 1.3; }
   table.scorecard td { padding: 10px 14px 10px 0; }
   table.scorecard th { padding-bottom: 8px; }
+  /* 2026-11-03 (Rick R11): eight rows, "What it does" column; tighter so all eight fit one slide */
+  table.scorecard.eight { font-size: 17.5px; line-height: 1.25; margin-top: 14px; }
+  table.scorecard.eight td { padding: 7px 12px 7px 0; }
+  table.scorecard.eight td:first-child { width: 24%; }
+  table.scorecard.eight td.tag { width: 15%; font-size: 16.5px; }
   .build { color: var(--accent); }
   .buy { color: var(--ink); }
   .integrate { color: var(--ink-soft); }
@@ -159,8 +164,27 @@
   table.ms.five tr.tot td { color: var(--ink); }
   table.ms.five.compact { font-size: 15.5px; line-height: 1.2; margin-top: 10px; }
   table.ms.five.compact td { padding: 5px 10px 5px 0; }
+  /* 2026-11-03 (Rick R16/R17): the slide 29 assumption line grew; keep it clear of the table */
+  p.sub.assume { font-size: 16px; line-height: 1.32; max-width: 1140px; margin-top: 6px; }
+  table.ms.five.compact.r9 { font-size: 14.5px; line-height: 1.16; margin-top: 6px; }
+  table.ms.five.compact.r9 td { padding: 3px 10px 3px 0; }
+  table.ms.five.compact.r9 .dim { font-size: 12.5px; }
+  table.ms.five.compact.r9 th { padding-bottom: 5px; }
+  table.ms.five.r31 { font-size: 15.5px; line-height: 1.22; margin-top: 10px; }
+  table.ms.five.r31 td { padding: 6px 12px 6px 0; }
+  /* 2026-11-03 (Rick R10/R18): appendix slides 32 and 33 */
+  table.shortlist { font-size: 15px; line-height: 1.25; margin-top: 8px; }
+  table.shortlist td { padding: 6px 12px 6px 0; }
+  table.shortlist th { font-size: 13.5px; padding-bottom: 7px; }
+  table.shortlist td.cat { font-weight: 600; width: 17%; }
+  table.tco { font-size: 15px; line-height: 1.25; margin-top: 6px; }
+  table.tco td { padding: 5px 12px 5px 0; }
+  table.tco th { font-size: 13.5px; padding-bottom: 6px; }
+  table.tco td.lab { color: var(--ink-soft); width: 19%; }
+  table.tco td.rec { font-weight: 600; }
   table.ms.five.compact .dim { font-size: 12.5px; }
   table.ms.five.compact + .grow + .sub { font-size: 18px; }
+  table.ms.five.compact + .grow + .sub.assume { font-size: 15.5px; line-height: 1.3; }
   .gantt { width: 100%; max-width: 1120px; height: auto; margin-top: 10px; display: block; }
   .modules.four { grid-template-columns: repeat(4, 1fr); gap: 22px; max-width: 1120px; }
   .modules.four .n { font-size: 27px; }
@@ -605,22 +629,25 @@
 <section class="slide">
 <div class="inner">
   <div class="kicker">The scorecard</div>
-  <table class="scorecard">
-    <thead><tr><th>Candidate</th><th>My recommendation</th><th>Why</th></tr></thead>
+  <table class="scorecard eight">
+    <thead><tr><th>Candidate</th><th>My recommendation</th><th>What it does</th></tr></thead>
     <tbody>
-      <tr><td>Prior authorization and eligibility</td><td class="tag build">Build</td><td>Strongest evidence, vendors built for someone much larger, federal APIs arrive 2027-01-01.</td></tr>
-      <tr><td>Scheduling: reminders and self-scheduling</td><td class="tag buy">Buy (the RIS)</td><td>Commodity. Bundled in modern imaging RIS products.</td></tr>
-      <tr><td>Scheduling: cancellation backfill</td><td class="tag build">Build, small</td><td>Ranked waitlist on top of the RIS. Addresses the 22.3%, not the 2.0%.</td></tr>
-      <tr><td>Answering patients (voice)</td><td class="tag integrate">Buy, I integrate</td><td>Funded category, highest blast radius, Spanish bar is unforgiving.</td></tr>
-      <tr><td>Records: inbound requests, outbound priors</td><td class="tag build">Build, selectively</td><td>Hard deadlines, unbillable retrieval labor, unsolved outbound gap.</td></tr>
-      <tr><td>Owner reporting</td><td class="tag build">Build</td><td>Custom by nature. Smallest compliance footprint.</td></tr>
-      <tr><td>Billing, claims, and the eligibility feed</td><td class="tag buy">Buy</td><td>Commodity clearinghouse function. I evaluate reachability and contract terms, not the claims work. Row 1 reads the feed; it does not replace the vendor.</td></tr>
+      <tr><td>Prior authorization and eligibility</td><td class="tag build">Build</td><td>Spots the orders that need authorization, checks coverage, assembles the packet, submits through the payer's API or EDI, watches the decision clock, drafts the appeal. A person approves every submission.</td></tr>
+      <tr><td>Scheduling: reminders and self-scheduling</td><td class="tag buy">Buy (the RIS)</td><td>Text and call reminders, online booking, intake forms. Your RIS's own feature.</td></tr>
+      <tr><td>Scheduling: cancellation backfill</td><td class="tag build">Build, small</td><td>When a slot opens, offers it by text to a ranked waitlist, inside the per-patient message cap, and books the first yes.</td></tr>
+      <tr><td>Answering patients (voice)</td><td class="tag integrate">Buy, I integrate</td><td>A vendor answers and routes patient calls in English and Spanish. I connect it to the schedule and supervise it.</td></tr>
+      <tr><td>Records: inbound requests</td><td class="tag build">Build, selectively</td><td>Intake, an identity check step, the statutory deadline clock (15 business days in Texas), fee calculation, status, DICOM export of the study.</td></tr>
+      <tr><td>Records: outbound priors</td><td class="tag build">Build, selectively</td><td>Tracks requests to other facilities, follows up, imports what arrives, flags the radiologist when a prior is still missing.</td></tr>
+      <tr><td>Owner reporting</td><td class="tag build">Build</td><td>Joins the RIS and billing data. A Monday report, and an agent you ask questions of in plain words.</td></tr>
+      <tr><td>Billing, claims, and the eligibility feed</td><td class="tag buy">Buy</td><td>The clearinghouse and the claims work, on your billing vendor's system. I evaluate reachability and contract terms. Row 1 reads the eligibility feed; it does not replace the vendor.</td></tr>
     </tbody>
   </table>
 </div>
 <aside class="notes">
 <p class="time">28:00 to 29:00</p>
-<p>Read it in one breath. Three of the seven, you are telling him to buy. That is the point of the slide: recommending against yourself is the most credible thing on it.</p>
+<p>Read it in one breath. Three of the eight, you are telling him to buy. That is the point of the slide: recommending against yourself is the most credible thing on it. (Rick, 2026-11-03: the slide now says what each piece does; the why is here.)</p>
+<p><strong>Why each row lands where it does:</strong> prior authorization, strongest evidence, the vendors are built for someone much larger, federal APIs arrive 2027-01-01. Reminders and self-scheduling, commodity, bundled in modern imaging RIS products. Backfill, a ranked waitlist on top of the RIS that addresses the 22.3% of cancellations, not the 2.0% of no-shows. Voice, a funded category with the highest blast radius and an unforgiving Spanish bar. Records inbound, hard statutory deadlines and unbillable retrieval labor. Records outbound, no vendor has solved it for a small center. Owner reporting, custom by nature, smallest compliance footprint. Billing, a commodity clearinghouse function with a real vendor market.</p>
+<p><strong>IF ASKED about the RIS and PACS choice (Rick, 2026-11-03):</strong> "For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2." Why: one vendor, one support line, one contract; no RIS-to-PACS interface to buy or break; one worklist; faster go-live; the lean control Fernando wants. The downside is lock-in and giving up best-of-breed, and the four contract terms are the mitigation: data export in DICOM and HL7 at no penalty, interface fees fixed, API access, worklist access. Split RIS from PACS only if the radiologists have a strong PACS preference or want multi-site reading from day one. Dictation is selected separately, and the radiologists choose it. The starting shortlist is the appendix slide after "What I need from you".</p>
 <p>The billing row exists so the billing evaluation on the engagement slide has a home. Fernando has reconciled real remittances for twenty years; billing is the area he knows best, so this is the row he is most likely to stop you on. The answer: "Billing is a buy and I am not touching the claims work. What I evaluate is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system I want to build depends on them, and whether the four access terms go into that contract the same way they go into the RIS contract."</p>
 <p><strong>Watch the seam between row 1 and this row, because it is the one place the slide can look self-contradictory.</strong> Row 1 (build) includes the eligibility check that decides whether a study needs authorization. This row (buy) is the billing system and the EDI 270/271 feed it exposes. If he presses: "I am not building an eligibility system. Your billing vendor already has that transaction; it is the oldest standardized surface in this business. What I build is the thing that reads it and acts on it. That is why the access terms in that contract matter to me."</p>
 </aside>
@@ -726,7 +753,7 @@
       <h3>The AI vendor's BAA</h3>
       <p>Anthropic's agreement now covers Skills, Web Search, Memory, and the Bash and Text Editor tools. It still excludes Computer Use and Web Fetch, which are exactly what you would reach for to drive a payer portal with no API. So the prior auth design routes through APIs, EDI, or a human step. Not screen-driving.</p>
       <h3>Texas HB 300</h3>
-      <p>Its definition of covered entity is broad enough to reach me directly, not only through your BAA. I carry that obligation in my own right.</p>
+      <p>Texas privacy law covers me directly, not just through our contract. If I mishandle your patients' data, I'm the one the state comes after. That's how it should be.</p>
     </div>
   </div>
 </div>
@@ -735,7 +762,8 @@
 <p class="time">32:00 to 33:30</p>
 <p>Volunteering the constraints is what separates you from twenty years of vendors. Say each one in a sentence and move on.</p>
 <p class="caveat">On the BAA: "The coverage depends on which version of the agreement is signed and when. I will confirm the exact envelope in writing before anything with patient data is built."</p>
-<p class="caveat">On the TCPA caps: "A reminder plus a backfill offer plus a results notice can collide with the three-per-week cap. The system needs a per-patient rate governor, not just a send queue. I have built that."</p>
+<p class="caveat">On the TCPA caps: "A reminder plus a backfill offer plus a results notice can collide with the three-per-week cap. The system needs a per-patient rate governor, not just a send queue. That gets designed in from day one." In plain words, if asked: the governor is a counter per patient that caps texts and calls at one a day and three a week across every message type, blocks billing content, and adds the provider name and an opt-out to each message. Never say you have built one (Rick, 2026-11-03).</p>
+<p class="caveat">HB 300 line, as Rick wants it said (2026-11-03): "Texas privacy law covers me directly, not just through our contract. If I mishandle your patients' data, I'm the one the state comes after. That's how it should be." The chapter detail below is for questions only.</p>
 <p><strong>HB 300, if asked (Texas Health and Safety Code chapter 181):</strong> its covered-entity definition is broader than HIPAA's and reaches anyone who handles Texas patients' health information, including Rick in his own right; every employee who touches patient data is trained within 90 days of hire and signs a statement kept six years, with retraining only after a material change in the law (never say "every two years"); a provider must give a patient their electronic record within 15 business days of a written request (HIPAA allows 30 calendar days); selling protected health information is barred; patients get notice of electronic disclosure; the Attorney General can fine up to $5,000 per negligent violation, $25,000 if knowing, $250,000 if for financial gain, and up to $1.5 million a year for a pattern. The selling point: the yearly cap drops to $250,000 if the data was encrypted or security policies and training were in place, which is why encryption and a training record lead the specification. Since September 2025 (HB 4224) the center must post record-request and complaint instructions on its website and at the facility; that duty is the center's. All verified against the statute text 2026-11-03; say the numbers plainly.</p>
 </aside>
 </section>
@@ -851,7 +879,7 @@
 </div>
 <aside class="notes">
 <p class="time">38:30 to 40:00, then stop</p>
-<p>Leave the one-page summary on the table. This is the last slide of the pitch. What follows is a four-slide appendix (the engagement, the timeline, what I need from you): stop here and finish lunch, or turn the page if the room asks for it. In the no-numbers variant the deck ends here.</p>
+<p>Leave the one-page summary on the table. This is the last slide of the pitch. What follows is a six-slide appendix (the engagement, the timeline, what I need from you, the Phase 2 systems and starting shortlist, the running costs and hosting options): stop here and finish lunch, or turn the page if the room asks for it. In the no-numbers variant the deck ends here.</p>
 </aside>
 </section>
 
@@ -863,12 +891,13 @@
   <div class="kicker">Appendix</div>
   <h1>Scope and investment.</h1>
   <p class="lead">Reference, after the decisions. One engagement for the new center, in five phases, from November to May, ready for a June opening. The case above stands whether or not you turn this page.</p>
+  <p class="sub" style="margin-top:22px">In this appendix: the engagement and its price; the seven months on one page; what I need from you; the systems to select in Phase 2, with a starting shortlist; what it costs to keep it running, and the three ways to host it.</p>
   <div class="grow"></div>
 </div>
 <aside class="notes">
 <p class="time">40:00, only if the room asks</p>
 <p>One sentence, then advance or stop: "The rest is reference. It is what it would cost to have me take the new center from a blank page to opening day, and you can stop me here if you would rather take it another day."</p>
-<p>If Luis says no numbers, this slide and the three that follow are not in the deck you are showing; the no-numbers variant ends on the Thank You.</p>
+<p>If Luis says no numbers, this slide and the five that follow are not in the deck you are showing; the no-numbers variant ends on the Thank You. The appendix is: 29 the engagement, 30 the timeline, 31 what I need from you, 32 the Phase 2 systems and starting shortlist, 33 running costs and the three hosting options.</p>
 </aside>
 </section>
 
@@ -876,20 +905,20 @@
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">What I am proposing</div>
-  <h2 class="tight">One engagement, five phases, forty-five thousand. Each phase ends in a sign-off.</h2>
-  <table class="ms five compact">
+  <h2 class="tight" style="font-size:34px">One engagement, five phases, forty-five thousand. Each phase ends in a sign-off.</h2>
+  <table class="ms five compact r9">
     <thead><tr><th style="width:4%">#</th><th style="width:27%">Phase</th><th>What you sign off</th><th style="width:15%">When</th><th style="width:9%;text-align:right">Fee</th><th style="width:19%">Paid</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td><strong>Discovery and requirements</strong><br><span class="dim">How the new center runs: patient flow, services, volumes, payers, what is automated at opening</span></td><td>Requirements and Roadmap, signed<br><span class="dim">Requirements per system; patient-flow map, order to signed report to paid claim; vendor contract terms; make-or-buy per system; vendor shortlist and criteria for Phase 2</span></td><td>Nov to mid-Dec<br><span class="dim">6 weeks</span></td><td class="amt">$7,000</td><td>$4,000 at signing<br>$3,000 on delivery</td></tr>
-      <tr><td>2</td><td><strong>Vendor and system selection</strong><br><span class="dim">Scheduling, RIS and PACS, billing, phones, prior authorization</span></td><td>Vendor Selection Report, plus the list of contracts to sign</td><td>Mid-Dec to Jan<br><span class="dim">6 weeks</span></td><td class="amt">$8,000</td><td>In full at the start</td></tr>
-      <tr><td>3</td><td><strong>Design and staffing plan</strong><br><span class="dim">Systems, network, workflows, security and HIPAA, how each role's work runs</span></td><td>Architecture, Workflow and Staffing Plan</td><td>Feb 2027<br><span class="dim">1 month</span></td><td class="amt">$7,000</td><td>In full at the start</td></tr>
+      <tr><td>1</td><td><strong>Discovery and requirements</strong><br><span class="dim">How the new center runs: patient flow, services, volumes, payers, what is automated at opening</span></td><td>Requirements and Roadmap, signed<br><span class="dim">Requirements per system; patient-flow map, order to signed report to paid claim; contract terms; make-or-buy per system with a ballpark monthly running cost per build item; shortlist and criteria for Phase 2</span></td><td>Nov to mid-Dec<br><span class="dim">6 weeks</span></td><td class="amt">$7,000</td><td>$4,000 at signing<br>$3,000 on delivery</td></tr>
+      <tr><td>2</td><td><strong>Vendor and system selection</strong><br><span class="dim">Scheduling; RIS and PACS, likely one cloud system for both (Exa is one example); dictation; billing and clearinghouse; phones; prior authorization; portal, fax, modalities, workstations, IT and security</span></td><td>Vendor Selection Report, plus the list of contracts to sign, interface fees fixed up front</td><td>Mid-Dec to Jan<br><span class="dim">6 weeks</span></td><td class="amt">$8,000</td><td>In full at the start</td></tr>
+      <tr><td>3</td><td><strong>Design and staffing plan</strong><br><span class="dim">Systems, network, workflows, security and HIPAA, how each role's work runs</span></td><td>Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget<br><span class="dim">Three hosting options, three years, you pick</span></td><td>Feb 2027<br><span class="dim">1 month</span></td><td class="amt">$7,000</td><td>In full at the start</td></tr>
       <tr><td>4</td><td><strong>Build and configure</strong><br><span class="dim">Systems set up and connected, RadAssist configured, prior authorization automated</span></td><td>Every system working in test</td><td>Mar to Apr 2027<br><span class="dim">2 months</span></td><td class="amt">$14,000</td><td>$7,000 on March 1<br>$7,000 on April 1</td></tr>
       <tr><td>5</td><td><strong>Testing, training and go-live</strong><br><span class="dim">Staff trained on the real systems; opening week on call</span></td><td>Signed go-live readiness, plus opening-week support</td><td>May 2027<br><span class="dim">1 month</span></td><td class="amt">$9,000</td><td>In full at the start</td></tr>
       <tr class="tot"><td></td><td>Fixed fee, fixed scope</td><td>Ready for a June 2027 opening, about a month of buffer</td><td>Nov to May</td><td class="amt">$45,000</td><td></td></tr>
     </tbody>
   </table>
   <div class="grow"></div>
-  <p class="sub">Anything you ask for outside these phases is approved first and billed at $150 an hour against a retainer you top up. If the opening date moves, the timeline moves with it. The price does not.</p>
+  <p class="sub assume">Priced for one center, with one selected system per category. Additional centers, or a different system chosen for another center, are quoted before work starts. Running costs after the build (cloud, AI usage, texting, clearinghouse, security) are not in the $45,000: they run in accounts in your name, billed at cost, estimated range, monthly statement (slide 33). Work outside these phases is approved first and billed at $150 an hour against a retainer you top up. If the opening date moves, the timeline moves with it. The price does not.</p>
 </div>
 <aside class="notes">
 <p class="time">40:00 to 41:30</p>
@@ -900,6 +929,8 @@
 <p><strong>"What if the opening slips?"</strong> "The timeline moves with it and the price does not. The phases are the work; the dates are where the work lands."</p>
 <p><strong>"What does the $150 cover?"</strong> "Things you ask for that are not in the five phases, approved by you first, drawn against a retainer you top up. If you never ask, you never pay it."</p>
 <p>Contract through RGF Global Ventures LLC, never personally. RadAssist is not part of this fee.</p>
+<p><strong>"Does that change at three centers?" (Rick, 2026-11-03, replaces the old answer):</strong> "The engagement covers this center, and one pick per system. If the other centers use the same picks, they're a smaller engagement: mostly build and go-live. If a center wants something different, that's its own evaluation, and I'll quote it before I start. You'll never get a surprise bill. You'll get a number to approve." Rule: same picks at another center is a smaller follow-on, mostly Phases 4 and 5; different picks is a new selection for those categories, quoted and approved in writing first.</p>
+<p><strong>"What does it cost to keep running?" (Rick, 2026-11-03):</strong> not in the forty-five. "Everything runs in accounts in your name: the cloud, the AI, the texting, the clearinghouse. You sign each HIPAA agreement, you see each bill, I don't mark any of it up. I'll give you an estimated range in Phase 1 and a firm operating budget in Phase 3, and after opening you get a one-page statement every month: each vendor's bill, the volume it handled, what it did for you." The estimate today is on the last appendix slide; it is an estimate, confirmed in Phase 1. The AI usage is the small part; the secure cloud setup, the clearinghouse transactions and texting under a HIPAA agreement are most of it.</p>
 <p><strong>IF ASKED "Would you come in full time?" (Rick, 2026-11-03):</strong> "I'd want to hear it. Let's finish Phase 1 first; that's the job to judge me on. If it makes sense after that, we can talk about what a dedicated role looks like." No salary, no title, no date. If pressed: "Phase 1 is six weeks. Judge me on it, then we talk."</p>
 </aside>
 </section>
@@ -1018,12 +1049,12 @@
 <div class="inner">
   <div class="kicker">What I need from you</div>
   <h2 class="tight">Each phase runs on a few things only you can give. None of them is a surprise.</h2>
-  <table class="ms five">
+  <table class="ms five r31">
     <thead><tr><th style="width:4%">#</th><th style="width:22%">Phase</th><th>What I need from you</th><th style="width:30%">What you get back</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>Discovery and requirements</td><td>Time with Dr. Ramos and Fernando. The services and modalities you plan to offer, expected volumes and payer mix, and the target opening date. Dr. Ramos's current center is an input, not the template.</td><td>Requirements and Roadmap, signed by you: requirements per system, the patient-flow map from order to signed report to paid claim, vendor contract terms, make-or-buy per system, and the vendor shortlist with criteria for Phase 2</td></tr>
-      <tr><td>2</td><td>Vendor and system selection</td><td>Budget ranges, any vendors you already prefer, and your decisions as the scoring comes in.</td><td>Vendor Selection Report and the list of contracts to sign</td></tr>
-      <tr><td>3</td><td>Design and staffing plan</td><td>Operating hours, the roles you intend to hire, and the vendor contracts as they are negotiated.</td><td>Architecture, Workflow and Staffing Plan</td></tr>
+      <tr><td>1</td><td>Discovery and requirements</td><td>Time with Dr. Ramos and Fernando. The services and modalities you plan to offer, expected volumes and payer mix, and the target opening date. Dr. Ramos's current center is an input, not the template.</td><td>Requirements and Roadmap, signed by you: requirements per system, the patient-flow map from order to signed report to paid claim, vendor contract terms, make-or-buy per system with a ballpark monthly running cost per build item, and the vendor shortlist with criteria for Phase 2</td></tr>
+      <tr><td>2</td><td>Vendor and system selection</td><td>Budget ranges, any vendors you already prefer, your radiologists' dictation preference, and your decisions as the scoring comes in.</td><td>Vendor Selection Report and the list of contracts to sign, every system on slide 32: RIS and PACS, dictation, billing, phones, prior authorization, portal, fax, modalities, workstations, IT</td></tr>
+      <tr><td>3</td><td>Design and staffing plan</td><td>Operating hours, the roles you intend to hire, the vendor contracts as they are negotiated, and your hosting pick from the three options.</td><td>Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget (three hosting options, three years)</td></tr>
       <tr><td>4</td><td>Build and configure</td><td>Signed vendor contracts and business associate agreements, sandbox access to each system, and equipment delivery dates.</td><td>Every system working in test</td></tr>
       <tr><td>5</td><td>Testing, training and go-live</td><td>Your staff, hired and available for training, and the final opening date.</td><td>Signed go-live readiness, and me on call through opening week</td></tr>
     </tbody>
@@ -1037,6 +1068,61 @@
 <p><strong>The line that matters to Fernando:</strong> Dr. Ramos's current center is an input, not the template. This is a new center, designed from its own requirements. Luis's experience tells us what works and what to avoid; it does not decide the design.</p>
 <p><strong>Staffing, if it comes up here:</strong> the Phase 3 plan is how each role's work runs with the automation in place, so they hire for what the center actually needs on day one. It is never a headcount target. Say "changes what your people do," never "reduces."</p>
 <p><strong>"Who approves on our side?"</strong> Ask them to name one person today if they are ready; otherwise it is the first question of Phase 1.</p>
+<p>Two reference slides follow (Rick, 2026-11-03): the Phase 2 systems with a starting shortlist, and the running costs with the three hosting options. Show them only if asked.</p>
+</aside>
+</section>
+
+<!-- 32 (added 2026-11-03, Rick R10/R12/R13) -->
+<section data-nonumbers="remove" class="slide">
+<div class="inner">
+  <div class="kicker">Systems to select in Phase 2: starting shortlist</div>
+  <h2 class="tight">A starting shortlist, not a decision. The final pick is Phase 2, with your radiologists in the demos.</h2>
+  <table class="shortlist">
+    <thead><tr><th>System</th><th>Starting shortlist</th><th>What decides it</th></tr></thead>
+    <tbody>
+      <tr><td class="cat">RIS and PACS</td><td>One cloud system for both, built for independent centers: Konica Minolta Exa PACS|RIS, RamSoft OmegaAI, Novarad, Intelerad. The hospital-sized award winners (Sectra, Agfa) are built for a different buyer; a premium viewer with a separate RIS only if the radiologists insist.</td><td>A reading demo with your radiologists on MRI and CT cases; five-year cost with interfaces, storage and dictation; front desk to claim in one workflow; hosting and security (BAA, SOC 2, backup, uptime); export and API terms; two or three single-site references; a timeline before June.</td></tr>
+      <tr><td class="cat">Dictation</td><td>The radiologists choose the tool, you choose the contract: the RIS's built-in dictation, PowerScribe One (Microsoft), Fluency for Imaging (Jacobian; 2026 Best in KLAS), Rad AI. A contracted group may already carry a license.</td><td>What your radiologists already use; the interface fee for the link to the RIS and PACS; per-radiologist cost at one to three readers.</td></tr>
+      <tr><td class="cat">Billing and clearinghouse</td><td>Outsource billing to an imaging-specialized firm at opening, short contract, clearinghouse and data in your name. Clearinghouses in common use: Waystar, Availity, TriZetto, Office Ally, Quadax (2026 Best in KLAS). A documented second path.</td><td>Three quotes; TRICARE, Medicare and Medicare Advantage handling; eligibility and authorization transactions reachable by the Phase 4 build; handover terms.</td></tr>
+      <tr><td class="cat">Also selected in Phase 2</td><td colspan="2">Scheduling and reminders (inside the RIS); phones; prior authorization connections; patient portal and intake; fax and document management; modality integration; reading workstations; IT, security and backup. Each carries the four contract terms from slide 3; interface fees fixed up front.</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="source"><b>Basis:</b> 2026 Best in KLAS awards (klasresearch.com, Feb 2026); vendor documentation for Konica Minolta, RamSoft, Microsoft PowerScribe One, Jacobian; no vendor on this slide has been evaluated or quoted. Fit and pricing are confirmed in Phase 2.</div>
+<aside class="notes">
+<p class="time">Appendix, only if asked</p>
+<p><strong>Frame it in one line:</strong> "This is where I would start looking, not what I would buy. Phase 2 is where your radiologists sit in the demos and we score it."</p>
+<p><strong>The RIS and PACS position (Rick, 2026-11-03):</strong> "For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2." Why one system: one vendor, one support line, one contract; no RIS-to-PACS interface to pay for or keep alive; one worklist; faster go-live; the lean control Fernando wants. The cost of that is lock-in and giving up best-of-breed, mitigated by the four contract terms: data export in DICOM and HL7 at no penalty, interface fees fixed at signature, API access, worklist access. Split only if the radiologists have a strong PACS preference or multi-site reading from day one. Dictation is selected separately, by the radiologists.</p>
+<p><strong>Exa:</strong> named here as one example of an integrated RIS, PACS and billing system, never as the pick. If Luis or Fernando already lean toward one, write it down; it does not change Phase 2, it gives it a front-runner. Never disparage any vendor on this slide.</p>
+<p><strong>Do not quote</strong> a license price, a per-study rate, a market share, or an interface fee; none of it is sourced. "Every price in this market is a quote, which is why the shortlist goes to RFP."</p>
+</aside>
+</section>
+
+<!-- 33 (added 2026-11-03, Rick R17/R18/R18a) -->
+<section data-nonumbers="remove" class="slide">
+<div class="inner">
+  <div class="kicker">What it costs to keep running, and where it runs</div>
+  <h2 class="tight">Running costs are not in the $45,000. They run in your accounts, at cost, with a monthly statement.</h2>
+  <table class="tco">
+    <thead><tr><th></th><th>A. Your secure cloud account</th><th>B. Hybrid: a box at the center, plus your cloud</th><th>C. All on-site, including a local AI model</th></tr></thead>
+    <tbody>
+      <tr><td class="lab">Patient data and the AI</td><td>Goes to the AI company under a signed HIPAA agreement, never kept, never trained on</td><td>Names and IDs are swapped out here first; clinical details still go under the agreement</td><td>No AI company sees it. Payers, the clearinghouse and backups still do</td></tr>
+      <tr><td class="lab">If the power or internet goes out</td><td>Keeps working</td><td>Pauses, then catches up</td><td>Stops</td></tr>
+      <tr><td class="lab">AI quality</td><td>Best available</td><td>Best available, same model</td><td>Lower; has to be proven on your cases first</td></tr>
+      <tr><td class="lab">Your staff's extra duties</td><td>None</td><td>Lock the room, keep a log</td><td>Lock the room, keep a log, an outage plan</td></tr>
+      <tr><td class="lab">Vendors, per month, estimated</td><td>About $900 to $4,200; expected near $2,000</td><td>About $1,000 to $4,300; expected near $2,100</td><td>About $1,200 to $3,500; expected near $2,000, plus the hardware</td></tr>
+      <tr><td class="lab">One-time setup, estimated</td><td>$6,000 to $25,000</td><td>$12,000 to $37,000</td><td>$27,000 to $52,000</td></tr>
+      <tr><td class="lab">Support beyond opening week</td><td>Scoped in writing in Phase 3</td><td>Same, plus upkeep of the box and the swap step</td><td>Same, plus model upkeep and re-testing on every change</td></tr>
+      <tr><td class="lab">Where I lean today</td><td class="rec">A, with B's name-swapping step inside your cloud account if you want it</td><td>Only if your RIS forces a local connection</td><td>Not for opening; a measured test later</td></tr>
+    </tbody>
+  </table>
+  <p class="sub assume">Every account is in your name and you sign its HIPAA agreement; I hold the admin keys, you hold the ownership, nothing is marked up. Ranges are estimates at about 650 studies a month, confirmed in Phase 1, firmed into an operating budget in Phase 3, with a cap I cannot pass without your written OK.</p>
+</div>
+<aside class="notes">
+<p class="time">Appendix, only if asked</p>
+<p><strong>Three lines, then stop:</strong> "Everything runs in accounts in your name. I hold the admin keys, you hold the ownership. If you ever let me go, nothing stops." "I don't mark any of it up. You see the actual bills every month on one page, with what each one did for you." "At expected volume it is around two thousand a month in vendors, with a cap I can't pass without your OK."</p>
+<p><strong>Privacy, said precisely (Rick, 2026-11-03):</strong> "Your patients' details do go to the AI company, the same way they go to your clearinghouse: under a signed HIPAA agreement, and never kept or trained on. If you'd rather names never leave, we can strip them first. Keeping the AI entirely at the center costs a lot more over three years and gives you a weaker assistant, so I'd only try it as a test." Never say "no data leaves." Swapping out names and IDs reduces what the AI company sees; it does not remove it, because a prior authorization packet has to carry the clinical story. Only a model running at the center keeps patient data away from an AI company, and even then the payer, the clearinghouse and the offsite backup still receive it.</p>
+<p><strong>Where the money goes:</strong> a properly locked-down HIPAA cloud setup, the clearinghouse for eligibility and authorization transactions (often inside the billing contract already, so ask the billing vendor first), texting under a signed HIPAA agreement (the line most likely to surprise), security monitoring and a yearly penetration test. The AI tokens are a small line even at 900 studies a month. Compare it to staff time, never to "AI": one prior authorization coordinator costs more per month than the whole vendor stack.</p>
+<p><strong>What is not on this slide:</strong> a monthly support fee. Opening week is inside Phase 5; support after that is scoped in writing in Phase 3, inside the operating budget, and is not priced today. Every dollar figure here is an estimate from published list prices and sizing assumptions, re-confirmed before anything is contracted.</p>
 </aside>
 </section>
 
@@ -1055,7 +1141,7 @@
    Regenerate the PDF with:
    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer \
      --print-to-pdf=Imaging-Center-Deck-NoNumbers-2026-11-05.pdf "file://$PWD/imaging-center-automation-deck-2026-11-05.html?nonumbers"
-   Without the param the file renders the full 31-slide deck unchanged. One source, no fork. */
+   Without the param the file renders the full 33-slide deck unchanged (27 in the no-numbers variant). One source, no fork. */
 (function () {
   if (/[?&]nonumbers\b/.test(location.search)) {
     document.documentElement.classList.add('nonumbers');

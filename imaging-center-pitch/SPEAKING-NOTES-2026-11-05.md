@@ -1,16 +1,24 @@
 # Speaking Notes: Imaging Center Lunch
 
-> ## 📌 UPDATED 2026-11-03 (Rick's answers to the 11-02 round; LUNCH, Thursday 2026-11-05). Earlier updates 2026-11-02 (review round), 2026-11-01 (RadAssist on slide 19) and 2026-10-22 (Luis rehearsal).
+> ## 📌 UPDATED 2026-11-03 EVENING (Rick's review items R9 to R19; LUNCH, Thursday 2026-11-05). Earlier the same day: Rick's answers to the 11-02 round. Earlier updates 2026-11-02 (review round), 2026-11-01 (RadAssist on slide 19) and 2026-10-22 (Luis rehearsal).
 >
 > **In the room:** Luis, Fernando Escarzaga, and **Jesse Martinez** (an engineer; quiet, analytic, humble).
 > Format: a quiet place, a conversation, not a pitch to an audience. Rick has court by Zoom on Wed 10-28.
 >
-> **What changed, so the slide numbers moved (31 slides; 27 in the no-numbers deck):**
+> **Rick's evening review, 2026-11-03, applied (33 slides; 27 in the no-numbers deck):**
+> - **Two new appendix slides.** Slide 32, "Systems to select in Phase 2: starting shortlist" (RIS and PACS, dictation, billing and clearinghouse, from Sherlock's landscape; a starting shortlist, the final pick is Phase 2). Slide 33, "What it costs to keep running, and where it runs" (running costs are not in the $45,000; three hosting options). Both are reference, only if asked, inside the last ten minutes.
+> - **Phase 2 now names every system** (slide 29, 31, leave-behind): scheduling; RIS and PACS, likely one cloud system for both, Exa is one example; dictation; billing and clearinghouse; phones; prior authorization; patient portal and intake; fax and document management; modality integration; reading workstations; IT, security and backup.
+> - **The scorecard (slide 18) says what each piece does**, with records split into inbound requests and outbound priors; the "why" lives in the notes. It is now "three of the eight."
+> - **RIS and PACS position:** one cloud system for both at a single center; the lunch line is under slide 18 and in the Fernando Q&A.
+> - **Slide 22:** the HB 300 line is Rick's plain version; the TCPA line ends "That gets designed in from day one" (never "I have built that"); a "Talk it through" block per boundary.
+> - **Slide 29:** priced for one center with one selected system per category; running costs after the build are outside the fee, in the center's own accounts, at cost, with a monthly statement; the Phase 3 deliverable "Total cost of ownership and operating budget" (three hosting options). The three-centers answer is replaced.
+>
+> **What changed on 2026-11-02 and earlier (slide numbers):**
 > - **New slide 6, "What an AI agent is."** Plain language: the two kinds, the guardrails.
 > - **New slide 11, one order through prior authorization,** with the working demo already built. **Alan's demo is live at https://rfinlay.github.io/imaging-priorauth-demo/** and is linked on slide 11 and leave-behind page 2. Click through it yourself Thursday morning.
 > - **New slide 26, "What the dates depend on."** The assumptions. The only place a date is promised, and every date on it is conditional.
 > - **Timeline:** opening targeted around **June 2027, April at the earliest**. The **build starts around March 2027** so prior authorization works before opening. Say only "your new center." **Never mention any building, property, address, or what was at the site before.**
-> - **Pricing, APPROVED by Rick 2026-11-02 (appendix, slides 28 to 31):** one fixed-fee engagement for the new center, **$45,000 in five phases, November 2026 to May 2027**, ready for a ~June 2027 opening with about a month of buffer. Phase 1 Discovery and Requirements $7,000 (Nov to mid-Dec; $4,000 at signing, $3,000 on delivery) · Phase 2 Vendor and System Selection $8,000 (mid-Dec to Jan) · Phase 3 Design and Staffing Plan $7,000 (Feb) · Phase 4 Build and Configure $14,000 (Mar to Apr; $7,000 March 1, $7,000 April 1) · Phase 5 Testing, Training and Go-Live $9,000 (May). Phases 2, 3 and 5 are paid in full at the start. Each phase starts only after the previous deliverable is signed off. Outside the phases: $150/hr, approved first, against a retainer they top up. The timeline flexes if the opening moves; the price does not. **Slide 30 is the timeline (Gantt) and slide 31 is "What I need from you."** The old design/build split and every red "Proposed figures" tag are gone.
+> - **Pricing, APPROVED by Rick 2026-11-02 (appendix, slides 28 to 33):** one fixed-fee engagement for the new center, **$45,000 in five phases, November 2026 to May 2027**, ready for a ~June 2027 opening with about a month of buffer. Phase 1 Discovery and Requirements $7,000 (Nov to mid-Dec; $4,000 at signing, $3,000 on delivery) · Phase 2 Vendor and System Selection $8,000 (mid-Dec to Jan) · Phase 3 Design and Staffing Plan $7,000 (Feb) · Phase 4 Build and Configure $14,000 (Mar to Apr; $7,000 March 1, $7,000 April 1) · Phase 5 Testing, Training and Go-Live $9,000 (May). Phases 2, 3 and 5 are paid in full at the start. Each phase starts only after the previous deliverable is signed off. Outside the phases: $150/hr, approved first, against a retainer they top up. The timeline flexes if the opening moves; the price does not. **Slide 30 is the timeline (Gantt) and slide 31 is "What I need from you."** The old design/build split and every red "Proposed figures" tag are gone.
 > - **Slide 19 is a spoken RadAssist OVERVIEW, no live demo (Luis's feedback, applied 2026-11-03).** One minute on the slide: what it is, Luis uses it daily, his templates and his rules, it drafts and he signs, four modules (calcium, thyroid, spine MRI, CT spine), nothing leaves the browser, not a device. Then hand the table to Luis. The Spine MRI demo walkthrough stays in archive/DEMO-SCRIPT.md Part A, marked not used Thursday; the prior authorization demo on slide 11 (Part B) is unchanged. Roadmap: voice dictation, then brain and cardiac CTA (CAD-RADS). AI image auto-fill is "a future item with a regulatory path," never a promise. **Selling RadAssist to other centers stays OUT of the room** (see slide 19).
 > - **No license terms at the table (Rick, 2026-11-03).** What is being sold is a scope of work: a design for one imaging center that can be put anywhere. Ownership of any product pieces is settled in the contract, not at lunch; the center owns its configuration and its data. No arrangement of Luis's is described anywhere. IF ASKED "who owns what?" is under slide 23.
 > - **If they float a full-time role (Rick, 2026-11-03):** IF ASKED block under slide 29. "I'd want to hear it. Let's finish Phase 1 first; that's the job to judge me on." No numbers.
@@ -25,7 +33,7 @@
 >
 > **Process facts from Luis, use them:** outside priors arrive by courier on CD or DVD, and after five days the study is read without them. On the calcium score slide it is "calcium," never "nodules."
 
-**El Paso, lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez. Lunch is about an hour. The slides get 40 minutes of it. 31 slides (27 in the no-numbers deck), plus the prior authorization demo he can click on slide 11. RadAssist on slide 19 is a spoken overview, not a demo.**
+**El Paso, lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez. Lunch is about an hour. The slides get 40 minutes of it. 33 slides (27 in the no-numbers deck), plus the prior authorization demo he can click on slide 11. RadAssist on slide 19 is a spoken overview, not a demo.**
 
 **The hour, budgeted (Rick, 2026-11-02).** Ten minutes before the first slide: sitting down, ordering, the cold-open card (Part 1). Forty minutes of slides: the clock on every slide header below runs from 0:00 at slide 1 to 40:00 at the Thank You. Ten minutes after: Fernando talking, questions, and the appendix if the room asks for the number. If the food arrives mid-deck, stop at the end of the slide you are on and eat; the clock pauses, the cut list below does not change.
 
@@ -96,7 +104,7 @@ If he raises any of it himself: listen, say little, ask nothing, move on.
 
 ---
 
-# PART 2: THE 31 SLIDES, IN ORDER
+# PART 2: THE 33 SLIDES, IN ORDER
 
 ### SLIDE 1 · Six months of free decisions · 0:00 to 1:00
 
@@ -392,7 +400,7 @@ How the agent relates to the software, in one sentence if he asks: the software 
 
 Why not a vendor: the category exists (Availity, Waystar, Cohere Health, Humata Health, Infinitus), but it is priced and implemented for health systems and large groups, and much of it is payer-funded. At his size, whether that is one center or three, he is the customer those vendors take last and configure least. And the appeal gap is not a technology gap. Nobody has time to file. That is a workflow problem a narrow agent and a human sign-off fix.
 
-If he says they are opening three centers, or asks whether any of this changes at three: "Three makes the design work more valuable, not less. The specification gets written once and deployed three times, and the four contract terms on slide 3 get negotiated once across all three. Three centers is a reason to buy the specification, not a reason not to." Do not assume a count. Use the number he gave you at the open, and if he did not give one, ask.
+If he says they are opening three centers, or asks whether any of this changes at three: "Three makes the design work more valuable, not less. The specification gets written once and deployed three times, and the four contract terms on slide 3 get negotiated once across all three. Three centers is a reason to buy the specification, not a reason not to." If he asks whether the price changes at three, the answer is under slide 29 (Rick, 2026-11-03: this center and one pick per system; same picks elsewhere is a smaller follow-on; different picks are quoted first). Do not assume a count. Use the number he gave you at the open, and if he did not give one, ask.
 
 If he raises Olive AI: "Yes. Olive raised an enormous amount of money, shut down in 2023, and sold its prior authorization assets to Waystar and Humata Health. It sold broad automation to hospital systems on long implementation cycles. That is close to the opposite of one person building a narrow agent for one site he can watch directly."
 
@@ -644,15 +652,19 @@ Write down his Monday-morning answer. That sentence is worth more than the slide
 
 ==Voice: buy. I integrate.==
 
-==Records: build, selectively.==
+==Records coming in, the requests: build, selectively.==
+
+==Records going out, the priors: build, selectively. That is the tracker.==
 
 ==Owner reporting: build.==
 
 ==Billing, claims, and the eligibility feed: buy. That is a clearinghouse function with a real vendor market, and I am not touching your claims work.==
 
-==Three of the seven, I am telling you to buy."==
+==Three of the eight, I am telling you to buy."==
 
 **DEPTH / IF ASKED**
+
+**The slide says what each piece does; the why is here (Rick, 2026-11-03).** Prior authorization: strongest evidence, the vendors are built for someone much larger, the federal APIs arrive January first. Reminders and self-scheduling: commodity, bundled in modern imaging RIS products. Backfill: a ranked waitlist on top of the RIS that addresses the 22.3% of cancellations, not the 2.0% of no-shows. Voice: a funded category with the highest blast radius and an unforgiving Spanish bar. Records, inbound requests: hard statutory deadlines (fifteen business days in Texas) and retrieval labor you cannot bill for; the build is intake, an identity check step, the deadline clock, the fee calculation, status, and a DICOM export of the study. Records, outbound priors: no vendor has solved it for a small center; the build is a request tracker to other facilities, follow-up, import on arrival, and a flag to the radiologist when a prior is still missing. Owner reporting: custom by nature, smallest compliance footprint. Billing: a commodity clearinghouse function with a real vendor market.
 
 Every row except billing was defended on its own slide. **Billing is the new row and it is here for a reason: Phase 2 evaluates a billing vendor, and before this row existed there was no slide that justified it.** Fernando has reconciled real remittances for twenty years, so billing is the area he knows best and this is the row he is most likely to stop you on.
 
@@ -662,15 +674,21 @@ The answer, and it is a short one:
 
 That is the whole answer. The prior auth agent in row 1 cannot function without eligibility and remittance data, so the billing contract is an access question, not an accounting question. Do not volunteer an opinion about any specific billing vendor; you have not evaluated one, and that evaluation is what Phase 2 is for.
 
-⚠️ **The one seam on this slide that can look self-contradictory, so know it cold.** Row 1 is "prior authorization **and eligibility**: build." Row 7 is "billing **and the eligibility feed**: buy." A careful listener hears eligibility twice, on both sides of the line. Fernando is a careful listener. The distinction is real and it is one sentence:
+⚠️ **The one seam on this slide that can look self-contradictory, so know it cold.** Row 1 is "prior authorization **and eligibility**: build." Row 8 is "billing **and the eligibility feed**: buy." A careful listener hears eligibility twice, on both sides of the line. Fernando is a careful listener. The distinction is real and it is one sentence:
 
 > =="I am not building an eligibility system. Your billing vendor already has that transaction; the EDI 270/271 eligibility check is the oldest standardized surface in this business and every clearinghouse exposes it. What I build is the thing that reads it and acts on it, which is the part nobody sells you. That is also why the access terms in that billing contract matter to me."==
 
 Memorize that. If you fumble this one, the slide stops being a credibility move and becomes a thing he has to untangle for you.
 
+**IF ASKED "Which RIS and PACS should we buy?" (Rick, 2026-11-03).** The position for a single center is one cloud system that bundles RIS and PACS. Say it in four sentences:
+
+> =="For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2."==
+
+Why one system: one vendor, one support line, one contract; no RIS-to-PACS interface to pay for or keep alive; one worklist; faster go-live; the lean control Fernando wants. The cost is lock-in and giving up best-of-breed, and the four contract terms on slide 3 are the mitigation: data export in DICOM and HL7 at no penalty, interface fees fixed at signature, API access, worklist access. Split RIS from PACS only if the radiologists have a strong PACS preference or want multi-site reading from day one. Dictation is selected separately, and the radiologists choose it. Exa is one example of an integrated RIS, PACS and billing system, never the pick; the starting shortlist is slide 32 in the appendix, and no vendor is named as the choice until Phase 2.
+
 **BEAT**
 
-Read it in one breath. **=="Three of the seven, I am telling you to buy" is the point of the slide**, because recommending against yourself three times in a row is the most credible thing you say today. Let it sit before you move.==
+Read it in one breath. **=="Three of the eight, I am telling you to buy" is the point of the slide**, because recommending against yourself three times in a row is the most credible thing you say today. Let it sit before you move.==
 
 ---
 
@@ -798,15 +816,22 @@ One minute. The list is the answer. Do not argue it.
 
 ==Texas SB 1188. Electronic health records with Texas patient data have to be physically stored in the United States as of January first this year. Every component, including the model provider, gets verified for US residency before anything is promised.==
 
-==TCPA, the Telephone Consumer Protection Act. That is the federal law on automated calls and texts. Its healthcare exemption allows one message per day and three per week per patient. No billing content. Provider name and opt-out in every message. Five hundred dollars per violation, up to fifteen hundred if willful. A reminder plus a backfill offer plus a results notice can collide with the three-per-week cap. The system needs a per-patient rate governor, not just a send queue. I have built that.==
+==TCPA, the Telephone Consumer Protection Act. That is the federal law on automated calls and texts. Its healthcare exemption allows one message per day and three per week per patient. No billing content. Provider name and opt-out in every message. Five hundred dollars per violation, up to fifteen hundred if willful. A reminder plus a backfill offer plus a results notice can collide with the three-per-week cap. The system needs a per-patient rate governor, not just a send queue. That gets designed in from day one.==
 
 ==The AI vendor's business associate agreement. Anthropic's agreement now covers Skills, Web Search, Memory, and the Bash and Text Editor tools. It still excludes Computer Use and Web Fetch, which are exactly what you would reach for to drive a payer portal that has no API. So the prior auth design routes through APIs, EDI, or a human step. Not screen-driving.==
 
-==Texas HB 300. Its definition of a covered entity is broad enough to reach me directly, not only through your BAA. I carry that obligation in my own right."==
+==Texas HB 300. Texas privacy law covers me directly, not just through our contract. If I mishandle your patients' data, I'm the one the state comes after. That's how it should be."==
 
 **THEN SAY (the caveat, on the BAA)**
 
 =="The coverage depends on which version of the agreement is signed and when. I will confirm the exact envelope in writing before anything with patient data is built."==
+
+**TALK IT THROUGH, one block per boundary (Rick, 2026-11-03).** Plain English, for when a line lands and he wants it explained. What it is, what it means for the center, the one line to say.
+
+- **SB 1188.** *What it is:* a Texas law that says electronic health records holding Texas patients' data must be physically stored in the United States. *What it means for the center:* every system and every vendor, including the AI company, has to show in writing where the data sits; a cloud account locked to a US region satisfies it. *The one line:* =="Every component gets verified for US residency before anything is promised."==
+- **TCPA.** *What it is:* the federal law on automated calls and texts; its healthcare exemption lets a provider send appointment-type messages without separate marketing consent, within limits. *What it means for the center:* one message a day and three a week per patient across every message type, nothing about money, the provider's name and an opt-out in every message. The "per-patient rate governor" is a counter: for each patient it counts every text and call the systems send, from reminders to backfill offers to results notices, caps them at one a day and three a week, blocks anything with billing content, and stamps the name and the opt-out on each one. *The one line:* =="That gets designed in from day one."== Never say you have built one.
+- **The AI vendor's BAA.** *What it is:* the HIPAA business associate agreement the AI company signs, which makes it legally responsible for patient data it receives. *What it means for the center:* patient details do go to the AI company, the same way they go to the clearinghouse, under that signed agreement, never kept and never trained on; the agreement does not cover the browser-driving tools, so nothing drives a payer portal screen with patient data. *The one line:* =="Under a signed HIPAA agreement, never kept, never trained on, and never through a screen the agreement does not cover."==
+- **HB 300.** *What it is:* Texas's own health privacy law, broader than HIPAA. *What it means for the center:* training records, a fifteen-business-day records deadline, no sale of patient data, and the Attorney General as the enforcer; and it reaches Rick personally, not only through the contract. *The one line:* =="If I mishandle your patients' data, I'm the one the state comes after. That's how it should be."==
 
 **DEPTH / IF ASKED**
 
@@ -1013,7 +1038,7 @@ Put the leave-behind on the table, one per person (two pages now: the second is 
 
 **DEPTH / IF ASKED**
 
-This divider exists so the number lands after the decisions, as reference material, and so the room can stop before it. If Luis says no numbers, this slide and the three that follow are not in the deck you are showing; the no-numbers variant ends on the Thank You.
+This divider exists so the number lands after the decisions, as reference material, and so the room can stop before it. If Luis says no numbers, this slide and the five that follow are not in the deck you are showing; the no-numbers variant ends on the Thank You. The appendix is 29 (the engagement), 30 (the timeline), 31 (what I need from you), 32 (the Phase 2 systems and starting shortlist) and 33 (running costs and the three hosting options); the last two only if asked.
 
 **BEAT**
 
@@ -1039,14 +1064,16 @@ Then stop talking.
 
 | # | Phase | When | Deliverable you sign | Fee | Paid |
 |---|---|---|---|---|---|
-| 1 | Discovery and requirements. How the new center runs: patient flow from scheduling to report, services and modalities, volumes, payers, what is automated at opening. Luis's current center is an input, not the template. | Nov to mid-Dec 2026, 6 weeks | Requirements and Roadmap: requirements for every system, patient-flow map (order to signed report to paid claim), vendor contract terms to demand, make-or-buy recommendation per system, vendor shortlist and evaluation criteria for Phase 2 | $7,000 | $4,000 at signing, $3,000 on delivery |
-| 2 | Vendor and system selection. Scheduling, RIS and PACS, billing, phones, prior authorization. Demos, scoring, recommendation. | Mid-Dec 2026 to Jan 2027, 6 weeks | Vendor Selection Report, plus the list of contracts to sign | $8,000 | In full at the start |
-| 3 | Design and staffing plan. System and network design, workflows, security and HIPAA plan, and how each role's work runs with the automation in place. | Feb 2027, 1 month | Architecture, Workflow and Staffing Plan | $7,000 | In full at the start |
+| 1 | Discovery and requirements. How the new center runs: patient flow from scheduling to report, services and modalities, volumes, payers, what is automated at opening. Luis's current center is an input, not the template. | Nov to mid-Dec 2026, 6 weeks | Requirements and Roadmap: requirements for every system, patient-flow map (order to signed report to paid claim), vendor contract terms to demand, make-or-buy recommendation per system with a ballpark monthly running cost for each build item, vendor shortlist and evaluation criteria for Phase 2 | $7,000 | $4,000 at signing, $3,000 on delivery |
+| 2 | Vendor and system selection. Scheduling; RIS and PACS, likely one cloud system for both (Exa is one example); dictation; billing and clearinghouse; phones; prior authorization; patient portal and intake; fax and document management; modality integration; reading workstations; IT, security and backup. Demos, scoring, recommendation; interface fees fixed up front. | Mid-Dec 2026 to Jan 2027, 6 weeks | Vendor Selection Report, plus the list of contracts to sign | $8,000 | In full at the start |
+| 3 | Design and staffing plan. System and network design, workflows, security and HIPAA plan, and how each role's work runs with the automation in place. | Feb 2027, 1 month | Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget: three hosting options (your cloud account; hybrid with a box at the center; all on-site with a local AI model), pros and cons, one-time, monthly and three-year cost including support labor; the owner picks | $7,000 | In full at the start |
 | 4 | Build and configure. Systems set up and connected, RadAssist configured, prior-auth automation, IT install coordinated. Depends on Phases 2 and 3 and on vendor lead times. | Mar to Apr 2027, 2 months | All systems working in test | $14,000 | $7,000 on March 1, $7,000 on April 1 |
 | 5 | Testing, training and go-live. | May 2027, 1 month | Signed go-live readiness, plus opening-week support | $9,000 | In full at the start |
 | | Total. Ready for a June 2027 opening, about a month of buffer. | Nov 2026 to May 2027 | | **$45,000** | |
 
 ==Outside the phases: $150 an hour, approved first, against a retainer the client tops up. The timeline flexes if the opening moves; the price does not. Do not compare the retainer to how their lawyer bills (Rick, 2026-11-02).==
+
+==**The two assumption lines on the slide, say them if he reads them (Rick, 2026-11-03):** "Priced for one center, with one selected system per category. Additional centers, or a different system chosen for another center, are quoted before work starts." And: "Running costs after the build are not in the forty-five. They run in accounts in your name, billed at cost, with an estimated range and a monthly statement."==
 
 **DEPTH / IF ASKED**
 
@@ -1058,9 +1085,11 @@ Then stop talking.
 
 **If he pushes on price: shorten the term, never cut the rate.** "Take Phase 1. Seven thousand, six weeks, and you own the requirements whether or not we go on." That is the gate. You never discount. Do not break out hours for the phases, do not justify the number at length, and never say what forty-five works out to per hour.
 
-**"Does that change at three centers?"** "No. The requirements, the vendor selection, and the design are done once for this center. A second center is its own, smaller engagement, mostly Phase 4 and 5."
+**"Does that change at three centers?" (Rick, 2026-11-03; this replaces the old answer.)** =="The engagement covers this center, and one pick per system. If the other centers use the same picks, they're a smaller engagement: mostly build and go-live. If a center wants something different, that's its own evaluation, and I'll quote it before I start. You'll never get a surprise bill. You'll get a number to approve."== The rule behind it: same picks at another center is a smaller follow-on, mostly Phases 4 and 5; different picks is a new selection for those categories, quoted and approved in writing before work starts.
 
-**"What about keeping it running after opening?"** Opening-week support is inside Phase 5. After that, anything they want is the $150 retainer, or a support agreement scoped in writing once there is real volume. Do not quote a monthly fee today; nothing has been priced.
+**"What does it cost to keep running?" (Rick, 2026-11-03.)** Not in the forty-five, and say so before he asks. =="Everything that keeps it running, the cloud, the AI, the texting, the clearinghouse, runs in accounts in your name. You sign each HIPAA agreement, you see each bill, I don't mark any of it up. I'll give you an estimated range in Phase 1 and a firm operating budget in Phase 3, and after opening you get a one-page statement every month: each vendor's bill, the volume it handled, what it did for you."== If he wants a number today: "At expected volume it is around two thousand a month in vendors, with a cap I can't pass without your OK. That is an estimate, confirmed in Phase 1." Slide 33 carries the ranges. Where the money goes, if asked: a properly locked-down HIPAA cloud setup, the clearinghouse transactions (often already inside the billing contract), texting under a HIPAA agreement, security monitoring and a yearly penetration test; the AI usage itself is the small line. Frame it against staff time, never against "AI": one prior authorization coordinator costs more a month than the whole vendor stack. Opening-week support is inside Phase 5; support after that is scoped in writing inside the Phase 3 operating budget. Do not quote a monthly support fee today; it has not been priced.
+
+**"Where does it run?" (the TCO deliverable, Rick, 2026-11-03.)** The Phase 3 deliverable "Total cost of ownership and operating budget" prices three options and the owner picks: A, the center's own secure cloud account; B, hybrid, a box at the center that strips names and IDs before anything goes to the AI company, with the database and backups in the cloud; C, everything on site including a local AI model. Say where you lean, and say the privacy part precisely: =="Your patients' details do go to the AI company, the same way they go to your clearinghouse: under a signed HIPAA agreement, and never kept or trained on. If you'd rather names never leave, we can strip them first. Keeping the AI entirely at the center costs a lot more over three years and gives you a weaker assistant, so I'd only try it as a test."== Never say "no data leaves." Stripping names reduces what the AI company sees; it does not remove patient information, because the packet has to carry the clinical story. Only a model running at the center keeps it from an AI company, and even then the payer, the clearinghouse and the backups still receive it.
 
 **If he asks what the billing evaluation is**: "Billing is a buy and I am not touching the claims work. What I evaluate in Phase 2 is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system depends on them, and whether the four access terms go into that contract too."
 
@@ -1111,8 +1140,8 @@ Finger on the opening flag. Stop.
 Read the rows only if asked:
 
 - **Phase 1:** time with Luis and Fernando; the services and modalities they plan to offer; expected volumes and payer mix; the target opening date. Luis's current center is an input, not the template.
-- **Phase 2:** budget ranges, any preferred vendors, and their decisions as the scoring comes in.
-- **Phase 3:** operating hours, the roles they intend to hire, and the vendor contracts as they are negotiated.
+- **Phase 2:** budget ranges, any preferred vendors, the radiologists' dictation preference, and their decisions as the scoring comes in. What they get back: the Vendor Selection Report and the contracts to sign for every system on slide 32.
+- **Phase 3:** operating hours, the roles they intend to hire, the vendor contracts as they are negotiated, and their hosting pick from the three options. What they get back: the Architecture, Workflow and Staffing Plan, plus the Total cost of ownership and operating budget.
 - **Phase 4:** signed vendor contracts and business associate agreements, sandbox access to each system, equipment delivery dates.
 - **Phase 5:** their staff, hired and available for training, and the final opening date.
 - **Throughout:** one named person on their side who approves.
@@ -1127,7 +1156,67 @@ Read the rows only if asked:
 
 **BEAT**
 
-==Close the laptop. Lunch.==
+==Close the laptop. Lunch.== (If the room asked for the shortlist or the running costs, slides 32 and 33 come first; then close the laptop.)
+
+---
+
+### SLIDE 32 · Systems to select in Phase 2: starting shortlist · 43:00 to 44:00, only if asked
+
+Reference. Show it only if someone asks which systems or which vendors. It is a starting shortlist from a landscape review, not an evaluation; the final pick is Phase 2 with their radiologists in the demos.
+
+**SAY**
+
+=="This is where I would start looking, not what I would buy. Phase 2 is where your radiologists sit in the demos and we score it."==
+
+==Then, if he wants the position: "For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2."==
+
+**DEPTH / IF ASKED**
+
+The slide, row by row. RIS and PACS: one cloud system for both, built for independent centers; the starting names are Konica Minolta Exa PACS|RIS, RamSoft OmegaAI, Novarad and Intelerad. The 2026 Best in KLAS PACS winners, Sectra and Agfa, are built and priced for hospitals; "small" in that award still means a community hospital's volume. A premium viewer with a separate RIS only if the radiologists insist, at a higher cost and one more interface. What decides it: a hands-on reading demo with their radiologists on MRI and CT cases; five-year cost including interfaces, storage growth and dictation; front desk to claim in one workflow; hosting and security (BAA, SOC 2, backup and recovery, uptime); export and API terms; two or three references from single-site centers of similar volume; a timeline that lands before June, which means a contract by about February.
+
+Dictation: the radiologists choose the tool and the owners choose the contract. The candidates are the RIS's built-in dictation (cheapest, no interface), PowerScribe One (now Microsoft), Fluency for Imaging (now Jacobian; 2026 Best in KLAS for imaging speech recognition) and Rad AI. If the group is contracted rather than employed, it may already carry a license and only need the link.
+
+Billing and clearinghouse: outsource billing to an imaging-specialized firm at opening, on a short contract, with the clearinghouse and the data in the center's name and clear handover terms. Clearinghouses in common use: Waystar, Availity, TriZetto, Office Ally, Quadax (2026 Best in KLAS). Document a second clearinghouse path; the 2024 Change Healthcare outage is the lesson. What decides it: three quotes; TRICARE, Medicare and Medicare Advantage handling; eligibility and authorization transactions reachable by the Phase 4 build.
+
+Also selected in Phase 2: scheduling and reminders (inside the RIS), phones, prior authorization connections, patient portal and intake, fax and document management, modality integration, reading workstations, IT, security and backup. Each carries the four contract terms from slide 3, and the interface fees are fixed up front.
+
+**Do not quote** a license price, a per-study rate, a market share, or an interface fee; none is sourced. "Every price in this market is a quote, which is why the shortlist goes to RFP." Never disparage a vendor on the slide. If Luis or Fernando already lean toward one, write it down; it gives Phase 2 a front-runner, not a decision.
+
+**BEAT**
+
+One line, then let him read. If he names a vendor he has used, ask what he liked and what he would not sign again. That is Phase 2 input.
+
+---
+
+### SLIDE 33 · What it costs to keep running, and where it runs · 44:00 to 45:00, only if asked
+
+Reference. Show it if he asks what it costs after opening, or where the data lives. Every dollar on it is an estimate, confirmed in Phase 1.
+
+**SAY**
+
+=="Running costs are not in the forty-five. Everything runs in accounts in your name. I hold the admin keys, you hold the ownership. If you ever let me go, nothing stops."==
+
+=="I don't mark any of it up. You see the actual bills every month on one page, with what each one did for you."==
+
+=="At expected volume it is around two thousand a month in vendors, with a cap I can't pass without your OK. That is an estimate; Phase 1 confirms it and Phase 3 turns it into an operating budget you approve."==
+
+**THEN SAY (the privacy line, precisely)**
+
+=="Your patients' details do go to the AI company, the same way they go to your clearinghouse: under a signed HIPAA agreement, and never kept or trained on. If you'd rather names never leave, we can strip them first. Keeping the AI entirely at the center costs a lot more over three years and gives you a weaker assistant, so I'd only try it as a test."==
+
+**DEPTH / IF ASKED**
+
+The three options on the slide. A, the center's own secure cloud account: keeps working through a power or internet outage at the center, no new duties for staff, the best available model; the clinical content goes to the AI company under the agreement. B, hybrid: a box at the center swaps names and IDs for tokens before the call and the database and backups live in the cloud; names never reach the AI company, but the clinical story still does, so the agreement is still required; two environments to patch; the agents pause in an outage and catch up; the staff lock the room and keep a log. C, all on-site with a local AI model: no AI company sees patient data, no per-use cost; but the models that fit on hardware at the center are weaker at the long, rule-heavy work (matching a payer's criteria, drafting an appeal), so quality has to be proven on test cases first; it stops in an outage; the center carries the full physical-safeguard duty; the hardware is obsolete in three to four years. Where you lean: A, with B's name-stripping step run inside the cloud account if they want identifiers kept away from the AI company; B's box only if the RIS forces a local connection; C not for opening, offered later as a measured side-by-side test.
+
+The ranges, all estimates at about 650 studies a month: vendors about $900 to $4,200 a month in A, expected near $2,000; about $1,000 to $4,300 in B; about $1,200 to $3,500 in C plus the hardware. One-time setup outside the fee: $6,000 to $25,000 in A (penetration test, clearinghouse enrollment, interface onboarding), $12,000 to $37,000 in B, $27,000 to $52,000 in C. Where the money goes: the locked-down HIPAA cloud setup, the clearinghouse transactions (often already in the billing contract, so ask the billing vendor first), texting under a HIPAA agreement (the line most likely to surprise), security monitoring and a yearly penetration test. The AI usage itself is a small line even at 900 studies a month.
+
+What is not on the slide: a monthly support fee. Support after opening week is scoped in writing in Phase 3, inside the operating budget. Do not quote one. Do not quote a three-year total; the only three-year figures that exist assume a support fee that has not been priced.
+
+Never say "no data leaves." Stripping names reduces what the AI company sees; it does not remove patient information, because a prior authorization packet has to carry the clinical story. Only a model running at the center keeps it from an AI company, and even then the payer, the clearinghouse and the encrypted offsite backup still receive it.
+
+**BEAT**
+
+Three lines, then stop. If he asks for the cap, say it is set with him in Phase 1 from the real volumes, not today.
 
 ---
 
@@ -1165,7 +1254,7 @@ Then the payment line: "Four thousand when we sign and three when you have the r
 
 If pushed: "Take Phase 1. Seven thousand, six weeks, and you own the requirements whether or not we go on."
 
-The three objections, one line each: **why upfront per phase** ("you have already signed off the phase before it; the sign-off is your control"), **what if the opening slips** ("the timeline moves, the price does not"), **what does $150 an hour cover** ("only things you ask for outside the five phases, approved first, against a retainer you top up").
+The three objections, one line each: **why upfront per phase** ("you have already signed off the phase before it; the sign-off is your control"), **what if the opening slips** ("the timeline moves, the price does not"), **what does $150 an hour cover** ("only things you ask for outside the five phases, approved first, against a retainer you top up"). Two more, added 2026-11-03: **three centers** ("this center and one pick per system; same picks elsewhere is a smaller engagement, mostly build and go-live; anything different is quoted before I start") and **running costs** ("not in the forty-five; accounts in your name, at cost, a monthly statement, around two thousand a month at expected volume with a cap").
 
 No hours. No rate. No justification. Shorten the term, never cut the rate.
 
@@ -1224,7 +1313,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 ## Fernando Q&A (rehearsed 2026-11-03)
 
-==Ten questions, asked by Gio as Fernando on 2026-11-03; these are the approved answers, verbatim. Say them as written.==
+==Ten questions, asked by Gio as Fernando on 2026-11-03; these are the approved answers, verbatim. Say them as written. Q11 to Q14 were added from Rick's evening review the same day and sit before Q10 so the closing question stays last.==
 
 > ==**Patterns to hold.**==
 > ==State the fixed price plainly: forty-five thousand, five phases, priced today; never hedge it.==
@@ -1274,6 +1363,22 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 ==**Q9. "What do you need from us, and what do we get at end of Phase 1? I don't pay for slides."**==
 
 =="To start, I need four things: a few hours with you and Luis, the services and modalities you plan to offer, your expected volumes and payer mix, and your target opening date. Four thousand at signing. Six weeks later you get five documents you own: the requirements for every system the center needs; a map of how a patient moves from order to signed report to paid claim; the contract terms to demand from every vendor before you sign; a make-or-buy recommendation for each system; and a vendor shortlist with the evaluation criteria, ready for Phase 2. Then three thousand on delivery. And you own all of it whether we go on or not. If you stop there, you've got a requirements package any vendor or consultant can work from."==
+
+==**Q11. "We may open three centers. Does the price change?" (Rick, 2026-11-03)**==
+
+=="The engagement covers this center, and one pick per system. If the other centers use the same picks, they're a smaller engagement: mostly build and go-live. If a center wants something different, that's its own evaluation, and I'll quote it before I start. You'll never get a surprise bill. You'll get a number to approve."==
+
+==**Q12. "What does it cost to keep running after you're done?" (Rick, 2026-11-03)**==
+
+=="It isn't in the forty-five, and I'd rather tell you now. Everything that keeps it running, the cloud, the AI, the texting, the clearinghouse, runs in accounts in your name. You sign each HIPAA agreement, you see each bill, and I don't mark any of it up. You get an estimated range in Phase 1, a firm operating budget in Phase 3, and after opening a one-page statement every month: each vendor's bill, the volume it handled, what it did for you. At expected volume it's around two thousand a month in vendors, with a cap I can't pass without your OK."==
+
+==**Q13. "Which RIS and PACS should we buy?" (Rick, 2026-11-03)**==
+
+=="For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2."==
+
+==**Q14 (Jesse). "Does the AI company see our patients' data?" (Rick, 2026-11-03)**==
+
+=="Yes, and I won't tell you otherwise. Your patients' details do go to the AI company, the same way they go to your clearinghouse: under a signed HIPAA agreement, and never kept or trained on. If you'd rather names never leave, we can strip them first. Keeping the AI entirely at the center costs a lot more over three years and gives you a weaker assistant, so I'd only try it as a test."==
 
 ==**Q10. "One reason, one sentence, why say yes today."**==
 

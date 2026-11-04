@@ -1,0 +1,9 @@
+# Contract clause draft: third-party services and operating costs (PRIVATE, Rick only)
+
+Source: `SHERLOCK-RUN-COSTS-2026-11-03.md`, "Contract clause (draft, have counsel review)". Captured 2026-11-03 per Rick's R17 ("contract clause in private notes"). Not for any pitch document. Have counsel review before use.
+
+Edits from Sherlock's draft: the dollar estimate and the cap are left as placeholders, because the approved pricing (2026-11-02) has no monthly support retainer and the running-cost figures are estimates to re-confirm in Phase 1. Fill them from the Phase 1 ballpark and the Phase 3 operating budget.
+
+> **Third-Party Services and Operating Costs.** All cloud, software, AI, messaging, clearinghouse, and security services required to operate the Deliverables ("Third-Party Services") shall be contracted in Client's name, billed directly to Client, and covered by business associate agreements executed by Client. Consultant shall act as administrator of the Third-Party Services under Client's authority and shall not mark up their cost. Consultant estimates Third-Party Service costs at approximately $[estimate] per month and shall not take any action expected to cause those costs to exceed $[cap] in any month (the "Cap") without Client's prior written approval. Consultant shall deliver a monthly statement itemizing each Third-Party Service charge, transaction volumes, and any variance from the estimate. On termination, Consultant shall within ten business days transfer all administrative credentials, documentation, and data to Client or its designee, and remove its own access. Third-Party Service costs are separate from the Fees.
+
+Scope guard to pair with it (Rick, R16): the engagement is priced for one center with one selected system per category; additional centers, or a different system chosen for another center, are quoted and approved in writing before work starts.
