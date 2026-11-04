@@ -334,3 +334,9 @@ Price and dates unchanged. Verification: deck 33/27, leave-behind 2/2, architect
 | Runbook | "Things not to say" gains the integration score / ranking / winner item with the lunch line. AUTOMATION-CANDIDATES gains an "Integration readiness (R21)" paragraph. |
 
 Verification: deck 33/27, leave-behind 2/2, architecture 8, runbook 27, notes 49, docx 232 highlights; slides 29, 31, 32, leave-behind p2 and architecture p7 checked; 0 em dashes.
+
+### Add-on, Rick 17:48, R9 trim (applied last, 2026-11-03, ninth pass)
+
+Phase 2 systems list is now, in the owners' order: (1) scheduling; (2) RIS and PACS, evaluated both as one bundled cloud system and as separate best-of-breed RIS plus PACS (Exa is one example); (3) prior authorization and eligibility; (4) patient phones, IVR and AI answering; (5) radiologist voice recognition and dictation; (6) billing and clearinghouse; (7) imaging-specific: modality integration and worklist, reading workstations, image sharing (CD and cloud). Removed as generic non-imaging items: patient portal and intake, fax and document management, IT/security/backup as a separate line. IVR (patient-facing) and dictation (clinical) are separate named rows everywhere. Applied to deck slides 29, 31 (via "every system on slide 32") and 32 (RIS/PACS row now says "evaluated both ways"; "Also selected" row trimmed), leave-behind row 2, notes (header, slide 29 table, slide 32 depth), runbook (header, Phase 2 answer, pricing table), architecture p7 box 2 (shortened to fit, checked), AUTOMATION-CANDIDATES (pricing paragraph and the "Systems selected in Phase 2" paragraph, now marked final). The R12 lean toward one bundled system is unchanged as the spoken position; the selection evaluates both.
+
+Verification: deck 33/27, leave-behind 2/2, architecture 8, runbook 27, notes 50 (was 49), docx 232 highlights; slides 29, 31, 32, leave-behind p2, architecture p7 checked; no-numbers deck has no pricing strings; 0 em dashes.
