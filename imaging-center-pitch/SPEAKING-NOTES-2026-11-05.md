@@ -5,10 +5,10 @@
 > **In the room:** Luis, Fernando Escarzaga, and **Jesse Martinez** (an engineer; quiet, analytic, humble).
 > Format: a quiet place, a conversation, not a pitch to an audience. Rick has court by Zoom on Wed 10-28.
 >
-> **FINAL STRUCTURE, Rick-approved 2026-11-03 20:46 , corrected 20:49 (35 slides; 28 in the no-numbers deck).** Both Part dividers STAY (7 and 11). The hours slide and the 95% slide are one slide, **8 "The problem: what prior auth costs you"** (one headline number, three lines, one closing line). Radiology report assistance moved to the appendix (**33**); the one line that stays in the pitch is on slide 18 (the signed report flows into the RIS). The engagement (**23**), the timeline (**24**) and what I need from you (**25**) now come BEFORE the Thank You (**26**), so the price is reached at about 34:30 and the close ends at 40:00. The appendix divider (**27**, "Reference, only if asked") is followed by the shortlist (28), running costs (29), the opening checklist (30), ideas worth a look (31, 32) and report assistance (33). Phase 4 deliverable reworded (R26: every system, bought and built, set up, connected and passing end-to-end tests; vendors configure their own products, Rick manages them, connects everything and runs the tests). Phase 1 time is with ALL THREE owners, Dr. Ramos, Fernando and Jesse (R27; Jesse named for the technical and integration decisions). Phase 1 make-or-buy is per REQUIREMENT (R28: met by a system you buy, or a piece Rick builds, with a ballpark running cost for anything built). A two-page lunch card (`Imaging-Center-LUNCH-CARD-2026-11-05.pdf`) replaces the folded sheet as the pocket card.
+> **FINAL STRUCTURE, Rick-approved 2026-11-03 20:46 , corrected 20:49 (35 slides; 28 in the no-numbers deck).** Both Part dividers STAY (7 and 11). The hours slide and the 95% slide are one slide, **8 "The problem: what prior auth costs you"** (one headline number, three lines, one closing line). Radiology report assistance moved to the appendix (**35**); the one line that stays in the pitch is on slide 18 (the signed report flows into the RIS). The engagement (**25**), the timeline (**26**) and what I need from you (**27**) now come BEFORE the Thank You (**28**), so the price is reached at about 34:30 and the close ends at 40:00. The appendix divider (**29**, "Reference, only if asked") is followed by the shortlist (30), running costs (31), the opening checklist (32), ideas worth a look (33, 34) and report assistance (35). Phase 4 deliverable reworded (R26: every system, bought and built, set up, connected and passing end-to-end tests; vendors configure their own products, Rick manages them, connects everything and runs the tests). Phase 1 time is with ALL THREE owners, Dr. Ramos, Fernando and Jesse (R27; Jesse named for the technical and integration decisions). Phase 1 make-or-buy is per REQUIREMENT (R28: met by a system you buy, or a piece Rick builds, with a ballpark running cost for anything built). A two-page lunch card (`Imaging-Center-LUNCH-CARD-2026-11-05.pdf`) replaces the folded sheet as the pocket card.
 >
 > **Rick's evening review, 2026-11-03, applied:**
-> - **Support plan, APPROVED 17:54:** $3,000 a month for up to 20 hours, $150 an hour beyond, from June 2027, 12-month term with a 90-day check-in, separate from the $45,000; on slide 25 (one row), slide 31 (support row), the leave-behind, slide 25 notes and Q&A Q16. **Two more appendix slides:** 34 "Opening checklist" (required to open, outside the fee, owners named in Phase 1) and 35 and 36 "Ideas worth a look" (follow-up recommendation tracking leads; three smaller ideas on 36).
+> - **Support plan, APPROVED 17:54:** $3,000 a month for up to 20 hours, $150 an hour beyond, from June 2027, 12-month term with a 90-day check-in, separate from the $45,000; on slide 25 (one row), slide 31 (support row), the leave-behind, slide 25 notes and Q&A Q16. **Two more appendix slides:** 32 "Opening checklist" (required to open, outside the fee, owners named in Phase 1) and 33 and 34 "Ideas worth a look" (follow-up recommendation tracking leads; three smaller ideas on 34).
 > - **Two new appendix slides.** Slide 30, "Systems to select in Phase 2: starting shortlist" (RIS and PACS, dictation, billing and clearinghouse, from Sherlock's landscape; a starting shortlist, the final pick is Phase 2). Slide 31, "What it costs to keep running, and where it runs" (running costs are not in the $45,000; three hosting options). Both are reference, only if asked, inside the last ten minutes.
 > - **Phase 2 now names every system** (slide 25, 27, leave-behind): (1) scheduling; (2) RIS and PACS, evaluated both as one bundled cloud system and as separate best-of-breed RIS plus PACS (Exa is one example); (3) prior authorization and eligibility; (4) patient phones, IVR and AI answering; (5) radiologist voice recognition and dictation; (6) billing and clearinghouse; (7) imaging-specific: modality integration and worklist, reading workstations, image sharing (CD and cloud) (trimmed by Rick 17:48: owners' asks first, then imaging-specific; generic IT items removed).
 > - **The scorecard (slide 17) says what each piece does**, with records split into inbound requests and outbound priors; the "why" lives in the notes. It is now "three of the eight."
@@ -437,45 +437,23 @@ Step four is the safety model. Pause on it. Then let Fernando ask "when can I se
 
 ---
 
-### SLIDE 11 · What a prior auth process actually does all day · 17:30 to 18:00
+### SLIDE 11 · Part two: the three things you did ask about, corrected · 17:30 to 18:00
 
 **SAY**
 
-=="Here is the other side of it. At one institution, over four years, 17,913 outpatient MRI prior authorization requests went in. 4.94% were denied. The other 95% were approved.==
-
-==A process that approves 95% of what it touches is one you automate, not one you staff."==
-
-**THEN SAY (the caveat)**
-
-=="That is one institution, one modality, four years. The national all-service denial rate from the KFF data was 7.7%. Both say the same thing: most of the work is approvals."==
+"Now the three things you did ask about. Scheduling. Answering patients. Requesting records. All three are real. Two of them are not what they look like."
 
 **DEPTH / IF ASKED**
 
-Source: Harrer S et al., J Am Acad Orthop Surg, 2025 Feb 15;33(4):e244-e252, PMID 39729599. Cooper University Health Care, orthopaedics, New Jersey payer mix, January 2019 through December 2022. 885 of 17,913 denied. Spine MRI was less likely to be authorized than extremity studies, and two Medicaid payers were significantly less likely to authorize. The authors' own conclusion: the low denial rate "underscores the questionable utility of the prior authorization process."
-
-This is the opposite of a scare statistic, and that is deliberate. Fernando has reconciled real remittances. Do not quote any inflated imaging denial rate; he will know.
-
-Recommendation: build. This is the lead product. What the agent does: detects authorization-required orders at scheduling, assembles the documentation packet from the referral and the RIS, submits through the payer API where one exists, through EDI 278 where supported, and otherwise prepares a complete packet for a human to submit. Tracks every open request against the seven-day and 72-hour clocks. On denial, drafts the appeal with the clinical rationale and queues it for a human signature. Reports the appeal rate and overturn rate weekly, which is the number the owner should watch. The appeal rate is the headline of the Monday owner report on slide 17: it starts near zero for a new center by definition, it is measurable from week one, and it is entirely attributable to the system. A human signs every submission and every appeal in phase one.
-
-The human signature is deliberate design, and it is the FDA boundary on slide 21, not a cost to be optimized away. If he asks "what if it makes something up": a person signs every payer submission and every appeal, and the system never recommends a study or judges whether one is appropriate. "Phase one" does not mean the sign-off quietly relaxes later. The specification states the graduation criterion: sign-off moves from every item to a sample only after a defined volume at a defined accuracy, measured, and only with the owner approving the change. Until then, every item. That turns the human step from a promise into a governed control, which is the language he negotiates in.
-
-How the agent relates to the software, in one sentence if he asks: the software is the capability and the agent is the operator. Every piece gets built as a service with a clean interface that works without a model, and the agent runs it. The service is what goes in the specification and what any integrator can take over. The agent is replaceable. More on this at slide 17.
-
-Why not a vendor: the category exists (Availity, Waystar, Cohere Health, Humata Health, Infinitus), but it is priced and implemented for health systems and large groups, and much of it is payer-funded. At his size, whether that is one center or three, he is the customer those vendors take last and configure least. And the appeal gap is not a technology gap. Nobody has time to file. That is a workflow problem a narrow agent and a human sign-off fix.
-
-**IN PLAIN WORDS (Rick, 2026-11-03), if he asks what "built for someone much larger" means:**
-
-=="The prior authorization vendors out there are priced and implemented for hospital systems and large physician groups. A center your size is the customer they configure last and least. A lot of them are paid by the payers, not by you. And the real gap is not technology. It is that nobody has time to file the appeals. That is what I build for. If one of those vendors fits you, use it. I will tell you if it does."==
-
-Never disparage a vendor by name. "If it fits, use it" is the posture on every vendor question today.
-
-If he says they are opening three centers, or asks whether any of this changes at three: "Three makes the design work more valuable, not less. The specification gets written once and deployed three times, and the four contract terms on slide 3 get negotiated once across all three. Three centers is a reason to buy the specification, not a reason not to." If he asks whether the price changes at three, the answer is under slide 29 (Rick, 2026-11-03: this center and one pick per system; same picks elsewhere is a smaller follow-on; different picks are quoted first). Do not assume a count. Use the number he gave you at the open, and if he did not give one, ask.
-
-If he raises Olive AI: "Yes. Olive raised an enormous amount of money, shut down in 2023, and sold its prior authorization assets to Waystar and Humata Health. It sold broad automation to hospital systems on long implementation cycles. That is close to the opposite of one person building a narrow agent for one site he can watch directly."
+Nothing to defend. This is a transition. The prior authorization content you just finished (13 hours, 95% approved, the Tuesday order) is all under slides 8 to 10; nothing new is introduced here.
 
 **BEAT**
 
-Land the last sentence and let it sit for a beat before you move to Part two.
+Thirty seconds. Three minutes for slides 12 and 13. Keep moving. If short on time, slide 13 is one sentence.
+
+**LEAD-IN TO SLIDE 12 (say before you advance)**
+
+"What was your cancellation rate, and what did you do with the empty slot?" Ask it here, before the 22.3% comes up, so his number is on the table before yours.
 
 ---
 
@@ -503,7 +481,7 @@ Do not quote general no-show benchmarks of 10 to 20%, "no-shows cost a practice 
 
 The one real risk in this build is TCPA, the Telephone Consumer Protection Act, the federal law that limits automated calls and texts to patients: a backfill offer counts against the same three-per-week cap as reminders. That is the rate governor on slide 20.
 
-The cancellation question is the lead-in on slide 10, asked before this slide comes up.
+The cancellation question is the lead-in on slide 11, the Part two divider, asked before this slide comes up.
 
 **BEAT**
 
