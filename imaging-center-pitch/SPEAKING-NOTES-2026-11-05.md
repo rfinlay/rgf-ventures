@@ -389,6 +389,8 @@ Slow down on "nobody has time." Say the closing line and advance to the dates. I
 
 ==On January first next year, they have to operate a FHIR Prior Authorization API, plus Patient Access, Provider Access, and Payer-to-Payer APIs.==
 
+==**DO NOT SAY:** FHIR, said "fire," is Fast Healthcare Interoperability Resources. It is not "Federal Health Interoperability Repository." If you expand it at all, expand it correctly or just say "FHIR."==
+
 ==Your target opening is about five months after that, with prior authorization already working and no legacy process to unwind. And almost 63% of medical plans say they are already building the prior authorization API ahead of the deadline."==
 
 **THEN SAY (two caveats, both mandatory)**
@@ -593,7 +595,7 @@ Say the buy line plainly. Recommending a purchase here makes everything you do p
 
 =="Texas has its own records deadline that is shorter than the federal 30 days: fifteen business days from a written request for an electronic record. That is the clock the tracker is built to, and it is verified against the statute in the specification."==
 
-(Fifteen business days, Texas Health and Safety Code 181.102, verified by Sherlock 2026-11-03 against the official text. It applies to a provider using an electronic health records system that can fulfill the request. The full chapter 181 depth is under slide 21.)
+(The slide now carries the line "Texas is stricter: 15 business days for electronic records. We design to 15." Fifteen business days, Texas Health and Safety Code 181.102, verified by Sherlock 2026-11-03 against the official text. It applies to a provider using an electronic health records system that can fulfill the request. The full chapter 181 depth is under slide 21.)
 
 **DEPTH / IF ASKED**
 
@@ -1103,7 +1105,7 @@ Finger on the opening flag. Stop.
 
 Read the rows only if asked:
 
-- **Phase 1:** time with all three of them, Dr. Ramos, Fernando and Jesse (never list only Luis and Fernando; Rick, 2026-11-03); the services and modalities they plan to offer; expected volumes and payer mix; the target opening date. Luis's current center is an input, not the template.
+- **Phase 1:** time with all three of them, Dr. Ramos, Fernando and Jesse (never list only Luis and Fernando; Rick, 2026-11-03); the services and modalities they plan to offer; expected volumes and payer mix; the target opening date.
 - **Phase 2:** budget ranges, any preferred vendors, the radiologists' dictation preference, and their decisions as the scoring comes in. What they get back: the Vendor Selection Report: side-by-side comparison of the shortlisted systems in each category, a weighted scoring matrix against the Phase 1 requirements (integration readiness a named criterion), pros and concerns for each, and a 5-year total cost of ownership per option (license or subscription, implementation, interface fees, support, hardware), with a recommendation; plus the contracts to sign for every system on slide 31.
 - **Phase 3:** operating hours, the roles they intend to hire, the vendor contracts as they are negotiated, and their hosting pick from the three options. What they get back: the Architecture, Workflow and Staffing Plan, plus the Total cost of ownership and operating budget.
 - **Phase 4:** signed vendor contracts and business associate agreements, sandbox access to each system, equipment delivery dates. What they get back: every system, bought and built, set up, connected and passing end-to-end tests; vendors configure their own products, I manage them, connect everything and run the tests (R26).
@@ -1111,8 +1113,6 @@ Read the rows only if asked:
 - **Throughout:** one named person on their side who approves.
 
 **DEPTH / IF ASKED**
-
-**The line that matters to Fernando:** Luis's current center is an input, not the template. This is a new center, designed from its own requirements. Luis's experience tells us what works and what to avoid; it does not decide the design.
 
 **Staffing, if it comes up here.** The Phase 3 plan is how each role's work runs with the automation in place, so they hire for what the center actually needs on day one. It is never a headcount target. Say "changes what your people do," never "reduces." If he wants a number, say you will have one in February, from the requirements, not today.
 
