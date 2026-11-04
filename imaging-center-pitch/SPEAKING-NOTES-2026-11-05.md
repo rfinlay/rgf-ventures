@@ -350,6 +350,10 @@ The two percentages at the bottom are the bridge to the agent. Slow down on "nob
 
 The second caveat is the demotion, and it is deliberate: the rule is the reason the window is now, not the reason to do this. Employer-sponsored coverage is the largest single block in El Paso County (268,142 people, 31.8% of the insured universe), and the rule does not reach it. If you let him find that, the regulatory claim breaks. If you say it first, it reads as command of the material.
 
+**IN PLAIN WORDS (Rick, 2026-11-03), say it after the two caveats if his face says "so what":**
+
+=="Here is what the rule does and does not do. It says the payers have to have the connections. It does not say they will work well. Some payers will be late, some will be buggy, some will send incomplete data, and every one of them needs its own setup on my side. That setup is Phase 4 work, and I have planned for it. So the rule is the reason the timing is right. It is not the reason to buy."==
+
 **IF THE FOUR-CHANNEL OBJECTION IS RAISED DIRECTLY** ("most of our volume will be Fort Bliss and the VA")
 
 "I looked that up, because you would know better than I would. In El Paso County, TRICARE-only and VA-only coverage together are under five percent of the insured population, about thirty-nine thousand people out of eight hundred forty-four thousand. Commercial and Medicare are where the volume and the margin are. The military channels matter for front-office workflow, not for the business case."
@@ -399,6 +403,12 @@ The human signature is deliberate design, and it is the FDA boundary on slide 21
 How the agent relates to the software, in one sentence if he asks: the software is the capability and the agent is the operator. Every piece gets built as a service with a clean interface that works without a model, and the agent runs it. The service is what goes in the specification and what any integrator can take over. The agent is replaceable. More on this at slide 17.
 
 Why not a vendor: the category exists (Availity, Waystar, Cohere Health, Humata Health, Infinitus), but it is priced and implemented for health systems and large groups, and much of it is payer-funded. At his size, whether that is one center or three, he is the customer those vendors take last and configure least. And the appeal gap is not a technology gap. Nobody has time to file. That is a workflow problem a narrow agent and a human sign-off fix.
+
+**IN PLAIN WORDS (Rick, 2026-11-03), if he asks what "built for someone much larger" means:**
+
+=="The prior authorization vendors out there are priced and implemented for hospital systems and large physician groups. A center your size is the customer they configure last and least. A lot of them are paid by the payers, not by you. And the real gap is not technology. It is that nobody has time to file the appeals. That is what I build for. If one of those vendors fits you, use it. I will tell you if it does."==
+
+Never disparage a vendor by name. "If it fits, use it" is the posture on every vendor question today.
 
 If he says they are opening three centers, or asks whether any of this changes at three: "Three makes the design work more valuable, not less. The specification gets written once and deployed three times, and the four contract terms on slide 3 get negotiated once across all three. Three centers is a reason to buy the specification, not a reason not to." If he asks whether the price changes at three, the answer is under slide 29 (Rick, 2026-11-03: this center and one pick per system; same picks elsewhere is a smaller follow-on; different picks are quoted first). Do not assume a count. Use the number he gave you at the open, and if he did not give one, ask.
 
@@ -1315,7 +1325,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 ## Fernando Q&A (rehearsed 2026-11-03)
 
-==Ten questions, asked by Gio as Fernando on 2026-11-03; these are the approved answers, verbatim. Say them as written. Q11 to Q14 were added from Rick's evening review the same day and sit before Q10 so the closing question stays last.==
+==Ten questions, asked by Gio as Fernando on 2026-11-03; these are the approved answers, verbatim. Say them as written. Q11 to Q15 are Rick's approved lunch lines from his evening review the same day; they sit before Q10 so the closing question stays last.==
 
 > ==**Patterns to hold.**==
 > ==State the fixed price plainly: forty-five thousand, five phases, priced today; never hedge it.==
@@ -1366,25 +1376,50 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 =="To start, I need four things: a few hours with you and Luis, the services and modalities you plan to offer, your expected volumes and payer mix, and your target opening date. Four thousand at signing. Six weeks later you get five documents you own: the requirements for every system the center needs; a map of how a patient moves from order to signed report to paid claim; the contract terms to demand from every vendor before you sign; a make-or-buy recommendation for each system; and a vendor shortlist with the evaluation criteria, ready for Phase 2. Then three thousand on delivery. And you own all of it whether we go on or not. If you stop there, you've got a requirements package any vendor or consultant can work from."==
 
-==**Q11. "We may open three centers. Does the price change?" (Rick, 2026-11-03)**==
-
-=="The engagement covers this center, and one pick per system. If the other centers use the same picks, they're a smaller engagement: mostly build and go-live. If a center wants something different, that's its own evaluation, and I'll quote it before I start. You'll never get a surprise bill. You'll get a number to approve."==
-
-==**Q12. "What does it cost to keep running after you're done?" (Rick, 2026-11-03)**==
-
-=="It isn't in the forty-five, and I'd rather tell you now. Everything that keeps it running, the cloud, the AI, the texting, the clearinghouse, runs in accounts in your name. You sign each HIPAA agreement, you see each bill, and I don't mark any of it up. You get an estimated range in Phase 1, a firm operating budget in Phase 3, and after opening a one-page statement every month: each vendor's bill, the volume it handled, what it did for you. At expected volume it's around two thousand a month in vendors, with a cap I can't pass without your OK."==
-
-==**Q13. "Which RIS and PACS should we buy?" (Rick, 2026-11-03)**==
+==**Q11. "What RIS and PACS would you pick?" (Rick, 2026-11-03)**==
 
 =="For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2."==
 
-==**Q14 (Jesse). "Does the AI company see our patients' data?" (Rick, 2026-11-03)**==
+==**Q12. "What if each center wants different systems?" (Rick, 2026-11-03)**==
 
-=="Yes, and I won't tell you otherwise. Your patients' details do go to the AI company, the same way they go to your clearinghouse: under a signed HIPAA agreement, and never kept or trained on. If you'd rather names never leave, we can strip them first. Keeping the AI entirely at the center costs a lot more over three years and gives you a weaker assistant, so I'd only try it as a test."==
+=="The engagement covers this center, and one pick per system. If the other centers use the same picks, they're a smaller engagement: mostly build and go-live. If a center wants something different, that's its own evaluation, and I'll quote it before I start. You'll never get a surprise bill. You'll get a number to approve."==
+
+==**Q13. "What will it cost to run?" (Rick, 2026-11-03)**==
+
+=="Running costs are billed to you at cost, in accounts you own. In Phase 1 you get a ballpark, and in Phase 3 a total cost of ownership with three hosting options side by side, so you choose with the full picture."==
+
+==**Q14. "Where will it run? Cloud or here?" (Rick, 2026-11-03)**==
+
+=="I'd run it in a secure cloud account the center owns, with a business associate agreement. If you'd rather have hardware in the building, I can do that too, and I'll show you the cost of each."==
+
+==If Jesse presses on whether the AI company sees patient data: "Yes, and I won't tell you otherwise. Your patients' details do go to the AI company, the same way they go to your clearinghouse: under a signed HIPAA agreement, and never kept or trained on. If you'd rather names never leave, we can strip them first."==
+
+==**Q15. "What is this Texas law you keep mentioning?" (HB 300; Rick, 2026-11-03)**==
+
+=="Texas privacy law covers me directly, not just through our contract. If I mishandle your patients' data, I'm the one the state comes after. That's how it should be."==
 
 ==**Q10. "One reason, one sentence, why say yes today."**==
 
 =="Because the decisions that are free today stop being free the day you sign your first vendor contract, and finding out if I'm right costs you one phase, not the whole engagement."==
+
+## Curveballs (Rick, 2026-11-03)
+
+==Short answers, one breath each. Answer, then stop.==
+
+==**"What if Luis leaves the partnership?"**==
+
+=="The contract is with the center, not with Luis. You own everything I build: the specification, the code, the runbooks, the data. Nothing in it depends on one person, including me."==
+
+==**"Who else have you done this for?"**==
+
+=="Luis uses software I built every day, on real patients. Before this I ran technology programs: a two-hundred-fifty-million-dollar greenfield data center build, and a global portfolio of sites. This is the reference build for an imaging center, and I'd rather tell you that than pretend otherwise."==
+
+Guardrails: no go-live claims for any enterprise software program by name; "clearance eligible" is the only clearance wording, and only if asked. The data center is the Arlington, Tennessee greenfield build.
+
+==**"Can you guarantee the opening date?"**==
+
+=="No one honestly can, and I won't. Every date I've shown you is conditional on the list on the assumptions slide. What I can guarantee is the price: it's fixed. The timeline flexes; the number does not."==
+
 ---
 
 # PART 4: PREP PLAN, TUESDAY TO THURSDAY MORNING, 2026-11-05 (Rick-approved 2026-11-03)

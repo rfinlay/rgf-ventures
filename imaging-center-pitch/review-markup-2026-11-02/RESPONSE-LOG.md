@@ -296,3 +296,14 @@ Inputs: `REVIEW-CHANGES-2026-11-02.md` section "Rick review 2026-11-03 evening" 
 | AUTOMATION-CANDIDATES, architecture page 7 | Assumption bullet and the dependencies panel aligned to the same list. |
 
 Verification: deck 33/27, leave-behind 2/2, architecture 8, runbook 26, notes 49, docx 219 highlights; slides 26 and 29, leave-behind page 2 and architecture page 7 rendered and checked; no-numbers deck still has no pricing strings; 0 em dashes.
+
+### Add-on, Rick 17:10 (audit items), applied 2026-11-03, sixth pass, speaking notes only
+
+| Item | What changed |
+|---|---|
+| Slide 9 plain words | Highlighted **IN PLAIN WORDS** block after the two caveats: the rule only says payer APIs must exist; some payers will be late, buggy or incomplete; each needs its own setup; that is Phase 4 work; the rule is the reason the timing is right, not the reason to buy. |
+| Slide 10 plain words | Highlighted block after "Why not a vendor": priced and implemented for hospital systems and large groups; a small center is configured last and least; many are payer-funded; the real gap is nobody has time to file appeals; "if it fits, use it"; never disparage a vendor. |
+| Fernando Q&A | The four Q&As added in the fourth pass are replaced by Rick's five approved lines: Q11 RIS/PACS pick (R12 line), Q12 different systems per center (R16 line), Q13 running costs (approved line), Q14 cloud or here (approved line, plus the Jesse privacy follow-up as a sub-line), Q15 HB 300 (R14 line). All highlighted; Q10 stays last. |
+| Curveballs | New highlighted mini-section after Q10: Luis leaves the partnership; who else have you done this for (Luis's daily use of RadAssist, the $250M greenfield data center build, a global portfolio; "this is the reference build"); can you guarantee the opening date (no; every date conditional on slide 26; price fixed, timeline flexes). Guardrail line: no go-live claims for any enterprise program by name; "clearance eligible" only. |
+
+Verification: notes PDF 49 pages, no literal `==`; docx 231 highlight runs; 0 em dashes. Deck, leave-behind, runbook, architecture untouched this pass.
