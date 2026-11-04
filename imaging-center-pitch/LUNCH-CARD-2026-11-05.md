@@ -22,7 +22,6 @@
 - ==Building, site, address, property==, or what was there before. Only "your new center."
 - ==Scale, platform, roll-up==, Akumin, the lawsuit, Desert Imaging, "when you sold to private equity." If he raises any of it: listen, say little, move on.
 - ==A vendor winner, score or ranking==, or any vendor price. "Every price in this market is a quote; the pick is Phase 2."
-- =="I have built that."== The rate governor "gets designed in from day one."
 - ==Any three-year total.== Phase 3 produces it. Running costs are "about two thousand a month at expected volume, an estimate, with a cap."
 - Headcount reduction or layoffs (it "changes what your people do"); "Jesus"; "you open in June" as a fact.
 
