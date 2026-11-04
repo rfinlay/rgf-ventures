@@ -22,7 +22,7 @@
 - ==Building, site, address, property==, or what was there before. Only "your new center."
 - ==Scale, platform, roll-up==, Akumin, the lawsuit, Desert Imaging, "when you sold to private equity." If he raises any of it: listen, say little, move on.
 - ==A vendor winner, score or ranking==, or any vendor price. "Every price in this market is a quote; the pick is Phase 2."
-- ==Any three-year total.== Phase 3 produces it. Running costs are "about two thousand a month at expected volume, an estimate, with a cap."
+- ==Any three-year total.== Phase 3 produces it. Running costs: "vendors expected near two thousand a month, about five with the support plan, an estimate, with a cap."
 - Headcount reduction or layoffs (it "changes what your people do"); "Jesus"; "you open in June" as a fact.
 
 ## The demo in five lines (slide 11)
@@ -46,7 +46,7 @@
 7. **"Why fixed fee? Did you pad it?"** ==With hourly every surprise is your cost, with fixed it's mine; each phase is priced separately with its deliverables listed, so you see exactly what seven buys, and you can walk after it.==
 8. **"Luis is your neighbor. How do we keep it clean?"** ==On paper: a written contract, fixed scope, a price per phase, your sign-off before each one; Luis isn't the referee, you and I deal directly, and you can stop after any phase.== Never "RadAssist partner."
 9. **"What do you need, and what do we get from Phase 1?"** ==A few hours with all three of you (Jesse, especially on the technical and integration decisions), your services, volumes and payer mix, and the opening date; six weeks later, five documents you own: requirements, the patient-flow map, the contract terms, a make-or-buy for each requirement with a running cost for anything built, and the shortlist with criteria.== Four at signing, three on delivery.
-10. **"What will it cost to run?"** ==Not in the forty-five: accounts in your name, at cost, no markup; a ballpark in Phase 1 and three hosting options with a total cost of ownership in Phase 3; around two thousand a month at expected volume, with a cap I can't pass without your OK.==
+10. **"What will it cost to run?"** ==Not in the forty-five: accounts in your name, at cost, no markup; a ballpark in Phase 1 and three hosting options with a total cost of ownership in Phase 3; vendors expected near two thousand a month, about five thousand with the support plan, with a cap I can't pass without your OK.==
 11. **"What happens after opening?"** ==A support plan, a flat monthly fee for a set number of hours so you always know who to call and what it costs; or a role on your team, which we can talk about.== (Three thousand a month for up to twenty hours, one-fifty beyond, from June, twelve months, ninety-day check-in.)
 12. **"One sentence. Why say yes today?"** ==Because the decisions that are free today stop being free the day you sign your first vendor contract, and finding out if I'm right costs you one phase, not the whole engagement.==
 

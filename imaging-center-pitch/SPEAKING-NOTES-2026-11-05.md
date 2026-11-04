@@ -1004,66 +1004,66 @@ Read the list, then the last line, then stop. It is in the no-numbers deck too.
 
 ### SLIDE 26 · What I am proposing: one engagement, five phases, $45,000 · 35:30 to 37:30
 
-Never cut this slide if the number is being shown. It comes after the decisions and before the Thank You (Rick, 2026-11-03), so the number lands with the case already made, at about 35:30.
+Never cut this slide. It lands after the case is made, about 35:30.
 
-**SAY, exactly this, once**
+**SAY, one breath, exactly this, once**
 
-=="One engagement for the new center. Forty-five thousand, fixed fee, fixed scope, in five phases from now to May. Discovery, seven. Vendor selection, eight. Design and the staffing plan, seven. The build, fourteen. Testing, training and go-live, nine. Each phase ends in a document you sign, and the next one does not start until you have."==
+=="One engagement for your new center. Forty-five thousand, fixed fee, fixed scope, five phases from now to May. Each phase ends in a document you sign, and the next one doesn't start until you have. A fixed fee set in advance, the way you've structured every payment between your own companies."==
 
-Then the payment line, plainly:
+(Phase amounts are on the slide, not in the line. Do not explain their structure back to them.)
 
-=="Four thousand when we sign and three when you have the requirements. After that each phase is paid when it starts, except the build, which is seven on the first of March and seven on the first of April."==
+**PAYMENT, one line**
 
-Then stop talking.
+=="Four thousand when we sign, three when you have the requirements. After that each phase is paid when it starts; the build is split, March first and April first."==
 
-**The five phases, so you can answer any row without looking**
+**ASSUMPTIONS, three sentences**
 
-| # | Phase | When | Deliverable you sign | Fee | Paid |
+=="Priced for one center, one pick per system; anything else I quote before I start. Running costs are not in the forty-five: at cost, in your own accounts, estimated in Phase 1. If the opening moves, the date moves and the price doesn't."==
+
+**Then stop talking.**
+
+**BEAT.** Let the silence sit. If he waves you on, the timeline is the next slide.
+
+**IF ASKED, two sentences each**
+
+**Why pay at the start of each phase?** =="Because you've already signed off the phase before it; you're never paying for something you haven't seen. The sign-off is your control, not the check."== (Largest check: nine thousand. Phase 1 splits so the first decision is small.)
+
+**What if the opening slips?** =="The timeline moves with it and the price does not. If June becomes August, the bars slide right."==
+
+**What does $150 an hour cover?** =="Only things you ask for outside the five phases, approved by you first, against a retainer you top up. If you never ask, you never pay it."== (Never compare the retainer to how their lawyer bills.)
+
+**It's too much.** Shorten the term, never cut the rate. =="Take Phase 1. Seven thousand, six weeks, and you own the requirements either way."==
+
+**Three centers?** =="This center, one pick per system. Same picks elsewhere is a smaller engagement, mostly build and go-live; anything different is its own evaluation, quoted before I start."==
+
+**What does it cost to keep running?** =="Cloud, AI, texting, clearinghouse all run in accounts in your name, at cost, no markup, with a one-page statement every month. At about 650 studies a month, vendors run about nine hundred to forty-two hundred, expected near two thousand; about five thousand with the support plan, confirmed in Phase 1, with a cap I can't pass without your OK."== (Slide 32 wording. One prior auth coordinator costs more a month than the whole stack.)
+
+**What happens after opening?** =="A support plan: three thousand a month for up to twenty hours, a hundred and fifty beyond, from June, twelve months, ninety-day check-in; monitoring, fixes, updates, vendor coordination, a response-time promise in writing. Separate from the forty-five; or a role on your team, which we can talk about."==
+
+**Who do you contract with?** =="Whichever company runs operations, and the practice's patient data stays the practice's."== (The operating company is formed; the agreement signs with it. BAA as its subcontractor or directly with the practice, as counsel wants.)
+
+**Where does it run?** =="Your patients' details do go to the AI company, the same way they go to your clearinghouse: under a signed HIPAA agreement, never kept or trained on. If you'd rather names never leave, we strip them first; keeping the AI entirely at the center costs a lot more and gives a weaker assistant, so I'd only try it as a test."== (You lean cloud. Never say "no data leaves": payer, clearinghouse and backups still receive it.)
+
+**Would you come in full time?** =="I'd want to hear it. Let's finish Phase 1 first, that's the job to judge me on; if it makes sense after that, we can talk about what a dedicated role looks like."== (No salary, date or title.)
+
+**Reference: the five phases** (full detail on slides 26 to 28)
+
+| # | Phase | When | You sign | Fee | Paid |
 |---|---|---|---|---|---|
-| 1 | Discovery and requirements. How the new center runs: patient flow from scheduling to report, services and modalities, volumes, payers, what is automated at opening. Luis's current center is an input, not the template. | Nov to mid-Dec 2026, 6 weeks | Requirements and Roadmap: requirements for every system, patient-flow map (order to signed report to paid claim), vendor contract terms to demand, make-or-buy recommendation for each requirement (met by a system you buy, or a piece I build, with a ballpark running cost for anything built), vendor shortlist and evaluation criteria for Phase 2 | $7,000 | $4,000 at signing, $3,000 on delivery |
-| 2 | Vendor and system selection. (1) scheduling; (2) RIS and PACS, evaluated both as one bundled cloud system and as separate best-of-breed RIS plus PACS (Exa is one example); (3) prior authorization and eligibility; (4) patient phones, IVR and AI answering; (5) radiologist voice recognition and dictation; (6) billing and clearinghouse; (7) imaging-specific: modality integration and worklist, reading workstations, image sharing (CD and cloud). Demos, scoring, recommendation; interface fees fixed up front. | Mid-Dec 2026 to Jan 2027, 6 weeks | Vendor Selection Report: side-by-side comparison of the shortlisted systems in each category, a weighted scoring matrix against the Phase 1 requirements (integration readiness a named criterion), pros and concerns for each, and a 5-year total cost of ownership per option (license or subscription, implementation, interface fees, support, hardware), with a recommendation; plus the list of contracts to sign | $8,000 | In full at the start |
-| 3 | Design and staffing plan. System and network design, workflows, security and HIPAA plan, and how each role's work runs with the automation in place. | Feb 2027, 1 month | Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget: three hosting options (your cloud account; hybrid with a box at the center; all on-site with a local AI model), pros and cons, one-time, monthly and three-year cost including support labor; the owner picks | $7,000 | In full at the start |
-| 4 | Build and configure. Systems set up and connected, RadAssist configured, prior-auth automation, IT install coordinated. Depends on Phases 2 and 3 and on vendor lead times. | Mar to Apr 2027, 2 months | Every system, bought and built, set up, connected and passing end-to-end tests. Vendors configure their own products; I manage them, connect everything and run the tests | $14,000 | $7,000 on March 1, $7,000 on April 1 |
-| 5 | Testing, training and go-live. | May 2027, 1 month | Signed go-live readiness, plus opening-week support | $9,000 | In full at the start |
-| | Total. Ready for a June 2027 opening, about a month of buffer. | Nov 2026 to May 2027 | | **$45,000** | |
+| 1 | Discovery and requirements | Nov to mid-Dec, 6 wk | Requirements and Roadmap: per-system requirements, flow map, contract terms, make-or-buy, shortlist | $7,000 | $4,000 signing, $3,000 delivery |
+| 2 | Vendor selection: scheduling; RIS and PACS; prior auth; phones; dictation; billing; worklist, workstations, image sharing | Mid-Dec to Jan, 6 wk | Vendor Selection Report: scoring, 5-year cost per option, recommendation, contracts to sign | $8,000 | At the start |
+| 3 | Design and staffing plan | Feb, 1 mo | Architecture, Workflow and Staffing Plan; operating budget, three hosting options | $7,000 | At the start |
+| 4 | Build and configure | Mar to Apr, 2 mo | Every system set up, connected, passing end-to-end tests | $14,000 | $7,000 Mar 1, $7,000 Apr 1 |
+| 5 | Testing, training and go-live | May, 1 mo | Signed go-live readiness, opening-week support | $9,000 | At the start |
+| | Total, ready for a June opening, a month of buffer | Nov to May | | **$45,000** | |
 
-==Outside the phases: $150 an hour, approved first, against a retainer the client tops up. The timeline flexes if the opening moves; the price does not. Do not compare the retainer to how their lawyer bills (Rick, 2026-11-02).==
+Dates hold while the slide 25 list holds (contracts and BAAs before the build, hosting picked in design, payer enrollment started early).
 
-==**Assumptions, in one breath (Rick, 2026-11-03):** "Five assumptions behind that number. It is priced for one center, with one pick per system; another center, or a different pick, I quote before I start. Running costs after the build are not in the forty-five; they are billed to you at cost, in your own accounts, estimated in Phase 1 and budgeted in Phase 3. If the opening date moves, the timeline moves and the price does not. Anything outside the five phases is approved by you first, at a hundred and fifty an hour. And the dates hold while the list on the assumptions slide holds: contracts and BAAs signed before the build, the hosting option picked by the end of design, and your payer enrollment started early enough to bill on day one."==
+**Rick only**
 
-Those are the same assumptions, in the same words, on slide 26, slide 25, the leave-behind and the runbook.
-
-**DEPTH / IF ASKED**
-
-**"Why do we pay at the start of each phase?"** "Because you have already signed off the phase before it. You are never paying for something you have not seen. You are paying for the next piece after you approved the last one. The sign-off is your control, not the check." The largest single check is nine thousand. Phase 1 is the exception on purpose: four to start, three when the requirements are in your hands, so the first decision is small.
-
-**"What if the opening slips?"** "The timeline moves with it and the price does not. The phases are the work; the dates are where the work lands. If June becomes August, the bars slide right and the buffer gets longer. I would rather you open ready than open on a date."
-
-**"What does the $150 an hour cover?"** "Only things you ask for that are not in the five phases. You approve each one before I start, and it draws against a retainer you top up. If you never ask, you never pay it. Nothing in the five phases is ever billed by the hour."
-
-**If he pushes on price: shorten the term, never cut the rate.** "Take Phase 1. Seven thousand, six weeks, and you own the requirements whether or not we go on." That is the gate. You never discount. Do not break out hours for the phases, do not justify the number at length, and never say what forty-five works out to per hour.
-
-**"Does that change at three centers?" (Rick, 2026-11-03; this replaces the old answer.)** =="The engagement covers this center, and one pick per system. If the other centers use the same picks, they're a smaller engagement: mostly build and go-live. If a center wants something different, that's its own evaluation, and I'll quote it before I start. You'll never get a surprise bill. You'll get a number to approve."== The rule behind it: same picks at another center is a smaller follow-on, mostly Phases 4 and 5; different picks is a new selection for those categories, quoted and approved in writing before work starts.
-
-**"What does it cost to keep running?" (Rick, 2026-11-03.)** Not in the forty-five, and say so before he asks. =="Everything that keeps it running, the cloud, the AI, the texting, the clearinghouse, runs in accounts in your name. You sign each HIPAA agreement, you see each bill, I don't mark any of it up. I'll give you an estimated range in Phase 1 and a firm operating budget in Phase 3, and after opening you get a one-page statement every month: each vendor's bill, the volume it handled, what it did for you."== If he wants a number today: "At expected volume it is around two thousand a month in vendors, with a cap I can't pass without your OK. That is an estimate, confirmed in Phase 1." Slide 32 carries the ranges. Where the money goes, if asked: a properly locked-down HIPAA cloud setup, the clearinghouse transactions (often already inside the billing contract), texting under a HIPAA agreement, security monitoring and a yearly penetration test; the AI usage itself is the small line. Frame it against staff time, never against "AI": one prior authorization coordinator costs more a month than the whole vendor stack. Opening-week support is inside Phase 5.
-
-**"What happens after opening?" (support plan, APPROVED by Rick 2026-11-03 17:54.)** =="After opening, there's a support plan: a flat monthly fee for a set number of hours, so you always know who to call and what it costs. If you'd rather have me on the team, we can talk about that too."== The plan, if he wants the number: =="Three thousand a month for up to twenty hours, a hundred and fifty an hour beyond that, starting when you open in June, for twelve months with a check-in at ninety days. It covers monitoring, fixes, updates to what I built, coordinating your vendors, and a response-time promise in writing. It is separate from the forty-five, and the running costs stay at cost."== The row is on slide 26 and the support line on slide 32. Keep "or a role on your team" as the alternative; no salary, no title (see the full-time block below).
-
-**"Where does it run?" (the TCO deliverable, Rick, 2026-11-03.)** The Phase 3 deliverable "Total cost of ownership and operating budget" prices three options and the owner picks: A, the center's own secure cloud account; B, hybrid, a box at the center that strips names and IDs before anything goes to the AI company, with the database and backups in the cloud; C, everything on site including a local AI model. Say where you lean, and say the privacy part precisely: =="Your patients' details do go to the AI company, the same way they go to your clearinghouse: under a signed HIPAA agreement, and never kept or trained on. If you'd rather names never leave, we can strip them first. Keeping the AI entirely at the center costs a lot more over three years and gives you a weaker assistant, so I'd only try it as a test."== Never say "no data leaves." Stripping names reduces what the AI company sees; it does not remove patient information, because the packet has to carry the clinical story. Only a model running at the center keeps it from an AI company, and even then the payer, the clearinghouse and the backups still receive it.
-
-**If he asks what the billing evaluation is**: "Billing is a buy and I am not touching the claims work. What I evaluate in Phase 2 is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system depends on them, and whether the four access terms go into that contract too."
-
-Contract through RGF Global Ventures LLC, never personally. Do not discount because Luis is a friend; RadAssist is not inside this fee.
-
-==**Fixed fee, said plainly (Rick, 2026-11-04):** "A fixed fee, set in advance, is how you've structured every payment between your own companies. This one works the same way."== Say it once, plainly, and do not explain their structure back to them.
-
-==**WHO I CONTRACT WITH (Rick, 2026-11-04).** The engagement and the support plan contract with the operating company: the one that runs operations and holds the vendor and cloud accounts. It is already formed; the agreement is signed directly with it. Patient data belongs to the practice: I work under the operating company's business associate agreement as a subcontractor, or sign a BAA directly with the practice, whichever counsel wants. The lunch line: "I'll contract with whichever company runs operations, and the practice's patient data stays the practice's."==
-
-**IF ASKED "Would you come in full time?" (Rick, 2026-11-03).** They may float a salaried role. Say exactly this, and no numbers: =="I'd want to hear it. Let's finish Phase 1 first; that's the job to judge me on. If it makes sense after that, we can talk about what a dedicated role looks like."== Do not name a salary, a start date, or a title, and do not say whether you would leave anything else. If pressed: "Phase 1 is six weeks. Judge me on it, then we talk." Then back to the phases.
-
-**BEAT**
-
-Say it once. Stop. Let the silence sit. If he waves you on, the timeline is the next slide.
+- Contract through RGF Global Ventures LLC, never personally.
+- No discount for friendship; RadAssist is not inside this fee.
+- Never break out hours per phase, and never say what forty-five works out to per hour.
 
 ---
 
@@ -1202,7 +1202,7 @@ Reference. Show it if he asks what it costs after opening, or where the data liv
 
 =="I don't mark any of it up. You see the actual bills every month on one page, with what each one did for you."==
 
-=="At expected volume it is around two thousand a month in vendors, with a cap I can't pass without your OK. That is an estimate; Phase 1 confirms it and Phase 3 turns it into an operating budget you approve."==
+=="At about 650 studies a month, vendors run about nine hundred to forty-two hundred, expected near two thousand; with the support plan, about five thousand a month. That is an estimate; Phase 1 confirms it and Phase 3 turns it into an operating budget you approve, with a cap I can't pass without your OK."==
 
 **THEN SAY (the privacy line, precisely)**
 
