@@ -67,10 +67,11 @@
     .sources { font-size: 6.3pt; line-height: 1.2; margin-top: 3pt; }
     footer { margin-top: 3pt; padding-top: 3pt; }
     /* 2026-11-03 (Rick R9/R16/R17/R18): the pricing panel grew; page 2 table and its two paragraphs print a touch smaller */
-    .page2 table.ms { font-size: 6.7pt; line-height: 1.05; }
-    .page2 table.ms td, .page2 table.ms th { padding-top: 2pt; padding-bottom: 2pt; }
-    .page2 p, .page2 li { font-size: 8.1pt; line-height: 1.2; }
-    .page2 [data-nonumbers="remove"] p { font-size: 7.5pt; line-height: 1.18; }
+    /* 2026-11-03 (Rick R26/R27/R28, final structure): Phase 1, Phase 4 and the what-I-need line grew; stepped down once more so the footer stays on page 2 */
+    .page2 table.ms { font-size: 6.4pt; line-height: 1.04; }
+    .page2 table.ms td, .page2 table.ms th { padding-top: 1.6pt; padding-bottom: 1.6pt; }
+    .page2 p, .page2 li { font-size: 7.9pt; line-height: 1.18; }
+    .page2 [data-nonumbers="remove"] p { font-size: 7.3pt; line-height: 1.15; }
     .page2 ol.steps li { margin-bottom: 1pt; }
     .page2 h2 { margin-top: 6pt; }
   }
@@ -199,16 +200,16 @@
     <table class="ms">
       <thead><tr><th style="width:3%">#</th><th style="width:19%">Phase</th><th>What you sign off</th><th style="width:13%">When</th><th style="width:8%;text-align:right">Fee</th><th style="width:19%">Paid</th></tr></thead>
       <tbody>
-        <tr><td>1</td><td>Discovery and requirements</td><td>Requirements and Roadmap: requirements for every system, patient-flow map (order to signed report to paid claim), contract terms to demand, make-or-buy per system with a ballpark run cost per build item, shortlist and criteria for Phase 2</td><td>Nov to mid-Dec 2026</td><td class="amt">$7,000</td><td>$4,000 at signing, $3,000 on delivery</td></tr>
+        <tr><td>1</td><td>Discovery and requirements</td><td>Requirements and Roadmap: requirements for every system, patient-flow map (order to signed report to paid claim), contract terms to demand, a make-or-buy recommendation for each requirement (met by a system you buy, or a piece I build, with a ballpark running cost for anything built), shortlist and criteria for Phase 2</td><td>Nov to mid-Dec 2026</td><td class="amt">$7,000</td><td>$4,000 at signing, $3,000 on delivery</td></tr>
         <tr><td>2</td><td>Vendor and system selection</td><td>Vendor Selection Report: side-by-side comparison of the shortlisted systems in each category, weighted scoring against the Phase 1 requirements (integration readiness a named criterion), pros and concerns, 5-year total cost of ownership per option (license or subscription, implementation, interface fees, support, hardware), a recommendation; plus the contracts to sign, interface fees fixed up front. Systems: scheduling; RIS and PACS, bundled cloud system or separate RIS plus PACS (Exa is one example); prior authorization and eligibility; patient phones, IVR and AI answering; radiologist dictation; billing and clearinghouse; modality worklist, reading workstations, image sharing</td><td>Mid-Dec to Jan 2027</td><td class="amt">$8,000</td><td>In full at the start of the phase</td></tr>
         <tr><td>3</td><td>Design and staffing plan</td><td>Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget: three hosting options (your cloud; hybrid; all on-site with a local AI model), one-time, monthly, three years; you pick</td><td>Feb 2027</td><td class="amt">$7,000</td><td>In full at the start of the phase</td></tr>
-        <tr><td>4</td><td>Build and configure</td><td>Every system set up, connected, and working in test; RadAssist configured; prior authorization automated; IT install coordinated</td><td>Mar to Apr 2027</td><td class="amt">$14,000</td><td>$7,000 on March 1, $7,000 on April 1</td></tr>
+        <tr><td>4</td><td>Build and configure</td><td>Every system, bought and built, set up, connected and passing end-to-end tests; vendors configure their own products, I manage them, connect everything and run the tests. RadAssist configured; prior authorization automated; IT install coordinated</td><td>Mar to Apr 2027</td><td class="amt">$14,000</td><td>$7,000 on March 1, $7,000 on April 1</td></tr>
         <tr><td>5</td><td>Testing, training and go-live</td><td>Signed go-live readiness, staff trained on the real systems, opening-week support</td><td>May 2027</td><td class="amt">$9,000</td><td>In full at the start of the phase</td></tr>
         <tr class="tot"><td></td><td>Total</td><td>Ready for a June 2027 opening, with about a month of buffer</td><td>Nov 2026 to May 2027</td><td class="amt">$45,000</td><td></td></tr>
       </tbody>
     </table>
     <p style="margin-top:5pt"><b>How it works.</b> Each phase starts only after you sign off the deliverable before it. Priced for one center, one selected system per category; another center, or a different system for another center, is quoted and approved before work starts. Running costs after the build (cloud, AI usage, texting, clearinghouse, security) are not in the $45,000: billed to the center at cost in accounts in your name, estimated in Phase 1, budgeted in Phase 3, monthly statement. If the opening date moves, the timeline moves with it; the price does not. Work outside the five phases is approved by you first and billed at $150 an hour against a retainer you top up. After opening, a support plan, separate from the $45,000: $3,000 a month for up to 20 hours (monitoring, fixes, updates to what I built, vendor coordination, a response-time promise), $150 an hour beyond, from June 2027, 12-month term with a 90-day check-in. Contracted through RGF Global Ventures LLC. RadAssist is not part of this fee.</p>
-    <p style="margin-top:3pt"><b>What I need from you, by phase.</b> 1: time with Dr. Ramos and Fernando, planned services and modalities, volumes and payer mix, the target opening date. 2: budget ranges, preferred vendors, decisions. 3: hours, roles, vendor contracts in progress. 4: signed contracts and business associate agreements, sandbox access, equipment dates. 5: staff for training, the final opening date. Throughout: one named person who approves.</p>
+    <p style="margin-top:3pt"><b>What I need from you, by phase.</b> 1: time with all three of you, Dr. Ramos, Fernando and Jesse (Jesse especially on the technical and integration decisions), planned services and modalities, volumes and payer mix, the target opening date. 2: budget ranges, preferred vendors, decisions. 3: hours, roles, vendor contracts in progress. 4: signed contracts and business associate agreements, sandbox access, equipment dates. 5: staff for training, the final opening date. Throughout: one named person who approves.</p>
   </div>
 
   <div class="grow"></div>

@@ -1,6 +1,6 @@
 # Prior Authorization Agent: demo script for the Thursday lunch
 
-**Slide 11, about 3 minutes.** Thursday 2026-11-05, lunch with Luis, Fernando and Jesse. This is the only live demo at the table; RadAssist on slide 19 is a spoken overview, not a demo.
+**Slide 9, about 3 minutes.** Thursday 2026-11-05, lunch with Luis, Fernando and Jesse. This is the only live demo at the table; RadAssist on slide 16 is a spoken overview, not a demo.
 
 **Live URL:** https://rfinlay.github.io/imaging-priorauth-demo/
 **Runs on:** the phone and the laptop. No login. Open it on both Thursday morning, the phone over cellular, and leave both tabs up until lunch is over.
@@ -17,10 +17,10 @@ Either way the demo works. Decide which line you are saying before you sit down,
 
 ## The link, the QR, and the pace (Rick, 2026-11-03)
 
-- **Thursday morning:** text the link to Luis. He forwards it to Fernando and Jesse. Slide 11 and the leave-behind carry a QR code for the same URL with the caption "Scan to follow along."
+- **Thursday morning:** text the link to Luis. He forwards it to Fernando and Jesse. Slide 9 and the leave-behind carry a QR code for the same URL with the caption "Scan to follow along."
 - **At the table:** they scan the QR or open the text on their own phones and reload once for a fresh start. You run the same page on the laptop, split screen beside the deck, and set the pace.
 - **Say each step before anyone clicks.** The one that matters is **Advance 3 days**: everyone waits for you, because whoever clicks it early is a step ahead of the room and the story stops matching.
-- Pricing is not part of the demo; it stays in the appendix (slide 29).
+- Pricing is not part of the demo; it comes later, on slide 23, after the close.
 
 ## Reset (Rick, 2026-11-03)
 
