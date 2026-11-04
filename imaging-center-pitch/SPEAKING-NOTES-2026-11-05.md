@@ -1519,27 +1519,30 @@ Guardrails: no go-live claims for any enterprise software program by name; "clea
 
 ---
 
-# PART 4: PREP PLAN, TUESDAY TO THURSDAY MORNING, 2026-11-05 (Rick-approved 2026-11-03)
+# PART 4: PREP PLAN, TUESDAY TO THURSDAY MORNING, 2026-11-05 (Rick-approved 2026-11-03, updated 21:11)
 
-Lunch is Thursday 2026-11-05 with Luis, Fernando and Jesse. Nine steps across three days; what is not on the list waits. There is no RadAssist demo setup: slide 18 is spoken (Luis, 2026-11-03).
+Lunch is Thursday 2026-11-05 with Luis, Fernando and Jesse. What is not on the list waits. There is no RadAssist demo setup: slide 18 is spoken (Luis, 2026-11-03).
 
-## Tuesday 2026-11-03
+## Tuesday 2026-11-03, all done
 
-- [x] ==**Rehearse the prior authorization demo end to end**== (DONE 2026-11-03) (slide 10, https://rfinlay.github.io/imaging-priorauth-demo/), on the laptop and on the phone, both banner states. It needs no login.
-- [x] **Mock Q&A as Fernando with Gio, about 20 minutes.** (DONE 2026-11-03; approved answers in "Fernando Q&A" at the end of Part 3.) Straightforward, tough, tight with money, visual. The objection answers in Part 2 and the RUNBOOK are the script.
-- [ ] **School due tonight:** the 635 IR Plan and the 645 replies. Pitch prep stops when those start.
+- [x] ==**Rehearse the prior authorization demo end to end**== (slide 10), on the laptop and on the phone, both banner states.
+- [x] **Mock Q&A as Fernando with Gio, about 20 minutes** (approved answers in "Fernando Q&A" at the end of Part 3).
+- [x] Royalty decision (Option A), the support plan ($3,000 a month, up to 20 hours), and the full review of the deck and notes through the final structure round.
 
 ## Wednesday 2026-11-04
 
-- [ ] ==**Review the updated slides with Luis, including the money aspects:**== $45,000 in five phases, November to May; $150/hr for work outside the phases, approved first. His read on how Fernando hears the price is the point.
-- [ ] **Gio applies ONE last update round from Luis's feedback,** renders, syncs OneDrive and Drive. One round, then the documents freeze.
-- [ ] **Wednesday night, final read-through:** the highlighted lines in this sheet, the timing skip list at the top of Part 2 (16, 23, 13 to one sentence, 8 to its headline and last line, 18 to two sentences; never drop 3, 4, 6, 10, 17, 18, 21, 22, 24, 25), the lunch card, and the objection answers.
+- [ ] ==**Review the updated slides with Luis, recorded.**== Ask him: does the slide count feel right for an hour's lunch; who on their side owns each line of the opening checklist (slide 32); anything not to say in front of Fernando or Jesse. His read on how Fernando hears the price is the point.
+- [ ] ==**Send Gio the recording.**== Gio applies ONE last update round, renders, syncs OneDrive and Drive. Then the documents freeze.
+- [ ] **Mock Q&A with Gio as Jesse, about 10 minutes:** technical only (data, security, integration). Then a **Fernando refresh of the three weakest answers:** Q5 (data and the AI company), Q8 (the friendship), Q10 (the one-sentence yes).
+- [ ] ==**Wednesday night, full practice run out loud, recorded:**== slides 1 to 28 against the clock, pricing at about 38 minutes. Send the recording to Gio. Then a **short second run** of the opening (1 to 3), the demo transition (9 into 10) and the close (21 to 28).
 
 ## Thursday 2026-11-05, morning
 
-- [ ] ==**Open the prior authorization demo on the phone (cellular) and on the laptop; confirm the banner.**== Leave both tabs up.
-- [ ] **Print the leave-behind** (two US Letter pages from Chrome) if you want paper on the table. Three copies if so.
-- [ ] **Lunch card:** print `Imaging-Center-LUNCH-CARD-2026-11-05.pdf` (two pages: the five lines to land, the close, the skip list, the never-say list, the demo in five lines; page two is the twelve answers in one line each). Bring this sheet too, folded, Part 1 face up. Luis picks you up. Lunch runs about an hour.
+- [ ] **Lightning Q&A with Gio, 10 minutes:** five questions, Fernando and Jesse mixed, one-line answers from the lunch card.
+- [ ] ==**Text Luis the demo link to forward to Fernando and Jesse.**==
+- [ ] ==**Open the demo on the phone (cellular) and on the laptop; check the banner; reload.**== Leave both tabs up.
+- [ ] **Print the leave-behind** (two pages, three copies) **and the lunch card** (`Imaging-Center-LUNCH-CARD-2026-11-05.pdf`, two pages). Bring this sheet too, folded, Part 1 face up.
+- [ ] Luis picks you up. Lunch runs about an hour.
 
 ## Not before Thursday
 
