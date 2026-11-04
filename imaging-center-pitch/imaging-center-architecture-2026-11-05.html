@@ -36,7 +36,8 @@
   .sub { font-size: 10.5px; color: var(--ink-soft); margin-top: 3px; max-width: 900px; }
   .who { text-align: right; font-size: 9px; color: var(--ink-soft); line-height: 1.4; }
   .who b { color: var(--ink); font-weight: 600; }
-  .ftr { position: absolute; left: 40px; right: 40px; bottom: 14px; border-top: 1px solid var(--rule); padding-top: 5px; display: flex; justify-content: space-between; font-size: 8.5px; color: var(--ink-faint); }
+  .ftr { position: absolute; left: 40px; right: 40px; bottom: 14px; border-top: 1px solid var(--rule); padding-top: 5px; display: flex; justify-content: space-between; gap: 24px; font-size: 8.5px; color: var(--ink-faint); }
+  .ftr > div:last-child { flex: 0 0 auto; white-space: nowrap; }
   .ftr b { color: var(--ink-soft); font-weight: 600; }
 
   /* absolutely positioned diagram elements */
@@ -153,8 +154,8 @@
   <!-- USERS y 104-158, 7 chips w131 -->
   <div class="box user" style="left:92px;top:102px;width:131px;height:50px"><div class="t">Rick, operator</div>Builds, runs, supervises. Access revocable.</div>
   <div class="box user" style="left:233px;top:102px;width:131px;height:50px"><div class="t">Prior auth staff</div>Signs every submission and every appeal.</div>
-  <div class="box user" style="left:374px;top:102px;width:131px;height:50px"><div class="t">Owner and partners</div>Ask the owner agent. Approve any sign-off change.</div>
-  <div class="box user" style="left:515px;top:102px;width:131px;height:50px"><div class="t">Schedulers, front desk</div>Scheduling, intake, waitlist. Approve backfill offers.</div>
+  <div class="box user" style="left:374px;top:102px;width:131px;height:50px"><div class="t">Owner and partners</div>Ask the owner agent. Approve sign-off changes.</div>
+  <div class="box user" style="left:515px;top:102px;width:131px;height:50px"><div class="t">Schedulers, front desk</div>Scheduling, intake, waitlist. Approve offers.</div>
   <div class="box user" style="left:656px;top:102px;width:131px;height:50px"><div class="t">Patients</div>Reminders, offers, records requests, inbound calls.</div>
   <div class="box user" style="left:797px;top:102px;width:131px;height:50px"><div class="t">Referring physicians</div>Orders in, documentation, reports out.</div>
   <div class="box user" style="left:938px;top:102px;width:132px;height:50px"><div class="t">Billing staff</div>Claims. Their vendor exposes the eligibility feed.</div>
@@ -525,8 +526,8 @@
   <div class="box ext" style="left:662px;top:466px;width:110px;height:34px"><div class="t">Schedule export</div></div>
   <div class="box build own-rick" style="left:662px;top:508px;width:110px;height:34px"><div class="t">Prior auth engine</div></div>
   <div class="box build own-mixed" style="left:790px;top:424px;width:150px;height:134px"><div class="t">Reporting core</div>RIS data and the authorization queue. Volume by modality, turnaround, scheduled versus completed, no-shows, open slots, appeal counts. Operations only.</div>
-  <div class="box build own-center" style="left:958px;top:424px;width:120px;height:62px"><div class="t">Monday report</div>Two views: operations and costs for the owners, revenue for the practice.</div>
-  <div class="box agent build" style="left:958px;top:496px;width:120px;height:62px"><span class="tier a">Tier A</span><div class="t">Owner agent</div>Read-only questions, plain answers. Text or call. Specified in design; build priced separately.</div>
+  <div class="box build own-center" style="left:958px;top:424px;width:130px;height:62px"><div class="t">Monday report</div>Two views: operations and costs for the owners, revenue for the practice.</div>
+  <div class="box agent build" style="left:958px;top:496px;width:130px;height:62px"><span class="tier a">Tier A</span><div class="t">Owner agent</div>Read-only questions, plain answers. Text or call. Build priced separately.</div>
   <div class="box user" style="left:1098px;top:424px;width:130px;height:134px"><div class="t">Owner and partners</div>Read the page. Ask the agent. It sees nothing the owner does not already see, acts on nothing, never addresses a patient's care. "Business analytics" is named in the FDA exclusion.</div>
   <div class="box" style="left:662px;top:568px;width:566px;height:66px;border-color:var(--rule)"><div class="t">Why the owner agent is the lowest-risk agent in the inventory</div>Read-only. No action on the world. No patient contact. No clinical surface. Because it reads the center's own database, the AI vendor's Computer Use and Web Fetch exclusions do not apply to it. PHI is present, so the BAA and SB 1188 residency still do. Strongest candidate for the first demonstration.</div>
 
