@@ -1493,9 +1493,9 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 ==**"Who else have you done this for?"**==
 
-=="Luis uses software I built every day, on real patients. Before this I ran technology programs: a two-hundred-fifty-million-dollar greenfield data center build, and a global portfolio of sites. This is the reference build for an imaging center, and I'd rather tell you that than pretend otherwise."==
+=="Luis uses software I built every day. Before that I took a $250 million, 2-million-square-foot distribution center with its own data center from an empty site to opening day: triple-redundant telecom from the road to the main network room, every vendor for security, cabling and equipment, and all the IT. This center is the next one."==
 
-Guardrails: no go-live claims for any enterprise software program by name; "clearance eligible" is the only clearance wording, and only if asked. The data center is the Arlington, Tennessee greenfield build.
+Guardrails: no go-live claims for any enterprise software program by name; "clearance eligible" is the only clearance wording, and only if asked. The $250 million project is a 2-million-square-foot distribution center with its own data center (Arlington, Tennessee greenfield build); never call it a data center (Rick, 2026-11-03 17:57).
 
 ==**"Can you guarantee the opening date?"**==
 
