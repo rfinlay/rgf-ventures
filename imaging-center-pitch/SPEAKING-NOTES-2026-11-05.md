@@ -937,7 +937,7 @@ Cut this slide second if you are running long (the full skip order is at the top
 
 ==And tell me what front desk and prior authorization actually cost you last time, as a share of operating expense. Your number beats any benchmark I could bring.==
 
-==One question for you. What would you do differently this time, knowing how the last one ended up?"==
+==One question for you. What would you do differently this time, building it from scratch?"==
 
 ==Then stop and listen.==
 
@@ -1388,7 +1388,7 @@ Write every answer down at the table.
 7. **Slide 17, owner reporting:** "What do you want to see on one page every Monday morning?"
 8. **Slide 20 or 21, the boundaries:** "You came up as an RPA, so you have been in the room with the patient. When you think about automating the front end, where is the line for you? What has to stay human?"
 9. **Slide 22, the bus question:** "We are two people. If you were in my chair pitching you, what would you want to see about continuity and about getting out, before you would put us anywhere near your schedule?"
-10. **Slide 24, the close:** "What did front desk and prior authorization actually cost you last time, as a share of operating expense?" Then: "What would you do differently this time, knowing how the last one ended up?"
+10. **Slide 24, the close:** "What did front desk and prior authorization actually cost you last time, as a share of operating expense?" Then: "What would you do differently this time, building it from scratch?"
 
 The runbook numbers these 1 through 8 with two items each numbered 5 and 6. There are ten questions. Ask all ten.
 
