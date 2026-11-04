@@ -419,7 +419,7 @@ Commercial plans outside the rule: the design falls back to EDI 278 where suppor
 
 A small signal that you read the rule and not a summary: drugs are excluded from CMS-0057, and CMS proposed to close that gap in April 2026. Irrelevant to imaging. Use it only if the conversation is already in the rule.
 
-Ask here: "What is your payer mix going to look like?" Payer mix means what share of his studies will bill to each payer type: commercial insurers, Medicare Advantage, traditional Medicare, Medicaid and CHIP, exchange plans, and self-pay (the five groups are spelled out at slide 2). The rule reaches Medicare Advantage, Medicaid and CHIP, and the exchange plans. If he expects heavy commercial, say so out loud and put less weight on the January date. If he expects heavy Medicare Advantage and Medicaid, which is plausible in El Paso, the January date carries more weight. County coverage shares are verified as of 2026-10-12 (ACS 2024 5-year, B27010) and are in the RUNBOOK; quote them as coverage of residents, never as his volume. Medicare Advantage penetration in El Paso is NOT established and is the number that decides how much of his Medicare book the rule touches. Name it as a diligence item: "MA penetration is the number that decides how much of your Medicare book the new rule touches. I'd pull that before we price Phase 2." Do not guess it.
+Ask here: "What is your payer mix going to look like?" Payer mix means what share of his studies will bill to each payer type: commercial insurers, Medicare Advantage, traditional Medicare, Medicaid and CHIP, exchange plans, and self-pay (the groups the federal rule reaches are spelled out on slide 10). The rule reaches Medicare Advantage, Medicaid and CHIP, and the exchange plans. If he expects heavy commercial, say so out loud and put less weight on the January date. If he expects heavy Medicare Advantage and Medicaid, which is plausible in El Paso, the January date carries more weight. County coverage shares are verified as of 2026-10-12 (ACS 2024 5-year, B27010) and are in the RUNBOOK; quote them as coverage of residents, never as his volume. Medicare Advantage penetration in El Paso is NOT established and is the number that decides how much of his Medicare book the rule touches. Name it as a diligence item: "MA penetration is the number that decides how much of your Medicare book the new rule touches. I'd pull that before we price Phase 2." Do not guess it.
 
 **BEAT**
 
@@ -475,7 +475,7 @@ Nothing to defend. This is a transition. The prior authorization content you jus
 
 Thirty seconds. Three minutes for slides 13 and 14. Keep moving. If short on time, slide 14 is one sentence.
 
-**LEAD-IN TO SLIDE 12 (say before you advance)**
+**LEAD-IN TO SLIDE 13 (say before you advance)**
 
 "What was your cancellation rate, and what did you do with the empty slot?" Ask it here, before the 22.3% comes up, so his number is on the table before yours.
 
@@ -541,7 +541,7 @@ If he says "doesn't our RIS already do this?": "For scheduling, reminders, self-
 
 Quote the absolute numbers and let him do the arithmetic. An exited founder will smell the relative-risk trick, so be the one who names it.
 
-**LEAD-IN TO SLIDE 12 (say before you advance)**
+**LEAD-IN TO SLIDE 15 (say before you advance)**
 
 =="Who takes the phone call when a patient describes chest pain?" His answer makes the next recommendation obvious before you state it.==
 
@@ -615,7 +615,7 @@ Do not quote a cost per records request. The circulating "$50 to $200 per reques
 
 Do not say "from running two centers" or "two companies." He built one company with five centers. Let the fee rule land; it is the one most owners have never heard stated.
 
-**LEAD-IN TO SLIDE 14 (say before you advance)**
+**LEAD-IN TO SLIDE 17 (say before you advance)**
 
 =="What do you want to see on one page every Monday morning?" Whatever he says is the specification. Write it down before the slide comes up.==
 
@@ -761,7 +761,7 @@ One minute, no more. Hand the table to Luis. Do not fill his pauses.
 
 If records came up and you want the direction settled, ask it here, to Luis as much as to Fernando: "When your partner said requesting medical records, did he mean the report you write going out, or the priors and outside records coming in?" Write down which. The two-directions answer, the named DICOM path and the across-centers deployment default are all on slide 36, only if asked.
 
-**LEAD-IN TO SLIDE 17 (say before you advance)**
+**LEAD-IN TO SLIDE 20 (say before you advance)**
 
 =="Fernando, the question you are about to ask is whether any of this is a medical device. The answer is in the statute, not from me."==
 
@@ -1664,7 +1664,7 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **PACS.** Picture Archiving and Communication System. Where the images themselves are stored. The RIS tracks the order and the schedule; the PACS holds the pictures. Records retrieval is a DICOM query against the PACS.
 
-**Payers.** The organizations that pay the center for a study: commercial insurers, Medicare Advantage plans, traditional Medicare, Medicaid and CHIP, exchange plans, and the patient when self-pay. Spelled out on slide 2. The federal rule reaches only Medicare Advantage, Medicaid and CHIP, and the exchange plans.
+**Payers.** The organizations that pay the center for a study: commercial insurers, Medicare Advantage plans, traditional Medicare, Medicaid and CHIP, exchange plans, and the patient when self-pay. The ones the federal rule reaches are spelled out on slide 10. The federal rule reaches only Medicare Advantage, Medicaid and CHIP, and the exchange plans.
 
 **Payer mix.** The share of a center's volume that bills to each payer type. The question on slide 10, because it decides how much the January date is worth to him.
 
