@@ -113,19 +113,21 @@ Decided by Rick after the 2026-10-22 rehearsal with Luis. Every sibling document
 
 ---
 
-## 4. Owner operational reporting and reader reconciliation
+## 4. Owner operational reporting
 
-**The manual process.** The owner pulls RIS reports for volume and turnaround, pulls billing reports for revenue, and reconciles them by hand or not at all. Referrer-level and revenue-per-slot views require joining the two. Luis, as a 1099 reader, separately reconciles what he read against what he was paid.
+**Scope rule (Rick, 2026-11-04).** The owner view carries operations numbers only: volume by modality, turnaround, scheduled versus completed, no-shows, open slots, payer authorization turnaround, appeal status counts. No revenue, no collections, no revenue per slot, no referrer value, no paid-versus-read view. Practice revenue and collections reporting goes to Dr. Ramos's practice, which owns it. Referral trends, if the owners ask for them, are a volume count framed as operations, and by default stay out of the owner view.
 
-**Evidence it is costly.** **None found, and the research says so plainly.** There is no benchmark literature on what imaging center owners want from dashboards, and no study of the gap between RIS-native reporting and owner needs. The structural claim is defensible without a study: RIS reporting is built for radiology operations, and the owner's view requires joining RIS data to billing data, which are usually different systems.
+**The manual process.** The owner pulls RIS reports for volume and turnaround and the authorization status out of whatever tracks it, and puts them on one page by hand or not at all.
 
-**Recommendation: BUILD.** Custom by nature because it encodes one owner's definition of the numbers that matter. Smallest compliance envelope of the five (no patient-facing surface). Cheapest to build. It is the artifact the owner personally looks at, which keeps Rick in the room. The reader-reconciliation view is the same engine and already has a customer in Luis. The appeal rate from #1 is the headline of the Monday report.
+**Evidence it is costly.** **None found, and the research says so plainly.** There is no benchmark literature on what imaging center owners want from dashboards, and no study of the gap between RIS-native reporting and owner needs. The structural claim is defensible without a study: RIS reporting is built for radiology operations, and the owner's one page needs RIS data and the authorization queue together.
 
-**The owner agent (decided by Rick, 2026-10-06).** On top of the reporting service, a read-only conversational agent the partners can ask open questions of: volumes, cancellations, no-shows, payer mix, appeal rate, reader turnaround. It reads the center's own database and answers in plain words. Lowest risk of any agent in this inventory: read-only, no action on the world, no patient contact, no clinical surface, and it sees nothing the owner does not already see. Because it reads the center's own data, the AI vendor's BAA exclusions (Computer Use, Web Fetch) do not apply to it. Specified in Phase 2 at no change to the Phase 2 price. Strongest candidate for the first demonstration.
+**Recommendation: BUILD.** Custom by nature because it encodes one owner's definition of the numbers that matter. Smallest compliance envelope of the five (no patient-facing surface). Cheapest to build. It is the artifact the owner personally looks at, which keeps Rick in the room. The appeal status counts from #1 are the headline of the Monday report.
+
+**The owner agent (decided by Rick, 2026-10-06).** On top of the reporting service, a read-only conversational agent the partners can ask open questions of: volumes by modality, cancellations, no-shows, open slots, turnaround, authorizations waiting, appeal status counts. It reads the center's own database and answers in plain words. Lowest risk of any agent in this inventory: read-only, no action on the world, no patient contact, no clinical surface, and it sees nothing the owner does not already see. Because it reads the center's own data, the AI vendor's BAA exclusions (Computer Use, Web Fetch) do not apply to it. Specified in Phase 2 at no change to the Phase 2 price. Strongest candidate for the first demonstration.
 
 **Effort:** Small to Medium, depending on billing data access. **Risk:** Low.
 
-**Dependencies.** RIS reporting export or database access; billing system export. Both are contract terms under #3. Ask Fernando what he wants on one page every Monday morning; that answer is the specification.
+**Dependencies.** RIS reporting export or database access, a contract term under #3; the authorization queue from #1. Ask Fernando what he wants on one page every Monday morning; that answer is the specification.
 
 **Compliance.** "Business analytics" and "practice and inventory management" are named in 21 U.S.C. 360j(o)(1)(A). PHI is present in the data, so the BAA and SB 1188 residency still apply, but no patient communication is involved. The owner agent stays inside the same exclusion: it answers questions about the business and never reads an image, selects a protocol, recommends a study, or addresses a patient's care.
 
@@ -257,7 +259,7 @@ Alternatively: do not do it at all in phase one, and let the front desk answer t
 
 **Evidence.** None gathered by the research; this is standard RIS/PACS functionality.
 
-**Recommendation: BUY (RIS/PACS).** Not a differentiator and already solved. The only custom touch is that referrer volume data feeds the owner reporting view in #4.
+**Recommendation: BUY (RIS/PACS).** Not a differentiator and already solved. No custom touch: referrer-level detail stays out of the owner reporting view in #4 (Rick, 2026-11-04); a referral volume count can be added as an operations requirement if the owners ask.
 
 ---
 

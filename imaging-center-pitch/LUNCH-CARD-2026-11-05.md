@@ -50,4 +50,8 @@
 11. **"What happens after opening?"** ==A support plan, a flat monthly fee for a set number of hours so you always know who to call and what it costs; or a role on your team, which we can talk about.== (Three thousand a month for up to twenty hours, one-fifty beyond, from June, twelve months, ninety-day check-in.)
 12. **"One sentence. Why say yes today?"** ==Because the decisions that are free today stop being free the day you sign your first vendor contract, and finding out if I'm right costs you one phase, not the whole engagement.==
 
-**Two more, in one breath.** "Can you guarantee the opening date?" ==No one honestly can; every date is conditional on the assumptions slide; what I guarantee is the price.== "What if Luis leaves?" ==The contract is with the center; you own everything I build; nothing depends on one person, including me.==
+**Three more, in one breath.** "Can you guarantee the opening date?" ==No one honestly can; every date is conditional on the assumptions slide; what I guarantee is the price.== "What if Luis leaves?" ==The contract is with the center; you own everything I build; nothing depends on one person, including me.== "Who do you contract with?" ==I'll contract with whichever company runs operations, and the practice's patient data stays the practice's.==
+
+**Owner numbers (slide 17) are operations only:** volume by modality, turnaround, scheduled versus completed, no-shows, open slots, authorization turnaround, appeal counts. ==If money comes up: "Practice revenue and collections reporting goes to Dr. Ramos's practice, which owns it."==
+
+**Ask Luis today, before the lunch:** (a) who signs before the companies are formed, and does the December 18 timing matter for the $4,000; (b) "Dr. Luis Ramos" or "Luis Ramos-Duran, M.D." on the cover, and "J. Fernando Escarzaga"?; (c) is "Quantum Radiology" the public name to use.

@@ -263,7 +263,7 @@ Ask here: "How many prior authorizations a day were you running at steady state,
 
 ==There are two kinds. The first does a job inside your systems. Think of a very consistent employee who works one desk: a prior authorization, filling a cancelled slot from the waitlist, a records request. It works through your RIS and the payers' own electronic connections, not by clicking around a screen, and somebody on your staff approves anything that goes out.==
 
-==The second one you talk to. You text it or call it: how many MRIs did we read last week, which referrer went quiet. It answers from your own numbers. And every Monday it sends you one short report: volumes by modality, reader, and referrer, authorization and denial rates, and the reconciliation.==
+==The second one you talk to. You text it or call it: how many MRIs did we read last week, how many slots went empty. It answers from your own numbers. And every Monday it sends you one short report: volumes by modality, turnaround, scheduled versus completed, authorizations waiting and appeals open.==
 
 ==Four guardrails, and they do not bend. A person signs anything clinical and anything that leaves the building. Numbers are calculated and checked, never guessed. Every vendor that touches patient data signs a HIPAA business associate agreement. And the data stays in the United States."==
 
@@ -623,27 +623,31 @@ Do not say "from running two centers" or "two companies." He built one company w
 
 **SAY**
 
-=="The fifth one is the numbers the owner actually looks at. Studies by modality, by reader, by referrer. Turnaround. Scheduled versus completed. Revenue per slot.==
+=="The fifth one is the numbers the owner actually looks at. Studies by modality. Turnaround. Scheduled versus completed. No-shows and open slots. Authorizations waiting on a payer, appeals in flight.==
 
-==All of it already lives in the RIS and the billing system. The problem is that those are two systems, and RIS reporting is built for radiology operations, not for an owner.==
+==All of it already lives in the RIS and the authorization queue. The problem is that RIS reporting is built for radiology operations, not for an owner who wants one page.==
 
-==I have no study to show you here. I have the fact that you will want a referrer-and-revenue view, and the RIS will not give it to you. It is the smallest compliance footprint of the five, and the cheapest to build.==
+==I have no study to show you here. I have the fact that you will want one page of operations on a Monday, and the RIS will not give it to you. It is the smallest compliance footprint of the five, and the cheapest to build.==
 
-==Here is how I would write it down. As an owner, I want to ask one question on a Monday morning, which referrer went quiet, what is the appeal rate, are we being paid for what we read, and get the answer from my own numbers, so that I run the center on facts and not on a report someone has to build for me. Your manager and your front desk lead want the same numbers from their side: today's schedule, the open authorizations, the slots that just opened.==
+==Here is how I would write it down. As an owner, I want to ask one question on a Monday morning, what did we scan last week, how many slots went empty, how many authorizations are waiting on a payer, how many appeals are open, and get the answer from my own numbers, so that I run the center on facts and not on a report someone has to build for me. Your manager and your front desk lead want the same numbers from their side: today's schedule, the open authorizations, the slots that just opened.==
 
-==And the version I would build is one you can ask questions of. Not a dashboard you read. Something you ask, in plain words: why were we down last Tuesday, what is the appeal rate this month, which referrer went quiet. It reads your numbers and answers. It never touches a patient."==
+==Practice revenue and collections reporting goes to Dr. Ramos's practice, which owns it.==
+
+==And the version I would build is one you can ask questions of. Not a dashboard you read. Something you ask, in plain words: why were we down last Tuesday, how many appeals are open this month, how many slots went empty. It reads your numbers and answers. It never touches a patient."==
 
 **DEPTH / IF ASKED**
 
+==**Operations numbers only (Rick, 2026-11-04).** The owner view shows volume by modality, turnaround, scheduled versus completed, no-shows, open slots, payer authorization turnaround, and appeal status counts. Nothing about revenue, collections, what a referrer is worth, or what was paid for a read. If money comes up, the one line: "Practice revenue and collections reporting goes to Dr. Ramos's practice, which owns it." No referrer-level detail in the owner view at all; if he asks for referral trends, they are a volume count, discussed as operations, and written down as a requirement, never as money.==
+
 There is no external evidence for this candidate, and the research says so plainly. No benchmark literature exists on what imaging center owners want from dashboards. Say "I have no study" rather than reaching for one.
 
-The structural claim holds without a study: the owner's view requires joining RIS data to billing data, and those are usually different systems. Both exports are contract terms from slide 3.
+The structural claim holds without a study: the owner's view requires pulling RIS data and the authorization queue into one page, and RIS reporting does not do that for an owner. The RIS export is a contract term from slide 3.
 
-Custom by nature, because it encodes one owner's definition of what matters. The reader-reconciliation view already has a customer in Luis. FDA: "business analytics" and "practice and inventory management" are named in the statute at slide 20. PHI is present, so the BAA and Texas residency still apply, but there is no patient-facing surface.
+Custom by nature, because it encodes one owner's definition of what matters. FDA: "business analytics" and "practice and inventory management" are named in the statute at slide 20. PHI is present, so the BAA and Texas residency still apply, but there is no patient-facing surface.
 
 **The owner agent, and how every agent in this design is built.** Three kinds of agent, by how much damage a mistake can do.
 
-- **The owner agent.** Read-only conversational access over operational data: volumes, cancellations, no-shows, payer mix, appeal rate, reader turnaround. He asks a question in plain words and gets an answer from his own numbers. Lowest risk on the whole list: it reads and never acts, it sees nothing the owner does not already see, it has no patient contact, and it has no clinical surface. It is "business analytics" and "practice and inventory management," named in the statute at slide 20. It is specified in Phase 2 and it is the strongest candidate for the first thing he sees working. It reads your own database, so the AI vendor's BAA exclusions on slide 21 do not touch it.
+- **The owner agent.** Read-only conversational access over operational data: volumes by modality, cancellations, no-shows, open slots, turnaround, authorizations waiting, appeal status counts. He asks a question in plain words and gets an answer from his own numbers. Lowest risk on the whole list: it reads and never acts, it sees nothing the owner does not already see, it has no patient contact, and it has no clinical surface. It is "business analytics" and "practice and inventory management," named in the statute at slide 20. It is specified in Phase 2 and it is the strongest candidate for the first thing he sees working. It reads your own database, so the AI vendor's BAA exclusions on slide 21 do not touch it.
 - **The workflow agents.** Prior auth, records, backfill. They act on the world, and a human signs. Already specified, bounded, medium risk. No change.
 - **Patient-facing voice.** Highest blast radius. Still bought from a vendor. No change.
 
@@ -808,6 +812,7 @@ One minute. The list is the answer. Do not argue it.
 - **SB 1188.** *What it is:* a Texas law that says electronic health records holding Texas patients' data must be physically stored in the United States. *What it means for the center:* every system and every vendor, including the AI company, has to show in writing where the data sits; a cloud account locked to a US region satisfies it. *The one line:* =="Every component gets verified for US residency before anything is promised."==
 - **TCPA.** *What it is:* the federal law on automated calls and texts; its healthcare exemption lets a provider send appointment-type messages without separate marketing consent, within limits. *What it means for the center:* one message a day and three a week per patient across every message type, nothing about money, the provider's name and an opt-out in every message. The "per-patient rate governor" is a counter: for each patient it counts every text and call the systems send, from reminders to backfill offers to results notices, caps them at one a day and three a week, blocks anything with billing content, and stamps the name and the opt-out on each one. *The one line:* =="I've built per-user limits like that in my own production systems, and this one gets designed in from day one."==
 - **The AI vendor's BAA.** *What it is:* the HIPAA business associate agreement the AI company signs, which makes it legally responsible for patient data it receives. *What it means for the center:* patient details do go to the AI company, the same way they go to the clearinghouse, under that signed agreement, never kept and never trained on; the agreement does not cover the browser-driving tools, so nothing drives a payer portal screen with patient data. *The one line:* =="Under a signed HIPAA agreement, never kept, never trained on, and never through a screen the agreement does not cover."==
+- **How this fits their companies (Rick, 2026-11-04).** If asked how the isolated-instance model fits their structure: the structure separates the practice's clinical data from the operating company's business data, which is exactly the isolated-instance model: each organization in its own instance, its own database and keys, its own logins, its own audit log.
 - **HB 300.** *What it is:* Texas's own health privacy law, broader than HIPAA. *What it means for the center:* training records, a fifteen-business-day records deadline, no sale of patient data, and the Attorney General as the enforcer; and it reaches Rick personally, not only through the contract. *The one line:* =="If I mishandle your patients' data, I'm the one the state comes after. That's how it should be."==
 
 **DEPTH / IF ASKED**
@@ -1041,6 +1046,10 @@ Those are the same assumptions, in the same words, on slide 26, slide 25, the le
 **If he asks what the billing evaluation is**: "Billing is a buy and I am not touching the claims work. What I evaluate in Phase 2 is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system depends on them, and whether the four access terms go into that contract too."
 
 Contract through RGF Global Ventures LLC, never personally. Do not discount because Luis is a friend; RadAssist is not inside this fee.
+
+==**Fixed fee, said plainly (Rick, 2026-11-04):** "A fixed fee, set in advance, is how you've structured every payment between your own companies. This one works the same way."== Say it once, plainly, and do not explain their structure back to them.
+
+==**WHO I CONTRACT WITH (Rick, 2026-11-04).** The engagement and the support plan contract with the operating company: the one that runs operations and holds the vendor and cloud accounts, once it is formed. Until then, a member signs on its behalf, or signing waits for formation. Phase 1 can start on a signed letter of intent. Patient data belongs to the practice: I work under the operating company's business associate agreement as a subcontractor, or sign a BAA directly with the practice, whichever counsel wants. The lunch line: "I'll contract with whichever company runs operations, and the practice's patient data stays the practice's."==
 
 **IF ASKED "Would you come in full time?" (Rick, 2026-11-03).** They may float a salaried role. Say exactly this, and no numbers: =="I'd want to hear it. Let's finish Phase 1 first; that's the job to judge me on. If it makes sense after that, we can talk about what a dedicated role looks like."== Do not name a salary, a start date, or a title, and do not say whether you would leave anything else. If pressed: "Phase 1 is six weeks. Judge me on it, then we talk." Then back to the phases.
 
@@ -1416,7 +1425,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 ## Fernando Q&A (rehearsed 2026-11-03)
 
-==Ten questions, asked by Gio as Fernando on 2026-11-03; these are the approved answers, verbatim. Say them as written. Q11 to Q16 are Rick's approved lunch lines from his evening review the same day; they sit before Q10 so the closing question stays last.==
+==Ten questions, asked by Gio as Fernando on 2026-11-03; these are the approved answers, verbatim. Say them as written. Q11 to Q16 are Rick's approved lunch lines from his evening review the same day, Q17 is from 2026-11-04; they sit before Q10 so the closing question stays last.==
 
 > ==**Patterns to hold.**==
 > ==State the fixed price plainly: forty-five thousand, five phases, priced today; never hedge it.==
@@ -1493,6 +1502,10 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 =="After opening, there's a support plan: a flat monthly fee for a set number of hours, so you always know who to call and what it costs. If you'd rather have me on the team, we can talk about that too."==
 
+==**Q17. "Who do you contract with?" (Rick, 2026-11-04)**==
+
+=="I'll contract with whichever company runs operations, and the practice's patient data stays the practice's."== If pressed: =="The engagement is with the company that runs operations and holds the vendor and cloud accounts, once it's formed. Until then a member signs for it, or we wait. Phase 1 can start on a signed letter of intent. Patient data belongs to the practice, so I work under the operating company's business associate agreement, or sign one with the practice directly, whichever your counsel wants."==
+
 ==**Q10. "One reason, one sentence, why say yes today."**==
 
 =="Because the decisions that are free today stop being free the day you sign your first vendor contract, and finding out if I'm right costs you one phase, not the whole engagement."==
@@ -1529,14 +1542,14 @@ Lunch is Thursday 2026-11-05 with Luis, Fernando and Jesse. What is not on the l
 
 ## Wednesday 2026-11-04
 
-- [ ] ==**Review the updated slides with Luis, recorded.**== Ask him: does the slide count feel right for an hour's lunch; who on their side owns each line of the opening checklist (slide 33); anything not to say in front of Fernando or Jesse. His read on how Fernando hears the price is the point.
+- [ ] ==**Review the updated slides with Luis, recorded.**== Ask him: does the slide count feel right for an hour's lunch; who on their side owns each line of the opening checklist (slide 33); anything not to say in front of Fernando or Jesse. His read on how Fernando hears the price is the point. ==Three more (2026-11-04): (a) who signs the engagement before the companies are formed, and does the December 18 capital timing matter for the $4,000 at signing; (b) the name on the cover: "Dr. Luis Ramos" or "Luis Ramos-Duran, M.D.", and is Fernando shown as "J. Fernando Escarzaga"; (c) is "Quantum Radiology" the public center name to use. Do not change the cover names until he answers.==
 - [ ] ==**Send Gio the recording.**== Gio applies ONE last update round, renders, syncs OneDrive and Drive. Then the documents freeze.
-- [ ] **Full mock Q&A with Gio, about 40 minutes, Fernando AND Jesse:** every Fernando question, Q1 to Q16 plus the curveballs (end of Part 3), then a full Jesse technical round (data, security, integration, critical path). Every question, not a sample.
+- [ ] **Full mock Q&A with Gio, about 40 minutes, Fernando AND Jesse:** every Fernando question, Q1 to Q17 plus the curveballs (end of Part 3), then a full Jesse technical round (data, security, integration, critical path). Every question, not a sample.
 - [ ] ==**Wednesday night, full practice run out loud, recorded:**== slides 1 to 29 against the clock, pricing at about 38 minutes. Send the recording to Gio. Then a **short second run** of the opening (1 to 3), the demo transition (10 into 11) and the close (22 to 29).
 
 ## Thursday 2026-11-05, morning
 
-- [ ] **Full mock Q&A with Gio again, 30 to 40 minutes, Fernando AND Jesse, all questions** (Q1 to Q16, curveballs, the Jesse technical round). Early enough that the demo check and printing still happen before Luis arrives.
+- [ ] **Full mock Q&A with Gio again, 30 to 40 minutes, Fernando AND Jesse, all questions** (Q1 to Q17, curveballs, the Jesse technical round). Early enough that the demo check and printing still happen before Luis arrives.
 - [ ] ==**Text Luis the demo link to forward to Fernando and Jesse.**==
 - [ ] ==**Open the demo on the phone (cellular) and on the laptop; check the banner; reload.**== Leave both tabs up.
 - [ ] **Print the leave-behind** (two pages, three copies) **and the lunch card** (`Imaging-Center-LUNCH-CARD-2026-11-05.pdf`, two pages). Bring this sheet too, folded, Part 1 face up.

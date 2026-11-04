@@ -174,7 +174,7 @@
 
   <!-- SERVICES y 282-392 -->
   <div class="box build own-mixed" style="left:92px;top:268px;width:114px;height:134px"><div class="n">#1 #2 BUILD</div><div class="t">Prior auth and eligibility engine</div>Order detection. Reads the billing vendor's 270/271 feed. Packet assembly, submission, deadline tracking, appeal queue, weekly rates.</div>
-  <div class="box build own-mixed" style="left:215px;top:268px;width:114px;height:134px"><div class="n">#4 BUILD</div><div class="t">Owner reporting and reader reconciliation</div>Joins RIS data to billing data. Monday report, appeal rate as headline. Reader paid-versus-read view.</div>
+  <div class="box build own-mixed" style="left:215px;top:268px;width:114px;height:134px"><div class="n">#4 BUILD</div><div class="t">Owner operational reporting</div>RIS data and the authorization queue. Monday report of operations, appeal counts as headline. No revenue.</div>
   <div class="box build own-mixed" style="left:339px;top:268px;width:114px;height:134px"><div class="n">#5 #10 BUILD, SMALL</div><div class="t">Backfill and waitlist</div>Cancellation in, ranked offer list out. One per-patient rate governor across every sender.</div>
   <div class="box build own-center" style="left:462px;top:268px;width:114px;height:134px"><div class="n">#6 #7 BUILD, SELECTIVELY</div><div class="t">Records in, prior studies out</div>Intake, 30-day clock from receipt, fee rules, DICOM retrieve. Outbound prior-study tracker.</div>
   <div class="box buy" style="left:586px;top:268px;width:114px;height:134px"><div class="n">#9 BUY, I INTEGRATE</div><div class="t">Voice vendor product</div>Vendor under its own BAA. Spanish evaluation set. Human escalation on any symptom language.</div>
@@ -400,7 +400,7 @@
       <tr>
         <td class="u">Owner and partners<small>Dr. Ramos, Mr. Escarzaga, Mr. Martinez</small></td>
         <td>See every open request, deadline, denial, and appeal outcome. Approve the graduation criterion that changes the sign-off rule.<br><span class="g">Approves graduation</span></td>
-        <td>Read the Monday report. Ask the owner agent open questions: volumes, cancellations, no-shows, payer mix, appeal rate, reader turnaround. Define what the one page contains.</td>
+        <td>Read the Monday report. Ask the owner agent open questions: volumes, cancellations, no-shows, open slots, turnaround, appeal counts. Define what the one page contains.</td>
         <td>See fill rate and the ranking rules. Change the ranking policy.</td>
         <td>See the request log, open clocks, and fees charged.</td>
         <td>Hear call recordings and transcripts. Set the escalation rules. Approve the Spanish evaluation bar.</td>
@@ -436,7 +436,7 @@
       <tr>
         <td class="u">Radiologists, readers<small>Including Dr. Ramos as a 1099 reader</small></td>
         <td class="no">Untouched. The system never recommends a study or judges appropriateness.</td>
-        <td>Reader reconciliation view: what was read against what was paid.</td>
+        <td class="no">Untouched. Practice revenue and collections reporting stays with the practice.</td>
         <td class="no">Untouched.</td>
         <td>Ask for a prior study; the tracker chases it and imports what returns. The read is theirs.</td>
         <td class="no">Untouched.</td>
@@ -522,9 +522,9 @@
   <div class="abs" style="left:650px;top:390px;width:590px;height:250px;border:1px solid var(--rule)"></div>
   <div class="abs kicker" style="left:662px;top:398px">#4. Owner reporting. Tier A. Build. Rick's core, the center's reports.</div>
   <div class="box ext" style="left:662px;top:424px;width:110px;height:34px"><div class="t">RIS export</div></div>
-  <div class="box ext" style="left:662px;top:466px;width:110px;height:34px"><div class="t">Billing export</div></div>
+  <div class="box ext" style="left:662px;top:466px;width:110px;height:34px"><div class="t">Schedule export</div></div>
   <div class="box build own-rick" style="left:662px;top:508px;width:110px;height:34px"><div class="t">Prior auth engine</div></div>
-  <div class="box build own-mixed" style="left:790px;top:424px;width:150px;height:134px"><div class="t">Reporting core and joins</div>RIS data joined to billing data. Volume, turnaround, referrer, revenue per slot, appeal rate, cancellations, no-shows. Reader paid-versus-read reconciliation.</div>
+  <div class="box build own-mixed" style="left:790px;top:424px;width:150px;height:134px"><div class="t">Reporting core</div>RIS data and the authorization queue. Volume by modality, turnaround, scheduled versus completed, no-shows, open slots, appeal counts. Operations only.</div>
   <div class="box build own-center" style="left:958px;top:424px;width:120px;height:62px"><div class="t">Monday report</div>One page. Appeal rate is the headline. The owner defines the page.</div>
   <div class="box agent build" style="left:958px;top:496px;width:120px;height:62px"><span class="tier a">Tier A</span><div class="t">Owner agent</div>Read-only questions, plain answers. Text or call. Specified in design; build priced separately.</div>
   <div class="box user" style="left:1098px;top:424px;width:130px;height:134px"><div class="t">Owner and partners</div>Read the page. Ask the agent. It sees nothing the owner does not already see, acts on nothing, never addresses a patient's care. "Business analytics" is named in the FDA exclusion.</div>
@@ -702,7 +702,7 @@
 
   <div class="panel" style="left:40px;top:240px;width:590px;height:190px"><div class="k">Operations agent</div><h3>Runs one workflow inside the center's systems.</h3>Prior authorization, cancellation backfill, records requests. Works through the RIS (HL7 v2, DICOM) and the payers' own connections (FHIR prior authorization API, EDI), never by driving a portal screen. Assembles, checks, tracks, drafts. <b>A person on the center's staff approves anything that leaves the building.</b>
     <ul><li>Worked example: order arrives in the RIS, coverage and authorization rule checked, request assembled and checked against payer rules, staff approves, submitted electronically, decision clock tracked, approval scheduled, denial drafted as an appeal for a person to sign.</li></ul></div>
-  <div class="panel" style="left:40px;top:442px;width:590px;height:196px"><div class="k">Owner's agent</div><h3>Answers the owner, by text or phone. Reads, never acts.</h3>Plain questions over the center's own operational data, answered from the reporting service, not from memory. A Monday report: volumes by modality, reader, and referrer; authorization and denial rates; reconciliation.
+  <div class="panel" style="left:40px;top:442px;width:590px;height:196px"><div class="k">Owner's agent</div><h3>Answers the owner, by text or phone. Reads, never acts.</h3>Plain questions over the center's own operational data, answered from the reporting service, not from memory. A Monday report: volumes by modality; turnaround; scheduled versus completed; authorizations waiting and appeals open.
     <ul><li><b>Calculated and checked:</b> totals and rates are computed by code and verified; if a figure cannot be verified the agent says so.</li><li>Inside the FDA administrative exclusion: business analytics and practice management by name.</li><li>No patient contact and no clinical surface.</li></ul></div>
 
   <div class="panel wallbox" style="left:650px;top:240px;width:590px;height:250px"><div class="k">Dependencies. The dates hold only while these hold.</div><h3>Seven things have to be true before the build (Phase 4) can start.</h3>
@@ -746,7 +746,7 @@
   <div class="box ext" style="left:514px;top:288px;width:250px;height:120px"><div class="t">Real payers</div><b>FHIR PAS</b> where the payer runs it (Medicare Advantage, Medicaid, CHIP, exchange plans from 2027-01-01). <b>EDI 278</b> through the clearinghouse where not. A human-assisted path for fax and portal payers. Test access first (Phase 4).</div>
   <div class="box ext" style="left:776px;top:288px;width:150px;height:120px"><div class="t">Payer decision</div>Real ClaimResponse from the payer, on the CMS clock. The agent schedules on approval.</div>
   <div class="box build" style="left:938px;top:288px;width:150px;height:120px"><div class="t">Appeal</div>Model draft under the BAA. The radiologist or ordering physician signs. Nothing outbound unsigned.</div>
-  <div class="box build" style="left:1100px;top:288px;width:140px;height:120px"><div class="t">Monday report</div>Your own RIS and billing data, calculated and checked. The owner's agent answers questions by text or call.</div>
+  <div class="box build" style="left:1100px;top:288px;width:140px;height:120px"><div class="t">Monday report</div>Your own RIS and authorization data, calculated and checked. The owner's agent answers questions by text or call.</div>
 
   <div class="panel wallbox" style="left:40px;top:428px;width:590px;height:210px"><div class="k">Human sign-off points, production</div><h3>A person stays in charge at every gate that leaves the building.</h3>
     <ul>
