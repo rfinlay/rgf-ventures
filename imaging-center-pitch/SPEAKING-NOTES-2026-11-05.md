@@ -1519,7 +1519,7 @@ Guardrails: no go-live claims for any enterprise software program by name; "clea
 
 ---
 
-# PART 4: PREP PLAN, TUESDAY TO THURSDAY MORNING, 2026-11-05 (Rick-approved 2026-11-03, updated 21:11)
+# PART 4: PREP PLAN, TUESDAY TO THURSDAY MORNING, 2026-11-05 (Rick-approved 2026-11-03, updated 21:13)
 
 Lunch is Thursday 2026-11-05 with Luis, Fernando and Jesse. What is not on the list waits. There is no RadAssist demo setup: slide 18 is spoken (Luis, 2026-11-03).
 
@@ -1533,12 +1533,12 @@ Lunch is Thursday 2026-11-05 with Luis, Fernando and Jesse. What is not on the l
 
 - [ ] ==**Review the updated slides with Luis, recorded.**== Ask him: does the slide count feel right for an hour's lunch; who on their side owns each line of the opening checklist (slide 32); anything not to say in front of Fernando or Jesse. His read on how Fernando hears the price is the point.
 - [ ] ==**Send Gio the recording.**== Gio applies ONE last update round, renders, syncs OneDrive and Drive. Then the documents freeze.
-- [ ] **Mock Q&A with Gio as Jesse, about 10 minutes:** technical only (data, security, integration). Then a **Fernando refresh of the three weakest answers:** Q5 (data and the AI company), Q8 (the friendship), Q10 (the one-sentence yes).
+- [ ] **Full mock Q&A with Gio, about 40 minutes, Fernando AND Jesse:** every Fernando question, Q1 to Q16 plus the curveballs (end of Part 3), then a full Jesse technical round (data, security, integration, critical path). Every question, not a sample.
 - [ ] ==**Wednesday night, full practice run out loud, recorded:**== slides 1 to 28 against the clock, pricing at about 38 minutes. Send the recording to Gio. Then a **short second run** of the opening (1 to 3), the demo transition (9 into 10) and the close (21 to 28).
 
 ## Thursday 2026-11-05, morning
 
-- [ ] **Lightning Q&A with Gio, 10 minutes:** five questions, Fernando and Jesse mixed, one-line answers from the lunch card.
+- [ ] **Full mock Q&A with Gio again, 30 to 40 minutes, Fernando AND Jesse, all questions** (Q1 to Q16, curveballs, the Jesse technical round). Early enough that the demo check and printing still happen before Luis arrives.
 - [ ] ==**Text Luis the demo link to forward to Fernando and Jesse.**==
 - [ ] ==**Open the demo on the phone (cellular) and on the laptop; check the banner; reload.**== Leave both tabs up.
 - [ ] **Print the leave-behind** (two pages, three copies) **and the lunch card** (`Imaging-Center-LUNCH-CARD-2026-11-05.pdf`, two pages). Bring this sheet too, folded, Part 1 face up.
