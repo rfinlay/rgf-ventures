@@ -14,7 +14,7 @@
 
 ## If short on time, skip in this order
 
-**14** (owner numbers), then **21** (keep its question for the Thank You), then **11** to one sentence, then **7** to its headline and last line, then **16** to two sentences. ==Never skip 3, 4, 6, 9, 15, 16, 19, 20, 22 or 23.== At 30:00 and not yet on 19: jump to **19, then 22, then 23.** The price lands at about 34:30; the Thank You at 40:00.
+**16** (owner numbers), then **23** (keep its question for the Thank You), then **13** to one sentence, then **8** to its headline and last line, then **18** to two sentences. ==Never skip 3, 4, 6, 10, 17, 18, 21, 22, 24 or 25.== At 30:00 and not yet on 21: jump to **21, then 24, then 25.** The price lands at about 34:30; the Thank You at 40:00.
 
 ## Never say
 
@@ -26,7 +26,7 @@
 - ==Any three-year total.== Phase 3 produces it. Running costs are "about two thousand a month at expected volume, an estimate, with a cap."
 - Headcount reduction or layoffs (it "changes what your people do"); "Jesus"; "you open in June" as a fact.
 
-## The demo in five lines (slide 9)
+## The demo in five lines (slide 10)
 
 1. Tabs already open on the phone (cellular) and the laptop; banner checked: ==green is live, orange is simulated, say which.==
 2. **Maria:** order, needs auth, packet, approve and submit, advance 3 days, approved.

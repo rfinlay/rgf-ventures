@@ -46,3 +46,4 @@
 - 20:40 R27: Slide 31 'What I need from you' (+ Phase 1 inputs everywhere, Q9 answer, notes): time with ALL THREE owners: Dr. Ramos, Fernando and Jesse. Name Jesse explicitly (engineer: integration/technical decisions). Never list only Luis + Fernando.
 - 20:40 R28: Phase 1 deliverable 'make-or-buy recommendation per system' -> 'make-or-buy recommendation per requirement' (each requirement: met by a system we buy, or a piece I build; ballpark run cost per build item). Update every listing incl. Q9 answer, slides 29/31, leave-behind, notes, runbook, architecture, candidates.
 - 20:49 CORRECTION: KEEP divider slides 7 and 12. Merge 8+10 -> new 8 (time + appeals); 9 stays; old 11 demo -> new 10.
+- 21:04 Prior auth FIRST is DECIDED (Rick). Do not list as open. Rick will record Wednesday's Luis review (full walk-through); Gio to process the recording into feedback items.
