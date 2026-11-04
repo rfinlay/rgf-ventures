@@ -337,7 +337,7 @@ How the agent relates to the software, in one sentence if he asks: the software 
 
 Why not a vendor: the category exists (Availity, Waystar, Cohere Health, Humata Health, Infinitus), but it is priced and implemented for health systems and large groups, and much of it is payer-funded. At his size, whether that is one center or three, he is the customer those vendors take last and configure least. And the appeal gap is not a technology gap. Nobody has time to file. That is a workflow problem a narrow agent and a human sign-off fix.
 
-**IN PLAIN WORDS (Rick, 2026-11-03), if he asks what "built for someone much larger" means:**
+**IN PLAIN WORDS (Rick, 2026-11-03), if he asks what "priced for hospital systems" means:**
 
 =="The prior authorization vendors out there are priced and implemented for hospital systems and large physician groups. A center your size is the customer they configure last and least. A lot of them are paid by the payers, not by you. And the real gap is not technology. It is that nobody has time to file the appeals. That is what I build for. If one of those vendors fits you, use it. I will tell you if it does."==
 
@@ -671,29 +671,29 @@ Write down his Monday-morning answer. That sentence is worth more than the slide
 
 ### SLIDE 18 · The scorecard · 25:30 to 26:30
 
-**SAY, in one breath**
+**DELIVERY, four steps (Rick, 2026-11-04 10:00)**
 
-=="Prior authorization and eligibility: build. Strongest evidence, the vendors are built for someone much larger than you, and the federal APIs arrive January first.==
+==**1. Pattern first, one breath.** "Eight candidates. I'd build five, buy two, and integrate the voice system."== (Counted against the slide: builds are prior auth, backfill, records in, records out, owner reporting; buys are reminders and billing; voice is buy-and-integrate.)
 
-==Reminders and self-scheduling: buy. That is the RIS.==
+==**2. One pause for the whole slide.** "The right-hand column is what each one actually does. Take a second with it." Then stay quiet, fifteen to twenty seconds. Do not fill it.==
 
-==Cancellation backfill: build, small, on top of the RIS. That addresses the 22%, not the 2%.==
+==**3. Talk only the builds, one line each.**==
 
-==Voice: buy. I integrate.==
+=="Prior auth is a build: the strongest evidence, the vendors are priced for hospital systems, and the federal payer connections arrive January 1."==
 
-==Records coming in, the requests: build, selectively.==
+=="Backfill is a small build on top of the RIS: a ranked waitlist for the 22% that cancel, not the 2% that no-show."==
 
-==Records going out, the priors: build, selectively. That is the tracker.==
+=="Records requests are a selective build: a statutory clock, fifteen business days in Texas, and retrieval labor you cannot bill for."==
 
-==Owner reporting: build.==
+=="Prior studies are a selective build: nobody sells a tracker for a small center, and a new center opens with zero priors on file."==
 
-==Billing, claims, and the eligibility feed: buy. That is a clearinghouse function with a real vendor market, and I am not touching your claims work.==
+=="Owner reporting is a build: two views of one system, custom by nature, the smallest compliance footprint on the list."==
 
-==Three of the eight, I am telling you to buy."==
+==**4. Close.** "Any of these you'd push back on?" Then stop talking.==
 
 **DEPTH / IF ASKED**
 
-**The slide says what each piece does; the why is here (Rick, 2026-11-03).** Prior authorization: strongest evidence, the vendors are built for someone much larger, the federal APIs arrive January first. Reminders and self-scheduling: commodity, bundled in modern imaging RIS products. Backfill: a ranked waitlist on top of the RIS that addresses the 22.3% of cancellations, not the 2.0% of no-shows. Voice: a funded category with the highest blast radius and an unforgiving Spanish bar. Records, inbound requests: hard statutory deadlines (fifteen business days in Texas) and retrieval labor you cannot bill for; the build is intake, an identity check step, the deadline clock, the fee calculation, status, and a DICOM export of the study. Records, outbound priors: no vendor has solved it for a small center; the build is a request tracker to other facilities, follow-up, import on arrival, and a flag to the radiologist when a prior is still missing. Owner reporting: custom by nature, smallest compliance footprint. Billing: a commodity clearinghouse function with a real vendor market.
+**The slide says what each piece does; the why is here (Rick, 2026-11-03).** Prior authorization: strongest evidence, the vendors are priced for hospital systems, the federal APIs arrive January first. Reminders and self-scheduling: commodity, bundled in modern imaging RIS products. Backfill: a ranked waitlist on top of the RIS that addresses the 22.3% of cancellations, not the 2.0% of no-shows. Voice: a funded category with the highest blast radius and an unforgiving Spanish bar. Records, inbound requests: hard statutory deadlines (fifteen business days in Texas) and retrieval labor you cannot bill for; the build is intake, an identity check step, the deadline clock, the fee calculation, status, and a DICOM export of the study. Records, outbound priors: no vendor has solved it for a small center; the build is a request tracker to other facilities, follow-up, import on arrival, and a flag to the radiologist when a prior is still missing. Owner reporting: custom by nature, smallest compliance footprint. Billing: a commodity clearinghouse function with a real vendor market.
 
 Every row except billing was defended on its own slide. **Billing is the new row and it is here for a reason: Phase 2 evaluates a billing vendor, and before this row existed there was no slide that justified it.** Fernando has reconciled real remittances for twenty years, so billing is the area he knows best and this is the row he is most likely to stop you on.
 
@@ -717,7 +717,7 @@ Why one system: one vendor, one support line, one contract; no RIS-to-PACS inter
 
 **BEAT**
 
-Read it in one breath. **=="Three of the eight, I am telling you to buy" is the point of the slide**, because recommending against yourself three times in a row is the most credible thing you say today. Let it sit before you move.==
+==The pause in step 2 and the silence after step 4 are the slide. Recommending against yourself on three rows is the most credible thing you say today; let them read it, and let the close sit before you move.==
 
 ---
 
@@ -928,7 +928,7 @@ If he or Luis asks "could you just build our RIS": "No, and I will tell you why.
 
 If he asks about electronic health records, or whether you are building one: "No. An imaging center's record environment is the RIS plus the PACS. The referring physicians' EHRs are outside systems. You receive orders from them and send results back to them, over HL7 version 2 messages, orders and results, ORM and ORU in practice, plus DICOM for the images. That is the whole integration surface, and it is exactly what the four contract terms on slide 3 protect."
 
-If he says "our last vendor promised the moon": "I know. That is why this slide exists. I am telling you to buy two of the things you asked about from someone else. The things I am proposing to build are the ones where the evidence is strongest and the vendors are built for someone much larger than you."
+If he says "our last vendor promised the moon": "I know. That is why this slide exists. I am telling you to buy two of the things you asked about from someone else. The things I am proposing to build are the ones where the evidence is strongest and the vendors are priced for hospital systems."
 
 **BEAT**
 
