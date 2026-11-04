@@ -322,3 +322,15 @@ Verification: notes PDF 49 pages, no literal `==`; docx 231 highlight runs; 0 em
 | AUTOMATION-CANDIDATES | Pricing paragraph carries the full wording and the R13 confirmation. |
 
 Price and dates unchanged. Verification: deck 33/27, leave-behind 2/2, architecture 8, runbook 27 (was 26), notes 49, docx 231 highlights; 0 em dashes.
+
+### Add-on, Rick 17:42, R21: integration readiness stays internal (applied 2026-11-03, eighth pass)
+
+| Where | What changed |
+|---|---|
+| Client-facing rule | Nothing from `SHERLOCK-INTEGRATION-READINESS-2026-11-03.md` (scores, rankings, vendor winners) goes into the deck or leave-behind. The file stays in the repo and both drives as internal reference. |
+| Slide 32 | One line added to the "Also selected in Phase 2" row: "Every system is scored on how easily it connects to the rest, and the integration terms go into the contract." Presenter note carries the lunch line and the do-not-name-a-winner rule. |
+| Phase 2 deliverable | "integration readiness" added as a named weighted criterion (no weights, no scores) in the Vendor Selection Report description on slides 29 and 31, the leave-behind, notes, runbook, candidates, and architecture p7. Slide 29 sub-line shortened to keep the assumption paragraph on the slide; checked. |
+| Speaking notes slide 32 | Highlighted lunch line: "I score vendors on how easily they connect, not just features, and I write the integration terms into the contract." plus a DO NOT SAY note: never name a winner or quote an integration score at lunch; that is Phase 2 work. |
+| Runbook | "Things not to say" gains the integration score / ranking / winner item with the lunch line. AUTOMATION-CANDIDATES gains an "Integration readiness (R21)" paragraph. |
+
+Verification: deck 33/27, leave-behind 2/2, architecture 8, runbook 27, notes 49, docx 232 highlights; slides 29, 31, 32, leave-behind p2 and architecture p7 checked; 0 em dashes.
