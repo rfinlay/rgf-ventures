@@ -115,7 +115,7 @@ Decided by Rick after the 2026-10-22 rehearsal with Luis. Every sibling document
 
 ## 4. Owner operational reporting
 
-**Scope rule (Rick, 2026-11-04).** The owner view carries operations numbers only: volume by modality, turnaround, scheduled versus completed, no-shows, open slots, payer authorization turnaround, appeal status counts. No revenue, no collections, no revenue per slot, no referrer value, no paid-versus-read view. Practice revenue and collections reporting goes to Dr. Ramos's practice, which owns it. Referral trends, if the owners ask for them, are a volume count framed as operations, and by default stay out of the owner view.
+**Scope rule (Rick, 2026-11-04, revised 09:57: two views of one system).** The owners' operating view (all three owners) carries operations: volume by modality, turnaround, scheduled versus completed, no-shows, open slots, payer authorization turnaround, appeal status counts, scanner uptime, staff hours and running costs against budget. The practice's view (Dr. Ramos) carries revenue: collections, denials and appeals won, revenue by payer. Why: the owners earn through the operating company's fixed fees, so their numbers are costs, uptime and operations; equipment uptime matters because the equipment company carries the loan; practice revenue belongs to the practice. No revenue per slot, no referrer value, no paid-versus-read view in either. Referral trends, if the owners ask for them, are a volume count framed as operations, and by default stay out of both views.
 
 **The manual process.** The owner pulls RIS reports for volume and turnaround and the authorization status out of whatever tracks it, and puts them on one page by hand or not at all.
 
@@ -123,7 +123,7 @@ Decided by Rick after the 2026-10-22 rehearsal with Luis. Every sibling document
 
 **Recommendation: BUILD.** Custom by nature because it encodes one owner's definition of the numbers that matter. Smallest compliance envelope of the five (no patient-facing surface). Cheapest to build. It is the artifact the owner personally looks at, which keeps Rick in the room. The appeal status counts from #1 are the headline of the Monday report.
 
-**The owner agent (decided by Rick, 2026-10-06).** On top of the reporting service, a read-only conversational agent the partners can ask open questions of: volumes by modality, cancellations, no-shows, open slots, turnaround, authorizations waiting, appeal status counts. It reads the center's own database and answers in plain words. Lowest risk of any agent in this inventory: read-only, no action on the world, no patient contact, no clinical surface, and it sees nothing the owner does not already see. Because it reads the center's own data, the AI vendor's BAA exclusions (Computer Use, Web Fetch) do not apply to it. Specified in Phase 2 at no change to the Phase 2 price. Strongest candidate for the first demonstration.
+**The owner agent (decided by Rick, 2026-10-06).** On top of the reporting service, a read-only conversational agent the partners can ask open questions of, each over their own view: volumes by modality, cancellations, no-shows, open slots, turnaround, authorizations waiting, appeal status counts, scanner uptime, staff hours and running costs against budget for the owners; collections, denials and appeals won, revenue by payer for the practice. It reads the center's own database and answers in plain words. Lowest risk of any agent in this inventory: read-only, no action on the world, no patient contact, no clinical surface, and it sees nothing the owner does not already see. Because it reads the center's own data, the AI vendor's BAA exclusions (Computer Use, Web Fetch) do not apply to it. Specified in Phase 2 at no change to the Phase 2 price. Strongest candidate for the first demonstration.
 
 **Effort:** Small to Medium, depending on billing data access. **Risk:** Low.
 
@@ -318,7 +318,7 @@ Three kinds of agent, by blast radius:
 
 | Tier | Agent | Risk | Status |
 |---|---|---|---|
-| A | Owner agent (#4): read-only questions over operational data | Lowest. Reads, never acts. No patient contact, no clinical surface. Named in the FDA exclusion as business analytics and practice management. | Specified in Phase 2. No price change. |
+| A | Owner agent (#4): read-only questions over the two views (operations and costs for the owners, revenue for the practice) | Lowest. Reads, never acts. No patient contact, no clinical surface. Named in the FDA exclusion as business analytics and practice management. | Specified in Phase 2. No price change. |
 | B | Workflow agents (#1, #5, #6): act on the world, a human signs | Medium. Bounded, human-signed, with a written graduation criterion. | As already specified. |
 | B | Report assistance (#14): drafts, the radiologist signs | Low. A clinical document, so every report is signed and the sign-off never graduates to a sample. | Exists; extended per center. |
 | C | Patient-facing voice (#9) | Highest. Chest pain and Spanish are safety and reputation events. | Buy from a vendor. Unchanged. |

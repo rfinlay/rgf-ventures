@@ -200,6 +200,13 @@
   .slide.dense .cols p { font-size: 19.5px; line-height: 1.35; }
   .slide.dense .cols h3 + p + h3 { margin-top: 18px; }
   .demourl { color: var(--accent); font-weight: 600; }
+  /* 2026-11-04 (Rick 09:57): slide 17 is two views of one system, one idea, about sixty words */
+  .cols.views { gap: 96px; margin-top: 34px; max-width: 1120px; }
+  .cols.views h3 { font-size: 31px; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 3px solid var(--accent); }
+  .cols.views h3 .who { display: block; font-family: var(--sans); font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-top: 5px; }
+  .cols.views ul.plain { margin-top: 12px; }
+  .cols.views ul.plain li { font-size: 23px; color: var(--ink); margin-bottom: 10px; line-height: 1.3; }
+  .lead.bottomline { font-family: var(--serif); font-size: 32px; color: var(--ink); margin-top: 28px; max-width: 1100px; }
   /* 2026-11-01: the live RadAssist demo cue on slide 19 */
   .livemark { position: absolute; top: 22px; right: 88px; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 6px 14px; font-weight: 700; }
   .livemark::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #fff; margin-right: 10px; vertical-align: 1px; }
@@ -366,7 +373,7 @@
       <h3>One that runs a workflow</h3>
       <p>An operations agent works one process from start to finish: a prior authorization, a cancelled slot filled from the waitlist, a records request. It works through your RIS and the payers' own electronic connections, not by clicking around a screen. Someone on your staff approves anything that goes out.</p>
       <h3>One you talk to</h3>
-      <p>An owner's agent you text or call. Ask how many MRIs were read last week, or how many slots went empty, and it answers from your own numbers. Every Monday it sends a short report: volumes by modality; turnaround; scheduled versus completed; authorizations waiting and appeals open.</p>
+      <p>An owner's agent you text or call. Ask how many MRIs were read last week, or how many slots went empty, and it answers from your own numbers. Every Monday it sends a short report, in two views: operations, scanner uptime and costs against budget for the owners; collections and revenue by payer for the practice.</p>
     </div>
     <div>
       <h3>The guardrails</h3>
@@ -618,16 +625,36 @@
 <section class="slide">
 <div class="inner">
   <div class="kicker">The fifth candidate: the numbers the owner actually looks at</div>
-  <h2>Studies by modality. Turnaround. Scheduled versus completed. No-shows and open slots. Authorizations waiting, appeals in flight.</h2>
-  <p class="lead">All of it already lives in the RIS and the authorization queue. The problem is that RIS reporting is built for radiology operations, not for an owner who wants one page.</p>
+  <h2 class="tight">Built the way your structure requires: operations for the owners, revenue for the practice.</h2>
+  <div class="cols views">
+    <div>
+      <h3>Your operating view <span class="who">all three owners</span></h3>
+      <ul class="plain">
+        <li>Studies by modality. Turnaround.</li>
+        <li>No-shows and open slots.</li>
+        <li>Authorizations waiting, appeals in flight.</li>
+        <li>Scanner uptime.</li>
+        <li>Staff hours and running costs against budget.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>The practice&rsquo;s view <span class="who">Dr. Ramos</span></h3>
+      <ul class="plain">
+        <li>Collections.</li>
+        <li>Denials, and appeals won.</li>
+        <li>Revenue by payer.</li>
+      </ul>
+    </div>
+  </div>
   <div class="grow"></div>
-  <p class="sub"><strong>As an owner,</strong> I want to ask one question on a Monday morning, what did we scan last week, how many slots went empty, how many authorizations are waiting on a payer, how many appeals are open, and get the answer from my own numbers, <strong>so that</strong> I run the center on facts and not on a report someone has to build for me. The manager and the front desk lead see the same numbers from their side: today's schedule, the open authorizations, the slots that just opened. Practice revenue and collections reporting goes to Dr. Ramos's practice, which owns it. Smallest compliance envelope of the five. Cheapest to build.</p>
+  <p class="lead bottomline">Ask it a question on Monday morning; it answers from your own numbers.</p>
 </div>
 <aside class="notes">
 <p class="time">24:30 to 25:30</p>
-<p>Be honest that there is no external evidence for this one. There is no benchmark literature on what owners want from dashboards. Say: "I have no study to show you here. I have the fact that you will want one page of operations on a Monday and the RIS will not give it to you."</p>
-<p>Operations numbers only (Rick, 2026-11-04): volume by modality, turnaround, scheduled versus completed, no-shows, open slots, payer authorization turnaround, appeal status counts. Nothing about revenue, collections, or what a referrer is worth. Practice revenue and collections reporting goes to Dr. Ramos's practice, which owns it; say that line as written if money comes up.</p>
-<p>The slide is written as an owner's user story on purpose (Rick, 2026-11-02): the owner, the manager, and the key people in the staffing plan each want a view of the same numbers. Ask what each of them would want to see on a Monday morning, and write the exact words down. That is requirements elicitation, and the first question he names is the first report the system has to answer.</p>
+<p>Two views, one system (Rick, 2026-11-04 09:57). Lead with the heading line: "Built the way your structure requires: operations for the owners, revenue for the practice." The left column is the operating company's page: studies by modality, turnaround, no-shows and open slots, authorizations waiting and appeals in flight, scanner uptime, staff hours and running costs against budget. The right column is the practice's page: collections, denials and appeals won, revenue by payer. Same system, two views.</p>
+<p>Why, Rick only: the owners earn through the operating company's fixed fees, so their numbers are costs, uptime and operations. Equipment uptime matters because the equipment company carries the loan. Practice revenue belongs to the practice. Lunch line if it comes up: "You run on fixed fees, so your numbers are costs, uptime and flow. Dr. Ramos's practice sees the money it collects. Same system, two views, the line your structure draws."</p>
+<p>Be honest that there is no external evidence for this one. There is no benchmark literature on what owners want from dashboards. Say: "I have no study to show you here. I have the fact that you will want one page on a Monday and the RIS will not give it to you."</p>
+<p>The owner user story (Rick, 2026-11-02) is in the speaking notes under DEPTH, not on the slide. Ask what each of them would want to see on a Monday morning, and write the exact words down. That is requirements elicitation, and the first question he names is the first report the system has to answer.</p>
 <p>Recommendation: BUILD. Custom by nature because it encodes one owner's definition of what matters.</p>
 </aside>
 </section>
@@ -646,7 +673,7 @@
       <tr><td>Answering patients (voice)</td><td class="tag integrate">Buy, I integrate</td><td>A vendor answers and routes patient calls in English and Spanish. I connect it to the schedule and supervise it.</td></tr>
       <tr><td>Records: inbound requests</td><td class="tag build">Build, selectively</td><td>Intake, an identity check step, the statutory deadline clock (15 business days in Texas), fee calculation, status, DICOM export of the study.</td></tr>
       <tr><td>Records: outbound priors</td><td class="tag build">Build, selectively</td><td>Tracks requests to other facilities, follows up, imports what arrives, flags the radiologist when a prior is still missing.</td></tr>
-      <tr><td>Owner reporting</td><td class="tag build">Build</td><td>Reads the RIS and the authorization queue. A Monday report of operations, and an agent you ask questions of in plain words.</td></tr>
+      <tr><td>Owner reporting</td><td class="tag build">Build</td><td>Two views of one system. Operations, scanner uptime and costs against budget for the owners; collections, denials and revenue by payer for the practice. An agent you ask questions of in plain words.</td></tr>
       <tr><td>Billing, claims, and the eligibility feed</td><td class="tag buy">Buy</td><td>The clearinghouse and the claims work, on your billing vendor's system. I evaluate reachability and contract terms. Row 1 reads the eligibility feed; it does not replace the vendor.</td></tr>
     </tbody>
   </table>

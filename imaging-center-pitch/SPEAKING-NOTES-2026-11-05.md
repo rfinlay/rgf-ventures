@@ -271,7 +271,7 @@ Ask here: "How many prior authorizations a day were you running at steady state,
 
 "Calculated and checked" means the agent never does arithmetic in its head: totals, rates, and reconciliations are computed by code and checked, and if a number cannot be verified it says so instead of filling the gap. That is the answer to "how do I know it is right."
 
-The owner's agent is read-only over operational data, inside the FDA administrative exclusion (slide 20). Do not promise a date for it. It is specified in the design and priced when they want it built.
+The owner's agent is read-only over the two views (operations and costs for the owners, revenue for the practice), inside the FDA administrative exclusion (slide 20). Do not promise a date for it. It is specified in the design and priced when they want it built.
 
 Jesse is the one most likely to want the plumbing. Offer it once: "Jesse, happy to go through how it connects after lunch." HL7 v2 from the RIS, the payer's FHIR prior authorization API where it exists, EDI where it does not.
 
@@ -627,31 +627,35 @@ Do not say "from running two centers" or "two companies." He built one company w
 
 **SAY**
 
-=="The fifth one is the numbers the owner actually looks at. Studies by modality. Turnaround. Scheduled versus completed. No-shows and open slots. Authorizations waiting on a payer, appeals in flight.==
+=="The fifth one is the numbers the owner actually looks at, built the way your structure requires: operations for the owners, revenue for the practice.==
 
-==All of it already lives in the RIS and the authorization queue. The problem is that RIS reporting is built for radiology operations, not for an owner who wants one page.==
+==On the left, the operating view, for all three of you. Studies by modality. Turnaround. No-shows and open slots. Authorizations waiting, appeals in flight. Scanner uptime. Staff hours and running costs against budget.==
 
-==I have no study to show you here. I have the fact that you will want one page of operations on a Monday, and the RIS will not give it to you. It is the smallest compliance footprint of the five, and the cheapest to build.==
+==On the right, the practice's view, for Dr. Ramos. Collections. Denials, and the appeals won. Revenue by payer.==
 
-==Here is how I would write it down. As an owner, I want to ask one question on a Monday morning, what did we scan last week, how many slots went empty, how many authorizations are waiting on a payer, how many appeals are open, and get the answer from my own numbers, so that I run the center on facts and not on a report someone has to build for me. Your manager and your front desk lead want the same numbers from their side: today's schedule, the open authorizations, the slots that just opened.==
+==Same system, two views. All of it already lives in the RIS, the authorization queue, and the billing system; nobody puts it on one page for you.==
 
-==Practice revenue and collections reporting goes to Dr. Ramos's practice, which owns it.==
-
-==And the version I would build is one you can ask questions of. Not a dashboard you read. Something you ask, in plain words: why were we down last Tuesday, how many appeals are open this month, how many slots went empty. It reads your numbers and answers. It never touches a patient."==
+==And the version I would build is one you can ask questions of. Not a dashboard you read. Ask it a question on Monday morning; it answers from your own numbers. It never touches a patient."==
 
 **DEPTH / IF ASKED**
 
-==**Operations numbers only (Rick, 2026-11-04).** The owner view shows volume by modality, turnaround, scheduled versus completed, no-shows, open slots, payer authorization turnaround, and appeal status counts. Nothing about revenue, collections, what a referrer is worth, or what was paid for a read. If money comes up, the one line: "Practice revenue and collections reporting goes to Dr. Ramos's practice, which owns it." No referrer-level detail in the owner view at all; if he asks for referral trends, they are a volume count, discussed as operations, and written down as a requirement, never as money.==
+==**Two views, one system (Rick, 2026-11-04, 09:57; replaces the "operations only" rule from 08:27).** The owners' view is operations: studies by modality, turnaround, scheduled versus completed, no-shows, open slots, authorizations waiting, appeals in flight, scanner uptime, staff hours and running costs against budget. The practice's view is revenue: collections, denials and appeals won, revenue by payer. Dr. Ramos sees both because he sits on both sides. No referrer-level detail in either view; if he asks for referral trends, they are a volume count, discussed as operations, and written down as a requirement.==
 
-There is no external evidence for this candidate, and the research says so plainly. No benchmark literature exists on what imaging center owners want from dashboards. Say "I have no study" rather than reaching for one.
+**Why it splits this way (Rick only, do not explain the structure at the table).** The owners earn through the operating company's fixed fees, so their numbers are costs, uptime and operations. Equipment uptime matters because the equipment company carries the loan: a scanner down is a payment with nothing behind it. Practice revenue belongs to the practice, which bills the payers. The lunch line, if the split draws a question:
 
-The structural claim holds without a study: the owner's view requires pulling RIS data and the authorization queue into one page, and RIS reporting does not do that for an owner. The RIS export is a contract term from slide 3.
+> =="You run on fixed fees, so your numbers are costs, uptime and flow. Dr. Ramos's practice sees the money it collects. Same system, two views, the line your structure draws."==
+
+**The owner user story (Rick, 2026-11-02), now spoken, not shown.** "As an owner, I want to ask one question on a Monday morning, what did we scan last week, how many slots went empty, how many authorizations are waiting on a payer, how many appeals are open, and get the answer from my own numbers, so that I run the center on facts and not on a report someone has to build for me." The manager and the front desk lead want the same numbers from their side: today's schedule, the open authorizations, the slots that just opened. Smallest compliance envelope of the five; cheapest to build.
+
+There is no external evidence for this candidate, and the research says so plainly. No benchmark literature exists on what imaging center owners want from dashboards. If he asks for a study: "I have no study to show you here. I have the fact that you will want one page on a Monday, and the RIS will not give it to you."
+
+The structural claim holds without a study: the owners' view requires pulling RIS data, the authorization queue, the equipment log and the staffing hours into one page, and the practice's view needs the billing system's collections and denials; RIS reporting does neither for an owner. The RIS export and the billing-vendor access terms are contract terms from slide 3.
 
 Custom by nature, because it encodes one owner's definition of what matters. FDA: "business analytics" and "practice and inventory management" are named in the statute at slide 20. PHI is present, so the BAA and Texas residency still apply, but there is no patient-facing surface.
 
 **The owner agent, and how every agent in this design is built.** Three kinds of agent, by how much damage a mistake can do.
 
-- **The owner agent.** Read-only conversational access over operational data: volumes by modality, cancellations, no-shows, open slots, turnaround, authorizations waiting, appeal status counts. He asks a question in plain words and gets an answer from his own numbers. Lowest risk on the whole list: it reads and never acts, it sees nothing the owner does not already see, it has no patient contact, and it has no clinical surface. It is "business analytics" and "practice and inventory management," named in the statute at slide 20. It is specified in Phase 2 and it is the strongest candidate for the first thing he sees working. It reads your own database, so the AI vendor's BAA exclusions on slide 21 do not touch it.
+- **The owner agent.** Read-only conversational access over the two views: for the owners, volumes by modality, cancellations, no-shows, open slots, turnaround, authorizations waiting, appeal status counts, scanner uptime, staff hours and running costs against budget; for the practice, collections, denials and appeals won, revenue by payer. Each asks a question in plain words and gets an answer from their own numbers. Lowest risk on the whole list: it reads and never acts, it sees nothing the owner does not already see, it has no patient contact, and it has no clinical surface. It is "business analytics" and "practice and inventory management," named in the statute at slide 20. It is specified in Phase 2 and it is the strongest candidate for the first thing he sees working. It reads your own database, so the AI vendor's BAA exclusions on slide 21 do not touch it.
 - **The workflow agents.** Prior auth, records, backfill. They act on the world, and a human signs. Already specified, bounded, medium risk. No change.
 - **Patient-facing voice.** Highest blast radius. Still bought from a vendor. No change.
 
