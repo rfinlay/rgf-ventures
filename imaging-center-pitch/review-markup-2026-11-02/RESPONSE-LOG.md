@@ -283,3 +283,16 @@ Inputs: `REVIEW-CHANGES-2026-11-02.md` section "Rick review 2026-11-03 evening" 
 - QR on slide 11 decodes to `https://rfinlay.github.io/imaging-priorauth-demo/` in both decks and on leave-behind page 2 (zbarimg).
 - No-numbers deck: the only dollar strings are the pre-existing statutory figures ($6.50 flat fee, $500/$1,500 TCPA); no engagement pricing, no running-cost range, no retainer (slides 32 and 33 are removed with the appendix).
 - Speaking notes PDF: no literal `==`; .docx regenerated, 219 yellow highlight runs (was 164), opens from the same script as before.
+
+### Add-on, Rick 17:09: assumptions stated consistently (applied 2026-11-03, fifth pass)
+
+| Where | What changed |
+|---|---|
+| Slide 29 assumption line | Reordered and completed to the five assumptions in Rick's order: one center, one pick per system, extra work quoted and approved first; running costs billed to the center at cost in its own accounts, estimated in Phase 1, budgeted in Phase 3, monthly statement; date change moves the timeline, not the price; outside work $150/hr, approved first. |
+| Slide 26 "What the dates depend on" | Three new dependencies folded into the existing seven (still one slide, no overflow): one pick per system on the vendor line; vendor contracts and BAAs signed before Phase 4 plus the hosting option chosen by the end of Phase 3; payer enrollment and credentialing started early enough to bill at opening (from Sherlock's systems gap audit, rank 1). Every date stays conditional. Presenter note explains the additions. |
+| Leave-behind | "What the dates depend on" paragraph and the "How it works" pricing paragraph carry the same two lists in the same words. Still 2 pages, both variants. |
+| Runbook | "How much?" now has a numbered five-assumption list plus the one-breath line; the "live before a date" answer points to it. |
+| Speaking notes | Slide 26 SAY rewritten with the new dependencies (highlighted); slide 29 gains a highlighted **Assumptions, in one breath** line; slide 26 DEPTH notes the additions. |
+| AUTOMATION-CANDIDATES, architecture page 7 | Assumption bullet and the dependencies panel aligned to the same list. |
+
+Verification: deck 33/27, leave-behind 2/2, architecture 8, runbook 26, notes 49, docx 219 highlights; slides 26 and 29, leave-behind page 2 and architecture page 7 rendered and checked; no-numbers deck still has no pricing strings; 0 em dashes.

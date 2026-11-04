@@ -994,13 +994,13 @@ The closing question is open on purpose. He is opening in direct competition wit
 
 **SAY**
 
-=="The build starts around March so prior authorization works before you open. That holds if six things are true. A signed agreement. Your RIS and PACS vendors chosen, with sandbox access to their interfaces. Test access to the payers' connections. The business associate agreements signed. One named person on your side who approves. And your expected volumes and payer mix before I design anything payer-specific.==
+=="The build starts around March so prior authorization works before you open. That holds if these things are true. A signed agreement. Your vendors chosen, one pick per system, with sandbox access to their interfaces. The vendor contracts and the business associate agreements signed before the build starts, and the hosting option picked by the end of the design phase. Test access to the payers' connections, and your payer enrollment started early enough that you can bill the day you open. One named person on your side who approves. Your expected volumes and payer mix before I design anything payer-specific. And the equipment delivery dates.==
 
 If one of these slips, the dates move with it. You hear about it the day it happens."
 
 **DEPTH / IF ASKED**
 
-This is the only slide that promises a date, and every date on it is conditional. ==The one most likely to slip is vendor selection, because it runs on their calendar: "The RIS choice drives everything after it. That is why the vendor work comes first."==
+This is the only slide that promises a date, and every date on it is conditional. **Added 2026-11-03 (Rick):** the list now carries the dependencies the engagement assumptions create: one pick per system, contracts and BAAs signed before Phase 4, the hosting option chosen by the end of Phase 3, and payer enrollment and credentialing started early (enrollment commonly runs months; a center that opens unenrolled cannot bill). The same list is on slide 29, the leave-behind and the runbook, worded the same way. ==The one most likely to slip is vendor selection, because it runs on their calendar: "The RIS choice drives everything after it. That is why the vendor work comes first."==
 
 ==Do not promise anything beyond the list. If pushed for a guarantee: "Tell me which piece has to be live by when, and we will scope it against these."==
 
@@ -1073,7 +1073,9 @@ Then stop talking.
 
 ==Outside the phases: $150 an hour, approved first, against a retainer the client tops up. The timeline flexes if the opening moves; the price does not. Do not compare the retainer to how their lawyer bills (Rick, 2026-11-02).==
 
-==**The two assumption lines on the slide, say them if he reads them (Rick, 2026-11-03):** "Priced for one center, with one selected system per category. Additional centers, or a different system chosen for another center, are quoted before work starts." And: "Running costs after the build are not in the forty-five. They run in accounts in your name, billed at cost, with an estimated range and a monthly statement."==
+==**Assumptions, in one breath (Rick, 2026-11-03):** "Five assumptions behind that number. It is priced for one center, with one pick per system; another center, or a different pick, I quote before I start. Running costs after the build are not in the forty-five; they are billed to you at cost, in your own accounts, estimated in Phase 1 and budgeted in Phase 3. If the opening date moves, the timeline moves and the price does not. Anything outside the five phases is approved by you first, at a hundred and fifty an hour. And the dates hold while the list on the assumptions slide holds: contracts and BAAs signed before the build, the hosting option picked by the end of design, and your payer enrollment started early enough to bill on day one."==
+
+Those are the same assumptions, in the same words, on slide 29, slide 26, the leave-behind and the runbook.
 
 **DEPTH / IF ASKED**
 
