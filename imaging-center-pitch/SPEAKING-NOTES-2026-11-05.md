@@ -5,7 +5,8 @@
 > **In the room:** Luis, Fernando Escarzaga, and **Jesse Martinez** (an engineer; quiet, analytic, humble).
 > Format: a quiet place, a conversation, not a pitch to an audience. Rick has court by Zoom on Wed 10-28.
 >
-> **Rick's evening review, 2026-11-03, applied (33 slides; 27 in the no-numbers deck):**
+> **Rick's evening review, 2026-11-03, applied (36 slides; 27 in the no-numbers deck):**
+> - **Support plan, APPROVED 17:54:** $3,000 a month for up to 20 hours, $150 an hour beyond, from June 2027, 12-month term with a 90-day check-in, separate from the $45,000; on slide 29 (one row), slide 33 (support row), the leave-behind, slide 29 notes and Q&A Q16. **Two more appendix slides:** 34 "Opening checklist" (required to open, outside the fee, owners named in Phase 1) and 35 and 36 "Ideas worth a look" (follow-up recommendation tracking leads; three smaller ideas on 36).
 > - **Two new appendix slides.** Slide 32, "Systems to select in Phase 2: starting shortlist" (RIS and PACS, dictation, billing and clearinghouse, from Sherlock's landscape; a starting shortlist, the final pick is Phase 2). Slide 33, "What it costs to keep running, and where it runs" (running costs are not in the $45,000; three hosting options). Both are reference, only if asked, inside the last ten minutes.
 > - **Phase 2 now names every system** (slide 29, 31, leave-behind): (1) scheduling; (2) RIS and PACS, evaluated both as one bundled cloud system and as separate best-of-breed RIS plus PACS (Exa is one example); (3) prior authorization and eligibility; (4) patient phones, IVR and AI answering; (5) radiologist voice recognition and dictation; (6) billing and clearinghouse; (7) imaging-specific: modality integration and worklist, reading workstations, image sharing (CD and cloud) (trimmed by Rick 17:48: owners' asks first, then imaging-specific; generic IT items removed).
 > - **The scorecard (slide 18) says what each piece does**, with records split into inbound requests and outbound priors; the "why" lives in the notes. It is now "three of the eight."
@@ -33,7 +34,7 @@
 >
 > **Process facts from Luis, use them:** outside priors arrive by courier on CD or DVD, and after five days the study is read without them. On the calcium score slide it is "calcium," never "nodules."
 
-**El Paso, lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez. Lunch is about an hour. The slides get 40 minutes of it. 33 slides (27 in the no-numbers deck), plus the prior authorization demo he can click on slide 11. RadAssist on slide 19 is a spoken overview, not a demo.**
+**El Paso, lunch, Thursday 2026-11-05, with Luis, Fernando Escarzaga and Jesse Martinez. Lunch is about an hour. The slides get 40 minutes of it. 36 slides (27 in the no-numbers deck), plus the prior authorization demo he can click on slide 11. RadAssist on slide 19 is a spoken overview, not a demo.**
 
 **The hour, budgeted (Rick, 2026-11-02).** Ten minutes before the first slide: sitting down, ordering, the cold-open card (Part 1). Forty minutes of slides: the clock on every slide header below runs from 0:00 at slide 1 to 40:00 at the Thank You. Ten minutes after: Fernando talking, questions, and the appendix if the room asks for the number. If the food arrives mid-deck, stop at the end of the slide you are on and eat; the clock pauses, the cut list below does not change.
 
@@ -104,7 +105,7 @@ If he raises any of it himself: listen, say little, ask nothing, move on.
 
 ---
 
-# PART 2: THE 33 SLIDES, IN ORDER
+# PART 2: THE 36 SLIDES, IN ORDER
 
 ### SLIDE 1 · Six months of free decisions · 0:00 to 1:00
 
@@ -1048,7 +1049,7 @@ Put the leave-behind on the table, one per person (two pages now: the second is 
 
 **DEPTH / IF ASKED**
 
-This divider exists so the number lands after the decisions, as reference material, and so the room can stop before it. If Luis says no numbers, this slide and the five that follow are not in the deck you are showing; the no-numbers variant ends on the Thank You. The appendix is 29 (the engagement), 30 (the timeline), 31 (what I need from you), 32 (the Phase 2 systems and starting shortlist) and 33 (running costs and the three hosting options); the last two only if asked.
+This divider exists so the number lands after the decisions, as reference material, and so the room can stop before it. If Luis says no numbers, this slide and the eight that follow are not in the deck you are showing; the no-numbers variant ends on the Thank You. The appendix is 29 (the engagement), 30 (the timeline), 31 (what I need from you), 32 (the Phase 2 systems and starting shortlist), 33 (running costs and the three hosting options), 34 (the opening checklist), 35 and 36 (ideas worth a look); the last five only if asked.
 
 **BEAT**
 
@@ -1099,7 +1100,9 @@ Those are the same assumptions, in the same words, on slide 29, slide 26, the le
 
 **"Does that change at three centers?" (Rick, 2026-11-03; this replaces the old answer.)** =="The engagement covers this center, and one pick per system. If the other centers use the same picks, they're a smaller engagement: mostly build and go-live. If a center wants something different, that's its own evaluation, and I'll quote it before I start. You'll never get a surprise bill. You'll get a number to approve."== The rule behind it: same picks at another center is a smaller follow-on, mostly Phases 4 and 5; different picks is a new selection for those categories, quoted and approved in writing before work starts.
 
-**"What does it cost to keep running?" (Rick, 2026-11-03.)** Not in the forty-five, and say so before he asks. =="Everything that keeps it running, the cloud, the AI, the texting, the clearinghouse, runs in accounts in your name. You sign each HIPAA agreement, you see each bill, I don't mark any of it up. I'll give you an estimated range in Phase 1 and a firm operating budget in Phase 3, and after opening you get a one-page statement every month: each vendor's bill, the volume it handled, what it did for you."== If he wants a number today: "At expected volume it is around two thousand a month in vendors, with a cap I can't pass without your OK. That is an estimate, confirmed in Phase 1." Slide 33 carries the ranges. Where the money goes, if asked: a properly locked-down HIPAA cloud setup, the clearinghouse transactions (often already inside the billing contract), texting under a HIPAA agreement, security monitoring and a yearly penetration test; the AI usage itself is the small line. Frame it against staff time, never against "AI": one prior authorization coordinator costs more a month than the whole vendor stack. Opening-week support is inside Phase 5; support after that is scoped in writing inside the Phase 3 operating budget. Do not quote a monthly support fee today; it has not been priced.
+**"What does it cost to keep running?" (Rick, 2026-11-03.)** Not in the forty-five, and say so before he asks. =="Everything that keeps it running, the cloud, the AI, the texting, the clearinghouse, runs in accounts in your name. You sign each HIPAA agreement, you see each bill, I don't mark any of it up. I'll give you an estimated range in Phase 1 and a firm operating budget in Phase 3, and after opening you get a one-page statement every month: each vendor's bill, the volume it handled, what it did for you."== If he wants a number today: "At expected volume it is around two thousand a month in vendors, with a cap I can't pass without your OK. That is an estimate, confirmed in Phase 1." Slide 33 carries the ranges. Where the money goes, if asked: a properly locked-down HIPAA cloud setup, the clearinghouse transactions (often already inside the billing contract), texting under a HIPAA agreement, security monitoring and a yearly penetration test; the AI usage itself is the small line. Frame it against staff time, never against "AI": one prior authorization coordinator costs more a month than the whole vendor stack. Opening-week support is inside Phase 5.
+
+**"What happens after opening?" (support plan, APPROVED by Rick 2026-11-03 17:54.)** =="After opening, there's a support plan: a flat monthly fee for a set number of hours, so you always know who to call and what it costs. If you'd rather have me on the team, we can talk about that too."== The plan, if he wants the number: =="Three thousand a month for up to twenty hours, a hundred and fifty an hour beyond that, starting when you open in June, for twelve months with a check-in at ninety days. It covers monitoring, fixes, updates to what I built, coordinating your vendors, and a response-time promise in writing. It is separate from the forty-five, and the running costs stay at cost."== The row is on slide 29 and the support line on slide 33. Keep "or a role on your team" as the alternative; no salary, no title (see the full-time block below).
 
 **"Where does it run?" (the TCO deliverable, Rick, 2026-11-03.)** The Phase 3 deliverable "Total cost of ownership and operating budget" prices three options and the owner picks: A, the center's own secure cloud account; B, hybrid, a box at the center that strips names and IDs before anything goes to the AI company, with the database and backups in the cloud; C, everything on site including a local AI model. Say where you lean, and say the privacy part precisely: =="Your patients' details do go to the AI company, the same way they go to your clearinghouse: under a signed HIPAA agreement, and never kept or trained on. If you'd rather names never leave, we can strip them first. Keeping the AI entirely at the center costs a lot more over three years and gives you a weaker assistant, so I'd only try it as a test."== Never say "no data leaves." Stripping names reduces what the AI company sees; it does not remove patient information, because the packet has to carry the clinical story. Only a model running at the center keeps it from an AI company, and even then the payer, the clearinghouse and the backups still receive it.
 
@@ -1226,13 +1229,83 @@ The three options on the slide. A, the center's own secure cloud account: keeps 
 
 The ranges, all estimates at about 650 studies a month: vendors about $900 to $4,200 a month in A, expected near $2,000; about $1,000 to $4,300 in B; about $1,200 to $3,500 in C plus the hardware. One-time setup outside the fee: $6,000 to $25,000 in A (penetration test, clearinghouse enrollment, interface onboarding), $12,000 to $37,000 in B, $27,000 to $52,000 in C. Where the money goes: the locked-down HIPAA cloud setup, the clearinghouse transactions (often already in the billing contract, so ask the billing vendor first), texting under a HIPAA agreement (the line most likely to surprise), security monitoring and a yearly penetration test. The AI usage itself is a small line even at 900 studies a month.
 
-What is not on the slide: a monthly support fee. Support after opening week is scoped in writing in Phase 3, inside the operating budget. Do not quote one. Do not quote a three-year total; the only three-year figures that exist assume a support fee that has not been priced.
+The support row (Rick, 2026-11-03 17:54): $3,000 a month for up to 20 hours, $150 an hour beyond, from June 2027, 12-month term, 90-day check-in, separate from the $45,000. Vendors plus support at expected volume is about $5,000 a month in the cloud option. Do not quote a three-year total; Phase 3 produces it.
 
 Never say "no data leaves." Stripping names reduces what the AI company sees; it does not remove patient information, because a prior authorization packet has to carry the clinical story. Only a model running at the center keeps it from an AI company, and even then the payer, the clearinghouse and the encrypted offsite backup still receive it.
 
 **BEAT**
 
 Three lines, then stop. If he asks for the cap, say it is set with him in Phase 1 from the real volumes, not today.
+
+---
+
+### SLIDE 34 · Opening checklist: required to open, outside the fee · 45:00 to 46:00, only if asked
+
+Reference. Six things the center must do to open and bill. None is Rick's build; none is in the fee; each gets a named owner in Phase 1.
+
+**SAY**
+
+=="None of this is my build and none of it is in the forty-five. It is what you have to do to open and bill, and in Phase 1 every line gets a name and a date, because the first one takes months."==
+
+==Then the one that matters: "Payer enrollment and credentialing is the longest lead item on this list. If it starts late, you open and cannot bill. It starts in Phase 1."==
+
+**DEPTH / IF ASKED**
+
+The six rows: payer enrollment and radiologist credentialing (Medicare IDTF enrollment, Texas Medicaid, TRICARE, commercial payers, CAQH; center administrator with a credentialing service; starts in Phase 1); ACR accreditation for MRI and CT (Medicare requires it to bill the technical component; brings CT dose records, an MR safety policy, physician peer review and a physicist QC program with it; medical director with a contracted physicist; plan in Phase 1, submit after go-live); Texas DSHS CT registration (registration, shielding, dosimetry, operator credentials; physicist and administrator; starts in Phase 1); CLIA certificate of waiver (before the first fingerstick creatinine; administrator); HIPAA security basics (risk analysis, MFA, endpoint protection, backup and downtime plan, incident response and Texas breach notice; designed in Phase 3, owned by the center); HB 300 staff training (within 90 days of hire, signed statements kept, plus the posted records-request notice; administrator, as staff are hired).
+
+Say "months" for enrollment; do not quote a day count. The owner roles on the slide are proposals: ask who on their side owns each one and write it down. Compliance-only systems (dose monitoring, MRI safety screening, contrast and injector logs) are bought inside the RIS or PACS or from a dose tool and are never pitched as value.
+
+**BEAT**
+
+Point at row one. Ask who owns it. Write the name down.
+
+---
+
+### SLIDE 35 · Ideas worth a look · 46:00 to 47:00, only if asked (slide 36 carries the three smaller ideas)
+
+Reference. Not in the fee. Scoped and priced only if they ask, after Phase 1.
+
+**SAY**
+
+=="When your radiologist says 'repeat in six months,' we make sure it happens and the referrer knows. That protects the patient, protects the radiologist, and brings the follow-up back to you."==
+
+**THEN SAY (the caveats, unprompted)**
+
+=="Those numbers come from hospital programs, most of them with a person making the calls, not just software. And the outreach always says 'your doctor recommended' and goes through the referrer. We never ask a patient for a scan directly."==
+
+**DEPTH / IF ASKED**
+
+Follow-up recommendation tracking: every report that recommends more imaging is logged, the referrer is told, and at the due date someone checks it happened; if not, one outreach call. Tracked programs completed follow-up 78% versus 52% untracked (a nurse-navigator lung-nodule program, Respir Med 2022); a private 33-radiologist group's own tool took lung-nodule follow-up from 26.5% to 59.7% (BMJ Open Qual 2019). Never quote a malpractice dollar figure; none is sourced. A Rick build on top of report delivery, a few weeks, estimate only.
+
+Good-faith cost estimates at scheduling: across 470,422 outpatient imaging visits at UC Irvine, patients given a staff-generated out-of-pocket estimate had nearly twice the odds of completing the exam (OR 1.91, Clin Imaging 2025). An association, not a trial; patients who ask for estimates may differ. Rides on the eligibility feed, satisfies the No Surprises Act in the same step; mostly a RIS or billing-vendor feature.
+
+One-liners: structured referrer orders (at Emory only 51% of abdominal CT requisitions carried the cancer history; "if the order arrives complete, prior auth is mostly paperwork"; the link to denials is inference, not a sourced number); peer learning instead of score-based review (accreditation requires peer review anyway; peer learning took radiologists less than half the time in one study, Clin Imaging 2024; bought, not built); contrast pre-screening plus fingerstick creatinine ("a two-minute fingerstick, not a second appointment"; needs the CLIA waiver on slide 34; bought).
+
+**BEAT**
+
+Lead line, caveats, stop. If Luis lights up at the follow-up tracker, write down what he would want it to do first. That is a requirement, not a reaction.
+
+---
+
+### SLIDE 36 · Ideas worth a look, continued · 47:00 to 47:30, only if asked
+
+Three smaller ideas, each bought or configured, not built. One line each.
+
+**SAY**
+
+==Structured referrer orders: "If the order arrives complete, prior auth is mostly paperwork; if it doesn't, it's phone calls, so we make the order carry what the payer will ask for."==
+
+==Peer learning: "Accreditation requires peer review anyway; we set it up as peer learning, which takes radiologists less than half the time."==
+
+==Contrast screening: "A patient who shows up for a contrast CT without a recent kidney test should get a two-minute fingerstick, not a second appointment."==
+
+**DEPTH / IF ASKED**
+
+Structured orders: at Emory only 51% of abdominal CT requisitions carried the cancer history (PMID 40517119); the link to denials is inference, so say "fewer chase calls," never a denial number; mostly a RIS referrer-portal feature, the field list is Phase 3 work. Peer learning: 0.76 versus 1.71 hours a month per radiologist (Clin Imaging 2024, PMID 38113549); a PACS module or the ACR program, nothing to build. Contrast: the kidney questions go into the pre-visit intake, the fingerstick needs the CLIA waiver on slide 34; a device and cartridges, bought. Dose monitoring, MRI safety screening and contrast logs are compliance items, never value.
+
+**BEAT**
+
+One line each. Then close the laptop.
 
 ---
 
@@ -1329,7 +1402,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 ## Fernando Q&A (rehearsed 2026-11-03)
 
-==Ten questions, asked by Gio as Fernando on 2026-11-03; these are the approved answers, verbatim. Say them as written. Q11 to Q15 are Rick's approved lunch lines from his evening review the same day; they sit before Q10 so the closing question stays last.==
+==Ten questions, asked by Gio as Fernando on 2026-11-03; these are the approved answers, verbatim. Say them as written. Q11 to Q16 are Rick's approved lunch lines from his evening review the same day; they sit before Q10 so the closing question stays last.==
 
 > ==**Patterns to hold.**==
 > ==State the fixed price plainly: forty-five thousand, five phases, priced today; never hedge it.==
@@ -1401,6 +1474,10 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 ==**Q15. "What is this Texas law you keep mentioning?" (HB 300; Rick, 2026-11-03)**==
 
 =="Texas privacy law covers me directly, not just through our contract. If I mishandle your patients' data, I'm the one the state comes after. That's how it should be."==
+
+==**Q16. "What happens after opening?" (Rick, 2026-11-03)**==
+
+=="After opening, there's a support plan: a flat monthly fee for a set number of hours, so you always know who to call and what it costs. If you'd rather have me on the team, we can talk about that too."==
 
 ==**Q10. "One reason, one sentence, why say yes today."**==
 
