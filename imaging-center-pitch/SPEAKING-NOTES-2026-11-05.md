@@ -4,13 +4,13 @@
 >
 > **The meeting:** Thursday 2026-11-05 at **3:30 PM**, a private briefing, not a meal. Casual dress. Luis brings a monitor. Thirty to forty-five minutes of presentation, then questions. **Present WITHOUT these notes:** every slide now carries the sentence you say as its headline plus two or three short lines; this sheet is the backup and the depth, not the script.
 >
-> **REORDERED OPENING, Rick 2026-11-05 01:37, slides 2 to 6 reordered again at 01:57. The deck, 36 slides (29 in the no-numbers variant). Main flow 1 to 25, price on 23, Thank You on 25.** New order: 1 cover (hook first, then the intro), 2 where you are (with the 2026 and 2027 dates in one line; the "?" vendor question is asked here), 3 the free move, 4 what an AI agent is (before the numbers), 5 the headline number, 6 why greenfield, 7 Part one, 8 what prior auth costs, 9 why nobody appeals, 10 one order through prior authorization (demo + QR), 11 Part two, 12 backfill, 13 reminders, 14 voice, 15 records, 16 owner numbers, 17 scorecard, 18 FDA, 19 boundaries, 20 bus, 21 do not buy, 22 if it were my money, **23 the engagement (price)**, 24 timeline, **25 Thank You**, 26 appendix divider, 27 shortlist, 28 running costs, 29 opening checklist, 30 and 31 ideas, 32 report assistance, 33 RadAssist, 34 the federal dates (moved out of the main flow), 35 dates depend on, 36 what I need. Dated blocks below written before 2026-11-05 keep their older numbers.
+> **REORDERED OPENING, Rick 2026-11-05 01:37, slides 2 to 6 reordered at 01:57, slides 5 to 7 reordered at 02:14. The deck, 36 slides (29 in the no-numbers variant). Main flow 1 to 25, price on 23, Thank You on 25.** New order: 1 cover (hook first, then the intro), 2 where you are (with the 2026 and 2027 dates in one line; the "?" vendor question is asked here), 3 the free move, 4 what an AI agent is (before the numbers), 5 why greenfield ("you have not hired that person yet" leads into Part one), 6 Part one, 7 the headline number (the number you opened with, now on the screen), 8 what prior auth costs, 9 why nobody appeals, 10 one order through prior authorization (demo + QR), 11 Part two, 12 backfill, 13 reminders, 14 voice, 15 records, 16 owner numbers, 17 scorecard, 18 FDA, 19 boundaries, 20 bus, 21 do not buy, 22 if it were my money, **23 the engagement (price)**, 24 timeline, **25 Thank You**, 26 appendix divider, 27 shortlist, 28 running costs, 29 opening checklist, 30 and 31 ideas, 32 report assistance, 33 RadAssist, 34 the federal dates (moved out of the main flow), 35 dates depend on, 36 what I need. Dated blocks below written before 2026-11-05 keep their older numbers.
 >
 > **The "?" badge (Rick, 2026-11-04 practice run).** Four slides carry a small "?" top-right as a silent cue; the question is never printed on the slide, it is on the meeting card and asked aloud, in this order: **cover (1)** "Fernando, what would make the next 30 minutes worth your time?" (then Jesse, then Luis); **where you are (2)** "Have you signed any RIS or billing vendors yet?" (the answer says whether the free move on 3 still applies); **owner numbers (16)** "What would each of you want to see on a Monday morning?"; **if it were my money (22)** "What would you do differently this time, building it from scratch?" Slides 12 to 15 now carry a recommendation tag top-right (Build, small; Buy; Buy, I integrate; Build, two small tools) matching the scorecard, and every percentage on a slide shows its base.
 >
-> **Content changes this round:** slide 2 carries the 2027 rule in one plain line (electronic prior auth through an API, fast; Medicare Advantage, Medicaid, CHIP, exchange plans; not TRICARE or VA). Slide 5 ends on "Four in five appeals win. Almost nobody files one." (the why line was removed 11-04 evening). Slide 4 is two boxes, workflow agent and owner's agent, guardrails as one line. Slide 15 is problem, fix, honest gap, with Luis's QR-coded envelope label for outgoing prior requests. Slide 17: "One system, two views. All three of you see both." (the revenue view is owned by the practice and visible to all three; Luis OK'd). Slide 28: Exa is the likely RIS and PACS; negotiate as three centers for volume pricing and put the four access terms into the Exa contract; the final pick is still Phase 2.
+> **Content changes this round:** slide 2 carries the 2027 rule in one plain line (electronic prior auth through an API, fast; Medicare Advantage, Medicaid, CHIP, exchange plans; not TRICARE or VA). Slide 7 ends on "Four in five appeals win. Almost nobody files one." (the why line was removed 11-04 evening). Slide 4 is two boxes, workflow agent and owner's agent, guardrails as one line. Slide 15 is problem, fix, honest gap, with Luis's QR-coded envelope label for outgoing prior requests. Slide 17: "One system, two views. All three of you see both." (the revenue view is owned by the practice and visible to all three; Luis OK'd). Slide 28: Exa is the likely RIS and PACS; negotiate as three centers for volume pricing and put the four access terms into the Exa contract; the final pick is still Phase 2.
 >
-> **The clock:** 0:00 to about 33:00. Price at about 29:00. Skip order: 16, then 22 (keep its question for the Thank You), then 13 to one sentence, then 8 and 9 to their closing lines. Never skip 3, 4, 5, 10, 17, 20, 21 or 23. At 25:30 and not yet on 20: jump to 20, then 23.
+> **The clock:** 0:00 to about 33:00. Price at about 29:00. Skip order: 16, then 22 (keep its question for the Thank You), then 13 to one sentence, then 8 and 9 to their closing lines. Never skip 3, 4, 7, 10, 17, 20, 21 or 23. At 25:30 and not yet on 20: jump to 20, then 23.
 
 > ## 📌 UPDATED 2026-11-03 EVENING (Rick's review items R9 to R19; Thursday 2026-11-05). Earlier the same day: Rick's answers to the 11-02 round. Earlier updates 2026-11-02 (review round), 2026-11-01 (RadAssist on slide 33) and 2026-10-22 (Luis rehearsal).
 >
@@ -52,7 +52,7 @@
 
 **The clock, budgeted (Rick, 2026-11-04 final round).** The cold-open card (Part 1) is the first ninety seconds, inside slide 1. About thirty-five minutes of slides: the clock on every slide header below runs from 0:00 at slide 1 to 33:00 at the Thank You. The price is reached at about 29:00 on slide 23, before the Thank You on 25. After that: Fernando talking, questions, and the appendix if the room asks.
 
-**If short on time, skip, in this order (final order, 2026-11-04).** Cut in this order and nothing you need is lost: **slide 16** (owner numbers; the scorecard on 17 names it) first, then **slide 22** (if it were my money; keep its closing question and ask it on the Thank You, 25), then **slide 13** down to one sentence ("Your RIS will do reminders. Let it."), then **slides 8 and 9** down to their closing lines ("A process that approves 95% of what it touches is one you automate" and "Both are what an agent removes"). **Never skip 3, 4, 5, 10, 17, 20, 21 or 23.** If you reach 25:30 on the slide clock and are not yet on slide 20, jump to 20, then 23: the bus answer, then the price. (Report assistance, the RadAssist proof, what the dates depend on and what I need from you are all in the appendix now and never on the clock.)
+**If short on time, skip, in this order (final order, 2026-11-04).** Cut in this order and nothing you need is lost: **slide 16** (owner numbers; the scorecard on 17 names it) first, then **slide 22** (if it were my money; keep its closing question and ask it on the Thank You, 25), then **slide 13** down to one sentence ("Your RIS will do reminders. Let it."), then **slides 8 and 9** down to their closing lines ("A process that approves 95% of what it touches is one you automate" and "Both are what an agent removes"). **Never skip 3, 4, 7, 10, 17, 20, 21 or 23.** If you reach 25:30 on the slide clock and are not yet on slide 20, jump to 20, then 23: the bus answer, then the price. (Report assistance, the RadAssist proof, what the dates depend on and what I need from you are all in the appendix now and never on the clock.)
 **In the room:** Dr. Luis Ramos (uses RadAssist daily; your champion), Fernando Escarzaga (founded Southwest X-Ray and sold it in 2019; the skeptic and the signer), and Jesse Martinez (an engineer; quiet and analytic).
 
 This is a rehearsal sheet, not a reference. Read it aloud, top to bottom, in order. The RUNBOOK is for lookup. This is for practice.
@@ -153,7 +153,7 @@ Nothing to defend here. The only claim is that Luis uses RadAssist daily on real
 
 **BEAT**
 
-Deck on slide 1 while they sit down. Hook first, then the opener, slowly. The three-way intro, then click to slide 2 (where you are). Ask the vendor question there; the headline number, the hook on the screen, comes on slide 5. Ask Fernando, then Jesse, then release Luis, before you advance. Write their answers down and reuse them later ("Jesse, you mentioned uptime. That's on this slide."). Keep the open to about three minutes. If Fernando names several companies, he has built and run this kind of business more than once. Do not explain to him what a RIS, a billing system, or an interface is at any point today; he knows. Explain only what the agents do.
+Deck on slide 1 while they sit down. Hook first, then the opener, slowly. The three-way intro, then click to slide 2 (where you are). Ask the vendor question there; the headline number, the hook on the screen, comes on slide 7. Ask Fernando, then Jesse, then release Luis, before you advance. Write their answers down and reuse them later ("Jesse, you mentioned uptime. That's on this slide."). Keep the open to about three minutes. If Fernando names several companies, he has built and run this kind of business more than once. Do not explain to him what a RIS, a billing system, or an interface is at any point today; he knows. Explain only what the agents do.
 
 ---
 
@@ -257,13 +257,65 @@ Never frame either kind as replacing anyone. It changes what your people do.
 
 Plain words, no acronyms on this slide. If Fernando nods through it, move on; if he asks a question, that question is the conversation.
 
-**LEAD-IN TO SLIDE 5 (say before you advance)**
+### SLIDE 5 · Why greenfield matters · 5:30 to 6:30
 
-=="Now the number I opened with, on the screen."==
+**SAY**
+
+=="Forty percent of physicians report having staff who work exclusively on prior authorization.==
+
+==You have not hired that person yet.==
+
+==Two in five practices end up hiring someone whose entire job is prior auth. For you, the decision to automate or to staff is live right now. It will never be live again."==
+
+**THEN SAY (the caveat)**
+
+=="That is the AMA's 2025 survey of a thousand physicians. It is self-reported."==
+
+**DEPTH / IF ASKED**
+
+Source: American Medical Association, 2025 AMA Prior Authorization Physician Survey. 1,000 practicing physicians, 400 primary care and 600 specialists, nationwide. Figures read directly from the report.
+
+Frame it as revenue capture and capacity, never as headcount. Two reasons. First, El Paso wages run about 25% below the national average across all occupations: the El Paso metro all-occupation mean is $24.94 an hour against $33.54 nationally (BLS, May 2025 El Paso release 26-1364-DAL, dated 2026-08-13). A displaced-FTE argument is worth less here than it sounds. Second, Fernando came up as a technologist and has run departments. If he hears layoffs, he disengages politely and you never find out why. The line is: the work gets done without a bigger org chart.
+
+Ask here: "How many prior authorizations a day were you running at steady state, and who did them?" His answer tells you whether he already lived this statistic.
+
+**BEAT**
+
+==Pause after "you have not hired that person yet." That is the whole greenfield argument in one sentence, and it is the lead-in to Part one.==
 
 ---
 
-### SLIDE 5 · The headline number · 5:30 to 7:30
+**LEAD-IN TO SLIDE 6 (say before you advance)**
+
+=="You have not hired that person yet. Which brings me to the thing you did not ask about."==
+
+---
+
+### SLIDE 6 · Part one: the thing you did not ask about · 6:30 to 7:00
+
+**SAY**
+
+=="You asked Luis about scheduling, phones, and records. Those are real. The thing I would put first is the one you did not mention.==
+
+==Prior authorization and eligibility verification. It is larger, and it has the best evidence."==
+
+**DEPTH / IF ASKED**
+
+Nothing to defend. This is a transition.
+
+**BEAT**
+
+Plainly, without any edge. This is not a gotcha. Say it and advance.
+
+---
+
+**LEAD-IN TO SLIDE 7 (say before you advance)**
+
+=="Now, the number I opened with, on the screen."==
+
+---
+
+### SLIDE 7 · The headline number · 7:00 to 9:00
 
 **SAY**
 
@@ -291,53 +343,7 @@ If he quotes an imaging denial rate of 25 to 40% at you: do not confirm it. Thos
 
 **BEAT**
 
-==Say "four in five," then stop. Count to five in your head if you have to. Let Fernando connect it. He will.==
-
----
-
-### SLIDE 6 · Why greenfield matters · 7:30 to 8:30
-
-**SAY**
-
-=="Forty percent of physicians report having staff who work exclusively on prior authorization.==
-
-==You have not hired that person yet.==
-
-==Two in five practices end up hiring someone whose entire job is prior auth. For you, the decision to automate or to staff is live right now. It will never be live again."==
-
-**THEN SAY (the caveat)**
-
-=="That is the AMA's 2025 survey of a thousand physicians. It is self-reported."==
-
-**DEPTH / IF ASKED**
-
-Source: American Medical Association, 2025 AMA Prior Authorization Physician Survey. 1,000 practicing physicians, 400 primary care and 600 specialists, nationwide. Figures read directly from the report.
-
-Frame it as revenue capture and capacity, never as headcount. Two reasons. First, El Paso wages run about 25% below the national average across all occupations: the El Paso metro all-occupation mean is $24.94 an hour against $33.54 nationally (BLS, May 2025 El Paso release 26-1364-DAL, dated 2026-08-13). A displaced-FTE argument is worth less here than it sounds. Second, Fernando came up as a technologist and has run departments. If he hears layoffs, he disengages politely and you never find out why. The line is: the work gets done without a bigger org chart.
-
-Ask here: "How many prior authorizations a day were you running at steady state, and who did them?" His answer tells you whether he already lived this statistic.
-
-**BEAT**
-
-==Pause after "you have not hired that person yet." That is the whole greenfield argument in one sentence.==
-
----
-
-### SLIDE 7 · Part one: the thing you did not ask about · 8:30 to 9:00
-
-**SAY**
-
-=="You asked Luis about scheduling, phones, and records. Those are real. The thing I would put first is the one you did not mention.==
-
-==Prior authorization and eligibility verification. It is larger, and it has the best evidence."==
-
-**DEPTH / IF ASKED**
-
-Nothing to defend. This is a transition.
-
-**BEAT**
-
-Plainly, without any edge. This is not a gotcha. Say it and advance.
+==Say "the number I opened with," then the figures, then "four in five," then stop. Count to five in your head if you have to. Let Fernando connect it. He will.==
 
 ---
 
@@ -395,7 +401,7 @@ Say the number, the line under it, and the closing line, and let it sit for a be
 
 ### SLIDE 9 · Why nobody appeals · 10:30 to 12:00
 
-==Two numbers and one line. This is slide 5 from the other side: four in five appeals win and almost nobody files one, and here are the two reasons people give.==
+==Two numbers and one line. This is slide 7 from the other side: four in five appeals win and almost nobody files one, and here are the two reasons people give.==
 
 **SAY**
 
@@ -409,11 +415,11 @@ Say the number, the line under it, and the closing line, and let it sit for a be
 
 **DEPTH / IF ASKED**
 
-Tie it back to slide 5 if he connects them: the reasons people give for not appealing are exactly the things an agent removes. Nobody has time, and nobody tracks the odds. The agent drafts the appeal with the clinical rationale, queues it for a human signature, and reports the appeal rate and overturn rate weekly, so the owner sees the odds he is currently guessing at.
+Tie it back to slide 7 if he connects them: the reasons people give for not appealing are exactly the things an agent removes. Nobody has time, and nobody tracks the odds. The agent drafts the appeal with the clinical rationale, queues it for a human signature, and reports the appeal rate and overturn rate weekly, so the owner sees the odds he is currently guessing at.
 
 **The federal backstop (off the slide since 2026-11-03 22:05; say it if he needs a source that is not a vendor, because it pre-empts "this is AI hype"):** =="CMS priced that same burden at 220 million provider hours over ten years, in the prior authorization rule itself."== Then the caveat, with the same weight as the number: =="That is CMS's projection in the rule. It is not measured savings. Nobody has gone back and counted yet."== CMS-0057-F, 89 FR 8758, published 2024-02-08, Regulatory Impact Analysis, verified in the Federal Register full text. The dollar figure is at least 16 billion over ten years; lead with hours, because hours are the thing he actually paid for. Why it lands: the source is a binding federal rule, not a vendor and not a consultant.
 
-Where the two percentages come from: the AMA 2025 Prior Authorization Physician Survey, the same survey as the 13 hours, about a thousand physicians, self-reported. The 11.5% appealed and 80.7% overturned on slide 5 are KFF from CMS-reported Medicare Advantage data; different source, same conclusion.
+Where the two percentages come from: the AMA 2025 Prior Authorization Physician Survey, the same survey as the 13 hours, about a thousand physicians, self-reported. The 11.5% appealed and 80.7% overturned on slide 7 are KFF from CMS-reported Medicare Advantage data; different source, same conclusion.
 
 **BEAT**
 
@@ -1442,7 +1448,7 @@ Write every answer down at the table.
 
 1. **At the open ("?" badge on the cover; card question 1), before anything about his history:** "Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?" Then: "Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?" Then: "Luis, you've heard me before, so stop me anytime." Write the answers down and reuse them later.
 2. **Slide 2, where you are ("?" badge; card question 2):** "Have you signed any RIS or billing vendors yet?" The answer tells you whether the free move (slide 3) still applies.
-3. **Slide 6, the 40% statistic:** "How many prior authorizations a day were you running at steady state, and who did them?"
+3. **Slide 5, the 40% statistic:** "How many prior authorizations a day were you running at steady state, and who did them?"
 4. **Slide 34, the federal dates:** "What is your payer mix going to look like?"
 5. **Slide 12, before you lean on 22.3%:** "What was your cancellation rate, and what did you do with the empty slot?"
 6. **Slide 14, before the voice recommendation:** "Who takes the phone call when a patient describes chest pain?"
@@ -1473,7 +1479,7 @@ Cut slide 16 first. Never cut 4, 20, 21, or 23. In five minutes you keep:
 | 4:00 to 4:30 | 22 | What I recommend you do not buy from me. Slowly. |
 | 4:30 to 5:00 | 24 | The price, once. Stop. |
 
-What is lost in the 5-minute version: every caveat except the two on slides 5 and 6, the federal dates, the records rules, the boundaries slides. If he asks about any of them, you have the full answer above.
+What is lost in the 5-minute version: every caveat except the two on slides 5 and 7, the federal dates, the records rules, the boundaries slides. If he asks about any of them, you have the full answer above.
 
 ## Fernando Q&A (rehearsed 2026-11-03)
 
@@ -1628,7 +1634,7 @@ Listed so you know what changed and why, not because anything is outstanding.
 - **The "two centers" error is corrected** to one company with five El Paso locations, in the deck presenter note where it lived.
 - **The RUNBOOK objection answer no longer quotes "and then we scale it."** It names the consequence instead of the slogan.
 
-**The one judgment call left is yours, and it is not a defect:** if the meeting runs long, follow the skip order at the top of Part 2 (16, then 22, then 13 to one sentence, then 8 and 9 to their closing lines), and never slides 3, 4, 5, 10, 17, 20, 21, or 23.
+**The one judgment call left is yours, and it is not a defect:** if the meeting runs long, follow the skip order at the top of Part 2 (16, then 22, then 13 to one sentence, then 8 and 9 to their closing lines), and never slides 3, 4, 7, 10, 17, 20, 21, or 23.
 
 ## Deck order is narrative, on purpose
 
@@ -1642,7 +1648,7 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **ACS.** American Community Survey. The Census Bureau's ongoing survey; the source of the El Paso limited-English figure on slide 14.
 
-**AMA.** American Medical Association. Its 2025 physician survey is the source of the 13 hours and 40 percent figures on slides 6 and 8. Self-reported survey data, which is why the caveat is mandatory.
+**AMA.** American Medical Association. Its 2025 physician survey is the source of the 13 hours and 40 percent figures on slides 5 and 8. Self-reported survey data, which is why the caveat is mandatory.
 
 **API.** Application programming interface. A documented way for one system to read or write another system's data without a human in a screen. Contract term one on slide 3; the payer-side APIs on slide 34 are what the prior auth agent consumes.
 
@@ -1650,7 +1656,7 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **BAA.** Business associate agreement. The HIPAA contract a provider signs with any vendor that handles patient data on its behalf. Every vendor in this design needs one, including the AI model vendor, and slide 19 names what the AI vendor's agreement does and does not cover.
 
-**BLS.** Bureau of Labor Statistics. Source of the El Paso wage figure on slide 6.
+**BLS.** Bureau of Labor Statistics. Source of the El Paso wage figure on slide 5.
 
 **CAQH.** Council for Affordable Quality Healthcare, now publishing as DataSpring. Its annual index is the source of the 63 percent of plans already building the prior auth API on slide 34. Payer self-report.
 
@@ -1692,9 +1698,9 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **HL7 / HL7 v2.** Health Level Seven, version 2. The decades-old messaging standard that a RIS uses to talk to a PACS, a billing system, or anything else. Every connection is an "interface," and vendors quote them one at a time, which is why contract term two on slide 3 fixes the count and the fee schedule at signature.
 
-**KFF.** Formerly the Kaiser Family Foundation, an independent health policy research organization. Its analysis of payer-reported CMS data is the source of the four-in-five headline on slide 5.
+**KFF.** Formerly the Kaiser Family Foundation, an independent health policy research organization. Its analysis of payer-reported CMS data is the source of the four-in-five headline on slide 7.
 
-**MA.** Medicare Advantage. Medicare coverage delivered through a private insurer under contract with CMS, instead of traditional Medicare run by CMS directly. The headline number on slide 5 is a Medicare Advantage number, and the federal rule binds these plans.
+**MA.** Medicare Advantage. Medicare coverage delivered through a private insurer under contract with CMS, instead of traditional Medicare run by CMS directly. The headline number on slide 7 is a Medicare Advantage number, and the federal rule binds these plans.
 
 **MCP.** Model Context Protocol. A standard for connecting an AI model to outside tools and data. Named on slide 19 only because data flowing through third-party MCP connectors is outside the AI vendor's BAA.
 

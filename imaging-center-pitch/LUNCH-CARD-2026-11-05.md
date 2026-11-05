@@ -19,7 +19,7 @@
 
 ## If short on time, skip in this order
 
-**16**, then **22** (keep its question for the Thank You), then **13** to one sentence, then **8 and 9** to their closing lines. ==Never skip 3, 4, 5, 10, 17, 20, 21 or 23.== At 25:30 and not yet on 20: jump to **20, then 23.** Price at about 29:00; Thank You at 33:00.
+**16**, then **22** (keep its question for the Thank You), then **13** to one sentence, then **8 and 9** to their closing lines. ==Never skip 3, 4, 7, 10, 17, 20, 21 or 23.== At 25:30 and not yet on 20: jump to **20, then 23.** Price at about 29:00; Thank You at 33:00.
 
 ## Never say
 
