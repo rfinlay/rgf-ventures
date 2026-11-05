@@ -8,7 +8,7 @@
 >
 > **The "?" badge (Rick, 2026-11-04 practice run).** Four slides carry a small "?" top-right as a silent cue; the question is never printed on the slide, it is on the meeting card and asked aloud, in this order: **cover (1)** "Fernando, what would make the next 30 minutes worth your time?" (then Jesse, then Luis); **vendor contracts (3)** "Have you signed any RIS or billing vendors yet?"; **owner numbers (17)** "What would each of you want to see on a Monday morning?"; **if it were my money (23)** "What would you do differently this time, building it from scratch?" Slides 13 to 16 now carry a recommendation tag top-right (Build, small; Buy; Buy, I integrate; Build, two small tools) matching the scorecard, and every percentage on a slide shows its base.
 >
-> **Content changes this round:** slide 2 carries the 2027 rule in one plain line (electronic prior auth through an API, fast; Medicare Advantage, Medicaid, CHIP, exchange plans; not TRICARE or VA). Slide 4 carries the why: "Every denial nobody appeals is revenue left on the table. Next: how an agent gets it back." Slide 6 is two boxes, workflow agent and owner's agent, guardrails as one line. Slide 16 is problem, fix, honest gap, with Luis's QR-coded envelope label for outgoing prior requests. Slide 17: "One system, two views. All three of you see both." (the revenue view is owned by the practice and visible to all three; Luis OK'd). Slide 28: Exa is the likely RIS and PACS; negotiate as three centers for volume pricing and put the four access terms into the Exa contract; the final pick is still Phase 2.
+> **Content changes this round:** slide 2 carries the 2027 rule in one plain line (electronic prior auth through an API, fast; Medicare Advantage, Medicaid, CHIP, exchange plans; not TRICARE or VA). Slide 4 ends on "Four in five appeals win. Almost nobody files one." (the why line was removed 11-04 evening). Slide 6 is two boxes, workflow agent and owner's agent, guardrails as one line. Slide 16 is problem, fix, honest gap, with Luis's QR-coded envelope label for outgoing prior requests. Slide 17: "One system, two views. All three of you see both." (the revenue view is owned by the practice and visible to all three; Luis OK'd). Slide 28: Exa is the likely RIS and PACS; negotiate as three centers for volume pricing and put the four access terms into the Exa contract; the final pick is still Phase 2.
 >
 > **The clock:** 0:00 to about 34:30. Price at about 30:30. Skip order: 17, then 23 (keep its question for the Thank You), then 14 to one sentence, then 8 and 9 to their closing lines. Never skip 3, 4, 6, 11, 18, 21, 22 or 24. At 27:00 and not yet on 21: jump to 21, then 24.
 
@@ -223,9 +223,7 @@ This is the slide that proves you are on their side of the table, and it does no
 
 ==Four in five appeals win. Almost nobody files one."==
 
-Stop talking. Then the why, from the last line on the slide (Luis asked for it, 2026-11-04):
-
-=="Every denial nobody appeals is revenue left on the table. Next: how an agent gets it back."==
+Stop talking. Let the line land.
 
 **THEN SAY (the caveat)**
 

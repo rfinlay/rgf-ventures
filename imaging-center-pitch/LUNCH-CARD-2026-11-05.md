@@ -9,7 +9,7 @@
 
 ## The five lines to land
 
-1. **Four in five appeals win. Almost nobody files one.** 11.5% of 4.1 million denials appealed, 80.7% of those overturned. ==Medicare Advantage, all services, not an imaging number; the only audited national figure.== Then: ==every denial nobody appeals is revenue left on the table.==
+1. **Four in five appeals win. Almost nobody files one.** 11.5% of 4.1 million denials appealed, 80.7% of those overturned. ==Medicare Advantage, all services, not an imaging number; the only audited national figure.==
 2. **13 hours a week, about 40 requests, and 40% have someone working only on this. ==You have not hired that person yet.==** AMA 2025, self-reported.
 3. **95% of MRI prior auths are approved. ==A process that approves 95% of what it touches is one you automate, not one you staff.==** CMS: 220 million provider hours over ten years, in the rule; ==a projection, not measured savings.==
 4. **22.3% cancelled versus 2.0% no-show, seventy percent with notice.** ==Backfill, not reminders.== UC Irvine, one center; your numbers will differ, the pattern will not.
