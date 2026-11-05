@@ -2,7 +2,7 @@
 
 ## The four questions, in order (the "?" slides; asked aloud, nothing printed on the slide)
 
-1. **Cover (1):** =="Fernando, what did you build, and how many centers were you running at the end?"== Let him talk.
+1. **Cover (1), after the opener** (=="I'm Rick Finlay. I build and operate AI agent systems. Dr. Ramos uses one every day on real patients, RadAssist. I'm not here to sell you software. I'm here to tell you which decisions are free right now."==)**:** =="Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?"== Then: =="Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?"== Then: =="Luis, you've heard me before, so stop me anytime."== Write every answer down; reuse them later ("Jesse, you mentioned uptime. That's on this slide."). About 3 minutes.
 2. **Vendor contracts (3):** =="Have you signed any RIS or billing vendors yet?"== If Exa: likely pick; three centers; the four terms in the contract; Phase 2 decides.
 3. **Owner numbers (17):** =="What would each of you want to see on a Monday morning?"== Write every answer down.
 4. **If it were my money (23):** =="What would you do differently this time, building it from scratch?"== Do not fill the silence.

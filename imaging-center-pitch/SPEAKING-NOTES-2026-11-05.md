@@ -6,7 +6,7 @@
 >
 > **The deck, 36 slides (29 in the no-numbers variant). Main flow 1 to 26, price on 24, Thank You on 26.** Pulled from the main flow into the appendix (Luis): the RadAssist proof (now **34**), what the dates depend on (now **35**), what I need from you (now **36**, it is in the leave-behind). So: 19 FDA, 20 boundaries, 21 bus, 22 do not buy, 23 if it were my money, **24 the engagement (price)**, 25 timeline, **26 Thank You**, 27 appendix divider, 28 shortlist, 29 running costs, 30 opening checklist, 31 and 32 ideas, 33 report assistance, 34 RadAssist, 35 dates depend on, 36 what I need. Slides 1 to 18 are unchanged in position.
 >
-> **The "?" badge (Rick, 2026-11-04 practice run).** Four slides carry a small "?" top-right as a silent cue; the question is never printed on the slide, it is on the meeting card and asked aloud, in this order: **cover (1)** "Fernando, what did you build?"; **vendor contracts (3)** "Have you signed any RIS or billing vendors yet?"; **owner numbers (17)** "What would each of you want to see on a Monday morning?"; **if it were my money (23)** "What would you do differently this time, building it from scratch?" Slides 13 to 16 now carry a recommendation tag top-right (Build, small; Buy; Buy, I integrate; Build, two small tools) matching the scorecard, and every percentage on a slide shows its base.
+> **The "?" badge (Rick, 2026-11-04 practice run).** Four slides carry a small "?" top-right as a silent cue; the question is never printed on the slide, it is on the meeting card and asked aloud, in this order: **cover (1)** "Fernando, what would make the next 30 minutes worth your time?" (then Jesse, then Luis); **vendor contracts (3)** "Have you signed any RIS or billing vendors yet?"; **owner numbers (17)** "What would each of you want to see on a Monday morning?"; **if it were my money (23)** "What would you do differently this time, building it from scratch?" Slides 13 to 16 now carry a recommendation tag top-right (Build, small; Buy; Buy, I integrate; Build, two small tools) matching the scorecard, and every percentage on a slide shows its base.
 >
 > **Content changes this round:** slide 2 carries the 2027 rule in one plain line (electronic prior auth through an API, fast; Medicare Advantage, Medicaid, CHIP, exchange plans; not TRICARE or VA). Slide 4 carries the why: "Every denial nobody appeals is revenue left on the table. Next: how an agent gets it back." Slide 6 is two boxes, workflow agent and owner's agent, guardrails as one line. Slide 16 is problem, fix, honest gap, with Luis's QR-coded envelope label for outgoing prior requests. Slide 17: "One system, two views. All three of you see both." (the revenue view is owned by the practice and visible to all three; Luis OK'd). Slide 28: Exa is the likely RIS and PACS; negotiate as three centers for volume pricing and put the four access terms into the Exa contract; the final pick is still Phase 2.
 >
@@ -71,17 +71,23 @@ How each slide block works:
 
 # PART 1: THE COLD-OPEN CARD
 
-## The first 90 seconds, verbatim
+## The first three minutes, verbatim (Rick, 2026-11-04 20:31)
 
 =="Luis, Fernando, Jesse, thank you for the time.==
 
-One sentence on who I am. I build and operate agent systems, and Luis uses one of them every day on real patients. ==That is the only credential that matters today.==
+==I'm Rick Finlay. I build and operate AI agent systems. Dr. Ramos uses one every day on real patients, RadAssist. I'm not here to sell you software. I'm here to tell you which decisions are free right now.==
 
-==I am not here to sell you software today. I am here to tell you which decisions you are about to make that are free right now, and will not be free by the time you open.==
+==Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?"==
 
-==Before I start, one thing I would rather hear from you than secondhand. Luis told me you built and sold imaging here in El Paso before this. What did you build, and how many centers were you running at the end?"==
+Then stop. Let him answer. Write it down.
 
-Then stop. Let him answer. Write down the numbers he gives you. ==Everything you say about his history for the rest of the meeting comes from that answer, not from a file.==
+=="Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?"==
+
+Stop again. Write it down.
+
+=="Luis, you've heard me before, so stop me anytime."==
+
+==Everything you say about their history and their priorities for the rest of the meeting comes from those answers, not from a file.== Reuse their words later: "Jesse, you mentioned uptime. That's on this slide." Keep the whole open to about three minutes.
 
 ## Names
 
@@ -125,9 +131,11 @@ If he raises any of it himself: listen, say little, ask nothing, move on.
 
 **SAY**
 
-The cold-open card above, word for word. The framing line is the one to get right:
+The cold-open card above, word for word. The opener line is the one to get right:
 
-=="I am not here to sell you software today. I am here to tell you which decisions you are about to make that are free right now, and will not be free by the time you open."==
+=="I'm Rick Finlay. I build and operate AI agent systems. Dr. Ramos uses one every day on real patients, RadAssist. I'm not here to sell you software. I'm here to tell you which decisions are free right now."==
+
+Then the three questions, one person at a time: =="Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?"== / =="Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?"== / =="Luis, you've heard me before, so stop me anytime."==
 
 **DEPTH / IF ASKED**
 
@@ -135,7 +143,7 @@ Nothing to defend here. The only claim is that Luis uses RadAssist daily on real
 
 **BEAT**
 
-Deck on slide 1 while they sit down. Say the framing line slowly. Ask the "what did you build" question before you advance. Write his answer down. If he names several companies, he has built and run this kind of business more than once. Do not explain to him what a RIS, a billing system, or an interface is at any point today; he knows. Explain only what the agents do.
+Deck on slide 1 while they sit down. Say the opener slowly. Ask Fernando, then Jesse, then release Luis, before you advance. Write their answers down and reuse them later ("Jesse, you mentioned uptime. That's on this slide."). Keep the open to about three minutes. If Fernando names several companies, he has built and run this kind of business more than once. Do not explain to him what a RIS, a billing system, or an interface is at any point today; he knows. Explain only what the agents do.
 
 ---
 
@@ -1416,7 +1424,7 @@ Other centers, if it comes up here instead of at slide 22: not off the back of y
 
 Write every answer down at the table.
 
-1. **At the open ("?" badge on the cover; card question 1), before anything about his history:** "Luis told me you built and sold imaging here in El Paso before this, but I would rather hear it from you than secondhand. What did you build, and how many centers were you running at the end?"
+1. **At the open ("?" badge on the cover; card question 1), before anything about his history:** "Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?" Then: "Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?" Then: "Luis, you've heard me before, so stop me anytime." Write the answers down and reuse them later.
 2. **Slide 3, the four contract terms ("?" badge; card question 2):** "Have you signed any RIS or billing vendors yet?"
 3. **Slide 5, the 40% statistic:** "How many prior authorizations a day were you running at steady state, and who did them?"
 4. **Slide 10, the federal dates:** "What is your payer mix going to look like?"
