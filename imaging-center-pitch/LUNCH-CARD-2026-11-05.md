@@ -1,12 +1,11 @@
 # Meeting card. Thursday 2026-11-05, 3:30 PM, El Paso. Luis, Fernando, Jesse.
 
-## The three questions, in order (asked aloud; nothing is printed on the slides)
+## The four questions, in order (the "?" slides; asked aloud, nothing printed on the slide)
 
 1. **Cover (1):** =="Fernando, what did you build, and how many centers were you running at the end?"== Let him talk.
-2. **Owner numbers (17):** =="What would each of you want to see on a Monday morning?"== Write every answer down.
-3. **If it were my money (23):** =="What would you do differently this time, building it from scratch?"== Do not fill the silence.
-
-Do not ask whether they have signed RIS or billing vendors: one center already has. If Exa comes up: likely pick; three centers; the four terms in the contract; Phase 2 decides.
+2. **Vendor contracts (3):** =="Have you signed any RIS or billing vendors yet?"== If Exa: likely pick; three centers; the four terms in the contract; Phase 2 decides.
+3. **Owner numbers (17):** =="What would each of you want to see on a Monday morning?"== Write every answer down.
+4. **If it were my money (23):** =="What would you do differently this time, building it from scratch?"== Do not fill the silence.
 
 ## The five lines to land
 

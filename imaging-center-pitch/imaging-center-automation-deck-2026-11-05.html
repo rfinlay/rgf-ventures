@@ -218,6 +218,9 @@
   .modules .w { font-size: 19px; color: var(--ink-soft); margin-top: 8px; line-height: 1.35; }
 
   /* 2026-11-04 final round (Rick, post-Luis review): present without notes. */
+  /* The "?" badge: a silent cue, top-right, on the four slides where Rick asks the room a question; the question itself is on the meeting card, never printed on the slide (Rick, 2026-11-04 practice run). */
+  .askmark { position: absolute; top: 24px; right: 88px; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--accent); color: var(--accent); font-family: var(--serif); font-size: 26px; line-height: 36px; text-align: center; opacity: 0.85; z-index: 5; }
+  @media print { .askmark { top: 0.3in; right: 0.7in; } }
   /* Recommendation tag, top-right of each problem slide (13 to 16), same labels as the scorecard (Rick, 2026-11-04 practice run). */
   .rectag { position: absolute; top: 30px; right: 88px; max-width: 460px; text-align: right; font-family: var(--sans); font-size: 17px; line-height: 1.3; color: var(--ink-soft); border: 2px solid var(--accent); border-radius: 6px; padding: 10px 16px; z-index: 5; background: var(--paper); }
   .rectag b { display: block; font-size: 19px; font-weight: 600; color: var(--accent); letter-spacing: 0.04em; }
@@ -291,6 +294,7 @@
 <div class="inner">
   <div class="grow"></div>
   <div class="rulebar"></div>
+  <div class="askmark" aria-label="A question for the room">?</div>
   <div class="kicker">A private briefing, El Paso, Thursday, November 5, 2026</div>
   <h1>Six months of free decisions.</h1>
   <p class="lead">What to automate, what to buy, and what to leave alone before the new center opens.</p>
@@ -301,7 +305,7 @@
 </div>
 <aside class="notes">
 <p class="time">0:00 to 1:00</p>
-<p><strong>No "?" badges and no printed questions on the slides (Rick, 2026-11-04 practice run). The three questions for the room are on the meeting card. Here: "Fernando, what did you build?"</strong> Ask it before the first number, and let him answer at length. The other two are asked aloud at the owner-numbers slide (17) and "If it were my money" (23).</p>
+<p><strong>The "?" badge (top right) is a silent cue on the four slides where you ask the room a question; the questions are printed only on the meeting card, never on the slide (Rick, 2026-11-04 practice run). Here: "Fernando, what did you build?"</strong> Ask it before the first number, and let him answer at length. The other three are on the vendor-contracts slide (3), the owner-numbers slide (17) and "If it were my money" (23).</p>
 <p>Thank them for the time. One sentence on who you are: you build and operate agent systems, Luis uses one of them every day on real patients, and that is the only credential that matters today.</p>
 <p>Frame the conversation: "I am not here to sell you software today. I am here to tell you which decisions you are about to make that are free right now and will not be free by the time you open."</p>
 <p>Jesse Martinez is at the table: an engineer, quiet and analytic. Speak to him once by name on the agent slide (6) and the walkthrough (11); he is the one most likely to ask how it actually connects.</p>
@@ -339,6 +343,7 @@
 <!-- 3 -->
 <section class="slide">
 <div class="inner">
+  <div class="askmark" aria-label="A question for the room">?</div>
   <div class="kicker">The free move</div>
   <h2>Put four things in every vendor contract before you sign. They cost nothing today.</h2>
   <ul class="plain">
@@ -352,7 +357,7 @@
 </div>
 <aside class="notes">
 <p class="time">2:30 to 4:00</p>
-<p><strong>Do not ask whether they have signed vendors: one center already has (Rick, 2026-11-04 practice run).</strong> For the new center the four terms are still free; for the signed contracts they become the Phase 2 negotiating list (Exa: three centers, volume pricing, the four terms in the contract; slide 28).</p>
+<p><strong>The "?" badge: ask it aloud, from the meeting card.</strong> "Have you signed any RIS or billing vendors yet?" If the answer is no, the four terms are still free. If yes, ask which, write it down, and the terms become the Phase 2 negotiating list (Exa: three centers, volume pricing, the four terms in the contract; slide 28).</p>
 <p>This is the slide that proves you are on their side of the table. It does not matter whether they hire you. Fernando has negotiated vendor contracts twice and will recognize this instantly.</p>
 <p>Say: "Whatever you decide about me, do this. I will give you the exact language."</p>
 <p>If asked why DICOM specifically: it is the one standardized surface that does not depend on vendor goodwill. HL7 v2 is what the RIS will actually speak. FHIR on the RIS side: do not pay extra for it and do not plan around it; the FHIR that matters is on the payer side. If a RIS vendor claims FHIR, require it be named and demonstrated before signature at no additional interface fee.</p>
@@ -684,6 +689,7 @@
 <!-- 17 -->
 <section class="slide">
 <div class="inner">
+  <div class="askmark" aria-label="A question for the room">?</div>
   <div class="kicker">The fifth candidate: the numbers the owner actually looks at</div>
   <h2 class="tight">One system, two views. All three of you see both.</h2>
   <div class="cols views">
@@ -711,7 +717,7 @@
 </div>
 <aside class="notes">
 <p class="time">22:00 to 23:00</p>
-<p><strong>Ask it aloud (it is on the meeting card, not the slide):</strong> "What would each of you want to see on a Monday morning?" Write the exact words down. The first question each of them names is the first report the system has to answer.</p>
+<p><strong>The "?" badge: ask it aloud, from the meeting card.</strong> "What would each of you want to see on a Monday morning?" Write the exact words down. The first question each of them names is the first report the system has to answer.</p>
 <p>Two views, one system; all three owners see both (Luis OK'd 2026-11-04). Lead with the heading line: "One system, two views. All three of you see both." The left column is operations: studies by modality, turnaround, no-shows and open slots, authorizations waiting and appeals in flight, scanner uptime, staff hours and running costs against budget. The right column is business health, owned by the practice and visible to all three: collections, denials and appeals won, revenue by payer.</p>
 <p>Why, Rick only: the owners earn through the operating company's fixed fees, so the operations numbers are theirs by nature; the revenue numbers belong to the practice, which has agreed all three see them. Equipment uptime matters because the equipment company carries the loan. If the split draws a question: "One system, two views, and all three of you see both. The revenue page is the practice's; the operations page is everyone's."</p>
 <p>Be honest that there is no external evidence for this one. There is no benchmark literature on what owners want from dashboards. Say: "I have no study to show you here. I have the fact that you will want one page on a Monday and the RIS will not give it to you."</p>
@@ -851,6 +857,7 @@
 <!-- 23 -->
 <section class="slide">
 <div class="inner">
+  <div class="askmark" aria-label="A question for the room">?</div>
   <div class="kicker">If it were my money</div>
   <h2>I would do three things before signing another vendor contract.</h2>
   <ul class="plain">
@@ -864,7 +871,7 @@
 <p class="time">29:30 to 30:30</p>
 <p>The third bullet is the most valuable question of the night. Do not quote any cost-structure percentage; ask for his.</p>
 <p><strong>Southwest X-Ray is confirmed as his</strong> (Rick confirmed 2026-10-01), so do not ask whether it is. It now operates five El Paso locations as an Akumin company, and Akumin went through Chapter 11. That means he is opening in direct competition with a national roll-up that owns what he built. Do not raise the bankruptcy and do not say "scale" or "platform" anywhere near him. If he raises it, listen.</p>
-<p>The closing question is asked aloud, not printed (meeting card): "What would you do differently this time, building it from scratch?" It is open on purpose. A man who sold to private equity and watched the buyer struggle has a long answer to it, and his answer tells you what he actually wants from this center. Let him talk.</p>
+<p>The "?" badge: the closing question is asked aloud, from the meeting card, not printed: "What would you do differently this time, building it from scratch?" It is open on purpose. A man who sold to private equity and watched the buyer struggle has a long answer to it, and his answer tells you what he actually wants from this center. Let him talk.</p>
 </aside>
 </section>
 
@@ -1077,7 +1084,7 @@
 <p class="time">Appendix, only if asked</p>
 <p><strong>Frame it in one line:</strong> "This is where I would start looking, not what I would buy. Phase 2 is where your radiologists sit in the demos and we score it."</p>
 <p><strong>The RIS and PACS position (Rick, 2026-11-03):</strong> "For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2." Why one system: one vendor, one support line, one contract; no RIS-to-PACS interface to pay for or keep alive; one worklist; faster go-live; the lean control Fernando wants. The cost of that is lock-in and giving up best-of-breed, mitigated by the four contract terms: data export in DICOM and HL7 at no penalty, interface fees fixed at signature, API access, worklist access. Split only if the radiologists have a strong PACS preference or multi-site reading from day one. Dictation is selected separately, by the radiologists.</p>
-<p><strong>Exa (Rick, 2026-11-04 final round):</strong> Exa is the likely RIS and PACS, because one of the group's centers (Binton; Rick-only name, not on the slide) has already signed it. The recommendation on the slide: negotiate as three centers for volume pricing, and put the four access terms (API access, the HL7 interface count and fee schedule, data export, DICOM query) into the Exa contract. Say "likely," never "decided": the final pick is still Phase 2, with the radiologists in the demos. Never disparage any vendor on this slide.</p>
+<p><strong>Exa (Rick, 2026-11-04 final round):</strong> Exa is the likely RIS and PACS, because one of the group's centers (Vinton; Rick-only name, not on the slide) has already signed it. The recommendation on the slide: negotiate as three centers for volume pricing, and put the four access terms (API access, the HL7 interface count and fee schedule, data export, DICOM query) into the Exa contract. Say "likely," never "decided": the final pick is still Phase 2, with the radiologists in the demos. Never disparage any vendor on this slide.</p>
 <p><strong>Integration (Rick, 2026-11-03):</strong> "I score vendors on how easily they connect, not just features, and I write the integration terms into the contract." DO NOT quote an integration score at the table; that is Phase 2 work, and the internal readiness file stays internal.</p>
 <p><strong>Do not quote</strong> a license price, a per-study rate, a market share, or an interface fee; none of it is sourced. "Every price in this market is a quote, which is why the shortlist goes to RFP."</p>
 </aside>

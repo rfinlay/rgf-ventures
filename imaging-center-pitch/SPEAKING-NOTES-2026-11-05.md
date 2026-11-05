@@ -6,7 +6,7 @@
 >
 > **The deck, 36 slides (29 in the no-numbers variant). Main flow 1 to 26, price on 24, Thank You on 26.** Pulled from the main flow into the appendix (Luis): the RadAssist proof (now **34**), what the dates depend on (now **35**), what I need from you (now **36**, it is in the leave-behind). So: 19 FDA, 20 boundaries, 21 bus, 22 do not buy, 23 if it were my money, **24 the engagement (price)**, 25 timeline, **26 Thank You**, 27 appendix divider, 28 shortlist, 29 running costs, 30 opening checklist, 31 and 32 ideas, 33 report assistance, 34 RadAssist, 35 dates depend on, 36 what I need. Slides 1 to 18 are unchanged in position.
 >
-> **No "?" badges and no printed questions on the slides (Rick, 2026-11-04 practice run).** The three questions for the room live on the meeting card and are asked aloud, in this order: **cover (1)** "Fernando, what did you build?"; **owner numbers (17)** "What would each of you want to see on a Monday morning?"; **if it were my money (23)** "What would you do differently this time, building it from scratch?" The "have you signed any RIS or billing vendors" question is dropped: one center already has. Slides 13 to 16 now carry a recommendation tag top-right (Build, small; Buy; Buy, I integrate; Build, two small tools) matching the scorecard, and every percentage on a slide shows its base.
+> **The "?" badge (Rick, 2026-11-04 practice run).** Four slides carry a small "?" top-right as a silent cue; the question is never printed on the slide, it is on the meeting card and asked aloud, in this order: **cover (1)** "Fernando, what did you build?"; **vendor contracts (3)** "Have you signed any RIS or billing vendors yet?"; **owner numbers (17)** "What would each of you want to see on a Monday morning?"; **if it were my money (23)** "What would you do differently this time, building it from scratch?" Slides 13 to 16 now carry a recommendation tag top-right (Build, small; Buy; Buy, I integrate; Build, two small tools) matching the scorecard, and every percentage on a slide shows its base.
 >
 > **Content changes this round:** slide 2 carries the 2027 rule in one plain line (electronic prior auth through an API, fast; Medicare Advantage, Medicaid, CHIP, exchange plans; not TRICARE or VA). Slide 4 carries the why: "Every denial nobody appeals is revenue left on the table. Next: how an agent gets it back." Slide 6 is two boxes, workflow agent and owner's agent, guardrails as one line. Slide 16 is problem, fix, honest gap, with Luis's QR-coded envelope label for outgoing prior requests. Slide 17: "One system, two views. All three of you see both." (the revenue view is owned by the practice and visible to all three; Luis OK'd). Slide 28: Exa is the likely RIS and PACS; negotiate as three centers for volume pricing and put the four access terms into the Exa contract; the final pick is still Phase 2.
 >
@@ -167,7 +167,7 @@ Say the obvious thing plainly. Do not oversell the January date yet.
 
 **LEAD-IN TO SLIDE 3 (say before you advance)**
 
-=="Which RIS and billing vendors are you looking at?" Do not ask whether they have signed (one center already has; Rick, 2026-11-04 practice run). The answer tells you which of the next slide's terms are still free for the new center and which go on the Phase 2 negotiating list.==
+=="Which RIS and billing vendors are you looking at, and have you signed anything yet?" The answer tells you whether the next slide is still free.==
 
 ---
 
@@ -645,7 +645,7 @@ Do not say "from running two centers" or "two companies." He built one company w
 
 ### SLIDE 17 · The fifth candidate: the numbers the owner actually looks at · 22:00 to 23:00
 
-==Cut this slide first if you are running long at 23:00. Ask the Monday-morning question aloud (meeting card; it is no longer printed on the slide) and write every answer down.==
+==Cut this slide first if you are running long at 23:00. The "?" badge is on this slide: ask the Monday-morning question aloud (meeting card; it is not printed on the slide) and write every answer down.==
 
 **SAY**
 
@@ -1099,7 +1099,7 @@ Reference. Show it only if someone asks which systems or which vendors. It is a 
 
 ==On integration (Rick, 2026-11-03): "I score vendors on how easily they connect, not just features, and I write the integration terms into the contract."==
 
-==**Exa, from the last line on the slide (Rick, 2026-11-04 final round):** "Exa is the likely RIS and PACS. Negotiate as three centers for volume pricing, and put the four access terms, API, the HL7 fee schedule, export, DICOM, into the Exa contract. The final pick is still Phase 2."== Rick only: Exa is likely because one of the group's centers (Binton) has already signed it; the name stays off the slide.
+==**Exa, from the last line on the slide (Rick, 2026-11-04 final round):** "Exa is the likely RIS and PACS. Negotiate as three centers for volume pricing, and put the four access terms, API, the HL7 fee schedule, export, DICOM, into the Exa contract. The final pick is still Phase 2."== Rick only: Exa is likely because one of the group's centers (Vinton) has already signed it; the name stays off the slide.
 
 **DO NOT SAY:** never quote an integration score or ranking at the table. That is Phase 2 work. The internal readiness review (`SHERLOCK-INTEGRATION-READINESS-2026-11-03.md`) is reference only and nothing from it goes on a slide or in the leave-behind.
 
@@ -1416,17 +1416,18 @@ Other centers, if it comes up here instead of at slide 22: not off the back of y
 
 Write every answer down at the table.
 
-1. **At the open (meeting card question 1), before anything about his history:** "Luis told me you built and sold imaging here in El Paso before this, but I would rather hear it from you than secondhand. What did you build, and how many centers were you running at the end?"
-2. **Slide 5, the 40% statistic:** "How many prior authorizations a day were you running at steady state, and who did them?"
-3. **Slide 10, the federal dates:** "What is your payer mix going to look like?"
-4. **Slide 13, before you lean on 22.3%:** "What was your cancellation rate, and what did you do with the empty slot?"
-5. **Slide 15, before the voice recommendation:** "Who takes the phone call when a patient describes chest pain?"
-6. **Slide 17, owner reporting (meeting card question 2, asked aloud):** "What would each of you want to see on a Monday morning?"
-7. **Slide 19 or 21, the boundaries:** "You came up as an RPA, so you have been in the room with the patient. When you think about automating the front end, where is the line for you? What has to stay human?"
-8. **Slide 21, the bus question:** "We are two people. If you were in my chair pitching you, what would you want to see about continuity and about getting out, before you would put us anywhere near your schedule?"
-9. **Slide 23, the close (meeting card question 3, asked aloud):** "What did front desk and prior authorization actually cost you last time, as a share of operating expense?" Then: "What would you do differently this time, building it from scratch?"
+1. **At the open ("?" badge on the cover; card question 1), before anything about his history:** "Luis told me you built and sold imaging here in El Paso before this, but I would rather hear it from you than secondhand. What did you build, and how many centers were you running at the end?"
+2. **Slide 3, the four contract terms ("?" badge; card question 2):** "Have you signed any RIS or billing vendors yet?"
+3. **Slide 5, the 40% statistic:** "How many prior authorizations a day were you running at steady state, and who did them?"
+4. **Slide 10, the federal dates:** "What is your payer mix going to look like?"
+5. **Slide 13, before you lean on 22.3%:** "What was your cancellation rate, and what did you do with the empty slot?"
+6. **Slide 15, before the voice recommendation:** "Who takes the phone call when a patient describes chest pain?"
+7. **Slide 17, owner reporting ("?" badge; card question 3, asked aloud):** "What would each of you want to see on a Monday morning?"
+8. **Slide 19 or 21, the boundaries:** "You came up as an RPA, so you have been in the room with the patient. When you think about automating the front end, where is the line for you? What has to stay human?"
+9. **Slide 21, the bus question:** "We are two people. If you were in my chair pitching you, what would you want to see about continuity and about getting out, before you would put us anywhere near your schedule?"
+10. **Slide 23, the close ("?" badge; card question 4, asked aloud):** "What did front desk and prior authorization actually cost you last time, as a share of operating expense?" Then: "What would you do differently this time, building it from scratch?"
 
-The three meeting-card questions (1, 6 and the second half of 9) are at the top of the card; none is printed on a slide. Ask all nine.
+The four questions with a "?" badge on the slide (1, 2, 7 and the second half of 10) are at the top of the meeting card; none is printed on a slide. Ask all ten.
 
 ## Drill 5: the 60-second version
 
