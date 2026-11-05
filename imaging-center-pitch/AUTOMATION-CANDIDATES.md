@@ -22,9 +22,9 @@
 | 3 | Vendor contract access terms | **Advise now** | Small | None | High | This month, free |
 | 4 | Owner operational reporting and reader reconciliation | **Build** | Small to Medium | Low | Low (no external evidence) | Designed in Phase 3; built in Phase 4 |
 | 5 | Cancellation backfill and waitlist | **Build, small** | Medium | Medium (TCPA) | High | After RIS is live |
-| 6 | Inbound records requests (release of information) | **Build, selectively** | Medium | Medium (OCR enforcement) | High | Before opening |
-| 7 | Outbound prior-study retrieval | **Build, selectively** | Medium to Large | Low | High on the gap, Low on the solution | Specified in design; build priced from its spec |
-| 8 | Appointment reminders, self-scheduling, intake forms | **Buy (the RIS)** | None | Low | High | Vendor selection |
+| 6 | Inbound records requests (release of information) | **Build, small** | Medium | Medium (OCR enforcement) | High | Before opening |
+| 7 | Outbound prior-study retrieval | **Build, small** | Medium to Large | Low | High on the gap, Low on the solution | Specified in design; build priced from its spec |
+| 8 | Appointment reminders, self-scheduling, intake forms | **Buy (your RIS)** | None | Low | High | Vendor selection |
 | 9 | Inbound patient voice (phones) | **Integrate** (buy a vendor) | Medium to integrate | High | High on the constraint | Phase two, if at all |
 | 10 | Outbound patient notifications beyond reminders (results ready, instructions) | **Buy (RIS) or fold into #5** | Small | Medium (TCPA) | High on constraints | With #5 |
 | 11 | Balance-due and payment reminders | **Decline for phase one** | Small | High (TCPA) | High on constraint | Not until a separate consent basis exists |

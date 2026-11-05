@@ -218,9 +218,10 @@
   .modules .w { font-size: 19px; color: var(--ink-soft); margin-top: 8px; line-height: 1.35; }
 
   /* 2026-11-04 final round (Rick, post-Luis review): present without notes. */
-  /* The "?" badge: a subtle cue in the top-right corner of exactly the slides where Rick asks the room a question. */
-  .askmark { position: absolute; top: 24px; right: 88px; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--accent); color: var(--accent); font-family: var(--serif); font-size: 26px; line-height: 36px; text-align: center; opacity: 0.85; z-index: 5; }
-  @media print { .askmark { top: 0.3in; right: 0.7in; } }
+  /* Recommendation tag, top-right of each problem slide (13 to 16), same labels as the scorecard (Rick, 2026-11-04 practice run). */
+  .rectag { position: absolute; top: 30px; right: 88px; max-width: 460px; text-align: right; font-family: var(--sans); font-size: 17px; line-height: 1.3; color: var(--ink-soft); border: 2px solid var(--accent); border-radius: 6px; padding: 10px 16px; z-index: 5; background: var(--paper); }
+  .rectag b { display: block; font-size: 19px; font-weight: 600; color: var(--accent); letter-spacing: 0.04em; }
+  @media print { .rectag { top: 0.32in; right: 0.7in; } }
   /* Slide 2: the 2027 rule in one plain line under the timeline */
   .rule2027 { font-size: 22px; color: var(--ink); margin-top: 34px; max-width: 1100px; line-height: 1.4; }
   .rule2027 b { color: var(--accent); font-weight: 600; }
@@ -247,7 +248,6 @@
   .cols.records ul.plain li { font-size: 19.5px; margin-bottom: 7px; line-height: 1.32; }
   .honest { font-family: var(--serif); font-size: 26px; color: var(--ink); margin-top: 18px; max-width: 1120px; line-height: 1.3; }
   /* Slide 17: the ask line */
-  .askline { font-size: 22px; color: var(--accent); margin-top: 18px; font-weight: 600; }
   /* Slide 28 (shortlist): the Exa recommendation under the table */
   .reco { font-size: 17px; color: var(--ink); margin-top: 12px; max-width: 1140px; line-height: 1.35; }
   .reco b { color: var(--accent); font-weight: 600; }
@@ -291,7 +291,6 @@
 <div class="inner">
   <div class="grow"></div>
   <div class="rulebar"></div>
-  <div class="askmark" aria-label="A question for the room">?</div>
   <div class="kicker">A private briefing, El Paso, Thursday, November 5, 2026</div>
   <h1>Six months of free decisions.</h1>
   <p class="lead">What to automate, what to buy, and what to leave alone before the new center opens.</p>
@@ -302,7 +301,7 @@
 </div>
 <aside class="notes">
 <p class="time">0:00 to 1:00</p>
-<p><strong>The "?" badge (top right) marks the four slides where you ask the room a question. Here: "Fernando, what did you build?"</strong> Ask it before the first number, and let him answer at length. The other three are on the vendor-contracts slide (3), the owner-numbers slide (17) and "If it were my money" (23).</p>
+<p><strong>No "?" badges and no printed questions on the slides (Rick, 2026-11-04 practice run). The three questions for the room are on the meeting card. Here: "Fernando, what did you build?"</strong> Ask it before the first number, and let him answer at length. The other two are asked aloud at the owner-numbers slide (17) and "If it were my money" (23).</p>
 <p>Thank them for the time. One sentence on who you are: you build and operate agent systems, Luis uses one of them every day on real patients, and that is the only credential that matters today.</p>
 <p>Frame the conversation: "I am not here to sell you software today. I am here to tell you which decisions you are about to make that are free right now and will not be free by the time you open."</p>
 <p>Jesse Martinez is at the table: an engineer, quiet and analytic. Speak to him once by name on the agent slide (6) and the walkthrough (11); he is the one most likely to ask how it actually connects.</p>
@@ -340,7 +339,6 @@
 <!-- 3 -->
 <section class="slide">
 <div class="inner">
-  <div class="askmark" aria-label="A question for the room">?</div>
   <div class="kicker">The free move</div>
   <h2>Put four things in every vendor contract before you sign. They cost nothing today.</h2>
   <ul class="plain">
@@ -350,11 +348,11 @@
     <li><strong>DICOM query permissions</strong> (worklist, query/retrieve, DICOMweb) for systems you authorize.</li>
   </ul>
   <div class="grow"></div>
-  <p class="sub">Before signature these are contract terms. After signature they are hostage terms. <span class="askline" style="display:block;margin-top:10px">Have you signed any RIS or billing vendors yet?</span></p>
+  <p class="sub">Before signature these are contract terms. After signature they are hostage terms.</p>
 </div>
 <aside class="notes">
 <p class="time">2:30 to 4:00</p>
-<p><strong>The "?" badge: ask it from the slide.</strong> "Have you signed any RIS or billing vendors yet?" If the answer is no, the four terms are still free. If yes, ask which, write it down, and the terms become the Phase 2 negotiating list (Exa: three centers, volume pricing, the four terms in the contract; slide 28).</p>
+<p><strong>Do not ask whether they have signed vendors: one center already has (Rick, 2026-11-04 practice run).</strong> For the new center the four terms are still free; for the signed contracts they become the Phase 2 negotiating list (Exa: three centers, volume pricing, the four terms in the contract; slide 28).</p>
 <p>This is the slide that proves you are on their side of the table. It does not matter whether they hire you. Fernando has negotiated vendor contracts twice and will recognize this instantly.</p>
 <p>Say: "Whatever you decide about me, do this. I will give you the exact language."</p>
 <p>If asked why DICOM specifically: it is the one standardized surface that does not depend on vendor goodwill. HL7 v2 is what the RIS will actually speak. FHIR on the RIS side: do not pay extra for it and do not plan around it; the FHIR that matters is on the payer side. If a RIS vendor claims FHIR, require it be named and demonstrated before signature at no additional interface fee.</p>
@@ -367,8 +365,8 @@
 <div class="inner">
   <div class="kicker">The headline number</div>
   <div class="pair">
-    <div><div class="num">11.5%</div><div class="cap">of denied prior authorizations were appealed</div></div>
-    <div><div class="num">80.7%</div><div class="cap">of those appeals were partially or fully overturned</div></div>
+    <div><div class="num">11.5%</div><div class="cap">of 4.1 million denied prior authorizations were appealed (Medicare Advantage, 2024)</div></div>
+    <div><div class="num">80.7%</div><div class="cap">of those appeals were partially or fully overturned (KFF)</div></div>
   </div>
   <div class="grow"></div>
   <p class="numlabel">Four in five appeals win. Almost nobody files one.</p>
@@ -390,7 +388,7 @@
 <div class="inner">
   <div class="kicker">Why greenfield matters</div>
   <div class="bignum">40%</div>
-  <p class="numlabel">of physicians report having staff who work <strong>exclusively</strong> on prior authorization.</p>
+  <p class="numlabel">of 1,000 physicians surveyed (AMA, 2025) report having staff who work <strong>exclusively</strong> on prior authorization.</p>
   <div class="grow"></div>
   <h2 class="tight">You have not hired that person yet.</h2>
 </div>
@@ -462,8 +460,8 @@
 <div class="inner">
   <div class="kicker">What prior auth costs you</div>
   <div class="pair">
-    <div><div class="num">13</div><div class="cap">hours a week per physician on prior authorization. Each request worked by hand.</div></div>
-    <div><div class="num">95%</div><div class="cap">get approved anyway.</div></div>
+    <div><div class="num">13</div><div class="cap">hours a week per physician on prior authorization (AMA 2025, 1,000 physicians surveyed). Each request worked by hand.</div></div>
+    <div><div class="num">95%</div><div class="cap">of 17,913 MRI requests approved anyway (one institution, four years).</div></div>
   </div>
   <div class="grow"></div>
   <h2 class="tight problem">A process that approves 95% of what it touches is one you automate, not one you staff.</h2>
@@ -484,8 +482,8 @@
 <div class="inner">
   <div class="kicker">Why nobody appeals</div>
   <div class="pair">
-    <div><div class="num">52%</div><div class="cap">of physicians who do not appeal cite staff time.</div></div>
-    <div><div class="num">59%</div><div class="cap">do not expect to win.</div></div>
+    <div><div class="num">52%</div><div class="cap">of physicians surveyed (AMA 2025, 1,000 physicians) who do not appeal cite staff time.</div></div>
+    <div><div class="num">59%</div><div class="cap">of the same 1,000 do not expect to win.</div></div>
   </div>
   <div class="grow"></div>
   <h2 class="tight problem">Both are what an agent removes.</h2>
@@ -508,12 +506,12 @@
   <div class="kicker">The dates land on your opening</div>
   <div class="timeline">
     <div class="t"><div class="d">2026-01-01</div><div class="w">Payers must decide prior authorizations in <strong>7 calendar days</strong> standard, <strong>72 hours</strong> expedited, and publish their metrics.</div></div>
-    <div class="t hot"><div class="d">2027-01-01</div><div class="w">Payers must operate a <strong>FHIR Prior Authorization API</strong>, plus Patient Access, Provider Access, and Payer-to-Payer APIs.</div></div>
+    <div class="t hot"><div class="d">2027-01-01</div><div class="w">Payers (Medicare Advantage, Medicaid, CHIP and exchange plans) must operate a <strong>FHIR Prior Authorization API</strong>, plus Patient Access, Provider Access, and Payer-to-Payer APIs.</div></div>
     <div class="t"><div class="d">Target ~2027-06</div><div class="w">Your new center opens into the new regime, with prior authorization already working and no legacy process to unwind.</div></div>
   </div>
   <p class="limit"><strong>Who the rule reaches:</strong> Medicare Advantage, Medicaid, CHIP and exchange plans. Not employer-sponsored plans, TRICARE, or VA. The payers who move first set the standard the rest follow.</p>
   <div class="grow"></div>
-  <p class="sub">Almost 63% of medical plans report they are already building a FHIR prior authorization API ahead of the deadline.</p>
+  <p class="sub">Almost 63% of the medical plans surveyed in the 2025 CAQH Index report they are already building a FHIR prior authorization API ahead of the deadline.</p>
 </div>
 <div class="source"><b>Sources:</b> CMS-0057-F, 89 FR 8758, compliance dates verified in rule text; covers Medicare Advantage, Medicaid and CHIP, and federally facilitated exchange plans. 63% figure: 2025 CAQH Index (DataSpring), 2026-02-19, payer self-report.</div>
 <aside class="notes">
@@ -577,13 +575,14 @@
 <!-- 13 -->
 <section class="slide">
 <div class="inner">
+  <div class="rectag"><b>Build, small</b>A ranked waitlist on top of the RIS fills cancelled slots.</div>
   <div class="kicker">Scheduling: the empty slot is not a no-show</div>
   <div class="pair">
-    <div><div class="num">22.3%</div><div class="cap">of outpatient radiology exams were cancelled</div></div>
-    <div><div class="num muted">2.0%</div><div class="cap">were no-shows</div></div>
+    <div><div class="num">22.3%</div><div class="cap">of 19,262 outpatient radiology exams at one center were cancelled</div></div>
+    <div><div class="num muted">2.0%</div><div class="cap">of the same 19,262 exams were no-shows</div></div>
   </div>
   <div class="grow"></div>
-  <p class="numlabel"><strong>70.2%</strong> of cancellations were patient-initiated, which means most empty slots are known in advance. That is a backfill problem, not a reminder problem.</p>
+  <p class="numlabel"><strong>70.2%</strong> of those cancellations were patient-initiated, which means most empty slots are known in advance. That is a backfill problem, not a reminder problem. <strong>The fix: a ranked waitlist on top of the RIS that fills the cancelled slot.</strong></p>
 </div>
 <div class="source"><b>Source:</b> Aijaz A et al., "Sociodemographic Factors Associated with Outpatient Radiology No-shows Versus Cancellations," Acad Radiol, 2024 Aug;31(8):3406-3414, PMID 38705764. University of California, Irvine. 19,262 exams, 9,713 patients. Single center.</div>
 <aside class="notes">
@@ -599,10 +598,11 @@
 <!-- 14 -->
 <section class="slide">
 <div class="inner">
+  <div class="rectag"><b>Buy</b>Your RIS does this.</div>
   <div class="kicker">Scheduling: what reminders honestly do</div>
   <div class="pair">
-    <div><div class="num muted">5.1%</div><div class="cap">MRI no-show rate with phone reminders alone</div></div>
-    <div><div class="num">3.8%</div><div class="cap">after adding a text message reminder</div></div>
+    <div><div class="num muted">5.1%</div><div class="cap">of 6,989 MRI patients in a randomized trial were no-shows with phone reminders alone</div></div>
+    <div><div class="num">3.8%</div><div class="cap">of the same patients were no-shows after adding a text message reminder</div></div>
   </div>
   <div class="grow"></div>
   <p class="numlabel">A real effect, 1.3 percentage points, in a randomized trial of 6,989 MRI patients. It did not improve arrival punctuality. <strong>Your RIS will do this. Let it.</strong></p>
@@ -620,11 +620,12 @@
 <!-- 15 -->
 <section class="slide">
 <div class="inner">
+  <div class="rectag"><b>Buy, I integrate</b>A vendor answers the phone; I supervise it.</div>
   <div class="kicker">Answering patients: buy it, do not build it</div>
   <div class="bignum mid">26.5%</div>
-  <p class="numlabel">of El Paso County residents aged 5 and over speak English less than "very well." 97.8% of them speak Spanish.</p>
+  <p class="numlabel">of El Paso County residents aged 5 and over (215,186 of 813,194) speak English less than "very well." 97.8% of those 215,186 speak Spanish.</p>
   <div class="grow"></div>
-  <p class="sub"><strong>My recommendation: buy a healthcare voice vendor.</strong> I will write the specification, run the evaluation, and integrate and supervise it. Voice is the highest-blast-radius failure in this whole list, and it is a funded category I cannot beat on cost.</p>
+  <p class="sub"><strong>My recommendation: buy a healthcare voice vendor.</strong> I will write the specification, run the evaluation, and integrate and supervise it. The riskiest thing to get wrong: a chest-pain call, or Spanish the system garbles. And it is a funded category I cannot beat on cost.</p>
 </div>
 <div class="source"><b>Source:</b> American Community Survey 2024 5-year, Table B16004, El Paso County, population 5 and over of 813,194; 215,186 speak English less than "very well." Computed from raw ACS counts via Census Reporter.</div>
 <aside class="notes">
@@ -640,6 +641,7 @@
 <!-- 16 -->
 <section class="slide">
 <div class="inner">
+  <div class="rectag"><b>Build, two small tools</b></div>
   <div class="kicker">Records: two directions, two builds</div>
   <h2 class="tight">Requests coming in run on a clock. Priors going out have no electronic link. I automate our side of both.</h2>
   <div class="cols records">
@@ -682,7 +684,6 @@
 <!-- 17 -->
 <section class="slide">
 <div class="inner">
-  <div class="askmark" aria-label="A question for the room">?</div>
   <div class="kicker">The fifth candidate: the numbers the owner actually looks at</div>
   <h2 class="tight">One system, two views. All three of you see both.</h2>
   <div class="cols views">
@@ -707,11 +708,10 @@
   </div>
   <div class="grow"></div>
   <p class="lead bottomline">Ask it a question on Monday morning; it answers from your own numbers.</p>
-  <p class="askline">What would each of you want to see on a Monday morning?</p>
 </div>
 <aside class="notes">
 <p class="time">22:00 to 23:00</p>
-<p><strong>The "?" badge: ask it from the slide.</strong> "What would each of you want to see on a Monday morning?" Write the exact words down. The first question each of them names is the first report the system has to answer.</p>
+<p><strong>Ask it aloud (it is on the meeting card, not the slide):</strong> "What would each of you want to see on a Monday morning?" Write the exact words down. The first question each of them names is the first report the system has to answer.</p>
 <p>Two views, one system; all three owners see both (Luis OK'd 2026-11-04). Lead with the heading line: "One system, two views. All three of you see both." The left column is operations: studies by modality, turnaround, no-shows and open slots, authorizations waiting and appeals in flight, scanner uptime, staff hours and running costs against budget. The right column is business health, owned by the practice and visible to all three: collections, denials and appeals won, revenue by payer.</p>
 <p>Why, Rick only: the owners earn through the operating company's fixed fees, so the operations numbers are theirs by nature; the revenue numbers belong to the practice, which has agreed all three see them. Equipment uptime matters because the equipment company carries the loan. If the split draws a question: "One system, two views, and all three of you see both. The revenue page is the practice's; the operations page is everyone's."</p>
 <p>Be honest that there is no external evidence for this one. There is no benchmark literature on what owners want from dashboards. Say: "I have no study to show you here. I have the fact that you will want one page on a Monday and the RIS will not give it to you."</p>
@@ -729,11 +729,11 @@
     <thead><tr><th>Candidate</th><th>My recommendation</th><th>What it does</th></tr></thead>
     <tbody>
       <tr><td>Prior authorization and eligibility</td><td class="tag build">Build</td><td>Spots the orders that need authorization, checks coverage, assembles the packet, submits through the payer's API or EDI, watches the decision clock, drafts the appeal. A person approves every submission.</td></tr>
-      <tr><td>Scheduling: reminders and self-scheduling</td><td class="tag buy">Buy (the RIS)</td><td>Text and call reminders, online booking, intake forms. Your RIS's own feature.</td></tr>
+      <tr><td>Scheduling: reminders and self-scheduling</td><td class="tag buy">Buy (your RIS)</td><td>Text and call reminders, online booking, intake forms. Your RIS's own feature.</td></tr>
       <tr><td>Scheduling: cancellation backfill</td><td class="tag build">Build, small</td><td>When a slot opens, offers it by text to a ranked waitlist, inside the per-patient message cap, and books the first yes.</td></tr>
       <tr><td>Answering patients (voice)</td><td class="tag integrate">Buy, I integrate</td><td>A vendor answers and routes patient calls in English and Spanish. I connect it to the schedule and supervise it.</td></tr>
-      <tr><td>Records: inbound requests</td><td class="tag build">Build, selectively</td><td>Intake, an identity check step, the statutory deadline clock (15 business days in Texas), fee calculation, status, DICOM export of the study.</td></tr>
-      <tr><td>Records: outbound priors</td><td class="tag build">Build, selectively</td><td>Tracks requests to other facilities, follows up, imports what arrives, flags the radiologist when a prior is still missing.</td></tr>
+      <tr><td>Records: inbound requests</td><td class="tag build">Build, small</td><td>Intake, an identity check step, the statutory deadline clock (15 business days in Texas), fee calculation, status, DICOM export of the study.</td></tr>
+      <tr><td>Records: outbound priors</td><td class="tag build">Build, small</td><td>Tracks requests to other facilities, follows up, imports what arrives, flags the radiologist when a prior is still missing.</td></tr>
       <tr><td>Owner reporting</td><td class="tag build">Build</td><td>Two views of one system. Operations, scanner uptime and costs against budget for the owners; collections, denials and revenue by payer for the practice. An agent you ask questions of in plain words.</td></tr>
       <tr><td>Billing, claims, and the eligibility feed</td><td class="tag buy">Buy</td><td>The clearinghouse and the claims work, on your billing vendor's system. I evaluate reachability and contract terms. Row 1 reads the eligibility feed; it does not replace the vendor.</td></tr>
     </tbody>
@@ -851,7 +851,6 @@
 <!-- 23 -->
 <section class="slide">
 <div class="inner">
-  <div class="askmark" aria-label="A question for the room">?</div>
   <div class="kicker">If it were my money</div>
   <h2>I would do three things before signing another vendor contract.</h2>
   <ul class="plain">
@@ -860,13 +859,12 @@
     <li>Tell me what front desk and prior authorization actually cost you last time. Your number beats any benchmark I could bring.</li>
   </ul>
   <div class="grow"></div>
-  <p class="sub">And one question for you: what would you do differently this time, building it from scratch?</p>
 </div>
 <aside class="notes">
 <p class="time">29:30 to 30:30</p>
 <p>The third bullet is the most valuable question of the night. Do not quote any cost-structure percentage; ask for his.</p>
 <p><strong>Southwest X-Ray is confirmed as his</strong> (Rick confirmed 2026-10-01), so do not ask whether it is. It now operates five El Paso locations as an Akumin company, and Akumin went through Chapter 11. That means he is opening in direct competition with a national roll-up that owns what he built. Do not raise the bankruptcy and do not say "scale" or "platform" anywhere near him. If he raises it, listen.</p>
-<p>The closing question is open on purpose. A man who sold to private equity and watched the buyer struggle has a long answer to it, and his answer tells you what he actually wants from this center. Let him talk.</p>
+<p>The closing question is asked aloud, not printed (meeting card): "What would you do differently this time, building it from scratch?" It is open on purpose. A man who sold to private equity and watched the buyer struggle has a long answer to it, and his answer tells you what he actually wants from this center. Let him talk.</p>
 </aside>
 </section>
 
@@ -875,14 +873,14 @@
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">What I am proposing</div>
-  <h2 class="tight" style="font-size:30px">One engagement, five phases, forty-five thousand. Each phase ends in a sign-off.</h2>
+  <h2 class="tight" style="font-size:28px">One engagement, five phases, forty-five thousand. Each phase ends in a sign-off.</h2>
   <table class="ms five compact r9">
     <thead><tr><th style="width:4%">#</th><th style="width:27%">Phase</th><th>What you sign off</th><th style="width:15%">When</th><th style="width:9%;text-align:right">Fee</th><th style="width:19%">Paid</th></tr></thead>
     <tbody>
       <tr><td>1</td><td><strong>Discovery and requirements</strong><br><span class="dim">How the new center runs: patient flow, services, volumes, payers, what is automated at opening</span></td><td>Requirements and Roadmap, signed<br><span class="dim">Requirements per system; patient-flow map, order to signed report to paid claim; contract terms; make-or-buy for each requirement: a system you buy, or a piece I build, with a ballpark running cost for anything built; shortlist and criteria for Phase 2</span></td><td>Nov to mid-Dec<br><span class="dim">6 weeks</span></td><td class="amt">$7,000</td><td>$4,000 at signing<br>$3,000 on delivery</td></tr>
       <tr><td>2</td><td><strong>Vendor and system selection</strong><br><span class="dim">Scheduling; RIS and PACS, bundled cloud system or separate RIS plus PACS (Exa is one example); prior authorization and eligibility; patient phones, IVR and AI answering; radiologist dictation; billing and clearinghouse; modality worklist, reading workstations, image sharing</span></td><td>Vendor Selection Report, plus the list of contracts to sign, interface fees fixed up front<br><span class="dim">Side-by-side comparison; weighted scoring against the Phase 1 requirements, integration readiness a named criterion; pros and concerns; 5-year total cost per option; a recommendation</span></td><td>Mid-Dec to Jan<br><span class="dim">6 weeks</span></td><td class="amt">$8,000</td><td>In full at the start</td></tr>
-      <tr><td>3</td><td><strong>Design and staffing plan</strong><br><span class="dim">Systems, network, workflows, security and HIPAA, how each role's work runs</span></td><td>Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget<br><span class="dim">Three hosting options, three years, you pick</span></td><td>Feb 2027<br><span class="dim">1 month</span></td><td class="amt">$7,000</td><td>In full at the start</td></tr>
-      <tr><td>4</td><td><strong>Build and configure</strong><br><span class="dim">Systems set up and connected, RadAssist configured, prior authorization automated</span></td><td>Every system, bought and built, set up, connected and passing end-to-end tests<br><span class="dim">Vendors configure their own products; I manage them, connect everything, run the tests</span></td><td>Mar to Apr 2027<br><span class="dim">2 months</span></td><td class="amt">$14,000</td><td>$7,000 on March 1<br>$7,000 on April 1</td></tr>
+      <tr><td>3</td><td><strong>Design and staffing plan</strong><br><span class="dim">Systems, network, workflows, security and HIPAA, how each role's work runs</span></td><td>Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget<br><span class="dim">Three ways to host what I build: your cloud, hybrid, or on-site, each with a 3-year cost</span></td><td>Feb 2027<br><span class="dim">1 month</span></td><td class="amt">$7,000</td><td>In full at the start</td></tr>
+      <tr><td>4</td><td><strong>Build and configure</strong><br><span class="dim">Systems set up and connected, prior authorization automated</span></td><td>Every system, bought and built, set up, connected and passing end-to-end tests<br><span class="dim">Vendors configure their own products; I manage them, connect everything, run the tests</span></td><td>Mar to Apr 2027<br><span class="dim">2 months</span></td><td class="amt">$14,000</td><td>$7,000 on March 1<br>$7,000 on April 1</td></tr>
       <tr><td>5</td><td><strong>Testing, training and go-live</strong><br><span class="dim">Staff trained on the real systems; opening week on call</span></td><td>Signed go-live readiness, plus opening-week support</td><td>May 2027<br><span class="dim">1 month</span></td><td class="amt">$9,000</td><td>In full at the start</td></tr>
       <tr class="tot"><td></td><td>Fixed fee, fixed scope</td><td>Ready for a June 2027 opening, about a month of buffer</td><td>Nov to May</td><td class="amt">$45,000</td><td></td></tr>
       <tr><td></td><td><strong>After opening: support plan</strong></td><td>Monitoring, fixes, updates to what I built, vendor coordination, a response-time promise; up to 20 hours a month, $150 an hour beyond</td><td>From June 2027, 12 months, 90-day check-in</td><td class="amt">$3,000/mo</td><td>Separate from the $45,000</td></tr>

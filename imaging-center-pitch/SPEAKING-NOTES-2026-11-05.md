@@ -6,7 +6,7 @@
 >
 > **The deck, 36 slides (29 in the no-numbers variant). Main flow 1 to 26, price on 24, Thank You on 26.** Pulled from the main flow into the appendix (Luis): the RadAssist proof (now **34**), what the dates depend on (now **35**), what I need from you (now **36**, it is in the leave-behind). So: 19 FDA, 20 boundaries, 21 bus, 22 do not buy, 23 if it were my money, **24 the engagement (price)**, 25 timeline, **26 Thank You**, 27 appendix divider, 28 shortlist, 29 running costs, 30 opening checklist, 31 and 32 ideas, 33 report assistance, 34 RadAssist, 35 dates depend on, 36 what I need. Slides 1 to 18 are unchanged in position.
 >
-> **The "?" badge.** Four slides carry a small "?" in the top-right corner; those are the slides where you ask the room a question, in this order: **cover (1)** "Fernando, what did you build?"; **vendor contracts (3)** "Have you signed any RIS or billing vendors yet?"; **owner numbers (17)** "What would each of you want to see on a Monday morning?"; **if it were my money (23)** "What would you do differently this time, building it from scratch?" The four are at the top of the meeting card.
+> **No "?" badges and no printed questions on the slides (Rick, 2026-11-04 practice run).** The three questions for the room live on the meeting card and are asked aloud, in this order: **cover (1)** "Fernando, what did you build?"; **owner numbers (17)** "What would each of you want to see on a Monday morning?"; **if it were my money (23)** "What would you do differently this time, building it from scratch?" The "have you signed any RIS or billing vendors" question is dropped: one center already has. Slides 13 to 16 now carry a recommendation tag top-right (Build, small; Buy; Buy, I integrate; Build, two small tools) matching the scorecard, and every percentage on a slide shows its base.
 >
 > **Content changes this round:** slide 2 carries the 2027 rule in one plain line (electronic prior auth through an API, fast; Medicare Advantage, Medicaid, CHIP, exchange plans; not TRICARE or VA). Slide 4 carries the why: "Every denial nobody appeals is revenue left on the table. Next: how an agent gets it back." Slide 6 is two boxes, workflow agent and owner's agent, guardrails as one line. Slide 16 is problem, fix, honest gap, with Luis's QR-coded envelope label for outgoing prior requests. Slide 17: "One system, two views. All three of you see both." (the revenue view is owned by the practice and visible to all three; Luis OK'd). Slide 28: Exa is the likely RIS and PACS; negotiate as three centers for volume pricing and put the four access terms into the Exa contract; the final pick is still Phase 2.
 >
@@ -26,7 +26,7 @@
 > - **The scorecard (slide 18) says what each piece does**, with records split into inbound requests and outbound priors; the "why" lives in the notes. It is now "three of the eight."
 > - **RIS and PACS position:** one cloud system for both at a single center; the spoken line is under slide 18 and in the Fernando Q&A.
 > - **Slide 20:** the HB 300 line is Rick's plain version; the TCPA line ends "I've built per-user limits like that in my own production systems, and this one gets designed in from day one." (Rick 21:44); a "Talk it through" block per boundary.
-> - **Slide 24:** priced for one center with one selected system per category; running costs after the build are outside the fee, in the center's own accounts, at cost, with a monthly statement; the Phase 3 deliverable "Total cost of ownership and operating budget" (three hosting options). The three-centers answer is replaced.
+> - **Slide 24:** priced for one center with one selected system per category; running costs after the build are outside the fee, in the center's own accounts, at cost, with a monthly statement; the Phase 3 deliverable "Total cost of ownership and operating budget" (three ways to host what I build: your cloud, hybrid, or on-site, each with a 3-year cost). The three-centers answer is replaced.
 >
 > **What changed on 2026-11-02 and earlier (slide numbers):**
 > - **New slide 6, "What an AI agent is."** Plain language: the two kinds, the guardrails.
@@ -167,7 +167,7 @@ Say the obvious thing plainly. Do not oversell the January date yet.
 
 **LEAD-IN TO SLIDE 3 (say before you advance)**
 
-=="Which RIS and billing vendors are you looking at, and have you signed anything yet?" The answer tells you whether the next slide is still free.==
+=="Which RIS and billing vendors are you looking at?" Do not ask whether they have signed (one center already has; Rick, 2026-11-04 practice run). The answer tells you which of the next slide's terms are still free for the new center and which go on the Phase 2 negotiating list.==
 
 ---
 
@@ -573,7 +573,7 @@ Quote the absolute numbers and let him do the arithmetic. An exited founder will
 
 ==Here is why. 26.5% of El Paso County residents over five speak English less than very well, and 97.8% of them speak Spanish. One in four of your patients cannot be served by an English-first system.==
 
-==A voice agent that mishandles a patient describing chest pain, or garbles Spanish, is a clinical safety event and a reputational event. It is not a bug. Voice is the highest blast-radius failure on this whole list, and it is a funded category I cannot beat on cost.==
+==A voice agent that mishandles a patient describing chest pain, or garbles Spanish, is a clinical safety event and a reputational event. It is not a bug. It is the riskiest thing to get wrong: a chest-pain call, or Spanish the system garbles. And it is a funded category I cannot beat on cost.==
 
 ==I would rather tell you to buy something than build something that is not mine to build."==
 
@@ -645,7 +645,7 @@ Do not say "from running two centers" or "two companies." He built one company w
 
 ### SLIDE 17 · The fifth candidate: the numbers the owner actually looks at · 22:00 to 23:00
 
-==Cut this slide first if you are running long at 23:00. The "?" badge is on this slide: ask the Monday-morning question from the slide and write every answer down.==
+==Cut this slide first if you are running long at 23:00. Ask the Monday-morning question aloud (meeting card; it is no longer printed on the slide) and write every answer down.==
 
 **SAY**
 
@@ -679,7 +679,7 @@ Custom by nature, because it encodes one owner's definition of what matters. FDA
 
 - **The owner agent.** Read-only conversational access over the two views: for the owners, volumes by modality, cancellations, no-shows, open slots, turnaround, authorizations waiting, appeal status counts, scanner uptime, staff hours and running costs against budget; for the practice, collections, denials and appeals won, revenue by payer. Each asks a question in plain words and gets an answer from their own numbers. Lowest risk on the whole list: it reads and never acts, it sees nothing the owner does not already see, it has no patient contact, and it has no clinical surface. It is "business analytics" and "practice and inventory management," named in the statute at slide 19. It is specified in Phase 2 and it is the strongest candidate for the first thing he sees working. It reads your own database, so the AI vendor's BAA exclusions on slide 20 do not touch it.
 - **The workflow agents.** Prior auth, records, backfill. They act on the world, and a human signs. Already specified, bounded, medium risk. No change.
-- **Patient-facing voice.** Highest blast radius. Still bought from a vendor. No change.
+- **Patient-facing voice.** The riskiest thing to get wrong: a chest-pain call, or Spanish the system garbles. Still bought from a vendor. No change.
 
 **The design standard that applies to all three, and say it if he asks how any of this is built:** the software is the capability and the agent is the operator. Every automation is two deliverables. First, a deterministic service with a clean interface that works without any model at all. Second, an agent surface over it. The service is auditable, testable, and survives any model change; it is what goes in the specification and what any integrator can take over, which is what keeps the slide 21 continuity promise honest. The agent is the replaceable part: the model vendor can change, the BAA envelope can change, the pricing can change, and none of it breaks the center. That is also the honest answer to "can an AI do this": the agent is a better interface, the service is the capability.
 
@@ -1010,7 +1010,7 @@ Never cut this slide. It lands after the case is made, about 30:30. The timeline
 |---|---|---|---|---|---|
 | 1 | Discovery and requirements | Nov to mid-Dec, 6 wk | Requirements and Roadmap: per-system requirements, flow map, contract terms, make-or-buy, shortlist | $7,000 | $4,000 signing, $3,000 delivery |
 | 2 | Vendor selection: scheduling; RIS and PACS; prior auth; phones; dictation; billing; worklist, workstations, image sharing | Mid-Dec to Jan, 6 wk | Vendor Selection Report: scoring, 5-year cost per option, recommendation, contracts to sign | $8,000 | At the start |
-| 3 | Design and staffing plan | Feb, 1 mo | Architecture, Workflow and Staffing Plan; operating budget, three hosting options | $7,000 | At the start |
+| 3 | Design and staffing plan | Feb, 1 mo | Architecture, Workflow and Staffing Plan; operating budget, three ways to host what I build (your cloud, hybrid, on-site), each with a 3-year cost | $7,000 | At the start |
 | 4 | Build and configure | Mar to Apr, 2 mo | Every system set up, connected, passing end-to-end tests | $14,000 | $7,000 Mar 1, $7,000 Apr 1 |
 | 5 | Testing, training and go-live | May, 1 mo | Signed go-live readiness, opening-week support | $9,000 | At the start |
 | | Total, ready for a June opening, a month of buffer | Nov to May | | **$45,000** | |
@@ -1416,18 +1416,17 @@ Other centers, if it comes up here instead of at slide 22: not off the back of y
 
 Write every answer down at the table.
 
-1. **At the open ("?" badge on the cover), before anything about his history:** "Luis told me you built and sold imaging here in El Paso before this, but I would rather hear it from you than secondhand. What did you build, and how many centers were you running at the end?"
-2. **Slide 3, the four contract terms ("?" badge):** "Have you signed any RIS or billing vendors yet?"
-3. **Slide 5, the 40% statistic:** "How many prior authorizations a day were you running at steady state, and who did them?"
-4. **Slide 10, the federal dates:** "What is your payer mix going to look like?"
-5. **Slide 13, before you lean on 22.3%:** "What was your cancellation rate, and what did you do with the empty slot?"
-6. **Slide 15, before the voice recommendation:** "Who takes the phone call when a patient describes chest pain?"
-7. **Slide 17, owner reporting ("?" badge):** "What would each of you want to see on a Monday morning?"
-8. **Slide 19 or 21, the boundaries:** "You came up as an RPA, so you have been in the room with the patient. When you think about automating the front end, where is the line for you? What has to stay human?"
-9. **Slide 21, the bus question:** "We are two people. If you were in my chair pitching you, what would you want to see about continuity and about getting out, before you would put us anywhere near your schedule?"
-10. **Slide 23, the close ("?" badge):** "What did front desk and prior authorization actually cost you last time, as a share of operating expense?" Then: "What would you do differently this time, building it from scratch?"
+1. **At the open (meeting card question 1), before anything about his history:** "Luis told me you built and sold imaging here in El Paso before this, but I would rather hear it from you than secondhand. What did you build, and how many centers were you running at the end?"
+2. **Slide 5, the 40% statistic:** "How many prior authorizations a day were you running at steady state, and who did them?"
+3. **Slide 10, the federal dates:** "What is your payer mix going to look like?"
+4. **Slide 13, before you lean on 22.3%:** "What was your cancellation rate, and what did you do with the empty slot?"
+5. **Slide 15, before the voice recommendation:** "Who takes the phone call when a patient describes chest pain?"
+6. **Slide 17, owner reporting (meeting card question 2, asked aloud):** "What would each of you want to see on a Monday morning?"
+7. **Slide 19 or 21, the boundaries:** "You came up as an RPA, so you have been in the room with the patient. When you think about automating the front end, where is the line for you? What has to stay human?"
+8. **Slide 21, the bus question:** "We are two people. If you were in my chair pitching you, what would you want to see about continuity and about getting out, before you would put us anywhere near your schedule?"
+9. **Slide 23, the close (meeting card question 3, asked aloud):** "What did front desk and prior authorization actually cost you last time, as a share of operating expense?" Then: "What would you do differently this time, building it from scratch?"
 
-The four questions with a "?" badge on the slide (1, 2, 7 and the second half of 10) are at the top of the meeting card. Ask all ten.
+The three meeting-card questions (1, 6 and the second half of 9) are at the top of the card; none is printed on a slide. Ask all nine.
 
 ## Drill 5: the 60-second version
 
@@ -1514,7 +1513,7 @@ What is lost in the 5-minute version: every caveat except the two on slides 4 an
 
 ==**Q13. "What will it cost to run?" (Rick, 2026-11-03)**==
 
-=="Running costs are billed to you at cost, in accounts you own. In Phase 1 you get a ballpark, and in Phase 3 a total cost of ownership with three hosting options side by side, so you choose with the full picture."==
+=="Running costs are billed to you at cost, in accounts you own. In Phase 1 you get a ballpark, and in Phase 3 a total cost of ownership with three ways to host what I build side by side, your cloud, hybrid, or on-site, each with a 3-year cost, so you choose with the full picture."==
 
 ==**Q14. "Where will it run? Cloud or here?" (Rick, 2026-11-03)**==
 

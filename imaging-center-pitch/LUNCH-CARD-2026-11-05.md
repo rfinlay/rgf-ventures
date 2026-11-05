@@ -1,15 +1,16 @@
 # Meeting card. Thursday 2026-11-05, 3:30 PM, El Paso. Luis, Fernando, Jesse.
 
-## The four questions, in order (the "?" slides)
+## The three questions, in order (asked aloud; nothing is printed on the slides)
 
 1. **Cover (1):** =="Fernando, what did you build, and how many centers were you running at the end?"== Let him talk.
-2. **Vendor contracts (3):** =="Have you signed any RIS or billing vendors yet?"== If Exa: likely pick; three centers; the four terms in the contract; Phase 2 decides.
-3. **Owner numbers (17):** =="What would each of you want to see on a Monday morning?"== Write every answer down.
-4. **If it were my money (23):** =="What would you do differently this time, building it from scratch?"== Do not fill the silence.
+2. **Owner numbers (17):** =="What would each of you want to see on a Monday morning?"== Write every answer down.
+3. **If it were my money (23):** =="What would you do differently this time, building it from scratch?"== Do not fill the silence.
+
+Do not ask whether they have signed RIS or billing vendors: one center already has. If Exa comes up: likely pick; three centers; the four terms in the contract; Phase 2 decides.
 
 ## The five lines to land
 
-1. **Four in five appeals win. Almost nobody files one.** 11.5% appealed, 80.7% overturned. ==Medicare Advantage, all services, not an imaging number; the only audited national figure.== Then: ==every denial nobody appeals is revenue left on the table.==
+1. **Four in five appeals win. Almost nobody files one.** 11.5% of 4.1 million denials appealed, 80.7% of those overturned. ==Medicare Advantage, all services, not an imaging number; the only audited national figure.== Then: ==every denial nobody appeals is revenue left on the table.==
 2. **13 hours a week, about 40 requests, and 40% have someone working only on this. ==You have not hired that person yet.==** AMA 2025, self-reported.
 3. **95% of MRI prior auths are approved. ==A process that approves 95% of what it touches is one you automate, not one you staff.==** CMS: 220 million provider hours over ten years, in the rule; ==a projection, not measured savings.==
 4. **22.3% cancelled versus 2.0% no-show, seventy percent with notice.** ==Backfill, not reminders.== UC Irvine, one center; your numbers will differ, the pattern will not.
@@ -49,7 +50,7 @@
 7. **"Why fixed fee? Did you pad it?"** ==With hourly every surprise is your cost, with fixed it's mine; each phase is priced separately with its deliverables listed, so you see exactly what seven buys, and you can walk after it.==
 8. **"Luis is your neighbor. How do we keep it clean?"** ==On paper: a written contract, fixed scope, a price per phase, your sign-off before each one; Luis isn't the referee, you and I deal directly, and you can stop after any phase.== Never "RadAssist partner."
 9. **"What do you need, and what do we get from Phase 1?"** ==A few hours with all three of you, your services, volumes and payer mix, and the opening date; six weeks later, five documents you own: requirements, the patient-flow map, the contract terms, a make-or-buy for each requirement with a running cost for anything built, and the shortlist with criteria.== Four at signing, three on delivery.
-10. **"What will it cost to run?"** ==Not in the forty-five: accounts in your name, at cost, no markup; a ballpark in Phase 1 and three hosting options with a total cost of ownership in Phase 3; vendors expected near two thousand a month, about five thousand with the support plan, with a cap I can't pass without your OK.==
+10. **"What will it cost to run?"** ==Not in the forty-five: accounts in your name, at cost, no markup; a ballpark in Phase 1 and three ways to host what I build (your cloud, hybrid, on-site), each with a 3-year cost, in Phase 3; vendors expected near two thousand a month, about five thousand with the support plan, with a cap I can't pass without your OK.==
 11. **"What happens after opening?"** ==A support plan, a flat monthly fee for a set number of hours so you always know who to call and what it costs; or a role on your team, which we can talk about.== (Three thousand a month for up to twenty hours, one-fifty beyond, from June, twelve months, ninety-day check-in.)
 12. **"One sentence. Why say yes today?"** ==Because the decisions that are free today stop being free the day you sign your first vendor contract, and finding out if I'm right costs you one phase, not the whole engagement.==
 
