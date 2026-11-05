@@ -118,7 +118,7 @@
 
   .source { position: absolute; left: 88px; right: 88px; bottom: 26px; font-size: 15px; color: var(--ink-faint); line-height: 1.35; max-width: 1000px; }
   .source b { color: var(--ink-soft); font-weight: 600; }
-  /* 2026-11-02 (Rick's markup, slides 15 and 19): the source footer is absolutely positioned, so a slide's
+  /* 2026-11-02 (Rick's markup, slides 16 and 20): the source footer is absolutely positioned, so a slide's
      bottom paragraph could sit on top of it. Reserve the footer's height on every slide that has one. */
   .slide:has(> .source) { padding-bottom: 140px; }
   @media print { .slide:has(> .source), .slide.active:has(> .source) { padding-bottom: 1.15in; } }
@@ -164,7 +164,7 @@
   table.ms.five tr.tot td { color: var(--ink); }
   table.ms.five.compact { font-size: 15.5px; line-height: 1.2; margin-top: 10px; }
   table.ms.five.compact td { padding: 5px 10px 5px 0; }
-  /* 2026-11-03 (Rick R16/R17): the slide 23 assumption line grew; keep it clear of the table */
+  /* 2026-11-03 (Rick R16/R17): the slide 24 assumption line grew; keep it clear of the table */
   p.sub.assume { font-size: 16px; line-height: 1.32; max-width: 1140px; margin-top: 6px; }
   table.ms.five.compact.r9 { font-size: 13px; line-height: 1.1; margin-top: 2px; }
   table.ms.five.compact.r9 td { padding: 2px 10px 2px 0; }
@@ -173,7 +173,7 @@
   table.ms.five.r31 { font-size: 13px; line-height: 1.15; margin-top: 4px; }
   table.ms.five.r31 td { padding: 4px 12px 4px 0; }
   table.ms.five.r31 td { padding: 5px 12px 5px 0; }
-  /* 2026-11-03 (Rick R10/R18): appendix slides 27 and 31 */
+  /* 2026-11-03 (Rick R10/R18): appendix slides 28 and 32 */
   table.shortlist { font-size: 15px; line-height: 1.25; margin-top: 8px; }
   table.shortlist td { padding: 6px 12px 6px 0; }
   table.shortlist th { font-size: 13.5px; padding-bottom: 7px; }
@@ -194,20 +194,20 @@
   .modules.four { grid-template-columns: repeat(4, 1fr); gap: 22px; max-width: 1120px; }
   .modules.four .n { font-size: 27px; }
   .modules.four .w { font-size: 18px; }
-  /* 2026-11-02: slide 32 carries four short columns; tighten so the records column stays on the page */
+  /* 2026-11-02: slide 33 carries four short columns; tighten so the records column stays on the page */
   .slide.dense .cols { gap: 48px; margin-top: 22px; }
   .slide.dense .cols h3 { font-size: 27px; margin-bottom: 6px; }
   .slide.dense .cols p { font-size: 19.5px; line-height: 1.35; }
   .slide.dense .cols h3 + p + h3 { margin-top: 18px; }
   .demourl { color: var(--accent); font-weight: 600; }
-  /* 2026-11-04 (Rick 09:57): slide 16 is two views of one system, one idea, about sixty words */
+  /* 2026-11-04 (Rick 09:57): slide 17 is two views of one system, one idea, about sixty words */
   .cols.views { gap: 96px; margin-top: 34px; max-width: 1120px; }
   .cols.views h3 { font-size: 31px; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 3px solid var(--accent); }
   .cols.views h3 .who { display: block; font-family: var(--sans); font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-top: 5px; }
   .cols.views ul.plain { margin-top: 12px; }
   .cols.views ul.plain li { font-size: 23px; color: var(--ink); margin-bottom: 10px; line-height: 1.3; }
   .lead.bottomline { font-family: var(--serif); font-size: 32px; color: var(--ink); margin-top: 28px; max-width: 1100px; }
-  /* 2026-11-01: the live RadAssist demo cue on slide 33 */
+  /* 2026-11-01: the live RadAssist demo cue on slide 34 */
   .livemark { position: absolute; top: 22px; right: 88px; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 6px 14px; font-weight: 700; }
   .livemark::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #fff; margin-right: 10px; vertical-align: 1px; }
   .modules { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 34px; max-width: 1100px; }
@@ -221,7 +221,7 @@
   /* The "?" badge: a silent cue, top-right, on the four slides where Rick asks the room a question; the question itself is on the meeting card, never printed on the slide (Rick, 2026-11-04 practice run). */
   .askmark { position: absolute; top: 24px; right: 88px; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--accent); color: var(--accent); font-family: var(--serif); font-size: 26px; line-height: 36px; text-align: center; opacity: 0.85; z-index: 5; }
   @media print { .askmark { top: 0.3in; right: 0.7in; } }
-  /* Recommendation tag, top-right of each problem slide (13 to 16), same labels as the scorecard (Rick, 2026-11-04 practice run). */
+  /* Recommendation tag, top-right of the prior-auth build slide (10) and each problem slide (14 to 17), same labels as the scorecard (Rick, 2026-11-04 practice run). */
   .rectag { position: absolute; top: 30px; right: 88px; max-width: 460px; text-align: right; font-family: var(--sans); font-size: 17px; line-height: 1.3; color: var(--ink-soft); border: 2px solid var(--accent); border-radius: 6px; padding: 10px 16px; z-index: 5; background: var(--paper); }
   .rectag b { display: block; font-size: 19px; font-weight: 600; color: var(--accent); letter-spacing: 0.04em; }
   @media print { .rectag { top: 0.32in; right: 0.7in; } }
@@ -253,7 +253,7 @@
   .cols.records ul.plain li { font-size: 19.5px; margin-bottom: 7px; line-height: 1.32; }
   .honest { font-family: var(--serif); font-size: 26px; color: var(--ink); margin-top: 18px; max-width: 1120px; line-height: 1.3; }
   /* Slide 17: the ask line */
-  /* Slide 27 (shortlist): the Exa recommendation under the table */
+  /* Slide 28 (shortlist): the Exa recommendation under the table */
   .reco { font-size: 17px; color: var(--ink); margin-top: 12px; max-width: 1140px; line-height: 1.35; }
   .reco b { color: var(--accent); font-weight: 600; }
 
@@ -310,8 +310,8 @@
 <p><strong>The "?" badge (top right) is a silent cue on the four slides where you ask the room a question; the questions are printed only on the meeting card, never on the slide (Rick, 2026-11-04 practice run). Here (Rick, 2026-11-04 20:31): "Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?" Then: "Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?" Then: "Luis, you've heard me before, so stop me anytime."</strong> Ask before the first number; write the answers down and reuse their words later ("Jesse, you mentioned uptime. That's on this slide."). About three minutes. The other three are on the where-you-are slide (2: have you signed any RIS or billing vendors yet, which tells you whether the free move on 3 still applies), the owner-numbers slide (16) and "If it were my money" (22).</p>
 <p><strong>Hook first, before any introduction (Rick, 2026-11-05 01:37):</strong> "Four out of five prior-auth denials that get appealed are overturned. Almost nobody files the appeal. That's money your center will leave on the table every week, unless you decide how you'll handle it in the next few months. That's what I'm here to talk about. Then: "I'm Rick Finlay. I build and operate AI agent systems. Dr. Ramos uses one every day on real patients." Then the three-way intro above, then click to slide 2 (where you are; the vendor question is asked there).</p>
 <p>Jesse Martinez is at the table: an engineer, quiet and analytic. Speak to him once by name on the agent slide (4) and the walkthrough (10); he is the one most likely to ask how it actually connects.</p>
-<p><strong>The meeting (Rick, 2026-11-04 final round).</strong> Thursday 2026-11-05 at 3:30 PM, Luis brings a monitor, casual dress. Thirty to forty-five minutes of presentation, then questions. The clock on each slide runs 0:00 to about 33:00: the price is reached at about 29:00 on slide 23 and the Thank You on 25 closes at 33:00. Everything after that is Fernando, questions, and the appendix if the room asks.</p>
-<p><strong>If short on time, skip, in this order:</strong> 16 (owner numbers), then 22 (keep its closing question for the Thank You), then 13 to one sentence, then 8 and 9 to their closing lines. Never skip 3, 4, 7, 10, 17, 20, 21 or 23. At 25:30 and not yet on 20: jump to 20, then 23.</p>
+<p><strong>The meeting (Rick, 2026-11-04 final round).</strong> Thursday 2026-11-05 at 3:30 PM, Luis brings a monitor, casual dress. Thirty to forty-five minutes of presentation, then questions. The clock on each slide runs 0:00 to about 33:00: the price is reached at about 29:00 on slide 24 and the Thank You on 26 closes at 33:00. Everything after that is Fernando, questions, and the appendix if the room asks.</p>
+<p><strong>If short on time, skip, in this order:</strong> 17 (owner numbers), then 23 (keep its closing question for the Thank You), then 14 to one sentence, then 8 and 9 to their closing lines. Never skip 3, 4, 7, 11, 18, 21, 22 or 24. At 25:30 and not yet on 21: jump to 21, then 24.</p>
 </aside>
 </section>
 
@@ -335,10 +335,10 @@
 <div class="source">CMS-0057-F, 89 FR 8758, compliance dates verified in the Federal Register rule text.</div>
 <aside class="notes">
 <p class="time">1:00 to 2:30</p>
-<p><strong>The "?" badge: ask it aloud, from the meeting card.</strong> "Have you signed any RIS or billing vendors yet?" The answer tells you whether the next slide, the free move, still applies. If no, the four terms are still free. If yes, ask which, write it down, and the terms become the Phase 2 negotiating list (Exa: three centers, volume pricing, the four terms in the contract; slide 27).</p>
+<p><strong>The "?" badge: ask it aloud, from the meeting card.</strong> "Have you signed any RIS or billing vendors yet?" The answer tells you whether the next slide, the free move, still applies. If no, the four terms are still free. If yes, ask which, write it down, and the terms become the Phase 2 negotiating list (Exa: three centers, volume pricing, the four terms in the contract; slide 28).</p>
 <p>Say the obvious thing: they are in the only window where automation is a design choice rather than a retrofit. In six months there will be a RIS, a billing vendor, a phone system, and people hired around whatever those systems cannot do.</p>
 <p>The 2027-01-01 date is real and federal. The one plain line on the slide (Luis asked for it, 2026-11-04) is all you say here: payers must answer prior authorization electronically through an API, fast; it reaches Medicare Advantage, Medicaid, CHIP and exchange plans, not TRICARE or VA. Do not oversell it; the full dates slide is in the appendix (34), only if the room asks.</p>
-<p><strong>Updated 2026-10-22:</strong> the opening target is around June 2027, April at the earliest. The build starts around March so prior authorization works before opening. Say "your new center" and nothing more about where it is: no building, no address, no property, nothing about what was there before. The March date holds only if the assumptions on slide 35 hold.</p>
+<p><strong>Updated 2026-10-22:</strong> the opening target is around June 2027, April at the earliest. The build starts around March so prior authorization works before opening. Say "your new center" and nothing more about where it is: no building, no address, no property, nothing about what was there before. The March date holds only if the assumptions on slide 36 hold.</p>
 </aside>
 </section>
 
@@ -359,7 +359,7 @@
 </div>
 <aside class="notes">
 <p class="time">2:30 to 4:00</p>
-<p>You asked the vendor question on the previous slide (the "?" moved there, Rick 2026-11-05 01:57). If the answer was no, the four terms are still free. If yes, the terms become the Phase 2 negotiating list for whatever is signed (slide 27).</p>
+<p>You asked the vendor question on the previous slide (the "?" moved there, Rick 2026-11-05 01:57). If the answer was no, the four terms are still free. If yes, the terms become the Phase 2 negotiating list for whatever is signed (slide 28).</p>
 <p>This is the slide that proves you are on their side of the table. It does not matter whether they hire you. Fernando has negotiated vendor contracts twice and will recognize this instantly.</p>
 <p>Say: "Whatever you decide about me, do this. I will give you the exact language."</p>
 <p>If asked why DICOM specifically: it is the one standardized surface that does not depend on vendor goodwill. HL7 v2 is what the RIS will actually speak. FHIR on the RIS side: do not pay extra for it and do not plan around it; the FHIR that matters is on the payer side. If a RIS vendor claims FHIR, require it be named and demonstrated before signature at no additional interface fee.</p>
@@ -509,6 +509,25 @@
 <!-- 10 -->
 <section class="slide">
 <div class="inner">
+  <div class="rectag"><b>Build</b></div>
+  <div class="kicker">The recommendation</div>
+  <h2 class="tight">Prior authorization: I build this one.</h2>
+  <p class="lead">Spots the orders that need authorization and checks coverage.</p>
+  <p class="lead">Assembles the packet; a person on your staff approves every submission.</p>
+  <p class="lead">Submits through the payer's API or EDI, watches the clock, drafts the appeal.</p>
+  <div class="grow"></div>
+  <h2 class="tight">Here's what it looks like.</h2>
+</div>
+<aside class="notes">
+<p class="time">12:00 to 12:30</p>
+<p><strong>New slide (Rick 2026-11-05 02:21).</strong> The recommendation, stated before the demo proves it. Say the headline, the three lines, then "Here's what it looks like," and advance into the Tuesday order on slide 11. Nothing to defend here; the why-build depth (Olive AI, three centers, the vendor category) stays under slide 8.</p>
+</aside>
+</section>
+
+
+<!-- 11 -->
+<section class="slide">
+<div class="inner">
   <div class="kicker">One order through prior authorization</div>
   <h2 class="tight">An MRI order arrives at 9:00 on a Tuesday. Here is what the agent does with it.</h2>
   <ol class="steps">
@@ -526,19 +545,19 @@
   </div>
 </div>
 <aside class="notes">
-<p class="time">12:00 to 14:30</p>
+<p class="time">12:30 to 14:30</p>
 <p>Walk it like a Tuesday, not like a diagram. Fernando is visual and he has been over-promised before; the question he is waiting to ask is "when can I see it working?" The answer is on the slide: the demo exists today, on synthetic data, and the production version is built against their real RIS and payers in Phase 4 (March to April). Open https://rfinlay.github.io/imaging-priorauth-demo/ yourself that morning. Never show a link you have not opened that day.</p>
 <p class="caveat">HOW TO RUN IT (switch to the demo here). Tab already open on phone (cellular) and laptop, banner checked (green live, orange simulated, say which). Maria first: order, needs auth, packet, approve and submit, advance 3 days, approved. Then Robert: same steps fast, advance twice, denied, review appeal, sign and submit, advance, overturned. Then Owner's Monday report. Say the boundary line before anyone asks: the test server stores the request but has no medical-necessity rules, so the approve or deny is simulated. A full page reload resets both orders; the Start over button does not. Reload before the meeting and before handing the phone over. Full steps in PriorAuth-Demo-Script.pdf.</p>
-<p class="caveat">THE LINK AND THE PACE. Rick texts the link to Luis Thursday morning; Luis forwards to Fernando and Jesse. At the table they scan the QR on this slide or open the text and reload once. Rick leads on split screen and says each step first; everyone waits for him on Advance 3 days. Pricing comes on slide 23, after the close.</p>
+<p class="caveat">THE LINK AND THE PACE. Rick texts the link to Luis Thursday morning; Luis forwards to Fernando and Jesse. At the table they scan the QR on this slide or open the text and reload once. Rick leads on split screen and says each step first; everyone waits for him on Advance 3 days. Pricing comes on slide 24, after the close.</p>
 <p>Step 4 is the whole safety model. Say it twice if you have to: nothing reaches a payer until someone on his staff approves it.</p>
 <p><strong>If he raises Exa building something similar:</strong> never disparage Exa. "They may well, and if it is good, use it. What I build is vendor-neutral: it runs on your data and your contract terms, and it works with whatever RIS and PACS you pick, including Exa. The four access terms on slide 3 protect you either way, whether the feature comes from them or from me."</p>
 <p>Jesse may ask how it connects: HL7 v2 orders from the RIS, the payer's FHIR prior authorization API where it exists (required for Medicare Advantage, Medicaid, CHIP and exchange plans by 2027-01-01), EDI where it does not, and a human step where neither exists. No screen-driving of payer portals.</p>
-<p>If he brings his own idea, such as AI to retrieve prior records, give him the floor. Write it down. It is the records build on slide 15, and it is his idea now.</p>
+<p>If he brings his own idea, such as AI to retrieve prior records, give him the floor. Write it down. It is the records build on slide 16, and it is his idea now.</p>
 </aside>
 </section>
 
 
-<!-- 11 -->
+<!-- 12 -->
 <section class="slide section">
 <div class="inner">
   <div class="grow"></div>
@@ -549,12 +568,12 @@
 </div>
 <aside class="notes">
 <p class="time">14:30 to 15:00</p>
-<p>Seven minutes for all three (slides 12 to 15). Keep moving; if short on time, slide 13 is one sentence.</p>
+<p>Seven minutes for all three (slides 13 to 16). Keep moving; if short on time, slide 14 is one sentence.</p>
 </aside>
 </section>
 
 
-<!-- 12 -->
+<!-- 13 -->
 <section class="slide">
 <div class="inner">
   <div class="rectag"><b>Build, small</b>A ranked waitlist on top of the RIS fills cancelled slots.</div>
@@ -577,7 +596,7 @@
 </section>
 
 
-<!-- 13 -->
+<!-- 14 -->
 <section class="slide">
 <div class="inner">
   <div class="rectag"><b>Buy</b>Your RIS does this.</div>
@@ -599,7 +618,7 @@
 </section>
 
 
-<!-- 14 -->
+<!-- 15 -->
 <section class="slide">
 <div class="inner">
   <div class="rectag"><b>Buy, I integrate</b>A vendor answers the phone; I supervise it.</div>
@@ -620,7 +639,7 @@
 </section>
 
 
-<!-- 15 -->
+<!-- 16 -->
 <section class="slide">
 <div class="inner">
   <div class="rectag"><b>Build, two small tools</b></div>
@@ -663,7 +682,7 @@
 </section>
 
 
-<!-- 16 -->
+<!-- 17 -->
 <section class="slide">
 <div class="inner">
   <div class="rectag"><b>Build</b></div>
@@ -705,7 +724,7 @@
 </section>
 
 
-<!-- 17 -->
+<!-- 18 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">The scorecard</div>
@@ -727,14 +746,14 @@
 <p class="time">21:30 to 22:30</p>
 <p>Four steps (Rick, 2026-11-04): "Eight candidates. I'd build five, buy two, and integrate the voice system." Then "The right-hand column is what each one actually does. Take a second with it," and 15 to 20 seconds of silence. Then the five builds, one line each (full lines in the speaking notes). Close: "Any of these you'd push back on?" and stop talking. Recommending against yourself is the most credible thing on the slide.</p>
 <p><strong>Why each row lands where it does:</strong> prior authorization, strongest evidence, the vendors are priced for hospital systems, federal APIs arrive 2027-01-01. Reminders and self-scheduling, commodity, bundled in modern imaging RIS products. Backfill, a ranked waitlist on top of the RIS that addresses the 22.3% of cancellations, not the 2.0% of no-shows. Voice, a funded category with the highest blast radius and an unforgiving Spanish bar. Records inbound, hard statutory deadlines and unbillable retrieval labor. Records outbound, no vendor has solved it for a small center. Owner reporting, custom by nature, smallest compliance footprint. Billing, a commodity clearinghouse function with a real vendor market.</p>
-<p><strong>IF ASKED about the RIS and PACS choice (Rick, 2026-11-03):</strong> "For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2." Why: one vendor, one support line, one contract; no RIS-to-PACS interface to buy or break; one worklist; faster go-live; the lean control Fernando wants. The downside is lock-in and giving up best-of-breed, and the four contract terms are the mitigation: data export in DICOM and HL7 at no penalty, interface fees fixed, API access, worklist access. Split RIS from PACS only if the radiologists have a strong PACS preference or want multi-site reading from day one. Dictation is selected separately, and the radiologists choose it. The starting shortlist is slide 27, in the appendix.</p>
+<p><strong>IF ASKED about the RIS and PACS choice (Rick, 2026-11-03):</strong> "For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2." Why: one vendor, one support line, one contract; no RIS-to-PACS interface to buy or break; one worklist; faster go-live; the lean control Fernando wants. The downside is lock-in and giving up best-of-breed, and the four contract terms are the mitigation: data export in DICOM and HL7 at no penalty, interface fees fixed, API access, worklist access. Split RIS from PACS only if the radiologists have a strong PACS preference or want multi-site reading from day one. Dictation is selected separately, and the radiologists choose it. The starting shortlist is slide 28, in the appendix.</p>
 <p>The billing row exists so the billing evaluation on the engagement slide has a home. Fernando has reconciled real remittances for twenty years; billing is the area he knows best, so this is the row he is most likely to stop you on. The answer: "Billing is a buy and I am not touching the claims work. What I evaluate is whether the billing vendor's eligibility and claim data are reachable, because the prior authorization system I want to build depends on them, and whether the four access terms go into that contract the same way they go into the RIS contract."</p>
 <p><strong>Watch the seam between row 1 and this row, because it is the one place the slide can look self-contradictory.</strong> Row 1 (build) includes the eligibility check that decides whether a study needs authorization. This row (buy) is the billing system and the EDI 270/271 feed it exposes. If he presses: "I am not building an eligibility system. Your billing vendor already has that transaction; it is the oldest standardized surface in this business. What I build is the thing that reads it and acts on it. That is why the access terms in that contract matter to me."</p>
 </aside>
 </section>
 
 
-<!-- 18 -->
+<!-- 19 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Boundaries: the FDA question, answered by the statute</div>
@@ -754,7 +773,7 @@
 </section>
 
 
-<!-- 19 -->
+<!-- 20 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Boundaries: what I will design around, stated before you ask</div>
@@ -786,7 +805,7 @@
 </section>
 
 
-<!-- 20 -->
+<!-- 21 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">The question you are going to ask</div>
@@ -811,7 +830,7 @@
 </section>
 
 
-<!-- 21 -->
+<!-- 22 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">The most important slide</div>
@@ -832,7 +851,7 @@
 </section>
 
 
-<!-- 22 -->
+<!-- 23 -->
 <section class="slide">
 <div class="inner">
   <div class="askmark" aria-label="A question for the room">?</div>
@@ -854,7 +873,7 @@
 </section>
 
 
-<!-- 23 -->
+<!-- 24 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">What I am proposing</div>
@@ -872,7 +891,7 @@
     </tbody>
   </table>
   <div class="grow"></div>
-  <p class="sub assume">Priced for one center, with one selected system per category; additional centers, or a different system for another center, are quoted and approved before work starts. Running costs after the build (cloud, AI usage, texting, clearinghouse, security) are not in the $45,000: billed to the center at cost in accounts in your name, estimated in Phase 1, budgeted in Phase 3, monthly statement (slide 28). If the opening date moves, the timeline moves with it; the price does not. Work outside these phases is approved first and billed at $150 an hour against a retainer you top up.</p>
+  <p class="sub assume">Priced for one center, with one selected system per category; additional centers, or a different system for another center, are quoted and approved before work starts. Running costs after the build (cloud, AI usage, texting, clearinghouse, security) are not in the $45,000: billed to the center at cost in accounts in your name, estimated in Phase 1, budgeted in Phase 3, monthly statement (slide 29). If the opening date moves, the timeline moves with it; the price does not. Work outside these phases is approved first and billed at $150 an hour against a retainer you top up.</p>
 </div>
 <aside class="notes">
 <p class="time">29:00 to 31:00</p>
@@ -887,13 +906,13 @@
 <p><strong>"Who do you contract with?" (Rick, 2026-11-04):</strong> "I'll contract with whichever company runs operations, and the practice's patient data stays the practice's." The engagement and the support plan contract with the operating company, the one that runs operations and holds the vendor and cloud accounts. It is already formed; the agreement is signed directly with it. Patient data belongs to the practice; Rick works under the operating company's business associate agreement as a subcontractor, or signs a BAA directly with the practice, per counsel.</p>
 <p><strong>"Does that change at three centers?" (Rick, 2026-11-03, replaces the old answer):</strong> "The engagement covers this center, and one pick per system. If the other centers use the same picks, they're a smaller engagement: mostly build and go-live. If a center wants something different, that's its own evaluation, and I'll quote it before I start. You'll never get a surprise bill. You'll get a number to approve." Rule: same picks at another center is a smaller follow-on, mostly Phases 4 and 5; different picks is a new selection for those categories, quoted and approved in writing first.</p>
 <p><strong>"What happens after opening?" (Rick, 2026-11-03):</strong> "After opening, there's a support plan: a flat monthly fee for a set number of hours, so you always know who to call and what it costs. If you'd rather have me on the team, we can talk about that too." The plan: $3,000 a month for up to 20 hours, $150 an hour beyond, from June 2027, 12-month term, a 90-day check-in; monitoring, fixes, updates to what you built, vendor coordination, a response-time promise. Separate from the forty-five; running costs stay at cost.</p>
-<p><strong>"What does it cost to keep running?" (Rick, 2026-11-03):</strong> not in the forty-five. "Everything runs in accounts in your name: the cloud, the AI, the texting, the clearinghouse. You sign each HIPAA agreement, you see each bill, I don't mark any of it up. I'll give you an estimated range in Phase 1 and a firm operating budget in Phase 3, and after opening you get a one-page statement every month: each vendor's bill, the volume it handled, what it did for you." The estimate today is on slide 28 in the appendix; it is an estimate, confirmed in Phase 1. The AI usage is the small part; the secure cloud setup, the clearinghouse transactions and texting under a HIPAA agreement are most of it.</p>
+<p><strong>"What does it cost to keep running?" (Rick, 2026-11-03):</strong> not in the forty-five. "Everything runs in accounts in your name: the cloud, the AI, the texting, the clearinghouse. You sign each HIPAA agreement, you see each bill, I don't mark any of it up. I'll give you an estimated range in Phase 1 and a firm operating budget in Phase 3, and after opening you get a one-page statement every month: each vendor's bill, the volume it handled, what it did for you." The estimate today is on slide 29 in the appendix; it is an estimate, confirmed in Phase 1. The AI usage is the small part; the secure cloud setup, the clearinghouse transactions and texting under a HIPAA agreement are most of it.</p>
 <p><strong>IF ASKED "Would you come in full time?" (Rick, 2026-11-03):</strong> "I'd want to hear it. Let's finish Phase 1 first; that's the job to judge me on. If it makes sense after that, we can talk about what a dedicated role looks like." No salary, no title, no date. If pressed: "Phase 1 is six weeks. Judge me on it, then we talk."</p>
 </aside>
 </section>
 
 
-<!-- 24 -->
+<!-- 25 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">The seven months, on one page</div>
@@ -1003,7 +1022,7 @@
 </section>
 
 
-<!-- 25 -->
+<!-- 26 -->
 <section class="slide closing">
 <div class="inner">
   <div class="grow"></div>
@@ -1018,12 +1037,12 @@
 </div>
 <aside class="notes">
 <p class="time">32:00 to 33:00, then stop</p>
-<p>Leave the two-page summary on the table, one per person. This is the last slide of the pitch; the main flow now ends engagement (23), timeline (24), Thank You (25) (Rick, 2026-11-04 final round), so the price has already landed when you say thank you. If slide 22 was cut, ask its closing question here. What follows is a divider and a ten-slide appendix (the Phase 2 systems and starting shortlist, the running costs and hosting options, the opening checklist, two slides of ideas worth a look, radiology report assistance, the RadAssist proof, the federal dates, what the dates depend on, what I need from you): stop here and take questions, or turn the page if the room asks for it. In the no-numbers variant this slide follows slide 22 directly and the appendix keeps the shortlist, report assistance, the RadAssist proof, the federal dates and what the dates depend on.</p>
+<p>Leave the two-page summary on the table, one per person. This is the last slide of the pitch; the main flow now ends engagement (24), timeline (25), Thank You (26) (Rick, 2026-11-04 final round), so the price has already landed when you say thank you. If slide 23 was cut, ask its closing question here. What follows is a divider and a ten-slide appendix (the Phase 2 systems and starting shortlist, the running costs and hosting options, the opening checklist, two slides of ideas worth a look, radiology report assistance, the RadAssist proof, the federal dates, what the dates depend on, what I need from you): stop here and take questions, or turn the page if the room asks for it. In the no-numbers variant this slide follows slide 23 directly and the appendix keeps the shortlist, report assistance, the RadAssist proof, the federal dates and what the dates depend on.</p>
 </aside>
 </section>
 
 
-<!-- 26 -->
+<!-- 27 -->
 <section class="slide section">
 <div class="inner">
   <div class="grow"></div>
@@ -1041,7 +1060,7 @@
 </section>
 
 
-<!-- 27 -->
+<!-- 28 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Systems to select in Phase 2: starting shortlist</div>
@@ -1069,7 +1088,7 @@
 </section>
 
 
-<!-- 28 -->
+<!-- 29 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">What it costs to keep running, and where it runs</div>
@@ -1100,7 +1119,7 @@
 </section>
 
 
-<!-- 29 -->
+<!-- 30 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">Opening checklist: required to open, outside the fee</div>
@@ -1127,7 +1146,7 @@
 </section>
 
 
-<!-- 30 -->
+<!-- 31 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">Ideas worth a look: not in the fee, scoped only if you ask</div>
@@ -1153,7 +1172,7 @@
 </section>
 
 
-<!-- 31 -->
+<!-- 32 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">Ideas worth a look, continued</div>
@@ -1172,7 +1191,7 @@
 </section>
 
 
-<!-- 32 -->
+<!-- 33 -->
 <section class="slide dense">
 <div class="inner">
   <div class="kicker">Appendix: radiology report assistance, the two directions</div>
@@ -1199,7 +1218,7 @@
 <p><strong>Say the heading first, plainly, and do not soften it.</strong> "The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature." That is the whole operating model and it is also the bus answer: if I disappear, the thing that signs is a person who works for you.</p>
 <p><strong>RadAssist, honestly.</strong> Today it is four modules: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar), the one you just described, and CT Spine, live since November 2. For calcium, Luis snips the scanner's report or dose screen, pastes it, RadAssist reads the per-vessel scores, total, age, sex and DLP, shows him every value, and nothing touches the form until he clicks Apply. For thyroid and spine he enters what he graded, one dropdown per sentence from his own template, and the impression writes itself in the order he set. It drafts; he signs. It does not interpret an image. Do not claim it does anything more than that today.</p>
 <p><strong>The named path at a center they own:</strong> DICOM Modality Worklist and query/retrieve give the report assistant the study context (contract term four on slide 3). HL7 v2 ORU is the standard result message that carries a signed report into the RIS (term two). Verify before signature that the RIS accepts an inbound ORU result: Konica Minolta's Exa, for one, documents only outbound report paths, so this is a real evaluation item, not a formality. Say "I will verify that against the RIS you pick" rather than promising it.</p>
-<p><strong>Records coming in is slide 15's problem, restated from the other side.</strong> DICOM query/retrieve works only where the sending facility grants it, which across organizations is rare. Otherwise the request goes out by fax or portal and what comes back is imported over DICOM. The payer Provider Access API under CMS-0057-F arrives 2027-01-01, but it carries the claims and clinical record the payer holds, not images, and it requires an in-network contract plus a treatment relationship, which a newly opened center may not have on day one. Name that limit yourself.</p>
+<p><strong>Records coming in is slide 16's problem, restated from the other side.</strong> DICOM query/retrieve works only where the sending facility grants it, which across organizations is rare. Otherwise the request goes out by fax or portal and what comes back is imported over DICOM. The payer Provider Access API under CMS-0057-F arrives 2027-01-01, but it carries the claims and clinical record the payer holds, not images, and it requires an in-network contract plus a treatment relationship, which a newly opened center may not have on day one. Name that limit yourself.</p>
 <p><strong>Say the records half and the RadAssist half first. The one-stack question comes last on this slide, and only if more than one center comes up (Rick, 2026-11-02).</strong></p>
 <p class="caveat">"One specification, written once and reused for every center. The way I would deploy it is the industry standard, and it is security first. One environment, under one contract, which is what keeps the cost down. Inside it, each organization gets its own isolated instance: its own database and its own encryption keys, its own credentials with role-based access, and its own audit log. Nobody at one organization can see another's data, by construction. If one owner or one joint venture owns all the centers, that default is the whole answer. If the centers are separately owned and an owner wants fully separate hosting and separate books, each gets a fully separate stack, and that costs more. Either works. What I will never build is one shared database."</p>
 <p><strong>Why the default runs that way.</strong> The isolation lives at the data layer, where it has to be, so one environment can be operated, patched and monitored once while no organization shares a database, a key, or a login with another. Fully separate stacks add nothing for security that the isolated instance does not already give; they add separate hosting bills and separate books, which is why a separately owned center sometimes wants them. If he asks whether one shared database with a center column would be cheaper still: "Cheaper, and I would not build it. The boundary belongs in separate databases and keys, not in a filter." Do not say as fact which case they are in, and do not name the other principals.</p>
@@ -1209,7 +1228,7 @@
 </section>
 
 
-<!-- 33 -->
+<!-- 34 -->
 <section class="slide section">
 <div class="inner">
   <div class="kicker">Appendix: the proof</div>
@@ -1231,14 +1250,14 @@
 <p><strong>Say it the way Fernando will hear it: control and simplicity.</strong> His template, his rules, his signature. One dropdown per sentence. The report is plain text he pastes into whatever system the center buys. Nothing is sent anywhere; the browser does the work. No vendor lock, nothing to integrate before it is useful.</p>
 <p><strong>The proof point, said once:</strong> "Luis sent me his template and his rules. Every rule in it is his." Do not add how fast it was built (Rick, 2026-11-02). CT Spine followed from his sample reports (live November 2): same tool, switched to CT. One sentence on it, no more. The speed of the fix is the proof, not the absence of changes.</p>
 <p>Questions to hand Luis after the overview: What broke, and how fast was it fixed? What did you ask for that got built? What does it do that the vendor tools did not?</p>
-<p><strong>The one line on the RIS path (Rick, 2026-11-03; the report-assistance slide moved to the appendix, slide 32):</strong> "At your center the signed report flows into the RIS over HL7 version 2, a contract term from slide 3. I verify the inbound path against the RIS you pick before you sign." Say it once. The two-directions question (the report going out versus priors coming in), the named DICOM path and the across-centers deployment default are all on slide 32, only if asked.</p>
-<p><strong>Roadmap, as Luis asked for it:</strong> voice dictation inside RadAssist, then brain and cardiac CTA (CAD-RADS) modules. He will email guideline-display corrections; acknowledge them as his. Say "next on the roadmap," never a date. <strong>Reading the images (auto-filling level findings from the pictures) is a future item with a regulatory path.</strong> That is diagnostic software; it is not promised, not dated, and it is why the line on slide 18 matters.</p>
-<p><strong>Selling RadAssist to other centers: do NOT raise it at this table.</strong> Luis sees resale potential for structured reporting. That is a private conversation between you and Luis, because slide 21 tells Fernando this center is the priority and his service terms do not change if you take on a second site. Both are true, but only one belongs in front of Fernando. Nothing about how Luis came to use RadAssist, or on what terms, is said here (Rick, 2026-11-03).</p>
+<p><strong>The one line on the RIS path (Rick, 2026-11-03; the report-assistance slide moved to the appendix, slide 33):</strong> "At your center the signed report flows into the RIS over HL7 version 2, a contract term from slide 3. I verify the inbound path against the RIS you pick before you sign." Say it once. The two-directions question (the report going out versus priors coming in), the named DICOM path and the across-centers deployment default are all on slide 33, only if asked.</p>
+<p><strong>Roadmap, as Luis asked for it:</strong> voice dictation inside RadAssist, then brain and cardiac CTA (CAD-RADS) modules. He will email guideline-display corrections; acknowledge them as his. Say "next on the roadmap," never a date. <strong>Reading the images (auto-filling level findings from the pictures) is a future item with a regulatory path.</strong> That is diagnostic software; it is not promised, not dated, and it is why the line on slide 19 matters.</p>
+<p><strong>Selling RadAssist to other centers: do NOT raise it at this table.</strong> Luis sees resale potential for structured reporting. That is a private conversation between you and Luis, because slide 22 tells Fernando this center is the priority and his service terms do not change if you take on a second site. Both are true, but only one belongs in front of Fernando. Nothing about how Luis came to use RadAssist, or on what terms, is said here (Rick, 2026-11-03).</p>
 </aside>
 </section>
 
 
-<!-- 34 -->
+<!-- 35 -->
 <section class="slide dates">
 <div class="inner">
   <div class="kicker">The dates land on your opening</div>
@@ -1262,7 +1281,7 @@
 </section>
 
 
-<!-- 35 -->
+<!-- 36 -->
 <section class="slide">
 <div class="inner">
   <div class="kicker">Appendix: what the dates depend on</div>
@@ -1281,7 +1300,7 @@
 </div>
 <aside class="notes">
 <p class="time">Appendix, only if asked</p>
-<p>This slide is the only place a date is promised, and every date on it is conditional. Read the list, then the last line. (Rick, 2026-11-03: the list now carries the dependencies the engagement assumptions create: one pick per system, contracts and BAAs signed before Phase 4, the hosting option chosen by the end of Phase 3, and payer enrollment and credentialing started early, because enrollment commonly runs months and a center that opens unenrolled cannot bill. The same list is on slide 23, the leave-behind and the runbook.) A man who has been over-promised respects a vendor who names the conditions before signing.</p>
+<p>This slide is the only place a date is promised, and every date on it is conditional. Read the list, then the last line. (Rick, 2026-11-03: the list now carries the dependencies the engagement assumptions create: one pick per system, contracts and BAAs signed before Phase 4, the hosting option chosen by the end of Phase 3, and payer enrollment and credentialing started early, because enrollment commonly runs months and a center that opens unenrolled cannot bill. The same list is on slide 24, the leave-behind and the runbook.) A man who has been over-promised respects a vendor who names the conditions before signing.</p>
 <p>The one most likely to slip is vendor selection, because it runs on their calendar. Say so: "The RIS choice drives everything after it. That is why the vendor work comes first."</p>
 <p>Do not promise anything beyond this list. If pushed for a guarantee: "Tell me which piece has to be live by when, and we will scope it against these."</p>
 <p>Staffing, unprompted: "Staff for the manual workflow at opening. I am not going to tell you to hire thin against a date of mine." It changes what your people do; it does not set your hiring plan.</p>
@@ -1289,7 +1308,7 @@
 </section>
 
 
-<!-- 36 -->
+<!-- 37 -->
 <section data-nonumbers="remove" class="slide">
 <div class="inner">
   <div class="kicker">Appendix: what I need from you</div>
@@ -1298,7 +1317,7 @@
     <thead><tr><th style="width:4%">#</th><th style="width:22%">Phase</th><th>What I need from you</th><th style="width:30%">What you get back</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>Discovery and requirements</td><td>Time with all three of you: Dr. Ramos, Fernando and Jesse. The services and modalities you plan to offer, expected volumes and payer mix, and the target opening date.</td><td>Requirements and Roadmap, signed by you: requirements per system, the patient-flow map (order to signed report to paid claim), contract terms, a make-or-buy recommendation for each requirement (a system you buy, or a piece I build, with a ballpark running cost for anything built), shortlist and criteria for Phase 2</td></tr>
-      <tr><td>2</td><td>Vendor and system selection</td><td>Budget ranges, any vendors you already prefer, your radiologists' dictation preference, and your decisions as the scoring comes in.</td><td>Vendor Selection Report: side-by-side comparison of the shortlisted systems in each category, weighted scoring against the Phase 1 requirements, integration readiness as a named criterion, pros and concerns, 5-year total cost of ownership per option (license or subscription, implementation, interface fees, support, hardware), a recommendation; plus the contracts to sign for every system on slide 27</td></tr>
+      <tr><td>2</td><td>Vendor and system selection</td><td>Budget ranges, any vendors you already prefer, your radiologists' dictation preference, and your decisions as the scoring comes in.</td><td>Vendor Selection Report: side-by-side comparison of the shortlisted systems in each category, weighted scoring against the Phase 1 requirements, integration readiness as a named criterion, pros and concerns, 5-year total cost of ownership per option (license or subscription, implementation, interface fees, support, hardware), a recommendation; plus the contracts to sign for every system on slide 28</td></tr>
       <tr><td>3</td><td>Design and staffing plan</td><td>Operating hours, the roles you intend to hire, the vendor contracts as they are negotiated, and your hosting pick from the three options.</td><td>Architecture, Workflow and Staffing Plan, plus Total cost of ownership and operating budget (three hosting options, three years)</td></tr>
       <tr><td>4</td><td>Build and configure</td><td>Signed vendor contracts and business associate agreements, sandbox access to each system, and equipment delivery dates.</td><td>Every system, bought and built, set up, connected and passing end-to-end tests. Vendors configure their own products; I manage them, connect everything and run the tests</td></tr>
       <tr><td>5</td><td>Testing, training and go-live</td><td>Your staff, hired and available for training, and the final opening date.</td><td>Signed go-live readiness, and me on call through opening week</td></tr>
@@ -1326,11 +1345,11 @@
 <script>
 /* NO-NUMBERS VARIANT. Open this file with ?nonumbers (file:///...deck.html?nonumbers) and every
    element tagged data-nonumbers="remove" is deleted from the DOM before the deck script runs, so the
-   counter, overview numbering, last-slide page-break and print output all see a 29-slide deck (the engagement 23, timeline 24, running costs 28, checklist 29, ideas 30 and 31, and what-I-need 36 are removed; the divider, shortlist, report assistance, RadAssist proof, federal dates and dates-depend-on slides stay).
+   counter, overview numbering, last-slide page-break and print output all see a 30-slide deck (the engagement 24, timeline 25, running costs 29, checklist 30, ideas 31 and 32, and what-I-need 37 are removed; the divider, shortlist, report assistance, RadAssist proof, federal dates and dates-depend-on slides stay).
    Regenerate the PDF with:
    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer \
      --print-to-pdf=Imaging-Center-Deck-NoNumbers-2026-11-05.pdf "file://$PWD/imaging-center-automation-deck-2026-11-05.html?nonumbers"
-   Without the param the file renders the full 36-slide deck unchanged (29 in the no-numbers variant). One source, no fork. */
+   Without the param the file renders the full 37-slide deck unchanged (30 in the no-numbers variant). One source, no fork. */
 (function () {
   if (/[?&]nonumbers\b/.test(location.search)) {
     document.documentElement.classList.add('nonumbers');
