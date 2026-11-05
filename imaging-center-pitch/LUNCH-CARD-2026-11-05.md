@@ -5,7 +5,7 @@
 ## The four questions, in order (the "?" slides; asked aloud, nothing printed on the slide)
 
 1. **Cover (1), after the opener** (=="I'm Rick Finlay. I build and operate AI agent systems. Dr. Ramos uses one every day on real patients, RadAssist. I'm not here to sell you software. I'm here to tell you which decisions are free right now."==)**:** =="Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?"== Then: =="Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?"== Then: =="Luis, you've heard me before, so stop me anytime."== Write every answer down; reuse them later ("Jesse, you mentioned uptime. That's on this slide."). About 3 minutes.
-2. **Vendor contracts (5):** =="Have you signed any RIS or billing vendors yet?"== If Exa: likely pick; three centers; the four terms in the contract; Phase 2 decides.
+2. **Where you are (2):** =="Have you signed any RIS or billing vendors yet?"== No: the next slide is still free. Yes: write down which. If Exa: likely pick; three centers; the four terms in the contract; Phase 2 decides.
 3. **Owner numbers (16):** =="What would each of you want to see on a Monday morning?"== Write every answer down.
 4. **If it were my money (22):** =="What would you do differently this time, building it from scratch?"== Do not fill the silence.
 
@@ -19,7 +19,7 @@
 
 ## If short on time, skip in this order
 
-**16**, then **22** (keep its question for the Thank You), then **13** to one sentence, then **8 and 9** to their closing lines. ==Never skip 2, 3, 5, 10, 17, 20, 21 or 23.== At 25:30 and not yet on 20: jump to **20, then 23.** Price at about 29:00; Thank You at 33:00.
+**16**, then **22** (keep its question for the Thank You), then **13** to one sentence, then **8 and 9** to their closing lines. ==Never skip 3, 4, 5, 10, 17, 20, 21 or 23.== At 25:30 and not yet on 20: jump to **20, then 23.** Price at about 29:00; Thank You at 33:00.
 
 ## Never say
 

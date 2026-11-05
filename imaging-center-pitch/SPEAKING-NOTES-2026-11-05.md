@@ -4,13 +4,13 @@
 >
 > **The meeting:** Thursday 2026-11-05 at **3:30 PM**, a private briefing, not a meal. Casual dress. Luis brings a monitor. Thirty to forty-five minutes of presentation, then questions. **Present WITHOUT these notes:** every slide now carries the sentence you say as its headline plus two or three short lines; this sheet is the backup and the depth, not the script.
 >
-> **REORDERED OPENING, Rick 2026-11-05 01:37. The deck, 36 slides (29 in the no-numbers variant). Main flow 1 to 25, price on 23, Thank You on 25.** New order: 1 cover (hook first, then the intro), 2 the headline number, 3 what an AI agent is, 4 where you are (with the 2026 and 2027 dates in one line), 5 the free move, 6 why greenfield, 7 Part one, 8 what prior auth costs, 9 why nobody appeals, 10 one order through prior authorization (demo + QR), 11 Part two, 12 backfill, 13 reminders, 14 voice, 15 records, 16 owner numbers, 17 scorecard, 18 FDA, 19 boundaries, 20 bus, 21 do not buy, 22 if it were my money, **23 the engagement (price)**, 24 timeline, **25 Thank You**, 26 appendix divider, 27 shortlist, 28 running costs, 29 opening checklist, 30 and 31 ideas, 32 report assistance, 33 RadAssist, 34 the federal dates (moved out of the main flow), 35 dates depend on, 36 what I need. Dated blocks below written before 2026-11-05 keep their older numbers.
+> **REORDERED OPENING, Rick 2026-11-05 01:37, slides 2 to 6 reordered again at 01:57. The deck, 36 slides (29 in the no-numbers variant). Main flow 1 to 25, price on 23, Thank You on 25.** New order: 1 cover (hook first, then the intro), 2 where you are (with the 2026 and 2027 dates in one line; the "?" vendor question is asked here), 3 the free move, 4 what an AI agent is (before the numbers), 5 the headline number, 6 why greenfield, 7 Part one, 8 what prior auth costs, 9 why nobody appeals, 10 one order through prior authorization (demo + QR), 11 Part two, 12 backfill, 13 reminders, 14 voice, 15 records, 16 owner numbers, 17 scorecard, 18 FDA, 19 boundaries, 20 bus, 21 do not buy, 22 if it were my money, **23 the engagement (price)**, 24 timeline, **25 Thank You**, 26 appendix divider, 27 shortlist, 28 running costs, 29 opening checklist, 30 and 31 ideas, 32 report assistance, 33 RadAssist, 34 the federal dates (moved out of the main flow), 35 dates depend on, 36 what I need. Dated blocks below written before 2026-11-05 keep their older numbers.
 >
-> **The "?" badge (Rick, 2026-11-04 practice run).** Four slides carry a small "?" top-right as a silent cue; the question is never printed on the slide, it is on the meeting card and asked aloud, in this order: **cover (1)** "Fernando, what would make the next 30 minutes worth your time?" (then Jesse, then Luis); **vendor contracts (5)** "Have you signed any RIS or billing vendors yet?"; **owner numbers (16)** "What would each of you want to see on a Monday morning?"; **if it were my money (22)** "What would you do differently this time, building it from scratch?" Slides 12 to 15 now carry a recommendation tag top-right (Build, small; Buy; Buy, I integrate; Build, two small tools) matching the scorecard, and every percentage on a slide shows its base.
+> **The "?" badge (Rick, 2026-11-04 practice run).** Four slides carry a small "?" top-right as a silent cue; the question is never printed on the slide, it is on the meeting card and asked aloud, in this order: **cover (1)** "Fernando, what would make the next 30 minutes worth your time?" (then Jesse, then Luis); **where you are (2)** "Have you signed any RIS or billing vendors yet?" (the answer says whether the free move on 3 still applies); **owner numbers (16)** "What would each of you want to see on a Monday morning?"; **if it were my money (22)** "What would you do differently this time, building it from scratch?" Slides 12 to 15 now carry a recommendation tag top-right (Build, small; Buy; Buy, I integrate; Build, two small tools) matching the scorecard, and every percentage on a slide shows its base.
 >
-> **Content changes this round:** slide 4 carries the 2027 rule in one plain line (electronic prior auth through an API, fast; Medicare Advantage, Medicaid, CHIP, exchange plans; not TRICARE or VA). Slide 2 ends on "Four in five appeals win. Almost nobody files one." (the why line was removed 11-04 evening). Slide 3 is two boxes, workflow agent and owner's agent, guardrails as one line. Slide 15 is problem, fix, honest gap, with Luis's QR-coded envelope label for outgoing prior requests. Slide 17: "One system, two views. All three of you see both." (the revenue view is owned by the practice and visible to all three; Luis OK'd). Slide 28: Exa is the likely RIS and PACS; negotiate as three centers for volume pricing and put the four access terms into the Exa contract; the final pick is still Phase 2.
+> **Content changes this round:** slide 2 carries the 2027 rule in one plain line (electronic prior auth through an API, fast; Medicare Advantage, Medicaid, CHIP, exchange plans; not TRICARE or VA). Slide 5 ends on "Four in five appeals win. Almost nobody files one." (the why line was removed 11-04 evening). Slide 4 is two boxes, workflow agent and owner's agent, guardrails as one line. Slide 15 is problem, fix, honest gap, with Luis's QR-coded envelope label for outgoing prior requests. Slide 17: "One system, two views. All three of you see both." (the revenue view is owned by the practice and visible to all three; Luis OK'd). Slide 28: Exa is the likely RIS and PACS; negotiate as three centers for volume pricing and put the four access terms into the Exa contract; the final pick is still Phase 2.
 >
-> **The clock:** 0:00 to about 33:00. Price at about 29:00. Skip order: 16, then 22 (keep its question for the Thank You), then 13 to one sentence, then 8 and 9 to their closing lines. Never skip 2, 3, 5, 10, 17, 20, 21 or 23. At 25:30 and not yet on 20: jump to 20, then 23.
+> **The clock:** 0:00 to about 33:00. Price at about 29:00. Skip order: 16, then 22 (keep its question for the Thank You), then 13 to one sentence, then 8 and 9 to their closing lines. Never skip 3, 4, 5, 10, 17, 20, 21 or 23. At 25:30 and not yet on 20: jump to 20, then 23.
 
 > ## 📌 UPDATED 2026-11-03 EVENING (Rick's review items R9 to R19; Thursday 2026-11-05). Earlier the same day: Rick's answers to the 11-02 round. Earlier updates 2026-11-02 (review round), 2026-11-01 (RadAssist on slide 33) and 2026-10-22 (Luis rehearsal).
 >
@@ -29,7 +29,7 @@
 > - **Slide 24:** priced for one center with one selected system per category; running costs after the build are outside the fee, in the center's own accounts, at cost, with a monthly statement; the Phase 3 deliverable "Total cost of ownership and operating budget" (three ways to host what I build: your cloud, hybrid, or on-site, each with a 3-year cost). The three-centers answer is replaced.
 >
 > **What changed on 2026-11-02 and earlier (slide numbers):**
-> - **New slide 3, "What an AI agent is."** Plain language: the two kinds, the guardrails.
+> - **New slide 4, "What an AI agent is."** Plain language: the two kinds, the guardrails.
 > - **New slide 10, one order through prior authorization,** with the working demo already built. **Alan's demo is live at https://rfinlay.github.io/imaging-priorauth-demo/** and is linked on slide 10 and leave-behind page 3. Click through it yourself Thursday morning.
 > - **New slide 35, "What the dates depend on."** The assumptions. The only place a date is promised, and every date on it is conditional.
 > - **Timeline:** opening targeted around **June 2027, April at the earliest**. The **build starts around March 2027** so prior authorization works before opening. Say only "your new center." **Never mention any building, property, address, or what was at the site before.**
@@ -52,7 +52,7 @@
 
 **The clock, budgeted (Rick, 2026-11-04 final round).** The cold-open card (Part 1) is the first ninety seconds, inside slide 1. About thirty-five minutes of slides: the clock on every slide header below runs from 0:00 at slide 1 to 33:00 at the Thank You. The price is reached at about 29:00 on slide 23, before the Thank You on 25. After that: Fernando talking, questions, and the appendix if the room asks.
 
-**If short on time, skip, in this order (final order, 2026-11-04).** Cut in this order and nothing you need is lost: **slide 16** (owner numbers; the scorecard on 17 names it) first, then **slide 22** (if it were my money; keep its closing question and ask it on the Thank You, 25), then **slide 13** down to one sentence ("Your RIS will do reminders. Let it."), then **slides 8 and 9** down to their closing lines ("A process that approves 95% of what it touches is one you automate" and "Both are what an agent removes"). **Never skip 2, 3, 5, 10, 17, 20, 21 or 23.** If you reach 25:30 on the slide clock and are not yet on slide 20, jump to 20, then 23: the bus answer, then the price. (Report assistance, the RadAssist proof, what the dates depend on and what I need from you are all in the appendix now and never on the clock.)
+**If short on time, skip, in this order (final order, 2026-11-04).** Cut in this order and nothing you need is lost: **slide 16** (owner numbers; the scorecard on 17 names it) first, then **slide 22** (if it were my money; keep its closing question and ask it on the Thank You, 25), then **slide 13** down to one sentence ("Your RIS will do reminders. Let it."), then **slides 8 and 9** down to their closing lines ("A process that approves 95% of what it touches is one you automate" and "Both are what an agent removes"). **Never skip 3, 4, 5, 10, 17, 20, 21 or 23.** If you reach 25:30 on the slide clock and are not yet on slide 20, jump to 20, then 23: the bus answer, then the price. (Report assistance, the RadAssist proof, what the dates depend on and what I need from you are all in the appendix now and never on the clock.)
 **In the room:** Dr. Luis Ramos (uses RadAssist daily; your champion), Fernando Escarzaga (founded Southwest X-Ray and sold it in 2019; the skeptic and the signer), and Jesse Martinez (an engineer; quiet and analytic).
 
 This is a rehearsal sheet, not a reference. Read it aloud, top to bottom, in order. The RUNBOOK is for lookup. This is for practice.
@@ -153,73 +153,11 @@ Nothing to defend here. The only claim is that Luis uses RadAssist daily on real
 
 **BEAT**
 
-Deck on slide 1 while they sit down. Hook first, then the opener, slowly. The three-way intro, then click to slide 2 (the headline number: the hook is now a number on the screen). Ask Fernando, then Jesse, then release Luis, before you advance. Write their answers down and reuse them later ("Jesse, you mentioned uptime. That's on this slide."). Keep the open to about three minutes. If Fernando names several companies, he has built and run this kind of business more than once. Do not explain to him what a RIS, a billing system, or an interface is at any point today; he knows. Explain only what the agents do.
+Deck on slide 1 while they sit down. Hook first, then the opener, slowly. The three-way intro, then click to slide 2 (where you are). Ask the vendor question there; the headline number, the hook on the screen, comes on slide 5. Ask Fernando, then Jesse, then release Luis, before you advance. Write their answers down and reuse them later ("Jesse, you mentioned uptime. That's on this slide."). Keep the open to about three minutes. If Fernando names several companies, he has built and run this kind of business more than once. Do not explain to him what a RIS, a billing system, or an interface is at any point today; he knows. Explain only what the agents do.
 
 ---
 
-### SLIDE 2 · The headline number · 1:00 to 3:00
-
-**SAY**
-
-=="In 2024, Medicare Advantage insurers denied 4.1 million prior authorization requests. Only 11.5% of those denials were appealed. Of the appeals that were filed, 80.7% were partially or fully overturned.==
-
-==Four in five appeals win. Almost nobody files one."==
-
-Stop talking. Let the line land.
-
-**THEN SAY (the caveat)**
-
-=="That is Medicare Advantage, all services. It is not an imaging number, because CMS does not collect prior authorization data by type of service. It is the only audited, payer-reported, national figure that exists, and it describes the system your center bills into."==
-
-**DEPTH / IF ASKED**
-
-Source: KFF, "Medicare Advantage Insurers Made Nearly 53 Million Prior Authorization Determinations in 2024," published 2026-01-28, analyzing data insurers are required to report to CMS. Mandatory reporting, not a survey.
-
-Supporting figures from the same source: 52.8 million determinations in 2024, up from 49.8 million in 2023. 4.1 million denied, which is 7.7%, up from 6.4% in 2023 and 7.4% in 2022. The appeal rate was 11.7% in 2023 and 7.5% in 2019. The overturn rate was 81.7% in 2023. Over 90% of requests were fully favorable. Ninety-nine percent of Medicare Advantage enrollees are in plans that require prior authorization for some services.
-
-What this number is not: a labor-savings number. It is an abandoned-revenue number. The binding constraint it reveals is staff capacity and follow-through, not clinical merit.
-
-If he asks whether that money can be recovered: "That is why it leads. The denied-and-never-appealed volume is money the center is entitled to and never collects, for a reason that is about capacity, not merit. That is the ideal thing to automate: bounded, repetitive, deadline-driven, and abandoned under load. The recovery path is the lead build on slide 8. Detect, assemble, submit, track the clocks, and on denial draft the appeal for a human to sign. The appeal rate is the number to watch." Say the Medicare Advantage caveat before he asks, every time. Do not let this become a dollar figure. You cannot forecast recovered dollars without his payer mix and his denial volume, and he knows that. The honest framing is where the money is going and which number to watch, never what you will recover.
-
-If he quotes an imaging denial rate of 25 to 40% at you: do not confirm it. Those are vendor-blog numbers with no methodology. Say, "I have seen that number and I could not trace it to a source I trust, so I will not use it." The peer-reviewed imaging figure is 4.94%, and it is depth under slide 8.
-
-**BEAT**
-
-==Say "four in five," then stop. Count to five in your head if you have to. Let Fernando connect it. He will.==
-
----
-
-### SLIDE 3 · What an AI agent is · 3:00 to 4:30
-
-**SAY**
-
-=="Before any more numbers, let me say what I mean by an agent, because the word gets used for everything. Two kinds. One works the queue in the background. One you talk to.==
-
-==The workflow agent works the queue in the background, inside your systems. A person on your staff approves every submission before it goes out. Prior authorization is the example: it builds the request, your staff member approves it, then it goes to the payer.==
-
-==The owner's agent you text or call. It answers from your own numbers, never from memory. How many MRIs did we read last week, how many slots went empty.==
-
-==Four guardrails, and they do not bend. A person signs anything clinical and anything that leaves the building. Numbers are calculated and checked, never guessed. Every vendor that touches patient data signs a HIPAA business associate agreement. And the data stays in the United States."==
-
-**RICK ONLY, a correction to keep straight (2026-11-04).** A Mac mini (or any box at the center) running the agents does **not** keep the data on the device when the agent calls Claude or ChatGPT. The request, with the clinical story in it, goes to the AI company. What protects it is the signed business associate agreement plus the no-training, no-retention terms. Only a model running locally keeps the data in the building, and that is hosting option C on slide 29: lower quality, more upkeep, not for opening. Never say "it stays on the box" or "no data leaves."
-
-**DEPTH / IF ASKED**
-
-"Calculated and checked" means the agent never does arithmetic in its head: totals, rates, and reconciliations are computed by code and checked, and if a number cannot be verified it says so instead of filling the gap. That is the answer to "how do I know it is right."
-
-The owner's agent is read-only over the two views (operations and costs for the owners, revenue for the practice), inside the FDA administrative exclusion (slide 18). Do not promise a date for it. It is specified in the design and priced when they want it built.
-
-Jesse is the one most likely to want the plumbing. Offer it once: "Jesse, happy to go through how it connects after we finish." HL7 v2 from the RIS, the payer's FHIR prior authorization API where it exists, EDI where it does not.
-
-Never frame either kind as replacing anyone. It changes what your people do.
-
-**BEAT**
-
-Plain words, no acronyms on this slide. If Fernando nods through it, move on; if he asks a question, that question is the conversation.
-
----
-
-### SLIDE 4 · Where you are · 4:30 to 6:00
+### SLIDE 2 · Where you are · 1:00 to 2:30
 
 **SAY**
 
@@ -245,13 +183,13 @@ Who "the payers" are, in plain terms: the organizations that pay the center for 
 
 Say the obvious thing plainly. Do not oversell the January dates; the full dates slide is in the appendix (34), only if the room asks.
 
-**LEAD-IN TO SLIDE 5 (say before you advance)**
+**LEAD-IN TO SLIDE 3 (say before you advance). This is the "?" badge on this slide (card question 2), asked aloud.**
 
-=="Which RIS and billing vendors are you looking at, and have you signed anything yet?" The answer tells you whether the next slide is still free.==
+=="Have you signed any RIS or billing vendors yet?"== Then, if you want more: =="Which RIS and billing vendors are you looking at?"== The answer tells you whether the next slide is still free. If no, the four terms are free. If yes, ask which, write it down, and the terms become the Phase 2 negotiating list (slide 27).
 
 ---
 
-### SLIDE 5 · The free move · 6:00 to 7:30
+### SLIDE 3 · The free move · 2:30 to 4:00
 
 **SAY**
 
@@ -284,6 +222,76 @@ Why export rights matter more than they used to: Mirth Connect, the usual free H
 **BEAT**
 
 This is the slide that proves you are on their side of the table, and it does not matter whether they hire you. Fernando has negotiated these contracts. Watch him. If he nods at "hostage terms," do not explain further.
+
+**LEAD-IN TO SLIDE 4 (say before you advance)**
+
+=="Before the numbers, one definition, so nothing I say later leans on a word you have not heard me define."==
+
+---
+
+### SLIDE 4 · What an AI agent is · 4:00 to 5:30
+
+**SAY**
+
+=="Before any more numbers, let me say what I mean by an agent, because the word gets used for everything. Two kinds. One works the queue in the background. One you talk to.==
+
+==The workflow agent works the queue in the background, inside your systems. A person on your staff approves every submission before it goes out. Prior authorization is the example: it builds the request, your staff member approves it, then it goes to the payer.==
+
+==The owner's agent you text or call. It answers from your own numbers, never from memory. How many MRIs did we read last week, how many slots went empty.==
+
+==Four guardrails, and they do not bend. A person signs anything clinical and anything that leaves the building. Numbers are calculated and checked, never guessed. Every vendor that touches patient data signs a HIPAA business associate agreement. And the data stays in the United States."==
+
+**RICK ONLY, a correction to keep straight (2026-11-04).** A Mac mini (or any box at the center) running the agents does **not** keep the data on the device when the agent calls Claude or ChatGPT. The request, with the clinical story in it, goes to the AI company. What protects it is the signed business associate agreement plus the no-training, no-retention terms. Only a model running locally keeps the data in the building, and that is hosting option C on slide 29: lower quality, more upkeep, not for opening. Never say "it stays on the box" or "no data leaves."
+
+**DEPTH / IF ASKED**
+
+"Calculated and checked" means the agent never does arithmetic in its head: totals, rates, and reconciliations are computed by code and checked, and if a number cannot be verified it says so instead of filling the gap. That is the answer to "how do I know it is right."
+
+The owner's agent is read-only over the two views (operations and costs for the owners, revenue for the practice), inside the FDA administrative exclusion (slide 18). Do not promise a date for it. It is specified in the design and priced when they want it built.
+
+Jesse is the one most likely to want the plumbing. Offer it once: "Jesse, happy to go through how it connects after we finish." HL7 v2 from the RIS, the payer's FHIR prior authorization API where it exists, EDI where it does not.
+
+Never frame either kind as replacing anyone. It changes what your people do.
+
+**BEAT**
+
+Plain words, no acronyms on this slide. If Fernando nods through it, move on; if he asks a question, that question is the conversation.
+
+**LEAD-IN TO SLIDE 5 (say before you advance)**
+
+=="Now the number I opened with, on the screen."==
+
+---
+
+### SLIDE 5 · The headline number · 5:30 to 7:30
+
+**SAY**
+
+=="In 2024, Medicare Advantage insurers denied 4.1 million prior authorization requests. Only 11.5% of those denials were appealed. Of the appeals that were filed, 80.7% were partially or fully overturned.==
+
+==Four in five appeals win. Almost nobody files one."==
+
+Stop talking. Let the line land.
+
+**THEN SAY (the caveat)**
+
+=="That is Medicare Advantage, all services. It is not an imaging number, because CMS does not collect prior authorization data by type of service. It is the only audited, payer-reported, national figure that exists, and it describes the system your center bills into."==
+
+**DEPTH / IF ASKED**
+
+Source: KFF, "Medicare Advantage Insurers Made Nearly 53 Million Prior Authorization Determinations in 2024," published 2026-01-28, analyzing data insurers are required to report to CMS. Mandatory reporting, not a survey.
+
+Supporting figures from the same source: 52.8 million determinations in 2024, up from 49.8 million in 2023. 4.1 million denied, which is 7.7%, up from 6.4% in 2023 and 7.4% in 2022. The appeal rate was 11.7% in 2023 and 7.5% in 2019. The overturn rate was 81.7% in 2023. Over 90% of requests were fully favorable. Ninety-nine percent of Medicare Advantage enrollees are in plans that require prior authorization for some services.
+
+What this number is not: a labor-savings number. It is an abandoned-revenue number. The binding constraint it reveals is staff capacity and follow-through, not clinical merit.
+
+If he asks whether that money can be recovered: "That is why it leads. The denied-and-never-appealed volume is money the center is entitled to and never collects, for a reason that is about capacity, not merit. That is the ideal thing to automate: bounded, repetitive, deadline-driven, and abandoned under load. The recovery path is the lead build on slide 8. Detect, assemble, submit, track the clocks, and on denial draft the appeal for a human to sign. The appeal rate is the number to watch." Say the Medicare Advantage caveat before he asks, every time. Do not let this become a dollar figure. You cannot forecast recovered dollars without his payer mix and his denial volume, and he knows that. The honest framing is where the money is going and which number to watch, never what you will recover.
+
+If he quotes an imaging denial rate of 25 to 40% at you: do not confirm it. Those are vendor-blog numbers with no methodology. Say, "I have seen that number and I could not trace it to a source I trust, so I will not use it." The peer-reviewed imaging figure is 4.94%, and it is depth under slide 8.
+
+**BEAT**
+
+==Say "four in five," then stop. Count to five in your head if you have to. Let Fernando connect it. He will.==
 
 ---
 
@@ -375,7 +383,7 @@ Why not a vendor: the category exists (Availity, Waystar, Cohere Health, Humata 
 
 Never disparage a vendor by name. "If it fits, use it" is the posture on every vendor question today.
 
-If he says they are opening three centers, or asks whether any of this changes at three: "Three makes the design work more valuable, not less. The specification gets written once and deployed three times, and the four contract terms on slide 5 get negotiated once across all three. Three centers is a reason to buy the specification, not a reason not to." If he asks whether the price changes at three, the answer is under slide 23 (Rick, 2026-11-03: this center and one pick per system; same picks elsewhere is a smaller follow-on; different picks are quoted first). Do not assume a count. Use the number he gave you at the open, and if he did not give one, ask.
+If he says they are opening three centers, or asks whether any of this changes at three: "Three makes the design work more valuable, not less. The specification gets written once and deployed three times, and the four contract terms on slide 3 get negotiated once across all three. Three centers is a reason to buy the specification, not a reason not to." If he asks whether the price changes at three, the answer is under slide 23 (Rick, 2026-11-03: this center and one pick per system; same picks elsewhere is a smaller follow-on; different picks are quoted first). Do not assume a count. Use the number he gave you at the open, and if he did not give one, ask.
 
 If he raises Olive AI: "Yes. Olive raised an enormous amount of money, shut down in 2023, and sold its prior authorization assets to Waystar and Humata Health. It sold broad automation to hospital systems on long implementation cycles. That is close to the opposite of one person building a narrow agent for one site he can watch directly."
 
@@ -387,7 +395,7 @@ Say the number, the line under it, and the closing line, and let it sit for a be
 
 ### SLIDE 9 · Why nobody appeals · 10:30 to 12:00
 
-==Two numbers and one line. This is slide 2 from the other side: four in five appeals win and almost nobody files one, and here are the two reasons people give.==
+==Two numbers and one line. This is slide 5 from the other side: four in five appeals win and almost nobody files one, and here are the two reasons people give.==
 
 **SAY**
 
@@ -401,11 +409,11 @@ Say the number, the line under it, and the closing line, and let it sit for a be
 
 **DEPTH / IF ASKED**
 
-Tie it back to slide 2 if he connects them: the reasons people give for not appealing are exactly the things an agent removes. Nobody has time, and nobody tracks the odds. The agent drafts the appeal with the clinical rationale, queues it for a human signature, and reports the appeal rate and overturn rate weekly, so the owner sees the odds he is currently guessing at.
+Tie it back to slide 5 if he connects them: the reasons people give for not appealing are exactly the things an agent removes. Nobody has time, and nobody tracks the odds. The agent drafts the appeal with the clinical rationale, queues it for a human signature, and reports the appeal rate and overturn rate weekly, so the owner sees the odds he is currently guessing at.
 
 **The federal backstop (off the slide since 2026-11-03 22:05; say it if he needs a source that is not a vendor, because it pre-empts "this is AI hype"):** =="CMS priced that same burden at 220 million provider hours over ten years, in the prior authorization rule itself."== Then the caveat, with the same weight as the number: =="That is CMS's projection in the rule. It is not measured savings. Nobody has gone back and counted yet."== CMS-0057-F, 89 FR 8758, published 2024-02-08, Regulatory Impact Analysis, verified in the Federal Register full text. The dollar figure is at least 16 billion over ten years; lead with hours, because hours are the thing he actually paid for. Why it lands: the source is a binding federal rule, not a vendor and not a consultant.
 
-Where the two percentages come from: the AMA 2025 Prior Authorization Physician Survey, the same survey as the 13 hours, about a thousand physicians, self-reported. The 11.5% appealed and 80.7% overturned on slide 2 are KFF from CMS-reported Medicare Advantage data; different source, same conclusion.
+Where the two percentages come from: the AMA 2025 Prior Authorization Physician Survey, the same survey as the 13 hours, about a thousand physicians, self-reported. The 11.5% appealed and 80.7% overturned on slide 5 are KFF from CMS-reported Medicare Advantage data; different source, same conclusion.
 
 **BEAT**
 
@@ -435,7 +443,7 @@ Slow down on "nobody has time." Say the closing line and advance to the walkthro
 
 > "They may well, and if theirs is good, use it. What I build is vendor-neutral: it runs on your data and your contract terms, and it works with whatever RIS and PACS you pick, Exa included. The four access terms protect you either way, whether the feature comes from them or from me."
 
-Then stop. The four terms (slide 5) are the real answer: they make the center's data reachable whoever builds the agent.
+Then stop. The four terms (slide 3) are the real answer: they make the center's data reachable whoever builds the agent.
 
 **If he brings his own idea**, prior-record retrieval for one: give him the floor and write it down. It is the records build (slide 15). Luis says outside priors come by courier on CD or DVD and after five days the study is read without them; that is the problem in his own words.
 
@@ -555,7 +563,7 @@ TCPA: an AI voice is an "artificial voice" under the FCC's February 2024 ruling 
 
 The honest alternative: do not do voice at all in phase one. Let the front desk answer the phone while the prior auth agent takes that load off them.
 
-What integration needs: a RIS scheduling API for the vendor to book against (a contract term from slide 5), a vendor BAA, an escalation path to a human on any symptom language, and a Spanish evaluation set built with Luis.
+What integration needs: a RIS scheduling API for the vendor to book against (a contract term from slide 3), a vendor BAA, an escalation path to a human on any symptom language, and a Spanish evaluation set built with Luis.
 
 **BEAT**
 
@@ -595,7 +603,7 @@ OCR's Right of Access Initiative has produced more than 50 enforcement actions. 
 
 RSNA comment letter to ASTP/ONC, March 2026: names the prior-study retrieval gap directly, says patients still act as couriers for their own imaging, flags it for small community centers, and asks that DICOM exchange become a TEFCA requirement.
 
-Recommendation: build, selectively. Inbound intake, deadline tracking, fee calculation, and status reporting are a small custom build with clear regulatory specifications and hard deadlines. Deadline tracking is the first feature, not the last, because the failure mode is a missed statutory deadline and an OCR complaint. Patient identity verification before release stays a human step in phase one. The retrieval itself is a DICOM query against the PACS, which is why the DICOM permission on slide 5 matters.
+Recommendation: build, selectively. Inbound intake, deadline tracking, fee calculation, and status reporting are a small custom build with clear regulatory specifications and hard deadlines. Deadline tracking is the first feature, not the last, because the failure mode is a missed statutory deadline and an OCR complaint. Patient identity verification before release stays a human step in phase one. The retrieval itself is a DICOM query against the PACS, which is why the DICOM permission on slide 3 matters.
 
 The local facility directory gets built by hand in the first months: the hospital systems and the independent groups. Do not name Southwest X-Ray or Akumin when you talk about where priors will come from.
 
@@ -639,7 +647,7 @@ Do not say "from running two centers" or "two companies." He built one company w
 
 There is no external evidence for this candidate, and the research says so plainly. No benchmark literature exists on what imaging center owners want from dashboards. If he asks for a study: "I have no study to show you here. I have the fact that you will want one page on a Monday, and the RIS will not give it to you."
 
-The structural claim holds without a study: the owners' view requires pulling RIS data, the authorization queue, the equipment log and the staffing hours into one page, and the practice's view needs the billing system's collections and denials; RIS reporting does neither for an owner. The RIS export and the billing-vendor access terms are contract terms from slide 5.
+The structural claim holds without a study: the owners' view requires pulling RIS data, the authorization queue, the equipment log and the staffing hours into one page, and the practice's view needs the billing system's collections and denials; RIS reporting does neither for an owner. The RIS export and the billing-vendor access terms are contract terms from slide 3.
 
 Custom by nature, because it encodes one owner's definition of what matters. FDA: "business analytics" and "practice and inventory management" are named in the statute at slide 18. PHI is present, so the BAA and Texas residency still apply, but there is no patient-facing surface.
 
@@ -703,7 +711,7 @@ Memorize that. If you fumble this one, the slide stops being a credibility move 
 
 > =="For a center your size I'd lean toward one cloud system for RIS and PACS: one vendor, fewer interfaces, faster opening. The contract is what keeps you free to leave. Picking the vendor is Phase 2."==
 
-Why one system: one vendor, one support line, one contract; no RIS-to-PACS interface to pay for or keep alive; one worklist; faster go-live; the lean control Fernando wants. The cost is lock-in and giving up best-of-breed, and the four contract terms on slide 5 are the mitigation: data export in DICOM and HL7 at no penalty, interface fees fixed at signature, API access, worklist access. Split RIS from PACS only if the radiologists have a strong PACS preference or want multi-site reading from day one. Dictation is selected separately, and the radiologists choose it. Exa is one example of an integrated RIS, PACS and billing system, never the pick; the starting shortlist is slide 27 in the appendix, and no vendor is named as the choice until Phase 2.
+Why one system: one vendor, one support line, one contract; no RIS-to-PACS interface to pay for or keep alive; one worklist; faster go-live; the lean control Fernando wants. The cost is lock-in and giving up best-of-breed, and the four contract terms on slide 3 are the mitigation: data export in DICOM and HL7 at no penalty, interface fees fixed at signature, API access, worklist access. Split RIS from PACS only if the radiologists have a strong PACS preference or want multi-site reading from day one. Dictation is selected separately, and the radiologists choose it. Exa is one example of an integrated RIS, PACS and billing system, never the pick; the starting shortlist is slide 27 in the appendix, and no vendor is named as the choice until Phase 2.
 
 **BEAT**
 
@@ -872,9 +880,9 @@ Why the narrow truth and not a flat no: a flat "no" would be false, because the 
 
 If he asks "is this going to be a product you sell to other centers": "Not off the back of your build. I keep the rights to my own product, and what your center runs is settled in the contract. What I will not do is make you one logo on a page. This center is the reference implementation, you are the priority, and your service terms are fixed in writing no matter what I do next. You know what the other version of that sentence means for your service level, so I am not going to say it."
 
-If he or Luis asks "could you just build our RIS": "No, and I will tell you why. Your RIS is a system of record. If it stops, your center stops. That needs a vendor with a support organization and an uptime history, which is not one person. My value to you on the RIS is on your side of the table: picking it and negotiating the terms so you own your own data. I would rather be the person who makes sure you can get your data out of it than the person who holds it." Do not hint at a RadAssist RIS today. It is logged for after this engagement in BACKLOG-POST-ENGAGEMENT-2026-10-06.md, and raising it here would put you on both sides of the slide 5 contract advice.
+If he or Luis asks "could you just build our RIS": "No, and I will tell you why. Your RIS is a system of record. If it stops, your center stops. That needs a vendor with a support organization and an uptime history, which is not one person. My value to you on the RIS is on your side of the table: picking it and negotiating the terms so you own your own data. I would rather be the person who makes sure you can get your data out of it than the person who holds it." Do not hint at a RadAssist RIS today. It is logged for after this engagement in BACKLOG-POST-ENGAGEMENT-2026-10-06.md, and raising it here would put you on both sides of the slide 3 contract advice.
 
-If he asks about electronic health records, or whether you are building one: "No. An imaging center's record environment is the RIS plus the PACS. The referring physicians' EHRs are outside systems. You receive orders from them and send results back to them, over HL7 version 2 messages, orders and results, ORM and ORU in practice, plus DICOM for the images. That is the whole integration surface, and it is exactly what the four contract terms on slide 5 protect."
+If he asks about electronic health records, or whether you are building one: "No. An imaging center's record environment is the RIS plus the PACS. The referring physicians' EHRs are outside systems. You receive orders from them and send results back to them, over HL7 version 2 messages, orders and results, ORM and ORU in practice, plus DICOM for the images. That is the whole integration surface, and it is exactly what the four contract terms on slide 3 protect."
 
 If he says "our last vendor promised the moon": "I know. That is why this slide exists. I am telling you to buy two of the things you asked about from someone else. The things I am proposing to build are the ones where the evidence is strongest and the vendors are priced for hospital systems."
 
@@ -1079,7 +1087,7 @@ Dictation: the radiologists choose the tool and the owners choose the contract. 
 
 Billing and clearinghouse: outsource billing to an imaging-specialized firm at opening, on a short contract, with the clearinghouse and the data in the center's name and clear handover terms. Clearinghouses in common use: Waystar, Availity, TriZetto, Office Ally, Quadax (2026 Best in KLAS). Document a second clearinghouse path; the 2024 Change Healthcare outage is the lesson. What decides it: three quotes; TRICARE, Medicare and Medicare Advantage handling; eligibility and authorization transactions reachable by the Phase 4 build.
 
-Also selected in Phase 2: scheduling and reminders (inside the RIS); prior authorization and eligibility connections; patient phones, IVR and AI answering, which is the patient-facing system and a separate row from the radiologists' dictation; modality integration and worklist; reading workstations; image sharing (CD and cloud). Each carries the four contract terms from slide 5, and the interface fees are fixed up front.
+Also selected in Phase 2: scheduling and reminders (inside the RIS); prior authorization and eligibility connections; patient phones, IVR and AI answering, which is the patient-facing system and a separate row from the radiologists' dictation; modality integration and worklist; reading workstations; image sharing (CD and cloud). Each carries the four contract terms from slide 3, and the interface fees are fixed up front.
 
 **Do not quote** a license price, a per-study rate, a market share, or an interface fee; none is sourced. "Every price in this market is a quote, which is why the shortlist goes to RFP." Never disparage a vendor on the slide. If Luis or Fernando already lean toward one, write it down; it gives Phase 2 a front-runner, not a decision.
 
@@ -1201,7 +1209,7 @@ One line each. Then close the laptop.
 
 ==The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature.==
 
-==That is RadAssist today, and Luis just told you what it is like to use. Calcium reads the scanner's numbers from a screen capture Luis pastes; thyroid and spine take what he graded, one dropdown per sentence, and draft the report from his own template. He confirms every value before anything applies, and he signs. At your center the path has a name: DICOM worklist and query for the study, HL7 version 2 ORU to carry the signed report into the RIS. Both are contract terms from slide 5.==
+==That is RadAssist today, and Luis just told you what it is like to use. Calcium reads the scanner's numbers from a screen capture Luis pastes; thyroid and spine take what he graded, one dropdown per sentence, and draft the report from his own template. He confirms every value before anything applies, and he signs. At your center the path has a name: DICOM worklist and query for the study, HL7 version 2 ORU to carry the signed report into the RIS. Both are contract terms from slide 3.==
 
 ==Requesting records runs the other way, and it is a different build. DICOM query and retrieve where a facility grants it. A request out and a DICOM import where it does not. And from January, the payer's Provider Access API for the claims record, which is in-network only and carries documents, not images.==
 
@@ -1273,7 +1281,7 @@ One minute, no more. Hand the table to Luis. Do not fill his pauses.
 
 **THE ONE LINE ON THE RIS PATH (Rick, 2026-11-03; the report-assistance slide is appendix slide 32; this RadAssist slide is appendix 34 since 2026-11-04, pulled from the main flow by Luis)**
 
-==Say it once, from the last line on the slide: "At your center the signed report flows into the RIS over HL7 version 2, a contract term from slide 5. I verify the inbound path against the RIS you pick before you sign."==
+==Say it once, from the last line on the slide: "At your center the signed report flows into the RIS over HL7 version 2, a contract term from slide 3. I verify the inbound path against the RIS you pick before you sign."==
 
 If records came up and you want the direction settled, ask it here, to Luis as much as to Fernando: "When your partner said requesting medical records, did he mean the report you write going out, or the priors and outside records coming in?" Write down which. The two-directions answer, the named DICOM path and the across-centers deployment default are all on slide 32, only if asked.
 
@@ -1433,7 +1441,7 @@ Other centers, if it comes up here instead of at slide 22: not off the back of y
 Write every answer down at the table.
 
 1. **At the open ("?" badge on the cover; card question 1), before anything about his history:** "Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?" Then: "Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?" Then: "Luis, you've heard me before, so stop me anytime." Write the answers down and reuse them later.
-2. **Slide 5, the four contract terms ("?" badge; card question 2):** "Have you signed any RIS or billing vendors yet?"
+2. **Slide 2, where you are ("?" badge; card question 2):** "Have you signed any RIS or billing vendors yet?" The answer tells you whether the free move (slide 3) still applies.
 3. **Slide 6, the 40% statistic:** "How many prior authorizations a day were you running at steady state, and who did them?"
 4. **Slide 34, the federal dates:** "What is your payer mix going to look like?"
 5. **Slide 12, before you lean on 22.3%:** "What was your cancellation rate, and what did you do with the empty slot?"
@@ -1453,7 +1461,7 @@ If the meeting collapses to one minute, this is what survives. Say it as one par
 
 ## Drill 6: the 5-minute version
 
-Cut slide 16 first. Never cut 3, 20, 21, or 23. In five minutes you keep:
+Cut slide 16 first. Never cut 4, 20, 21, or 23. In five minutes you keep:
 
 | Minute | Slides | What you say |
 |---|---|---|
@@ -1465,7 +1473,7 @@ Cut slide 16 first. Never cut 3, 20, 21, or 23. In five minutes you keep:
 | 4:00 to 4:30 | 22 | What I recommend you do not buy from me. Slowly. |
 | 4:30 to 5:00 | 24 | The price, once. Stop. |
 
-What is lost in the 5-minute version: every caveat except the two on slides 2 and 6, the federal dates, the records rules, the boundaries slides. If he asks about any of them, you have the full answer above.
+What is lost in the 5-minute version: every caveat except the two on slides 5 and 6, the federal dates, the records rules, the boundaries slides. If he asks about any of them, you have the full answer above.
 
 ## Fernando Q&A (rehearsed 2026-11-03)
 
@@ -1620,11 +1628,11 @@ Listed so you know what changed and why, not because anything is outstanding.
 - **The "two centers" error is corrected** to one company with five El Paso locations, in the deck presenter note where it lived.
 - **The RUNBOOK objection answer no longer quotes "and then we scale it."** It names the consequence instead of the slogan.
 
-**The one judgment call left is yours, and it is not a defect:** if the meeting runs long, follow the skip order at the top of Part 2 (16, then 22, then 13 to one sentence, then 8 and 9 to their closing lines), and never slides 19, 20, or 22.
+**The one judgment call left is yours, and it is not a defect:** if the meeting runs long, follow the skip order at the top of Part 2 (16, then 22, then 13 to one sentence, then 8 and 9 to their closing lines), and never slides 3, 4, 5, 10, 17, 20, 21, or 23.
 
 ## Deck order is narrative, on purpose
 
-The slides run in the order that moves Fernando from skepticism to a decision, which is why the free move comes at slide 5, before you ask for anything, and the price comes last. That is not the order of value. **Do not re-sequence the deck by value.** The ranked view, highest value to lowest, lives on the leave-behind, which is the artifact he keeps. Items 6 and 7 on that list ranking low is slide 21 and is the point. Item 1 stays at the top even though you earn nothing from it, which is what makes the list believable.
+The slides run in the order that moves Fernando from skepticism to a decision, which is why the free move comes at slide 3, before you ask for anything, and the price comes last. That is not the order of value. **Do not re-sequence the deck by value.** The ranked view, highest value to lowest, lives on the leave-behind, which is the artifact he keeps. Items 6 and 7 on that list ranking low is slide 21 and is the point. Item 1 stays at the top even though you earn nothing from it, which is what makes the list believable.
 
 ---
 
@@ -1636,7 +1644,7 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **AMA.** American Medical Association. Its 2025 physician survey is the source of the 13 hours and 40 percent figures on slides 6 and 8. Self-reported survey data, which is why the caveat is mandatory.
 
-**API.** Application programming interface. A documented way for one system to read or write another system's data without a human in a screen. Contract term one on slide 5; the payer-side APIs on slide 34 are what the prior auth agent consumes.
+**API.** Application programming interface. A documented way for one system to read or write another system's data without a human in a screen. Contract term one on slide 3; the payer-side APIs on slide 34 are what the prior auth agent consumes.
 
 **ASTP / ONC.** Assistant Secretary for Technology Policy, formerly the Office of the National Coordinator for Health IT. The federal office that sets health data exchange policy; the RSNA letter on slide 15 was addressed to it.
 
@@ -1654,9 +1662,9 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **CMS.** Centers for Medicare and Medicaid Services. The federal agency that runs Medicare and oversees Medicaid, and the author of the prior auth rule. When the sheet says "CMS collects" or "CMS projected," it means this agency.
 
-**CMS-0057-F.** The Interoperability and Prior Authorization Final Rule, published in the Federal Register in February 2024. The January dates on slides 4 and 34 come from it. It binds certain payers, not providers.
+**CMS-0057-F.** The Interoperability and Prior Authorization Final Rule, published in the Federal Register in February 2024. The January dates on slides 2 and 34 come from it. It binds certain payers, not providers.
 
-**DICOM.** Digital Imaging and Communications in Medicine. The standard for storing and moving medical images. DICOM query permission is contract term four on slide 5, and it is how the records tracker pulls a prior study from the PACS.
+**DICOM.** Digital Imaging and Communications in Medicine. The standard for storing and moving medical images. DICOM query permission is contract term four on slide 3, and it is how the records tracker pulls a prior study from the PACS.
 
 **DICOMweb.** The web-based version of the DICOM protocols, so images can be queried over ordinary HTTPS instead of older network protocols. Named in contract term four so the permission covers both.
 
@@ -1682,11 +1690,11 @@ Every acronym and term of art that appears in this sheet, in alphabetical order.
 
 **HIPAA.** Health Insurance Portability and Accountability Act. The federal patient privacy and records law. Source of the 30-day records clock and the fee rule on slide 15, and the reason every vendor needs a BAA.
 
-**HL7 / HL7 v2.** Health Level Seven, version 2. The decades-old messaging standard that a RIS uses to talk to a PACS, a billing system, or anything else. Every connection is an "interface," and vendors quote them one at a time, which is why contract term two on slide 5 fixes the count and the fee schedule at signature.
+**HL7 / HL7 v2.** Health Level Seven, version 2. The decades-old messaging standard that a RIS uses to talk to a PACS, a billing system, or anything else. Every connection is an "interface," and vendors quote them one at a time, which is why contract term two on slide 3 fixes the count and the fee schedule at signature.
 
-**KFF.** Formerly the Kaiser Family Foundation, an independent health policy research organization. Its analysis of payer-reported CMS data is the source of the four-in-five headline on slide 2.
+**KFF.** Formerly the Kaiser Family Foundation, an independent health policy research organization. Its analysis of payer-reported CMS data is the source of the four-in-five headline on slide 5.
 
-**MA.** Medicare Advantage. Medicare coverage delivered through a private insurer under contract with CMS, instead of traditional Medicare run by CMS directly. The headline number on slide 2 is a Medicare Advantage number, and the federal rule binds these plans.
+**MA.** Medicare Advantage. Medicare coverage delivered through a private insurer under contract with CMS, instead of traditional Medicare run by CMS directly. The headline number on slide 5 is a Medicare Advantage number, and the federal rule binds these plans.
 
 **MCP.** Model Context Protocol. A standard for connecting an AI model to outside tools and data. Named on slide 19 only because data flowing through third-party MCP connectors is outside the AI vendor's BAA.
 

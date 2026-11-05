@@ -230,10 +230,10 @@
   /* Slide 2: the 2027 rule in one plain line under the timeline */
   .rule2027 { font-size: 22px; color: var(--ink); margin-top: 34px; max-width: 1100px; line-height: 1.4; }
   .rule2027 b { color: var(--accent); font-weight: 600; }
-  /* Slide 4: the "why it matters" line under the headline number */
+  /* Slide 5: the "why it matters" line under the headline number */
   .why { font-family: var(--serif); font-size: 28px; color: var(--ink); margin-top: 14px; max-width: 1080px; line-height: 1.3; }
   .why .next { color: var(--ink-soft); }
-  /* Slide 6: two kinds of agent, one box each; guardrails as one line */
+  /* Slide 4: two kinds of agent, one box each; guardrails as one line */
   .twoboxes { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; max-width: 1120px; }
   .twoboxes .box { border: 2px solid var(--rule); border-top: 5px solid var(--accent); padding: 22px 28px 24px 28px; background: #fff; }
   .twoboxes h3 { font-family: var(--serif); font-weight: 400; font-size: 34px; margin-bottom: 14px; }
@@ -307,11 +307,11 @@
 </div>
 <aside class="notes">
 <p class="time">0:00 to 1:00</p>
-<p><strong>The "?" badge (top right) is a silent cue on the four slides where you ask the room a question; the questions are printed only on the meeting card, never on the slide (Rick, 2026-11-04 practice run). Here (Rick, 2026-11-04 20:31): "Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?" Then: "Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?" Then: "Luis, you've heard me before, so stop me anytime."</strong> Ask before the first number; write the answers down and reuse their words later ("Jesse, you mentioned uptime. That's on this slide."). About three minutes. The other three are on the vendor-contracts slide (5), the owner-numbers slide (16) and "If it were my money" (22).</p>
-<p><strong>Hook first, before any introduction (Rick, 2026-11-05 01:37):</strong> "Four out of five prior-auth denials that get appealed are overturned. Almost nobody files the appeal. That's money your center will leave on the table every week, unless you decide how you'll handle it in the next few months. That's what I'm here to talk about. Then: "I'm Rick Finlay. I build and operate AI agent systems. Dr. Ramos uses one every day on real patients." Then the three-way intro above, then click to slide 2.</p>
-<p>Jesse Martinez is at the table: an engineer, quiet and analytic. Speak to him once by name on the agent slide (3) and the walkthrough (10); he is the one most likely to ask how it actually connects.</p>
+<p><strong>The "?" badge (top right) is a silent cue on the four slides where you ask the room a question; the questions are printed only on the meeting card, never on the slide (Rick, 2026-11-04 practice run). Here (Rick, 2026-11-04 20:31): "Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?" Then: "Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?" Then: "Luis, you've heard me before, so stop me anytime."</strong> Ask before the first number; write the answers down and reuse their words later ("Jesse, you mentioned uptime. That's on this slide."). About three minutes. The other three are on the where-you-are slide (2: have you signed any RIS or billing vendors yet, which tells you whether the free move on 3 still applies), the owner-numbers slide (16) and "If it were my money" (22).</p>
+<p><strong>Hook first, before any introduction (Rick, 2026-11-05 01:37):</strong> "Four out of five prior-auth denials that get appealed are overturned. Almost nobody files the appeal. That's money your center will leave on the table every week, unless you decide how you'll handle it in the next few months. That's what I'm here to talk about. Then: "I'm Rick Finlay. I build and operate AI agent systems. Dr. Ramos uses one every day on real patients." Then the three-way intro above, then click to slide 2 (where you are; the vendor question is asked there).</p>
+<p>Jesse Martinez is at the table: an engineer, quiet and analytic. Speak to him once by name on the agent slide (4) and the walkthrough (10); he is the one most likely to ask how it actually connects.</p>
 <p><strong>The meeting (Rick, 2026-11-04 final round).</strong> Thursday 2026-11-05 at 3:30 PM, Luis brings a monitor, casual dress. Thirty to forty-five minutes of presentation, then questions. The clock on each slide runs 0:00 to about 33:00: the price is reached at about 29:00 on slide 23 and the Thank You on 25 closes at 33:00. Everything after that is Fernando, questions, and the appendix if the room asks.</p>
-<p><strong>If short on time, skip, in this order:</strong> 16 (owner numbers), then 22 (keep its closing question for the Thank You), then 13 to one sentence, then 8 and 9 to their closing lines. Never skip 2, 3, 5, 10, 17, 20, 21 or 23. At 25:30 and not yet on 20: jump to 20, then 23.</p>
+<p><strong>If short on time, skip, in this order:</strong> 16 (owner numbers), then 22 (keep its closing question for the Thank You), then 13 to one sentence, then 8 and 9 to their closing lines. Never skip 3, 4, 5, 10, 17, 20, 21 or 23. At 25:30 and not yet on 20: jump to 20, then 23.</p>
 </aside>
 </section>
 
@@ -319,26 +319,55 @@
 <!-- 2 -->
 <section class="slide">
 <div class="inner">
-  <div class="kicker">The headline number</div>
-  <div class="pair">
-    <div><div class="num">11.5%</div><div class="cap">of 4.1 million denied prior authorizations were appealed (Medicare Advantage, 2024)</div></div>
-    <div><div class="num">80.7%</div><div class="cap">of those appeals were partially or fully overturned (KFF)</div></div>
+  <div class="askmark" aria-label="A question for the room">?</div>
+  <div class="kicker">Where you are</div>
+  <h2>The MRI is signed. No staff hired, no systems chosen.</h2>
+  <div class="timeline four">
+    <div class="t hot"><div class="d">Today</div><div class="w">Every operational decision is cheap and reversible.</div></div>
+    <div class="t"><div class="d">2027-01-01</div><div class="w">Federal prior authorization APIs go live at the payers.</div></div>
+    <div class="t"><div class="d">~2027-03</div><div class="w">The build starts, so prior authorization is working before you open.</div></div>
+    <div class="t"><div class="d">~2027-06</div><div class="w">Target opening for your new center, April at the earliest. Whatever is in the vendor contracts by then is what you live with.</div></div>
   </div>
+  <p class="rule2027"><b>Since Jan 2026:</b> payers must decide in 7 days standard, 72 hours expedited. <b>Jan 2027:</b> payers (Medicare Advantage, Medicaid, CHIP, exchange plans) must answer through an API. Not TRICARE or VA.</p>
   <div class="grow"></div>
-  <p class="numlabel">Four in five appeals win. Almost nobody files one.</p>
+  <p class="sub">Greenfield is the entire argument. Nothing on the slides that follow is possible to do this cheaply after opening.</p>
 </div>
-<div class="source"><b>Source:</b> KFF, "Medicare Advantage Insurers Made Nearly 53 Million Prior Authorization Determinations in 2024," 2026-01-28, analyzing data insurers report to CMS. Medicare Advantage, all services; CMS does not report prior authorization data by service type.</div>
+<div class="source">CMS-0057-F, 89 FR 8758, compliance dates verified in the Federal Register rule text.</div>
 <aside class="notes">
-<p class="time">1:00 to 3:00</p>
-<p>Say the four-in-five figure, then stop talking. Let Fernando connect it. He will: the binding constraint is staff capacity and follow-through, not clinical merit.</p>
-<p>Context if he wants it: 4.1 million denials, 7.7% of 52.8 million determinations in 2024.</p>
-<p class="caveat">"This is Medicare Advantage, across all services. It is not an imaging-specific number, because CMS does not collect prior authorization data by service type. It is the only audited, payer-reported, national figure that exists, and it describes the system your center bills into."</p>
-<p>Do not call this a labor-savings number. It is an abandoned-money number. The last line on the slide is "Four in five appeals win. Almost nobody files one." Land it, then advance.</p>
+<p class="time">1:00 to 2:30</p>
+<p><strong>The "?" badge: ask it aloud, from the meeting card.</strong> "Have you signed any RIS or billing vendors yet?" The answer tells you whether the next slide, the free move, still applies. If no, the four terms are still free. If yes, ask which, write it down, and the terms become the Phase 2 negotiating list (Exa: three centers, volume pricing, the four terms in the contract; slide 27).</p>
+<p>Say the obvious thing: they are in the only window where automation is a design choice rather than a retrofit. In six months there will be a RIS, a billing vendor, a phone system, and people hired around whatever those systems cannot do.</p>
+<p>The 2027-01-01 date is real and federal. The one plain line on the slide (Luis asked for it, 2026-11-04) is all you say here: payers must answer prior authorization electronically through an API, fast; it reaches Medicare Advantage, Medicaid, CHIP and exchange plans, not TRICARE or VA. Do not oversell it; the full dates slide is in the appendix (34), only if the room asks.</p>
+<p><strong>Updated 2026-10-22:</strong> the opening target is around June 2027, April at the earliest. The build starts around March so prior authorization works before opening. Say "your new center" and nothing more about where it is: no building, no address, no property, nothing about what was there before. The March date holds only if the assumptions on slide 35 hold.</p>
 </aside>
 </section>
 
 
 <!-- 3 -->
+<section class="slide">
+<div class="inner">
+  <div class="kicker">The free move</div>
+  <h2>Put four things in every vendor contract before you sign. They cost nothing today.</h2>
+  <ul class="plain">
+    <li><strong>API access</strong> to your own data, named in the contract, not "available on request."</li>
+    <li><strong>HL7 interface count and fee schedule</strong> fixed at signature, not quoted per interface later.</li>
+    <li><strong>Data export rights</strong> in standard formats, on demand, at no charge.</li>
+    <li><strong>DICOM query permissions</strong> (worklist, query/retrieve, DICOMweb) for systems you authorize.</li>
+  </ul>
+  <div class="grow"></div>
+  <p class="sub">Before signature these are contract terms. After signature they are hostage terms.</p>
+</div>
+<aside class="notes">
+<p class="time">2:30 to 4:00</p>
+<p>You asked the vendor question on the previous slide (the "?" moved there, Rick 2026-11-05 01:57). If the answer was no, the four terms are still free. If yes, the terms become the Phase 2 negotiating list for whatever is signed (slide 27).</p>
+<p>This is the slide that proves you are on their side of the table. It does not matter whether they hire you. Fernando has negotiated vendor contracts twice and will recognize this instantly.</p>
+<p>Say: "Whatever you decide about me, do this. I will give you the exact language."</p>
+<p>If asked why DICOM specifically: it is the one standardized surface that does not depend on vendor goodwill. HL7 v2 is what the RIS will actually speak. FHIR on the RIS side: do not pay extra for it and do not plan around it; the FHIR that matters is on the payer side. If a RIS vendor claims FHIR, require it be named and demonstrated before signature at no additional interface fee.</p>
+</aside>
+</section>
+
+
+<!-- 4 -->
 <section class="slide agent">
 <div class="inner">
   <div class="kicker">Before the numbers: what an AI agent is</div>
@@ -364,8 +393,8 @@
   <p class="guardline"><b>Guardrails:</b> a person signs anything clinical or outbound; numbers are calculated and checked, never guessed; HIPAA agreements with every vendor; patient data stays in the United States.</p>
 </div>
 <aside class="notes">
-<p class="time">3:00 to 4:30</p>
-<p>Plain words, no acronyms. Fernando asked Luis what an agent actually is; this is the answer before any statistic leans on it. Say the headline, then one box at a time (Rick, 2026-11-04: two types, one box each): "The workflow agent works the queue in the background, inside your systems, and a person on your staff approves every submission before it goes out. Prior authorization is the example. The owner's agent you text or call, and it answers from your own numbers."</p>
+<p class="time">4:00 to 5:30</p>
+<p>Plain words, no acronyms. Fernando asked Luis what an agent actually is; this is the answer before any statistic leans on it (it sits before the headline number on purpose, Rick 2026-11-05 01:57). Say the headline, then one box at a time (Rick, 2026-11-04: two types, one box each): "The workflow agent works the queue in the background, inside your systems, and a person on your staff approves every submission before it goes out. Prior authorization is the example. The owner's agent you text or call, and it answers from your own numbers."</p>
 <p>The guardrails are one line on the slide; say all four. "Calculated and checked" means the agent never does arithmetic in its head: totals, rates, and reconciliations are computed by code and checked, and if a number cannot be verified it says so instead of filling the gap.</p>
 <p><strong>Rick only, a correction to keep straight (2026-11-04):</strong> a Mac mini running the agents does NOT keep the data on the device when the agent calls Claude or ChatGPT; the request, with the clinical story in it, goes to the AI company. What protects it is the signed business associate agreement and the no-training, no-retention terms. Only a model running locally keeps the data in the building, and that is hosting option C on slide 29: lower quality, more upkeep, not for opening. Never say "it stays on the box."</p>
 <p>Do not promise a date for the owner's agent. It is specified in the design work and priced when they want it built (see the build slide in the appendix). The Monday report is what it does, not when it starts.</p>
@@ -375,52 +404,24 @@
 </section>
 
 
-<!-- 4 -->
-<section class="slide">
-<div class="inner">
-  <div class="kicker">Where you are</div>
-  <h2>The MRI is signed. No staff hired, no systems chosen.</h2>
-  <div class="timeline four">
-    <div class="t hot"><div class="d">Today</div><div class="w">Every operational decision is cheap and reversible.</div></div>
-    <div class="t"><div class="d">2027-01-01</div><div class="w">Federal prior authorization APIs go live at the payers.</div></div>
-    <div class="t"><div class="d">~2027-03</div><div class="w">The build starts, so prior authorization is working before you open.</div></div>
-    <div class="t"><div class="d">~2027-06</div><div class="w">Target opening for your new center, April at the earliest. Whatever is in the vendor contracts by then is what you live with.</div></div>
-  </div>
-  <p class="rule2027"><b>Since Jan 2026:</b> payers must decide in 7 days standard, 72 hours expedited. <b>Jan 2027:</b> payers (Medicare Advantage, Medicaid, CHIP, exchange plans) must answer through an API. Not TRICARE or VA.</p>
-  <div class="grow"></div>
-  <p class="sub">Greenfield is the entire argument. Nothing on the slides that follow is possible to do this cheaply after opening.</p>
-</div>
-<div class="source">CMS-0057-F, 89 FR 8758, compliance dates verified in the Federal Register rule text.</div>
-<aside class="notes">
-<p class="time">4:30 to 6:00</p>
-<p>Say the obvious thing: they are in the only window where automation is a design choice rather than a retrofit. In six months there will be a RIS, a billing vendor, a phone system, and people hired around whatever those systems cannot do.</p>
-<p>The 2027-01-01 date is real and federal. The one plain line on the slide (Luis asked for it, 2026-11-04) is all you say here: payers must answer prior authorization electronically through an API, fast; it reaches Medicare Advantage, Medicaid, CHIP and exchange plans, not TRICARE or VA. Do not oversell it; the full dates slide is in the appendix (34), only if the room asks.</p>
-<p><strong>Updated 2026-10-22:</strong> the opening target is around June 2027, April at the earliest. The build starts around March so prior authorization works before opening. Say "your new center" and nothing more about where it is: no building, no address, no property, nothing about what was there before. The March date holds only if the assumptions on slide 35 hold.</p>
-</aside>
-</section>
-
-
 <!-- 5 -->
 <section class="slide">
 <div class="inner">
-  <div class="askmark" aria-label="A question for the room">?</div>
-  <div class="kicker">The free move</div>
-  <h2>Put four things in every vendor contract before you sign. They cost nothing today.</h2>
-  <ul class="plain">
-    <li><strong>API access</strong> to your own data, named in the contract, not "available on request."</li>
-    <li><strong>HL7 interface count and fee schedule</strong> fixed at signature, not quoted per interface later.</li>
-    <li><strong>Data export rights</strong> in standard formats, on demand, at no charge.</li>
-    <li><strong>DICOM query permissions</strong> (worklist, query/retrieve, DICOMweb) for systems you authorize.</li>
-  </ul>
+  <div class="kicker">The headline number</div>
+  <div class="pair">
+    <div><div class="num">11.5%</div><div class="cap">of 4.1 million denied prior authorizations were appealed (Medicare Advantage, 2024)</div></div>
+    <div><div class="num">80.7%</div><div class="cap">of those appeals were partially or fully overturned (KFF)</div></div>
+  </div>
   <div class="grow"></div>
-  <p class="sub">Before signature these are contract terms. After signature they are hostage terms.</p>
+  <p class="numlabel">Four in five appeals win. Almost nobody files one.</p>
 </div>
+<div class="source"><b>Source:</b> KFF, "Medicare Advantage Insurers Made Nearly 53 Million Prior Authorization Determinations in 2024," 2026-01-28, analyzing data insurers report to CMS. Medicare Advantage, all services; CMS does not report prior authorization data by service type.</div>
 <aside class="notes">
-<p class="time">6:00 to 7:30</p>
-<p><strong>The "?" badge: ask it aloud, from the meeting card.</strong> "Have you signed any RIS or billing vendors yet?" If the answer is no, the four terms are still free. If yes, ask which, write it down, and the terms become the Phase 2 negotiating list (Exa: three centers, volume pricing, the four terms in the contract; slide 27).</p>
-<p>This is the slide that proves you are on their side of the table. It does not matter whether they hire you. Fernando has negotiated vendor contracts twice and will recognize this instantly.</p>
-<p>Say: "Whatever you decide about me, do this. I will give you the exact language."</p>
-<p>If asked why DICOM specifically: it is the one standardized surface that does not depend on vendor goodwill. HL7 v2 is what the RIS will actually speak. FHIR on the RIS side: do not pay extra for it and do not plan around it; the FHIR that matters is on the payer side. If a RIS vendor claims FHIR, require it be named and demonstrated before signature at no additional interface fee.</p>
+<p class="time">5:30 to 7:30</p>
+<p>This is the hook from the cover, now on the screen. Say the four-in-five figure, then stop talking. Let Fernando connect it. He will: the binding constraint is staff capacity and follow-through, not clinical merit.</p>
+<p>Context if he wants it: 4.1 million denials, 7.7% of 52.8 million determinations in 2024.</p>
+<p class="caveat">"This is Medicare Advantage, across all services. It is not an imaging-specific number, because CMS does not collect prior authorization data by service type. It is the only audited, payer-reported, national figure that exists, and it describes the system your center bills into."</p>
+<p>Do not call this a labor-savings number. It is an abandoned-money number. The last line on the slide is "Four in five appeals win. Almost nobody files one." Land it, then advance.</p>
 </aside>
 </section>
 
@@ -496,7 +497,7 @@
 <div class="source"><b>Source:</b> American Medical Association, 2025 AMA Prior Authorization Physician Survey; self-reported.</div>
 <aside class="notes">
 <p class="time">10:30 to 12:00</p>
-<p>Two numbers and one line. Slow down on "nobody has time." This is slide 2 from the other side: four in five appeals win and almost nobody files one, and here are the two reasons people give. Nobody has time, and nobody tracks the odds.</p>
+<p>Two numbers and one line. Slow down on "nobody has time." This is slide 5 from the other side: four in five appeals win and almost nobody files one, and here are the two reasons people give. Nobody has time, and nobody tracks the odds.</p>
 <p class="caveat">"Same survey, self-reported."</p>
 <p><b>The CMS line is the one that pre-empts "this is AI hype,"</b> and it is depth now, not on the slide. Say it as one sentence if he needs a source that is not a vendor: "CMS priced the same burden at 220 million provider hours over ten years, in the prior authorization rule itself." If he wants the dollar figure it is at least 16 billion over ten years, but lead with hours.</p>
 <p class="caveat">"That is CMS's projection in the rule. It is not measured savings. Nobody has gone back and counted yet."</p>
@@ -530,7 +531,7 @@
 <p class="caveat">HOW TO RUN IT (switch to the demo here). Tab already open on phone (cellular) and laptop, banner checked (green live, orange simulated, say which). Maria first: order, needs auth, packet, approve and submit, advance 3 days, approved. Then Robert: same steps fast, advance twice, denied, review appeal, sign and submit, advance, overturned. Then Owner's Monday report. Say the boundary line before anyone asks: the test server stores the request but has no medical-necessity rules, so the approve or deny is simulated. A full page reload resets both orders; the Start over button does not. Reload before the meeting and before handing the phone over. Full steps in PriorAuth-Demo-Script.pdf.</p>
 <p class="caveat">THE LINK AND THE PACE. Rick texts the link to Luis Thursday morning; Luis forwards to Fernando and Jesse. At the table they scan the QR on this slide or open the text and reload once. Rick leads on split screen and says each step first; everyone waits for him on Advance 3 days. Pricing comes on slide 23, after the close.</p>
 <p>Step 4 is the whole safety model. Say it twice if you have to: nothing reaches a payer until someone on his staff approves it.</p>
-<p><strong>If he raises Exa building something similar:</strong> never disparage Exa. "They may well, and if it is good, use it. What I build is vendor-neutral: it runs on your data and your contract terms, and it works with whatever RIS and PACS you pick, including Exa. The four access terms on slide 5 protect you either way, whether the feature comes from them or from me."</p>
+<p><strong>If he raises Exa building something similar:</strong> never disparage Exa. "They may well, and if it is good, use it. What I build is vendor-neutral: it runs on your data and your contract terms, and it works with whatever RIS and PACS you pick, including Exa. The four access terms on slide 3 protect you either way, whether the feature comes from them or from me."</p>
 <p>Jesse may ask how it connects: HL7 v2 orders from the RIS, the payer's FHIR prior authorization API where it exists (required for Medicare Advantage, Medicaid, CHIP and exchange plans by 2027-01-01), EDI where it does not, and a human step where neither exists. No screen-driving of payer portals.</p>
 <p>If he brings his own idea, such as AI to retrieve prior records, give him the floor. Write it down. It is the records build on slide 15, and it is his idea now.</p>
 </aside>
@@ -1051,7 +1052,7 @@
       <tr><td class="cat">RIS and PACS</td><td>Evaluated both ways: one bundled cloud system, or separate best-of-breed RIS plus PACS. Bundled candidates built for independent centers: Konica Minolta Exa PACS|RIS, RamSoft OmegaAI, Novarad, Intelerad. The hospital-sized award winners (Sectra, Agfa) are built for a different buyer; a premium viewer with a separate RIS only if the radiologists insist.</td><td>A reading demo with your radiologists on MRI and CT cases; five-year cost with interfaces, storage and dictation; front desk to claim in one workflow; hosting and security (BAA, SOC 2, backup, uptime); export and API terms; two or three single-site references; a timeline before June.</td></tr>
       <tr><td class="cat">Dictation</td><td>The radiologists choose the tool, you choose the contract: the RIS's built-in dictation, PowerScribe One (Microsoft), Fluency for Imaging (Jacobian; 2026 Best in KLAS), Rad AI. A contracted group may already carry a license.</td><td>What your radiologists already use; the interface fee for the link to the RIS and PACS; per-radiologist cost at one to three readers.</td></tr>
       <tr><td class="cat">Billing and clearinghouse</td><td>Outsource billing to an imaging-specialized firm at opening, short contract, clearinghouse and data in your name. Clearinghouses in common use: Waystar, Availity, TriZetto, Office Ally, Quadax (2026 Best in KLAS). A documented second path.</td><td>Three quotes; TRICARE, Medicare and Medicare Advantage handling; eligibility and authorization transactions reachable by the Phase 4 build; handover terms.</td></tr>
-      <tr><td class="cat">Also selected in Phase 2</td><td colspan="2">Scheduling and reminders (inside the RIS); prior authorization and eligibility connections; patient phones, IVR and AI answering (patient-facing, separate from dictation); modality integration and worklist; reading workstations; image sharing (CD and cloud). Each carries the four contract terms from slide 5; interface fees fixed up front. Every system is scored on how easily it connects to the rest, and the integration terms go into the contract.</td></tr>
+      <tr><td class="cat">Also selected in Phase 2</td><td colspan="2">Scheduling and reminders (inside the RIS); prior authorization and eligibility connections; patient phones, IVR and AI answering (patient-facing, separate from dictation); modality integration and worklist; reading workstations; image sharing (CD and cloud). Each carries the four contract terms from slide 3; interface fees fixed up front. Every system is scored on how easily it connects to the rest, and the integration terms go into the contract.</td></tr>
     </tbody>
   </table>
   <p class="reco"><b>Likely RIS and PACS: Exa.</b> Negotiate as three centers for volume pricing, and put the four access terms (API, HL7 fee schedule, export, DICOM) into the Exa contract. The final pick is still Phase 2.</p>
@@ -1197,7 +1198,7 @@
 <p><strong>This slide exists because of one sentence in your 10-10 email to Luis:</strong> "your partner asked about scheduling, answering patients, and requesting medical records." Requesting records can mean two things in a radiology practice, and they are different builds. Make Luis pick.</p>
 <p><strong>Say the heading first, plainly, and do not soften it.</strong> "The agent drafts. The radiologist signs. Nothing clinical leaves this building without a human signature." That is the whole operating model and it is also the bus answer: if I disappear, the thing that signs is a person who works for you.</p>
 <p><strong>RadAssist, honestly.</strong> Today it is four modules: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar), the one you just described, and CT Spine, live since November 2. For calcium, Luis snips the scanner's report or dose screen, pastes it, RadAssist reads the per-vessel scores, total, age, sex and DLP, shows him every value, and nothing touches the form until he clicks Apply. For thyroid and spine he enters what he graded, one dropdown per sentence from his own template, and the impression writes itself in the order he set. It drafts; he signs. It does not interpret an image. Do not claim it does anything more than that today.</p>
-<p><strong>The named path at a center they own:</strong> DICOM Modality Worklist and query/retrieve give the report assistant the study context (contract term four on slide 5). HL7 v2 ORU is the standard result message that carries a signed report into the RIS (term two). Verify before signature that the RIS accepts an inbound ORU result: Konica Minolta's Exa, for one, documents only outbound report paths, so this is a real evaluation item, not a formality. Say "I will verify that against the RIS you pick" rather than promising it.</p>
+<p><strong>The named path at a center they own:</strong> DICOM Modality Worklist and query/retrieve give the report assistant the study context (contract term four on slide 3). HL7 v2 ORU is the standard result message that carries a signed report into the RIS (term two). Verify before signature that the RIS accepts an inbound ORU result: Konica Minolta's Exa, for one, documents only outbound report paths, so this is a real evaluation item, not a formality. Say "I will verify that against the RIS you pick" rather than promising it.</p>
 <p><strong>Records coming in is slide 15's problem, restated from the other side.</strong> DICOM query/retrieve works only where the sending facility grants it, which across organizations is rare. Otherwise the request goes out by fax or portal and what comes back is imported over DICOM. The payer Provider Access API under CMS-0057-F arrives 2027-01-01, but it carries the claims and clinical record the payer holds, not images, and it requires an in-network contract plus a treatment relationship, which a newly opened center may not have on day one. Name that limit yourself.</p>
 <p><strong>Say the records half and the RadAssist half first. The one-stack question comes last on this slide, and only if more than one center comes up (Rick, 2026-11-02).</strong></p>
 <p class="caveat">"One specification, written once and reused for every center. The way I would deploy it is the industry standard, and it is security first. One environment, under one contract, which is what keeps the cost down. Inside it, each organization gets its own isolated instance: its own database and its own encryption keys, its own credentials with role-based access, and its own audit log. Nobody at one organization can see another's data, by construction. If one owner or one joint venture owns all the centers, that default is the whole answer. If the centers are separately owned and an owner wants fully separate hosting and separate books, each gets a fully separate stack, and that costs more. Either works. What I will never build is one shared database."</p>
@@ -1222,7 +1223,7 @@
   </div>
   <div class="grow"></div>
   <p class="sub">Next, at his request: voice dictation, brain, cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise.</p>
-  <p class="sub" style="margin-top:10px"><span class="demourl">radassist.app</span> &middot; Not a device: it formats what the radiologist graded. It never reads the image. At your center, the signed report flows into the RIS over HL7 v2 ORU, a contract term from slide 5.</p>
+  <p class="sub" style="margin-top:10px"><span class="demourl">radassist.app</span> &middot; Not a device: it formats what the radiologist graded. It never reads the image. At your center, the signed report flows into the RIS over HL7 v2 ORU, a contract term from slide 3.</p>
 </div>
 <aside class="notes">
 <p class="time">Appendix, only if asked</p>
@@ -1230,7 +1231,7 @@
 <p><strong>Say it the way Fernando will hear it: control and simplicity.</strong> His template, his rules, his signature. One dropdown per sentence. The report is plain text he pastes into whatever system the center buys. Nothing is sent anywhere; the browser does the work. No vendor lock, nothing to integrate before it is useful.</p>
 <p><strong>The proof point, said once:</strong> "Luis sent me his template and his rules. Every rule in it is his." Do not add how fast it was built (Rick, 2026-11-02). CT Spine followed from his sample reports (live November 2): same tool, switched to CT. One sentence on it, no more. The speed of the fix is the proof, not the absence of changes.</p>
 <p>Questions to hand Luis after the overview: What broke, and how fast was it fixed? What did you ask for that got built? What does it do that the vendor tools did not?</p>
-<p><strong>The one line on the RIS path (Rick, 2026-11-03; the report-assistance slide moved to the appendix, slide 32):</strong> "At your center the signed report flows into the RIS over HL7 version 2, a contract term from slide 5. I verify the inbound path against the RIS you pick before you sign." Say it once. The two-directions question (the report going out versus priors coming in), the named DICOM path and the across-centers deployment default are all on slide 32, only if asked.</p>
+<p><strong>The one line on the RIS path (Rick, 2026-11-03; the report-assistance slide moved to the appendix, slide 32):</strong> "At your center the signed report flows into the RIS over HL7 version 2, a contract term from slide 3. I verify the inbound path against the RIS you pick before you sign." Say it once. The two-directions question (the report going out versus priors coming in), the named DICOM path and the across-centers deployment default are all on slide 32, only if asked.</p>
 <p><strong>Roadmap, as Luis asked for it:</strong> voice dictation inside RadAssist, then brain and cardiac CTA (CAD-RADS) modules. He will email guideline-display corrections; acknowledge them as his. Say "next on the roadmap," never a date. <strong>Reading the images (auto-filling level findings from the pictures) is a future item with a regulatory path.</strong> That is diagnostic software; it is not promised, not dated, and it is why the line on slide 18 matters.</p>
 <p><strong>Selling RadAssist to other centers: do NOT raise it at this table.</strong> Luis sees resale potential for structured reporting. That is a private conversation between you and Luis, because slide 21 tells Fernando this center is the priority and his service terms do not change if you take on a second site. Both are true, but only one belongs in front of Fernando. Nothing about how Luis came to use RadAssist, or on what terms, is said here (Rick, 2026-11-03).</p>
 </aside>
