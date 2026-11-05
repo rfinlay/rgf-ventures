@@ -74,6 +74,9 @@
     .page2 [data-nonumbers="remove"] p { font-size: 7.3pt; line-height: 1.15; }
     .page2 ol.steps li { margin-bottom: 1pt; }
     .page2 h2 { margin-top: 6pt; }
+    /* 2026-11-04 (final round): rows 3 and 5 grew (two views for all three owners; records in/out with the QR envelope); page 1 table prints a touch smaller so the footer stays on page 1 */
+    .page:not(.page2) table { font-size: 7.05pt; line-height: 1.08; }
+    .page:not(.page2) td { padding-top: 1.2pt; padding-bottom: 1.2pt; }
   }
 </style>
 <script>
@@ -96,7 +99,7 @@
 <div class="page">
   <header>
     <div>
-      <div class="kicker">Lunch in El Paso, Thursday, November 5, 2026</div>
+      <div class="kicker">A private briefing, El Paso, Thursday, November 5, 2026</div>
       <h1>Six months of free decisions.</h1>
     </div>
     <div class="who">Prepared for <b>Dr. Luis Ramos</b>, <b>Fernando Escarzaga</b>,<br>and <b>Jesse Martinez</b><br>by <b>Richard Finlay</b>, RGF Global Ventures LLC</div>
@@ -112,10 +115,10 @@
     <tbody>
       <tr><td>1</td><td>Contract terms before signature</td><td class="rec">Free</td><td>The four terms above. They cost nothing today and cannot be reopened after signature. The only item with a hard deadline, and the one I earn nothing from.</td></tr>
       <tr><td>2</td><td>Prior authorization and eligibility verification</td><td class="rec build">Build</td><td>The largest administrative cost, and the one not asked about. Medicare Advantage 2024: 11.5% of denied prior auths appealed, 80.7% of appeals overturned (KFF). 40% of physicians staff someone exclusively for it (AMA 2025). Payer FHIR prior auth APIs required by 2027-01-01. A human signs every submission and every appeal.</td></tr>
-      <tr><td>3</td><td>Owner reporting, including an agent you can ask questions of</td><td class="rec build">Build</td><td>Two views of one system, built the way your structure requires. The owners' operating view: studies by modality, turnaround, no-shows and open slots, authorizations waiting and appeals in flight, scanner uptime, staff hours and running costs against budget. The practice's view: collections, denials and appeals won, revenue by payer. Ask it in plain words and it answers from your own numbers. Read-only, no patient contact, smallest compliance footprint on this list.</td></tr>
+      <tr><td>3</td><td>Owner reporting, including an agent you can ask questions of</td><td class="rec build">Build</td><td>One system, two views, and all three of you see both. Operations: studies by modality, turnaround, no-shows and open slots, authorizations waiting and appeals in flight, scanner uptime, staff hours and costs against budget. Business health, owned by the practice: collections, denials and appeals won, revenue by payer. Ask it in plain words; it answers from your own numbers. Read-only, no patient contact.</td></tr>
       <tr><td>4</td><td>Scheduling: cancellation backfill</td><td class="rec build">Build, small</td><td>UC Irvine study: 22.3% of outpatient radiology exams cancelled versus 2.0% no-shows, 70.2% of cancellations patient-initiated. The empty slot is known in advance. A ranked waitlist on top of the RIS, with a per-patient rate governor for the TCPA cap.</td></tr>
-      <tr><td>5</td><td>Medical records: inbound requests and outbound prior studies</td><td class="rec build">Build, selectively</td><td>The HIPAA 30-day clock runs from receipt. Retrieval labor is not chargeable, only copying is. A new center opens with zero priors on file, and no vendor has solved outbound retrieval for a small site.</td></tr>
-      <tr><td>6</td><td>Radiology report assistance</td><td class="rec build">Build (exists)</td><td>RadAssist, used daily by Dr. Ramos: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI (cervical, thoracic, lumbar) and CT Spine (live November 2), built from his own template and rules. Next on the roadmap: voice dictation, brain, and cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise. The radiologist confirms every value and signs; nothing clinical leaves without a signature. At the center: DICOM worklist and query in, HL7 v2 ORU out to the RIS. A different build from records retrieval (row 5). Across centers: one environment under one contract, each organization in its own isolated instance (own database and keys, own logins, own audit log); a separately owned center that wants separate hosting gets a fully separate stack at higher cost. Never one shared database.</td></tr>
+      <tr><td>5</td><td>Medical records: inbound requests and outbound prior studies</td><td class="rec build">Build, selectively</td><td>Requests in run on a clock (HIPAA 30 days, Texas 15 business days; designed to 15): intake, identity check, deadline alerts, fee calculation, DICOM export. Priors out have no electronic link to most facilities: the agent prints the request packet with a QR-coded envelope label, tracks days outstanding, and routes the returned disc to the right patient.</td></tr>
+      <tr><td>6</td><td>Radiology report assistance</td><td class="rec build">Build (exists)</td><td>RadAssist, used daily by Dr. Ramos: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI and CT Spine, built from his own template and rules. Next on the roadmap: voice dictation, brain, cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise. The radiologist confirms every value and signs; nothing clinical leaves without a signature. At the center: DICOM worklist and query in, HL7 v2 ORU out to the RIS. A different build from records retrieval (row 5). Across centers: one environment under one contract, each organization in its own isolated instance (own database, keys, logins, audit log). Never one shared database.</td></tr>
       <tr><td>7</td><td>Scheduling: reminders, self-scheduling, intake</td><td class="rec">Buy (your RIS)</td><td>Commodity, bundled into modern cloud imaging RIS products. Text reminders moved MRI no-shows from 5.1% to 3.8% in a randomized trial. Real, modest, already in the box.</td></tr>
       <tr><td>8</td><td>Answering patients (inbound voice)</td><td class="rec">Buy, I integrate</td><td>26.5% of El Paso County residents speak English less than "very well," nearly all Spanish speakers. Highest-blast-radius failure on this list, and a funded vendor category. I specify, evaluate, integrate, and supervise.</td></tr>
       <tr><td>9</td><td>Billing, claims, and the eligibility feed</td><td class="rec">Buy</td><td>Commodity clearinghouse function, established vendor market. I do not touch the claims work, and I am not building an eligibility system. Your billing vendor already exposes the EDI 270/271 eligibility feed. Row 2 builds the thing that reads that feed and acts on it, so the four access terms belong in the billing contract too.</td></tr>
@@ -165,8 +168,8 @@
   <div class="two">
     <div>
       <h2>Two kinds of agent</h2>
-      <p><b>One that runs a workflow.</b> An operations agent works one process from start to finish: a prior authorization, a cancelled slot filled from the waitlist, a records request. It works through your RIS and the payers' own electronic connections, not by clicking around a screen. Someone on your staff approves anything that leaves the building.</p>
-      <p><b>One you talk to.</b> An owner's agent you text or call for answers from your own numbers. Every Monday it sends a short report, in two views: operations, scanner uptime and costs against budget for the owners; collections, denials and revenue by payer for the practice.</p>
+      <p><b>Workflow agent.</b> Works the queue in the background, inside your systems: a prior authorization, a cancelled slot filled from the waitlist, a records request. It works through your RIS and the payers' own electronic connections, not by clicking around a screen. A person on your staff approves every submission before it leaves the building.</p>
+      <p><b>Owner's agent.</b> Text it or call it; it answers from your own numbers, never from memory. Every Monday it sends a short report in two views, operations and business health, and all three of you see both.</p>
       <h2>The guardrails</h2>
       <ul>
         <li>A person signs anything clinical and anything outbound.</li>

@@ -1,12 +1,12 @@
-# Prior Authorization Agent: demo script for the Thursday lunch
+# Prior Authorization Agent: demo script for the Thursday briefing
 
-**Slide 11, about 3 minutes.** Thursday 2026-11-05, lunch with Luis, Fernando and Jesse. This is the only live demo at the table; RadAssist on slide 19 is a spoken overview, not a demo.
+**Slide 11, about 3 minutes.** Thursday 2026-11-05 at 3:30 PM, with Luis, Fernando and Jesse. This is the only live demo at the table; RadAssist on slide 34 is a spoken overview, not a demo.
 
 **Live URL:** https://rfinlay.github.io/imaging-priorauth-demo/
-**Runs on:** the phone and the laptop. No login. Open it on both Thursday morning, the phone over cellular, and leave both tabs up until lunch is over.
+**Runs on:** the phone and the laptop. No login. Open it on both Thursday morning, the phone over cellular, and leave both tabs up until the meeting is over.
 **Source and the real-vs-simulated table:** https://github.com/rfinlay/imaging-priorauth-demo#readme
 
-## Before lunch: the banner
+## Before the meeting: the banner
 
 Glance at the top banner on both devices.
 
@@ -20,11 +20,11 @@ Either way the demo works. Decide which line you are saying before you sit down,
 - **Thursday morning:** text the link to Luis. He forwards it to Fernando and Jesse. Slide 11 and the leave-behind carry a QR code for the same URL with the caption "Scan to follow along."
 - **At the table:** they scan the QR or open the text on their own phones and reload once for a fresh start. You run the same page on the laptop, split screen beside the deck, and set the pace.
 - **Say each step before anyone clicks.** The one that matters is **Advance 3 days**: everyone waits for you, because whoever clicks it early is a step ahead of the room and the story stops matching.
-- Pricing is not part of the demo; it comes later, on slide 26, after the close.
+- Pricing is not part of the demo; it comes later, on slide 24, after the close.
 
 ## Reset (Rick, 2026-11-03)
 
-A **full page reload** (Cmd+R on the laptop, pull-to-refresh on the phone) resets Maria and Robert to new orders. The **"Start over with another order"** button does **not** reset state; after a rehearsal the queue still shows the old outcomes. Reload once before lunch, and reload again before you hand the phone over, so the first click anyone sees is a fresh order. Reload on Wi-Fi or cellular before you need it, never mid-demo.
+A **full page reload** (Cmd+R on the laptop, pull-to-refresh on the phone) resets Maria and Robert to new orders. The **"Start over with another order"** button does **not** reset state; after a rehearsal the queue still shows the old outcomes. Reload once before the meeting, and reload again before you hand the phone over, so the first click anyone sees is a fresh order. Reload on Wi-Fi or cellular before you need it, never mid-demo.
 
 ## Framing (10 seconds)
 
