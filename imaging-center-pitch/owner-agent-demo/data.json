@@ -1,0 +1,3277 @@
+{
+ "center": "Your New Center",
+ "city": "El Paso, TX",
+ "data_status": "SYNTHETIC DEMO DATA. No real patients, payers' actual figures, providers, or companies. Invented for a live demo.",
+ "generated_for": "Owner-agent demo, 2026-11-05",
+ "period": {
+  "start": "2026-09-07",
+  "end": "2026-10-30",
+  "weeks": 8
+ },
+ "modalities": [
+  "MRI",
+  "CT",
+  "X-ray",
+  "Ultrasound"
+ ],
+ "payers": [
+  "Medicare Advantage",
+  "Medicaid",
+  "BCBS TX",
+  "UnitedHealthcare",
+  "Aetna",
+  "Cigna",
+  "TRICARE",
+  "Self-pay"
+ ],
+ "daily_capacity_by_modality": {
+  "MRI": 18,
+  "CT": 22,
+  "X-ray": 34,
+  "Ultrasound": 16
+ },
+ "events": [
+  {
+   "date": "2026-10-21",
+   "modality": "MRI",
+   "type": "unplanned downtime",
+   "hours": 6.5,
+   "cause": "chiller fault (synthetic)",
+   "studies_lost": 10
+  }
+ ],
+ "weeks": [
+  {
+   "week": 1,
+   "label": "Week 1",
+   "start": "2026-09-07",
+   "end": "2026-09-11",
+   "days": [
+    {
+     "date": "2026-09-07",
+     "weekday": "Monday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 12,
+       "completed": 11,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 22,
+       "completed": 19,
+       "cancellations": 5,
+       "no_shows": 0,
+       "backfilled": 2,
+       "open_slots": 15,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 10,
+       "completed": 9,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 19.0
+    },
+    {
+     "date": "2026-09-08",
+     "weekday": "Tuesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 13,
+       "completed": 11,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 24,
+       "completed": 20,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 14,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 11,
+       "completed": 10,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 20.8
+    },
+    {
+     "date": "2026-09-09",
+     "weekday": "Wednesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 12,
+       "completed": 11,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 25,
+       "completed": 21,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 13,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 12,
+       "completed": 11,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 19.2
+    },
+    {
+     "date": "2026-09-10",
+     "weekday": "Thursday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 12,
+       "completed": 11,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 23,
+       "completed": 20,
+       "cancellations": 4,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 14,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 11,
+       "completed": 10,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 24.0
+    },
+    {
+     "date": "2026-09-11",
+     "weekday": "Friday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 11,
+       "completed": 10,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 10,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 21,
+       "completed": 18,
+       "cancellations": 4,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 16,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 10,
+       "completed": 9,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 22.8
+    }
+   ],
+   "studies_completed_by_modality": {
+    "MRI": 54,
+    "CT": 65,
+    "X-ray": 98,
+    "Ultrasound": 49
+   },
+   "studies_completed_total": 266,
+   "scheduled_total": 304,
+   "cancellations_total": 59,
+   "no_shows_total": 4,
+   "backfilled_total": 25,
+   "open_slots_total": 184,
+   "capacity_total": 450,
+   "uptime_pct_by_modality": {
+    "MRI": 100.0,
+    "CT": 100.0,
+    "X-ray": 100.0,
+    "Ultrasound": 100.0
+   },
+   "report_turnaround_hours_avg": 21.2,
+   "prior_auth_by_payer": {
+    "Medicare Advantage": {
+     "submitted": 43,
+     "approved": 36,
+     "denied": 3,
+     "pending": 4,
+     "avg_turnaround_hours": 49.3,
+     "appeals_filed": 3,
+     "appeals_won": 2
+    },
+    "Medicaid": {
+     "submitted": 33,
+     "approved": 26,
+     "denied": 4,
+     "pending": 3,
+     "avg_turnaround_hours": 76.3,
+     "appeals_filed": 4,
+     "appeals_won": 3
+    },
+    "BCBS TX": {
+     "submitted": 26,
+     "approved": 23,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 28.9,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "UnitedHealthcare": {
+     "submitted": 20,
+     "approved": 17,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 37.0,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "Aetna": {
+     "submitted": 13,
+     "approved": 12,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 34.3,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Cigna": {
+     "submitted": 10,
+     "approved": 8,
+     "denied": 1,
+     "pending": 1,
+     "avg_turnaround_hours": 34.7,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "TRICARE": {
+     "submitted": 12,
+     "approved": 11,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 43.4,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Self-pay": {
+     "submitted": 0,
+     "approved": 0,
+     "denied": 0,
+     "pending": 0,
+     "avg_turnaround_hours": 0,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    }
+   },
+   "staff_hours_on_prior_auth": 78.7,
+   "revenue_by_payer": {
+    "Medicare Advantage": {
+     "billed": 35443,
+     "collected_to_date": 14734
+    },
+    "Medicaid": {
+     "billed": 27264,
+     "collected_to_date": 8365
+    },
+    "BCBS TX": {
+     "billed": 21811,
+     "collected_to_date": 13137
+    },
+    "UnitedHealthcare": {
+     "billed": 16358,
+     "collected_to_date": 8726
+    },
+    "Aetna": {
+     "billed": 10906,
+     "collected_to_date": 6151
+    },
+    "Cigna": {
+     "billed": 8179,
+     "collected_to_date": 4291
+    },
+    "TRICARE": {
+     "billed": 9542,
+     "collected_to_date": 4396
+    },
+    "Self-pay": {
+     "billed": 6816,
+     "collected_to_date": 4948
+    }
+   },
+   "referrer_volume": {
+    "Referrer A": 46,
+    "Referrer B": 42,
+    "Referrer C": 37,
+    "Referrer D": 30,
+    "Referrer E": 25,
+    "Referrer F": 23,
+    "Referrer G": 20,
+    "Referrer H": 20,
+    "Referrer I": 14,
+    "Referrer J": 12
+   }
+  },
+  {
+   "week": 2,
+   "label": "Week 2",
+   "start": "2026-09-14",
+   "end": "2026-09-18",
+   "days": [
+    {
+     "date": "2026-09-14",
+     "weekday": "Monday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 12,
+       "completed": 11,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 24,
+       "completed": 21,
+       "cancellations": 4,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 13,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 11,
+       "completed": 10,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 22.0
+    },
+    {
+     "date": "2026-09-15",
+     "weekday": "Tuesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 14,
+       "completed": 13,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 17,
+       "completed": 15,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 26,
+       "completed": 21,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 13,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 12,
+       "completed": 10,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 16.9
+    },
+    {
+     "date": "2026-09-16",
+     "weekday": "Wednesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 13,
+       "completed": 11,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 17,
+       "completed": 15,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 24,
+       "completed": 20,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 14,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 12,
+       "completed": 10,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 17.0
+    },
+    {
+     "date": "2026-09-17",
+     "weekday": "Thursday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 12,
+       "completed": 10,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 25,
+       "completed": 21,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 13,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 11,
+       "completed": 10,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 24.4
+    },
+    {
+     "date": "2026-09-18",
+     "weekday": "Friday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 11,
+       "completed": 10,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 23,
+       "completed": 20,
+       "cancellations": 4,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 14,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 11,
+       "completed": 10,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 19.0
+    }
+   ],
+   "studies_completed_by_modality": {
+    "MRI": 55,
+    "CT": 70,
+    "X-ray": 103,
+    "Ultrasound": 50
+   },
+   "studies_completed_total": 278,
+   "scheduled_total": 321,
+   "cancellations_total": 63,
+   "no_shows_total": 5,
+   "backfilled_total": 25,
+   "open_slots_total": 172,
+   "capacity_total": 450,
+   "uptime_pct_by_modality": {
+    "MRI": 100.0,
+    "CT": 100.0,
+    "X-ray": 100.0,
+    "Ultrasound": 100.0
+   },
+   "report_turnaround_hours_avg": 19.9,
+   "prior_auth_by_payer": {
+    "Medicare Advantage": {
+     "submitted": 45,
+     "approved": 38,
+     "denied": 3,
+     "pending": 4,
+     "avg_turnaround_hours": 55.9,
+     "appeals_filed": 3,
+     "appeals_won": 3
+    },
+    "Medicaid": {
+     "submitted": 34,
+     "approved": 27,
+     "denied": 3,
+     "pending": 4,
+     "avg_turnaround_hours": 75.1,
+     "appeals_filed": 3,
+     "appeals_won": 2
+    },
+    "BCBS TX": {
+     "submitted": 28,
+     "approved": 24,
+     "denied": 1,
+     "pending": 3,
+     "avg_turnaround_hours": 29.9,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "UnitedHealthcare": {
+     "submitted": 21,
+     "approved": 18,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 35.6,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "Aetna": {
+     "submitted": 14,
+     "approved": 13,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 35.6,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Cigna": {
+     "submitted": 10,
+     "approved": 9,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 39.9,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "TRICARE": {
+     "submitted": 12,
+     "approved": 10,
+     "denied": 1,
+     "pending": 1,
+     "avg_turnaround_hours": 47.4,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "Self-pay": {
+     "submitted": 0,
+     "approved": 0,
+     "denied": 0,
+     "pending": 0,
+     "avg_turnaround_hours": 0,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    }
+   },
+   "staff_hours_on_prior_auth": 79.8,
+   "revenue_by_payer": {
+    "Medicare Advantage": {
+     "billed": 36967,
+     "collected_to_date": 16014
+    },
+    "Medicaid": {
+     "billed": 28436,
+     "collected_to_date": 8865
+    },
+    "BCBS TX": {
+     "billed": 22749,
+     "collected_to_date": 13758
+    },
+    "UnitedHealthcare": {
+     "billed": 17062,
+     "collected_to_date": 9665
+    },
+    "Aetna": {
+     "billed": 11374,
+     "collected_to_date": 6549
+    },
+    "Cigna": {
+     "billed": 8531,
+     "collected_to_date": 4600
+    },
+    "TRICARE": {
+     "billed": 9953,
+     "collected_to_date": 4624
+    },
+    "Self-pay": {
+     "billed": 7109,
+     "collected_to_date": 4831
+    }
+   },
+   "referrer_volume": {
+    "Referrer A": 46,
+    "Referrer B": 38,
+    "Referrer C": 37,
+    "Referrer D": 30,
+    "Referrer E": 27,
+    "Referrer F": 26,
+    "Referrer G": 22,
+    "Referrer H": 20,
+    "Referrer I": 15,
+    "Referrer J": 12
+   }
+  },
+  {
+   "week": 3,
+   "label": "Week 3",
+   "start": "2026-09-21",
+   "end": "2026-09-25",
+   "days": [
+    {
+     "date": "2026-09-21",
+     "weekday": "Monday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 13,
+       "completed": 12,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 25,
+       "completed": 21,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 13,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 12,
+       "completed": 11,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 19.0
+    },
+    {
+     "date": "2026-09-22",
+     "weekday": "Tuesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 17,
+       "completed": 15,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 27,
+       "completed": 23,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 11,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 13,
+       "completed": 12,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 16.8
+    },
+    {
+     "date": "2026-09-23",
+     "weekday": "Wednesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 18,
+       "completed": 16,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 26,
+       "completed": 22,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 12,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 13,
+       "completed": 11,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 13.7
+    },
+    {
+     "date": "2026-09-24",
+     "weekday": "Thursday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 13,
+       "completed": 11,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 26,
+       "completed": 23,
+       "cancellations": 4,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 11,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 12,
+       "completed": 11,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 16.9
+    },
+    {
+     "date": "2026-09-25",
+     "weekday": "Friday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 12,
+       "completed": 11,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 23,
+       "completed": 19,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 15,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 11,
+       "completed": 10,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 21.3
+    }
+   ],
+   "studies_completed_by_modality": {
+    "MRI": 59,
+    "CT": 72,
+    "X-ray": 108,
+    "Ultrasound": 55
+   },
+   "studies_completed_total": 294,
+   "scheduled_total": 337,
+   "cancellations_total": 63,
+   "no_shows_total": 5,
+   "backfilled_total": 25,
+   "open_slots_total": 156,
+   "capacity_total": 450,
+   "uptime_pct_by_modality": {
+    "MRI": 100.0,
+    "CT": 100.0,
+    "X-ray": 100.0,
+    "Ultrasound": 100.0
+   },
+   "report_turnaround_hours_avg": 17.5,
+   "prior_auth_by_payer": {
+    "Medicare Advantage": {
+     "submitted": 47,
+     "approved": 40,
+     "denied": 3,
+     "pending": 4,
+     "avg_turnaround_hours": 51.1,
+     "appeals_filed": 3,
+     "appeals_won": 2
+    },
+    "Medicaid": {
+     "submitted": 36,
+     "approved": 30,
+     "denied": 4,
+     "pending": 2,
+     "avg_turnaround_hours": 70.0,
+     "appeals_filed": 4,
+     "appeals_won": 3
+    },
+    "BCBS TX": {
+     "submitted": 29,
+     "approved": 26,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 25.5,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "UnitedHealthcare": {
+     "submitted": 22,
+     "approved": 19,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 37.8,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "Aetna": {
+     "submitted": 15,
+     "approved": 14,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 29.6,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Cigna": {
+     "submitted": 11,
+     "approved": 10,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 32.6,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "TRICARE": {
+     "submitted": 13,
+     "approved": 12,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 40.5,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Self-pay": {
+     "submitted": 0,
+     "approved": 0,
+     "denied": 0,
+     "pending": 0,
+     "avg_turnaround_hours": 0,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    }
+   },
+   "staff_hours_on_prior_auth": 83.6,
+   "revenue_by_payer": {
+    "Medicare Advantage": {
+     "billed": 39049,
+     "collected_to_date": 16510
+    },
+    "Medicaid": {
+     "billed": 30038,
+     "collected_to_date": 8805
+    },
+    "BCBS TX": {
+     "billed": 24030,
+     "collected_to_date": 14530
+    },
+    "UnitedHealthcare": {
+     "billed": 18023,
+     "collected_to_date": 9562
+    },
+    "Aetna": {
+     "billed": 12015,
+     "collected_to_date": 6742
+    },
+    "Cigna": {
+     "billed": 9011,
+     "collected_to_date": 4910
+    },
+    "TRICARE": {
+     "billed": 10513,
+     "collected_to_date": 4773
+    },
+    "Self-pay": {
+     "billed": 7510,
+     "collected_to_date": 5294
+    }
+   },
+   "referrer_volume": {
+    "Referrer A": 57,
+    "Referrer B": 41,
+    "Referrer C": 40,
+    "Referrer D": 35,
+    "Referrer E": 27,
+    "Referrer F": 28,
+    "Referrer G": 24,
+    "Referrer H": 20,
+    "Referrer I": 13,
+    "Referrer J": 12
+   }
+  },
+  {
+   "week": 4,
+   "label": "Week 4",
+   "start": "2026-09-28",
+   "end": "2026-10-02",
+   "days": [
+    {
+     "date": "2026-09-28",
+     "weekday": "Monday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 18,
+       "completed": 16,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 2,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 26,
+       "completed": 21,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 13,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 13,
+       "completed": 11,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 15.5
+    },
+    {
+     "date": "2026-09-29",
+     "weekday": "Tuesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 18,
+       "completed": 16,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 2,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 29,
+       "completed": 25,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 16.5
+    },
+    {
+     "date": "2026-09-30",
+     "weekday": "Wednesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 18,
+       "completed": 16,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 27,
+       "completed": 23,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 11,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 13,
+       "completed": 12,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 22.6
+    },
+    {
+     "date": "2026-10-01",
+     "weekday": "Thursday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 17,
+       "completed": 15,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 28,
+       "completed": 24,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 10,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 13,
+       "completed": 11,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 22.0
+    },
+    {
+     "date": "2026-10-02",
+     "weekday": "Friday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 13,
+       "completed": 11,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 24,
+       "completed": 21,
+       "cancellations": 4,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 13,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 11,
+       "completed": 10,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 15.1
+    }
+   ],
+   "studies_completed_by_modality": {
+    "MRI": 61,
+    "CT": 77,
+    "X-ray": 114,
+    "Ultrasound": 56
+   },
+   "studies_completed_total": 308,
+   "scheduled_total": 356,
+   "cancellations_total": 70,
+   "no_shows_total": 5,
+   "backfilled_total": 27,
+   "open_slots_total": 142,
+   "capacity_total": 450,
+   "uptime_pct_by_modality": {
+    "MRI": 100.0,
+    "CT": 100.0,
+    "X-ray": 100.0,
+    "Ultrasound": 100.0
+   },
+   "report_turnaround_hours_avg": 18.3,
+   "prior_auth_by_payer": {
+    "Medicare Advantage": {
+     "submitted": 49,
+     "approved": 43,
+     "denied": 3,
+     "pending": 3,
+     "avg_turnaround_hours": 47.9,
+     "appeals_filed": 3,
+     "appeals_won": 2
+    },
+    "Medicaid": {
+     "submitted": 38,
+     "approved": 31,
+     "denied": 4,
+     "pending": 3,
+     "avg_turnaround_hours": 61.8,
+     "appeals_filed": 4,
+     "appeals_won": 3
+    },
+    "BCBS TX": {
+     "submitted": 30,
+     "approved": 27,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 25.4,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "UnitedHealthcare": {
+     "submitted": 23,
+     "approved": 20,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 33.6,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "Aetna": {
+     "submitted": 15,
+     "approved": 14,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 29.4,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Cigna": {
+     "submitted": 11,
+     "approved": 9,
+     "denied": 1,
+     "pending": 1,
+     "avg_turnaround_hours": 32.6,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "TRICARE": {
+     "submitted": 13,
+     "approved": 12,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 41.2,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Self-pay": {
+     "submitted": 0,
+     "approved": 0,
+     "denied": 0,
+     "pending": 0,
+     "avg_turnaround_hours": 0,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    }
+   },
+   "staff_hours_on_prior_auth": 88.2,
+   "revenue_by_payer": {
+    "Medicare Advantage": {
+     "billed": 40901,
+     "collected_to_date": 16961
+    },
+    "Medicaid": {
+     "billed": 31462,
+     "collected_to_date": 9881
+    },
+    "BCBS TX": {
+     "billed": 25170,
+     "collected_to_date": 14580
+    },
+    "UnitedHealthcare": {
+     "billed": 18877,
+     "collected_to_date": 10143
+    },
+    "Aetna": {
+     "billed": 12585,
+     "collected_to_date": 7145
+    },
+    "Cigna": {
+     "billed": 9439,
+     "collected_to_date": 5164
+    },
+    "TRICARE": {
+     "billed": 11012,
+     "collected_to_date": 5148
+    },
+    "Self-pay": {
+     "billed": 7866,
+     "collected_to_date": 5621
+    }
+   },
+   "referrer_volume": {
+    "Referrer A": 53,
+    "Referrer B": 43,
+    "Referrer C": 40,
+    "Referrer D": 32,
+    "Referrer E": 31,
+    "Referrer F": 27,
+    "Referrer G": 25,
+    "Referrer H": 21,
+    "Referrer I": 15,
+    "Referrer J": 12
+   }
+  },
+  {
+   "week": 5,
+   "label": "Week 5",
+   "start": "2026-10-05",
+   "end": "2026-10-09",
+   "days": [
+    {
+     "date": "2026-10-05",
+     "weekday": "Monday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 18,
+       "completed": 15,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 29,
+       "completed": 25,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 20.2
+    },
+    {
+     "date": "2026-10-06",
+     "weekday": "Tuesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 19,
+       "completed": 16,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 31,
+       "completed": 27,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 3,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 18.6
+    },
+    {
+     "date": "2026-10-07",
+     "weekday": "Wednesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 20,
+       "completed": 18,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 2,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 30,
+       "completed": 25,
+       "cancellations": 7,
+       "no_shows": 1,
+       "backfilled": 3,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 19.6
+    },
+    {
+     "date": "2026-10-08",
+     "weekday": "Thursday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 19,
+       "completed": 16,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 29,
+       "completed": 24,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 10,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 21.1
+    },
+    {
+     "date": "2026-10-09",
+     "weekday": "Friday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 26,
+       "completed": 22,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 3,
+       "open_slots": 12,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 12,
+       "completed": 11,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 15.6
+    }
+   ],
+   "studies_completed_by_modality": {
+    "MRI": 66,
+    "CT": 79,
+    "X-ray": 123,
+    "Ultrasound": 59
+   },
+   "studies_completed_total": 327,
+   "scheduled_total": 381,
+   "cancellations_total": 78,
+   "no_shows_total": 5,
+   "backfilled_total": 29,
+   "open_slots_total": 123,
+   "capacity_total": 450,
+   "uptime_pct_by_modality": {
+    "MRI": 100.0,
+    "CT": 100.0,
+    "X-ray": 100.0,
+    "Ultrasound": 100.0
+   },
+   "report_turnaround_hours_avg": 19.0,
+   "prior_auth_by_payer": {
+    "Medicare Advantage": {
+     "submitted": 52,
+     "approved": 43,
+     "denied": 3,
+     "pending": 6,
+     "avg_turnaround_hours": 46.7,
+     "appeals_filed": 3,
+     "appeals_won": 2
+    },
+    "Medicaid": {
+     "submitted": 40,
+     "approved": 31,
+     "denied": 4,
+     "pending": 5,
+     "avg_turnaround_hours": 62.8,
+     "appeals_filed": 4,
+     "appeals_won": 3
+    },
+    "BCBS TX": {
+     "submitted": 32,
+     "approved": 29,
+     "denied": 0,
+     "pending": 3,
+     "avg_turnaround_hours": 23.1,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "UnitedHealthcare": {
+     "submitted": 24,
+     "approved": 20,
+     "denied": 1,
+     "pending": 3,
+     "avg_turnaround_hours": 32.6,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "Aetna": {
+     "submitted": 16,
+     "approved": 14,
+     "denied": 0,
+     "pending": 2,
+     "avg_turnaround_hours": 32.3,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Cigna": {
+     "submitted": 12,
+     "approved": 10,
+     "denied": 1,
+     "pending": 1,
+     "avg_turnaround_hours": 36.0,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "TRICARE": {
+     "submitted": 14,
+     "approved": 13,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 44.6,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Self-pay": {
+     "submitted": 0,
+     "approved": 0,
+     "denied": 0,
+     "pending": 0,
+     "avg_turnaround_hours": 0,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    }
+   },
+   "staff_hours_on_prior_auth": 90.4,
+   "revenue_by_payer": {
+    "Medicare Advantage": {
+     "billed": 43261,
+     "collected_to_date": 18636
+    },
+    "Medicaid": {
+     "billed": 33278,
+     "collected_to_date": 9922
+    },
+    "BCBS TX": {
+     "billed": 26622,
+     "collected_to_date": 15240
+    },
+    "UnitedHealthcare": {
+     "billed": 19967,
+     "collected_to_date": 11423
+    },
+    "Aetna": {
+     "billed": 13311,
+     "collected_to_date": 7403
+    },
+    "Cigna": {
+     "billed": 9983,
+     "collected_to_date": 5285
+    },
+    "TRICARE": {
+     "billed": 11647,
+     "collected_to_date": 5488
+    },
+    "Self-pay": {
+     "billed": 8320,
+     "collected_to_date": 5802
+    }
+   },
+   "referrer_volume": {
+    "Referrer A": 63,
+    "Referrer B": 47,
+    "Referrer C": 46,
+    "Referrer D": 39,
+    "Referrer E": 36,
+    "Referrer F": 31,
+    "Referrer G": 28,
+    "Referrer H": 21,
+    "Referrer I": 17,
+    "Referrer J": 12
+   }
+  },
+  {
+   "week": 6,
+   "label": "Week 6",
+   "start": "2026-10-12",
+   "end": "2026-10-16",
+   "days": [
+    {
+     "date": "2026-10-12",
+     "weekday": "Monday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 18,
+       "completed": 16,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 29,
+       "completed": 24,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 10,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 14.0
+    },
+    {
+     "date": "2026-10-13",
+     "weekday": "Tuesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 20,
+       "completed": 17,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 31,
+       "completed": 26,
+       "cancellations": 7,
+       "no_shows": 1,
+       "backfilled": 3,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 11.9
+    },
+    {
+     "date": "2026-10-14",
+     "weekday": "Wednesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 20,
+       "completed": 18,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 2,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 30,
+       "completed": 26,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 3,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 17.0
+    },
+    {
+     "date": "2026-10-15",
+     "weekday": "Thursday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 20,
+       "completed": 17,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 30,
+       "completed": 26,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 13,
+       "completed": 11,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 14.0
+    },
+    {
+     "date": "2026-10-16",
+     "weekday": "Friday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 17,
+       "completed": 15,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 27,
+       "completed": 23,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 11,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 12,
+       "completed": 10,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 22.7
+    }
+   ],
+   "studies_completed_by_modality": {
+    "MRI": 68,
+    "CT": 83,
+    "X-ray": 125,
+    "Ultrasound": 59
+   },
+   "studies_completed_total": 335,
+   "scheduled_total": 389,
+   "cancellations_total": 77,
+   "no_shows_total": 5,
+   "backfilled_total": 28,
+   "open_slots_total": 115,
+   "capacity_total": 450,
+   "uptime_pct_by_modality": {
+    "MRI": 100.0,
+    "CT": 100.0,
+    "X-ray": 100.0,
+    "Ultrasound": 100.0
+   },
+   "report_turnaround_hours_avg": 15.9,
+   "prior_auth_by_payer": {
+    "Medicare Advantage": {
+     "submitted": 54,
+     "approved": 46,
+     "denied": 3,
+     "pending": 5,
+     "avg_turnaround_hours": 48.8,
+     "appeals_filed": 3,
+     "appeals_won": 2
+    },
+    "Medicaid": {
+     "submitted": 41,
+     "approved": 32,
+     "denied": 4,
+     "pending": 5,
+     "avg_turnaround_hours": 65.4,
+     "appeals_filed": 4,
+     "appeals_won": 3
+    },
+    "BCBS TX": {
+     "submitted": 33,
+     "approved": 28,
+     "denied": 1,
+     "pending": 4,
+     "avg_turnaround_hours": 23.7,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "UnitedHealthcare": {
+     "submitted": 25,
+     "approved": 22,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 36.7,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "Aetna": {
+     "submitted": 17,
+     "approved": 15,
+     "denied": 0,
+     "pending": 2,
+     "avg_turnaround_hours": 29.9,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Cigna": {
+     "submitted": 12,
+     "approved": 10,
+     "denied": 1,
+     "pending": 1,
+     "avg_turnaround_hours": 32.7,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "TRICARE": {
+     "submitted": 14,
+     "approved": 13,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 43.9,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Self-pay": {
+     "submitted": 0,
+     "approved": 0,
+     "denied": 0,
+     "pending": 0,
+     "avg_turnaround_hours": 0,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    }
+   },
+   "staff_hours_on_prior_auth": 94.7,
+   "revenue_by_payer": {
+    "Medicare Advantage": {
+     "billed": 44728,
+     "collected_to_date": 18205
+    },
+    "Medicaid": {
+     "billed": 34406,
+     "collected_to_date": 10028
+    },
+    "BCBS TX": {
+     "billed": 27525,
+     "collected_to_date": 15820
+    },
+    "UnitedHealthcare": {
+     "billed": 20644,
+     "collected_to_date": 11275
+    },
+    "Aetna": {
+     "billed": 13762,
+     "collected_to_date": 7923
+    },
+    "Cigna": {
+     "billed": 10322,
+     "collected_to_date": 5790
+    },
+    "TRICARE": {
+     "billed": 12042,
+     "collected_to_date": 5685
+    },
+    "Self-pay": {
+     "billed": 8602,
+     "collected_to_date": 6256
+    }
+   },
+   "referrer_volume": {
+    "Referrer A": 61,
+    "Referrer B": 47,
+    "Referrer C": 46,
+    "Referrer D": 38,
+    "Referrer E": 36,
+    "Referrer F": 30,
+    "Referrer G": 27,
+    "Referrer H": 25,
+    "Referrer I": 15,
+    "Referrer J": 14
+   }
+  },
+  {
+   "week": 7,
+   "label": "Week 7",
+   "start": "2026-10-19",
+   "end": "2026-10-23",
+   "days": [
+    {
+     "date": "2026-10-19",
+     "weekday": "Monday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 19,
+       "completed": 17,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 2,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 29,
+       "completed": 25,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 21.2
+    },
+    {
+     "date": "2026-10-20",
+     "weekday": "Tuesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 17,
+       "completed": 15,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 20,
+       "completed": 17,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 96.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 33,
+       "completed": 28,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 15.5
+    },
+    {
+     "date": "2026-10-21",
+     "weekday": "Wednesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 17,
+       "completed": 4,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 14,
+       "lost_to_downtime": 10,
+       "uptime_pct": 40.9
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 21,
+       "completed": 19,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 2,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 33,
+       "completed": 28,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 13.9
+    },
+    {
+     "date": "2026-10-22",
+     "weekday": "Thursday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 20,
+       "completed": 18,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 2,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 31,
+       "completed": 26,
+       "cancellations": 7,
+       "no_shows": 1,
+       "backfilled": 3,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 17.7
+    },
+    {
+     "date": "2026-10-23",
+     "weekday": "Friday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 18,
+       "completed": 16,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 2,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 27,
+       "completed": 23,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 11,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 13,
+       "completed": 11,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 5,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 21.5
+    }
+   ],
+   "studies_completed_by_modality": {
+    "MRI": 60,
+    "CT": 87,
+    "X-ray": 130,
+    "Ultrasound": 62
+   },
+   "studies_completed_total": 339,
+   "scheduled_total": 404,
+   "cancellations_total": 80,
+   "no_shows_total": 5,
+   "backfilled_total": 30,
+   "open_slots_total": 111,
+   "capacity_total": 450,
+   "uptime_pct_by_modality": {
+    "MRI": 88.18,
+    "CT": 99.2,
+    "X-ray": 100.0,
+    "Ultrasound": 100.0
+   },
+   "report_turnaround_hours_avg": 18.0,
+   "prior_auth_by_payer": {
+    "Medicare Advantage": {
+     "submitted": 53,
+     "approved": 46,
+     "denied": 3,
+     "pending": 4,
+     "avg_turnaround_hours": 43.6,
+     "appeals_filed": 3,
+     "appeals_won": 2
+    },
+    "Medicaid": {
+     "submitted": 41,
+     "approved": 34,
+     "denied": 4,
+     "pending": 3,
+     "avg_turnaround_hours": 58.0,
+     "appeals_filed": 4,
+     "appeals_won": 3
+    },
+    "BCBS TX": {
+     "submitted": 33,
+     "approved": 28,
+     "denied": 1,
+     "pending": 4,
+     "avg_turnaround_hours": 24.0,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "UnitedHealthcare": {
+     "submitted": 24,
+     "approved": 21,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 35.7,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "Aetna": {
+     "submitted": 16,
+     "approved": 15,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 29.4,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Cigna": {
+     "submitted": 12,
+     "approved": 11,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 34.4,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "TRICARE": {
+     "submitted": 14,
+     "approved": 12,
+     "denied": 0,
+     "pending": 2,
+     "avg_turnaround_hours": 35.5,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Self-pay": {
+     "submitted": 0,
+     "approved": 0,
+     "denied": 0,
+     "pending": 0,
+     "avg_turnaround_hours": 0,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    }
+   },
+   "staff_hours_on_prior_auth": 91.9,
+   "revenue_by_payer": {
+    "Medicare Advantage": {
+     "billed": 43493,
+     "collected_to_date": 18095
+    },
+    "Medicaid": {
+     "billed": 33456,
+     "collected_to_date": 9657
+    },
+    "BCBS TX": {
+     "billed": 26765,
+     "collected_to_date": 14868
+    },
+    "UnitedHealthcare": {
+     "billed": 20074,
+     "collected_to_date": 11160
+    },
+    "Aetna": {
+     "billed": 13382,
+     "collected_to_date": 7346
+    },
+    "Cigna": {
+     "billed": 10037,
+     "collected_to_date": 5441
+    },
+    "TRICARE": {
+     "billed": 11710,
+     "collected_to_date": 5142
+    },
+    "Self-pay": {
+     "billed": 8364,
+     "collected_to_date": 5762
+    }
+   },
+   "referrer_volume": {
+    "Referrer A": 66,
+    "Referrer B": 51,
+    "Referrer C": 43,
+    "Referrer D": 8,
+    "Referrer E": 31,
+    "Referrer F": 28,
+    "Referrer G": 25,
+    "Referrer H": 24,
+    "Referrer I": 17,
+    "Referrer J": 14
+   }
+  },
+  {
+   "week": 8,
+   "label": "Week 8",
+   "start": "2026-10-26",
+   "end": "2026-10-30",
+   "days": [
+    {
+     "date": "2026-10-26",
+     "weekday": "Monday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 16,
+       "completed": 14,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 21,
+       "completed": 18,
+       "cancellations": 4,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 31,
+       "completed": 25,
+       "cancellations": 7,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 19.8
+    },
+    {
+     "date": "2026-10-27",
+     "weekday": "Tuesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 17,
+       "completed": 15,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 22,
+       "completed": 19,
+       "cancellations": 4,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 33,
+       "completed": 28,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 20.6
+    },
+    {
+     "date": "2026-10-28",
+     "weekday": "Wednesday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 17,
+       "completed": 15,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 20,
+       "completed": 16,
+       "cancellations": 5,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 32,
+       "completed": 26,
+       "cancellations": 7,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 8,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 20.1
+    },
+    {
+     "date": "2026-10-29",
+     "weekday": "Thursday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 17,
+       "completed": 15,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 21,
+       "completed": 19,
+       "cancellations": 4,
+       "no_shows": 0,
+       "backfilled": 2,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 31,
+       "completed": 25,
+       "cancellations": 7,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 9,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 15,
+       "completed": 13,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 3,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 12.9
+    },
+    {
+     "date": "2026-10-30",
+     "weekday": "Friday",
+     "modalities": {
+      "MRI": {
+       "capacity": 18,
+       "scheduled": 14,
+       "completed": 12,
+       "cancellations": 3,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 6,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "CT": {
+       "capacity": 22,
+       "scheduled": 18,
+       "completed": 15,
+       "cancellations": 3,
+       "no_shows": 1,
+       "backfilled": 1,
+       "open_slots": 7,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "X-ray": {
+       "capacity": 34,
+       "scheduled": 29,
+       "completed": 24,
+       "cancellations": 6,
+       "no_shows": 1,
+       "backfilled": 2,
+       "open_slots": 10,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      },
+      "Ultrasound": {
+       "capacity": 16,
+       "scheduled": 13,
+       "completed": 12,
+       "cancellations": 2,
+       "no_shows": 0,
+       "backfilled": 1,
+       "open_slots": 4,
+       "lost_to_downtime": 0,
+       "uptime_pct": 100.0
+      }
+     },
+     "report_turnaround_hours": 19.1
+    }
+   ],
+   "studies_completed_by_modality": {
+    "MRI": 71,
+    "CT": 87,
+    "X-ray": 128,
+    "Ultrasound": 64
+   },
+   "studies_completed_total": 350,
+   "scheduled_total": 412,
+   "cancellations_total": 82,
+   "no_shows_total": 9,
+   "backfilled_total": 29,
+   "open_slots_total": 100,
+   "capacity_total": 450,
+   "uptime_pct_by_modality": {
+    "MRI": 100.0,
+    "CT": 100.0,
+    "X-ray": 100.0,
+    "Ultrasound": 100.0
+   },
+   "report_turnaround_hours_avg": 18.5,
+   "prior_auth_by_payer": {
+    "Medicare Advantage": {
+     "submitted": 57,
+     "approved": 49,
+     "denied": 2,
+     "pending": 6,
+     "avg_turnaround_hours": 41.7,
+     "appeals_filed": 2,
+     "appeals_won": 2
+    },
+    "Medicaid": {
+     "submitted": 44,
+     "approved": 36,
+     "denied": 4,
+     "pending": 4,
+     "avg_turnaround_hours": 68.5,
+     "appeals_filed": 4,
+     "appeals_won": 3
+    },
+    "BCBS TX": {
+     "submitted": 35,
+     "approved": 32,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 21.1,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "UnitedHealthcare": {
+     "submitted": 26,
+     "approved": 23,
+     "denied": 1,
+     "pending": 2,
+     "avg_turnaround_hours": 31.8,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "Aetna": {
+     "submitted": 17,
+     "approved": 16,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 28.0,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "Cigna": {
+     "submitted": 13,
+     "approved": 12,
+     "denied": 0,
+     "pending": 1,
+     "avg_turnaround_hours": 27.3,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    },
+    "TRICARE": {
+     "submitted": 15,
+     "approved": 13,
+     "denied": 1,
+     "pending": 1,
+     "avg_turnaround_hours": 42.2,
+     "appeals_filed": 1,
+     "appeals_won": 1
+    },
+    "Self-pay": {
+     "submitted": 0,
+     "approved": 0,
+     "denied": 0,
+     "pending": 0,
+     "avg_turnaround_hours": 0,
+     "appeals_filed": 0,
+     "appeals_won": 0
+    }
+   },
+   "staff_hours_on_prior_auth": 97.2,
+   "revenue_by_payer": {
+    "Medicare Advantage": {
+     "billed": 46860,
+     "collected_to_date": 18787
+    },
+    "Medicaid": {
+     "billed": 36046,
+     "collected_to_date": 10774
+    },
+    "BCBS TX": {
+     "billed": 28837,
+     "collected_to_date": 17316
+    },
+    "UnitedHealthcare": {
+     "billed": 21628,
+     "collected_to_date": 11920
+    },
+    "Aetna": {
+     "billed": 14418,
+     "collected_to_date": 7757
+    },
+    "Cigna": {
+     "billed": 10814,
+     "collected_to_date": 5824
+    },
+    "TRICARE": {
+     "billed": 12616,
+     "collected_to_date": 5680
+    },
+    "Self-pay": {
+     "billed": 9012,
+     "collected_to_date": 6310
+    }
+   },
+   "referrer_volume": {
+    "Referrer A": 69,
+    "Referrer B": 56,
+    "Referrer C": 50,
+    "Referrer D": 0,
+    "Referrer E": 33,
+    "Referrer F": 33,
+    "Referrer G": 26,
+    "Referrer H": 26,
+    "Referrer I": 19,
+    "Referrer J": 14
+   }
+  }
+ ]
+}
