@@ -75,7 +75,7 @@ How each slide block works:
 
 **The hook comes before any introduction. Deck on the cover, say it to the room:**
 
-=="Four out of five prior-auth denials that get appealed are overturned. Almost nobody files the appeal. That's money your center will leave on the table every week, unless you decide how you'll handle it in the next few months. That's what I'm here to talk about.==
+=="I'm here for one reason: to help your new center keep more of the money it earns, and spend less to earn it. Two ways. First, revenue you'd otherwise lose: four out of five prior-auth denials that get appealed are overturned, and almost nobody files the appeal. Second, cost you never take on: the work a prior-auth desk does by hand, done by software, with a person approving. And the best part is timing. Today those decisions are free. Six months from now, after the contracts are signed and the staff is hired, they won't be.==
 
 **Then the introduction:**
 
@@ -137,9 +137,9 @@ If he raises any of it himself: listen, say little, ask nothing, move on.
 
 **SAY**
 
-The cold-open card above, word for word. **Hook first, before you introduce yourself (Rick, 2026-11-05 01:37):**
+The cold-open card above, word for word. **Hook first, before you introduce yourself (Rick, 2026-11-05 01:37; new wording 02:29):**
 
-=="Four out of five prior-auth denials that get appealed are overturned. Almost nobody files the appeal. That's money your center will leave on the table every week, unless you decide how you'll handle it in the next few months. That's what I'm here to talk about.==
+=="I'm here for one reason: to help your new center keep more of the money it earns, and spend less to earn it. Two ways. First, revenue you'd otherwise lose: four out of five prior-auth denials that get appealed are overturned, and almost nobody files the appeal. Second, cost you never take on: the work a prior-auth desk does by hand, done by software, with a person approving. And the best part is timing. Today those decisions are free. Six months from now, after the contracts are signed and the staff is hired, they won't be.==
 
 Then the opener line:
 
