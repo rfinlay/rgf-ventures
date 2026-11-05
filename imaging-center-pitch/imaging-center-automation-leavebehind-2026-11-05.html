@@ -5,79 +5,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Six Months of Free Decisions: Summary for Dr. Luis Ramos, Fernando Escarzaga, and Jesse Martinez</title>
 <style>
+  /* 2026-11-05 01:02 (Rick): print was too small for older readers. Re-laid out for legibility:
+     body 12pt, tables 10.5pt, headings scaled up, comfortable line height. Four letter pages
+     (three in the ?nonumbers variant). Content unchanged; the candidates table is split across
+     pages 1 and 2 with its header row repeated, and the pricing block is its own page 4. */
   :root {
     --ink: #1c1b18; --soft: #4a4740; --faint: #8a867c; --rule: #d9d4c7; --accent: #7a1f2b;
     --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, "Times New Roman", serif;
     --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: var(--sans); color: var(--ink); background: #e9e6df; font-size: 8.7pt; line-height: 1.23; }
-  .page { width: 8.5in; min-height: 11in; margin: 0.4in auto; background: #fff; padding: 0.24in 0.45in 0.2in 0.45in; display: flex; flex-direction: column; }
-  header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid var(--ink); padding-bottom: 5pt; margin-bottom: 7pt; }
-  .kicker { font-size: 8pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 4pt; }
-  h1 { font-family: var(--serif); font-weight: 400; font-size: 19pt; line-height: 1.1; }
-  .who { text-align: right; font-size: 9pt; color: var(--soft); line-height: 1.4; }
+  body { font-family: var(--sans); color: var(--ink); background: #e9e6df; font-size: 11.5pt; line-height: 1.26; }
+  .page { width: 8.5in; min-height: 11in; margin: 0.4in auto; background: #fff; padding: 0.32in 0.45in 0.27in 0.45in; display: flex; flex-direction: column; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 14pt; border-bottom: 2px solid var(--ink); padding-bottom: 6pt; margin-bottom: 8pt; }
+  .kicker { font-size: 10pt; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 5pt; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 22pt; line-height: 1.1; }
+  .who { text-align: right; font-size: 11pt; color: var(--soft); line-height: 1.4; flex: 0 0 auto; }
   .who b { color: var(--ink); }
-  h2 { font-family: var(--serif); font-weight: 400; font-size: 11.5pt; margin: 5pt 0 2.5pt 0; }
+  h2 { font-family: var(--serif); font-weight: 400; font-size: 14.5pt; line-height: 1.2; margin: 6pt 0 2pt 0; }
   p { margin-bottom: 5pt; }
-  .intro { font-size: 9.1pt; color: var(--soft); }
-  table { width: 100%; border-collapse: collapse; font-size: 7.4pt; line-height: 1.15; margin-top: 2pt; }
-  th { text-align: left; font-size: 7.2pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); font-weight: 600; padding: 0 7pt 3pt 0; border-bottom: 1.5px solid var(--ink); }
-  td { padding: 1.5pt 7pt 1.5pt 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .intro { font-size: 11.5pt; color: var(--soft); }
+  table { width: 100%; border-collapse: collapse; font-size: 10.5pt; line-height: 1.16; margin-top: 2pt; }
+  th { text-align: left; font-size: 10.5pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); font-weight: 600; padding: 0 7pt 3pt 0; border-bottom: 1.5px solid var(--ink); }
+  td { padding: 2pt 7pt 2pt 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
   td.rec { font-weight: 600; white-space: nowrap; }
   td.rec.build { color: var(--accent); }
-  .two { display: grid; grid-template-columns: 1.1fr 1fr 0.9fr; gap: 16pt; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 18pt; }
   ul { list-style: none; }
-  li { position: relative; padding-left: 12pt; margin-bottom: 1.5pt; }
-  li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 7pt; height: 1.5px; background: var(--accent); }
-  .free { border-left: 3px solid var(--accent); padding: 2pt 0 2pt 10pt; margin-top: 3pt; font-size: 9pt; }
+  li { position: relative; padding-left: 14pt; margin-bottom: 2pt; }
+  li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 8pt; height: 1.5px; background: var(--accent); }
+  .free { border-left: 3px solid var(--accent); padding: 2pt 0 2pt 12pt; margin-top: 3pt; font-size: 11.5pt; }
   .free b { font-weight: 600; }
   .grow { flex: 1; }
-  footer { border-top: 1px solid var(--rule); padding-top: 4pt; margin-top: 5pt; display: flex; justify-content: space-between; align-items: flex-end; font-size: 9pt; color: var(--soft); }
+  footer { border-top: 1px solid var(--rule); padding-top: 4pt; margin-top: 4pt; display: flex; justify-content: space-between; align-items: flex-end; gap: 14pt; font-size: 10.5pt; line-height: 1.3; color: var(--soft); }
   footer b { color: var(--ink); font-weight: 600; }
-  .sources { font-size: 6.5pt; color: var(--faint); line-height: 1.25; margin-top: 4pt; }
+  .sources { font-size: 9pt; color: var(--faint); line-height: 1.22; margin-top: 5pt; }
   @media print {
     @page { size: letter; margin: 0; }
     body { background: #fff; }
-    .page { margin: 0; width: 8.5in; height: 11in; min-height: 0; page-break-after: always; break-after: page; page-break-inside: avoid; }
+    .page { margin: 0; width: 8.5in; height: 11in; min-height: 0; overflow: hidden; page-break-after: always; break-after: page; page-break-inside: avoid; }
     .page:last-of-type { page-break-after: auto; break-after: auto; }
     h2, tr, li, p, .free, .two, footer { page-break-inside: avoid; break-inside: avoid; }
     h2 { page-break-after: avoid; break-after: avoid; }
   }
-  /* no-numbers variant (?nonumbers): pricing panel removed, remaining two panels share the row */
-  .two { grid-template-columns: 1fr 1fr; }
   ol.steps { list-style: none; counter-reset: st; }
-  ol.steps li { counter-increment: st; padding-left: 14pt; }
+  ol.steps li { counter-increment: st; padding-left: 16pt; }
   ol.steps li::before { content: counter(st); background: none; width: auto; height: auto; top: 0; color: var(--accent); font-weight: 600; }
   table.ms td.amt { text-align: right; font-weight: 600; white-space: nowrap; }
-  table.ms tr.gate td { color: var(--accent); font-size: 6.8pt; letter-spacing: 0.08em; text-transform: uppercase; }
+  table.ms tr.gate td { color: var(--accent); font-size: 10.5pt; letter-spacing: 0.08em; text-transform: uppercase; }
   table.ms tr.tot td { font-weight: 600; border-bottom: 1.5px solid var(--ink); }
   .demourl { color: var(--accent); font-weight: 600; }
-  .demo-row { display: flex; align-items: flex-end; gap: 10pt; page-break-inside: avoid; break-inside: avoid; }
+  .demo-row { display: flex; align-items: flex-end; gap: 12pt; page-break-inside: avoid; break-inside: avoid; }
   .demo-row p { flex: 1; }
-  .qr { flex: 0 0 auto; margin: 0; width: 1.2in; text-align: center; }
-  .qr svg { display: block; width: 1.2in; height: 1.2in; }
-  .qr figcaption { font-size: 7.5pt; color: #555; margin-top: 2pt; white-space: nowrap; }
-  .page2 p, .page2 li { font-size: 8.9pt; line-height: 1.3; }
-  .page2 h2 { margin-top: 9pt; }
-  /* 2026-11-03: page 1 ran about three lines over 11in at print (footer landed on page 2). Tightened, not trimmed. */
-  @media print {
-    .page { padding: 0.2in 0.45in 0.16in 0.45in; }
-    table { line-height: 1.12; }
-    .sources { font-size: 6.3pt; line-height: 1.2; margin-top: 3pt; }
-    footer { margin-top: 3pt; padding-top: 3pt; }
-    /* 2026-11-03 (Rick R9/R16/R17/R18): the pricing panel grew; page 2 table and its two paragraphs print a touch smaller */
-    /* 2026-11-03 (Rick R26/R27/R28, final structure): Phase 1, Phase 4 and the what-I-need line grew; stepped down once more so the footer stays on page 2 */
-    .page2 table.ms { font-size: 6.4pt; line-height: 1.04; }
-    .page2 table.ms td, .page2 table.ms th { padding-top: 1.6pt; padding-bottom: 1.6pt; }
-    .page2 p, .page2 li { font-size: 7.9pt; line-height: 1.18; }
-    .page2 [data-nonumbers="remove"] p { font-size: 7.3pt; line-height: 1.15; }
-    .page2 ol.steps li { margin-bottom: 1pt; }
-    .page2 h2 { margin-top: 6pt; }
-    /* 2026-11-04 (final round): rows 3 and 5 grew (two views for all three owners; records in/out with the QR envelope); page 1 table prints a touch smaller so the footer stays on page 1 */
-    .page:not(.page2) table { font-size: 7.05pt; line-height: 1.08; }
-    .page:not(.page2) td { padding-top: 1.2pt; padding-bottom: 1.2pt; }
-  }
+  .qr { flex: 0 0 auto; margin: 0; width: 1.35in; text-align: center; }
+  .qr svg { display: block; width: 1.35in; height: 1.35in; }
+  .qr figcaption { font-size: 9.5pt; color: #555; margin-top: 3pt; white-space: nowrap; }
+  .page2 h2 { margin-top: 8pt; }
+  .pageb li { margin-bottom: 1.5pt; line-height: 1.22; }
+  .page4 { padding-top: 0.28in; padding-bottom: 0.25in; }
+  .page4 p { line-height: 1.22; }
+  .page4 table.ms { line-height: 1.12; }
+  .page4 table.ms td { padding-top: 1.8pt; padding-bottom: 1.8pt; }
+  /* pages 1 and 3 have room: body copy there keeps the roomier leading */
+  .page:first-of-type, .page2 { line-height: 1.3; }
+  .page:first-of-type table { line-height: 1.22; }
+  .page:first-of-type td { padding-top: 3pt; padding-bottom: 3pt; }
+  .page2 p, .page2 li { line-height: 1.32; margin-bottom: 3pt; }
+  .page2 h2 { margin-top: 10pt; }
 </style>
 <script>
 /* NO-NUMBERS VARIANT. Open with ?nonumbers and the element tagged data-nonumbers="remove" (the
@@ -111,13 +105,27 @@
 
   <h2>The candidates, ranked by value, highest first</h2>
   <table>
-    <thead><tr><th style="width:4%">#</th><th style="width:23%">Process</th><th style="width:14%">Recommendation</th><th>Why it ranks here</th></tr></thead>
+    <thead><tr><th style="width:4%">#</th><th style="width:18%">Process</th><th style="width:13%">Recommendation</th><th>Why it ranks here</th></tr></thead>
     <tbody>
       <tr><td>1</td><td>Contract terms before signature</td><td class="rec">Free</td><td>The four terms above. They cost nothing today and cannot be reopened after signature. The only item with a hard deadline, and the one I earn nothing from.</td></tr>
       <tr><td>2</td><td>Prior authorization and eligibility verification</td><td class="rec build">Build</td><td>The largest administrative cost, and the one not asked about. Medicare Advantage 2024: 11.5% of 4.1 million denied prior auths appealed, 80.7% of those appeals overturned (KFF). 40% of 1,000 physicians surveyed staff someone exclusively for it (AMA 2025). Payer FHIR prior auth APIs required by 2027-01-01. A human signs every submission and every appeal.</td></tr>
       <tr><td>3</td><td>Owner reporting, including an agent you can ask questions of</td><td class="rec build">Build</td><td>One system, two views, and all three of you see both. Operations: studies by modality, turnaround, no-shows and open slots, authorizations waiting and appeals in flight, scanner uptime, staff hours and costs against budget. Business health, owned by the practice: collections, denials and appeals won, revenue by payer. Ask it in plain words; it answers from your own numbers. Read-only, no patient contact.</td></tr>
       <tr><td>4</td><td>Scheduling: cancellation backfill</td><td class="rec build">Build, small</td><td>UC Irvine study, 19,262 exams: 22.3% cancelled versus 2.0% no-shows, 70.2% of those cancellations patient-initiated. The empty slot is known in advance. A ranked waitlist on top of the RIS, with a per-patient rate governor for the TCPA cap.</td></tr>
       <tr><td>5</td><td>Medical records: inbound requests and outbound prior studies</td><td class="rec build">Build, small</td><td>Requests in run on a clock (HIPAA 30 days, Texas 15 business days; designed to 15): intake, identity check, deadline alerts, fee calculation, DICOM export. Priors out have no electronic link to most facilities: the agent prints the request packet with a QR-coded envelope label, tracks days outstanding, and routes the returned disc to the right patient.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="grow"></div>
+  <footer>
+    <div><b>Richard Finlay</b>, RGF Global Ventures LLC<br>(480) 532-1367 &nbsp;·&nbsp; rfinlay813@gmail.com</div>
+    <div>Live proof: <b>radassist.app</b>, used daily by Dr. Ramos</div>
+  </footer>
+</div>
+
+<div class="page pageb">
+  <table>
+    <thead><tr><th style="width:4%">#</th><th style="width:18%">Process</th><th style="width:13%">Recommendation</th><th>Why it ranks here</th></tr></thead>
+    <tbody>
       <tr><td>6</td><td>Radiology report assistance</td><td class="rec build">Build (exists)</td><td>RadAssist, used daily by Dr. Ramos: calcium scoring, thyroid ultrasound (ACR TI-RADS), Spine MRI and CT Spine, built from his own template and rules. Next on the roadmap: voice dictation, brain, cardiac CTA (CAD-RADS). Reading the images themselves is a future item with a regulatory path, not a promise. The radiologist confirms every value and signs; nothing clinical leaves without a signature. At the center: DICOM worklist and query in, HL7 v2 ORU out to the RIS. A different build from records retrieval (row 5). Across centers: one environment under one contract, each organization in its own isolated instance (own database, keys, logins, audit log). Never one shared database.</td></tr>
       <tr><td>7</td><td>Scheduling: reminders, self-scheduling, intake</td><td class="rec">Buy (your RIS)</td><td>Commodity, bundled into modern cloud imaging RIS products. Text reminders moved MRI no-shows from 5.1% to 3.8% in a randomized trial of 6,989 MRI patients. Real, modest, already in the box.</td></tr>
       <tr><td>8</td><td>Answering patients (inbound voice)</td><td class="rec">Buy, I integrate</td><td>26.5% of El Paso County residents aged 5 and over (ACS 2024) speak English less than "very well," nearly all Spanish speakers. The riskiest thing on this list to get wrong (a chest-pain call, or Spanish the system garbles), and a funded vendor category. I specify, evaluate, integrate, and supervise.</td></tr>
@@ -198,10 +206,18 @@
   <h2>What the dates depend on</h2>
   <p>The build starts in March 2027 so everything works before you open. That holds when these are in place: a signed agreement; your vendors selected and contracted in Phase 2, one pick per system, with sandbox access to their API, HL7, and DICOM interfaces; vendor contracts and HIPAA business associate agreements signed before Phase 4, and the hosting option chosen by the end of Phase 3; test access to the payers' FHIR and EDI connections, and payer enrollment and credentialing started early enough to bill at opening; one named person on your side who approves; your expected volumes and payer mix before payer-specific design starts; and equipment delivery dates. <b>If one of these slips, the dates move with it, and the price does not.</b></p>
 
-  <div data-nonumbers="remove">
-    <h2>What I am proposing: one engagement, five phases, $45,000, fixed fee and fixed scope</h2>
+  <div class="grow"></div>
+  <footer>
+    <div><b>Richard Finlay</b>, RGF Global Ventures LLC<br>(480) 532-1367 &nbsp;·&nbsp; rfinlay813@gmail.com</div>
+    <div>Vendor-neutral: works with whatever RIS and PACS you choose.</div>
+  </footer>
+</div>
+
+<div class="page page4" data-nonumbers="remove">
+  <div>
+    <h2 style="margin-top:0">What I am proposing: one engagement, five phases, $45,000, fixed fee and fixed scope</h2>
     <table class="ms">
-      <thead><tr><th style="width:3%">#</th><th style="width:19%">Phase</th><th>What you sign off</th><th style="width:13%">When</th><th style="width:8%;text-align:right">Fee</th><th style="width:19%">Paid</th></tr></thead>
+      <thead><tr><th style="width:3%">#</th><th style="width:11%">Phase</th><th>What you sign off</th><th style="width:9%">When</th><th style="width:8%;text-align:right">Fee</th><th style="width:13%">Paid</th></tr></thead>
       <tbody>
         <tr><td>1</td><td>Discovery and requirements</td><td>Requirements and Roadmap: requirements for every system, patient-flow map (order to signed report to paid claim), contract terms to demand, a make-or-buy recommendation for each requirement (met by a system you buy, or a piece I build, with a ballpark running cost for anything built), shortlist and criteria for Phase 2</td><td>Nov to mid-Dec 2026</td><td class="amt">$7,000</td><td>$4,000 at signing, $3,000 on delivery</td></tr>
         <tr><td>2</td><td>Vendor and system selection</td><td>Vendor Selection Report: side-by-side comparison of the shortlisted systems in each category, weighted scoring against the Phase 1 requirements (integration readiness a named criterion), pros and concerns, 5-year total cost of ownership per option (license or subscription, implementation, interface fees, support, hardware), a recommendation; plus the contracts to sign, interface fees fixed up front. Systems: scheduling; RIS and PACS, bundled cloud system or separate RIS plus PACS (Exa is one example); prior authorization and eligibility; patient phones, IVR and AI answering; radiologist dictation; billing and clearinghouse; modality worklist, reading workstations, image sharing</td><td>Mid-Dec to Jan 2027</td><td class="amt">$8,000</td><td>In full at the start of the phase</td></tr>
