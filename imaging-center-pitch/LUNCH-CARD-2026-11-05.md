@@ -1,11 +1,13 @@
 # Meeting card. Thursday 2026-11-05, 3:30 PM, El Paso. Luis, Fernando, Jesse.
 
+**HOOK FIRST, before any introduction:** =="Four out of five prior-auth denials that get appealed are overturned. Almost nobody files the appeal. That's money your center will leave on the table every week, unless you decide how you'll handle it in the next few months. That's what I'm here to talk about.== Then: =="I'm Rick Finlay. I build and operate AI agent systems. Dr. Ramos uses one every day on real patients."== Then the three questions below, then click to slide 2.
+
 ## The four questions, in order (the "?" slides; asked aloud, nothing printed on the slide)
 
 1. **Cover (1), after the opener** (=="I'm Rick Finlay. I build and operate AI agent systems. Dr. Ramos uses one every day on real patients, RadAssist. I'm not here to sell you software. I'm here to tell you which decisions are free right now."==)**:** =="Before I start, I'd rather hear from you than guess. Fernando, you've built and run imaging here before. What would make the next 30 minutes worth your time?"== Then: =="Jesse, you see these machines from the inside every day. What are you hoping to hear about, or what do you want me to get right?"== Then: =="Luis, you've heard me before, so stop me anytime."== Write every answer down; reuse them later ("Jesse, you mentioned uptime. That's on this slide."). About 3 minutes.
-2. **Vendor contracts (3):** =="Have you signed any RIS or billing vendors yet?"== If Exa: likely pick; three centers; the four terms in the contract; Phase 2 decides.
-3. **Owner numbers (17):** =="What would each of you want to see on a Monday morning?"== Write every answer down.
-4. **If it were my money (23):** =="What would you do differently this time, building it from scratch?"== Do not fill the silence.
+2. **Vendor contracts (5):** =="Have you signed any RIS or billing vendors yet?"== If Exa: likely pick; three centers; the four terms in the contract; Phase 2 decides.
+3. **Owner numbers (16):** =="What would each of you want to see on a Monday morning?"== Write every answer down.
+4. **If it were my money (22):** =="What would you do differently this time, building it from scratch?"== Do not fill the silence.
 
 ## The five lines to land
 
@@ -17,7 +19,7 @@
 
 ## If short on time, skip in this order
 
-**17**, then **23** (keep its question for the Thank You), then **14** to one sentence, then **8 and 9** to their closing lines. ==Never skip 3, 4, 6, 11, 18, 21, 22 or 24.== At 27:00 and not yet on 21: jump to **21, then 24.** Price at about 30:30; Thank You at 34:30.
+**16**, then **22** (keep its question for the Thank You), then **13** to one sentence, then **8 and 9** to their closing lines. ==Never skip 2, 3, 5, 10, 17, 20, 21 or 23.== At 25:30 and not yet on 20: jump to **20, then 23.** Price at about 29:00; Thank You at 33:00.
 
 ## Never say
 
@@ -29,7 +31,7 @@
 - =="It stays on the box."== A Mac mini calling Claude or ChatGPT sends the data to the AI company; the BAA protects it; only a local model keeps it in-building.
 - Headcount reduction or layoffs ("changes what your people do"); "Jesus"; "you open in June" as a fact.
 
-## The demo in four lines (slide 11)
+## The demo in four lines (slide 10)
 
 1. Tabs open on the phone (cellular) and the laptop; banner checked: ==green is live, orange is simulated, say which.==
 2. **Maria:** order, needs auth, packet, approve and submit, advance 3 days, approved. **Robert:** same fast, advance twice, denied, review appeal, sign and submit, advance, overturned. Then the Owner's Monday report.
@@ -55,8 +57,8 @@
 
 **Three more, in one breath.** "Can you guarantee the opening date?" ==No one honestly can; every date is conditional on the assumptions slide (appendix 35); what I guarantee is the price.== "What if Luis leaves?" ==The contract is with the center; you own everything I build; nothing depends on one person, including me.== "Who do you contract with?" ==I'll contract with whichever company runs operations, and the practice's patient data stays the practice's.==
 
-**Scorecard (slide 18):** =="Eight candidates. I'd build five, buy two, and integrate the voice system." "The right-hand column is what each one actually does. Take a second with it." Quiet 15 to 20 seconds. Then the five builds, one line each. Close: "Any of these you'd push back on?" Stop talking.==
+**Scorecard (slide 17):** =="Eight candidates. I'd build five, buy two, and integrate the voice system." "The right-hand column is what each one actually does. Take a second with it." Quiet 15 to 20 seconds. Then the five builds, one line each. Close: "Any of these you'd push back on?" Stop talking.==
 
-**Owner numbers (slide 17):** ==one system, two views, and all three of you see both. The revenue page is the practice's; the operations page is everyone's.== **Records (slide 16):** the clock in (HIPAA 30 days, Texas 15 business days); the QR-coded envelope label out, ==Luis's idea, say so==; ==the exchange between facilities is still manual nationwide; I automate everything on our side of it.==
+**Owner numbers (slide 16):** ==one system, two views, and all three of you see both. The revenue page is the practice's; the operations page is everyone's.== **Records (slide 15):** the clock in (HIPAA 30 days, Texas 15 business days); the QR-coded envelope label out, ==Luis's idea, say so==; ==the exchange between facilities is still manual nationwide; I automate everything on our side of it.==
 
 **Ask Luis before the meeting:** (a) who signs for the operating company, and does the December 18 capital date affect the $4,000 retainer; (b) "Dr. Luis Ramos" or "Luis Ramos-Duran, M.D." on the cover, and "J. Fernando Escarzaga"?; (c) is "Quantum Radiology" the public name; (d) does the practice bill both the technical and the professional side of each scan, so every denial lands on the practice?
