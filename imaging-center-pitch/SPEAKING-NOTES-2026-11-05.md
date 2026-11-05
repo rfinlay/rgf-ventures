@@ -30,7 +30,7 @@
 >
 > **What changed on 2026-11-02 and earlier (slide numbers):**
 > - **New slide 6, "What an AI agent is."** Plain language: the two kinds, the guardrails.
-> - **New slide 11, one order through prior authorization,** with the working demo already built. **Alan's demo is live at https://rfinlay.github.io/imaging-priorauth-demo/** and is linked on slide 11 and leave-behind page 2. Click through it yourself Thursday morning.
+> - **New slide 11, one order through prior authorization,** with the working demo already built. **Alan's demo is live at https://rfinlay.github.io/imaging-priorauth-demo/** and is linked on slide 11 and leave-behind page 3. Click through it yourself Thursday morning.
 > - **New slide 35, "What the dates depend on."** The assumptions. The only place a date is promised, and every date on it is conditional.
 > - **Timeline:** opening targeted around **June 2027, April at the earliest**. The **build starts around March 2027** so prior authorization works before opening. Say only "your new center." **Never mention any building, property, address, or what was at the site before.**
 > - **Pricing, APPROVED by Rick 2026-11-02 (slides 24 to 28, before the Thank You):** one fixed-fee engagement for the new center, **$45,000 in five phases, November 2026 to May 2027**, ready for a ~June 2027 opening with about a month of buffer. Phase 1 Discovery and Requirements $7,000 (Nov to mid-Dec; $4,000 at signing, $3,000 on delivery) · Phase 2 Vendor and System Selection $8,000 (mid-Dec to Jan) · Phase 3 Design and Staffing Plan $7,000 (Feb) · Phase 4 Build and Configure $14,000 (Mar to Apr; $7,000 March 1, $7,000 April 1) · Phase 5 Testing, Training and Go-Live $9,000 (May). Phases 2, 3 and 5 are paid in full at the start. Each phase starts only after the previous deliverable is signed off. Outside the phases: $150/hr, approved first, against a retainer they top up. The timeline flexes if the opening moves; the price does not. **Slide 25 is the timeline (Gantt) and slide 36 is "What I need from you."** The old design/build split and every red "Proposed figures" tag are gone.
@@ -1073,7 +1073,7 @@ Contact on the slide: Richard Finlay, RGF Global Ventures LLC, (480) 532-1367, r
 
 **BEAT**
 
-Put the leave-behind on the table, one per person (two pages: the second is the agent explainer, the dates, and the pricing). This is the last slide of the pitch, and it now comes straight after the engagement and the timeline (Rick, 2026-11-04 final round: what-I-need moved to the appendix, slide 36), so the number has already landed. If slide 23 was cut, ask its closing question here. Then stop selling and take questions; the appendix (27 to 36) is reference, only if the room asks. In the no-numbers deck this slide follows slide 23 directly.
+Put the leave-behind on the table, one per person (four pages: pages 1 and 2 the ranked table, page 3 the agent explainer and the dates, page 4 the pricing). This is the last slide of the pitch, and it now comes straight after the engagement and the timeline (Rick, 2026-11-04 final round: what-I-need moved to the appendix, slide 36), so the number has already landed. If slide 23 was cut, ask its closing question here. Then stop selling and take questions; the appendix (27 to 36) is reference, only if the room asks. In the no-numbers deck this slide follows slide 23 directly.
 
 ---
 
@@ -1362,7 +1362,7 @@ Read the rows only if asked:
 
 **BEAT**
 
-==Appendix only. In the main flow the timeline (25) goes straight to the Thank You (26).== (This slide is appendix 36 since 2026-11-04; the table is on leave-behind page two. If the room asks for the shortlist or the running costs, slides 28 and 29 are in the appendix; then close the laptop.)
+==Appendix only. In the main flow the timeline (25) goes straight to the Thank You (26).== (This slide is appendix 36 since 2026-11-04; the table is on leave-behind page 4. If the room asks for the shortlist or the running costs, slides 28 and 29 are in the appendix; then close the laptop.)
 
 ---
 
@@ -1586,7 +1586,7 @@ The meeting is Thursday 2026-11-05 at 3:30 PM with Luis, Fernando and Jesse; cas
 - [ ] **Full mock Q&A with Gio again, 30 to 40 minutes, Fernando AND Jesse, all questions** (Q1 to Q17, curveballs, the Jesse technical round). Early enough that the demo check and printing still happen before Luis arrives.
 - [ ] ==**Text Luis the demo link to forward to Fernando and Jesse.**==
 - [ ] ==**Open the demo on the phone (cellular) and on the laptop; check the banner; reload.**== Leave both tabs up.
-- [ ] **Print the leave-behind** (two pages, three copies) **and the meeting card** (`Imaging-Center-LUNCH-CARD-2026-11-05.pdf`, two pages; the four questions are at the top). Bring this sheet too, folded, Part 1 face up.
+- [ ] **Print the leave-behind** (four pages, three copies) **and the meeting card** (`Imaging-Center-LUNCH-CARD-2026-11-05.pdf`, two pages; the four questions are at the top). Bring this sheet too, folded, Part 1 face up.
 - [ ] 3:30 PM, casual dress. Luis brings the monitor. Thirty to forty-five minutes of slides, price at about 30:30, then questions.
 
 ## Not before Thursday
